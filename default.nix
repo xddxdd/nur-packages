@@ -16,6 +16,5 @@
 
   example-package = pkgs.callPackage ./pkgs/example-package { };
   liboqs = pkgs.callPackage ./pkgs/liboqs { };
-  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
-  # ...
+  boringssl-oqs = pkgs.callPackage ./pkgs/boringssl-oqs { };
 }
