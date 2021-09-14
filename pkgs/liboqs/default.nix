@@ -23,4 +23,10 @@ pkgs.stdenv.mkDerivation rec {
     "-DOQS_USE_OPENSSL=OFF"
     "-DOQS_DIST_BUILD=ON"
   ];
+
+  meta = with pkgs.lib; {
+    description = "C library for prototyping and experimenting with quantum-resistant cryptography";
+    homepage    = "https://openquantumsafe.org";
+    license = with licenses; [ mit ];
+  };
 }
