@@ -3,7 +3,8 @@
   fetchzip, fetchhg, fetchFromGitHub, fetchurl,
   substituteAll, callPackage,
   git, zlib, pcre, gd, zstd, perl,
-}:
+  ...
+} @ args:
 
 stdenv.mkDerivation rec {
   pname = "openresty-lantian";
