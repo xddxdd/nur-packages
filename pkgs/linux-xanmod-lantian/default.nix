@@ -14,5 +14,6 @@ linuxManualConfig rec {
 
   modDirVersion = "${linuxKernel.kernels.linux_xanmod.modDirVersion}-lantian";
   configfile = ./config;
+  config = import ./config.nix;
   allowImportFromDerivation = true;
 }
