@@ -16,5 +16,6 @@
 
   boringssl-oqs = pkgs.callPackage ./pkgs/boringssl-oqs { };
   liboqs = pkgs.callPackage ./pkgs/liboqs { };
+  linux-xanmod-lantian = pkgs.callPackage ./pkgs/linux-xanmod-lantian { };
   openresty-lantian = pkgs.callPackage ./pkgs/openresty-lantian { };
 }
