@@ -378,7 +378,7 @@ index 6460da2..69f5a14 100644
  ngx_http_parse_header_line(ngx_http_request_t *r, ngx_buf_t *b,
      ngx_uint_t allow_underscores)
 diff --git a/src/http/ngx_http_request.c b/src/http/ngx_http_request.c
-index e37ef80..514077e 100644
+index e37ef80..45bca6c 100644
 --- a/src/http/ngx_http_request.c
 +++ b/src/http/ngx_http_request.c
 @@ -15,6 +15,12 @@ static ngx_http_request_t *ngx_http_alloc_request(ngx_connection_t *c);
@@ -406,7 +406,7 @@ index e37ef80..514077e 100644
  #if (NGX_HTTP_V2)
      if (hc->addr_conf->http2) {
          rev->handler = ngx_http_v2_init;
-@@ -514,6 +525,141 @@ ngx_http_wait_request_handler(ngx_event_t *rev)
+@@ -514,6 +525,139 @@ ngx_http_wait_request_handler(ngx_event_t *rev)
  }
  
  
@@ -523,8 +523,6 @@ index e37ef80..514077e 100644
 +        }
 +
 +        /* re-inject the slash */
-+        ngx_memmove(b->pos, b->pos + 1, p - b->pos - 1);
-+        c->proxy_protocol--;
 +        b->pos = p - 1;
 +        *b->pos = '/';
 +    }
@@ -548,7 +546,7 @@ index e37ef80..514077e 100644
  ngx_http_request_t *
  ngx_http_create_request(ngx_connection_t *c)
  {
-@@ -3586,6 +3732,110 @@ ngx_http_request_empty_handler(ngx_http_request_t *r)
+@@ -3586,6 +3730,110 @@ ngx_http_request_empty_handler(ngx_http_request_t *r)
  }
  
  
