@@ -14,25 +14,9 @@ jobs:
   tests:
     strategy:
       matrix:
-        # Set this to notify the global nur package registry that changes are
-        # available.
-        #
-        # The repo name as used in
-        # https://github.com/nix-community/NUR/blob/master/repos.json
-        nurRepo:
-          - xddxdd
-        # Set this to cache your build results in cachix for faster builds
-        # in CI and for everyone who uses your cache.
-        #
-        # Format: Your cachix cache host name without the ".cachix.org" suffix.
-        # Example: mycache (for mycache.cachix.org)
-        #
-        # For this to work, you also need to set the CACHIX_SIGNING_KEY or
-        # CACHIX_AUTH_TOKEN secret in your repository secrets settings in
-        # Github found at
-        # https://github.com/<your_githubname>/nur-packages/settings/secrets
-        cachixName:
-          - xddxdd
+        system:
+          - x86_64-linux
+          - aarch64-linux
         nixPath:
           - nixpkgs=channel:nixos-unstable
           - nixpkgs=channel:nixpkgs-unstable
@@ -41,6 +25,12 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2.3.5
+    - name: Set up QEMU
+      id: qemu
+      uses: docker/setup-qemu-action@v1
+      with:
+        image: tonistiigi/binfmt:latest
+        platforms: all
     - name: Install nix
       uses: cachix/install-nix-action@v14
       with:
@@ -48,14 +38,13 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+          extra-platforms = aarch64-linux arm-linux
     - name: Show nixpkgs version
       run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
     - name: Setup cachix
       uses: cachix/cachix-action@v10
-      # Don't replace <YOUR_CACHIX_NAME> here!
-      if: ${{ matrix.cachixName != '<YOUR_CACHIX_NAME>' }}
       with:
-        name: ${{ matrix.cachixName }}
+        name: xddxdd
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - name: Check evaluation
@@ -68,8 +57,6 @@ jobs:
           -I nixpkgs=$(nix-instantiate --find-file nixpkgs) \
           -I $PWD
     - name: Build nix packages
-      run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ci.nix -A cacheOutputs
+      run: nix shell -f '<nixpkgs>' nix-build-uncached -c nix-build-uncached ci.nix -A ${{ matrix.system }}.cacheOutputs
     - name: Trigger NUR update
-      # Don't replace <YOUR_REPO_NAME> here!
-      if: ${{ matrix.nurRepo != '<YOUR_REPO_NAME>' }}
-      run: curl -XPOST "https://nur-update.herokuapp.com/update?repo=${{ matrix.nurRepo }}"
+      run: curl -XPOST "https://nur-update.herokuapp.com/update?repo=xddxdd"
