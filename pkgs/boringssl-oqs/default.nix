@@ -1,5 +1,5 @@
 {
-  lib, buildGoModule, fetchFromGitHub, callPackage,
+  lib, stdenv, buildGoModule, fetchFromGitHub, callPackage,
   cmake, ninja, perl, pkgconfig,
   ...
 } @ args:
@@ -60,5 +60,6 @@ buildGoModule rec {
     description = "Fork of BoringSSL that includes prototype quantum-resistant key exchange and authentication in the TLS handshake based on liboqs";
     homepage    = "https://openquantumsafe.org";
     license = with licenses; [ openssl isc mit bsd3 ];
+    broken = !stdenv.hostPlatform.isx86_64;
   };
 }
