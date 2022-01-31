@@ -1,12 +1,27 @@
 {
   "nodes": {
+    "hath-nix": {
+      "locked": {
+        "lastModified": 1623558647,
+        "narHash": "sha256-r2Ikyi1gAaj0fer3CNoPPaSowEzAa3RF379d7FYzOOM=",
+        "owner": "poscat0x04",
+        "repo": "hath-nix",
+        "rev": "28180bd11ecc9496233671f39b2cbe8027faf563",
+        "type": "github"
+      },
+      "original": {
+        "owner": "poscat0x04",
+        "repo": "hath-nix",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1643322911,
-        "narHash": "sha256-WLe4lXAYXH/v80iO02npX1wdXq4nIVEHJTONLXbQrL0=",
+        "lastModified": 1643381941,
+        "narHash": "sha256-pHTwvnN4tTsEKkWlXQ8JMY423epos8wUOhthpwJjtpc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d9e21f284317f85b3476c0043f4efea87a226c3a",
+        "rev": "5efc8ca954272c4376ac929f4c5ffefcc20551d5",
         "type": "github"
       },
       "original": {
@@ -18,6 +33,7 @@
     },
     "root": {
       "inputs": {
+        "hath-nix": "hath-nix",
         "nixpkgs": "nixpkgs"
       }
     }

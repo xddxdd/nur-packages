@@ -1,7 +1,10 @@
 {
   description = "My personal NUR repository";
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-  outputs = { self, nixpkgs }:
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    hath-nix.url = github:poscat0x04/hath-nix;
+  };
+  outputs = { self, nixpkgs, ... }@inputs:
     let
       systems = [
         "x86_64-linux"
@@ -11,17 +14,22 @@
         "armv6l-linux"
         "armv7l-linux"
       ];
-      forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
+      lib = nixpkgs.lib;
+      forAllSystems = f: lib.genAttrs systems (system: f system);
     in
-    rec {
+    {
+      inherit forAllSystems lib;
+
       packages = forAllSystems (system: import ./default.nix {
         pkgs = import nixpkgs { inherit system; };
+        inherit inputs;
       });
 
       # Following line doesn't work for infinite recursion
       # overlay = self: super: packages."${super.system}";
       overlay = self: super: import ./default.nix {
         pkgs = import nixpkgs { inherit (super) system; };
+        inherit inputs;
       };
     };
 }

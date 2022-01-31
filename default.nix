@@ -6,7 +6,7 @@
 # commands such as:
 #     nix-build -A mypackage
 
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 let
   sources = pkgs.callPackage _sources/generated.nix { };
@@ -35,6 +35,7 @@ rec {
   };
   genshinhelper2 = pkg ./pkgs/genshinhelper2 { };
   glibc-debian-openvz-files = pkg ./pkgs/glibc-debian-openvz-files { };
+  hath = pkgs.callPackage "${inputs.hath-nix}/pkgs/hath.nix" { };
   libltnginx = pkg ./pkgs/libltnginx { };
   liboqs = pkg ./pkgs/liboqs { };
   linux-xanmod-lantian = pkg ./pkgs/linux-xanmod-lantian { };
