@@ -75,6 +75,17 @@
       sha256 = "sha256-Oqqobe1jCPUR9nqQfA19YJbh3CqK4FWBulWiUQq94eQ=";
     };
   };
+  phppgadmin = {
+    pname = "phppgadmin";
+    version = "REL_7-13-0";
+    src = fetchFromGitHub ({
+      owner = "phppgadmin";
+      repo = "phppgadmin";
+      rev = "REL_7-13-0";
+      fetchSubmodules = false;
+      sha256 = "sha256-GzAGnr2OMrGEG31YUgxGkCAUXVWO7fOlYQeD+1u0do0=";
+    });
+  };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
     version = "6.2+dfsg-2";

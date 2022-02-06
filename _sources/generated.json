@@ -19,6 +19,26 @@
         "extract": null,
         "rustGitDeps": null
     },
+    "phppgadmin": {
+        "pinned": false,
+        "cargoLock": null,
+        "name": "phppgadmin",
+        "src": {
+            "deepClone": false,
+            "owner": "phppgadmin",
+            "name": null,
+            "repo": "phppgadmin",
+            "type": "github",
+            "sha256": "sha256-GzAGnr2OMrGEG31YUgxGkCAUXVWO7fOlYQeD+1u0do0=",
+            "rev": "REL_7-13-0",
+            "leaveDotGit": false,
+            "fetchSubmodules": false
+        },
+        "version": "REL_7-13-0",
+        "passthru": null,
+        "extract": null,
+        "rustGitDeps": null
+    },
     "v2fly-geosite": {
         "pinned": false,
         "cargoLock": null,

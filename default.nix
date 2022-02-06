@@ -48,6 +48,7 @@ rec {
     inherit liboqs;
   };
   phpmyadmin = pkg ./pkgs/phpmyadmin { };
+  phppgadmin = pkg ./pkgs/phppgadmin { };
   qemu-user-static = pkg ./pkgs/qemu-user-static { };
   rime-dict = pkg ./pkgs/rime-dict { };
   rime-moegirl = pkg ./pkgs/rime-moegirl { };
