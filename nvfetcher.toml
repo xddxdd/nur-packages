@@ -22,6 +22,13 @@ fetch.github = "open-quantum-safe/liboqs"
 src.github = "open-quantum-safe/openssl"
 fetch.github = "open-quantum-safe/openssl"
 
+[phpmyadmin]
+src.github_tag = "phpmyadmin/phpmyadmin"
+src.include_regex = "RELEASE_([0-9_]*)"
+src.from_pattern = "RELEASE_([0-9])_([0-9])_([0-9])"
+src.to_pattern = "\\1.\\2.\\3"
+fetch.url = "https://files.phpmyadmin.net/phpMyAdmin/$ver/phpMyAdmin-$ver-all-languages.tar.xz"
+
 [qemu-user-static-amd64]
 src.webpage = "https://packages.debian.org/sid/qemu-user-static"
 src.regex = "\\(1:(.*)\\)"

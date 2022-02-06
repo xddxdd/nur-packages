@@ -67,6 +67,14 @@
       sha256 = "sha256-aCvZwFzL3uf2XrawsavL/LVMouXEdzimiPL7EeFsFbM=";
     });
   };
+  phpmyadmin = {
+    pname = "phpmyadmin";
+    version = "5.1.2";
+    src = fetchurl {
+      url = "https://files.phpmyadmin.net/phpMyAdmin/5.1.2/phpMyAdmin-5.1.2-all-languages.tar.xz";
+      sha256 = "sha256-Oqqobe1jCPUR9nqQfA19YJbh3CqK4FWBulWiUQq94eQ=";
+    };
+  };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
     version = "6.2+dfsg-2";
@@ -123,25 +131,25 @@
   };
   v2fly-geoip = {
     pname = "v2fly-geoip";
-    version = "202201270031";
+    version = "202202030030";
     src = fetchurl {
-      url = "https://github.com/v2fly/geoip/releases/download/202201270031/geoip.dat";
-      sha256 = "sha256-kFHpOh1nyrrcEkaQtWg0K8uOV5D4V+CfrvV31mNR3Mw=";
+      url = "https://github.com/v2fly/geoip/releases/download/202202030030/geoip.dat";
+      sha256 = "sha256-YlBnXKwG2MAy9/UgNmb9L3JHa2CIayhlfhCw4S3q6Lw=";
     };
   };
   v2fly-geosite = {
     pname = "v2fly-geosite";
-    version = "20220124140856";
+    version = "20220201175515";
     src = fetchurl {
-      url = "https://github.com/v2fly/domain-list-community/releases/download/20220124140856/dlc.dat";
-      sha256 = "sha256-UJRNu+XxG4qdKCCj+dFqgUcouJ34YNQonjUKuqdl2gs=";
+      url = "https://github.com/v2fly/domain-list-community/releases/download/20220201175515/dlc.dat";
+      sha256 = "sha256-aX54yMDasZ8Irhe6aqnHxQ3Lm+Vmu5oxSqn12inXYgA=";
     };
   };
   v2fly-private = {
     pname = "v2fly-private";
-    version = "202201270031";
+    version = "202202030030";
     src = fetchurl {
-      url = "https://github.com/v2fly/geoip/releases/download/202201270031/private.dat";
+      url = "https://github.com/v2fly/geoip/releases/download/202202030030/private.dat";
       sha256 = "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg=";
     };
   };

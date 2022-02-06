@@ -47,6 +47,7 @@ rec {
   openssl-oqs = pkg ./pkgs/openssl-oqs {
     inherit liboqs;
   };
+  phpmyadmin = pkg ./pkgs/phpmyadmin { };
   qemu-user-static = pkg ./pkgs/qemu-user-static { };
   rime-dict = pkg ./pkgs/rime-dict { };
   rime-moegirl = pkg ./pkgs/rime-moegirl { };

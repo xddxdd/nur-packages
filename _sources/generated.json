@@ -24,12 +24,12 @@
         "cargoLock": null,
         "name": "v2fly-geosite",
         "src": {
-            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220124140856/dlc.dat",
+            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220201175515/dlc.dat",
             "name": null,
             "type": "url",
-            "sha256": "sha256-UJRNu+XxG4qdKCCj+dFqgUcouJ34YNQonjUKuqdl2gs="
+            "sha256": "sha256-aX54yMDasZ8Irhe6aqnHxQ3Lm+Vmu5oxSqn12inXYgA="
         },
-        "version": "20220124140856",
+        "version": "20220201175515",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -199,12 +199,12 @@
         "cargoLock": null,
         "name": "v2fly-private",
         "src": {
-            "url": "https://github.com/v2fly/geoip/releases/download/202201270031/private.dat",
+            "url": "https://github.com/v2fly/geoip/releases/download/202202030030/private.dat",
             "name": null,
             "type": "url",
             "sha256": "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg="
         },
-        "version": "202201270031",
+        "version": "202202030030",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -229,17 +229,32 @@
         "extract": null,
         "rustGitDeps": null
     },
+    "phpmyadmin": {
+        "pinned": false,
+        "cargoLock": null,
+        "name": "phpmyadmin",
+        "src": {
+            "url": "https://files.phpmyadmin.net/phpMyAdmin/5.1.2/phpMyAdmin-5.1.2-all-languages.tar.xz",
+            "name": null,
+            "type": "url",
+            "sha256": "sha256-Oqqobe1jCPUR9nqQfA19YJbh3CqK4FWBulWiUQq94eQ="
+        },
+        "version": "5.1.2",
+        "passthru": null,
+        "extract": null,
+        "rustGitDeps": null
+    },
     "v2fly-geoip": {
         "pinned": false,
         "cargoLock": null,
         "name": "v2fly-geoip",
         "src": {
-            "url": "https://github.com/v2fly/geoip/releases/download/202201270031/geoip.dat",
+            "url": "https://github.com/v2fly/geoip/releases/download/202202030030/geoip.dat",
             "name": null,
             "type": "url",
-            "sha256": "sha256-kFHpOh1nyrrcEkaQtWg0K8uOV5D4V+CfrvV31mNR3Mw="
+            "sha256": "sha256-YlBnXKwG2MAy9/UgNmb9L3JHa2CIayhlfhCw4S3q6Lw="
         },
-        "version": "202201270031",
+        "version": "202202030030",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
