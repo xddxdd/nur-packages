@@ -3,6 +3,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     hath-nix.url = github:poscat0x04/hath-nix;
+    keycloak-lantian = {
+      url = "git+https://git.lantian.pub/lantian/keycloak-lantian.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs = { self, nixpkgs, ... }@inputs:
     let

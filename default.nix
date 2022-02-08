@@ -36,6 +36,9 @@ rec {
   genshinhelper2 = pkg ./pkgs/genshinhelper2 { };
   glibc-debian-openvz-files = pkg ./pkgs/glibc-debian-openvz-files { };
   hath = pkgs.callPackage "${inputs.hath-nix}/pkgs/hath.nix" { };
+  keycloak-lantian = pkg ./pkgs/keycloak-lantian {
+    inherit (inputs) keycloak-lantian;
+  };
   libltnginx = pkg ./pkgs/libltnginx { };
   liboqs = pkg ./pkgs/liboqs { };
   linux-xanmod-lantian = pkg ./pkgs/linux-xanmod-lantian { };
