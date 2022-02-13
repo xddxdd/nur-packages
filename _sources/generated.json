@@ -39,17 +39,32 @@
         "extract": null,
         "rustGitDeps": null
     },
+    "netboot-xyz-lkrn": {
+        "pinned": false,
+        "cargoLock": null,
+        "name": "netboot-xyz-lkrn",
+        "src": {
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.55/netboot.xyz.lkrn",
+            "name": null,
+            "type": "url",
+            "sha256": "sha256-fVnhpQfFfZzMwZ4CRyGNglLYtvBIOZCiW8ecuNL9fWA="
+        },
+        "version": "2.0.55",
+        "passthru": null,
+        "extract": null,
+        "rustGitDeps": null
+    },
     "v2fly-geosite": {
         "pinned": false,
         "cargoLock": null,
         "name": "v2fly-geosite",
         "src": {
-            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220201175515/dlc.dat",
+            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220212111143/dlc.dat",
             "name": null,
             "type": "url",
-            "sha256": "sha256-aX54yMDasZ8Irhe6aqnHxQ3Lm+Vmu5oxSqn12inXYgA="
+            "sha256": "sha256-hz35B14FTmRB9gJlceiDJMvL6Lai33SzZTUx8CpEF3M="
         },
-        "version": "20220201175515",
+        "version": "20220212111143",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -174,6 +189,21 @@
         "extract": null,
         "rustGitDeps": null
     },
+    "netboot-xyz-efi": {
+        "pinned": false,
+        "cargoLock": null,
+        "name": "netboot-xyz-efi",
+        "src": {
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.55/netboot.xyz.efi",
+            "name": null,
+            "type": "url",
+            "sha256": "sha256-rLjpLh2rKeUiUhbV9ODvHeeU05XaaYxpSJRKrNmOBBA="
+        },
+        "version": "2.0.55",
+        "passthru": null,
+        "extract": null,
+        "rustGitDeps": null
+    },
     "libltnginx": {
         "pinned": false,
         "cargoLock": null,
@@ -219,12 +249,12 @@
         "cargoLock": null,
         "name": "v2fly-private",
         "src": {
-            "url": "https://github.com/v2fly/geoip/releases/download/202202030030/private.dat",
+            "url": "https://github.com/v2fly/geoip/releases/download/202202100032/private.dat",
             "name": null,
             "type": "url",
             "sha256": "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg="
         },
-        "version": "202202030030",
+        "version": "202202100032",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -254,12 +284,12 @@
         "cargoLock": null,
         "name": "phpmyadmin",
         "src": {
-            "url": "https://files.phpmyadmin.net/phpMyAdmin/5.1.2/phpMyAdmin-5.1.2-all-languages.tar.xz",
+            "url": "https://files.phpmyadmin.net/phpMyAdmin/5.1.3/phpMyAdmin-5.1.3-all-languages.tar.xz",
             "name": null,
             "type": "url",
-            "sha256": "sha256-Oqqobe1jCPUR9nqQfA19YJbh3CqK4FWBulWiUQq94eQ="
+            "sha256": "sha256-xWL+3cD4/15pYpET8nOg0CSmX7koxI6JzmFHRNR4KW8="
         },
-        "version": "5.1.2",
+        "version": "5.1.3",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -269,12 +299,12 @@
         "cargoLock": null,
         "name": "v2fly-geoip",
         "src": {
-            "url": "https://github.com/v2fly/geoip/releases/download/202202030030/geoip.dat",
+            "url": "https://github.com/v2fly/geoip/releases/download/202202100032/geoip.dat",
             "name": null,
             "type": "url",
-            "sha256": "sha256-YlBnXKwG2MAy9/UgNmb9L3JHa2CIayhlfhCw4S3q6Lw="
+            "sha256": "sha256-nV55u9YbNzTCn7V2+PfwEic+3zLm+uvpCwgRuI1Ddfg="
         },
-        "version": "202202030030",
+        "version": "202202100032",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -289,12 +319,12 @@
             "name": null,
             "repo": "bird-lg-go",
             "type": "github",
-            "sha256": "sha256-bTGFocQel+Tz9RuPN1mebkz12P+M1C4h4bzTD8woHas=",
-            "rev": "950c018b187aa13edbea4d8acbb2022fd2f13319",
+            "sha256": "sha256-2t8ZP9Uc0sJlqWiJMq3MVoARfMKsuTXJkuOid0oWgyY=",
+            "rev": "348295b9aa954a92df2cf6b1179846a9486dafc0",
             "leaveDotGit": false,
             "fetchSubmodules": false
         },
-        "version": "950c018b187aa13edbea4d8acbb2022fd2f13319",
+        "version": "348295b9aa954a92df2cf6b1179846a9486dafc0",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null

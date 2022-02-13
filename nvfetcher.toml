@@ -18,6 +18,14 @@ fetch.github = "xddxdd/libltnginx"
 src.github = "open-quantum-safe/liboqs"
 fetch.github = "open-quantum-safe/liboqs"
 
+[netboot-xyz-efi]
+src.github = "netbootxyz/netboot.xyz"
+fetch.url = "https://github.com/netbootxyz/netboot.xyz/releases/download/$ver/netboot.xyz.efi"
+
+[netboot-xyz-lkrn]
+src.github = "netbootxyz/netboot.xyz"
+fetch.url = "https://github.com/netbootxyz/netboot.xyz/releases/download/$ver/netboot.xyz.lkrn"
+
 [openssl-oqs]
 src.github = "open-quantum-safe/openssl"
 fetch.github = "open-quantum-safe/openssl"

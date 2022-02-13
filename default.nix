@@ -43,6 +43,7 @@ rec {
   liboqs = pkg ./pkgs/liboqs { };
   linux-xanmod-lantian = pkg ./pkgs/linux-xanmod-lantian { };
   linux-xanmod-lantian-config = linux-xanmod-lantian.configfile;
+  netboot-xyz = pkg ./pkgs/netboot-xyz { };
   onepush = pkg ./pkgs/onepush { };
   openresty-lantian = pkg ./pkgs/openresty-lantian {
     inherit liboqs openssl-oqs;
