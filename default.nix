@@ -15,6 +15,7 @@ let
   } // args);
 in
 rec {
+  babeld = pkg ./pkgs/babeld { };
   bird-lg-go = pkg ./pkgs/bird-lg-go { };
   bird-lgproxy-go = pkg ./pkgs/bird-lgproxy-go { };
   boringssl-oqs = pkg ./pkgs/boringssl-oqs {
