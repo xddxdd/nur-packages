@@ -26,6 +26,10 @@ fetch.url = "https://github.com/netbootxyz/netboot.xyz/releases/download/$ver/ne
 src.github = "netbootxyz/netboot.xyz"
 fetch.url = "https://github.com/netbootxyz/netboot.xyz/releases/download/$ver/netboot.xyz.lkrn"
 
+[noise-suppression-for-voice]
+src.github = "werman/noise-suppression-for-voice"
+fetch.github = "werman/noise-suppression-for-voice"
+
 [openssl-oqs]
 src.github = "open-quantum-safe/openssl"
 fetch.github = "open-quantum-safe/openssl"

@@ -72,6 +72,17 @@
       sha256 = "sha256-fVnhpQfFfZzMwZ4CRyGNglLYtvBIOZCiW8ecuNL9fWA=";
     };
   };
+  noise-suppression-for-voice = {
+    pname = "noise-suppression-for-voice";
+    version = "v0.91";
+    src = fetchFromGitHub ({
+      owner = "werman";
+      repo = "noise-suppression-for-voice";
+      rev = "v0.91";
+      fetchSubmodules = false;
+      sha256 = "sha256-jLcSFQz5kt+PcWetZUQ1NEQ2diI7Z/ZaBe/oyZaO/IY=";
+    });
+  };
   openssl-oqs = {
     pname = "openssl-oqs";
     version = "OQS-OpenSSL-1_1_1-stable-snapshot-2022-01";
@@ -131,10 +142,10 @@
   };
   rime-moegirl = {
     pname = "rime-moegirl";
-    version = "20220114";
+    version = "20220218";
     src = fetchurl {
-      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20220114/moegirl.dict.yaml";
-      sha256 = "sha256-JAesSFWqHG+HQRofawDkCx+Ko4h0iqiyAPXR+fciDFk=";
+      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20220218/moegirl.dict.yaml";
+      sha256 = "sha256-ut1oWd88hCq4eJ0rI0a4YuVEmo6/nwG80tC/i/oxJLA=";
     };
   };
   rime-zhwiki = {
@@ -166,10 +177,10 @@
   };
   v2fly-geosite = {
     pname = "v2fly-geosite";
-    version = "20220217083618";
+    version = "20220219153450";
     src = fetchurl {
-      url = "https://github.com/v2fly/domain-list-community/releases/download/20220217083618/dlc.dat";
-      sha256 = "sha256-GBu35N/WglZ+SWrsHqqLBHfhq3jSAmnthfQfkuD/Sus=";
+      url = "https://github.com/v2fly/domain-list-community/releases/download/20220219153450/dlc.dat";
+      sha256 = "sha256-beI+j7rrDNcTnRhCkwPFi0wClZML5mKFmFF2J8Et7DQ=";
     };
   };
   v2fly-private = {
