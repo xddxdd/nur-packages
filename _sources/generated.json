@@ -64,12 +64,12 @@
         "cargoLock": null,
         "name": "netboot-xyz-lkrn",
         "src": {
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.55/netboot.xyz.lkrn",
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.56/netboot.xyz.lkrn",
             "name": null,
             "type": "url",
-            "sha256": "sha256-fVnhpQfFfZzMwZ4CRyGNglLYtvBIOZCiW8ecuNL9fWA="
+            "sha256": "sha256-/zKvg502NUunq6BHKQxKcl+Af9MZv//o/EkaAYzIj/E="
         },
-        "version": "2.0.55",
+        "version": "2.0.56",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -79,12 +79,12 @@
         "cargoLock": null,
         "name": "v2fly-geosite",
         "src": {
-            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220219153450/dlc.dat",
+            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220228085735/dlc.dat",
             "name": null,
             "type": "url",
-            "sha256": "sha256-beI+j7rrDNcTnRhCkwPFi0wClZML5mKFmFF2J8Et7DQ="
+            "sha256": "sha256-fkp2LzxYQ6FJXPuk1X51AAV3TEAGn6lnuXdjwtVlk40="
         },
-        "version": "20220219153450",
+        "version": "20220228085735",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -94,12 +94,12 @@
         "cargoLock": null,
         "name": "qemu-user-static-arm64",
         "src": {
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_6.2+dfsg-2_arm64.deb",
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_6.2+dfsg-3_arm64.deb",
             "name": null,
             "type": "url",
-            "sha256": "sha256-V4ZmJRlhbVuqTgcnxJhLyD4AFKL9M9Fy4hlYwhj8jxM="
+            "sha256": "sha256-BbEMaBQGfaToODtp0grN7V9JAx6DU0eXDz6TJ/RPlpw="
         },
-        "version": "6.2+dfsg-2",
+        "version": "6.2+dfsg-3",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -184,12 +184,12 @@
         "cargoLock": null,
         "name": "qemu-user-static-amd64",
         "src": {
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_6.2+dfsg-2_amd64.deb",
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_6.2+dfsg-3_amd64.deb",
             "name": null,
             "type": "url",
-            "sha256": "sha256-DT50klT9IYutOHVS+3S7EXhv4ogFhHIWOqQYub+uCNk="
+            "sha256": "sha256-6OaNuLr703gw2L9gLrULsuWWJ2uDWsyb4QXZmeOKAeU="
         },
-        "version": "6.2+dfsg-2",
+        "version": "6.2+dfsg-3",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -219,12 +219,12 @@
         "cargoLock": null,
         "name": "rime-zhwiki",
         "src": {
-            "url": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.3/zhwiki-20220127.dict.yaml",
+            "url": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.3/zhwiki-20220226.dict.yaml",
             "name": null,
             "type": "url",
-            "sha256": "sha256-cwiwvxo0EuxJVu8nHg00PHMX6tQnrQhhKpM6YE5F+8A="
+            "sha256": "sha256-nxiikYABN3i9Uj2DCgdOU3YVwc0lBRzw/XN7adWP1T4="
         },
-        "version": "20220127",
+        "version": "20220226",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -234,12 +234,12 @@
         "cargoLock": null,
         "name": "netboot-xyz-efi",
         "src": {
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.55/netboot.xyz.efi",
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.56/netboot.xyz.efi",
             "name": null,
             "type": "url",
-            "sha256": "sha256-rLjpLh2rKeUiUhbV9ODvHeeU05XaaYxpSJRKrNmOBBA="
+            "sha256": "sha256-hzW1iqVYqfMZ3DFKHfu8zX91fiU4468SgoB4v1zR3dw="
         },
-        "version": "2.0.55",
+        "version": "2.0.56",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -289,12 +289,12 @@
         "cargoLock": null,
         "name": "v2fly-private",
         "src": {
-            "url": "https://github.com/v2fly/geoip/releases/download/202202170030/private.dat",
+            "url": "https://github.com/v2fly/geoip/releases/download/202202240036/private.dat",
             "name": null,
             "type": "url",
             "sha256": "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg="
         },
-        "version": "202202170030",
+        "version": "202202240036",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -339,12 +339,12 @@
         "cargoLock": null,
         "name": "v2fly-geoip",
         "src": {
-            "url": "https://github.com/v2fly/geoip/releases/download/202202170030/geoip.dat",
+            "url": "https://github.com/v2fly/geoip/releases/download/202202240036/geoip.dat",
             "name": null,
             "type": "url",
             "sha256": "sha256-Gz5f1THshARPwokhWYPfcxu6eC3pQyEtPygowzRcYeo="
         },
-        "version": "202202170030",
+        "version": "202202240036",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null

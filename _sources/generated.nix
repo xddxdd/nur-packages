@@ -58,18 +58,18 @@
   };
   netboot-xyz-efi = {
     pname = "netboot-xyz-efi";
-    version = "2.0.55";
+    version = "2.0.56";
     src = fetchurl {
-      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.55/netboot.xyz.efi";
-      sha256 = "sha256-rLjpLh2rKeUiUhbV9ODvHeeU05XaaYxpSJRKrNmOBBA=";
+      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.56/netboot.xyz.efi";
+      sha256 = "sha256-hzW1iqVYqfMZ3DFKHfu8zX91fiU4468SgoB4v1zR3dw=";
     };
   };
   netboot-xyz-lkrn = {
     pname = "netboot-xyz-lkrn";
-    version = "2.0.55";
+    version = "2.0.56";
     src = fetchurl {
-      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.55/netboot.xyz.lkrn";
-      sha256 = "sha256-fVnhpQfFfZzMwZ4CRyGNglLYtvBIOZCiW8ecuNL9fWA=";
+      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.56/netboot.xyz.lkrn";
+      sha256 = "sha256-/zKvg502NUunq6BHKQxKcl+Af9MZv//o/EkaAYzIj/E=";
     };
   };
   noise-suppression-for-voice = {
@@ -115,18 +115,18 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "6.2+dfsg-2";
+    version = "6.2+dfsg-3";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_6.2+dfsg-2_amd64.deb";
-      sha256 = "sha256-DT50klT9IYutOHVS+3S7EXhv4ogFhHIWOqQYub+uCNk=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_6.2+dfsg-3_amd64.deb";
+      sha256 = "sha256-6OaNuLr703gw2L9gLrULsuWWJ2uDWsyb4QXZmeOKAeU=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "6.2+dfsg-2";
+    version = "6.2+dfsg-3";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_6.2+dfsg-2_arm64.deb";
-      sha256 = "sha256-V4ZmJRlhbVuqTgcnxJhLyD4AFKL9M9Fy4hlYwhj8jxM=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_6.2+dfsg-3_arm64.deb";
+      sha256 = "sha256-BbEMaBQGfaToODtp0grN7V9JAx6DU0eXDz6TJ/RPlpw=";
     };
   };
   rime-dict = {
@@ -150,10 +150,10 @@
   };
   rime-zhwiki = {
     pname = "rime-zhwiki";
-    version = "20220127";
+    version = "20220226";
     src = fetchurl {
-      url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.3/zhwiki-20220127.dict.yaml";
-      sha256 = "sha256-cwiwvxo0EuxJVu8nHg00PHMX6tQnrQhhKpM6YE5F+8A=";
+      url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.3/zhwiki-20220226.dict.yaml";
+      sha256 = "sha256-nxiikYABN3i9Uj2DCgdOU3YVwc0lBRzw/XN7adWP1T4=";
     };
   };
   route-chain = {
@@ -169,25 +169,25 @@
   };
   v2fly-geoip = {
     pname = "v2fly-geoip";
-    version = "202202170030";
+    version = "202202240036";
     src = fetchurl {
-      url = "https://github.com/v2fly/geoip/releases/download/202202170030/geoip.dat";
+      url = "https://github.com/v2fly/geoip/releases/download/202202240036/geoip.dat";
       sha256 = "sha256-Gz5f1THshARPwokhWYPfcxu6eC3pQyEtPygowzRcYeo=";
     };
   };
   v2fly-geosite = {
     pname = "v2fly-geosite";
-    version = "20220219153450";
+    version = "20220228085735";
     src = fetchurl {
-      url = "https://github.com/v2fly/domain-list-community/releases/download/20220219153450/dlc.dat";
-      sha256 = "sha256-beI+j7rrDNcTnRhCkwPFi0wClZML5mKFmFF2J8Et7DQ=";
+      url = "https://github.com/v2fly/domain-list-community/releases/download/20220228085735/dlc.dat";
+      sha256 = "sha256-fkp2LzxYQ6FJXPuk1X51AAV3TEAGn6lnuXdjwtVlk40=";
     };
   };
   v2fly-private = {
     pname = "v2fly-private";
-    version = "202202170030";
+    version = "202202240036";
     src = fetchurl {
-      url = "https://github.com/v2fly/geoip/releases/download/202202170030/private.dat";
+      url = "https://github.com/v2fly/geoip/releases/download/202202240036/private.dat";
       sha256 = "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg=";
     };
   };
