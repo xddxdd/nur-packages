@@ -61,5 +61,6 @@ rec {
   rime-moegirl = pkg ./pkgs/rime-moegirl { };
   rime-zhwiki = pkg ./pkgs/rime-zhwiki { };
   route-chain = pkg ./pkgs/route-chain { };
+  vs-rife = pkg ./pkgs/vs-rife { };
   xray = pkg ./pkgs/xray { };
 }
