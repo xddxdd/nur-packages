@@ -69,6 +69,7 @@ rec {
   route-chain = pkg ./route-chain { };
   svp = pkg ./svp { };
   vs-rife = pkg ./vs-rife { };
+  wechat-kylin = pkg ./wechat-kylin { };
   wechat-uos = pkg ./wechat-uos { };
   wechat-uos-bin = pkg ./wechat-uos/official-bin.nix { };
   wine-wechat = pkg ./wine-wechat { };
