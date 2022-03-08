@@ -45,6 +45,7 @@ rec {
   hesuvi-hrir = pkg ./hesuvi-hrir { };
   libltnginx = pkg ./libltnginx { };
   liboqs = pkg ./liboqs { };
+  libpcap0_8 = pkg ./libpcap0_8 { };
   linux-xanmod-lantian = pkg ./linux-xanmod-lantian { };
   linux-xanmod-lantian-config = linux-xanmod-lantian.configfile;
   netboot-xyz = pkg ./netboot-xyz { };

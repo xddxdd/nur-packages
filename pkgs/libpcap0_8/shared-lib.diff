@@ -1,0 +1,292 @@
+Debian-specific modifications to the upstream Makefile.in to
+build a shared library.
+
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -41,6 +41,14 @@
+ top_srcdir = @top_srcdir@
+ VPATH = @srcdir@
+ 
++# some defines for shared library compilation
++MAJ=0.8
++LIBVERSION=$(shell head -1 debian/changelog | perl -nle 'm/\S+\s+\((\S+)-\S+\)/ and print $$1')
++LIBNAME=pcap
++LIBRARY=lib$(LIBNAME).a
++SOLIBRARY=lib$(LIBNAME).so
++SHAREDLIB=$(SOLIBRARY).$(LIBVERSION)
++
+ #
+ # You shouldn't need to edit anything below.
+ #
+@@ -70,7 +78,8 @@
+ EXTRA_NETWORK_LIBS=@EXTRA_NETWORK_LIBS@
+ 
+ # Standard CFLAGS for building members of a shared library
+-FULL_CFLAGS = $(CCOPT) @V_LIB_CCOPT_FAT@ $(SHLIB_CCOPT) $(INCLS) $(DEFS) $(CFLAGS)
++FULL_CFLAGS = $(CCOPT) @V_LIB_CCOPT_FAT@ $(SHLIB_CCOPT) $(INCLS) $(DEFS) $(CFLAGS) $(CPPFLAGS)
++CFLAGS_SHARED = -shared -Wl,-soname,$(SOLIBRARY).$(MAJ) -Wl,--version-script=libpcap-symbols.lds
+ CXXFLAGS = $(CCOPT) @V_LIB_CCOPT_FAT@ $(SHLIB_CCOPT) $(INCLS) $(DEFS) $(CFLAGS)
+ 
+ INSTALL = @INSTALL@
+@@ -86,7 +95,11 @@
+ # problem if you don't own the file but can write to the directory.
+ .c.o:
+ 	@rm -f $@
+-	$(CC) $(FULL_CFLAGS) -c $(srcdir)/$*.c
++	$(CC) $(FULL_CFLAGS) -c -o $@ $(srcdir)/$*.c
++
++%_pic.o: %.c
++	@rm -f $@
++	$(CC) -fPIC $(FULL_CFLAGS) -c -o $@ $(srcdir)/$*.c
+ 
+ PLATFORM_C_SRC =	@PLATFORM_C_SRC@
+ PLATFORM_CXX_SRC =	@PLATFORM_CXX_SRC@
+@@ -110,6 +123,10 @@
+ 	$(MODULE_C_SRC:.c=.o) $(REMOTE_C_SRC:.c=.o) $(COMMON_C_SRC:.c=.o) \
+ 	$(GENERATED_C_SRC:.c=.o) \
+ 	$(LIBOBJS)
++OBJ_PIC = $(PLATFORM_C_SRC:.c=_pic.o) $(PLATFORM_CXX_SRC:.cpp=_pic.o) \
++	$(MODULE_C_SRC:.c=_pic.o) $(REMOTE_C_SRC:.c=_pic.o) \
++	$(COMMON_C_SRC:.c=_pic.o) $(GENERATED_C_SRC:.c=_pic.o) \
++	$(LIBOBJS:.o=_pic.o)
+ 
+ PUBHDR = \
+ 	pcap.h \
+@@ -165,7 +182,7 @@
+ 
+ CLEANFILES = $(OBJ) libpcap.a libpcap.so.`cat $(srcdir)/VERSION` \
+ 	$(PROG)-`cat $(srcdir)/VERSION`.tar.gz $(GENERATED_C_SRC) $(GENHDR) \
+-	lex.yy.c pcap-config libpcap.pc
++	lex.yy.c pcap-config libpcap.pc $(OBJ_PIC) $(SHARED_LIB)
+ 
+ MAN1 = pcap-config.1
+ 
+@@ -422,7 +439,7 @@
+ 	$(AR) rc $@ $(OBJ) $(ADDLARCHIVEOBJS)
+ 	$(RANLIB) $@
+ 
+-shared: libpcap.$(DYEXT)
++shared: $(SHAREDLIB)
+ 
+ libpcap.so: $(OBJ)
+ 	@rm -f $@
+@@ -498,6 +515,13 @@
+ #
+ libpcap.none:
+ 
++$(SHAREDLIB): $(OBJ_PIC)
++	-@rm -f $@
++	-@rm -f $(SOLIBRARY) $(SOLIBRARY).$(MAJ)
++	$(CC) $(CFLAGS_SHARED) $(LDFLAGS) -o $(SHAREDLIB) $(OBJ_PIC) -lc $(LIBS)
++	ln -s $(SHAREDLIB) $(SOLIBRARY).$(MAJ)
++	ln -s $(SOLIBRARY).$(MAJ) $(SOLIBRARY)
++
+ scanner.c: $(srcdir)/scanner.l
+ 	$(LEX) -P pcap_ --header-file=scanner.h --nounput -o scanner.c $<
+ scanner.h: scanner.c
+@@ -510,6 +534,9 @@
+ scanner.o: scanner.c grammar.h
+ 	$(CC) $(FULL_CFLAGS) -c scanner.c
+ 
++scanner_pic.o: scanner.c grammar.h
++	$(CC) -fPIC $(FULL_CFLAGS) -o $@ -c scanner.c
++
+ #
+ # Generate the grammar.y file.
+ #
+@@ -541,24 +568,45 @@
+ grammar.o: grammar.c scanner.h
+ 	$(CC) $(FULL_CFLAGS) -c grammar.c
+ 
++grammar_pic.o: grammar.c scanner.h
++	$(CC) -fPIC $(FULL_CFLAGS) -o $@ -c grammar.c
++
+ gencode.o: $(srcdir)/gencode.c grammar.h scanner.h
+ 	$(CC) $(FULL_CFLAGS) -c $(srcdir)/gencode.c
+ 
++gencode_pic.o: $(srcdir)/gencode.c grammar.h scanner.h
++	$(CC) -fPIC $(FULL_CFLAGS) -o $@ -c $(srcdir)/gencode.c
++
+ asprintf.o: $(srcdir)/missing/asprintf.c
+ 	$(CC) $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/asprintf.c
+ 
++asprintf_pic.o: $(srcdir)/missing/asprintf.c
++	$(CC) -fPIC $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/asprintf.c
++
+ snprintf.o: $(srcdir)/missing/snprintf.c
+ 	$(CC) $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/snprintf.c
+ 
++snprintf_pic.o: $(srcdir)/missing/snprintf.c
++	$(CC) -fPIC $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/snprintf.c
++
+ strlcat.o: $(srcdir)/missing/strlcat.c
+ 	$(CC) $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/strlcat.c
+ 
++strlcat_pic.o: $(srcdir)/missing/strlcat.c
++	$(CC) -fPIC $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/strlcat.c
++
+ strlcpy.o: $(srcdir)/missing/strlcpy.c
+ 	$(CC) $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/strlcpy.c
+ 
++strlcpy_pic.o: $(srcdir)/missing/strlcpy.c
++	$(CC) -fPIC $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/strlcpy.c
++
+ strtok_r.o: $(srcdir)/missing/strtok_r.c
+ 	$(CC) $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/strtok_r.c
+ 
++strtok_r_pic.o: $(srcdir)/missing/strtok_r.c
++	$(CC) -fPIC $(FULL_CFLAGS) -o $@ -c $(srcdir)/missing/strtok_r.c
++
+ #
+ # Generate the libpcap.pc file.
+ #
+@@ -680,14 +728,12 @@
+ 		    $(DESTDIR)$(mandir)/man@MAN_MISC_INFO@/`echo $$i | sed 's/.manmisc.in/.@MAN_MISC_INFO@/'`; done
+ 
+ install-shared: install-shared-$(DYEXT)
+-install-shared-so: libpcap.so
++install-shared-so: $(SHAREDLIB)
+ 	[ -d $(DESTDIR)$(libdir) ] || \
+ 	    (mkdir -p $(DESTDIR)$(libdir); chmod 755 $(DESTDIR)$(libdir))
+-	VER=`cat $(srcdir)/VERSION`; \
+-	MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' $(srcdir)/VERSION`; \
+-	$(INSTALL_PROGRAM) libpcap.so.$$VER $(DESTDIR)$(libdir)/libpcap.so.$$VER; \
+-	ln -sf libpcap.so.$$VER $(DESTDIR)$(libdir)/libpcap.so.$$MAJOR_VER; \
+-	ln -sf libpcap.so.$$MAJOR_VER $(DESTDIR)$(libdir)/libpcap.so
++	$(INSTALL_DATA) $(SHAREDLIB) $(DESTDIR)$(libdir)/
++	ln -sf $(SHAREDLIB) $(DESTDIR)$(libdir)/$(SOLIBRARY).$(MAJ)
++	ln -sf $(SOLIBRARY).$(MAJ) $(DESTDIR)$(libdir)/$(SOLIBRARY)
+ install-shared-dylib: libpcap.dylib
+ 	[ -d $(DESTDIR)$(libdir) ] || \
+ 	    (mkdir -p $(DESTDIR)$(libdir); chmod 755 $(DESTDIR)$(libdir))
+--- a/aclocal.m4
++++ b/aclocal.m4
+@@ -507,7 +507,7 @@
+ 			esac
+ 			;;
+ 		    esac
+-		    V_SHLIB_CCOPT="$V_SHLIB_CCOPT $PIC_OPT"
++		    V_SHLIB_CCOPT="$V_SHLIB_CCOPT"
+ 		    V_SONAME_OPT="-Wl,-soname,"
+ 		    V_RPATH_OPT="-Wl,-rpath,"
+ 		    ;;
+@@ -570,7 +570,7 @@
+ 		    #
+ 		    # "cc" is GCC.
+ 		    #
+-		    V_SHLIB_CCOPT="$V_SHLIB_CCOPT -fpic"
++		    V_SHLIB_CCOPT="$V_SHLIB_CCOPT"
+ 		    V_SHLIB_CMD="\$(CC)"
+ 		    V_SHLIB_OPT="-shared"
+ 		    V_SONAME_OPT="-Wl,-soname,"
+--- /dev/null
++++ b/libpcap-symbols.lds
+@@ -0,0 +1,108 @@
++{
++  global:
++    bpf_dump;
++    bpf_filter;
++    bpf_image;
++    bpf_validate;
++    eproto_db;
++    pcap_breakloop;
++    pcap_can_set_rfmon;
++    pcap_close;
++    pcap_compile;
++    pcap_compile_nopcap;
++    pcap_datalink;
++    pcap_datalink_name_to_val;
++    pcap_datalink_val_to_description;
++    pcap_datalink_val_to_name;
++    pcap_dispatch;
++    pcap_dump;
++    pcap_dump_close;
++    pcap_dump_file;
++    pcap_dump_flush;
++    pcap_dump_fopen;
++    pcap_dump_ftell;
++    pcap_dump_open;
++    pcap_ether_aton;
++    pcap_ether_hostton;
++    pcap_file;
++    pcap_fileno;
++    pcap_findalldevs;
++    pcap_fopen_offline;
++    pcap_freealldevs;
++    pcap_freecode;
++    pcap_get_selectable_fd;
++    pcap_geterr;
++    pcap_getnonblock;
++    pcap_inject;
++    pcap_is_swapped;
++    pcap_lib_version;
++    pcap_list_datalinks;
++    pcap_lookupdev;
++    pcap_lookupnet;
++    pcap_loop;
++    pcap_major_version;
++    pcap_minor_version;
++    pcap_nametoaddr;
++    pcap_nametoaddrinfo;
++    pcap_nametoeproto;
++    pcap_nametollc;
++    pcap_nametonetaddr;
++    pcap_nametoport;
++    pcap_nametoportrange;
++    pcap_nametoproto;
++    pcap_next;
++    pcap_next_etherent;
++    pcap_next_ex;
++    pcap_open_dead;
++    pcap_open_live;
++    pcap_open_offline;
++    pcap_perror;
++    pcap_sendpacket;
++    pcap_set_datalink;
++    pcap_setdirection;
++    pcap_setfilter;
++    pcap_setnonblock;
++    pcap_snapshot;
++    pcap_stats;
++    pcap_statustostr;
++    pcap_strerror;
++    pcap_version;
++    /* introduced in pcap 1.0 */
++    pcap_activate;
++    pcap_create;
++    pcap_datalink_ext;
++    pcap_free_datalinks;
++    pcap_offline_filter;
++    pcap_set_buffer_size;
++    pcap_set_promisc;
++    pcap_set_rfmon;
++    pcap_set_snaplen;
++    pcap_set_timeout;
++    /* introduced in pcap 1.2 */
++    pcap_set_tstamp_type;
++    pcap_list_tstamp_types;
++    pcap_free_tstamp_types;
++    pcap_tstamp_type_name_to_val;
++    pcap_tstamp_type_val_to_name;
++    pcap_tstamp_type_val_to_description;
++    /* introduced in pcap 1.5 */
++    pcap_set_immediate_mode;
++    pcap_set_tstamp_precision;
++    pcap_get_tstamp_precision;
++    pcap_open_dead_with_tstamp_precision;
++    pcap_open_offline_with_tstamp_precision;
++    pcap_fopen_offline_with_tstamp_precision;
++    /* introduced in pcap 1.7 */
++    pcap_dump_open_append;
++    /* introduced in pcap 1.9.0 */
++    pcap_bufsize;
++    pcap_dump_ftell64;
++    pcap_get_required_select_timeout;
++    pcap_set_protocol_linux;	/* linux-only */
++    /* introduced in pcap 1.9.1 */
++    pcap_datalink_val_to_description_or_dlt;
++    /* introduced in pcap 1.10 */
++    pcap_init;
++  local:
++    *;
++};
