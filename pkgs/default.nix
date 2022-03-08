@@ -26,6 +26,8 @@ rec {
   };
   chmlib-utils = pkg ./chmlib-utils { };
   coredns = pkg ./coredns { };
+  deepin-wine5 = pkg ./deepin-wine/deepin-wine5.nix { };
+  deepin-wine6 = pkg ./deepin-wine/deepin-wine6.nix { };
   dingtalk = pkg ./dingtalk { };
   dngzwxdq = pkg ./dngzwxdq {
     inherit chmlib-utils;
@@ -45,7 +47,6 @@ rec {
   hesuvi-hrir = pkg ./hesuvi-hrir { };
   libltnginx = pkg ./libltnginx { };
   liboqs = pkg ./liboqs { };
-  libpcap0_8 = pkg ./libpcap0_8 { };
   linux-xanmod-lantian = pkg ./linux-xanmod-lantian { };
   linux-xanmod-lantian-config = linux-xanmod-lantian.configfile;
   netboot-xyz = pkg ./netboot-xyz { };
