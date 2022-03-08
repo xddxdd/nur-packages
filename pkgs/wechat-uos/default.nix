@@ -1,6 +1,6 @@
 { stdenv
 , fetchurl
-, writeShellScriptBin
+, writeShellScript
 , electron
 , makeWrapper
 , steam
@@ -47,9 +47,21 @@ let
     extraPkgs = p: [ license resource ];
     runtimeOnly = true;
   }).run;
+
+  startScript = writeShellScript "wechat-uos" ''
+    ${steam-run}/bin/steam-run \
+      ${electron}/bin/electron \
+      ${resource}/lib/wechat-uos
+  '';
 in
-writeShellScriptBin "wechat-uos" ''
-  ${steam-run}/bin/steam-run \
-    ${electron}/bin/electron \
-    ${resource}/lib/wechat-uos
-''
+stdenv.mkDerivation {
+  pname = "wechat-uos";
+  inherit version;
+  phases = [ "installPhase" ];
+  installPhase = ''
+    mkdir -p $out/bin $out/share/applications
+    ln -s ${startScript} $out/bin/wechat-uos
+    ln -s ${./wechat-uos.desktop} $out/share/applications/wechat-uos.desktop
+    ln -s ${resource}/share/icons $out/share/icons
+  '';
+}
