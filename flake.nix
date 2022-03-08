@@ -25,14 +25,20 @@
       inherit forAllSystems lib;
 
       packages = forAllSystems (system: import ./default.nix {
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
         inherit inputs;
       });
 
       # Following line doesn't work for infinite recursion
       # overlay = self: super: packages."${super.system}";
       overlay = self: super: import ./default.nix {
-        pkgs = import nixpkgs { inherit (super) system; };
+        pkgs = import nixpkgs {
+          inherit (super) system;
+          config.allowUnfree = true;
+        };
         inherit inputs;
       };
     };
