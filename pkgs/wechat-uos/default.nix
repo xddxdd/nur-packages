@@ -4,6 +4,7 @@
 , electron
 , makeWrapper
 , steam
+, lib
 , ...
 } @ args:
 
@@ -64,4 +65,11 @@ stdenv.mkDerivation {
     ln -s ${./wechat-uos.desktop} $out/share/applications/wechat-uos.desktop
     ln -s ${resource}/share/icons $out/share/icons
   '';
+
+  meta = with lib; {
+    description = "微信官方原生桌面版 WeChat desktop";
+    homepage = "https://weixin.qq.com/";
+    platforms = [ "x86_64-linux" ];
+    license = licenses.unfreeRedistributable;
+  };
 }
