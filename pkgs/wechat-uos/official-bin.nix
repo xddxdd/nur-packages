@@ -1,7 +1,6 @@
 { stdenv
 , fetchurl
 , writeShellScript
-, electron
 , steam
 , lib
 , ...
@@ -42,9 +41,8 @@ let
       mkdir -p $out
       tar xf data.tar.xz -C $out
       mv $out/usr/* $out/
-      mv $out/opt/apps/com.tencent.weixin/files/weixin/resources/app $out/lib/wechat-uos
       ln -sf $out/lib/license/libuosdevicea1.so $out/lib/license/libuosdevicea.so
-      rm -rf $out/opt $out/usr
+      rm -rf $out/usr
     '';
   };
 
@@ -55,8 +53,7 @@ let
 
   startScript = writeShellScript "wechat-uos" ''
     ${steam-run}/bin/steam-run \
-      ${electron}/bin/electron \
-      ${resource}/lib/wechat-uos
+      ${resource}/opt/apps/com.tencent.weixin/files/weixin/weixin
   '';
 in
 stdenv.mkDerivation {
