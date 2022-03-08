@@ -42,7 +42,7 @@ let
       sha256 = "13dyzq20wbirif5lvrzxyxyxf94134dlbjf76zhyhssxvi3jj5lz";
     };
 
-    nativeBuildInputs = [ autoPatchelfHook makeWrapper ];
+    nativeBuildInputs = [ autoPatchelfHook ];
 
     buildInputs = [ openssl stdenv.cc.cc.lib ];
 
@@ -57,24 +57,42 @@ let
       mv $out/opt/apps/com.tencent.weixin/files/weixin/resources/app $out/lib/wechat-uos
       rm -rf $out/opt $out/usr $out/share/applications
       ln -sf $out/lib/license/libuosdevicea1.so $out/lib/license/libuosdevicea.so
-
-      mkdir $out/bin
-      makeWrapper ${electron}/bin/electron $out/bin/wechat-uos \
-        --argv0 wechat-uos \
-        --add-flags "--enable-logging" \
-        --add-flags $out/lib/wechat-uos \
-        --set ELECTRON_ENABLE_LOGGING "1" \
-        --prefix LD_LIBRARY_PATH : "${libraries}:$out/lib/license" \
     '';
   };
 
-  entrypoint = writeShellScriptBin "wechat-uos" ''
+  entrypoint = stdenv.mkDerivation {
+    pname = "wechat-uos-entrypoint";
+    version = "0.0.1";
+    phases = [ "installPhase" ];
+    nativeBuildInputs = [ makeWrapper ];
+    installPhase = ''
+      mkdir -p $out/bin
+      makeWrapper ${electron}/bin/electron $out/bin/wechat-uos \
+        --argv0 wechat-uos \
+        --add-flags "--enable-logging" \
+        --add-flags ${resource}/lib/wechat-uos \
+        --prefix LD_LIBRARY_PATH : "${libraries}" \
+    '';
+  };
+
+  bwrap = writeShellScriptBin "wechat-uos" ''
     ${bubblewrap}/bin/bwrap \
       --dev-bind / / \
-      --bind ${license}/etc /etc \
-      --bind ${license}/var /var \
+      --tmpfs /etc \
+      --bind ${license}/etc/lsb-release /etc/lsb-release \
+      --bind ${license}/etc/os-release /etc/os-release \
+      --bind /etc/fonts /etc/fonts \
+      --bind /etc/hostname /etc/hostname \
+      --bind /etc/localtime /etc/localtime \
+      --bind /etc/machine-id /etc/machine-id \
+      --bind /etc/profiles /etc/profiles \
+      --bind /etc/zoneinfo /etc/zoneinfo \
+      --tmpfs /var \
+      --bind /etc/machine-id /var/lib/dbus/machine-id \
+      --bind ${license}/var/lib/uos-license /var/lib/uos-license \
+      --bind ${license}/var/uos /var/uos \
       --bind ${resource} /usr \
-      strace -f ${resource}/bin/wechat-uos "$@"
+      ${entrypoint}/bin/wechat-uos "$@"
   '';
 in
-entrypoint
+bwrap
