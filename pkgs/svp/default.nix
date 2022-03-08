@@ -4,26 +4,29 @@
 , writeShellScriptBin
 , p7zip
 , lib
-, libsForQt5
-, xorg
-, bubblewrap
-, glibc
+, steam
 , ...
 }:
 
 let
-  libraryPath = lib.makeLibraryPath [
-    libsForQt5.qtbase
-    libsForQt5.qtdeclarative
-    xorg.libX11
-    stdenv.cc.cc.lib
-  ];
+  steam-run = (steam.override {
+    extraLibraries = p: with p; [
+      libsForQt5.qtbase
+      libsForQt5.qtdeclarative
+      xorg.libX11
+      stdenv.cc.cc.lib
+    ];
+    extraPkgs = p: with p; [
+      gnome.zenity
+    ];
+    runtimeOnly = true;
+  }).run;
 
   svp = stdenv.mkDerivation rec {
     pname = "svp";
-    version = "4.5.210-1";
+    version = "4.5.210";
     src = fetchurl {
-      url = "https://www.svp-team.com/files/svp4-linux.${version}.tar.bz2";
+      url = "https://www.svp-team.com/files/svp4-linux.${version}-1.tar.bz2";
       sha256 = "10q8r401wg81vanwxd7v07qrh3w70gdhgv5vmvymai0flndm63cl";
     };
 
@@ -46,28 +49,13 @@ let
         7z -bd -bb0 -y x -o"$out/opt/" "$f" || true
       done
       rm -rf $out/opt/extensions
+
+      mkdir -p $out/bin
+      makeWrapper ${steam-run}/bin/steam-run $out/bin/SVPManager \
+        --add-flags $out/opt/SVPManager \
+        --unset LD_LIBRARY_PATH \
+        --argv0 SVPManager
     '';
   };
-
-  bwrap = writeShellScriptBin "SVPManager" ''
-    ${bubblewrap}/bin/bwrap \
-      --proc /proc \
-      --chdir "$(pwd)" \
-      --unshare-user \
-      --unshare-uts \
-      --unshare-cgroup \
-      --die-with-parent \
-      --bind /bin /bin \
-      --bind /dev /dev \
-      --bind /home /home \
-      --bind /nix /nix \
-      --bind /run /run \
-      --bind /sys /sys \
-      --bind ${glibc}/lib /lib \
-      --bind ${glibc}/lib /lib64 \
-      --bind ${svp}/opt /opt/svp \
-      --setenv LD_LIBRARY_PATH "${libraryPath}" \
-      /opt/svp/SVPManager "$@"
-  '';
 in
-bwrap
+svp
