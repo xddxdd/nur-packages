@@ -97,20 +97,6 @@ let
     '';
   };
 
-  svp-wrapper = stdenv.mkDerivation {
-    pname = "svp-wrapper";
-    version = "1.0.0";
-    nativeBuildInputs = [ makeWrapper ];
-    phases = [ "installPhase" ];
-    installPhase = ''
-      mkdir -p $out/bin
-      makeWrapper ${svp-dist}/opt/SVPManager $out/bin/SVPManager \
-        --prefix LD_LIBRARY_PATH : "${libPath}" \
-        --prefix PATH : "${execPath}" \
-        --argv0 SVPManager
-    '';
-  };
-
   startScript = writeShellScript "SVPManager" ''
     blacklist=(/nix /dev /usr /lib /lib64 /proc)
 
@@ -135,10 +121,12 @@ let
       --bind ${glibc}/lib /lib64
       --bind /usr/bin/env /usr/bin/env
       --bind ${lsof}/bin/lsof /usr/bin/lsof
+      --setenv PATH "${execPath}:''${PATH}"
+      --setenv LD_LIBRARY_PATH "${libPath}:''${LD_LIBRARY_PATH}"
       --symlink ${mpvForSVP}/bin/mpv /usr/bin/mpv
       "''${auto_mounts[@]}"
       # /bin/sh
-      ${svp-wrapper}/bin/SVPManager "$@"
+      ${svp-dist}/opt/SVPManager "$@"
     )
     exec "''${cmd[@]}"
   '';
