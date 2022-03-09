@@ -7,13 +7,16 @@
 , libmediainfo
 , libsForQt5
 , libusb1
+, linuxPackages_latest ? null
 , lsof
 , makeWrapper
+, mpv-unwrapped
+, nvidia_x11 ? linuxPackages_latest.nvidia_x11
 , ocl-icd
 , p7zip
 , patchelf
-, pkgs
 , vapoursynth
+, wrapMpv
 , writeShellScript
 , writeText
 , xdg-utils
@@ -24,13 +27,22 @@
 ################################################################################
 # Based on svp package from AUR:
 # https://aur.archlinux.org/packages/svp
-#
-# Known issues:
-# - MPV started by SVP doesn't work
-# - NVIDIA Optical Flow doesn't work
 ################################################################################
 
 let
+  mpvForSVP = wrapMpv
+    (mpv-unwrapped.override {
+      vapoursynthSupport = true;
+    })
+    {
+      extraMakeWrapperArgs = [
+        "--prefix"
+        "LD_LIBRARY_PATH"
+        ":"
+        "${lib.makeLibraryPath [ nvidia_x11 ]}"
+      ];
+    };
+
   libPath = lib.makeLibraryPath [
     libsForQt5.qtbase
     libsForQt5.qtdeclarative
@@ -50,20 +62,15 @@ let
     xdg-utils
   ];
 
-  fakeMpv = writeShellScript "mpv" ''
-    ${gnome.zenity}/bin/zenity --error \
-      --text="Currently MPV Vapoursynth doesn't work inside SVP's container. Do not run MPV from SVP; run it from your file manager or application menu."
-  '';
-
-  svp = stdenv.mkDerivation rec {
-    pname = "svp";
+  svp-dist = stdenv.mkDerivation rec {
+    pname = "svp-dist";
     version = "4.5.210";
     src = fetchurl {
       url = "https://www.svp-team.com/files/svp4-linux.${version}-1.tar.bz2";
       sha256 = "10q8r401wg81vanwxd7v07qrh3w70gdhgv5vmvymai0flndm63cl";
     };
 
-    nativeBuildInputs = [ p7zip makeWrapper patchelf ];
+    nativeBuildInputs = [ p7zip patchelf ];
     dontFixup = true;
 
     unpackPhase = ''
@@ -83,18 +90,22 @@ let
         7z -bd -bb0 -y x -o"$out/opt/" "$f" || true
       done
 
-      for F in $out/opt/plugins/*; do
-        patchelf --set-rpath "${libPath}" "$F"
-      done
-
       for SIZE in 32 48 64 128; do
         mkdir -p "$out/share/icons/hicolor/''${SIZE}x''${SIZE}/apps"
         mv "$out/opt/svp-manager4-''${SIZE}.png" "$out/share/icons/hicolor/''${SIZE}x''${SIZE}/apps/svp-manager4.png"
       done
       rm -f $out/opt/{add,remove}-menuitem.sh
+    '';
+  };
 
-      mkdir $out/bin
-      makeWrapper $out/opt/SVPManager $out/bin/SVPManager \
+  svp-wrapper = stdenv.mkDerivation {
+    pname = "svp-wrapper";
+    version = "1.0.0";
+    nativeBuildInputs = [ makeWrapper ];
+    phases = [ "installPhase" ];
+    installPhase = ''
+      mkdir -p $out/bin
+      makeWrapper ${svp-dist}/opt/SVPManager $out/bin/SVPManager \
         --prefix LD_LIBRARY_PATH : "${libPath}" \
         --prefix PATH : "${execPath}" \
         --argv0 SVPManager
@@ -102,24 +113,6 @@ let
   };
 
   startScript = writeShellScript "SVPManager" ''
-    BWRAP=/run/wrappers/bin/bwrap
-    if [ ! -f "$BWRAP" ]; then
-      cat <<EOF
-    Bubblewrap's bwrap binary must be run as SUID to let SVP function normally.
-
-    Add these lines to your configuration.nix:
-
-    security.wrappers.bwrap = {
-      owner = "root";
-      group = "root";
-      setuid = true;
-      setgid = true;
-      source = pkgs.bubblewrap + "/bin/bwrap";
-    };
-    EOF
-      exit 1
-    fi
-
     blacklist=(/nix /dev /usr /lib /lib64 /proc)
 
     declare -a auto_mounts
@@ -133,7 +126,7 @@ let
     done
 
     cmd=(
-      $BWRAP
+      ${bubblewrap}/bin/bwrap
       --dev-bind /dev /dev
       --chdir "$(pwd)"
       --die-with-parent
@@ -143,10 +136,10 @@ let
       --bind ${glibc}/lib /lib64
       --bind /usr/bin/env /usr/bin/env
       --bind ${lsof}/bin/lsof /usr/bin/lsof
-      --symlink ${fakeMpv} /usr/bin/mpv
+      --symlink ${mpvForSVP}/bin/mpv /usr/bin/mpv
       "''${auto_mounts[@]}"
       # /bin/sh
-      ${svp}/bin/SVPManager "$@"
+      ${svp-wrapper}/bin/SVPManager "$@"
     )
     exec "''${cmd[@]}"
   '';
@@ -159,20 +152,22 @@ let
     GenericName=Real time frame interpolation
     Type=Application
     Categories=Multimedia;AudioVideo;Player;Video;
+    MimeType=video/x-msvideo;video/x-matroska;video/webm;video/mpeg;video/mp4;
     Terminal=false
     StartupNotify=true
-    Exec=${startScript}
+    Exec=${startScript} %f
     Icon=svp-manager4.png
   '';
 in
 stdenv.mkDerivation {
-  inherit (svp) pname version;
+  pname = "svp";
+  inherit (svp-dist) version;
   phases = [ "installPhase" ];
   installPhase = ''
     mkdir -p $out/bin $out/share/applications
     ln -s ${startScript} $out/bin/SVPManager
     ln -s ${desktopFile} $out/share/applications/svp-manager4.desktop
-    ln -s ${svp}/share/icons $out/share/icons
+    ln -s ${svp-dist}/share/icons $out/share/icons
   '';
 
   meta = with lib; {
