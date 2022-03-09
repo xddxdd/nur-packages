@@ -4,6 +4,7 @@
 , unzip
 , wine
 , winetricks
+, noto-fonts-cjk-sans
 , writeShellScriptBin
 , ...
 }:
@@ -72,10 +73,15 @@ writeShellScriptBin "wechat" ''
   export PATH="${wechatWine}/bin:$PATH"
   export LANG="zh_CN.UTF-8"
 
-  ${wechatWine}/bin/wineboot
-  grep msls31 $WINEPREFIX/winetricks.log >/dev/null || ${winetricks}/bin/winetricks msls31
-  grep riched20 $WINEPREFIX/winetricks.log >/dev/null || ${winetricks}/bin/winetricks riched20
+  winetricks() {
+    grep $1 $WINEPREFIX/winetricks.log >/dev/null || ${winetricks}/bin/winetricks $1
+  }
 
+  ${wechatWine}/bin/wineboot
+  winetricks msls31
+  winetricks riched20
+
+  ${wechatWine}/bin/wine regedit.exe ${./fonts.reg}
   ${wechatWine}/bin/wine ${wechatFiles}/WeChat.exe
   ${wechatWine}/bin/wineserver -k
 ''
