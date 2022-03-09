@@ -1,41 +1,44 @@
 { stdenv
+, bubblewrap
 , fetchurl
-, makeWrapper
-, writeShellScriptBin
-, p7zip
+, glibc
+, gnome
 , lib
-, steam
-, mpv-unwrapped
+, libmediainfo
+, libsForQt5
+, libusb1
+, lsof
+, makeWrapper
+, ocl-icd
+, p7zip
+, patchelf
+, pkgs
 , vapoursynth
-, vapoursynth-mvtools
+, writeShellScriptBin
+, xdg-utils
+, xorg
 , ...
 }:
 
 let
-  mpvWithVapourSynth = mpv-unwrapped.override {
-    vapoursynthSupport = true;
-  };
+  libPath = lib.makeLibraryPath [
+    libsForQt5.qtbase
+    libsForQt5.qtdeclarative
+    libsForQt5.qtscript
+    libsForQt5.qtsvg
+    libmediainfo
+    libusb1
+    xorg.libX11
+    stdenv.cc.cc.lib
+    ocl-icd
+    vapoursynth
+  ];
 
-  steam-run = (steam.override {
-    extraLibraries = p: with p; [
-      libsForQt5.qtbase
-      libsForQt5.qtdeclarative
-      libsForQt5.qtscript
-      libsForQt5.qtsvg
-      libmediainfo
-      libusb1
-      xorg.libX11
-      stdenv.cc.cc.lib
-      ocl-icd
-    ];
-    extraPkgs = p: with p; [
-      gnome.zenity
-      mpvWithVapourSynth
-      lsof
-      xdg-utils
-    ];
-    runtimeOnly = true;
-  }).run;
+  execPath = lib.makeBinPath [
+    gnome.zenity
+    lsof
+    xdg-utils
+  ];
 
   svp = stdenv.mkDerivation rec {
     pname = "svp";
@@ -45,7 +48,7 @@ let
       sha256 = "10q8r401wg81vanwxd7v07qrh3w70gdhgv5vmvymai0flndm63cl";
     };
 
-    nativeBuildInputs = [ p7zip makeWrapper ];
+    nativeBuildInputs = [ p7zip makeWrapper patchelf ];
     dontFixup = true;
 
     unpackPhase = ''
@@ -64,13 +67,64 @@ let
       for f in "installer/"*.7z; do
         7z -bd -bb0 -y x -o"$out/opt/" "$f" || true
       done
-      rm -rf $out/opt/extensions
 
-      mkdir -p $out/bin
-      makeWrapper ${steam-run}/bin/steam-run $out/bin/SVPManager \
-        --add-flags $out/opt/SVPManager \
+      for F in $out/opt/plugins/*; do
+        patchelf --set-rpath "${libPath}" "$F"
+      done
+
+      mkdir $out/bin
+      makeWrapper $out/opt/SVPManager $out/bin/SVPManager \
+        --prefix LD_LIBRARY_PATH : "${libPath}" \
+        --prefix PATH : "${execPath}" \
         --argv0 SVPManager
     '';
   };
 in
-svp
+writeShellScriptBin "SVPManager" ''
+  BWRAP=/run/wrappers/bin/bwrap
+  if [ ! -f "$BWRAP" ]; then
+    cat <<EOF
+  Bubblewrap's bwrap binary must be run as SUID to let SVP function normally.
+
+  Add these lines to your configuration.nix:
+
+  security.wrappers.bwrap = {
+    owner = "root";
+    group = "root";
+    setuid = true;
+    setgid = true;
+    source = pkgs.bubblewrap + "/bin/bwrap";
+  };
+  EOF
+    exit 1
+  fi
+
+  blacklist=(/nix /dev /usr /lib /lib64 /proc)
+
+  declare -a auto_mounts
+  # loop through all directories in the root
+  for dir in /*; do
+    # if it is a directory and it is not in the blacklist
+    if [[ -d "$dir" ]] && [[ ! "''${blacklist[@]}" =~ "$dir" ]]; then
+      # add it to the mount list
+      auto_mounts+=(--bind "$dir" "$dir")
+    fi
+  done
+
+  cmd=(
+    $BWRAP
+    --dev-bind /dev /dev
+    --chdir "$(pwd)"
+    --die-with-parent
+    --ro-bind /nix /nix
+    --proc /proc
+    --bind ${glibc}/lib /lib
+    --bind ${glibc}/lib /lib64
+    --bind /usr/bin/env /usr/bin/env
+    --bind ${lsof}/bin/lsof /usr/bin/lsof
+    "''${auto_mounts[@]}"
+    # /bin/sh
+    ${svp}/bin/SVPManager "$@"
+  )
+  exec "''${cmd[@]}"
+''
