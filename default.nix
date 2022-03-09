@@ -65,5 +65,6 @@ rec {
   vs-rife = pkg ./pkgs/vs-rife { };
   wechat-uos = pkg ./pkgs/wechat-uos { };
   wechat-uos-bin = pkg ./pkgs/wechat-uos/official-bin.nix { };
+  wine-wechat = pkg ./pkgs/wine-wechat { };
   xray = pkg ./pkgs/xray { };
 }
