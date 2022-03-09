@@ -64,5 +64,6 @@ rec {
   svp = pkg ./pkgs/svp { };
   vs-rife = pkg ./pkgs/vs-rife { };
   wechat-uos = pkg ./pkgs/wechat-uos { };
+  wechat-uos-bin = pkg ./pkgs/wechat-uos/official-bin.nix { };
   xray = pkg ./pkgs/xray { };
 }

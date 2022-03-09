@@ -57,7 +57,7 @@ let
   '';
 in
 stdenv.mkDerivation {
-  pname = "wechat-uos";
+  pname = "wechat-uos-bin";
   inherit version;
   phases = [ "installPhase" ];
   installPhase = ''
