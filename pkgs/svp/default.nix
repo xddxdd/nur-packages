@@ -14,7 +14,8 @@
 , patchelf
 , pkgs
 , vapoursynth
-, writeShellScriptBin
+, writeShellScript
+, writeText
 , xdg-utils
 , xorg
 , ...
@@ -39,6 +40,11 @@ let
     lsof
     xdg-utils
   ];
+
+  fakeMpv = writeShellScript "mpv" ''
+    ${gnome.zenity}/bin/zenity --error \
+      --text="Currently MPV Vapoursynth doesn't work inside SVP's container. Do not run MPV from SVP; run it from your file manager or application menu."
+  '';
 
   svp = stdenv.mkDerivation rec {
     pname = "svp";
@@ -72,6 +78,12 @@ let
         patchelf --set-rpath "${libPath}" "$F"
       done
 
+      for SIZE in 32 48 64 128; do
+        mkdir -p "$out/share/icons/hicolor/''${SIZE}x''${SIZE}/apps"
+        mv "$out/opt/svp-manager4-''${SIZE}.png" "$out/share/icons/hicolor/''${SIZE}x''${SIZE}/apps/svp-manager4.png"
+      done
+      rm -f $out/opt/{add,remove}-menuitem.sh
+
       mkdir $out/bin
       makeWrapper $out/opt/SVPManager $out/bin/SVPManager \
         --prefix LD_LIBRARY_PATH : "${libPath}" \
@@ -79,52 +91,85 @@ let
         --argv0 SVPManager
     '';
   };
-in
-writeShellScriptBin "SVPManager" ''
-  BWRAP=/run/wrappers/bin/bwrap
-  if [ ! -f "$BWRAP" ]; then
-    cat <<EOF
-  Bubblewrap's bwrap binary must be run as SUID to let SVP function normally.
 
-  Add these lines to your configuration.nix:
+  startScript = writeShellScript "SVPManager" ''
+    BWRAP=/run/wrappers/bin/bwrap
+    if [ ! -f "$BWRAP" ]; then
+      cat <<EOF
+    Bubblewrap's bwrap binary must be run as SUID to let SVP function normally.
 
-  security.wrappers.bwrap = {
-    owner = "root";
-    group = "root";
-    setuid = true;
-    setgid = true;
-    source = pkgs.bubblewrap + "/bin/bwrap";
-  };
-  EOF
-    exit 1
-  fi
+    Add these lines to your configuration.nix:
 
-  blacklist=(/nix /dev /usr /lib /lib64 /proc)
-
-  declare -a auto_mounts
-  # loop through all directories in the root
-  for dir in /*; do
-    # if it is a directory and it is not in the blacklist
-    if [[ -d "$dir" ]] && [[ ! "''${blacklist[@]}" =~ "$dir" ]]; then
-      # add it to the mount list
-      auto_mounts+=(--bind "$dir" "$dir")
+    security.wrappers.bwrap = {
+      owner = "root";
+      group = "root";
+      setuid = true;
+      setgid = true;
+      source = pkgs.bubblewrap + "/bin/bwrap";
+    };
+    EOF
+      exit 1
     fi
-  done
 
-  cmd=(
-    $BWRAP
-    --dev-bind /dev /dev
-    --chdir "$(pwd)"
-    --die-with-parent
-    --ro-bind /nix /nix
-    --proc /proc
-    --bind ${glibc}/lib /lib
-    --bind ${glibc}/lib /lib64
-    --bind /usr/bin/env /usr/bin/env
-    --bind ${lsof}/bin/lsof /usr/bin/lsof
-    "''${auto_mounts[@]}"
-    # /bin/sh
-    ${svp}/bin/SVPManager "$@"
-  )
-  exec "''${cmd[@]}"
-''
+    blacklist=(/nix /dev /usr /lib /lib64 /proc)
+
+    declare -a auto_mounts
+    # loop through all directories in the root
+    for dir in /*; do
+      # if it is a directory and it is not in the blacklist
+      if [[ -d "$dir" ]] && [[ ! "''${blacklist[@]}" =~ "$dir" ]]; then
+        # add it to the mount list
+        auto_mounts+=(--bind "$dir" "$dir")
+      fi
+    done
+
+    cmd=(
+      $BWRAP
+      --dev-bind /dev /dev
+      --chdir "$(pwd)"
+      --die-with-parent
+      --ro-bind /nix /nix
+      --proc /proc
+      --bind ${glibc}/lib /lib
+      --bind ${glibc}/lib /lib64
+      --bind /usr/bin/env /usr/bin/env
+      --bind ${lsof}/bin/lsof /usr/bin/lsof
+      --symlink ${fakeMpv} /usr/bin/mpv
+      "''${auto_mounts[@]}"
+      # /bin/sh
+      ${svp}/bin/SVPManager "$@"
+    )
+    exec "''${cmd[@]}"
+  '';
+
+  desktopFile = writeText "svp-manager4.desktop" ''
+    [Desktop Entry]
+    Version=1.0
+    Encoding=UTF-8
+    Name=SVP 4 Linux
+    GenericName=Real time frame interpolation
+    Type=Application
+    Categories=Multimedia;AudioVideo;Player;Video;
+    Terminal=false
+    StartupNotify=true
+    Exec=${startScript}
+    Icon=svp-manager4.png
+  '';
+in
+stdenv.mkDerivation {
+  inherit (svp) pname version;
+  phases = [ "installPhase" ];
+  installPhase = ''
+    mkdir -p $out/bin $out/share/applications
+    ln -s ${startScript} $out/bin/SVPManager
+    ln -s ${desktopFile} $out/share/applications/svp-manager4.desktop
+    ln -s ${svp}/share/icons $out/share/icons
+  '';
+
+  meta = with lib; {
+    description = "SmoothVideo Project 4 (SVP4)";
+    homepage = "https://www.svp-team.com/wiki/SVP:Linux";
+    platforms = [ "x86_64-linux" ];
+    license = licenses.unfree;
+  };
+}
