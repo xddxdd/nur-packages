@@ -41,5 +41,7 @@
         };
         inherit inputs;
       };
+
+      nixosModules = import ./modules;
     };
 }
