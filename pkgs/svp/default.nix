@@ -21,6 +21,15 @@
 , ...
 }:
 
+################################################################################
+# Based on svp package from AUR:
+# https://aur.archlinux.org/packages/svp
+#
+# Known issues:
+# - MPV started by SVP doesn't work
+# - NVIDIA Optical Flow doesn't work
+################################################################################
+
 let
   libPath = lib.makeLibraryPath [
     libsForQt5.qtbase
