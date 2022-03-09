@@ -5,19 +5,34 @@
 , p7zip
 , lib
 , steam
+, mpv-unwrapped
+, vapoursynth
+, vapoursynth-mvtools
 , ...
 }:
 
 let
+  mpvWithVapourSynth = mpv-unwrapped.override {
+    vapoursynthSupport = true;
+  };
+
   steam-run = (steam.override {
     extraLibraries = p: with p; [
       libsForQt5.qtbase
       libsForQt5.qtdeclarative
+      libsForQt5.qtscript
+      libsForQt5.qtsvg
+      libmediainfo
+      libusb1
       xorg.libX11
       stdenv.cc.cc.lib
+      ocl-icd
     ];
     extraPkgs = p: with p; [
       gnome.zenity
+      mpvWithVapourSynth
+      lsof
+      xdg-utils
     ];
     runtimeOnly = true;
   }).run;
@@ -31,6 +46,7 @@ let
     };
 
     nativeBuildInputs = [ p7zip makeWrapper ];
+    dontFixup = true;
 
     unpackPhase = ''
       tar xf ${src}
@@ -53,7 +69,6 @@ let
       mkdir -p $out/bin
       makeWrapper ${steam-run}/bin/steam-run $out/bin/SVPManager \
         --add-flags $out/opt/SVPManager \
-        --unset LD_LIBRARY_PATH \
         --argv0 SVPManager
     '';
   };
