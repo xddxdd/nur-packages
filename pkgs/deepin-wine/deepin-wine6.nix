@@ -14,6 +14,53 @@ let
   deps-i386 = callPackage ./deps-i386.nix { };
   wrapper = callPackage ./wrapper.nix { };
 
+  gecko-i386 = stdenv.mkDerivation rec {
+    pname = "wine-gecko-i386";
+    version = "2.47.2";
+    src = fetchurl {
+      url = "http://dl.winehq.org/wine/wine-gecko/${version}/wine-gecko-${version}-x86.tar.xz";
+      sha256 = "157akz7kqg6aja2a5rq096h3v2h39sxkwkj1xnzb1chh47m4dawg";
+    };
+    passthru.geckoDir = "wine-gecko-${version}-x86";
+
+    phases = [ "installPhase" ];
+    installPhase = ''
+      mkdir -p $out
+      tar xf ${src} -C $out
+    '';
+  };
+
+  gecko-amd64 = stdenv.mkDerivation rec {
+    pname = "wine-gecko-amd64";
+    version = "2.47.2";
+    src = fetchurl {
+      url = "http://dl.winehq.org/wine/wine-gecko/${version}/wine-gecko-${version}-x86_64.tar.xz";
+      sha256 = "051hqc5k2shczbia2bdvsb2j7xjz6m7x7glqv9hk9wn3lh36fixl";
+    };
+    passthru.geckoDir = "wine-gecko-${version}-x86_64";
+
+    phases = [ "installPhase" ];
+    installPhase = ''
+      mkdir -p $out
+      tar xf ${src} -C $out
+    '';
+  };
+
+  gecko = stdenv.mkDerivation rec {
+    pname = "wine-gecko";
+    version = "2.47.2";
+    src = fetchurl {
+      url = "http://dl.winehq.org/wine/wine-gecko/${version}/wine-gecko-${version}-x86.tar.xz";
+      sha256 = "157akz7kqg6aja2a5rq096h3v2h39sxkwkj1xnzb1chh47m4dawg";
+    };
+    dontUnpack = true;
+    installPhase = ''
+      mkdir -p $out
+      tar xf ${src} -C $out
+    '';
+    passthru.geckoDir = "wine-gecko-${version}-x86_64";
+  };
+
   deepin-wine6-stable-i386 = pkgsi686Linux.stdenv.mkDerivation rec {
     pname = "deepin-wine6-stable-i386";
     inherit version;
@@ -82,6 +129,11 @@ let
 
       cp -r ${deepin-wine6-stable-i386}/* $out/
       cp -r ${deepin-wine6-stable-amd64}/* $out/
+
+      rm -rf $out/opt/deepin-wine6-stable/share/wine/gecko
+      mkdir -p $out/opt/deepin-wine6-stable/share/wine/gecko
+      ln -sf ${gecko-i386}/${gecko-i386.geckoDir} $out/opt/deepin-wine6-stable/share/wine/gecko/${gecko-i386.geckoDir}
+      ln -sf ${gecko-amd64}/${gecko-amd64.geckoDir} $out/opt/deepin-wine6-stable/share/wine/gecko/${gecko-amd64.geckoDir}
     '';
   };
 in
