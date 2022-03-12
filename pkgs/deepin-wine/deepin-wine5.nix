@@ -10,11 +10,8 @@
 let
   version = "5.0.34-1";
 
-  deepin-udis86 = pkgsi686Linux.callPackage ./deepin-udis86 { };
-  libpcap0_8 = callPackage ./libpcap0_8 { };
-  libpcap0_8-i386 = pkgsi686Linux.callPackage ./libpcap0_8 { };
-  vkd3d = callPackage ./vkd3d { };
-  vkd3d-i386 = pkgsi686Linux.callPackage ./vkd3d { };
+  deps-amd64 = callPackage ./deps-amd64.nix { };
+  deps-i386 = callPackage ./deps-i386.nix { };
   wrapper = callPackage ./wrapper.nix { };
 
   deepin-wine5-stable-i386 = pkgsi686Linux.stdenv.mkDerivation rec {
@@ -26,34 +23,10 @@ let
     };
 
     nativeBuildInputs = [ autoPatchelfHook ];
-    buildInputs = (with pkgsi686Linux; [
-      alsa-lib
-      atk
-      cairo
-      gdk-pixbuf
-      glib
-      gst_all_1.gst-plugins-base
-      gtk3
-      lcms2
-      libgphoto2
-      libpulseaudio
-      libusb
-      mpg123
-      ocl-icd
-      openal
-      openldap
-      pango
-      udev
-      xml2
-      xorg.libX11
-      xorg.libXext
-    ]) ++ [
-      deepin-udis86
-      libpcap0_8-i386
-      vkd3d-i386
-    ];
+    buildInputs = deps-i386;
 
     dontUnpack = true;
+    dontPatchELF = true;
     dontStrip = true;
     installPhase = ''
       mkdir -p $out
@@ -73,33 +46,10 @@ let
     };
 
     nativeBuildInputs = [ autoPatchelfHook ];
-    buildInputs = (with pkgs; [
-      alsa-lib
-      atk
-      cairo
-      gdk-pixbuf
-      glib
-      gst_all_1.gst-plugins-base
-      gtk3
-      lcms2
-      libgphoto2
-      libpulseaudio
-      libusb
-      mpg123
-      ocl-icd
-      openal
-      openldap
-      pango
-      udev
-      xml2
-      xorg.libX11
-      xorg.libXext
-    ]) ++ [
-      libpcap0_8
-      vkd3d
-    ];
+    buildInputs = deps-amd64;
 
     dontUnpack = true;
+    dontPatchELF = true;
     dontStrip = true;
     installPhase = ''
       mkdir -p $out
@@ -121,6 +71,7 @@ let
     nativeBuildInputs = [ autoPatchelfHook ];
 
     dontUnpack = true;
+    dontPatchELF = true;
     dontStrip = true;
     installPhase = ''
       mkdir -p $out
@@ -137,5 +88,6 @@ in
 wrapper {
   pname = "deepin-wine5-stable";
   inherit version;
+  deps = deps-amd64 ++ deps-i386;
   path = deepin-wine5-stable;
 }

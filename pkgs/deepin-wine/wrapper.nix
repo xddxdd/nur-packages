@@ -7,15 +7,9 @@
 , ...
 }:
 
-{ pname, version, path, meta ? { } }:
+{ pname, version, path, deps, meta ? { } }:
 let
-  libPath = lib.makeLibraryPath ((with pkgsi686Linux; [
-    freetype
-    ncurses
-  ]) ++ (with pkgs; [
-    freetype
-    ncurses
-  ]));
+  libPath = lib.makeLibraryPath deps;
 
   wrap = binName: writeShellScript "deepin-wine" ''
     blacklist=(/nix /dev /lib /lib64 /proc)
