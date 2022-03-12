@@ -36,6 +36,9 @@ let
 
     cmd=(
       ${bubblewrap}/bin/bwrap
+      --unshare-pid
+      --unshare-uts
+      --unshare-cgroup
       --dev-bind /dev /dev
       --chdir "$(pwd)"
       --die-with-parent
