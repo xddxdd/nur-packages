@@ -79,12 +79,12 @@
         "cargoLock": null,
         "name": "v2fly-geosite",
         "src": {
-            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220228085735/dlc.dat",
+            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220310015105/dlc.dat",
             "name": null,
             "type": "url",
-            "sha256": "sha256-fkp2LzxYQ6FJXPuk1X51AAV3TEAGn6lnuXdjwtVlk40="
+            "sha256": "sha256-x9nuEeQV/72EWOLLlxbup6IgowI9HbNdhOR9M7H0zXI="
         },
-        "version": "20220228085735",
+        "version": "20220310015105",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -159,6 +159,26 @@
         "extract": null,
         "rustGitDeps": null
     },
+    "netns-exec": {
+        "pinned": false,
+        "cargoLock": null,
+        "name": "netns-exec",
+        "src": {
+            "deepClone": false,
+            "owner": "pekman",
+            "name": null,
+            "repo": "netns-exec",
+            "type": "github",
+            "sha256": "sha256-CnIgzRb58KIvdx7T9LpervSB2Ol6JMxmSM/Ti3K1+Dg=",
+            "rev": "aa346fd058d47b238ae1b86250f414bcab2e7927",
+            "leaveDotGit": false,
+            "fetchSubmodules": true
+        },
+        "version": "aa346fd058d47b238ae1b86250f414bcab2e7927",
+        "passthru": null,
+        "extract": null,
+        "rustGitDeps": null
+    },
     "noise-suppression-for-voice": {
         "pinned": false,
         "cargoLock": null,
@@ -219,12 +239,12 @@
         "cargoLock": null,
         "name": "rime-zhwiki",
         "src": {
-            "url": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.3/zhwiki-20220226.dict.yaml",
+            "url": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.3/zhwiki-20220312.dict.yaml",
             "name": null,
             "type": "url",
-            "sha256": "sha256-nxiikYABN3i9Uj2DCgdOU3YVwc0lBRzw/XN7adWP1T4="
+            "sha256": "sha256-ljV+v7r3tWdFhBN3ozq/fAxbMrTBRJgTZuJwdv52MCE="
         },
-        "version": "20220226",
+        "version": "20220312",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -289,12 +309,12 @@
         "cargoLock": null,
         "name": "v2fly-private",
         "src": {
-            "url": "https://github.com/v2fly/geoip/releases/download/202202240036/private.dat",
+            "url": "https://github.com/v2fly/geoip/releases/download/202203100039/private.dat",
             "name": null,
             "type": "url",
             "sha256": "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg="
         },
-        "version": "202202240036",
+        "version": "202203100039",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null
@@ -339,12 +359,12 @@
         "cargoLock": null,
         "name": "v2fly-geoip",
         "src": {
-            "url": "https://github.com/v2fly/geoip/releases/download/202202240036/geoip.dat",
+            "url": "https://github.com/v2fly/geoip/releases/download/202203100039/geoip.dat",
             "name": null,
             "type": "url",
-            "sha256": "sha256-Gz5f1THshARPwokhWYPfcxu6eC3pQyEtPygowzRcYeo="
+            "sha256": "sha256-dTKq31vaXivBuaEAZiAiQF8Z1hJFons6zpqYLKAkK8k="
         },
-        "version": "202202240036",
+        "version": "202203100039",
         "passthru": null,
         "extract": null,
         "rustGitDeps": null

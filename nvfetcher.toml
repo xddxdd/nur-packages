@@ -26,6 +26,11 @@ fetch.url = "https://github.com/netbootxyz/netboot.xyz/releases/download/$ver/ne
 src.github = "netbootxyz/netboot.xyz"
 fetch.url = "https://github.com/netbootxyz/netboot.xyz/releases/download/$ver/netboot.xyz.lkrn"
 
+[netns-exec]
+src.git = "https://github.com/pekman/netns-exec.git"
+fetch.github = "pekman/netns-exec"
+git.fetchSubmodules = true
+
 [noise-suppression-for-voice]
 src.github = "werman/noise-suppression-for-voice"
 fetch.github = "werman/noise-suppression-for-voice"

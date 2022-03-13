@@ -46,6 +46,7 @@ rec {
   linux-xanmod-lantian = pkg ./pkgs/linux-xanmod-lantian { };
   linux-xanmod-lantian-config = linux-xanmod-lantian.configfile;
   netboot-xyz = pkg ./pkgs/netboot-xyz { };
+  netns-exec = pkg ./pkgs/netns-exec { };
   noise-suppression-for-voice = pkg ./pkgs/noise-suppression-for-voice { };
   onepush = pkg ./pkgs/onepush { };
   openresty-lantian = pkg ./pkgs/openresty-lantian {
