@@ -23,6 +23,7 @@ rec {
   };
   chmlib-utils = pkg ./pkgs/chmlib-utils { };
   coredns = pkg ./pkgs/coredns { };
+  dingtalk = pkg ./pkgs/dingtalk { };
   dngzwxdq = pkg ./pkgs/dngzwxdq {
     inherit chmlib-utils;
   };
