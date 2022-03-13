@@ -19,6 +19,7 @@ let
 in
 rec {
   babeld = pkg ./babeld { };
+  baidunetdisk = pkg ./baidunetdisk { };
   bird-lg-go = pkg ./bird-lg-go { };
   bird-lgproxy-go = pkg ./bird-lgproxy-go { };
   boringssl-oqs = pkg ./boringssl-oqs {
