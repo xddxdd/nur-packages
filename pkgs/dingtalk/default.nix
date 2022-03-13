@@ -1,12 +1,16 @@
 { stdenv
 , fetchurl
 , writeShellScript
-, autoPatchelfHook
 , steam
 , lib
 , pkgs
 , ...
 } @ args:
+
+################################################################################
+# Mostly based on dingtalk-bin package from AUR:
+# https://aur.archlinux.org/packages/dingtalk-bin
+################################################################################
 
 let
   version = "1.3.0.20214";
@@ -26,23 +30,44 @@ let
     installPhase = ''
       mkdir -p $out
       tar xf data.tar.xz -C $out
-      mv $out/usr/* $out/
-      rm -rf $out/usr
+      mv $out/opt/apps/com.alibabainc.dingtalk/files/*-Release.* $out/release
+      rm -rf $out/opt $out/usr
+
+      # Cleanup
+      rm -rf $out/release/libgtk-x11-2.0.so.*
+      rm -rf $out/release/libm.so.6
+      rm -rf $out/release/Resources/{i18n/tool/*.exe,qss/mac}
     '';
   };
 
   steam-run = (steam.override {
-    extraPkgs = p: [ resource ];
+    extraPkgs = p: [ resource ] ++ (with p; [
+      gnutls
+    ]);
     runtimeOnly = true;
   }).run;
 
-  startScript = writeShellScript "baidunetdisk" ''
-    export LD_PRELOAD=${pkgs.sqlcipher}/lib/libsqlcipher.so
-    export LD_LIBRARY_PATH="${resource}/lib:''${LD_LIBRARY_PATH}"
-    ${pkgs.electron}/bin/electron \
-      --no-sandbox \
-      ${resource}/resources/app.asar
+  startScript = writeShellScript "dingtalk" ''
+    ${steam-run}/bin/steam-run \
+      /bin/sh -c \
+      "cd ${resource}/release && ./com.alibabainc.dingtalk"
   '';
 in
-resource
-# startScript
+stdenv.mkDerivation {
+  pname = "dingtalk";
+  inherit version;
+  phases = [ "installPhase" ];
+  installPhase = ''
+    mkdir -p $out/bin $out/share/applications $out/share/pixmaps
+    ln -s ${startScript} $out/bin/dingtalk
+    ln -s ${./dingtalk.desktop} $out/share/applications/dingtalk.desktop
+    ln -s ${./dingtalk.png} $out/share/pixmaps/dingtalk.png
+  '';
+
+  meta = with lib; {
+    description = "钉钉";
+    homepage = "https://www.dingtalk.com/";
+    platforms = [ "x86_64-linux" ];
+    license = licenses.unfreeRedistributable;
+  };
+}
