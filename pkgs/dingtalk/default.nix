@@ -1,6 +1,7 @@
 { stdenv
 , fetchurl
 , autoPatchelfHook
+, makeWrapper
 , writeShellScript
 , lib
 , pkgs
@@ -59,54 +60,54 @@ let
     xorg.libXt
     xorg.libXtst
   ];
-
-  resource = stdenv.mkDerivation rec {
-    pname = "dingtalk-resource";
-    inherit version;
-    src = fetchurl {
-      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_${version}_amd64.deb";
-      sha256 = "1j1fikyp3van1b8d41viyll12pj2m0w8zm2y5szsbsq7vjsi1xda";
-    };
-
-    nativeBuildInputs = [ autoPatchelfHook ];
-    buildInputs = libraries;
-
-    unpackPhase = ''
-      ar x ${src}
-    '';
-
-    installPhase = ''
-      mkdir -p $out
-      tar xf data.tar.xz -C $out
-      mv $out/opt/apps/com.alibabainc.dingtalk/files/version $out/
-      mv $out/opt/apps/com.alibabainc.dingtalk/files/*-Release.* $out/release
-      rm -rf $out/opt $out/usr
-
-      # Cleanup
-      mkdir $out/lib
-      mv $out/release/*.so $out/release/*.so.* $out/lib/
-      rm -f $out/lib/libgtk-x11-2.0.so.*
-      rm -f $out/lib/libm.so.*
-      for F in $out/lib/*; do
-        ln -sf $F $out/release/$(basename $F)
-      done
-      rm -rf $out/release/Resources/{i18n/tool/*.exe,qss/mac}
-    '';
+in
+stdenv.mkDerivation rec {
+  pname = "dingtalk-resource";
+  inherit version;
+  src = fetchurl {
+    url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_${version}_amd64.deb";
+    sha256 = "1j1fikyp3van1b8d41viyll12pj2m0w8zm2y5szsbsq7vjsi1xda";
   };
 
-  startScript = writeShellScript "dingtalk" ''
-    cd ${resource}/release
-    export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath libraries}:''${LD_LIBRARY_PATH}"
-    ./com.alibabainc.dingtalk
+  nativeBuildInputs = [ autoPatchelfHook makeWrapper ];
+  buildInputs = libraries;
+
+  unpackPhase = ''
+    ar x ${src}
+    tar xf data.tar.xz
+
+    mv opt/apps/com.alibabainc.dingtalk/files/version version
+    mv opt/apps/com.alibabainc.dingtalk/files/*-Release.* release
+
+    # Cleanup
+    rm -rf release/Resources/{i18n/tool/*.exe,qss/mac}
+    rm -f release/{*.a,*.la,*.prl}
+    rm -f release/dingtalk_updater
+    rm -f release/libgtk-x11-2.0.so.*
+    rm -f release/libm.so.*
   '';
-in
-stdenv.mkDerivation {
-  pname = "dingtalk";
-  inherit version;
-  phases = [ "installPhase" ];
+
   installPhase = ''
-    mkdir -p $out/bin $out/share/applications $out/share/pixmaps
-    ln -s ${startScript} $out/bin/dingtalk
+    mkdir -p $out
+    mv version release $out/
+
+    # Move libraries
+    # DingTalk relies on (some of) the exact libraries it ships with
+    mkdir $out/lib
+    mv $out/release/*.so $out/release/*.so.* $out/lib/
+    for F in $out/lib/*; do
+      ln -sf $F $out/release/$(basename $F)
+    done
+
+    # Entrypoint
+    mkdir -p $out/bin
+    makeWrapper $out/release/com.alibabainc.dingtalk $out/bin/dingtalk \
+      --argv0 "com.alibabainc.dingtalk" \
+      --run "cd $out/release" \
+      --prefix LD_LIBRARY_PATH : "${pkgs.lib.makeLibraryPath libraries}"
+
+    # App Menu
+    mkdir -p $out/share/applications $out/share/pixmaps
     ln -s ${./dingtalk.desktop} $out/share/applications/dingtalk.desktop
     ln -s ${./dingtalk.png} $out/share/pixmaps/dingtalk.png
   '';
