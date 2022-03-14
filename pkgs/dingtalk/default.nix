@@ -2,9 +2,34 @@
 , fetchurl
 , autoPatchelfHook
 , makeWrapper
-, writeShellScript
 , lib
-, pkgs
+  # DingTalk dependencies
+, alsa-lib
+, at-spi2-atk
+, at-spi2-core
+, cairo
+, cups
+, dbus
+, e2fsprogs
+, gdk-pixbuf
+, glib
+, gnutls
+, graphite2
+, gtk2
+, libdrm
+, libgcrypt
+, libGLU
+, libpulseaudio
+, libthai
+, libxkbcommon
+, mesa_drivers
+, nspr
+, nss
+, openldap
+, rtmpdump
+, udev
+, util-linux
+, xorg
 , ...
 } @ args:
 
@@ -16,7 +41,7 @@
 let
   version = "1.3.0.20214";
 
-  libraries = with pkgs; [
+  libraries = [
     alsa-lib
     at-spi2-atk
     at-spi2-core
@@ -104,7 +129,7 @@ stdenv.mkDerivation rec {
     makeWrapper $out/release/com.alibabainc.dingtalk $out/bin/dingtalk \
       --argv0 "com.alibabainc.dingtalk" \
       --run "cd $out/release" \
-      --prefix LD_LIBRARY_PATH : "${pkgs.lib.makeLibraryPath libraries}"
+      --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath libraries}"
 
     # App Menu
     mkdir -p $out/share/applications $out/share/pixmaps
