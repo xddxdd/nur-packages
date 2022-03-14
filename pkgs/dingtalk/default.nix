@@ -1,7 +1,7 @@
 { stdenv
 , fetchurl
+, autoPatchelfHook
 , writeShellScript
-, steam
 , lib
 , pkgs
 , ...
@@ -15,6 +15,51 @@
 let
   version = "1.3.0.20214";
 
+  libraries = with pkgs; [
+    alsa-lib
+    at-spi2-atk
+    at-spi2-core
+    cairo
+    cups
+    dbus
+    e2fsprogs
+    gdk-pixbuf
+    glib
+    gnutls
+    graphite2
+    gtk2
+    libdrm
+    libgcrypt
+    libGLU
+    libpulseaudio
+    libthai
+    libxkbcommon
+    mesa_drivers
+    nspr
+    nss
+    openldap
+    rtmpdump
+    udev
+    util-linux
+    xorg.libICE
+    xorg.libSM
+    xorg.libX11
+    xorg.libxcb
+    xorg.libXcomposite
+    xorg.libXcursor
+    xorg.libXdamage
+    xorg.libXext
+    xorg.libXfixes
+    xorg.libXi
+    xorg.libXinerama
+    xorg.libXmu
+    xorg.libXrandr
+    xorg.libXrender
+    xorg.libXScrnSaver
+    xorg.libXt
+    xorg.libXtst
+  ];
+
   resource = stdenv.mkDerivation rec {
     pname = "dingtalk-resource";
     inherit version;
@@ -23,6 +68,9 @@ let
       sha256 = "1j1fikyp3van1b8d41viyll12pj2m0w8zm2y5szsbsq7vjsi1xda";
     };
 
+    nativeBuildInputs = [ autoPatchelfHook ];
+    buildInputs = libraries;
+
     unpackPhase = ''
       ar x ${src}
     '';
@@ -30,27 +78,26 @@ let
     installPhase = ''
       mkdir -p $out
       tar xf data.tar.xz -C $out
+      mv $out/opt/apps/com.alibabainc.dingtalk/files/version $out/
       mv $out/opt/apps/com.alibabainc.dingtalk/files/*-Release.* $out/release
       rm -rf $out/opt $out/usr
 
       # Cleanup
-      rm -rf $out/release/libgtk-x11-2.0.so.*
-      rm -rf $out/release/libm.so.6
+      mkdir $out/lib
+      mv $out/release/*.so $out/release/*.so.* $out/lib/
+      rm -f $out/lib/libgtk-x11-2.0.so.*
+      rm -f $out/lib/libm.so.*
+      for F in $out/lib/*; do
+        ln -sf $F $out/release/$(basename $F)
+      done
       rm -rf $out/release/Resources/{i18n/tool/*.exe,qss/mac}
     '';
   };
 
-  steam-run = (steam.override {
-    extraPkgs = p: [ resource ] ++ (with p; [
-      gnutls
-    ]);
-    runtimeOnly = true;
-  }).run;
-
   startScript = writeShellScript "dingtalk" ''
-    ${steam-run}/bin/steam-run \
-      /bin/sh -c \
-      "cd ${resource}/release && ./com.alibabainc.dingtalk"
+    cd ${resource}/release
+    export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath libraries}:''${LD_LIBRARY_PATH}"
+    ./com.alibabainc.dingtalk
   '';
 in
 stdenv.mkDerivation {
