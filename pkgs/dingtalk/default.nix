@@ -87,7 +87,7 @@ let
   ];
 in
 stdenv.mkDerivation rec {
-  pname = "dingtalk-resource";
+  pname = "dingtalk";
   inherit version;
   src = fetchurl {
     url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_${version}_amd64.deb";
@@ -114,21 +114,16 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out
-    mv version release $out/
+    mv version $out/
 
     # Move libraries
     # DingTalk relies on (some of) the exact libraries it ships with
-    mkdir $out/lib
-    mv $out/release/*.so $out/release/*.so.* $out/lib/
-    for F in $out/lib/*; do
-      ln -sf $F $out/release/$(basename $F)
-    done
+    mv release $out/lib
 
     # Entrypoint
     mkdir -p $out/bin
-    makeWrapper $out/release/com.alibabainc.dingtalk $out/bin/dingtalk \
+    makeWrapper $out/lib/com.alibabainc.dingtalk $out/bin/dingtalk \
       --argv0 "com.alibabainc.dingtalk" \
-      --run "cd $out/release" \
       --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath libraries}"
 
     # App Menu
