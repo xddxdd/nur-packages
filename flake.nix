@@ -2,11 +2,6 @@
   description = "My personal NUR repository";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    flake-compat = {
-      url = github:edolstra/flake-compat;
-      flake = false;
-    };
-
     hath-nix.url = github:poscat0x04/hath-nix;
     keycloak-lantian = {
       url = "git+https://git.lantian.pub/lantian/keycloak-lantian.git";

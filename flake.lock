@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "flake-compat": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1641205782,
-        "narHash": "sha256-4jY7RCWUoZ9cKD8co0/4tFARpWB+57+r1bLLvXNJliY=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "b7547d3eed6f32d06102ead8991ec52ab0a4f1a7",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "type": "github"
-      }
-    },
     "hath-nix": {
       "locked": {
         "lastModified": 1623558647,
@@ -69,7 +53,6 @@
     },
     "root": {
       "inputs": {
-        "flake-compat": "flake-compat",
         "hath-nix": "hath-nix",
         "keycloak-lantian": "keycloak-lantian",
         "nixpkgs": "nixpkgs"

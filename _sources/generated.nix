@@ -180,37 +180,37 @@
   };
   v2fly-geoip = {
     pname = "v2fly-geoip";
-    version = "202203100039";
+    version = "202203170039";
     src = fetchurl {
-      url = "https://github.com/v2fly/geoip/releases/download/202203100039/geoip.dat";
-      sha256 = "sha256-dTKq31vaXivBuaEAZiAiQF8Z1hJFons6zpqYLKAkK8k=";
+      url = "https://github.com/v2fly/geoip/releases/download/202203170039/geoip.dat";
+      sha256 = "sha256-EsGD3vvAUua9lusIin+VX506YtZiAJ1ftj2gQOlU5sg=";
     };
   };
   v2fly-geosite = {
     pname = "v2fly-geosite";
-    version = "20220310015105";
+    version = "20220313173740";
     src = fetchurl {
-      url = "https://github.com/v2fly/domain-list-community/releases/download/20220310015105/dlc.dat";
-      sha256 = "sha256-x9nuEeQV/72EWOLLlxbup6IgowI9HbNdhOR9M7H0zXI=";
+      url = "https://github.com/v2fly/domain-list-community/releases/download/20220313173740/dlc.dat";
+      sha256 = "sha256-ha5EQ6QZLA/0x1noqVnawC+sNii+YlMZOcyQWcMoWtA=";
     };
   };
   v2fly-private = {
     pname = "v2fly-private";
-    version = "202203100039";
+    version = "202203170039";
     src = fetchurl {
-      url = "https://github.com/v2fly/geoip/releases/download/202203100039/private.dat";
+      url = "https://github.com/v2fly/geoip/releases/download/202203170039/private.dat";
       sha256 = "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg=";
     };
   };
   xray = {
     pname = "xray";
-    version = "v1.5.3";
+    version = "v1.5.4";
     src = fetchFromGitHub ({
       owner = "XTLS";
       repo = "Xray-core";
-      rev = "v1.5.3";
+      rev = "v1.5.4";
       fetchSubmodules = false;
-      sha256 = "sha256-lpBsQ1gvQk4NLSslDYqNicRogmD794Hud3UBvUwbExQ=";
+      sha256 = "sha256-hhfR38TqQPSQBWkP/1Cztc6/I0Ct4K3t7yfX6ZsWERk=";
     });
   };
 }

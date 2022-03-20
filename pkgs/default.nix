@@ -6,7 +6,10 @@
 # commands such as:
 #     nix-build -A mypackage
 
-{ pkgs, inputs, ... }:
+{ pkgs ? import <nixpkgs> { }
+, inputs ? null
+, ...
+}:
 
 let
   sources = pkgs.callPackage ../_sources/generated.nix { };
@@ -37,11 +40,7 @@ rec {
   };
   genshinhelper2 = pkg ./genshinhelper2 { };
   glibc-debian-openvz-files = pkg ./glibc-debian-openvz-files { };
-  hath = pkgs.callPackage "${inputs.hath-nix}/pkgs/hath.nix" { };
   hesuvi-hrir = pkg ./hesuvi-hrir { };
-  keycloak-lantian = pkg ./keycloak-lantian {
-    inherit (inputs) keycloak-lantian;
-  };
   libltnginx = pkg ./libltnginx { };
   liboqs = pkg ./liboqs { };
   linux-xanmod-lantian = pkg ./linux-xanmod-lantian { };
@@ -69,4 +68,9 @@ rec {
   wechat-uos-bin = pkg ./wechat-uos/official-bin.nix { };
   wine-wechat = pkg ./wine-wechat { };
   xray = pkg ./xray { };
-}
+} // (if inputs == null then { } else {
+  hath = pkgs.callPackage "${inputs.hath-nix}/pkgs/hath.nix" { };
+  keycloak-lantian = pkg ./keycloak-lantian {
+    inherit (inputs) keycloak-lantian;
+  };
+})
