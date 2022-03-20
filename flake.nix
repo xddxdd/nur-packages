@@ -2,6 +2,11 @@
   description = "My personal NUR repository";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    flake-compat = {
+      url = github:edolstra/flake-compat;
+      flake = false;
+    };
+
     hath-nix.url = github:poscat0x04/hath-nix;
     keycloak-lantian = {
       url = "git+https://git.lantian.pub/lantian/keycloak-lantian.git";
@@ -24,7 +29,7 @@
     {
       inherit forAllSystems lib;
 
-      packages = forAllSystems (system: import ./default.nix {
+      packages = forAllSystems (system: import ./pkgs {
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
@@ -34,7 +39,7 @@
 
       # Following line doesn't work for infinite recursion
       # overlay = self: super: packages."${super.system}";
-      overlay = self: super: import ./default.nix {
+      overlay = self: super: import ./pkgs {
         pkgs = import nixpkgs {
           inherit (super) system;
           config.allowUnfree = true;
