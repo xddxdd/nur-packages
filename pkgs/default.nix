@@ -75,9 +75,7 @@ rec {
   wechat-kylin = pkg ./wechat-kylin { };
   wechat-uos = pkg ./wechat-uos { };
   wechat-uos-bin = pkg ./wechat-uos/official-bin.nix { };
-  wine-wechat = pkg ./wine-wechat {
-    inherit deepin-wine6;
-  };
+  wine-wechat = pkg ./wine-wechat { };
   xray = pkg ./xray { };
 } // (if inputs == null then { } else {
   hath = pkgs.callPackage "${inputs.hath-nix}/pkgs/hath.nix" { };
