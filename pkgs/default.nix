@@ -34,6 +34,7 @@ rec {
     inherit chmlib-utils;
   };
   drone-vault = pkg ./drone-vault { };
+  fcitx5-breeze = pkg ./fcitx5-breeze { };
   ftp-proxy = pkg ./ftp-proxy { };
   genshin-checkin-helper = pkg ./genshin-checkin-helper {
     inherit genshinhelper2 onepush;
