@@ -46,6 +46,7 @@ rec {
   glauth = pkg ./glauth { };
   glibc-debian-openvz-files = pkg ./glibc-debian-openvz-files { };
   gopherus = pkg ./gopherus { };
+  grasscutter = pkg ./grasscutter { };
   hath = pkg ./hath { };
   hesuvi-hrir = pkg ./hesuvi-hrir { };
   hoyo-glyphs = pkg ./hoyo-glyphs { };
