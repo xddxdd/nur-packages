@@ -1,5 +1,4 @@
-{ isJDK
-, sources
+{ sources
 , ...
 }:
 
@@ -38,11 +37,7 @@ let
   runtimeLibraryPath = lib.makeLibraryPath runtimeDependencies;
 
   result = stdenv.mkDerivation rec {
-    pname =
-      if isJDK
-      then "openj9-ibm-semeru-${builtins.toString thisSource.major_revision}-jdk-bin"
-      else "openj9-ibm-semeru-${builtins.toString thisSource.major_revision}-jre-bin";
-
+    pname = "openj9-ibm-semeru-${thisSource.type}-bin";
     version = thisSource.version;
     src = fetchurl {
       inherit (thisSource) url sha256;
