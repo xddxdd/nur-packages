@@ -132,6 +132,7 @@ rec {
   osdlyrics = pkg ./uncategorized/osdlyrics { };
   phpmyadmin = pkg ./uncategorized/phpmyadmin { };
   phppgadmin = pkg ./uncategorized/phppgadmin { };
+  plangothic-fonts = pkg ./uncategorized/plangothic-fonts { };
   qbittorrent-enhanced-edition = pkg ./uncategorized/qbittorrent-enhanced-edition { };
   qemu-user-static = pkg ./uncategorized/qemu-user-static { };
   qq = pkg ./uncategorized/qq { };
