@@ -77,6 +77,7 @@ rec {
   };
   openj9-ibm-semeru = ifNotCI (pkgs.recurseIntoAttrs (pkg ./openj9-ibm-semeru { }));
   openjdk-adoptium = ifNotCI (pkgs.recurseIntoAttrs (pkg ./openjdk-adoptium { }));
+  plangothic-fonts = pkg ./plangothic-fonts { };
   th-fonts = pkgs.recurseIntoAttrs (pkg ./th-fonts { });
 
   # Other packages
@@ -132,7 +133,6 @@ rec {
   osdlyrics = pkg ./uncategorized/osdlyrics { };
   phpmyadmin = pkg ./uncategorized/phpmyadmin { };
   phppgadmin = pkg ./uncategorized/phppgadmin { };
-  plangothic-fonts = pkg ./uncategorized/plangothic-fonts { };
   qbittorrent-enhanced-edition = pkg ./uncategorized/qbittorrent-enhanced-edition { };
   qemu-user-static = pkg ./uncategorized/qemu-user-static { };
   qq = pkg ./uncategorized/qq { };
