@@ -23,7 +23,7 @@ let
       stdenv' = pkgs.overrideCC llvmPin.stdenv llvmPin.clangUseLLVM;
     in
     stdenv'.override {
-      extraNativeBuildInputs = with llvmPin; [ lld ];
+      extraNativeBuildInputs = [ llvmPin.lld pkgs.patchelf ];
     };
 in
 buildLinux {
