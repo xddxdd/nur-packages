@@ -93,8 +93,12 @@ rec {
   chmlib-utils = pkg ./uncategorized/chmlib-utils { };
   chromium-oqs-bin = pkg ./uncategorized/chromium-oqs-bin { };
   cloudpan189-go = pkg ./uncategorized/cloudpan189-go { };
-  deepspeech-gpu = pkg ./uncategorized/deepspeech-gpu { };
-  deepspeech-wrappers = pkg ./uncategorized/deepspeech-gpu/wrappers.nix { };
+  deepspeech-gpu = pkg ./uncategorized/deepspeech-gpu {
+    inherit (pkgs.linuxPackages_latest) nvidia_x11;
+  };
+  deepspeech-wrappers = pkg ./uncategorized/deepspeech-gpu/wrappers.nix {
+    inherit (pkgs.linuxPackages_latest) nvidia_x11;
+  };
   dingtalk = pkg ./uncategorized/dingtalk { };
   dn42-pingfinder = pkg ./uncategorized/dn42-pingfinder { };
   douban-openapi-server = pkg ./uncategorized/douban-openapi-server {
@@ -144,7 +148,9 @@ rec {
   rime-moegirl = pkg ./uncategorized/rime-moegirl { };
   rime-zhwiki = pkg ./uncategorized/rime-zhwiki { };
   route-chain = pkg ./uncategorized/route-chain { };
-  svp = pkg ./uncategorized/svp { };
+  svp = pkg ./uncategorized/svp {
+    inherit (pkgs.linuxPackages_latest) nvidia_x11;
+  };
   tachidesk-server = pkg ./uncategorized/tachidesk-server { };
   vs-rife = pkg ./uncategorized/vs-rife { };
   wechat-uos = pkg ./uncategorized/wechat-uos { };
