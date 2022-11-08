@@ -51,5 +51,6 @@ buildPythonPackage rec {
     homepage = "https://github.com/mozilla/DeepSpeech";
     license = licenses.mpl20;
     platforms = [ "x86_64-linux" ];
+    broken = true;
   };
 }
