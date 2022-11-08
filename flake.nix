@@ -13,7 +13,7 @@
       lib = nixpkgs.lib;
       eachSystem = flake-utils.lib.eachSystemMap flake-utils.lib.allSystems;
     in
-    rec {
+    {
       inherit eachSystem lib;
 
       packages = eachSystem (system: import ./pkgs {
@@ -35,25 +35,14 @@
       });
 
       # Following line doesn't work for infinite recursion
-      overlay = overlays.default;
-      overlays =
-        let
-          initPkgs = system: import nixpkgs {
-            inherit system;
-            config.allowUnfree = true;
-          };
-        in
-        rec {
-          # default = final: prev: packages."${final.system}";
-          default = final: prev: custom
-            (initPkgs final.system).linuxPackages_latest.nvidia_x11
-            final
-            prev;
-          custom = nvidia_x11: final: prev: import ./pkgs rec {
-            pkgs = initPkgs final.system;
-            inherit inputs nvidia_x11;
-          };
+      # overlay = self: super: packages."${super.system}";
+      overlay = self: super: import ./pkgs {
+        pkgs = import nixpkgs {
+          inherit (super) system;
+          config.allowUnfree = true;
         };
+        inherit inputs;
+      };
 
       apps = eachSystem (system:
         let

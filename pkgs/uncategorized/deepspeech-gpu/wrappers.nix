@@ -2,7 +2,6 @@
 , stdenv
 , fetchurl
 , makeWrapper
-, nvidia_x11
 , ...
 }:
 

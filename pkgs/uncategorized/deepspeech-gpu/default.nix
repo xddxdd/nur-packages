@@ -3,7 +3,7 @@
 { lib
 , python39Packages
 , cudaPackages_10_1
-, nvidia_x11
+, linuxPackages_latest
 , fetchurl
 , autoPatchelfHook
 , stdenv
@@ -19,7 +19,7 @@ let
     cudaPackages_10_1.cudatoolkit.lib
     cudaPackages_10_1.cudatoolkit.out
     cudaPackages_10_1.cudnn_7_6_5
-    nvidia_x11
+    linuxPackages_latest.nvidia_x11
   ];
 in
 buildPythonPackage rec {

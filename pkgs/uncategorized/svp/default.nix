@@ -11,7 +11,7 @@
 , lsof
 , makeWrapper
 , mpv-unwrapped
-, nvidia_x11
+, nvidia_x11 ? null
 , ocl-icd
 , p7zip
 , patchelf
@@ -35,7 +35,7 @@ let
       vapoursynthSupport = true;
     })
     {
-      extraMakeWrapperArgs = [
+      extraMakeWrapperArgs = lib.optionals (nvidia_x11 != null) [
         "--prefix"
         "LD_LIBRARY_PATH"
         ":"
