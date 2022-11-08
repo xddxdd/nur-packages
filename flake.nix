@@ -45,10 +45,12 @@
           };
           inherit inputs;
         };
-        useSystemNvidiaX11 = nvidia_x11: final: prev: {
-          deepspeech-gpu = prev.deepspeech-gpu.override { inherit nvidia_x11; };
-          deepspeech-wrappers = prev.deepspeech-wrappers.override { inherit nvidia_x11; };
-          svp = prev.svp.override { inherit nvidia_x11; };
+        custom = nvidia_x11: final: prev: import ./pkgs {
+          pkgs = import nixpkgs {
+            inherit (prev) system;
+            config.allowUnfree = true;
+          };
+          inherit inputs nvidia_x11;
         };
       };
 
