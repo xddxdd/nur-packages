@@ -45,7 +45,7 @@
           };
           inherit inputs;
         };
-        use-system-nvidia-x11 = nvidia_x11: final: prev: {
+        useSystemNvidiaX11 = nvidia_x11: final: prev: {
           deepspeech-gpu = prev.deepspeech-gpu.override { inherit nvidia_x11; };
           deepspeech-wrappers = prev.deepspeech-wrappers.override { inherit nvidia_x11; };
           svp = prev.svp.override { inherit nvidia_x11; };
@@ -85,6 +85,6 @@
           };
         });
 
-      nixosModules = import ./modules;
+      nixosModules = import ./modules { inherit overlays; };
     };
 }
