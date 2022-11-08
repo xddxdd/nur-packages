@@ -122,6 +122,7 @@ rec {
   netns-exec = pkg ./uncategorized/netns-exec { };
   noise-suppression-for-voice = pkg ./uncategorized/noise-suppression-for-voice { };
   nullfs = pkg ./uncategorized/nullfs { };
+  nvlax = pkg ./uncategorized/nvlax { };
   onepush = pkg ./uncategorized/onepush { };
   openssl-oqs = pkg ./uncategorized/openssl-oqs {
     inherit liboqs;
