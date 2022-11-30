@@ -36,6 +36,10 @@ with lib.kernel;
   FTRACE = yes;
   FTRACE_SYSCALLS = yes;
 
+  # i915 PXP (for i915-sriov-dkms)
+  DRM_I915_PXP = yes;
+  PMIC_OPREGION = yes;
+
   # Ksmbd
   CIFS_SMB_DIRECT = yes;
   CIFS_SWN_UPCALL = yes;
