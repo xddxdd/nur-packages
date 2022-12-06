@@ -13,6 +13,20 @@
         },
         "version": "2.4.1"
     },
+    "an-anime-game-launcher-gtk": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "an-anime-game-launcher-gtk",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-ysHAU01drvnVv4rUxN73zV2G9+1YKzWcuIbY+R0wVVY=",
+            "type": "url",
+            "url": "https://github.com/an-anime-team/an-anime-game-launcher-gtk/releases/download/1.2.1/anime-game-launcher"
+        },
+        "version": "1.2.1"
+    },
     "asterisk-alaw16": {
         "cargoLocks": null,
         "extract": null,

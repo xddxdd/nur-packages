@@ -9,6 +9,14 @@
       sha256 = "sha256-m1jPLTYHzlEZscZtWJ/5jmmYuiArPwefCdybEqECnt0=";
     };
   };
+  an-anime-game-launcher-gtk = {
+    pname = "an-anime-game-launcher-gtk";
+    version = "1.2.1";
+    src = fetchurl {
+      url = "https://github.com/an-anime-team/an-anime-game-launcher-gtk/releases/download/1.2.1/anime-game-launcher";
+      sha256 = "sha256-ysHAU01drvnVv4rUxN73zV2G9+1YKzWcuIbY+R0wVVY=";
+    };
+  };
   asterisk-alaw16 = {
     pname = "asterisk-alaw16";
     version = "3f81697eec6388a3cdf74743a436ef4faea542d6";
