@@ -72,7 +72,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    description = "An Anime Game Launcher variant written on Rust, GTK4 and libadwaita, using Anime Game Core library";
+    description = "(EXPERIMENTAL: Needs manual game patching) An Anime Game Launcher variant written on Rust, GTK4 and libadwaita, using Anime Game Core library";
     homepage = "https://github.com/an-anime-team/an-anime-game-launcher-gtk";
     license = licenses.gpl3;
   };

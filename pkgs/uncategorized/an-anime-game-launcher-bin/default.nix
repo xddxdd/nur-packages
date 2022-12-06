@@ -29,7 +29,7 @@ appimageTools.wrapType2 rec {
   ];
 
   meta = with lib; {
-    description = "An Anime Game launcher for Linux with automatic patching fixing detection of Linux/Wine and telemetry disabling";
+    description = "(EXPERIMENTAL: Needs manual game patching) An Anime Game launcher for Linux with automatic patching fixing detection of Linux/Wine and telemetry disabling";
     homepage = "https://github.com/an-anime-team/an-anime-game-launcher";
     license = licenses.gpl3;
   };
