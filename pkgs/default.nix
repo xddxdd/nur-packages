@@ -84,6 +84,7 @@ rec {
   th-fonts = pkgs.recurseIntoAttrs (pkg ./th-fonts { });
 
   # Other packages
+  an-anime-game-launcher-bin = pkg ./uncategorized/an-anime-game-launcher-bin { };
   asterisk-g72x = pkg ./uncategorized/asterisk-g72x { };
   baidupcs-go = pkg ./uncategorized/baidupcs-go { };
   bilibili = pkg ./uncategorized/bilibili { };
