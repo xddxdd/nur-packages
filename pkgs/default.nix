@@ -152,6 +152,7 @@ rec {
   qbittorrent-enhanced-edition = pkg ./uncategorized/qbittorrent-enhanced-edition { };
   qemu-user-static = pkg ./uncategorized/qemu-user-static { };
   qq = pkg ./uncategorized/qq { };
+  qq-beta = pkg ./uncategorized/qq/beta.nix { };
   qqmusic = pkg ./uncategorized/qqmusic { };
   rime-aurora-pinyin = pkg ./uncategorized/rime-aurora-pinyin { };
   rime-dict = pkg ./uncategorized/rime-dict { };
