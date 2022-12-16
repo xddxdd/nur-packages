@@ -37,7 +37,7 @@ let
   };
 in
 stdenv.mkDerivation rec {
-  pname = "openresty-lantian";
+  pname = "nginx-lantian";
   nginxVersion = "1.21.4";
   version = "${nginxVersion}.1";
   src = fetchzip {
