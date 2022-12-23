@@ -25,8 +25,7 @@ let
         path = if prefix != "" then "${prefix}.${n}" else n;
       in
       if lib.hasPrefix "_" n then [ ]
-      else if shouldRecurseForDerivations v
-      then packageTraverse path v
+      else if shouldRecurseForDerivations v then packageTraverse path v
       else if lib.isDerivation v then {
         inherit path;
         pname = v.pname or n;
