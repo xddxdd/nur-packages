@@ -15,6 +15,26 @@
         "type": "github"
       }
     },
+    "flake-utils-plus": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ]
+      },
+      "locked": {
+        "lastModified": 1657226504,
+        "narHash": "sha256-GIYNjuq4mJlFgqKsZ+YrgzWm0IpA4axA3MCrdKYj7gs=",
+        "owner": "gytis-ivaskevicius",
+        "repo": "flake-utils-plus",
+        "rev": "2bf0f91643c2e5ae38c1b26893ac2927ac9bd82a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gytis-ivaskevicius",
+        "repo": "flake-utils-plus",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1671728284,
@@ -34,6 +54,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "flake-utils-plus": "flake-utils-plus",
         "nixpkgs": "nixpkgs"
       }
     }
