@@ -50,7 +50,7 @@ Or, use variables from this repository in case I change them:
 |  | [dn42-pingfinder](https://git.dn42.dev/dn42/pingfinder/src/branch/master/clients) | 1.0.0 | `dn42-pingfinder` | DN42 Pingfinder |
 |  | [douban-openapi-server](https://github.com/caryyu/douban-openapi-server) | c7e2a0f59ba5cfb2d10a31013547686a4afab99d | `douban-openapi-server` | A Douban API server that provides an unofficial APIs for media information gathering |
 |  | [drone-vault](https://docs.drone.io/configure/secrets/external/vault/) | v1.2.0 | `drone-vault` | Drone plugin for integrating with the Vault secrets manager |
-|  | etherguard | 1356780d7d37ad5c44d3d25d2137be6120b8bf87 | `etherguard` |  |
+|  | [etherguard](https://github.com/KusakabeShi/EtherGuard-VPN) | 1356780d7d37ad5c44d3d25d2137be6120b8bf87 | `etherguard` | Layer2 version of wireguard with Floyd Warshall implement in go |
 |  | [fcitx5-breeze](https://github.com/scratch-er/fcitx5-breeze) | 2.0.0 | `fcitx5-breeze` | Fcitx5 theme to match KDE's Breeze style |
 |  | [flasgger](http://flasgger.pythonanywhere.com/) | 0.9.5 | `flasgger` | Easy OpenAPI specs and Swagger UI for your Flask API |
 |  | [ftp-proxy](http://www.ftpproxy.org/) | 1.2.3 | `ftp-proxy` | ftp.proxy - FTP Proxy Server |
