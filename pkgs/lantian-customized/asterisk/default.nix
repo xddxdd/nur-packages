@@ -58,6 +58,8 @@ in
 
   preBuild = (old.preBuild or "") + ''
     substituteInPlace menuselect.makeopts --replace 'chan_ooh323 ' ""
+
+    export MAKEFLAGS=-j$(nproc)
   '';
 
   postInstall = (old.postInstall or "") + ''
