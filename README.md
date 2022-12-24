@@ -301,6 +301,15 @@ Or, use variables from this repository in case I change them:
 </details>
 
 <details>
+<summary>Package set: plangothic-fonts (2 packages)</summary>
+
+| State | Name | Version | Path | Description |
+| ----- | ---- | ------- | ---- | ----------- |
+|  | [plangothic-fonts-allideo](https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Plangothic) | V0.7.5708 | `plangothic-fonts.allideo` | Plangothic Project |
+|  | [plangothic-fonts-fallback](https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Plangothic) | V0.7.5708 | `plangothic-fonts.fallback` | Plangothic Project |
+</details>
+
+<details>
 <summary>Package set: th-fonts (10 packages)</summary>
 
 | State | Name | Version | Path | Description |
