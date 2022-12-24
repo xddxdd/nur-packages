@@ -47,9 +47,7 @@ mkScope (self: pkg: rec {
   };
 
   # Package groups
-  asteriskDigiumCodecs_19 = pkgs.recurseIntoAttrs (pkg ./asterisk-digium-codecs/19.nix { });
-  asteriskDigiumCodecs_20 = pkgs.recurseIntoAttrs (pkg ./asterisk-digium-codecs/20.nix { });
-  asteriskDigiumCodecs = asteriskDigiumCodecs_19;
+  asteriskDigiumCodecs = pkgs.recurseIntoAttrs (pkg ./asterisk-digium-codecs { });
 
   lantianCustomized = ifNotCI (pkgs.recurseIntoAttrs {
     # Packages with significant customization by Lan Tian
