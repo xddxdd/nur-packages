@@ -127,6 +127,10 @@ src.github_tag = "xanmod/linux"
 src.exclude_regex = "^6\\.1\\.(.*)"
 fetch.github = "xanmod/linux"
 
+[linux-xanmod-unstable]
+src.github_tag = "xanmod/linux"
+fetch.github = "xanmod/linux"
+
 [nbfc-linux-lantian]
 src.git = "https://github.com/xddxdd/nbfc-linux.git"
 fetch.github = "xddxdd/nbfc-linux"
