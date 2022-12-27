@@ -546,11 +546,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.1.1-xanmod1",
-            "sha256": "sha256-cyFbipyN5fq3eq+ioVcV+3gL2Y8qNXdrIq9U29K1DZc=",
+            "rev": "6.0.12-xanmod1",
+            "sha256": "sha256-k3fePBhb2zJfvPupdgenkdqG4sHNu2iv6T01EvOgbCg=",
             "type": "github"
         },
-        "version": "6.1.1-xanmod1"
+        "version": "6.0.12-xanmod1"
     },
     "nbfc-linux-lantian": {
         "cargoLocks": null,
