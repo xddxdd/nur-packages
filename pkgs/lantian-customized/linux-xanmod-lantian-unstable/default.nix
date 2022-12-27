@@ -47,18 +47,18 @@ let
       extraNativeBuildInputs = [ hostLLVM.lld pkgs.patchelf ];
     });
 in
-buildLinux {
+buildLinux rec {
   inherit lib;
   stdenv = if lto then stdenvLLVM else stdenv;
 
   inherit (sources.linux-xanmod-unstable) version src;
   modDirVersion =
     let
-      splitted = lib.splitString "-" sources.linux-xanmod.version;
-      version = builtins.elemAt splitted 0;
-      release = builtins.elemAt splitted 1;
+      splitted = lib.splitString "-" version;
+      ver0 = builtins.elemAt splitted 0;
+      ver1 = builtins.elemAt splitted 1;
     in
-    "${version}-lantian-${release}";
+    "${ver0}-lantian-${ver1}";
 
   structuredExtraConfig =
     let
