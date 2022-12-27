@@ -122,6 +122,10 @@ fetch.github = "xddxdd/libltnginx"
 src.github = "open-quantum-safe/liboqs"
 fetch.github = "open-quantum-safe/liboqs"
 
+[linux-xanmod]
+src.github_tag = "xanmod/linux"
+fetch.github = "xanmod/linux"
+
 [nbfc-linux-lantian]
 src.git = "https://github.com/xddxdd/nbfc-linux.git"
 fetch.github = "xddxdd/nbfc-linux"

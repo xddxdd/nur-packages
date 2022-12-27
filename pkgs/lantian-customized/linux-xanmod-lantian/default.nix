@@ -1,4 +1,5 @@
 { pkgs
+, sources
 , stdenv
 , lib
 , fetchFromGitHub
@@ -9,9 +10,6 @@
 
 # https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/os-specific/linux/kernel/linux-xanmod.nix
 let
-  version = "6.1.0";
-  release = "1";
-
   # https://github.com/NixOS/nixpkgs/pull/129806
   stdenvLLVM =
     let
@@ -27,18 +25,18 @@ let
     };
 in
 buildLinux {
-  inherit lib version;
-
+  inherit lib;
   stdenv = if lto then stdenvLLVM else stdenv;
   extraMakeFlags = lib.optionals lto [ "LLVM=1" "LLVM_IAS=1" ];
 
-  src = fetchFromGitHub {
-    owner = "xanmod";
-    repo = "linux";
-    rev = "${version}-xanmod${release}";
-    sha256 = "sha256-Idt7M6o2Zxqi3LBwuKu+pTHJA5OuP+KgEt2C+GcdO14=";
-  };
-  modDirVersion = "${version}-lantian-xanmod${release}";
+  inherit (sources.linux-xanmod) version src;
+  modDirVersion =
+    let
+      splitted = lib.splitString "-" sources.linux-xanmod.version;
+      version = builtins.elemAt splitted 0;
+      release = builtins.elemAt splitted 1;
+    in
+    "${version}-lantian-${release}";
 
   structuredExtraConfig =
     let
