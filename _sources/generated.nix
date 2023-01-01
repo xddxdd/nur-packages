@@ -576,6 +576,22 @@
       sha256 = "sha256-oPflL4XBWpEXcg+MAOFQhiyIpu4ZAaf1pbXhjdkVdPw=";
     };
   };
+  qq-amd64 = {
+    pname = "qq-amd64";
+    version = "c005c911/linuxqq_3.0.0-571";
+    src = fetchurl {
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/c005c911/linuxqq_3.0.0-571_amd64.deb";
+      sha256 = "sha256-8KcUhZwgeFzGyrQITWnJUzEPGZOCj0LIHLmRuKqkgmQ=";
+    };
+  };
+  qq-arm64 = {
+    pname = "qq-arm64";
+    version = "c005c911/linuxqq_3.0.0-571";
+    src = fetchurl {
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/c005c911/linuxqq_3.0.0-571_arm64.deb";
+      sha256 = "sha256-LvE+Pryq4KLu+BFYVrGiTwBdgOrBguPHQd73MMFlfiY=";
+    };
+  };
   qqmusic = {
     pname = "qqmusic";
     version = "1.1.5";

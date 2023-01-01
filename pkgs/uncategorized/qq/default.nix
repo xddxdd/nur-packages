@@ -1,5 +1,5 @@
 { stdenv
-, fetchurl
+, sources
 , autoPatchelfHook
 , makeWrapper
 , lib
@@ -34,14 +34,16 @@ let
     systemd
     xorg.libXdamage
   ];
+
+  source =
+    if stdenv.isx86_64 then sources.qq-amd64
+    else if stdenv.isAarch64 then sources.qq-arm64
+    else throw "Unsupported architecture";
 in
 stdenv.mkDerivation rec {
   pname = "qq";
-  version = "3.0.0-571";
-  src = fetchurl {
-    url = "https://dldir1.qq.com/qqfile/qq/QQNT/c005c911/linuxqq_3.0.0-571_amd64.deb";
-    sha256 = "sha256-8KcUhZwgeFzGyrQITWnJUzEPGZOCj0LIHLmRuKqkgmQ=";
-  };
+  version = builtins.elemAt (lib.splitString "_" source.version) 1;
+  inherit (source) src;
 
   nativeBuildInputs = [ autoPatchelfHook makeWrapper ];
   buildInputs = libraries;
@@ -68,7 +70,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "(HIGHLY EXPERIMENTAL) QQ beta edition";
     homepage = "https://im.qq.com/linuxqq/index.html";
-    platforms = [ "x86_64-linux" ];
+    platforms = [ "x86_64-linux" "aarch64-linux" ];
     license = licenses.unfreeRedistributable;
   };
 }

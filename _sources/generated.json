@@ -992,6 +992,34 @@
         },
         "version": "7.2+dfsg-1"
     },
+    "qq-amd64": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "qq-amd64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-8KcUhZwgeFzGyrQITWnJUzEPGZOCj0LIHLmRuKqkgmQ=",
+            "type": "url",
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/c005c911/linuxqq_3.0.0-571_amd64.deb"
+        },
+        "version": "c005c911/linuxqq_3.0.0-571"
+    },
+    "qq-arm64": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "qq-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-LvE+Pryq4KLu+BFYVrGiTwBdgOrBguPHQd73MMFlfiY=",
+            "type": "url",
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/c005c911/linuxqq_3.0.0-571_arm64.deb"
+        },
+        "version": "c005c911/linuxqq_3.0.0-571"
+    },
     "qqmusic": {
         "cargoLocks": null,
         "extract": null,
