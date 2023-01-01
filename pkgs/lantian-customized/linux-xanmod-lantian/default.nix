@@ -47,14 +47,14 @@ let
       extraNativeBuildInputs = [ hostLLVM.lld pkgs.patchelf ];
     });
 in
-buildLinux rec {
+buildLinux {
   inherit lib;
   stdenv = if lto then stdenvLLVM else stdenv;
 
   inherit (sources.linux-xanmod) version src;
   modDirVersion =
     let
-      splitted = lib.splitString "-" version;
+      splitted = lib.splitString "-" sources.linux-xanmod.version;
       ver0 = builtins.elemAt splitted 0;
       ver1 = builtins.elemAt splitted 1;
     in
