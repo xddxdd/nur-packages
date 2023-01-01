@@ -1,8 +1,8 @@
 {
-    "an-anime-game-launcher": {
+    "an-anime-game-launcher-bin": {
         "cargoLocks": null,
         "extract": null,
-        "name": "an-anime-game-launcher",
+        "name": "an-anime-game-launcher-bin",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -13,19 +13,19 @@
         },
         "version": "2.4.2"
     },
-    "an-anime-game-launcher-gtk": {
+    "an-anime-game-launcher-gtk-bin": {
         "cargoLocks": null,
         "extract": null,
-        "name": "an-anime-game-launcher-gtk",
+        "name": "an-anime-game-launcher-gtk-bin",
         "passthru": null,
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-FB3xLM7PwBDQcKgDvviAhP+9jjBKAMGJh5Y48jrFYSU=",
+            "sha256": "sha256-h71HLAfPpUW2LNkLcSUYWVlrntoP9E20SiyPMDvwtbA=",
             "type": "url",
-            "url": "https://github.com/an-anime-team/an-anime-game-launcher-gtk/releases/download/1.2.3/anime-game-launcher"
+            "url": "https://github.com/an-anime-team/an-anime-game-launcher-gtk/releases/download/1.2.4/anime-game-launcher"
         },
-        "version": "1.2.3"
+        "version": "1.2.4"
     },
     "asterisk-alaw16": {
         "cargoLocks": null,

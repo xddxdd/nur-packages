@@ -1,8 +1,8 @@
-[an-anime-game-launcher]
+[an-anime-game-launcher-bin]
 src.github = "an-anime-team/an-anime-game-launcher"
 fetch.url = "https://github.com/an-anime-team/an-anime-game-launcher/releases/download/$ver/an-anime-game-launcher-$ver.AppImage"
 
-[an-anime-game-launcher-gtk]
+[an-anime-game-launcher-gtk-bin]
 src.github = "an-anime-team/an-anime-game-launcher-gtk"
 fetch.url = "https://github.com/an-anime-team/an-anime-game-launcher-gtk/releases/download/$ver/anime-game-launcher"
 
