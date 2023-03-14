@@ -270,6 +270,10 @@ fetch.github = "xddxdd/route-chain"
 src.git = "https://github.com/openresty/stream-echo-nginx-module.git"
 fetch.github = "openresty/stream-echo-nginx-module"
 
+[transmission-web-control]
+src.git = "https://github.com/ronggang/transmission-web-control.git"
+fetch.github = "ronggang/transmission-web-control"
+
 [vs-rife]
 src.github = "HolyWu/vs-rife"
 fetch.github = "HolyWu/vs-rife"

@@ -682,6 +682,18 @@
     });
     date = "2016-12-18";
   };
+  transmission-web-control = {
+    pname = "transmission-web-control";
+    version = "0bbe64d28667a72130aded6e6d6826efa68566ad";
+    src = fetchFromGitHub ({
+      owner = "ronggang";
+      repo = "transmission-web-control";
+      rev = "0bbe64d28667a72130aded6e6d6826efa68566ad";
+      fetchSubmodules = false;
+      sha256 = "sha256-JMgrbnf6fe3rRO8oWQabchYrUPobwqGJPnbutUtOewU=";
+    });
+    date = "2022-02-23";
+  };
   vs-rife = {
     pname = "vs-rife";
     version = "v3.1.0";

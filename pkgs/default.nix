@@ -68,6 +68,7 @@ in
 
       nbfc-linux = pkg ./lantian-customized/nbfc-linux {};
       nginx = pkg ./lantian-customized/nginx {};
+      transmission-with-webui = pkg ./lantian-customized/transmission-with-webui {};
     });
 
     lantianLinuxXanmod = ifNotCI (pkgs.recurseIntoAttrs (
