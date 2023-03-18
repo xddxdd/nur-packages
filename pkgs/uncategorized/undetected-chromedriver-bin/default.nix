@@ -19,10 +19,14 @@ in
 
     postPatch = ''
       export HOME=$(pwd)
+
       ${py}/bin/python <<EOF
       from undetected_chromedriver.patcher import Patcher
       exit(not Patcher(executable_path="chromedriver").patch())
       EOF
+
+      # Make sure chromedriver is properly patched
+      grep "undetected chromedriver" chromedriver
     '';
 
     installPhase =
