@@ -29,11 +29,55 @@
 
       outputsBuilder = channels: let
         pkgs = channels.nixpkgs;
-      in {
+        inherit (pkgs) system;
+
+        isDerivation = p: lib.isAttrs p && p ? type && p.type == "derivation";
+        isTargetPlatform = p: lib.elem system (p.meta.platforms or [system]);
+        isBuildable = p: !(p.meta.broken or false) && p.meta.license.free or true;
+        shouldRecurseForDerivations = p: lib.isAttrs p && p.recurseForDerivations or false;
+
+        flattenPkgs = prefix: s:
+          builtins.filter ({
+            name ? null,
+            value ? null,
+          }:
+            name != null && value != null) (lib.flatten
+            (lib.mapAttrsToList
+              (n: p: let
+                path =
+                  if prefix != ""
+                  then "${prefix}-${n}"
+                  else n;
+              in
+                if lib.hasPrefix "_" n
+                then []
+                else if shouldRecurseForDerivations p
+                then flattenPkgs path p
+                else if isDerivation p && isTargetPlatform p && isBuildable p
+                then [
+                  {
+                    name = path;
+                    value = p;
+                  }
+                ]
+                else [])
+              s));
+
+        outputsOf = p: map (o: p.${o}) p.outputs;
+
+        NurCiPackages = import ./pkgs {
+          inherit inputs pkgs;
+          ci = true;
+        };
+      in rec {
         packages = import ./pkgs {
           inherit inputs pkgs;
           ci = false;
         };
+
+        ciPackages = builtins.listToAttrs (flattenPkgs "" NurCiPackages);
+
+        ciExports = lib.mapAttrsToList (_: outputsOf) ciPackages;
 
         formatter = pkgs.alejandra;
 
