@@ -341,6 +341,17 @@
       sha256 = "sha256-nxyEz+xXcr8tK8q+LWqNE3kYdWq4CXSy2vJfnlqKKRk=";
     });
   };
+  linux-xanmod-6_0 = {
+    pname = "linux-xanmod-6_0";
+    version = "6.0.12-xanmod1";
+    src = fetchFromGitHub ({
+      owner = "xanmod";
+      repo = "linux";
+      rev = "6.0.12-xanmod1";
+      fetchSubmodules = false;
+      sha256 = "sha256-k3fePBhb2zJfvPupdgenkdqG4sHNu2iv6T01EvOgbCg=";
+    });
+  };
   nbfc-linux-lantian = {
     pname = "nbfc-linux-lantian";
     version = "32a49117ca3ff17d7681713a8dc8812323142dcb";
@@ -742,7 +753,7 @@
     version = "3.7.6";
     src = fetchurl {
       url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe";
-      sha256 = "sha256-8dETlJjQ52xTVuH2VCq5osxGjxH7Soj/wegmuu8Cyvw=";
+      sha256 = "sha256-9zAHsy3zzp5x+RSL70vgf/EDkPQyxpORdeF79F3AhsY=";
     };
   };
   zstd-nginx-module = {

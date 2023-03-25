@@ -85,6 +85,10 @@
     prefix = "latest";
     definitionDir = ./latest;
     inherit (sources.linux-xanmod) version src;
+  }) ++ (batch {
+    prefix = "v6_0";
+    definitionDir = ./v6_0;
+    inherit (sources.linux-xanmod-6_0) version src;
   });
 in
   builtins.listToAttrs batches

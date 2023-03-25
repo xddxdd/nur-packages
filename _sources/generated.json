@@ -588,6 +588,26 @@
         },
         "version": "6.2.7-xanmod1"
     },
+    "linux-xanmod-6_0": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "linux-xanmod-6_0",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "xanmod",
+            "repo": "linux",
+            "rev": "6.0.12-xanmod1",
+            "sha256": "sha256-k3fePBhb2zJfvPupdgenkdqG4sHNu2iv6T01EvOgbCg=",
+            "type": "github"
+        },
+        "version": "6.0.12-xanmod1"
+    },
     "nbfc-linux-lantian": {
         "cargoLocks": null,
         "date": "2022-06-13",
@@ -1292,7 +1312,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8dETlJjQ52xTVuH2VCq5osxGjxH7Soj/wegmuu8Cyvw=",
+            "sha256": "sha256-9zAHsy3zzp5x+RSL70vgf/EDkPQyxpORdeF79F3AhsY=",
             "type": "url",
             "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe"
         },
