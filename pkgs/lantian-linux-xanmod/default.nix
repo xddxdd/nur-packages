@@ -19,6 +19,16 @@
       then prefix + "-"
       else "";
   in [
+    (lib.nameValuePair "${prefix'}generic" (mkKernel {
+      inherit version src;
+      configFile = definitionDir + "/config.nix";
+      patchDir = definitionDir + "/patches";
+    }))
+    (lib.nameValuePair "${prefix'}generic-lto" (mkKernel {
+      inherit version src;
+      configFile = definitionDir + "/config.nix";
+      patchDir = definitionDir + "/patches";
+    }))
     (lib.nameValuePair "${prefix'}x86_64-v1" (mkKernel {
       inherit version src;
       configFile = definitionDir + "/config.nix";
