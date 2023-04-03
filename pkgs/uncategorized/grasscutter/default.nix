@@ -1,7 +1,7 @@
 { stdenvNoCC
 , lib
+, sources
 , fetchurl
-, fetchFromGitHub
 , jre_headless
 , makeWrapper
 , writeScript
@@ -9,29 +9,14 @@
 } @ args:
 
 let
-  version = "1.2.0";
-
-  resources = fetchFromGitHub {
-    owner = "Koko-boya";
-    repo = "Grasscutter_Resources";
-    rev = "6a4f84ecc688f51ea3046ee38bdf2f6b30e44726";
-    sha256 = "sha256-QaWWlLjhzJL5jtbng4UWMz/tPCyYwPKIUbGT36ws7Hc=";
-  };
-
+  resources = sources.grasscutter-resources.src;
   keystore = fetchurl {
     url = "https://github.com/Grasscutters/Grasscutter/raw/development/keystore.p12";
     sha256 = "sha256-apFbGtWacE3GjXU/6h2yseskAsob0Xc/NWEu2uC0v3M=";
   };
 in
 stdenvNoCC.mkDerivation rec {
-  pname = "grasscutter";
-  inherit version;
-
-  # Right now Nixpkgs cannot handle building jars with gradle
-  src = fetchurl {
-    url = "https://github.com/Grasscutters/Grasscutter/releases/download/v${version}/grasscutter-${version}.jar";
-    sha256 = "sha256-Xof3BeXp9Em3TXBpqrbtrYCTorBQZF/23LXH21WmfoI=";
-  };
+  inherit (sources.grasscutter) pname version src;
 
   dontUnpack = true;
 
@@ -50,7 +35,7 @@ stdenvNoCC.mkDerivation rec {
     ln -s ${keystore} $out/opt/keystore.p12
 
     pushd $out/opt/
-    ${languageScript} | ${jre_headless}/bin/java -jar $out/grasscutter.jar -handbook
+    (${languageScript} | ${jre_headless}/bin/java -jar $out/grasscutter.jar -handbook) || true
     mv config.json config.example.json
     rm -rf logs
     popd
@@ -65,5 +50,6 @@ stdenvNoCC.mkDerivation rec {
   meta = with lib; {
     description = "A server software reimplementation for a certain anime game.";
     homepage = "https://github.com/Grasscutters/Grasscutter";
+    license = with licenses; [agpl3];
   };
 }
