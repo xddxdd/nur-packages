@@ -69,7 +69,7 @@ Or, use variables from this repository in case I change them:
 ## Packages
 
 <details>
-<summary>Package set: (Uncategorized) (72 packages)</summary>
+<summary>Package set: (Uncategorized) (74 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
@@ -106,6 +106,8 @@ Or, use variables from this repository in case I change them:
 |  | `hesuvi-hrir` | [hesuvi-hrir](https://sourceforge.net/projects/hesuvi/) | 2.0.0.1 | Headphone Surround Virtualizations for Equalizer APO |
 |  | `hoyo-glyphs` | [hoyo-glyphs](https://github.com/SpeedyOrc-C/Hoyo-Glyphs) | ff4420614a1a3b61a6d9d28a30465bdacdc2ba5e | Constructed scripts by Hoyoverse 米哈游的架空文字  |
 |  | `kaixinsong-fonts` | [kaixinsong-fonts](http://www.guoxuedashi.net/zidian/bujian/KaiXinSong.php) | 3.0 | KaiXinSong |
+|  | `kata-image` | [kata-image](https://github.com/kata-containers/kata-containers) | 3.1.0 | Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. |
+|  | `kata-runtime` | [kata-runtime](https://github.com/kata-containers/kata-containers) | 3.1.0 | Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. |
 |  | `konnect` | [konnect](https://github.com/Kopano-dev/konnect) | v0.34.0 | Kopano Konnect implements an OpenID provider (OP) with integrated web login and consent forms. |
 |  | `ldap-auth-proxy` | [ldap-auth-proxy](https://github.com/pinepain/ldap-auth-proxy) | 66a8236af574f554478fe376051b95f61235efc9 | A simple drop-in HTTP proxy for transparent LDAP authentication which is also a HTTP auth backend. |
 |  | `libnftnl-fullcone` | [libnftnl](https://netfilter.org/projects/libnftnl/) | 1.2.4 | A userspace library providing a low-level netlink API to the in-kernel nf_tables subsystem |
@@ -142,7 +144,7 @@ Or, use variables from this repository in case I change them:
 | `Broken` | `vs-rife` | [vs-rife](https://github.com/HolyWu/vs-rife) | v3.1.0 | Real-Time Intermediate Flow Estimation for Video Frame Interpolation for VapourSynth |
 |  | `wechat-uos` | [wechat-uos](https://weixin.qq.com/) | 2.1.5 | WeChat desktop (System Electron) |
 |  | `wechat-uos-bin` | [wechat-uos-bin](https://weixin.qq.com/) | 2.1.5 | WeChat desktop (Official binary) |
-|  | `wine-wechat` | [wine-wechat](https://weixin.qq.com/) | 3.7.6 | Wine WeChat |
+|  | `wine-wechat` | [wine-wechat](https://weixin.qq.com/) | 3.9.2 | Wine WeChat |
 |  | `xstatic-asciinema-player` | [xstatic-asciinema-player](https://github.com/asciinema/asciinema-player) | 2.6.1.1 | asciinema-player packaged for setuptools (easy_install) / pip. |
 |  | `xstatic-font-awesome` | [xstatic-font-awesome](https://github.com/FortAwesome/Font-Awesome) | 6.2.1.1 | Font Awesome packaged for setuptools (easy_install) / pip. |
 </details>
