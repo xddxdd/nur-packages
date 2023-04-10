@@ -312,6 +312,25 @@
     });
     date = "2023-03-24";
   };
+  kata-containers = {
+    pname = "kata-containers";
+    version = "3.1.0";
+    src = fetchFromGitHub ({
+      owner = "kata-containers";
+      repo = "kata-containers";
+      rev = "3.1.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-HHQDKbI5RpT4GITgLIsZWVNwZbaAikZjn63pqb316Zs=";
+    });
+  };
+  kata-image = {
+    pname = "kata-image";
+    version = "3.1.0";
+    src = fetchurl {
+      url = "https://github.com/kata-containers/kata-containers/releases/download/3.1.0/kata-static-3.1.0-x86_64.tar.xz";
+      sha256 = "sha256-RSzIUOAhU5wUNZ0BaroY3boSj1mqmrY3c4KW2bXNeKA=";
+    };
+  };
   konnect = {
     pname = "konnect";
     version = "v0.34.0";

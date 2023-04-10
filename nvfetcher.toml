@@ -120,6 +120,14 @@ fetch.git = "https://gitlab.com/YuukiPS/GC-Resources.git"
 src.git = "https://github.com/SpeedyOrc-C/Hoyo-Glyphs.git"
 fetch.github = "SpeedyOrc-C/Hoyo-Glyphs"
 
+[kata-containers]
+src.github = "kata-containers/kata-containers"
+fetch.github = "kata-containers/kata-containers"
+
+[kata-image]
+src.github = "kata-containers/kata-containers"
+fetch.url = "https://github.com/kata-containers/kata-containers/releases/download/$ver/kata-static-$ver-x86_64.tar.xz"
+
 [konnect]
 src.github_tag = "Kopano-dev/konnect"
 fetch.github = "Kopano-dev/konnect"
