@@ -821,9 +821,9 @@
   };
   wine-wechat = {
     pname = "wine-wechat";
-    version = "3.7.6";
+    version = "3.9.2";
     src = fetchurl {
-      url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe";
+      url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.2";
       sha256 = "sha256-9zAHsy3zzp5x+RSL70vgf/EDkPQyxpORdeF79F3AhsY=";
     };
   };

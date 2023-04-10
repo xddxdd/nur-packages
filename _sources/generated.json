@@ -1438,9 +1438,9 @@
             "name": null,
             "sha256": "sha256-9zAHsy3zzp5x+RSL70vgf/EDkPQyxpORdeF79F3AhsY=",
             "type": "url",
-            "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe"
+            "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.2"
         },
-        "version": "3.7.6"
+        "version": "3.9.2"
     },
     "xstatic-asciinema-player": {
         "cargoLocks": null,
