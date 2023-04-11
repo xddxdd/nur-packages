@@ -145,10 +145,8 @@
               config.boot.kernelPackages.nvidia_x11)
           ];
         };
-        qemu-user-static-binfmt = import ./modules/qemu-user-static-binfmt.nix {
-          inherit (self) overlays packages;
-          inherit lib;
-        };
+        qemu-user-static-binfmt = import ./modules/qemu-user-static-binfmt.nix;
+        kata-containers = import ./modules/kata-containers.nix;
       };
     };
 }
