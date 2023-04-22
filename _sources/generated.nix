@@ -164,10 +164,10 @@
   };
   dingtalk = {
     pname = "dingtalk";
-    version = "1.6.0.230309";
+    version = "1.7.0.30413";
     src = fetchurl {
-      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_1.6.0.230309_amd64.deb";
-      sha256 = "sha256-q+gIxtPwVXytYSvEvWrJJcptIbSy+gmeEM7OEzcpDXI=";
+      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_1.7.0.30413_amd64.deb";
+      sha256 = "sha256-G6ci/ZqJmbF7F++bb8QsOdR1OzHtHvoIJ2ZyDqfURrw=";
     };
   };
   douban-openapi-server = {
@@ -289,16 +289,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "59ba7cd1a77ab14caf496baa7f45cad1ffeac3fe";
+    version = "0729147e89aba3ea855db1748480abd94d0daece";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "59ba7cd1a77ab14caf496baa7f45cad1ffeac3fe";
+      rev = "0729147e89aba3ea855db1748480abd94d0daece";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-boQBQ/VCtzBOYCHFCpeebsr/FrznRC4eVbT6LldMAYQ=";
+      sha256 = "sha256-4rn15Y9LKw48bp+Bl1Kg8iW9bKiORKz8Le8sy/j48LE=";
     };
-    date = "2023-04-03";
+    date = "2023-04-18";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -368,25 +368,25 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "b1d42d61f63aa61ce007ada7939e326e0d6e896c";
+    version = "8b24019ba0b06c3f9cbbd81b45c168a6c03ce285";
     src = fetchFromGitHub ({
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "b1d42d61f63aa61ce007ada7939e326e0d6e896c";
+      rev = "8b24019ba0b06c3f9cbbd81b45c168a6c03ce285";
       fetchSubmodules = false;
-      sha256 = "sha256-gN2NzZSLtGbdfDd5CNTlRqgrsSxKFeDsf9wSl44ZXWo=";
+      sha256 = "sha256-Wu2wbbn7mSfC/yPJ7PoNTSiwf65CtJXrJ63b+qZsLO8=";
     });
-    date = "2023-04-06";
+    date = "2023-04-14";
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.2.10-xanmod1";
+    version = "6.2.12-xanmod1";
     src = fetchFromGitHub ({
       owner = "xanmod";
       repo = "linux";
-      rev = "6.2.10-xanmod1";
+      rev = "6.2.12-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-zy6mKpoOu9YmGI6a8ZWjV761m+AGlTaWEzpL1QloCk8=";
+      sha256 = "sha256-K/s1nSLOrzZ/A3pnv9qFs8SkI9R6keG0WGV1o7K6jUQ=";
     });
   };
   linux-xanmod-6_0 = {
@@ -402,13 +402,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.23-xanmod1";
+    version = "6.1.25-xanmod1";
     src = fetchFromGitHub ({
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.23-xanmod1";
+      rev = "6.1.25-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-yKbePeImBpDLXfexvGJdghSBr3j/oFKXeMuBAOtDqJ8=";
+      sha256 = "sha256-Cn8NAVdfL2VJIPuZ3tANxB3VyQI0X2/YZG0/4r/ccYg=";
     });
   };
   nbfc-linux-lantian = {
@@ -477,25 +477,25 @@
   };
   nginx-module-vts = {
     pname = "nginx-module-vts";
-    version = "a98a4b86a274bddad47021e8b5223264fd1cdca3";
+    version = "bf64dbfabfc49a574eb361f34b2401f880b5a324";
     src = fetchFromGitHub ({
       owner = "vozlt";
       repo = "nginx-module-vts";
-      rev = "a98a4b86a274bddad47021e8b5223264fd1cdca3";
+      rev = "bf64dbfabfc49a574eb361f34b2401f880b5a324";
       fetchSubmodules = false;
-      sha256 = "sha256-zd4f14mVTS3CIt9mtg8Mu6oVyVO5/1qo9nfZf+x642Y=";
+      sha256 = "sha256-3vmdfLraMucz+vLt8NT32FjJf6LDf0cvDqF5uzj9hBA=";
     });
-    date = "2023-03-27";
+    date = "2023-04-17";
   };
   nginx-njs = {
     pname = "nginx-njs";
-    version = "0.7.11";
+    version = "0.7.12";
     src = fetchFromGitHub ({
       owner = "nginx";
       repo = "njs";
-      rev = "0.7.11";
+      rev = "0.7.12";
       fetchSubmodules = false;
-      sha256 = "sha256-f8miVmzZz5kyw5/chdkI0cMYYxYXu/QVYMQ4VfBGWg8=";
+      sha256 = "sha256-jMf66VxgeeV81XhCU91ICz3RH/M47xNzClYsjyjA+k8=";
     });
   };
   ngx_brotli = {
@@ -547,15 +547,15 @@
   };
   openssl-oqs = {
     pname = "openssl-oqs";
-    version = "511f387437e7de2c21b23cebecb4ede6b7a99f40";
+    version = "1e13c8cb261089fe49120e23b91fc666d562f45b";
     src = fetchFromGitHub ({
       owner = "open-quantum-safe";
       repo = "openssl";
-      rev = "511f387437e7de2c21b23cebecb4ede6b7a99f40";
+      rev = "1e13c8cb261089fe49120e23b91fc666d562f45b";
       fetchSubmodules = false;
-      sha256 = "sha256-5qdSSdQBtWRylW7/wUJpowkhpM0vMQXng3E6qr1w99A=";
+      sha256 = "sha256-zedp5IM0iu2jwuYzi5k0Q1tHNld+05+kGY3Vo84WIDk=";
     });
-    date = "2023-02-08";
+    date = "2023-04-16";
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
@@ -726,10 +726,10 @@
   };
   rime-moegirl = {
     pname = "rime-moegirl";
-    version = "20230214";
+    version = "20230414";
     src = fetchurl {
-      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20230214/moegirl.dict.yaml";
-      sha256 = "sha256-v+rQvfyfL1JhR16LckkMTVtW73ss5XgqySQwbZohzwI=";
+      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20230414/moegirl.dict.yaml";
+      sha256 = "sha256-0hDjF1/Gt+OU6/YEY+t1efIRWpqPrKIiaMRBQ0zEWJg=";
     };
   };
   rime-zhwiki = {

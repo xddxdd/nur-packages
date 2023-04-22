@@ -288,11 +288,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-q+gIxtPwVXytYSvEvWrJJcptIbSy+gmeEM7OEzcpDXI=",
+            "sha256": "sha256-G6ci/ZqJmbF7F++bb8QsOdR1OzHtHvoIJ2ZyDqfURrw=",
             "type": "url",
-            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_1.6.0.230309_amd64.deb"
+            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_1.7.0.30413_amd64.deb"
         },
-        "version": "1.6.0.230309"
+        "version": "1.7.0.30413"
     },
     "douban-openapi-server": {
         "cargoLocks": null,
@@ -500,7 +500,7 @@
     },
     "grasscutter-resources": {
         "cargoLocks": null,
-        "date": "2023-04-03",
+        "date": "2023-04-18",
         "extract": null,
         "name": "grasscutter-resources",
         "passthru": null,
@@ -510,12 +510,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "59ba7cd1a77ab14caf496baa7f45cad1ffeac3fe",
-            "sha256": "sha256-boQBQ/VCtzBOYCHFCpeebsr/FrznRC4eVbT6LldMAYQ=",
+            "rev": "0729147e89aba3ea855db1748480abd94d0daece",
+            "sha256": "sha256-4rn15Y9LKw48bp+Bl1Kg8iW9bKiORKz8Le8sy/j48LE=",
             "type": "git",
             "url": "https://gitlab.com/YuukiPS/GC-Resources.git"
         },
-        "version": "59ba7cd1a77ab14caf496baa7f45cad1ffeac3fe"
+        "version": "0729147e89aba3ea855db1748480abd94d0daece"
     },
     "hoyo-glyphs": {
         "cargoLocks": null,
@@ -634,7 +634,7 @@
     },
     "liboqs": {
         "cargoLocks": null,
-        "date": "2023-04-06",
+        "date": "2023-04-14",
         "extract": null,
         "name": "liboqs",
         "passthru": null,
@@ -646,11 +646,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "b1d42d61f63aa61ce007ada7939e326e0d6e896c",
-            "sha256": "sha256-gN2NzZSLtGbdfDd5CNTlRqgrsSxKFeDsf9wSl44ZXWo=",
+            "rev": "8b24019ba0b06c3f9cbbd81b45c168a6c03ce285",
+            "sha256": "sha256-Wu2wbbn7mSfC/yPJ7PoNTSiwf65CtJXrJ63b+qZsLO8=",
             "type": "github"
         },
-        "version": "b1d42d61f63aa61ce007ada7939e326e0d6e896c"
+        "version": "8b24019ba0b06c3f9cbbd81b45c168a6c03ce285"
     },
     "linux-xanmod": {
         "cargoLocks": null,
@@ -666,11 +666,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.2.10-xanmod1",
-            "sha256": "sha256-zy6mKpoOu9YmGI6a8ZWjV761m+AGlTaWEzpL1QloCk8=",
+            "rev": "6.2.12-xanmod1",
+            "sha256": "sha256-K/s1nSLOrzZ/A3pnv9qFs8SkI9R6keG0WGV1o7K6jUQ=",
             "type": "github"
         },
-        "version": "6.2.10-xanmod1"
+        "version": "6.2.12-xanmod1"
     },
     "linux-xanmod-6_0": {
         "cargoLocks": null,
@@ -706,11 +706,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.1.23-xanmod1",
-            "sha256": "sha256-yKbePeImBpDLXfexvGJdghSBr3j/oFKXeMuBAOtDqJ8=",
+            "rev": "6.1.25-xanmod1",
+            "sha256": "sha256-Cn8NAVdfL2VJIPuZ3tANxB3VyQI0X2/YZG0/4r/ccYg=",
             "type": "github"
         },
-        "version": "6.1.23-xanmod1"
+        "version": "6.1.25-xanmod1"
     },
     "nbfc-linux-lantian": {
         "cargoLocks": null,
@@ -824,7 +824,7 @@
     },
     "nginx-module-vts": {
         "cargoLocks": null,
-        "date": "2023-03-27",
+        "date": "2023-04-17",
         "extract": null,
         "name": "nginx-module-vts",
         "passthru": null,
@@ -836,11 +836,11 @@
             "name": null,
             "owner": "vozlt",
             "repo": "nginx-module-vts",
-            "rev": "a98a4b86a274bddad47021e8b5223264fd1cdca3",
-            "sha256": "sha256-zd4f14mVTS3CIt9mtg8Mu6oVyVO5/1qo9nfZf+x642Y=",
+            "rev": "bf64dbfabfc49a574eb361f34b2401f880b5a324",
+            "sha256": "sha256-3vmdfLraMucz+vLt8NT32FjJf6LDf0cvDqF5uzj9hBA=",
             "type": "github"
         },
-        "version": "a98a4b86a274bddad47021e8b5223264fd1cdca3"
+        "version": "bf64dbfabfc49a574eb361f34b2401f880b5a324"
     },
     "nginx-njs": {
         "cargoLocks": null,
@@ -856,11 +856,11 @@
             "name": null,
             "owner": "nginx",
             "repo": "njs",
-            "rev": "0.7.11",
-            "sha256": "sha256-f8miVmzZz5kyw5/chdkI0cMYYxYXu/QVYMQ4VfBGWg8=",
+            "rev": "0.7.12",
+            "sha256": "sha256-jMf66VxgeeV81XhCU91ICz3RH/M47xNzClYsjyjA+k8=",
             "type": "github"
         },
-        "version": "0.7.11"
+        "version": "0.7.12"
     },
     "ngx_brotli": {
         "cargoLocks": null,
@@ -944,7 +944,7 @@
     },
     "openssl-oqs": {
         "cargoLocks": null,
-        "date": "2023-02-08",
+        "date": "2023-04-16",
         "extract": null,
         "name": "openssl-oqs",
         "passthru": null,
@@ -956,11 +956,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "openssl",
-            "rev": "511f387437e7de2c21b23cebecb4ede6b7a99f40",
-            "sha256": "sha256-5qdSSdQBtWRylW7/wUJpowkhpM0vMQXng3E6qr1w99A=",
+            "rev": "1e13c8cb261089fe49120e23b91fc666d562f45b",
+            "sha256": "sha256-zedp5IM0iu2jwuYzi5k0Q1tHNld+05+kGY3Vo84WIDk=",
             "type": "github"
         },
-        "version": "511f387437e7de2c21b23cebecb4ede6b7a99f40"
+        "version": "1e13c8cb261089fe49120e23b91fc666d562f45b"
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
@@ -1271,11 +1271,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-v+rQvfyfL1JhR16LckkMTVtW73ss5XgqySQwbZohzwI=",
+            "sha256": "sha256-0hDjF1/Gt+OU6/YEY+t1efIRWpqPrKIiaMRBQ0zEWJg=",
             "type": "url",
-            "url": "https://github.com/outloudvi/mw2fcitx/releases/download/20230214/moegirl.dict.yaml"
+            "url": "https://github.com/outloudvi/mw2fcitx/releases/download/20230414/moegirl.dict.yaml"
         },
-        "version": "20230214"
+        "version": "20230414"
     },
     "rime-zhwiki": {
         "cargoLocks": null,
