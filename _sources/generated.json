@@ -922,6 +922,26 @@
         },
         "version": "0884f87ec01faaee219f59742c14ed3c3945f5c0"
     },
+    "oci-arm-host-capacity": {
+        "cargoLocks": null,
+        "date": "2023-04-18",
+        "extract": null,
+        "name": "oci-arm-host-capacity",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "hitrov",
+            "repo": "oci-arm-host-capacity",
+            "rev": "1a655bf6150d64f4f3732f267477ed3e4c6f87d0",
+            "sha256": "sha256-YFOdqbaiKoAdu4nOyzfHtlL9PVy8qEP9rJs6uTUTTdc=",
+            "type": "github"
+        },
+        "version": "1a655bf6150d64f4f3732f267477ed3e4c6f87d0"
+    },
     "onepush": {
         "cargoLocks": null,
         "date": "2022-09-15",

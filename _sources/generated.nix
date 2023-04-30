@@ -533,6 +533,18 @@
     });
     date = "2016-01-28";
   };
+  oci-arm-host-capacity = {
+    pname = "oci-arm-host-capacity";
+    version = "1a655bf6150d64f4f3732f267477ed3e4c6f87d0";
+    src = fetchFromGitHub ({
+      owner = "hitrov";
+      repo = "oci-arm-host-capacity";
+      rev = "1a655bf6150d64f4f3732f267477ed3e4c6f87d0";
+      fetchSubmodules = false;
+      sha256 = "sha256-YFOdqbaiKoAdu4nOyzfHtlL9PVy8qEP9rJs6uTUTTdc=";
+    });
+    date = "2023-04-18";
+  };
   onepush = {
     pname = "onepush";
     version = "c7dd8c82e4eb74501d7e6bcf0c42d1caa0c0ffc2";
