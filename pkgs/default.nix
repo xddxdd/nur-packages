@@ -139,6 +139,7 @@ in
     openssl-oqs-provider = pkg ./uncategorized/openssl-oqs-provider {};
     osdlyrics = pkg ./uncategorized/osdlyrics {};
     payload-dumper-go = pkg ./uncategorized/payload-dumper-go {};
+    petalinux = pkg ./uncategorized/petalinux {};
     phpmyadmin = pkg ./uncategorized/phpmyadmin {};
     phppgadmin = pkg ./uncategorized/phppgadmin {};
     qbittorrent-enhanced-edition = pkg ./uncategorized/qbittorrent-enhanced-edition {};
