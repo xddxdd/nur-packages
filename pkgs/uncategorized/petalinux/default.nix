@@ -116,13 +116,18 @@ in
       mkdir -p $out
       ./fhs-loader "./petalinux-install"
 
-      sed -i "s#XIL_SCRIPT_LOC=\"./\"#XIL_SCRIPT_LOC=\"$out/settings.csh\"#g" $out/settings.csh
-      sed -i "s#XIL_SCRIPT_LOC=\"./\"#XIL_SCRIPT_LOC=\"$out/settings.sh\"#g" $out/settings.sh
+      sed -i "s#XIL_SCRIPT_LOC=\"./\"#XIL_SCRIPT_LOC=\"$out\"#g" $out/settings.csh
+      sed -i "s#XIL_SCRIPT_LOC=\"./\"#XIL_SCRIPT_LOC=\"$out\"#g" $out/settings.sh
 
       mkdir -p $out/bin
+
       for BIN in $(ls -1 $out/tools/common/petalinux/bin); do
         makeWrapper ${fhs}/bin/petalinux-fhs $out/bin/$BIN \
-          --add-flags "$out/tools/common/petalinux/bin/$BIN"
+          --add-flags "$out/tools/common/petalinux/bin/$BIN" \
+          --set XIL_SCRIPT_LOC "$out" \
+          --set PETALINUX "$out" \
+          --set XSCT_TOOLCHAIN "$out/tools/xsct" \
+          --prefix PATH : "$out/tools/xsct/gnu/aarch32/lin/aarch64-none-elf/bin:$out/tools/xsct/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:$out/tools/xsct/gnu/aarch64/lin/aarch64-none/bin:$out/tools/xsct/gnu/aarch64/lin/aarch64-linux/bin:$out/tools/xsct/gnu/armr5/lin/gcc-arm-none-eabi/bin:$out/tools/xsct/gnu/microblaze/lin/bin"
       done
 
       runHook postInstall
