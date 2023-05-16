@@ -33,7 +33,10 @@
     installPhase = ''
       mkdir -p $out/bin
       makeWrapper ${rsync}/bin/rsync $out/bin/rsync \
-        --add-flags "--chmod=755"
+        --add-flags "--chmod=755" \
+        --add-flags "--no-perms" \
+        --add-flags "--no-owner" \
+        --add-flags "--no-group"
     '';
   };
 
@@ -127,7 +130,7 @@ in
           --set XIL_SCRIPT_LOC "$out" \
           --set PETALINUX "$out" \
           --set XSCT_TOOLCHAIN "$out/tools/xsct" \
-          --prefix PATH : "$out/tools/xsct/gnu/aarch32/lin/aarch64-none-elf/bin:$out/tools/xsct/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:$out/tools/xsct/gnu/aarch64/lin/aarch64-none/bin:$out/tools/xsct/gnu/aarch64/lin/aarch64-linux/bin:$out/tools/xsct/gnu/armr5/lin/gcc-arm-none-eabi/bin:$out/tools/xsct/gnu/microblaze/lin/bin"
+          --prefix PATH : "${rsyncWrapped}/bin:$out/tools/xsct/gnu/aarch32/lin/aarch64-none-elf/bin:$out/tools/xsct/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:$out/tools/xsct/gnu/aarch64/lin/aarch64-none/bin:$out/tools/xsct/gnu/aarch64/lin/aarch64-linux/bin:$out/tools/xsct/gnu/armr5/lin/gcc-arm-none-eabi/bin:$out/tools/xsct/gnu/microblaze/lin/bin"
       done
 
       runHook postInstall
