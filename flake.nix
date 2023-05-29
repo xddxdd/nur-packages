@@ -145,8 +145,9 @@
               config.boot.kernelPackages.nvidia_x11)
           ];
         };
-        qemu-user-static-binfmt = import ./modules/qemu-user-static-binfmt.nix;
         kata-containers = import ./modules/kata-containers.nix;
+        openssl-oqs-provider = import ./modules/openssl-oqs-provider.nix;
+        qemu-user-static-binfmt = import ./modules/qemu-user-static-binfmt.nix;
       };
     };
 }
