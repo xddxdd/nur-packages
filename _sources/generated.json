@@ -512,15 +512,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qD0UG4/0UjyyJy1dl52W6dCiiQEkB0vrqs1c+lYQOTM=",
+            "sha256": "sha256-SILHC9W0nh42itJ+9XPgKnAQ8Ikny22A2+lGgIJyfFA=",
             "type": "url",
-            "url": "https://github.com/Grasscutters/Grasscutter/releases/download/v1.5.0/grasscutter-1.5.0.jar"
+            "url": "https://github.com/Grasscutters/Grasscutter/releases/download/v1.6.0/grasscutter.jar"
         },
-        "version": "1.5.0"
+        "version": "v1.6.0"
     },
     "grasscutter-resources": {
         "cargoLocks": null,
-        "date": "2023-05-26",
+        "date": "2023-05-30",
         "extract": null,
         "name": "grasscutter-resources",
         "passthru": null,
@@ -530,16 +530,16 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "5ca3dafcee53a197332fff399dc5a6cf3bc02f74",
-            "sha256": "sha256-kZVFFn/J4M3h4rIqiOKE9yqXcd/tttCDkkyDT4URX6k=",
+            "rev": "730d95607ee1b201c518069429eefc8691f3033c",
+            "sha256": "sha256-PVPYxzCVpD33BRrmKBWd5aHA05O7i9QTrmM3uC9c+X8=",
             "type": "git",
             "url": "https://gitlab.com/YuukiPS/GC-Resources.git"
         },
-        "version": "5ca3dafcee53a197332fff399dc5a6cf3bc02f74"
+        "version": "730d95607ee1b201c518069429eefc8691f3033c"
     },
     "hoyo-glyphs": {
         "cargoLocks": null,
-        "date": "2023-05-13",
+        "date": "2023-05-31",
         "extract": null,
         "name": "hoyo-glyphs",
         "passthru": null,
@@ -551,11 +551,11 @@
             "name": null,
             "owner": "SpeedyOrc-C",
             "repo": "Hoyo-Glyphs",
-            "rev": "cdd00d68a1cf6a43c5fd43b7251435a2b6d3a2e6",
-            "sha256": "sha256-EEF9w0oqb6pn96j2aDMhjoA+m5mx+VZ4ZGgSzg13Pl0=",
+            "rev": "6a56d5df74ab119d6bf6ceb75917740335b3f24a",
+            "sha256": "sha256-PeONd2SjopJSN5+mm43RUrG+xfZFOkTYCUiKrIbbLvg=",
             "type": "github"
         },
-        "version": "cdd00d68a1cf6a43c5fd43b7251435a2b6d3a2e6"
+        "version": "6a56d5df74ab119d6bf6ceb75917740335b3f24a"
     },
     "hoyo-glyphs-star-rail-neue": {
         "cargoLocks": null,
@@ -669,7 +669,7 @@
     },
     "liboqs": {
         "cargoLocks": null,
-        "date": "2023-05-22",
+        "date": "2023-05-31",
         "extract": null,
         "name": "liboqs",
         "passthru": null,
@@ -681,11 +681,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "7728f20d4d8ce7baa71a118a6e389b649e921497",
-            "sha256": "sha256-6Jfx51o/cQ8PCj9dP2qoZ7CTjpac20wEgcBpp3zzLGQ=",
+            "rev": "3e25479c16b04aeb474ae3a502c1358be03811f7",
+            "sha256": "sha256-lG6P+uw7xQ2Hzx1vFxRnHdvlknO5CXvexZ3Zr8OLTLA=",
             "type": "github"
         },
-        "version": "7728f20d4d8ce7baa71a118a6e389b649e921497"
+        "version": "3e25479c16b04aeb474ae3a502c1358be03811f7"
     },
     "linux-xanmod": {
         "cargoLocks": null,
@@ -701,11 +701,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.3.4-xanmod1",
-            "sha256": "sha256-qHwiyaQfKc/v4+rwvH5FSVPsaBoF2rQmhOovHqmUtYE=",
+            "rev": "6.3.5-xanmod1",
+            "sha256": "sha256-2+8WDj1VdmIdC0DjmKyY/fMi5zoiXDAWy7EAmkImvXk=",
             "type": "github"
         },
-        "version": "6.3.4-xanmod1"
+        "version": "6.3.5-xanmod1"
     },
     "linux-xanmod-6_0": {
         "cargoLocks": null,
@@ -741,11 +741,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.1.30-xanmod1",
-            "sha256": "sha256-F5N0PkjVBSpidP08SdBtOx5n+97RUqN32bwyQ6y+CYY=",
+            "rev": "6.1.31-xanmod1",
+            "sha256": "sha256-quYsp6h7IV6gUT0e55FeBlS8rH9OGrqdbM1XSIYNRV4=",
             "type": "github"
         },
-        "version": "6.1.30-xanmod1"
+        "version": "6.1.31-xanmod1"
     },
     "nbfc-linux-lantian": {
         "cargoLocks": null,
@@ -1019,7 +1019,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2023-05-24",
+        "date": "2023-06-01",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1031,11 +1031,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "4bf202bdbe4a1c9dbb7e88ccd0636c9848d90afc",
-            "sha256": "sha256-MgqCrCUKwA3lbYvaSJtTft2Xvoa0Z6jOy5WL0dm/DXI=",
+            "rev": "07107deb2a9dc7d94ee7e52e7b34e1eb32a42a89",
+            "sha256": "sha256-CcGrwQ+qWcx5/LFmun4WpXFemuptwAgHX+EmkDcde6g=",
             "type": "github"
         },
-        "version": "4bf202bdbe4a1c9dbb7e88ccd0636c9848d90afc"
+        "version": "07107deb2a9dc7d94ee7e52e7b34e1eb32a42a89"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -1146,11 +1146,11 @@
             "name": null,
             "owner": "c0re100",
             "repo": "qBittorrent-Enhanced-Edition",
-            "rev": "release-4.5.2.10",
-            "sha256": "sha256-MuVwqUaPQij6Kox9BLjxkOqPLz/B+hALX7AurKy65KM=",
+            "rev": "release-4.5.3.10",
+            "sha256": "sha256-ZWIDfX0YGyrEWV/8xlNWL/EsHGSS4nVVyzrOwSmST7I=",
             "type": "github"
         },
-        "version": "release-4.5.2.10"
+        "version": "release-4.5.3.10"
     },
     "qemu-user-static-amd64": {
         "cargoLocks": null,
@@ -1221,11 +1221,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-TBgQ7zV+juB3KSgIIXuvxnYmvnnM/1/wU0EkiopIqvY=",
+            "sha256": "sha256-mBfeexWEYpGybFFianUFvlzMv0HoFR4EeFcwlGVXIRA=",
             "type": "url",
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/2355235c/linuxqq_3.1.1-11223_amd64.deb"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/ad5b5393/linuxqq_3.1.2-13107_amd64.deb"
         },
-        "version": "2355235c/linuxqq_3.1.1-11223"
+        "version": "ad5b5393/linuxqq_3.1.2-13107"
     },
     "qq-arm64": {
         "cargoLocks": null,
@@ -1236,11 +1236,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-1ba/IA/+X/s7jUtIhh3OsBHU7MPggGrASsBPx8euBBs=",
+            "sha256": "sha256-V6kR2lb63nnNIEhn64Yg0BYYlz7W0Cw60TwnKaJuLgs=",
             "type": "url",
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/2355235c/linuxqq_3.1.1-11223_arm64.deb"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/ad5b5393/linuxqq_3.1.2-13107_arm64.deb"
         },
-        "version": "2355235c/linuxqq_3.1.1-11223"
+        "version": "ad5b5393/linuxqq_3.1.2-13107"
     },
     "qqmusic": {
         "cargoLocks": null,
