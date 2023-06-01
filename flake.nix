@@ -119,12 +119,14 @@
               cat result > README.md
             '';
 
-            update = ''
+            update = let
+              py = pkgs.python3.withPackages (p: with p; [requests]);
+            in ''
               nix flake update
               ${nvfetcher}
-              ${pkgs.python3}/bin/python3 pkgs/asterisk-digium-codecs/update.py
-              ${pkgs.python3}/bin/python3 pkgs/openj9-ibm-semeru/update.py
-              ${pkgs.python3}/bin/python3 pkgs/openjdk-adoptium/update.py
+              ${py}/bin/python3 pkgs/asterisk-digium-codecs/update.py
+              ${py}/bin/python3 pkgs/openj9-ibm-semeru/update.py
+              ${py}/bin/python3 pkgs/openjdk-adoptium/update.py
               ${readme}
             '';
           };
