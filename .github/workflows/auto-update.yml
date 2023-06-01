@@ -1,4 +1,4 @@
-name: 'Build and populate cache'
+name: 'Auto update packages'
 on:
   schedule:
     # rebuild everyday at 2:51
@@ -31,3 +31,5 @@ jobs:
           nix run .#update
       - name: Commit back to repository
         uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'auto: update packages'
