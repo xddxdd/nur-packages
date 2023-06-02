@@ -102,15 +102,15 @@
   };
   bird-babel-rtt = {
     pname = "bird-babel-rtt";
-    version = "b0b12f37388e59b4456119d3a90d4ff69622d698";
+    version = "69372dc9aa8b234b79999c4cdcdfa3aa05e3a672";
     src = fetchFromGitHub {
       owner = "NickCao";
       repo = "bird";
-      rev = "b0b12f37388e59b4456119d3a90d4ff69622d698";
+      rev = "69372dc9aa8b234b79999c4cdcdfa3aa05e3a672";
       fetchSubmodules = false;
-      sha256 = "sha256-9Ufu6gGDVMZHoxZdqc2khNBsrvBcS+18IIYIcsVsdsY=";
+      sha256 = "sha256-b9RVWZmzT6E7XAb+GW6YXcZXmG+nQBKYjOXEZNPkGpQ=";
     };
-    date = "2023-02-14";
+    date = "2023-06-02";
   };
   bird-lg-go = {
     pname = "bird-lg-go";
@@ -293,10 +293,10 @@
   };
   grasscutter = {
     pname = "grasscutter";
-    version = "v1.6.0";
+    version = "v1.6.1";
     src = fetchurl {
-      url = "https://github.com/Grasscutters/Grasscutter/releases/download/v1.6.0/grasscutter.jar";
-      sha256 = "sha256-SILHC9W0nh42itJ+9XPgKnAQ8Ikny22A2+lGgIJyfFA=";
+      url = "https://github.com/Grasscutters/Grasscutter/releases/download/v1.6.1/grasscutter.jar";
+      sha256 = "sha256-hJ1ZDMrJ9ryVJeuDxG347uplokFwBGHD+gAXgMTcfRU=";
     };
   };
   grasscutter-resources = {

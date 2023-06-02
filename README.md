@@ -78,7 +78,7 @@ Or, use variables from this repository in case I change them:
 |  | `baidupcs-go` | [baidupcs-go](https://github.com/qjfoidnh/BaiduPCS-Go) | v3.9.1 | iikira/BaiduPCS-Go 原版基础上集成了分享链接/秒传链接转存功能 |
 |  | `bepasty` | [bepasty](https://bepasty-server.readthedocs.org/) | 1.1.0 | universal pastebin server |
 |  | `bilibili` | [bilibili](https://app.bilibili.com/) | 1.10.1-1 | Bilibili desktop client |
-|  | `bird-babel-rtt` | [bird-babel-rtt](http://bird.network.cz) | b0b12f37388e59b4456119d3a90d4ff69622d698 | BIRD Internet Routing Daemon |
+|  | `bird-babel-rtt` | [bird-babel-rtt](http://bird.network.cz) | 69372dc9aa8b234b79999c4cdcdfa3aa05e3a672 | BIRD Internet Routing Daemon |
 |  | `bird-lg-go` | [bird-lg-go](https://github.com/xddxdd/bird-lg-go) | cdc34704b575fbbaf3473f9c49cdbf143c46bb1a | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
 |  | `bird-lgproxy-go` | [bird-lgproxy-go](https://github.com/xddxdd/bird-lg-go) | cdc34704b575fbbaf3473f9c49cdbf143c46bb1a | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
 | `Broken` | `boringssl-oqs` | [boringssl-oqs](https://openquantumsafe.org) | OQS-BoringSSL-snapshot-2022-08 | Fork of BoringSSL that includes prototype quantum-resistant key exchange and authentication in the TLS handshake based on liboqs |
@@ -102,7 +102,7 @@ Or, use variables from this repository in case I change them:
 |  | `glauth` | [glauth](https://github.com/glauth/glauth) | v2.2.0-RC1 | A lightweight LDAP server for development, home use, or CI |
 |  | `google-earth-pro` | [google-earth-pro](https://www.google.com/earth/) | 7.3.6.9345 | A world sphere viewer |
 |  | `gopherus` | [gopherus](http://gopherus.sourceforge.net/) | 1.2.1 | Gopherus is a free, multiplatform, console-mode gopher client that provides a classic text interface to the gopherspace. |
-|  | `grasscutter` | [grasscutter](https://github.com/Grasscutters/Grasscutter) | v1.6.0 | A server software reimplementation for a certain anime game. |
+|  | `grasscutter` | [grasscutter](https://github.com/Grasscutters/Grasscutter) | v1.6.1 | A server software reimplementation for a certain anime game. |
 |  | `hath` | [hath](https://e-hentai.org/) | 1.6.1 | Hentai@Home |
 |  | `hesuvi-hrir` | [hesuvi-hrir](https://sourceforge.net/projects/hesuvi/) | 2.0.0.1 | Headphone Surround Virtualizations for Equalizer APO |
 |  | `hoyo-glyphs` | [hoyo-glyphs](https://github.com/SpeedyOrc-C/Hoyo-Glyphs) | 6a56d5df74ab119d6bf6ceb75917740335b3f24a | Constructed scripts by Hoyoverse 米哈游的架空文字  |
