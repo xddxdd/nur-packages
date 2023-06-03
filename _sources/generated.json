@@ -191,7 +191,7 @@
     },
     "bird-lg-go": {
         "cargoLocks": null,
-        "date": "2023-05-14",
+        "date": "2023-06-02",
         "extract": null,
         "name": "bird-lg-go",
         "passthru": null,
@@ -203,11 +203,11 @@
             "name": null,
             "owner": "xddxdd",
             "repo": "bird-lg-go",
-            "rev": "cdc34704b575fbbaf3473f9c49cdbf143c46bb1a",
-            "sha256": "sha256-VQJHrC9ag697QfCEre1KvwbotfMm8f1otJ6SPg5zRYM=",
+            "rev": "bb479d22ae3d9558d5ff09a53ec2db386ee87551",
+            "sha256": "sha256-5A29g6aDkNNqp3Ran4Qzr/dX9hy8SGVfsvpmkTNe+uQ=",
             "type": "github"
         },
-        "version": "cdc34704b575fbbaf3473f9c49cdbf143c46bb1a"
+        "version": "bb479d22ae3d9558d5ff09a53ec2db386ee87551"
     },
     "boringssl-oqs": {
         "cargoLocks": null,
@@ -1444,7 +1444,7 @@
     },
     "undetected-chromedriver": {
         "cargoLocks": null,
-        "date": "2023-05-09",
+        "date": "2023-06-03",
         "extract": null,
         "name": "undetected-chromedriver",
         "passthru": null,
@@ -1456,11 +1456,11 @@
             "name": null,
             "owner": "ultrafunkamsterdam",
             "repo": "undetected-chromedriver",
-            "rev": "d29b3e300fe75aa878e0313bce37a1816d6bd4c0",
-            "sha256": "sha256-pdjJpoXph2tGTYX2y4tw/rR17a/KcbfYqzK8SD6LQ3I=",
+            "rev": "ebd3508a03fc8c0ede8294cdd232e61ba84c4c5c",
+            "sha256": "sha256-DAn2lTrdpgjjsiAWAbt3PJPMRp17Gy77gt9o/4PKpJs=",
             "type": "github"
         },
-        "version": "d29b3e300fe75aa878e0313bce37a1816d6bd4c0"
+        "version": "ebd3508a03fc8c0ede8294cdd232e61ba84c4c5c"
     },
     "vs-rife": {
         "cargoLocks": null,
