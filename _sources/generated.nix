@@ -75,13 +75,13 @@
   };
   baidupcs-go = {
     pname = "baidupcs-go";
-    version = "v3.9.1";
+    version = "v3.9.2";
     src = fetchFromGitHub {
       owner = "qjfoidnh";
       repo = "BaiduPCS-Go";
-      rev = "v3.9.1";
+      rev = "v3.9.2";
       fetchSubmodules = false;
-      sha256 = "sha256-8vK7yjiuY6X0mnAUnq+SwFESC30XZo4ykkm3y2Gt0o0=";
+      sha256 = "sha256-rN5c0m12Y20d+mbVI0BDvzx3lvRiknxESZ7n16z18Ik=";
     };
   };
   bepasty = {
@@ -94,10 +94,10 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.10.1-1";
+    version = "1.10.1-4";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.10.1-1/io.github.msojocs.bilibili_1.10.1-1_amd64.deb";
-      sha256 = "sha256-Kx45erpxS66/CWmo4Csw0jhp23u03fn7r+vkq5CtJg0=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.10.1-4/io.github.msojocs.bilibili_1.10.1-4_amd64.deb";
+      sha256 = "sha256-/jvgCEqd0kSAs3U7eJQ7fFyHdGcyV/7nMnNgQpDVgm0=";
     };
   };
   bird-babel-rtt = {

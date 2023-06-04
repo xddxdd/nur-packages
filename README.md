@@ -75,9 +75,9 @@ Or, use variables from this repository in case I change them:
 | ----- | ---- | ---- | ------- | ----------- |
 |  | `amule-dlp` | [amule-dlp](https://github.com/amule-project/amule) | 7b3a07ab554d95267cca0c4a819b26d8474d6b3b | Peer-to-peer client for the eD2K and Kademlia networks |
 |  | `asterisk-g72x` | [asterisk-g72x](https://github.com/arkadijs/asterisk-g72x) | 3855cec2ef2667f3e9224006dbaf179575752218 | G.729 and G.723.1 codecs for Asterisk (Only G.729 is enabled) |
-|  | `baidupcs-go` | [baidupcs-go](https://github.com/qjfoidnh/BaiduPCS-Go) | v3.9.1 | iikira/BaiduPCS-Go 原版基础上集成了分享链接/秒传链接转存功能 |
+|  | `baidupcs-go` | [baidupcs-go](https://github.com/qjfoidnh/BaiduPCS-Go) | v3.9.2 | iikira/BaiduPCS-Go 原版基础上集成了分享链接/秒传链接转存功能 |
 |  | `bepasty` | [bepasty](https://bepasty-server.readthedocs.org/) | 1.1.0 | universal pastebin server |
-|  | `bilibili` | [bilibili](https://app.bilibili.com/) | 1.10.1-1 | Bilibili desktop client |
+|  | `bilibili` | [bilibili](https://app.bilibili.com/) | 1.10.1-4 | Bilibili desktop client |
 |  | `bird-babel-rtt` | [bird-babel-rtt](http://bird.network.cz) | 69372dc9aa8b234b79999c4cdcdfa3aa05e3a672 | BIRD Internet Routing Daemon |
 |  | `bird-lg-go` | [bird-lg-go](https://github.com/xddxdd/bird-lg-go) | bb479d22ae3d9558d5ff09a53ec2db386ee87551 | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
 |  | `bird-lgproxy-go` | [bird-lgproxy-go](https://github.com/xddxdd/bird-lg-go) | bb479d22ae3d9558d5ff09a53ec2db386ee87551 | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
