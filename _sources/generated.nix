@@ -766,10 +766,10 @@
   };
   rime-zhwiki = {
     pname = "rime-zhwiki";
-    version = "20230507";
+    version = "20230605";
     src = fetchurl {
-      url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-20230507.dict.yaml";
-      sha256 = "sha256-vhpey4jQE2tNMYC+0ReP7v3WdkUGCsqNAiNoh/6EkG4=";
+      url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-20230605.dict.yaml";
+      sha256 = "sha256-SB2TcvJb/7D3cO3NG34QecMxWMAFwwHCSr3sKHLZa3o=";
     };
   };
   route-chain = {
