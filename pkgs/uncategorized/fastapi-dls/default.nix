@@ -25,13 +25,15 @@ in
 
     installPhase = ''
       mkdir -p $out/bin $out/opt
-      cp -r app/* $out/opt/
+      cp -r * $out/opt/
+
+      sed -i "s#\\.\\./#$out/opt/#g" $out/opt/app/main.py
 
       makeWrapper ${python}/bin/python $out/bin/fastapi-dls \
         --add-flags "-m" \
         --add-flags "uvicorn" \
         --add-flags "--app-dir" \
-        --add-flags "$out/opt" \
+        --add-flags "$out/opt/app" \
         --add-flags "main:app" \
     '';
 
