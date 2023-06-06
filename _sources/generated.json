@@ -374,6 +374,25 @@
         },
         "version": "7775441e24d68b191fd285d851e58713bead8bc5"
     },
+    "fastapi-dls": {
+        "cargoLocks": null,
+        "date": "2023-05-09",
+        "extract": null,
+        "name": "fastapi-dls",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "14cf6a953fc46f9cafbd9818214201f6248c58b8",
+            "sha256": "sha256-nxpljlOfdhYDpbgOfNTMUf9MtiaZgiOoofqEu1Cv7co=",
+            "type": "git",
+            "url": "https://gitea.publichub.eu/oscar.krause/fastapi-dls.git"
+        },
+        "version": "14cf6a953fc46f9cafbd9818214201f6248c58b8"
+    },
     "fcitx5-breeze": {
         "cargoLocks": null,
         "date": null,

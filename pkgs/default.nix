@@ -104,6 +104,7 @@ in
     douban-openapi-server = pkg ./uncategorized/douban-openapi-server {};
     drone-vault = pkg ./uncategorized/drone-vault {};
     etherguard = pkg ./uncategorized/etherguard {};
+    fastapi-dls = pkg ./uncategorized/fastapi-dls {};
     fcitx5-breeze = pkg ./uncategorized/fcitx5-breeze {};
     flaresolverr = pkg ./uncategorized/flaresolverr {};
     flasgger = pkg ./uncategorized/flasgger {};
