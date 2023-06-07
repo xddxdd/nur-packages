@@ -314,16 +314,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "730d95607ee1b201c518069429eefc8691f3033c";
+    version = "1dc0fbfd5c9ffb42d7726d4f35759b714b62650f";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "730d95607ee1b201c518069429eefc8691f3033c";
+      rev = "1dc0fbfd5c9ffb42d7726d4f35759b714b62650f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-PVPYxzCVpD33BRrmKBWd5aHA05O7i9QTrmM3uC9c+X8=";
+      sha256 = "sha256-2PLSETJxkFf+obkaIY4h//i/KE/GCLQ89d/w2J4At8A=";
     };
-    date = "2023-05-30";
+    date = "2023-06-06";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -401,15 +401,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "3e25479c16b04aeb474ae3a502c1358be03811f7";
+    version = "b2ad3f97c3b80ed5a357be51b928876e9f84bd9a";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "3e25479c16b04aeb474ae3a502c1358be03811f7";
+      rev = "b2ad3f97c3b80ed5a357be51b928876e9f84bd9a";
       fetchSubmodules = false;
-      sha256 = "sha256-lG6P+uw7xQ2Hzx1vFxRnHdvlknO5CXvexZ3Zr8OLTLA=";
+      sha256 = "sha256-0fVHCUqH3hSx/JOH9u9EV6SZT0atUvYsHFinCqO8hSE=";
     };
-    date = "2023-05-31";
+    date = "2023-06-06";
   };
   linux-xanmod = {
     pname = "linux-xanmod";
