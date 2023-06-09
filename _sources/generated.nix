@@ -401,15 +401,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "b2ad3f97c3b80ed5a357be51b928876e9f84bd9a";
+    version = "db08f12b5a96aa6582a82aac7f65cf8a4d8b231f";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "b2ad3f97c3b80ed5a357be51b928876e9f84bd9a";
+      rev = "db08f12b5a96aa6582a82aac7f65cf8a4d8b231f";
       fetchSubmodules = false;
-      sha256 = "sha256-0fVHCUqH3hSx/JOH9u9EV6SZT0atUvYsHFinCqO8hSE=";
+      sha256 = "sha256-h3mXoGRYgPg0wKQ1u6uFP7wlEUMQd5uIBt4Hr7vjNtA=";
     };
-    date = "2023-06-06";
+    date = "2023-06-07";
   };
   linux-xanmod = {
     pname = "linux-xanmod";
@@ -604,25 +604,25 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "07107deb2a9dc7d94ee7e52e7b34e1eb32a42a89";
+    version = "8c746d7e294d6948c2f361a8f2fa376a63a2db30";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "07107deb2a9dc7d94ee7e52e7b34e1eb32a42a89";
+      rev = "8c746d7e294d6948c2f361a8f2fa376a63a2db30";
       fetchSubmodules = false;
-      sha256 = "sha256-CcGrwQ+qWcx5/LFmun4WpXFemuptwAgHX+EmkDcde6g=";
+      sha256 = "sha256-Mnw1m1eogd33fUYNDwgNBasgK1X9rzeeDu7KVgktHYo=";
     };
-    date = "2023-06-01";
+    date = "2023-06-09";
   };
   osdlyrics = {
     pname = "osdlyrics";
-    version = "0.5.13";
+    version = "0.5.14";
     src = fetchFromGitHub {
       owner = "osdlyrics";
       repo = "osdlyrics";
-      rev = "0.5.13";
+      rev = "0.5.14";
       fetchSubmodules = false;
-      sha256 = "sha256-E4pVXopqQYJW+a5nUf9dMabxJ9nYPu3C2ti8LlY470c=";
+      sha256 = "sha256-NVUQLmddXnpryt1AuHSwgPnWkgxWMBNJac09TJ12Yzo=";
     };
   };
   payload-dumper-go = {
@@ -874,10 +874,10 @@
   };
   wine-wechat = {
     pname = "wine-wechat";
-    version = "3.9.2";
+    version = "3.9.5";
     src = fetchurl {
-      url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.2";
-      sha256 = "sha256-9zAHsy3zzp5x+RSL70vgf/EDkPQyxpORdeF79F3AhsY=";
+      url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.5";
+      sha256 = "sha256-2GplldTSmOrhHDI6apio6I2h4F830N4v/3UaOZ3ipcU=";
     };
   };
   xstatic-asciinema-player = {

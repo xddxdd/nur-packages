@@ -113,7 +113,7 @@ Or, use variables from this repository in case I change them:
 |  | `konnect` | [konnect](https://github.com/Kopano-dev/konnect) | v0.34.0 | Kopano Konnect implements an OpenID provider (OP) with integrated web login and consent forms. |
 |  | `ldap-auth-proxy` | [ldap-auth-proxy](https://github.com/pinepain/ldap-auth-proxy) | 66a8236af574f554478fe376051b95f61235efc9 | A simple drop-in HTTP proxy for transparent LDAP authentication which is also a HTTP auth backend. |
 |  | `libnftnl-fullcone` | [libnftnl](https://netfilter.org/projects/libnftnl/) | 1.2.5 | A userspace library providing a low-level netlink API to the in-kernel nf_tables subsystem |
-|  | `liboqs` | [liboqs](https://openquantumsafe.org) | b2ad3f97c3b80ed5a357be51b928876e9f84bd9a | C library for prototyping and experimenting with quantum-resistant cryptography |
+|  | `liboqs` | [liboqs](https://openquantumsafe.org) | db08f12b5a96aa6582a82aac7f65cf8a4d8b231f | C library for prototyping and experimenting with quantum-resistant cryptography |
 |  | `netboot-xyz` | [netboot-xyz](https://netboot.xyz/) | 2.0.69 | Your favorite operating systems in one place. A network-based bootable operating system installer based on iPXE. |
 |  | `netns-exec` | [netns-exec](https://github.com/pekman/netns-exec) | aa346fd058d47b238ae1b86250f414bcab2e7927 | Run command in Linux network namespace as normal user |
 |  | `nftables-fullcone` | [nftables](https://netfilter.org/projects/nftables/) | 1.0.7 | The project that aims to replace the existing {ip,ip6,arp,eb}tables framework |
@@ -123,8 +123,8 @@ Or, use variables from this repository in case I change them:
 |  | `oci-arm-host-capacity` | [oci-arm-host-capacity](https://github.com/hitrov/oci-arm-host-capacity) | 1a655bf6150d64f4f3732f267477ed3e4c6f87d0 | This script allows to bypass Oracle Cloud Infrastructure 'Out of host capacity' error immediately when additional OCI capacity will appear in your Home Region / Availability domain. |
 |  | `onepush` | [onepush](https://gitlab.com/y1ndan/onepush) | 3a1d5880e3b8f1c5191ee28acd828def15fe135d | A Python library to send notifications to your iPhone, Discord, Telegram, WeChat, QQ and DingTalk. |
 |  | `openssl-oqs` | [openssl-oqs](https://www.openssl.org/) | 1.1.1 | A cryptographic library that implements the SSL and TLS protocols |
-|  | `openssl-oqs-provider` | [openssl-oqs-provider](https://openquantumsafe.org) | 07107deb2a9dc7d94ee7e52e7b34e1eb32a42a89 | OpenSSL 3 provider containing post-quantum algorithms |
-|  | `osdlyrics` | [osdlyrics](https://github.com/osdlyrics/osdlyrics) | 0.5.13 | Standalone lyrics fetcher/displayer (windowed and OSD mode). |
+|  | `openssl-oqs-provider` | [openssl-oqs-provider](https://openquantumsafe.org) | 8c746d7e294d6948c2f361a8f2fa376a63a2db30 | OpenSSL 3 provider containing post-quantum algorithms |
+|  | `osdlyrics` | [osdlyrics](https://github.com/osdlyrics/osdlyrics) | 0.5.14 | Standalone lyrics fetcher/displayer (windowed and OSD mode). |
 |  | `payload-dumper-go` | [payload-dumper-go](https://github.com/ssut/payload-dumper-go) | 1.2.2 | An android OTA payload dumper written in Go |
 |  | `phpmyadmin` | [phpmyadmin](https://www.phpmyadmin.net/) | 5.2.1 | A web interface for MySQL and MariaDB |
 |  | `phppgadmin` | [phppgadmin](https://github.com/phppgadmin/phppgadmin) | v7.14.4-mod | The premier web-based administration tool for PostgreSQL |
@@ -149,7 +149,7 @@ Or, use variables from this repository in case I change them:
 | `Broken` | `vs-rife` | [vs-rife](https://github.com/HolyWu/vs-rife) | v3.1.0 | Real-Time Intermediate Flow Estimation for Video Frame Interpolation for VapourSynth |
 |  | `wechat-uos` | [wechat-uos](https://weixin.qq.com/) | 2.1.5 | WeChat desktop (System Electron) (Packaging script adapted from https://aur.archlinux.org/packages/wechat-uos) |
 |  | `wechat-uos-bin` | [wechat-uos-bin](https://weixin.qq.com/) | 2.1.5 | WeChat desktop (Official binary) (Packaging script adapted from https://aur.archlinux.org/packages/wechat-uos) |
-|  | `wine-wechat` | [wine-wechat](https://weixin.qq.com/) | 3.9.2 | Wine WeChat (Packaging script adapted from https://aur.archlinux.org/packages/deepin-wine-wechat) |
+|  | `wine-wechat` | [wine-wechat](https://weixin.qq.com/) | 3.9.5 | Wine WeChat (Packaging script adapted from https://aur.archlinux.org/packages/deepin-wine-wechat) |
 |  | `xstatic-asciinema-player` | [xstatic-asciinema-player](https://github.com/asciinema/asciinema-player) | 2.6.1.1 | asciinema-player packaged for setuptools (easy_install) / pip. |
 |  | `xstatic-font-awesome` | [xstatic-font-awesome](https://github.com/FortAwesome/Font-Awesome) | 6.2.1.1 | Font Awesome packaged for setuptools (easy_install) / pip. |
 </details>

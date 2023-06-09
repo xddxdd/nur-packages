@@ -688,7 +688,7 @@
     },
     "liboqs": {
         "cargoLocks": null,
-        "date": "2023-06-06",
+        "date": "2023-06-07",
         "extract": null,
         "name": "liboqs",
         "passthru": null,
@@ -700,11 +700,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "b2ad3f97c3b80ed5a357be51b928876e9f84bd9a",
-            "sha256": "sha256-0fVHCUqH3hSx/JOH9u9EV6SZT0atUvYsHFinCqO8hSE=",
+            "rev": "db08f12b5a96aa6582a82aac7f65cf8a4d8b231f",
+            "sha256": "sha256-h3mXoGRYgPg0wKQ1u6uFP7wlEUMQd5uIBt4Hr7vjNtA=",
             "type": "github"
         },
-        "version": "b2ad3f97c3b80ed5a357be51b928876e9f84bd9a"
+        "version": "db08f12b5a96aa6582a82aac7f65cf8a4d8b231f"
     },
     "linux-xanmod": {
         "cargoLocks": null,
@@ -1038,7 +1038,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2023-06-01",
+        "date": "2023-06-09",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1050,11 +1050,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "07107deb2a9dc7d94ee7e52e7b34e1eb32a42a89",
-            "sha256": "sha256-CcGrwQ+qWcx5/LFmun4WpXFemuptwAgHX+EmkDcde6g=",
+            "rev": "8c746d7e294d6948c2f361a8f2fa376a63a2db30",
+            "sha256": "sha256-Mnw1m1eogd33fUYNDwgNBasgK1X9rzeeDu7KVgktHYo=",
             "type": "github"
         },
-        "version": "07107deb2a9dc7d94ee7e52e7b34e1eb32a42a89"
+        "version": "8c746d7e294d6948c2f361a8f2fa376a63a2db30"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -1070,11 +1070,11 @@
             "name": null,
             "owner": "osdlyrics",
             "repo": "osdlyrics",
-            "rev": "0.5.13",
-            "sha256": "sha256-E4pVXopqQYJW+a5nUf9dMabxJ9nYPu3C2ti8LlY470c=",
+            "rev": "0.5.14",
+            "sha256": "sha256-NVUQLmddXnpryt1AuHSwgPnWkgxWMBNJac09TJ12Yzo=",
             "type": "github"
         },
-        "version": "0.5.13"
+        "version": "0.5.14"
     },
     "payload-dumper-go": {
         "cargoLocks": null,
@@ -1525,11 +1525,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9zAHsy3zzp5x+RSL70vgf/EDkPQyxpORdeF79F3AhsY=",
+            "sha256": "sha256-2GplldTSmOrhHDI6apio6I2h4F830N4v/3UaOZ3ipcU=",
             "type": "url",
-            "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.2"
+            "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.5"
         },
-        "version": "3.9.2"
+        "version": "3.9.5"
     },
     "xstatic-asciinema-player": {
         "cargoLocks": null,
