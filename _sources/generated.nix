@@ -413,13 +413,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.3.5-xanmod1";
+    version = "6.3.7-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.3.5-xanmod1";
+      rev = "6.3.7-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-2+8WDj1VdmIdC0DjmKyY/fMi5zoiXDAWy7EAmkImvXk=";
+      sha256 = "sha256-1Yy73ReS12ADFfaV+1ZV1BvaBlNVFl4UIkO9aqmfZgg=";
     };
   };
   linux-xanmod-6_0 = {
@@ -435,13 +435,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.31-xanmod1";
+    version = "6.1.33-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.31-xanmod1";
+      rev = "6.1.33-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-quYsp6h7IV6gUT0e55FeBlS8rH9OGrqdbM1XSIYNRV4=";
+      sha256 = "sha256-g3f+/btHMDJgEueY+xfDxq1fw6s5ao7X5D0C0HRasmE=";
     };
   };
   nbfc-linux-lantian = {
@@ -592,15 +592,15 @@
   };
   openssl-oqs = {
     pname = "openssl-oqs";
-    version = "c294e1194295c55b4a5da9a6d092439bb6ee7ba0";
+    version = "70d83cacc85b0c45331c16bcb9acf6a233e895e3";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "openssl";
-      rev = "c294e1194295c55b4a5da9a6d092439bb6ee7ba0";
+      rev = "70d83cacc85b0c45331c16bcb9acf6a233e895e3";
       fetchSubmodules = false;
-      sha256 = "sha256-JjZ3j/KJuVB4yfe0+0lgYGEzrIxlnO25o6NT6JDL9TU=";
+      sha256 = "sha256-1f2XL4iPPGhWoMai5KXG5hY6WaoYqg6cy/o13ixEPLw=";
     };
-    date = "2023-05-23";
+    date = "2023-06-10";
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
