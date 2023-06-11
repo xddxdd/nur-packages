@@ -114,15 +114,15 @@
   };
   bird-lg-go = {
     pname = "bird-lg-go";
-    version = "bb479d22ae3d9558d5ff09a53ec2db386ee87551";
+    version = "e9496467904e13c3f954927be6c59aab5f19229b";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "bird-lg-go";
-      rev = "bb479d22ae3d9558d5ff09a53ec2db386ee87551";
+      rev = "e9496467904e13c3f954927be6c59aab5f19229b";
       fetchSubmodules = false;
-      sha256 = "sha256-5A29g6aDkNNqp3Ran4Qzr/dX9hy8SGVfsvpmkTNe+uQ=";
+      sha256 = "sha256-ipJ1jOaz2mBbUU3nJGTP8qPwXsGBkDYsD0MARZBPY+A=";
     };
-    date = "2023-06-02";
+    date = "2023-06-10";
   };
   boringssl-oqs = {
     pname = "boringssl-oqs";
@@ -240,13 +240,13 @@
   };
   flaresolverr = {
     pname = "flaresolverr";
-    version = "v3.2.0";
+    version = "v3.2.1";
     src = fetchFromGitHub {
       owner = "FlareSolverr";
       repo = "FlareSolverr";
-      rev = "v3.2.0";
+      rev = "v3.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-d3uuOILDvKB+IoIXZVtN/kgurETp40uSAOpoTbPX3yI=";
+      sha256 = "sha256-dq9ntnz2QbuT04pXYQ3UVkEBt3kGOswRUa8J4iwzBDA=";
     };
   };
   flasgger = {
