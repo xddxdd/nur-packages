@@ -219,16 +219,16 @@
   };
   fastapi-dls = {
     pname = "fastapi-dls";
-    version = "14cf6a953fc46f9cafbd9818214201f6248c58b8";
+    version = "98da86fc2e9fa89b0ef0482c35a0103d7e3f170d";
     src = fetchgit {
       url = "https://gitea.publichub.eu/oscar.krause/fastapi-dls.git";
-      rev = "14cf6a953fc46f9cafbd9818214201f6248c58b8";
+      rev = "98da86fc2e9fa89b0ef0482c35a0103d7e3f170d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-nxpljlOfdhYDpbgOfNTMUf9MtiaZgiOoofqEu1Cv7co=";
+      sha256 = "sha256-vLFgfsqbNIw2oZ+dD3KoxFQZ02XQTEqfkCJiRvrmFvU=";
     };
-    date = "2023-05-09";
+    date = "2023-06-12";
   };
   fcitx5-breeze = {
     pname = "fcitx5-breeze";
@@ -401,15 +401,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "db08f12b5a96aa6582a82aac7f65cf8a4d8b231f";
+    version = "f0e6b8646c5eae0e8052d029079ed3efa498f220";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "db08f12b5a96aa6582a82aac7f65cf8a4d8b231f";
+      rev = "f0e6b8646c5eae0e8052d029079ed3efa498f220";
       fetchSubmodules = false;
-      sha256 = "sha256-h3mXoGRYgPg0wKQ1u6uFP7wlEUMQd5uIBt4Hr7vjNtA=";
+      sha256 = "sha256-3TykVtSCFCRYx+e+A67VpBZjK5rlXF2A3txTdPYeF6w=";
     };
-    date = "2023-06-07";
+    date = "2023-06-11";
   };
   linux-xanmod = {
     pname = "linux-xanmod";
@@ -604,15 +604,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "8c746d7e294d6948c2f361a8f2fa376a63a2db30";
+    version = "b6c34f7afab4c44b167d7c300dd073b822536483";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "8c746d7e294d6948c2f361a8f2fa376a63a2db30";
+      rev = "b6c34f7afab4c44b167d7c300dd073b822536483";
       fetchSubmodules = false;
-      sha256 = "sha256-Mnw1m1eogd33fUYNDwgNBasgK1X9rzeeDu7KVgktHYo=";
+      sha256 = "sha256-IKDAgDdPJNumj0RdT6RBdjFohxNmRMaa/9K7GwYQKZI=";
     };
-    date = "2023-06-09";
+    date = "2023-06-13";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -679,34 +679,34 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "7.2+dfsg-7";
+    version = "8.0.2+dfsg-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_7.2+dfsg-7_amd64.deb";
-      sha256 = "sha256-nB/Wit0zgIFTBkjOCMgfjKigH6OpvEChRzSTYiGomzQ=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_amd64.deb";
+      sha256 = "sha256-vkImNj2sTBuD2Jh55MmUrsyi8B5yXX7ylDUqbTHknVk=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "7.2+dfsg-7";
+    version = "8.0.2+dfsg-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_7.2+dfsg-7_arm64.deb";
-      sha256 = "sha256-ytcvoTK/SN0IO6jTlbke5RSZ2vfkAqab5CsAA0NN+sc=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_arm64.deb";
+      sha256 = "sha256-ZX8yZJahvsFQ9OkxQtRqqTmZnTSr4m5cNOZiCJh+v1c=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "7.2+dfsg-7";
+    version = "8.0.2+dfsg-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_7.2+dfsg-7_armhf.deb";
-      sha256 = "sha256-QKcHxt00vzeCwHyb+gLhDoJUngD5h3FJpAXdtIg/lJM=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_armhf.deb";
+      sha256 = "sha256-2unStEtUq1tZRG4300mcqRVC94ACdV341QBoOLkDYCQ=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "7.2+dfsg-7";
+    version = "8.0.2+dfsg-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_7.2+dfsg-7_i386.deb";
-      sha256 = "sha256-tObRObMxX5c25ittytoWPLgj3lZrYHz4yVRRUEnERBM=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_i386.deb";
+      sha256 = "sha256-GAetwzbqwZUvIf0U3jka3R2eyOLHkPw05DOzRJfddl8=";
     };
   };
   qq-amd64 = {
@@ -843,15 +843,15 @@
   };
   undetected-chromedriver = {
     pname = "undetected-chromedriver";
-    version = "ebd3508a03fc8c0ede8294cdd232e61ba84c4c5c";
+    version = "1c704a71cf4f29181a59ecf19ddff32f1b4fbfc0";
     src = fetchFromGitHub {
       owner = "ultrafunkamsterdam";
       repo = "undetected-chromedriver";
-      rev = "ebd3508a03fc8c0ede8294cdd232e61ba84c4c5c";
+      rev = "1c704a71cf4f29181a59ecf19ddff32f1b4fbfc0";
       fetchSubmodules = false;
-      sha256 = "sha256-DAn2lTrdpgjjsiAWAbt3PJPMRp17Gy77gt9o/4PKpJs=";
+      sha256 = "sha256-b0+RvwyA+Hihs6chawcxQCnGnJd7msk0jM5Pv3YZ1no=";
     };
-    date = "2023-06-03";
+    date = "2023-06-12";
   };
   vs-rife = {
     pname = "vs-rife";
