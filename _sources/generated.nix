@@ -176,10 +176,10 @@
   };
   dingtalk = {
     pname = "dingtalk";
-    version = "1.7.0.30419";
+    version = "1.8.0.30601";
     src = fetchurl {
-      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_1.7.0.30419_amd64.deb";
-      sha256 = "sha256-Ycq3YzhIbk8nRltgcVgDFQUFqKq57kmcAlOsh/t9UGI=";
+      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_1.8.0.30601_amd64.deb";
+      sha256 = "sha256-Qb8EjHcz8h49Rtjrbhf56KbQj/DYGdqQC1vFRKAGVtk=";
     };
   };
   douban-openapi-server = {
@@ -657,13 +657,13 @@
   };
   plangothic-fonts = {
     pname = "plangothic-fonts";
-    version = "V0.8.5735";
+    version = "V0.8.5741";
     src = fetchFromGitHub {
       owner = "Fitzgerald-Porthmouth-Koenigsegg";
       repo = "Plangothic";
-      rev = "V0.8.5735";
+      rev = "V0.8.5741";
       fetchSubmodules = false;
-      sha256 = "sha256-og98Zz2uuNEWVtGXUkGldx7JNwkqklGhKIfgo14kKvE=";
+      sha256 = "sha256-HCftE5L+0lPtZN8+vWurKiMowc/Mw1LytvsKZo6Jtyw=";
     };
   };
   qbittorrent-enhanced-edition = {

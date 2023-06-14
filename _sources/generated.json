@@ -308,11 +308,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Ycq3YzhIbk8nRltgcVgDFQUFqKq57kmcAlOsh/t9UGI=",
+            "sha256": "sha256-Qb8EjHcz8h49Rtjrbhf56KbQj/DYGdqQC1vFRKAGVtk=",
             "type": "url",
-            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_1.7.0.30419_amd64.deb"
+            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_1.8.0.30601_amd64.deb"
         },
-        "version": "1.7.0.30419"
+        "version": "1.8.0.30601"
     },
     "douban-openapi-server": {
         "cargoLocks": null,
@@ -1145,11 +1145,11 @@
             "name": null,
             "owner": "Fitzgerald-Porthmouth-Koenigsegg",
             "repo": "Plangothic",
-            "rev": "V0.8.5735",
-            "sha256": "sha256-og98Zz2uuNEWVtGXUkGldx7JNwkqklGhKIfgo14kKvE=",
+            "rev": "V0.8.5741",
+            "sha256": "sha256-HCftE5L+0lPtZN8+vWurKiMowc/Mw1LytvsKZo6Jtyw=",
             "type": "github"
         },
-        "version": "V0.8.5735"
+        "version": "V0.8.5741"
     },
     "qbittorrent-enhanced-edition": {
         "cargoLocks": null,
