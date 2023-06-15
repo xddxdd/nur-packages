@@ -401,25 +401,25 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "f0e6b8646c5eae0e8052d029079ed3efa498f220";
+    version = "d81c64cc0ffb7cee8ff8803a3aad461c71024885";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "f0e6b8646c5eae0e8052d029079ed3efa498f220";
+      rev = "d81c64cc0ffb7cee8ff8803a3aad461c71024885";
       fetchSubmodules = false;
-      sha256 = "sha256-3TykVtSCFCRYx+e+A67VpBZjK5rlXF2A3txTdPYeF6w=";
+      sha256 = "sha256-9hx4kjfNIyYSZ7Mwwta7Gdwdg3E90CTZIwJRmqK9Fxk=";
     };
-    date = "2023-06-11";
+    date = "2023-06-15";
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.3.7-xanmod1";
+    version = "6.3.8-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.3.7-xanmod1";
+      rev = "6.3.8-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-1Yy73ReS12ADFfaV+1ZV1BvaBlNVFl4UIkO9aqmfZgg=";
+      sha256 = "sha256-9rHlYs66Pjk8JabFppqS2wOHhgVuWkKuObrE7u/c3lU=";
     };
   };
   linux-xanmod-6_0 = {
@@ -435,13 +435,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.33-xanmod1";
+    version = "6.1.34-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.33-xanmod1";
+      rev = "6.1.34-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-g3f+/btHMDJgEueY+xfDxq1fw6s5ao7X5D0C0HRasmE=";
+      sha256 = "sha256-BvIpLRqikK9rBGp7AxoJtmEJxCakuRdDDsd9qppacTI=";
     };
   };
   nbfc-linux-lantian = {
@@ -604,15 +604,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "b6c34f7afab4c44b167d7c300dd073b822536483";
+    version = "0c91d0919307daddf9c77b2c514c5c4a8915b699";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "b6c34f7afab4c44b167d7c300dd073b822536483";
+      rev = "0c91d0919307daddf9c77b2c514c5c4a8915b699";
       fetchSubmodules = false;
-      sha256 = "sha256-IKDAgDdPJNumj0RdT6RBdjFohxNmRMaa/9K7GwYQKZI=";
+      sha256 = "sha256-yzlSbjMivj5P1I/wkOniupfvndzrgYqCXVw+TmPFqoQ=";
     };
-    date = "2023-06-13";
+    date = "2023-06-14";
   };
   osdlyrics = {
     pname = "osdlyrics";
