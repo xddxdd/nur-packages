@@ -687,10 +687,10 @@
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.0.2+dfsg-1";
+    version = "8.0.2+dfsg-2";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_arm64.deb";
-      sha256 = "sha256-ZX8yZJahvsFQ9OkxQtRqqTmZnTSr4m5cNOZiCJh+v1c=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-2_arm64.deb";
+      sha256 = "sha256-tN2VhAMOTPpy8nRDrkhTXCssLbzyBchXmOfHZ/I2Kn4=";
     };
   };
   qemu-user-static-armhf = {
