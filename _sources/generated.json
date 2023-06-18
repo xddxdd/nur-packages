@@ -1180,11 +1180,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vkImNj2sTBuD2Jh55MmUrsyi8B5yXX7ylDUqbTHknVk=",
+            "sha256": "sha256-ZRwuhg3aAF1q9G6EEBubQPVlOkAs+TYsfiOcd7ewIiM=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_amd64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-2_amd64.deb"
         },
-        "version": "8.0.2+dfsg-1"
+        "version": "8.0.2+dfsg-2"
     },
     "qemu-user-static-arm64": {
         "cargoLocks": null,
@@ -1210,11 +1210,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-2unStEtUq1tZRG4300mcqRVC94ACdV341QBoOLkDYCQ=",
+            "sha256": "sha256-eKLDQmBUrBnlZhtzvdTC0UA7PgB2EpAEKUCpPG2EDbI=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_armhf.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-2_armhf.deb"
         },
-        "version": "8.0.2+dfsg-1"
+        "version": "8.0.2+dfsg-2"
     },
     "qemu-user-static-i386": {
         "cargoLocks": null,
@@ -1225,11 +1225,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-GAetwzbqwZUvIf0U3jka3R2eyOLHkPw05DOzRJfddl8=",
+            "sha256": "sha256-YLflJp5AHMdRb7JxBHujPwgPQwGFFnVVmoCSzMQxTCo=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_i386.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-2_i386.deb"
         },
-        "version": "8.0.2+dfsg-1"
+        "version": "8.0.2+dfsg-2"
     },
     "qq-amd64": {
         "cargoLocks": null,
@@ -1345,11 +1345,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DYBzdHJxHdz0/DAAvuCfgHu6N6SIpmSlCGS1tawASBE=",
+            "sha256": "sha256-hZ5QPZ9Jx/U3e6ElxF3xWM+igExqU3vx4WiIkVAn2Q0=",
             "type": "url",
-            "url": "https://github.com/outloudvi/mw2fcitx/releases/download/20230514/moegirl.dict.yaml"
+            "url": "https://github.com/outloudvi/mw2fcitx/releases/download/20230617/moegirl.dict.yaml"
         },
-        "version": "20230514"
+        "version": "20230617"
     },
     "rime-zhwiki": {
         "cargoLocks": null,

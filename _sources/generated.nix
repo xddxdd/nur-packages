@@ -679,10 +679,10 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.0.2+dfsg-1";
+    version = "8.0.2+dfsg-2";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_amd64.deb";
-      sha256 = "sha256-vkImNj2sTBuD2Jh55MmUrsyi8B5yXX7ylDUqbTHknVk=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-2_amd64.deb";
+      sha256 = "sha256-ZRwuhg3aAF1q9G6EEBubQPVlOkAs+TYsfiOcd7ewIiM=";
     };
   };
   qemu-user-static-arm64 = {
@@ -695,18 +695,18 @@
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.0.2+dfsg-1";
+    version = "8.0.2+dfsg-2";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_armhf.deb";
-      sha256 = "sha256-2unStEtUq1tZRG4300mcqRVC94ACdV341QBoOLkDYCQ=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-2_armhf.deb";
+      sha256 = "sha256-eKLDQmBUrBnlZhtzvdTC0UA7PgB2EpAEKUCpPG2EDbI=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.0.2+dfsg-1";
+    version = "8.0.2+dfsg-2";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-1_i386.deb";
-      sha256 = "sha256-GAetwzbqwZUvIf0U3jka3R2eyOLHkPw05DOzRJfddl8=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-2_i386.deb";
+      sha256 = "sha256-YLflJp5AHMdRb7JxBHujPwgPQwGFFnVVmoCSzMQxTCo=";
     };
   };
   qq-amd64 = {
@@ -771,10 +771,10 @@
   };
   rime-moegirl = {
     pname = "rime-moegirl";
-    version = "20230514";
+    version = "20230617";
     src = fetchurl {
-      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20230514/moegirl.dict.yaml";
-      sha256 = "sha256-DYBzdHJxHdz0/DAAvuCfgHu6N6SIpmSlCGS1tawASBE=";
+      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20230617/moegirl.dict.yaml";
+      sha256 = "sha256-hZ5QPZ9Jx/U3e6ElxF3xWM+igExqU3vx4WiIkVAn2Q0=";
     };
   };
   rime-zhwiki = {
