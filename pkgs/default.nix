@@ -72,6 +72,7 @@ in
     });
 
     lantianLinuxXanmod = ifNotCI (pkgs.recurseIntoAttrs (pkg ./lantian-linux-xanmod {}));
+    lantianLinuxXanmodPackages = ifNotCI (pkgs.recurseIntoAttrs (pkg ./lantian-linux-xanmod/packages.nix {}));
 
     lantianPersonal = ifNotCI (pkgs.recurseIntoAttrs {
       # Personal packages with no intention to be used by others
