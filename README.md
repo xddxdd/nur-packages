@@ -79,8 +79,8 @@ Or, use variables from this repository in case I change them:
 |  | `bepasty` | [bepasty](https://bepasty-server.readthedocs.org/) | 1.1.0 | universal pastebin server |
 |  | `bilibili` | [bilibili](https://app.bilibili.com/) | 1.10.1-4 | Bilibili desktop client |
 |  | `bird-babel-rtt` | [bird-babel-rtt](http://bird.network.cz) | 69372dc9aa8b234b79999c4cdcdfa3aa05e3a672 | BIRD Internet Routing Daemon |
-|  | `bird-lg-go` | [bird-lg-go](https://github.com/xddxdd/bird-lg-go) | e9496467904e13c3f954927be6c59aab5f19229b | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
-|  | `bird-lgproxy-go` | [bird-lgproxy-go](https://github.com/xddxdd/bird-lg-go) | e9496467904e13c3f954927be6c59aab5f19229b | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
+|  | `bird-lg-go` | [bird-lg-go](https://github.com/xddxdd/bird-lg-go) | b237185ef71a2e46d5105d31c8437e9922508c4e | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
+|  | `bird-lgproxy-go` | [bird-lgproxy-go](https://github.com/xddxdd/bird-lg-go) | b237185ef71a2e46d5105d31c8437e9922508c4e | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
 | `Broken` | `boringssl-oqs` | [boringssl-oqs](https://openquantumsafe.org) | OQS-BoringSSL-snapshot-2022-08 | Fork of BoringSSL that includes prototype quantum-resistant key exchange and authentication in the TLS handshake based on liboqs |
 |  | `calibre-cops` | [calibre-cops](http://blog.slucas.fr/en/oss/calibre-opds-php-server) | 1.1.3 | Calibre OPDS (and HTML) PHP Server : web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...) |
 |  | `chmlib-utils` | [chmlib](http://www.jedrea.com/chmlib) | 0.40a | A library for dealing with Microsoft ITSS/CHM format files |

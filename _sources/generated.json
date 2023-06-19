@@ -191,7 +191,7 @@
     },
     "bird-lg-go": {
         "cargoLocks": null,
-        "date": "2023-06-10",
+        "date": "2023-06-18",
         "extract": null,
         "name": "bird-lg-go",
         "passthru": null,
@@ -203,11 +203,11 @@
             "name": null,
             "owner": "xddxdd",
             "repo": "bird-lg-go",
-            "rev": "e9496467904e13c3f954927be6c59aab5f19229b",
-            "sha256": "sha256-ipJ1jOaz2mBbUU3nJGTP8qPwXsGBkDYsD0MARZBPY+A=",
+            "rev": "b237185ef71a2e46d5105d31c8437e9922508c4e",
+            "sha256": "sha256-ROMwgsKroxd9qkKX8ZoOuazBrnZytcTAPT9hR/v6a04=",
             "type": "github"
         },
-        "version": "e9496467904e13c3f954927be6c59aab5f19229b"
+        "version": "b237185ef71a2e46d5105d31c8437e9922508c4e"
     },
     "boringssl-oqs": {
         "cargoLocks": null,
@@ -1018,7 +1018,7 @@
     },
     "openssl-oqs": {
         "cargoLocks": null,
-        "date": "2023-06-10",
+        "date": "2023-06-18",
         "extract": null,
         "name": "openssl-oqs",
         "passthru": null,
@@ -1030,11 +1030,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "openssl",
-            "rev": "70d83cacc85b0c45331c16bcb9acf6a233e895e3",
-            "sha256": "sha256-1f2XL4iPPGhWoMai5KXG5hY6WaoYqg6cy/o13ixEPLw=",
+            "rev": "94df6b13d9223c9f6c3d1fdd2333fd749e515968",
+            "sha256": "sha256-Fw3ca2nuSGVNS//5/io0iCeU2yfKgYYIzIK/O49CiKQ=",
             "type": "github"
         },
-        "version": "70d83cacc85b0c45331c16bcb9acf6a233e895e3"
+        "version": "94df6b13d9223c9f6c3d1fdd2333fd749e515968"
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
