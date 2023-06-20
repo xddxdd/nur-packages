@@ -401,15 +401,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "d81c64cc0ffb7cee8ff8803a3aad461c71024885";
+    version = "55cc72796f515c5d3d4a231a24e84c81cfc765d5";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "d81c64cc0ffb7cee8ff8803a3aad461c71024885";
+      rev = "55cc72796f515c5d3d4a231a24e84c81cfc765d5";
       fetchSubmodules = false;
-      sha256 = "sha256-9hx4kjfNIyYSZ7Mwwta7Gdwdg3E90CTZIwJRmqK9Fxk=";
+      sha256 = "sha256-4TTYTRPCORaeP1zF0Csbt/uHRyN7NOJRth4bsjTcxuA=";
     };
-    date = "2023-06-15";
+    date = "2023-06-19";
   };
   linux-xanmod = {
     pname = "linux-xanmod";
@@ -668,13 +668,13 @@
   };
   qbittorrent-enhanced-edition = {
     pname = "qbittorrent-enhanced-edition";
-    version = "release-4.5.3.10";
+    version = "release-4.5.4.10";
     src = fetchFromGitHub {
       owner = "c0re100";
       repo = "qBittorrent-Enhanced-Edition";
-      rev = "release-4.5.3.10";
+      rev = "release-4.5.4.10";
       fetchSubmodules = false;
-      sha256 = "sha256-ZWIDfX0YGyrEWV/8xlNWL/EsHGSS4nVVyzrOwSmST7I=";
+      sha256 = "sha256-2kHjW3CMcAEITbYzw8QNRqkTWrMkaktkdAd69moyk2M=";
     };
   };
   qemu-user-static-amd64 = {
