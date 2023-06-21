@@ -592,15 +592,15 @@
   };
   openssl-oqs = {
     pname = "openssl-oqs";
-    version = "94df6b13d9223c9f6c3d1fdd2333fd749e515968";
+    version = "d13457c84f8aa3e259e419375a5985b023ba212d";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "openssl";
-      rev = "94df6b13d9223c9f6c3d1fdd2333fd749e515968";
+      rev = "d13457c84f8aa3e259e419375a5985b023ba212d";
       fetchSubmodules = false;
-      sha256 = "sha256-Fw3ca2nuSGVNS//5/io0iCeU2yfKgYYIzIK/O49CiKQ=";
+      sha256 = "sha256-Df4o9KysSJBs2lFIZKJcjvZ4xSRd4iJjAhHevDuFk9Y=";
     };
-    date = "2023-06-18";
+    date = "2023-06-20";
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
