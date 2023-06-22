@@ -413,13 +413,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.3.8-xanmod1";
+    version = "6.3.9-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.3.8-xanmod1";
+      rev = "6.3.9-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-9rHlYs66Pjk8JabFppqS2wOHhgVuWkKuObrE7u/c3lU=";
+      sha256 = "sha256-t1fKPZ+giANPmhM4zGoGtYWJF6rDnbpJaoHILl3nyRI=";
     };
   };
   linux-xanmod-6_0 = {
@@ -435,13 +435,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.34-xanmod1";
+    version = "6.1.35-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.34-xanmod1";
+      rev = "6.1.35-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-BvIpLRqikK9rBGp7AxoJtmEJxCakuRdDDsd9qppacTI=";
+      sha256 = "sha256-CfrM2CNaGUTfkVteudL8xnAuCdZJxD5pUEC1YW9LiuU=";
     };
   };
   nbfc-linux-lantian = {
