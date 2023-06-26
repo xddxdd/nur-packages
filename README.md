@@ -91,7 +91,7 @@ Or, use variables from this repository in case I change them:
 |  | `dingtalk` | [dingtalk](https://www.dingtalk.com/) | 1.8.0.30601 | 钉钉 |
 |  | `dn42-pingfinder` | [dn42-pingfinder](https://git.dn42.dev/dn42/pingfinder/src/branch/master/clients) | 1.0.0 | DN42 Pingfinder |
 |  | `douban-openapi-server` | [douban-openapi-server](https://github.com/caryyu/douban-openapi-server) | c7e2a0f59ba5cfb2d10a31013547686a4afab99d | A Douban API server that provides an unofficial APIs for media information gathering |
-|  | `drone-file-secret` | [drone-file-secret](https://github.com/xddxdd/drone-file-secret) | abc79c66a94bfe45ae4f63a77551bee452a4b1e9 | A secret provider for Drone CI. It simply reads secrets from a given folder, suitable for private use Drone CI instances where running a Vault instance can be undesirable. |
+|  | `drone-file-secret` | [drone-file-secret](https://github.com/xddxdd/drone-file-secret) | 952dedafca45ff93e092c050f12c46abe08f8556 | A secret provider for Drone CI. It simply reads secrets from a given folder, suitable for private use Drone CI instances where running a Vault instance can be undesirable. |
 |  | `drone-vault` | [drone-vault](https://docs.drone.io/configure/secrets/external/vault/) | v1.3.0 | Drone plugin for integrating with the Vault secrets manager |
 |  | `etherguard` | [etherguard](https://github.com/KusakabeShi/EtherGuard-VPN) | 7775441e24d68b191fd285d851e58713bead8bc5 | Layer2 version of wireguard with Floyd Warshall implement in go |
 |  | `fastapi-dls` | [fastapi-dls](https://gitea.publichub.eu/oscar.krause/fastapi-dls) | 98da86fc2e9fa89b0ef0482c35a0103d7e3f170d | Minimal Delegated License Service (DLS) |

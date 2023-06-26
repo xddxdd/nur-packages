@@ -196,13 +196,13 @@
   };
   drone-file-secret = {
     pname = "drone-file-secret";
-    version = "abc79c66a94bfe45ae4f63a77551bee452a4b1e9";
+    version = "952dedafca45ff93e092c050f12c46abe08f8556";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "drone-file-secret";
-      rev = "abc79c66a94bfe45ae4f63a77551bee452a4b1e9";
+      rev = "952dedafca45ff93e092c050f12c46abe08f8556";
       fetchSubmodules = false;
-      sha256 = "sha256-O97dZjk9OFSUFeMXMZ6XPIkoGS7RorojOfl0DMux8Wc=";
+      sha256 = "sha256-/DbekWkIq/SypuU+d9OIunE9UZ4oyxximCmo9nGa/eo=";
     };
     date = "2023-06-25";
   };
