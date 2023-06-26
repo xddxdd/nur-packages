@@ -194,6 +194,18 @@
     };
     date = "2022-12-17";
   };
+  drone-file-secret = {
+    pname = "drone-file-secret";
+    version = "abc79c66a94bfe45ae4f63a77551bee452a4b1e9";
+    src = fetchFromGitHub {
+      owner = "xddxdd";
+      repo = "drone-file-secret";
+      rev = "abc79c66a94bfe45ae4f63a77551bee452a4b1e9";
+      fetchSubmodules = false;
+      sha256 = "sha256-O97dZjk9OFSUFeMXMZ6XPIkoGS7RorojOfl0DMux8Wc=";
+    };
+    date = "2023-06-25";
+  };
   drone-vault = {
     pname = "drone-vault";
     version = "v1.3.0";

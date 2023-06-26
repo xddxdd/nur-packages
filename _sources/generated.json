@@ -334,6 +334,26 @@
         },
         "version": "c7e2a0f59ba5cfb2d10a31013547686a4afab99d"
     },
+    "drone-file-secret": {
+        "cargoLocks": null,
+        "date": "2023-06-25",
+        "extract": null,
+        "name": "drone-file-secret",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "xddxdd",
+            "repo": "drone-file-secret",
+            "rev": "abc79c66a94bfe45ae4f63a77551bee452a4b1e9",
+            "sha256": "sha256-O97dZjk9OFSUFeMXMZ6XPIkoGS7RorojOfl0DMux8Wc=",
+            "type": "github"
+        },
+        "version": "abc79c66a94bfe45ae4f63a77551bee452a4b1e9"
+    },
     "drone-vault": {
         "cargoLocks": null,
         "date": null,

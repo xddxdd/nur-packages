@@ -103,6 +103,7 @@ in
     dingtalk = pkg ./uncategorized/dingtalk {};
     dn42-pingfinder = pkg ./uncategorized/dn42-pingfinder {};
     douban-openapi-server = pkg ./uncategorized/douban-openapi-server {};
+    drone-file-secret = pkg ./uncategorized/drone-file-secret {};
     drone-vault = pkg ./uncategorized/drone-vault {};
     etherguard = pkg ./uncategorized/etherguard {};
     fastapi-dls = pkg ./uncategorized/fastapi-dls {};

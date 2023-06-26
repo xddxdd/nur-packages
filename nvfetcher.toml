@@ -72,6 +72,10 @@ fetch.url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/
 src.git = "https://github.com/caryyu/douban-openapi-server.git"
 fetch.github = "caryyu/douban-openapi-server"
 
+[drone-file-secret]
+src.git = "https://github.com/xddxdd/drone-file-secret.git"
+fetch.github = "xddxdd/drone-file-secret"
+
 [drone-vault]
 src.github_tag = "drone/drone-vault"
 fetch.github = "drone/drone-vault"
