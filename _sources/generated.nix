@@ -102,15 +102,15 @@
   };
   bird-babel-rtt = {
     pname = "bird-babel-rtt";
-    version = "69372dc9aa8b234b79999c4cdcdfa3aa05e3a672";
+    version = "0b28efeace71a2c489b178a12b6aa6ed3e6ed4a4";
     src = fetchFromGitHub {
       owner = "NickCao";
       repo = "bird";
-      rev = "69372dc9aa8b234b79999c4cdcdfa3aa05e3a672";
+      rev = "0b28efeace71a2c489b178a12b6aa6ed3e6ed4a4";
       fetchSubmodules = false;
-      sha256 = "sha256-b9RVWZmzT6E7XAb+GW6YXcZXmG+nQBKYjOXEZNPkGpQ=";
+      sha256 = "sha256-qOI7b3Ut4/JjnFOW+Cjt1ypWJdy2g95qizGgEpr6xTc=";
     };
-    date = "2023-06-02";
+    date = "2023-06-27";
   };
   bird-lg-go = {
     pname = "bird-lg-go";
@@ -196,13 +196,13 @@
   };
   drone-file-secret = {
     pname = "drone-file-secret";
-    version = "952dedafca45ff93e092c050f12c46abe08f8556";
+    version = "b69ba503becb41c72a1b724f38a26e7f2c34b110";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "drone-file-secret";
-      rev = "952dedafca45ff93e092c050f12c46abe08f8556";
+      rev = "b69ba503becb41c72a1b724f38a26e7f2c34b110";
       fetchSubmodules = false;
-      sha256 = "sha256-/DbekWkIq/SypuU+d9OIunE9UZ4oyxximCmo9nGa/eo=";
+      sha256 = "sha256-aLr286rV6Ch3T1/r8Ru5JmRH1zDU6cfizGYzPW01snU=";
     };
     date = "2023-06-25";
   };
@@ -326,16 +326,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "1dc0fbfd5c9ffb42d7726d4f35759b714b62650f";
+    version = "4c3c93a57fda25b8a86a519924c7a20f64b97519";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "1dc0fbfd5c9ffb42d7726d4f35759b714b62650f";
+      rev = "4c3c93a57fda25b8a86a519924c7a20f64b97519";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-2PLSETJxkFf+obkaIY4h//i/KE/GCLQ89d/w2J4At8A=";
+      sha256 = "sha256-zGwzGfu0aMYouFjECMZP6QZVrJQ3tgTpmKiIjvlvu3U=";
     };
-    date = "2023-06-06";
+    date = "2023-06-24";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -413,25 +413,25 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "55cc72796f515c5d3d4a231a24e84c81cfc765d5";
+    version = "65adc841c9eca430cfae68f8e029eccbdfe98304";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "55cc72796f515c5d3d4a231a24e84c81cfc765d5";
+      rev = "65adc841c9eca430cfae68f8e029eccbdfe98304";
       fetchSubmodules = false;
-      sha256 = "sha256-4TTYTRPCORaeP1zF0Csbt/uHRyN7NOJRth4bsjTcxuA=";
+      sha256 = "sha256-FxrZ2u4A180gEtyOKEmwzxuDtnPLfHIZZLs08oGIzq4=";
     };
-    date = "2023-06-19";
+    date = "2023-06-27";
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.3.9-xanmod1";
+    version = "6.4.0-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.3.9-xanmod1";
+      rev = "6.4.0-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-t1fKPZ+giANPmhM4zGoGtYWJF6rDnbpJaoHILl3nyRI=";
+      sha256 = "sha256-S3vw9d17EF7ufi5R/wg2RSHEBBGb0euG4kq757XeVYM=";
     };
   };
   linux-xanmod-6_0 = {
@@ -616,15 +616,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "0c91d0919307daddf9c77b2c514c5c4a8915b699";
+    version = "6b3483965293db2a3a1dc607468f82739247958c";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "0c91d0919307daddf9c77b2c514c5c4a8915b699";
+      rev = "6b3483965293db2a3a1dc607468f82739247958c";
       fetchSubmodules = false;
-      sha256 = "sha256-yzlSbjMivj5P1I/wkOniupfvndzrgYqCXVw+TmPFqoQ=";
+      sha256 = "sha256-B1EJgrd5PqLF56H/3IMgC0VZaE6lNYrxRYPZZKak6Y4=";
     };
-    date = "2023-06-14";
+    date = "2023-06-28";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -799,15 +799,15 @@
   };
   route-chain = {
     pname = "route-chain";
-    version = "e68c96e5e4df70c797d5a99acc8226713a22d7f5";
+    version = "67194098375601f9ac8f39176179f21e44101cc1";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "route-chain";
-      rev = "e68c96e5e4df70c797d5a99acc8226713a22d7f5";
+      rev = "67194098375601f9ac8f39176179f21e44101cc1";
       fetchSubmodules = false;
-      sha256 = "sha256-StEBgUC3U8KYXt+esohHQ1uc/cvXEVEwrNdbeK+j4uE=";
+      sha256 = "sha256-mfDl2j4ewZg1zJ7JnXGJ5cgMP8K/Mh7azW+F5HHTS3k=";
     };
-    date = "2022-12-20";
+    date = "2023-06-25";
   };
   sgx-software-enable = {
     pname = "sgx-software-enable";
