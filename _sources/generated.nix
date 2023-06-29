@@ -326,16 +326,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "4c3c93a57fda25b8a86a519924c7a20f64b97519";
+    version = "a2a4e1a07dfb2be414374b0f749d8a9a1e4a9554";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "4c3c93a57fda25b8a86a519924c7a20f64b97519";
+      rev = "a2a4e1a07dfb2be414374b0f749d8a9a1e4a9554";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-zGwzGfu0aMYouFjECMZP6QZVrJQ3tgTpmKiIjvlvu3U=";
+      sha256 = "sha256-Rnygc8tX3AnsRsjiNtCjBUoUjfHe5EhNl0S9j1F5Iyc=";
     };
-    date = "2023-06-24";
+    date = "2023-06-29";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -447,13 +447,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.35-xanmod1";
+    version = "6.1.36-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.35-xanmod1";
+      rev = "6.1.36-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-CfrM2CNaGUTfkVteudL8xnAuCdZJxD5pUEC1YW9LiuU=";
+      sha256 = "sha256-RxMWM5QyvA6HtHl/zNXEgamLvti5tIyUUNtRxHueD+M=";
     };
   };
   nbfc-linux-lantian = {
