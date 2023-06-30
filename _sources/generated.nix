@@ -425,13 +425,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.4.0-xanmod1";
+    version = "6.4.0-xanmod2";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.4.0-xanmod1";
+      rev = "6.4.0-xanmod2";
       fetchSubmodules = false;
-      sha256 = "sha256-S3vw9d17EF7ufi5R/wg2RSHEBBGb0euG4kq757XeVYM=";
+      sha256 = "sha256-hu6XBbFxQ80XuJV9FX60vUpeYvvf08rR8Pxb4Id1sLw=";
     };
   };
   linux-xanmod-6_0 = {
@@ -691,10 +691,10 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.0.2+dfsg-2";
+    version = "8.0.2+dfsg-3";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-2_amd64.deb";
-      sha256 = "sha256-ZRwuhg3aAF1q9G6EEBubQPVlOkAs+TYsfiOcd7ewIiM=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-3_amd64.deb";
+      sha256 = "sha256-2tPIDIGSgT0XBIdrCAlm4kIE1hHZlSF6h0rLp2uDlHQ=";
     };
   };
   qemu-user-static-arm64 = {
@@ -715,10 +715,10 @@
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.0.2+dfsg-2";
+    version = "8.0.2+dfsg-3";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-2_i386.deb";
-      sha256 = "sha256-YLflJp5AHMdRb7JxBHujPwgPQwGFFnVVmoCSzMQxTCo=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.2+dfsg-3_i386.deb";
+      sha256 = "sha256-LpylqrUfBSVVBuyTSLLXboNb8wZ+4j03Y6OR5zMnI+w=";
     };
   };
   qq-amd64 = {
