@@ -83,5 +83,6 @@ in
       description = "Future-proof NvENC & NvFBC patcher";
       homepage = "https://github.com/illnyang/nvlax";
       license = with licenses; [gpl3Only];
+      broken = true;
     };
   }
