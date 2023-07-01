@@ -84,10 +84,6 @@ fetch.github = "drone/drone-vault"
 src.git = "https://github.com/KusakabeShi/EtherGuard-VPN.git"
 fetch.github = "KusakabeShi/EtherGuard-VPN"
 
-[fastapi-dls]
-src.git = "https://gitea.publichub.eu/oscar.krause/fastapi-dls.git"
-fetch.git = "https://gitea.publichub.eu/oscar.krause/fastapi-dls.git"
-
 [fcitx5-breeze]
 src.github = "scratch-er/fcitx5-breeze"
 src.from_pattern = "v(.*)"
