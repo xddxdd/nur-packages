@@ -115,6 +115,18 @@
             "type": "jdk",
             "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u352-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u352b08.tar.gz",
             "sha256": "863791dd8e0536a678f5e439c9c67199a0f3f18c76138a8e242775dfe1784009"
+        },
+        "aarch64": {
+            "version": "8u352-b08_adopt",
+            "type": "jdk",
+            "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u352-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u352b08.tar.gz",
+            "sha256": "a70768968bbcccccf977f036e87e545c3b080ed6c44072a01e9dadb94051c454"
+        },
+        "armv7l": {
+            "version": "8u352-b08-aarch32-20221020_adopt",
+            "type": "jdk",
+            "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u352-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u352b08.tar.gz",
+            "sha256": "c9126fe87ebec147af2f237424d9b77f7ea5a9844999e8c90d046fdb741bf463"
         }
     },
     "jre-bin-8u352_b08": {
@@ -129,6 +141,18 @@
             "type": "jre",
             "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u352-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u352b08.tar.gz",
             "sha256": "5649672dab65b3519ec16653fb2f154da90a7cd2afc568da03f3bff5c6b30a90"
+        },
+        "aarch64": {
+            "version": "8u352-b08_adopt",
+            "type": "jre",
+            "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u352-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u352b08.tar.gz",
+            "sha256": "cce4db7c4311378d8d2a174b2cf680d57b52a4036f37c995b14f936b6fc1141a"
+        },
+        "armv7l": {
+            "version": "8u352-b08-aarch32-20221020_adopt",
+            "type": "jre",
+            "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u352-b08/OpenJDK8U-jre_arm_linux_hotspot_8u352b08.tar.gz",
+            "sha256": "d5ef8ced672a1b391e7949190b8d24db16290e06f257816d5bd0969aed593852"
         }
     },
     "jdk-bin-8u345_b01": {
