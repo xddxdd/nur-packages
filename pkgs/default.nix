@@ -155,6 +155,7 @@ in
     route-chain = pkg ./uncategorized/route-chain {};
     smartrent_py = pkg ./uncategorized/smartrent_py {};
     sgx-software-enable = pkg ./uncategorized/sgx-software-enable {};
+    soggy = pkg ./uncategorized/soggy {};
     space-cadet-pinball-full-tilt = pkg ./uncategorized/space-cadet-pinball-full-tilt {};
     svp = pkg ./uncategorized/svp {};
     tachidesk-server = pkg ./uncategorized/tachidesk-server {};

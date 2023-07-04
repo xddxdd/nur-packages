@@ -1422,6 +1422,26 @@
         },
         "version": "0.4.0"
     },
+    "soggy": {
+        "cargoLocks": null,
+        "date": "2022-12-14",
+        "extract": null,
+        "name": "soggy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "LDAsuku",
+            "repo": "soggy",
+            "rev": "2736cb094a51d186dabf2204a7599e9b8118f8dd",
+            "sha256": "sha256-pv/5CxmojkfOwE/r1T2Ow96XkFw/FQvLcY49bWWiEwo=",
+            "type": "github"
+        },
+        "version": "2736cb094a51d186dabf2204a7599e9b8118f8dd"
+    },
     "stream-echo-nginx-module": {
         "cargoLocks": null,
         "date": "2016-12-18",

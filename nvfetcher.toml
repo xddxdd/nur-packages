@@ -325,6 +325,10 @@ fetch.github = "intel/sgx-software-enable"
 src.manual = "0.4.0"
 fetch.pypi = "smartrent.py"
 
+[soggy]
+src.git = "https://github.com/LDAsuku/soggy.git"
+fetch.github = "LDAsuku/soggy"
+
 [stream-echo-nginx-module]
 src.git = "https://github.com/openresty/stream-echo-nginx-module.git"
 fetch.github = "openresty/stream-echo-nginx-module"

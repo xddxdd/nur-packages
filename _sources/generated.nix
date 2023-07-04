@@ -816,6 +816,18 @@
       sha256 = "sha256-02RMZhytJrRYHGv1ugRY2MMHpk10TcoDgvRkEGIuabo=";
     };
   };
+  soggy = {
+    pname = "soggy";
+    version = "2736cb094a51d186dabf2204a7599e9b8118f8dd";
+    src = fetchFromGitHub {
+      owner = "LDAsuku";
+      repo = "soggy";
+      rev = "2736cb094a51d186dabf2204a7599e9b8118f8dd";
+      fetchSubmodules = false;
+      sha256 = "sha256-pv/5CxmojkfOwE/r1T2Ow96XkFw/FQvLcY49bWWiEwo=";
+    };
+    date = "2022-12-14";
+  };
   stream-echo-nginx-module = {
     pname = "stream-echo-nginx-module";
     version = "b7b76b853131b6fa7579d20c2816b4b6abb16bea";
