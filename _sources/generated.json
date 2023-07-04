@@ -279,6 +279,46 @@
         },
         "version": "v0.1.3"
     },
+    "cockpy": {
+        "cargoLocks": null,
+        "date": "2023-04-19",
+        "extract": null,
+        "name": "cockpy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Hiro420",
+            "repo": "CockPY",
+            "rev": "00fa2f220fd5e22c14a88b5f6000487b49b071f1",
+            "sha256": "sha256-AWjzqOwIRE7ytNowm46h5HhZI9MYT5aWZKwVjx7t00k=",
+            "type": "github"
+        },
+        "version": "00fa2f220fd5e22c14a88b5f6000487b49b071f1"
+    },
+    "cockpy-pyenet": {
+        "cargoLocks": null,
+        "date": "2022-11-20",
+        "extract": null,
+        "name": "cockpy-pyenet",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "lilmayofuksu",
+            "repo": "pyenet",
+            "rev": "1726b1d8e22ee1fa53c7560169d8814c7847a447",
+            "sha256": "sha256-YzFge0S5S6TwCVeCuNgDUmDpwha7Zi8+ZgJ4cdW4AzM=",
+            "type": "github"
+        },
+        "version": "1726b1d8e22ee1fa53c7560169d8814c7847a447"
+    },
     "coredns-lantian": {
         "cargoLocks": null,
         "date": "2023-02-17",

@@ -60,6 +60,15 @@ fetch.url = "https://github.com/open-quantum-safe/oqs-demos/releases/download/$v
 src.github = "tickstep/cloudpan189-go"
 fetch.github = "tickstep/cloudpan189-go"
 
+[cockpy]
+src.git = "https://github.com/Hiro420/CockPY.git"
+fetch.github = "Hiro420/CockPY"
+
+[cockpy-pyenet]
+src.git = "https://github.com/lilmayofuksu/pyenet.git"
+fetch.github = "lilmayofuksu/pyenet"
+git.fetchSubmodules = true
+
 [coredns-lantian]
 src.git = "https://github.com/xddxdd/coredns.git"
 fetch.github = "xddxdd/coredns"

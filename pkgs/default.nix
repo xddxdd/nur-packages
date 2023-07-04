@@ -98,6 +98,7 @@ in
     chmlib-utils = pkg ./uncategorized/chmlib-utils {};
     chromium-oqs-bin = pkg ./uncategorized/chromium-oqs-bin {};
     cloudpan189-go = pkg ./uncategorized/cloudpan189-go {};
+    cockpy = pkg ./uncategorized/cockpy {};
     deepspeech-gpu = ifNotCI (pkg ./uncategorized/deepspeech-gpu {});
     deepspeech-wrappers = ifNotCI (pkg ./uncategorized/deepspeech-gpu/wrappers.nix {});
     dingtalk = pkg ./uncategorized/dingtalk {};

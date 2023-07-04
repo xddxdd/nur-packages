@@ -162,6 +162,30 @@
       sha256 = "sha256-CJCTfzcLw5e41RZXhgbJhZVOP4FDDYM74Oo9my/liZk=";
     };
   };
+  cockpy = {
+    pname = "cockpy";
+    version = "00fa2f220fd5e22c14a88b5f6000487b49b071f1";
+    src = fetchFromGitHub {
+      owner = "Hiro420";
+      repo = "CockPY";
+      rev = "00fa2f220fd5e22c14a88b5f6000487b49b071f1";
+      fetchSubmodules = false;
+      sha256 = "sha256-AWjzqOwIRE7ytNowm46h5HhZI9MYT5aWZKwVjx7t00k=";
+    };
+    date = "2023-04-19";
+  };
+  cockpy-pyenet = {
+    pname = "cockpy-pyenet";
+    version = "1726b1d8e22ee1fa53c7560169d8814c7847a447";
+    src = fetchFromGitHub {
+      owner = "lilmayofuksu";
+      repo = "pyenet";
+      rev = "1726b1d8e22ee1fa53c7560169d8814c7847a447";
+      fetchSubmodules = true;
+      sha256 = "sha256-YzFge0S5S6TwCVeCuNgDUmDpwha7Zi8+ZgJ4cdW4AzM=";
+    };
+    date = "2022-11-20";
+  };
   coredns-lantian = {
     pname = "coredns-lantian";
     version = "c02cd42067dffcb773ebd9cecd32691d0bafebd9";
