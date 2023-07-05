@@ -253,6 +253,19 @@
     };
     date = "2023-02-23";
   };
+  fastapi-dls = {
+    pname = "fastapi-dls";
+    version = "98da86fc2e9fa89b0ef0482c35a0103d7e3f170d";
+    src = fetchgit {
+      url = "https://gitea.publichub.eu/oscar.krause/fastapi-dls.git";
+      rev = "98da86fc2e9fa89b0ef0482c35a0103d7e3f170d";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-vLFgfsqbNIw2oZ+dD3KoxFQZ02XQTEqfkCJiRvrmFvU=";
+    };
+    date = "2023-06-12";
+  };
   fcitx5-breeze = {
     pname = "fcitx5-breeze";
     version = "2.0.0";
