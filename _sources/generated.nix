@@ -363,22 +363,38 @@
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
-    version = "6a56d5df74ab119d6bf6ceb75917740335b3f24a";
+    version = "235f46de1815ab385b4d002d2cd6f0985f776f7e";
     src = fetchFromGitHub {
       owner = "SpeedyOrc-C";
       repo = "Hoyo-Glyphs";
-      rev = "6a56d5df74ab119d6bf6ceb75917740335b3f24a";
+      rev = "235f46de1815ab385b4d002d2cd6f0985f776f7e";
       fetchSubmodules = false;
-      sha256 = "sha256-PeONd2SjopJSN5+mm43RUrG+xfZFOkTYCUiKrIbbLvg=";
+      sha256 = "sha256-qY/iZ/tqWvxvDyAnfpdRj+KgXHfC8LdueScphO6OtaQ=";
     };
-    date = "2023-05-31";
+    date = "2023-06-30";
   };
   hoyo-glyphs-star-rail-neue = {
     pname = "hoyo-glyphs-star-rail-neue";
+    version = "1.100";
+    src = fetchurl {
+      url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/star-rail-neue-1.100/Star-Rail-Neue-1.100.zip";
+      sha256 = "sha256-pOTen4C/z8Z3YS3YBgZK63Cf3YI/M+a6a3P7XuvLhGo=";
+    };
+  };
+  hoyo-glyphs-teyvat-black = {
+    pname = "hoyo-glyphs-teyvat-black";
+    version = "1.003";
+    src = fetchurl {
+      url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/teyvat-black-1.003/Teyvat-Black-1.003.zip";
+      sha256 = "sha256-AzaZEyxnmi18T2vQSsR+PZ1yGt5pqyvGKioMn2BStqk=";
+    };
+  };
+  hoyo-glyphs-xianzhou-seal = {
+    pname = "hoyo-glyphs-xianzhou-seal";
     version = "1.000";
     src = fetchurl {
-      url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/star-rail-1.000/StarRailNeue-1.000-otf.zip";
-      sha256 = "sha256-zrel+khrPqQC4W61RhqBsfVXUCCbzgDmzRTcXdxZ0Cg=";
+      url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/xianzhou-seal-1.000/Xianzhou-Seal-1.000.zip";
+      sha256 = "sha256-1cXp5ZH6oY6LPdeN7EpiMJzO4SiXmeJTnLLrBPJD4g4=";
     };
   };
   kata-containers = {

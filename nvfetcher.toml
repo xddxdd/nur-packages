@@ -140,8 +140,16 @@ src.git = "https://github.com/SpeedyOrc-C/Hoyo-Glyphs.git"
 fetch.github = "SpeedyOrc-C/Hoyo-Glyphs"
 
 [hoyo-glyphs-star-rail-neue]
+src.manual = "1.100"
+fetch.url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/star-rail-neue-1.100/Star-Rail-Neue-1.100.zip"
+
+[hoyo-glyphs-teyvat-black]
+src.manual = "1.003"
+fetch.url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/teyvat-black-1.003/Teyvat-Black-1.003.zip"
+
+[hoyo-glyphs-xianzhou-seal]
 src.manual = "1.000"
-fetch.url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/star-rail-$ver/StarRailNeue-$ver-otf.zip"
+fetch.url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/xianzhou-seal-1.000/Xianzhou-Seal-1.000.zip"
 
 [kata-containers]
 src.github = "kata-containers/kata-containers"
