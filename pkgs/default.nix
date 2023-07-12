@@ -57,6 +57,7 @@ in
       # Packages with significant customization by Lan Tian
       asterisk = pkg ./lantian-customized/asterisk {};
       coredns = pkg ./lantian-customized/coredns {};
+      librime-with-plugins = pkg ./lantian-customized/librime-with-plugins {};
 
       linux-xanmod-lantian = self.lantianLinuxXanmod.generic;
       linux-xanmod-lantian-lto = self.lantianLinuxXanmod.generic-lto;
