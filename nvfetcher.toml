@@ -324,6 +324,10 @@ fetch.github = "hosxy/rime-aurora-pinyin"
 src.git = "https://github.com/Iorest/rime-dict.git"
 fetch.github = "Iorest/rime-dict"
 
+[rime-ice]
+src.git = "https://github.com/iDvel/rime-ice.git"
+fetch.github = "iDvel/rime-ice"
+
 [rime-moegirl]
 src.github = "outloudvi/mw2fcitx"
 fetch.url = "https://github.com/outloudvi/mw2fcitx/releases/download/$ver/moegirl.dict.yaml"

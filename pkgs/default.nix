@@ -152,6 +152,7 @@ in
     qqmusic = pkg ./uncategorized/qqmusic {};
     rime-aurora-pinyin = pkg ./uncategorized/rime-aurora-pinyin {};
     rime-dict = pkg ./uncategorized/rime-dict {};
+    rime-ice = pkg ./uncategorized/rime-ice {};
     rime-moegirl = pkg ./uncategorized/rime-moegirl {};
     rime-zhwiki = pkg ./uncategorized/rime-zhwiki {};
     route-chain = pkg ./uncategorized/route-chain {};

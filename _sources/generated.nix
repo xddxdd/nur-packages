@@ -821,6 +821,18 @@
     };
     date = "2020-12-26";
   };
+  rime-ice = {
+    pname = "rime-ice";
+    version = "98e2368456e9e4cda3adf9812891e5dd4b2edc55";
+    src = fetchFromGitHub {
+      owner = "iDvel";
+      repo = "rime-ice";
+      rev = "98e2368456e9e4cda3adf9812891e5dd4b2edc55";
+      fetchSubmodules = false;
+      sha256 = "sha256-3J6i2y05r5B616eI+myyoxhX6h55MKlVdNdnTHneHCE=";
+    };
+    date = "2023-07-08";
+  };
   rime-moegirl = {
     pname = "rime-moegirl";
     version = "20230617";
