@@ -13,7 +13,6 @@
   lsof,
   makeWrapper,
   mpv-unwrapped,
-  nvidia_x11,
   ocl-icd,
   p7zip,
   patchelf,
@@ -40,7 +39,7 @@ let
         "--prefix"
         "LD_LIBRARY_PATH"
         ":"
-        "${lib.makeLibraryPath [nvidia_x11]}"
+        "/run/opengl-driver/lib"
       ];
     };
 

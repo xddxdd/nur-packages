@@ -134,18 +134,12 @@
             pkgs = prev;
             inherit inputs;
           };
-        custom = nvidia_x11: final: prev:
-          import ./pkgs {
-            pkgs = prev;
-            inherit inputs nvidia_x11;
-          };
       };
 
       nixosModules = {
         setupOverlay = {config, ...}: {
           nixpkgs.overlays = [
-            (self.overlays.custom
-              config.boot.kernelPackages.nvidia_x11)
+            self.overlays.default
           ];
         };
         kata-containers = import ./modules/kata-containers.nix;

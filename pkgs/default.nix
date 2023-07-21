@@ -9,7 +9,6 @@
   pkgs ? import <nixpkgs> {},
   inputs ? null,
   ci ? false,
-  nvidia_x11 ? pkgs.linuxPackages_latest.nvidia_x11,
   ...
 }: let
   inherit (pkgs) lib;
@@ -27,7 +26,7 @@
     builtins.removeAttrs
     (lib.makeScope pkgs.newScope (self: let
       pkg = self.newScope {
-        inherit mkScope nvidia_x11;
+        inherit mkScope;
         sources = self.callPackage ../_sources/generated.nix {};
       };
     in
