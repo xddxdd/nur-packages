@@ -89,6 +89,7 @@
             })
           rec {
             ci = ''
+              set -euo pipefail
               if [ "$1" == "" ]; then
                 echo "Usage: ci <system>";
                 exit 1;
@@ -103,6 +104,7 @@
             '';
 
             nvfetcher = ''
+              set -euo pipefail
               [ -f "$HOME/Secrets/nvfetcher.toml" ] && KEY_FLAG="-k $HOME/Secrets/nvfetcher.toml" || KEY_FLAG=""
               export PATH=${pkgs.nix-prefetch-scripts}/bin:$PATH
               ${pkgs.nvfetcher}/bin/nvfetcher $KEY_FLAG -c nvfetcher.toml -o _sources "$@"
@@ -110,6 +112,7 @@
             '';
 
             readme = ''
+              set -euo pipefail
               nix build .#_meta.readme
               cat result > README.md
             '';
@@ -117,6 +120,7 @@
             update = let
               py = pkgs.python3.withPackages (p: with p; [requests]);
             in ''
+              set -euo pipefail
               nix flake update
               ${nvfetcher}
               ${py}/bin/python3 pkgs/asterisk-digium-codecs/update.py
