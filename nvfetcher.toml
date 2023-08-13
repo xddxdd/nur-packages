@@ -53,7 +53,8 @@ src.github = "seblucas/cops"
 fetch.url = "https://github.com/seblucas/cops/releases/download/$ver/cops-$ver.zip"
 
 [chromium-oqs-bin]
-src.github = "open-quantum-safe/oqs-demos"
+# src.github = "open-quantum-safe/oqs-demos"
+src.manual = "0.7.2"
 fetch.url = "https://github.com/open-quantum-safe/oqs-demos/releases/download/$ver/chromium-ubuntu-$ver.tgz"
 
 [cloudpan189-go]
