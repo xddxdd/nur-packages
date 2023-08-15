@@ -883,10 +883,10 @@
   };
   rime-moegirl = {
     pname = "rime-moegirl";
-    version = "20230714";
+    version = "20230814";
     src = fetchurl {
-      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20230714/moegirl.dict.yaml";
-      sha256 = "sha256-S6FDyE/xCtBi2JCczcuh56kTCzkEye0uBFe/3j1J3OU=";
+      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20230814/moegirl.dict.yaml";
+      sha256 = "sha256-Wl7a/LXP2zGGKjWcm1IjiljS+EyODDOQX2D9wuwYckQ=";
     };
   };
   rime-zhwiki = {

@@ -1535,11 +1535,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-S6FDyE/xCtBi2JCczcuh56kTCzkEye0uBFe/3j1J3OU=",
+            "sha256": "sha256-Wl7a/LXP2zGGKjWcm1IjiljS+EyODDOQX2D9wuwYckQ=",
             "type": "url",
-            "url": "https://github.com/outloudvi/mw2fcitx/releases/download/20230714/moegirl.dict.yaml"
+            "url": "https://github.com/outloudvi/mw2fcitx/releases/download/20230814/moegirl.dict.yaml"
         },
-        "version": "20230714"
+        "version": "20230814"
     },
     "rime-zhwiki": {
         "cargoLocks": null,
