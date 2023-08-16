@@ -115,7 +115,7 @@ Or, use variables from this repository in case I change them:
 |  | `konnect` | [konnect](https://github.com/Kopano-dev/konnect) | v0.34.0 | Kopano Konnect implements an OpenID provider (OP) with integrated web login and consent forms. |
 |  | `ldap-auth-proxy` | [ldap-auth-proxy](https://github.com/pinepain/ldap-auth-proxy) | 66a8236af574f554478fe376051b95f61235efc9 | A simple drop-in HTTP proxy for transparent LDAP authentication which is also a HTTP auth backend. |
 |  | `libnftnl-fullcone` | [libnftnl](https://netfilter.org/projects/libnftnl/) | 1.2.6 | A userspace library providing a low-level netlink API to the in-kernel nf_tables subsystem |
-|  | `liboqs` | [liboqs](https://openquantumsafe.org) | ebf4638ab9cf6975c0529770695774b6054a4bc2 | C library for prototyping and experimenting with quantum-resistant cryptography |
+|  | `liboqs` | [liboqs](https://openquantumsafe.org) | dcecd03d3c034ec8c3354e7baf4a3b9e28abd83a | C library for prototyping and experimenting with quantum-resistant cryptography |
 |  | `netboot-xyz` | [netboot-xyz](https://netboot.xyz/) | 2.0.70 | Your favorite operating systems in one place. A network-based bootable operating system installer based on iPXE. |
 |  | `netns-exec` | [netns-exec](https://github.com/pekman/netns-exec) | aa346fd058d47b238ae1b86250f414bcab2e7927 | Run command in Linux network namespace as normal user |
 |  | `nftables-fullcone` | [nftables](https://netfilter.org/projects/nftables/) | 1.0.8 | The project that aims to replace the existing {ip,ip6,arp,eb}tables framework |
@@ -137,7 +137,7 @@ Or, use variables from this repository in case I change them:
 |  | `qqmusic` | [qqmusic](https://y.qq.com/) | 1.1.5 | Tencent QQ Music (Packaging script adapted from https://aur.archlinux.org/packages/qqmusic-bin) |
 |  | `rime-aurora-pinyin` | [rime-aurora-pinyin](https://github.com/hosxy/rime-aurora-pinyin) | 122b46976401995cbafcfc748806985ff3a437a4 | 【极光拼音】输入方案 |
 |  | `rime-dict` | [rime-dict](https://github.com/Iorest/rime-dict) | 325ecbda51cd93e07e2fe02e37e5f14d94a4a541 | RIME 词库增强 |
-|  | `rime-ice` | [rime-ice](https://dvel.me/posts/rime-ice/) | 0d27a142e1e71ecf8cf093c6b6492258b905d826 | Rime 配置：雾凇拼音 | 长期维护的简体词库  |
+|  | `rime-ice` | [rime-ice](https://dvel.me/posts/rime-ice/) | 3942d0658a6a3796f40c36baf1c2d70b4c11a8d2 | Rime 配置：雾凇拼音 | 长期维护的简体词库  |
 |  | `rime-moegirl` | [rime-moegirl](https://github.com/outloudvi/mw2fcitx/releases) | 20230814 | Releases for dict of zh.moegirl.org.cn |
 |  | `rime-zhwiki` | [rime-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki) | 20230728 | Fcitx 5 Pinyin Dictionary from zh.wikipedia.org |
 |  | `route-chain` | [route-chain](https://github.com/xddxdd/route-chain) | 67194098375601f9ac8f39176179f21e44101cc1 | A small app to generate a long path in traceroute. |

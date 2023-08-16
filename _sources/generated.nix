@@ -453,15 +453,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "ebf4638ab9cf6975c0529770695774b6054a4bc2";
+    version = "dcecd03d3c034ec8c3354e7baf4a3b9e28abd83a";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "ebf4638ab9cf6975c0529770695774b6054a4bc2";
+      rev = "dcecd03d3c034ec8c3354e7baf4a3b9e28abd83a";
       fetchSubmodules = false;
-      sha256 = "sha256-cFo9OdeeS3tp4puKVul1eGpXeZZmk1eLU5QjGF8+xeA=";
+      sha256 = "sha256-XWWou3JKQf1oRcC0zzhPH9R3IkZYRMhzDoeDYuE9xtI=";
     };
-    date = "2023-08-12";
+    date = "2023-08-15";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -871,15 +871,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "0d27a142e1e71ecf8cf093c6b6492258b905d826";
+    version = "3942d0658a6a3796f40c36baf1c2d70b4c11a8d2";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "0d27a142e1e71ecf8cf093c6b6492258b905d826";
+      rev = "3942d0658a6a3796f40c36baf1c2d70b4c11a8d2";
       fetchSubmodules = false;
-      sha256 = "sha256-TQHluotbPELoEBrXQc7nQMYhDvIhie5gYd+WLe3SmQ4=";
+      sha256 = "sha256-YqNFo41ZhHR7cvTLV1w7yaNIsbORzvrJIljxx+vOK2k=";
     };
-    date = "2023-08-10";
+    date = "2023-08-15";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
