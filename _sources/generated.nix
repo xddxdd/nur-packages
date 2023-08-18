@@ -513,13 +513,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.4.10-xanmod1";
+    version = "6.4.11-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.4.10-xanmod1";
+      rev = "6.4.11-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-iRB2O0Ghh9LknqfxIf7zArS/p3iO2XEg/4R/z0QzxEQ=";
+      sha256 = "sha256-HZTLuxdlkVRBe8C95vr6Fk9YjlCXZEpK3gfbtzLqwLQ=";
     };
   };
   linux-xanmod-6_0 = {

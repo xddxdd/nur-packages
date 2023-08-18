@@ -890,11 +890,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.4.10-xanmod1",
-            "sha256": "sha256-iRB2O0Ghh9LknqfxIf7zArS/p3iO2XEg/4R/z0QzxEQ=",
+            "rev": "6.4.11-xanmod1",
+            "sha256": "sha256-HZTLuxdlkVRBe8C95vr6Fk9YjlCXZEpK3gfbtzLqwLQ=",
             "type": "github"
         },
-        "version": "6.4.10-xanmod1"
+        "version": "6.4.11-xanmod1"
     },
     "linux-xanmod-6_0": {
         "cargoLocks": null,
