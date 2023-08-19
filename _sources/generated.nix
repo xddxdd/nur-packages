@@ -1001,7 +1001,7 @@
     version = "3.9.6";
     src = fetchurl {
       url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.6";
-      sha256 = "sha256-tflNuSQQ/Z4L1FcLxzX21Q10AuntmtorijGCIgax/zA=";
+      sha256 = "sha256-XfOi0egDuIic3g1jf9nEE7aOksEUWsypCuTCu/wrBSQ=";
     };
   };
   xstatic-asciinema-player = {
