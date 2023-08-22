@@ -350,16 +350,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "baf79c30476c5bc8ad986fdd68ca38eaf7afdc1b";
+    version = "8b4a799d8efe2759b9b7baf6c629f1b8cb957308";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "baf79c30476c5bc8ad986fdd68ca38eaf7afdc1b";
+      rev = "8b4a799d8efe2759b9b7baf6c629f1b8cb957308";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-zlBd7p5XGuMfI4W64aZJSMoAvvFvlxofhUK60mviMOU=";
+      sha256 = "sha256-yZYBLIsa1HGR+jWjJcokjcpC+SbTtPMnnp9K29JRYV8=";
     };
-    date = "2023-08-10";
+    date = "2023-08-22";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -704,15 +704,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "f4636212ad7590cc355b9129d7a2346f9c32eed1";
+    version = "b6da1e97b7180a779981d1b0bfa0ab2cd723066d";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "f4636212ad7590cc355b9129d7a2346f9c32eed1";
+      rev = "b6da1e97b7180a779981d1b0bfa0ab2cd723066d";
       fetchSubmodules = false;
-      sha256 = "sha256-8aNNKm3jgFtseHZ9Z0XB6asccpmdrlszDDQ9NfqJDpc=";
+      sha256 = "sha256-msHbC8BMhotPnlVBOJIn9cg6sLpvejXXcNdr0EOwr3w=";
     };
-    date = "2023-08-13";
+    date = "2023-08-21";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -779,34 +779,34 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.0.4+dfsg-1";
+    version = "8.0.4+dfsg-2";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-1_amd64.deb";
-      sha256 = "sha256-8Ru8EXpyW3HvDrdo3GbqaVyLHokwIfFtf30q0ec+Q/0=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_amd64.deb";
+      sha256 = "sha256-pdD2Ehd5UIXxU+yxZ1vYYwpbNYjGZo2HA70NvSwSCio=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.0.4+dfsg-1";
+    version = "8.0.4+dfsg-2";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-1_arm64.deb";
-      sha256 = "sha256-9L3aygb2d7rUrzRTMT6+kEuDDqg5iTR9WFin4MlPYxE=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_arm64.deb";
+      sha256 = "sha256-7090m99fZSyGgJpraVSd2Gq+PmiDSacR9W3x9kXtJjE=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.0.4+dfsg-1";
+    version = "8.0.4+dfsg-2";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-1_armhf.deb";
-      sha256 = "sha256-6valc685LPMa8hHZCwois5xaH5Wi02w5CBzI5cNPfv8=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_armhf.deb";
+      sha256 = "sha256-naLpRZA9HUujPhtFgGMa0pEIwoh/rw5HPO0V/Py6GaU=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.0.4+dfsg-1";
+    version = "8.0.4+dfsg-2";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-1_i386.deb";
-      sha256 = "sha256-5eqb24Ghw/VKj/Pi6cTYhgCXdoMOQrj8xLtcHdxqYUY=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_i386.deb";
+      sha256 = "sha256-h7wyQ2393GIU7DxtunFWZzEzGTVBCmmMH3GvkhfKy+A=";
     };
   };
   qq-amd64 = {
@@ -871,15 +871,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "10864f96e16b469dc6cac1e2fe648af80a89825d";
+    version = "360a87884c3ece7d63fe224331d0b5c2309662b8";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "10864f96e16b469dc6cac1e2fe648af80a89825d";
+      rev = "360a87884c3ece7d63fe224331d0b5c2309662b8";
       fetchSubmodules = false;
-      sha256 = "sha256-WPzyFEV17u3EqEUFtaXCsqVwxID5mB3dfnR9IrADQAU=";
+      sha256 = "sha256-4XrIwE1rKl4ckUtc6MwxSs1ujEgLLDGZmWCcoOl/OMo=";
     };
-    date = "2023-08-16";
+    date = "2023-08-21";
   };
   rime-moegirl = {
     pname = "rime-moegirl";

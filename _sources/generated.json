@@ -599,7 +599,7 @@
     },
     "grasscutter-resources": {
         "cargoLocks": null,
-        "date": "2023-08-10",
+        "date": "2023-08-22",
         "extract": null,
         "name": "grasscutter-resources",
         "passthru": null,
@@ -609,12 +609,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "baf79c30476c5bc8ad986fdd68ca38eaf7afdc1b",
-            "sha256": "sha256-zlBd7p5XGuMfI4W64aZJSMoAvvFvlxofhUK60mviMOU=",
+            "rev": "8b4a799d8efe2759b9b7baf6c629f1b8cb957308",
+            "sha256": "sha256-yZYBLIsa1HGR+jWjJcokjcpC+SbTtPMnnp9K29JRYV8=",
             "type": "git",
             "url": "https://gitlab.com/YuukiPS/GC-Resources.git"
         },
-        "version": "baf79c30476c5bc8ad986fdd68ca38eaf7afdc1b"
+        "version": "8b4a799d8efe2759b9b7baf6c629f1b8cb957308"
     },
     "hoyo-glyphs": {
         "cargoLocks": null,
@@ -1208,7 +1208,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2023-08-13",
+        "date": "2023-08-21",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1220,11 +1220,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "f4636212ad7590cc355b9129d7a2346f9c32eed1",
-            "sha256": "sha256-8aNNKm3jgFtseHZ9Z0XB6asccpmdrlszDDQ9NfqJDpc=",
+            "rev": "b6da1e97b7180a779981d1b0bfa0ab2cd723066d",
+            "sha256": "sha256-msHbC8BMhotPnlVBOJIn9cg6sLpvejXXcNdr0EOwr3w=",
             "type": "github"
         },
-        "version": "f4636212ad7590cc355b9129d7a2346f9c32eed1"
+        "version": "b6da1e97b7180a779981d1b0bfa0ab2cd723066d"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -1350,11 +1350,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8Ru8EXpyW3HvDrdo3GbqaVyLHokwIfFtf30q0ec+Q/0=",
+            "sha256": "sha256-pdD2Ehd5UIXxU+yxZ1vYYwpbNYjGZo2HA70NvSwSCio=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-1_amd64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_amd64.deb"
         },
-        "version": "8.0.4+dfsg-1"
+        "version": "8.0.4+dfsg-2"
     },
     "qemu-user-static-arm64": {
         "cargoLocks": null,
@@ -1365,11 +1365,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9L3aygb2d7rUrzRTMT6+kEuDDqg5iTR9WFin4MlPYxE=",
+            "sha256": "sha256-7090m99fZSyGgJpraVSd2Gq+PmiDSacR9W3x9kXtJjE=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-1_arm64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_arm64.deb"
         },
-        "version": "8.0.4+dfsg-1"
+        "version": "8.0.4+dfsg-2"
     },
     "qemu-user-static-armhf": {
         "cargoLocks": null,
@@ -1380,11 +1380,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-6valc685LPMa8hHZCwois5xaH5Wi02w5CBzI5cNPfv8=",
+            "sha256": "sha256-naLpRZA9HUujPhtFgGMa0pEIwoh/rw5HPO0V/Py6GaU=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-1_armhf.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_armhf.deb"
         },
-        "version": "8.0.4+dfsg-1"
+        "version": "8.0.4+dfsg-2"
     },
     "qemu-user-static-i386": {
         "cargoLocks": null,
@@ -1395,11 +1395,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-5eqb24Ghw/VKj/Pi6cTYhgCXdoMOQrj8xLtcHdxqYUY=",
+            "sha256": "sha256-h7wyQ2393GIU7DxtunFWZzEzGTVBCmmMH3GvkhfKy+A=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-1_i386.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_i386.deb"
         },
-        "version": "8.0.4+dfsg-1"
+        "version": "8.0.4+dfsg-2"
     },
     "qq-amd64": {
         "cargoLocks": null,
@@ -1508,7 +1508,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-08-16",
+        "date": "2023-08-21",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -1520,11 +1520,11 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "10864f96e16b469dc6cac1e2fe648af80a89825d",
-            "sha256": "sha256-WPzyFEV17u3EqEUFtaXCsqVwxID5mB3dfnR9IrADQAU=",
+            "rev": "360a87884c3ece7d63fe224331d0b5c2309662b8",
+            "sha256": "sha256-4XrIwE1rKl4ckUtc6MwxSs1ujEgLLDGZmWCcoOl/OMo=",
             "type": "github"
         },
-        "version": "10864f96e16b469dc6cac1e2fe648af80a89825d"
+        "version": "360a87884c3ece7d63fe224331d0b5c2309662b8"
     },
     "rime-moegirl": {
         "cargoLocks": null,
