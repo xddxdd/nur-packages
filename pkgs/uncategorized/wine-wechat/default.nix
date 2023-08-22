@@ -14,7 +14,7 @@
   fetchurl,
   lib,
   p7zip,
-  wine,
+  wine64,
   winetricks,
   writeShellScript,
   ...
@@ -41,7 +41,7 @@ let
     '';
   };
 
-  wechatWine = wine.overrideAttrs (old: {
+  wechatWine = wine64.overrideAttrs (old: {
     patches =
       (old.patches or [])
       ++ [
@@ -56,7 +56,7 @@ let
       '';
   });
 
-  wechatFiles = stdenv.mkDerivation rec {
+  wechatFiles = stdenv.mkDerivation {
     pname = "wechat";
     inherit version;
     src = setupSrc;
@@ -76,7 +76,7 @@ let
   };
 
   startWechat = writeShellScript "wine-wechat" ''
-    export WINEARCH="win32"
+    export WINEARCH="win64"
     export WINEPREFIX="$HOME/.local/share/wine-wechat"
     export WINEDLLOVERRIDES="winemenubuilder.exe=d"
     export PATH="${wechatWine}/bin:$PATH"
@@ -90,13 +90,13 @@ let
     winetricks msls31
     winetricks riched20
 
-    ${wechatWine}/bin/wine regedit.exe ${./fonts.reg}
-    ${wechatWine}/bin/wine ${wechatFiles}/WeChat.exe
+    ${wechatWine}/bin/wine64 regedit.exe ${./fonts.reg}
+    ${wechatWine}/bin/wine64 ${wechatFiles}/WeChat.exe
     ${wechatWine}/bin/wineserver -k
   '';
 
   startWinecfg = writeShellScript "wine-wechat-cfg" ''
-    export WINEARCH="win32"
+    export WINEARCH="win64"
     export WINEPREFIX="$HOME/.local/share/wine-wechat"
     export WINEDLLOVERRIDES="winemenubuilder.exe=d"
     export PATH="${wechatWine}/bin:$PATH"
@@ -110,8 +110,8 @@ let
     winetricks msls31
     winetricks riched20
 
-    ${wechatWine}/bin/wine regedit.exe ${./fonts.reg}
-    ${wechatWine}/bin/wine winecfg.exe
+    ${wechatWine}/bin/wine64 regedit.exe ${./fonts.reg}
+    ${wechatWine}/bin/wine64 winecfg.exe
     ${wechatWine}/bin/wineserver -k
   '';
 in
