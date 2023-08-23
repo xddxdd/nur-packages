@@ -778,7 +778,7 @@
     },
     "liboqs": {
         "cargoLocks": null,
-        "date": "2023-08-15",
+        "date": "2023-08-22",
         "extract": null,
         "name": "liboqs",
         "passthru": null,
@@ -790,11 +790,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "dcecd03d3c034ec8c3354e7baf4a3b9e28abd83a",
-            "sha256": "sha256-XWWou3JKQf1oRcC0zzhPH9R3IkZYRMhzDoeDYuE9xtI=",
+            "rev": "914764c9ccc57dada65d8824f8000c2c7d0ec96f",
+            "sha256": "sha256-n1BfI7yoRtwTR9jwsIUAIc3qdv4Hn6NTF9fk0iZ3ilA=",
             "type": "github"
         },
-        "version": "dcecd03d3c034ec8c3354e7baf4a3b9e28abd83a"
+        "version": "914764c9ccc57dada65d8824f8000c2c7d0ec96f"
     },
     "librime-charcode": {
         "cargoLocks": null,
@@ -1350,11 +1350,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-pdD2Ehd5UIXxU+yxZ1vYYwpbNYjGZo2HA70NvSwSCio=",
+            "sha256": "sha256-X3EIGytDqE53aPZg2NDQLifAl1xwgb4EDgV4/25WbAM=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_amd64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_amd64.deb"
         },
-        "version": "8.0.4+dfsg-2"
+        "version": "8.0.4+dfsg-3"
     },
     "qemu-user-static-arm64": {
         "cargoLocks": null,
@@ -1395,11 +1395,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-h7wyQ2393GIU7DxtunFWZzEzGTVBCmmMH3GvkhfKy+A=",
+            "sha256": "sha256-JqJ0qAzcQ0LPjFY0eMwHpd2elUkzUFeKTlEeHH35llk=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_i386.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_i386.deb"
         },
-        "version": "8.0.4+dfsg-2"
+        "version": "8.0.4+dfsg-3"
     },
     "qq-amd64": {
         "cargoLocks": null,

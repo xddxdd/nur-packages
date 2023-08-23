@@ -453,15 +453,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "dcecd03d3c034ec8c3354e7baf4a3b9e28abd83a";
+    version = "914764c9ccc57dada65d8824f8000c2c7d0ec96f";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "dcecd03d3c034ec8c3354e7baf4a3b9e28abd83a";
+      rev = "914764c9ccc57dada65d8824f8000c2c7d0ec96f";
       fetchSubmodules = false;
-      sha256 = "sha256-XWWou3JKQf1oRcC0zzhPH9R3IkZYRMhzDoeDYuE9xtI=";
+      sha256 = "sha256-n1BfI7yoRtwTR9jwsIUAIc3qdv4Hn6NTF9fk0iZ3ilA=";
     };
-    date = "2023-08-15";
+    date = "2023-08-22";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -779,10 +779,10 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.0.4+dfsg-2";
+    version = "8.0.4+dfsg-3";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_amd64.deb";
-      sha256 = "sha256-pdD2Ehd5UIXxU+yxZ1vYYwpbNYjGZo2HA70NvSwSCio=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_amd64.deb";
+      sha256 = "sha256-X3EIGytDqE53aPZg2NDQLifAl1xwgb4EDgV4/25WbAM=";
     };
   };
   qemu-user-static-arm64 = {
@@ -803,10 +803,10 @@
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.0.4+dfsg-2";
+    version = "8.0.4+dfsg-3";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_i386.deb";
-      sha256 = "sha256-h7wyQ2393GIU7DxtunFWZzEzGTVBCmmMH3GvkhfKy+A=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_i386.deb";
+      sha256 = "sha256-JqJ0qAzcQ0LPjFY0eMwHpd2elUkzUFeKTlEeHH35llk=";
     };
   };
   qq-amd64 = {
