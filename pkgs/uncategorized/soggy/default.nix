@@ -3,7 +3,7 @@
   sources,
   lib,
   cmake,
-  protobuf,
+  protobuf3_21,
   protobufc,
   lua5_3_compat,
   ...
@@ -13,7 +13,7 @@ stdenv.mkDerivation rec {
   enableParallelBuilding = true;
 
   nativeBuildInputs = [cmake];
-  buildInputs = [protobuf protobufc lua5_3_compat];
+  buildInputs = [protobuf3_21 protobufc lua5_3_compat];
 
   installPhase = ''
     runHook preInstall
