@@ -350,16 +350,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "8b4a799d8efe2759b9b7baf6c629f1b8cb957308";
+    version = "12fe72797113c65be9b8c600f4dfeb364cb13f4f";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "8b4a799d8efe2759b9b7baf6c629f1b8cb957308";
+      rev = "12fe72797113c65be9b8c600f4dfeb364cb13f4f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-yZYBLIsa1HGR+jWjJcokjcpC+SbTtPMnnp9K29JRYV8=";
+      sha256 = "sha256-nO7Sv+53AIKa8QSOK2j0pGv7NOSAH/4jq1344XcC+PE=";
     };
-    date = "2023-08-22";
+    date = "2023-08-24";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -535,13 +535,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.46-xanmod1";
+    version = "6.1.47-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.46-xanmod1";
+      rev = "6.1.47-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-E9DEWfhl9hUAQXOvJVYJsKBFIen0xHrmiUdTUvGeKxE=";
+      sha256 = "sha256-yF05EkQ/sAvmoNW2waxNJRGGB0gnL85fFdl6pc6U8Eo=";
     };
   };
   nbfc-linux-lantian = {
@@ -757,13 +757,13 @@
   };
   plangothic-fonts = {
     pname = "plangothic-fonts";
-    version = "V0.8.5744";
+    version = "V1.8.5746";
     src = fetchFromGitHub {
       owner = "Fitzgerald-Porthmouth-Koenigsegg";
       repo = "Plangothic";
-      rev = "V0.8.5744";
+      rev = "V1.8.5746";
       fetchSubmodules = false;
-      sha256 = "sha256-iQTlVEo/RIbQZRgQkm28rd/cClnxHg4ECU7UWlTyPas=";
+      sha256 = "sha256-PW0P6Ndekmsw6Y1ChCKHSVRxLPtqwYmi4CnrptpfUfE=";
     };
   };
   qbittorrent-enhanced-edition = {
@@ -787,18 +787,18 @@
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.0.4+dfsg-2";
+    version = "8.0.4+dfsg-3";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_arm64.deb";
-      sha256 = "sha256-7090m99fZSyGgJpraVSd2Gq+PmiDSacR9W3x9kXtJjE=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_arm64.deb";
+      sha256 = "sha256-PJKC201LG0cWrDgBdnCS7tFrhsRG3Rs469QHgXRNk9g=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.0.4+dfsg-2";
+    version = "8.0.4+dfsg-3";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_armhf.deb";
-      sha256 = "sha256-naLpRZA9HUujPhtFgGMa0pEIwoh/rw5HPO0V/Py6GaU=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_armhf.deb";
+      sha256 = "sha256-XMzLNLaS3fa3ipfZOy/BedXvxI7IRM6gkE8uxxocvCg=";
     };
   };
   qemu-user-static-i386 = {
@@ -891,10 +891,10 @@
   };
   rime-zhwiki = {
     pname = "rime-zhwiki";
-    version = "20230728";
+    version = "20230823";
     src = fetchurl {
-      url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-20230728.dict.yaml";
-      sha256 = "sha256-KMlsC+04NjXSsIDskVVY69MKta4W22EDcKUVRtM0diA=";
+      url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-20230823.dict.yaml";
+      sha256 = "sha256-2cx+enR+2lK0o+pYoP8CQg3qd2+nBpQVZhDj4pEPQjU=";
     };
   };
   route-chain = {

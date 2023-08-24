@@ -599,7 +599,7 @@
     },
     "grasscutter-resources": {
         "cargoLocks": null,
-        "date": "2023-08-22",
+        "date": "2023-08-24",
         "extract": null,
         "name": "grasscutter-resources",
         "passthru": null,
@@ -609,12 +609,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "8b4a799d8efe2759b9b7baf6c629f1b8cb957308",
-            "sha256": "sha256-yZYBLIsa1HGR+jWjJcokjcpC+SbTtPMnnp9K29JRYV8=",
+            "rev": "12fe72797113c65be9b8c600f4dfeb364cb13f4f",
+            "sha256": "sha256-nO7Sv+53AIKa8QSOK2j0pGv7NOSAH/4jq1344XcC+PE=",
             "type": "git",
             "url": "https://gitlab.com/YuukiPS/GC-Resources.git"
         },
-        "version": "8b4a799d8efe2759b9b7baf6c629f1b8cb957308"
+        "version": "12fe72797113c65be9b8c600f4dfeb364cb13f4f"
     },
     "hoyo-glyphs": {
         "cargoLocks": null,
@@ -930,11 +930,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.1.46-xanmod1",
-            "sha256": "sha256-E9DEWfhl9hUAQXOvJVYJsKBFIen0xHrmiUdTUvGeKxE=",
+            "rev": "6.1.47-xanmod1",
+            "sha256": "sha256-yF05EkQ/sAvmoNW2waxNJRGGB0gnL85fFdl6pc6U8Eo=",
             "type": "github"
         },
-        "version": "6.1.46-xanmod1"
+        "version": "6.1.47-xanmod1"
     },
     "nbfc-linux-lantian": {
         "cargoLocks": null,
@@ -1315,11 +1315,11 @@
             "name": null,
             "owner": "Fitzgerald-Porthmouth-Koenigsegg",
             "repo": "Plangothic",
-            "rev": "V0.8.5744",
-            "sha256": "sha256-iQTlVEo/RIbQZRgQkm28rd/cClnxHg4ECU7UWlTyPas=",
+            "rev": "V1.8.5746",
+            "sha256": "sha256-PW0P6Ndekmsw6Y1ChCKHSVRxLPtqwYmi4CnrptpfUfE=",
             "type": "github"
         },
-        "version": "V0.8.5744"
+        "version": "V1.8.5746"
     },
     "qbittorrent-enhanced-edition": {
         "cargoLocks": null,
@@ -1365,11 +1365,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7090m99fZSyGgJpraVSd2Gq+PmiDSacR9W3x9kXtJjE=",
+            "sha256": "sha256-PJKC201LG0cWrDgBdnCS7tFrhsRG3Rs469QHgXRNk9g=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_arm64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_arm64.deb"
         },
-        "version": "8.0.4+dfsg-2"
+        "version": "8.0.4+dfsg-3"
     },
     "qemu-user-static-armhf": {
         "cargoLocks": null,
@@ -1380,11 +1380,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-naLpRZA9HUujPhtFgGMa0pEIwoh/rw5HPO0V/Py6GaU=",
+            "sha256": "sha256-XMzLNLaS3fa3ipfZOy/BedXvxI7IRM6gkE8uxxocvCg=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-2_armhf.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_armhf.deb"
         },
-        "version": "8.0.4+dfsg-2"
+        "version": "8.0.4+dfsg-3"
     },
     "qemu-user-static-i386": {
         "cargoLocks": null,
@@ -1550,11 +1550,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-KMlsC+04NjXSsIDskVVY69MKta4W22EDcKUVRtM0diA=",
+            "sha256": "sha256-2cx+enR+2lK0o+pYoP8CQg3qd2+nBpQVZhDj4pEPQjU=",
             "type": "url",
-            "url": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-20230728.dict.yaml"
+            "url": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.4/zhwiki-20230823.dict.yaml"
         },
-        "version": "20230728"
+        "version": "20230823"
     },
     "route-chain": {
         "cargoLocks": null,
