@@ -513,13 +513,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.4.11-xanmod1";
+    version = "6.4.12-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.4.11-xanmod1";
+      rev = "6.4.12-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-HZTLuxdlkVRBe8C95vr6Fk9YjlCXZEpK3gfbtzLqwLQ=";
+      sha256 = "sha256-rvSQJb9MIOXkGEjHOPt3x+dqp1AysvQg7n5yYsg95fk=";
     };
   };
   linux-xanmod-6_0 = {
@@ -779,34 +779,34 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.0.4+dfsg-3";
+    version = "8.0.4+dfsg-3+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_amd64.deb";
-      sha256 = "sha256-X3EIGytDqE53aPZg2NDQLifAl1xwgb4EDgV4/25WbAM=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_amd64.deb";
+      sha256 = "sha256-N1hPTdhVekJekXiDFdEjev2yA5ZNRbSN0dSLw8+/Epk=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.0.4+dfsg-3";
+    version = "8.0.4+dfsg-3+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_arm64.deb";
-      sha256 = "sha256-PJKC201LG0cWrDgBdnCS7tFrhsRG3Rs469QHgXRNk9g=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_arm64.deb";
+      sha256 = "sha256-MdD+esAdiHpFUqCO6LPywwyQud/IIFhXbxMEetthu+g=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.0.4+dfsg-3";
+    version = "8.0.4+dfsg-3+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_armhf.deb";
-      sha256 = "sha256-XMzLNLaS3fa3ipfZOy/BedXvxI7IRM6gkE8uxxocvCg=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_armhf.deb";
+      sha256 = "sha256-UmHj2XjTX7AvF/9IIva5pI/HbzOqgCLJBc2ZTf4Yp3o=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.0.4+dfsg-3";
+    version = "8.0.4+dfsg-3+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3_i386.deb";
-      sha256 = "sha256-JqJ0qAzcQ0LPjFY0eMwHpd2elUkzUFeKTlEeHH35llk=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_i386.deb";
+      sha256 = "sha256-hTuAbr7jDrBqFUGkVmiXNDmHSvei2kq2JoT8wFh+VTI=";
     };
   };
   qq-amd64 = {
@@ -871,15 +871,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "360a87884c3ece7d63fe224331d0b5c2309662b8";
+    version = "f4007e9aa3536916265141e661e1c1242e586121";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "360a87884c3ece7d63fe224331d0b5c2309662b8";
+      rev = "f4007e9aa3536916265141e661e1c1242e586121";
       fetchSubmodules = false;
-      sha256 = "sha256-4XrIwE1rKl4ckUtc6MwxSs1ujEgLLDGZmWCcoOl/OMo=";
+      sha256 = "sha256-+wagJCiEy9AYS90izC28DhE+oea/EQbZQZcXz2v3a04=";
     };
-    date = "2023-08-21";
+    date = "2023-08-24";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
