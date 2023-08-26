@@ -75,13 +75,13 @@
   };
   baidupcs-go = {
     pname = "baidupcs-go";
-    version = "v3.9.2";
+    version = "v3.9.3";
     src = fetchFromGitHub {
       owner = "qjfoidnh";
       repo = "BaiduPCS-Go";
-      rev = "v3.9.2";
+      rev = "v3.9.3";
       fetchSubmodules = false;
-      sha256 = "sha256-rN5c0m12Y20d+mbVI0BDvzx3lvRiknxESZ7n16z18Ik=";
+      sha256 = "sha256-dnSonEQSmVmpJzdvvl4wPA66vsCEnImOhEHECM7M724=";
     };
   };
   bepasty = {
@@ -114,15 +114,15 @@
   };
   bird-lg-go = {
     pname = "bird-lg-go";
-    version = "b237185ef71a2e46d5105d31c8437e9922508c4e";
+    version = "a5f4452d02b542254d2c7e22010309f62cf7180d";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "bird-lg-go";
-      rev = "b237185ef71a2e46d5105d31c8437e9922508c4e";
+      rev = "a5f4452d02b542254d2c7e22010309f62cf7180d";
       fetchSubmodules = false;
-      sha256 = "sha256-ROMwgsKroxd9qkKX8ZoOuazBrnZytcTAPT9hR/v6a04=";
+      sha256 = "sha256-v453EM7wdHhRVboF/Kb9bvRHbHrummvQhA1235O58nc=";
     };
-    date = "2023-06-18";
+    date = "2023-08-25";
   };
   boringssl-oqs = {
     pname = "boringssl-oqs";
@@ -967,15 +967,15 @@
   };
   undetected-chromedriver = {
     pname = "undetected-chromedriver";
-    version = "a415e40b0b6e260a0b5844dd714c7f358a168ceb";
+    version = "cea80717c5a3d95ccf5c40e6e38081d5454ec7a5";
     src = fetchFromGitHub {
       owner = "ultrafunkamsterdam";
       repo = "undetected-chromedriver";
-      rev = "a415e40b0b6e260a0b5844dd714c7f358a168ceb";
+      rev = "cea80717c5a3d95ccf5c40e6e38081d5454ec7a5";
       fetchSubmodules = false;
-      sha256 = "sha256-3d1UBUdL/lOLcfHF/1sW4BirSlb7nJDfS15qMx1I0ac=";
+      sha256 = "sha256-6+aJrxKnZZ6tkajgw0Qx5ZVkO8T56UhYnIH1d0g2qtE=";
     };
-    date = "2023-08-09";
+    date = "2023-08-25";
   };
   vs-rife = {
     pname = "vs-rife";
