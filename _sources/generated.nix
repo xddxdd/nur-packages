@@ -94,10 +94,10 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.10.1-4";
+    version = "1.11.4-1";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.10.1-4/io.github.msojocs.bilibili_1.10.1-4_amd64.deb";
-      sha256 = "sha256-/jvgCEqd0kSAs3U7eJQ7fFyHdGcyV/7nMnNgQpDVgm0=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-1/io.github.msojocs.bilibili_1.11.4-1_amd64.deb";
+      sha256 = "sha256-fsHPbugjY9GAWrEFZDTNqVaewXDF/NZRmG+N2Pkc4bY=";
     };
   };
   bird-babel-rtt = {
@@ -350,16 +350,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "3e388b26f9fd0810cd512b1d272c86f40e94ce51";
+    version = "000d46f452f66698767ea201c4ac2e7d53647046";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "3e388b26f9fd0810cd512b1d272c86f40e94ce51";
+      rev = "000d46f452f66698767ea201c4ac2e7d53647046";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-hrEAPlA0snQ7KIcnuxv063nOAjuOzs+cGr5AvGdzk+0=";
+      sha256 = "sha256-7FQqBSuHbWLplEZ5sQOQq6D49MsBxzmAr+hdY45dxBE=";
     };
-    date = "2023-08-25";
+    date = "2023-08-27";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -871,15 +871,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "f4007e9aa3536916265141e661e1c1242e586121";
+    version = "c9e4f7a77a3cb5cc70672e93d2943bb77d9a1157";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "f4007e9aa3536916265141e661e1c1242e586121";
+      rev = "c9e4f7a77a3cb5cc70672e93d2943bb77d9a1157";
       fetchSubmodules = false;
-      sha256 = "sha256-+wagJCiEy9AYS90izC28DhE+oea/EQbZQZcXz2v3a04=";
+      sha256 = "sha256-vQjTs5D/n2A4Py5/A/YVnV2XwASCDxGN7zrjnk7HF1c=";
     };
-    date = "2023-08-24";
+    date = "2023-08-27";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
