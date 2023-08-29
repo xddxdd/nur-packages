@@ -86,10 +86,10 @@
   };
   bepasty = {
     pname = "bepasty";
-    version = "1.1.0";
+    version = "1.2.0";
     src = fetchurl {
-      url = "https://pypi.org/packages/source/b/bepasty/bepasty-1.1.0.tar.gz";
-      sha256 = "sha256-f5tRq48tCqjzOGq7Z2T2U1zwQN121N9ap+xPxHWZyvU=";
+      url = "https://pypi.org/packages/source/b/bepasty/bepasty-1.2.0.tar.gz";
+      sha256 = "sha256-R3bvrl/tOP0S9m6X+MwYK6fMQ51cI6W5AoxyYZ8aZ/w=";
     };
   };
   bilibili = {
@@ -453,15 +453,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "914764c9ccc57dada65d8824f8000c2c7d0ec96f";
+    version = "f2f9076693f5712fd87efc3a4dee01133e5d788a";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "914764c9ccc57dada65d8824f8000c2c7d0ec96f";
+      rev = "f2f9076693f5712fd87efc3a4dee01133e5d788a";
       fetchSubmodules = false;
-      sha256 = "sha256-n1BfI7yoRtwTR9jwsIUAIc3qdv4Hn6NTF9fk0iZ3ilA=";
+      sha256 = "sha256-GMGIV6Z0P2Yj4HkIdJYh1wgbmVNSO/bwGJDGiRQtOv8=";
     };
-    date = "2023-08-22";
+    date = "2023-08-28";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -513,13 +513,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.4.12-xanmod1";
+    version = "6.5.0-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.4.12-xanmod1";
+      rev = "6.5.0-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-rvSQJb9MIOXkGEjHOPt3x+dqp1AysvQg7n5yYsg95fk=";
+      sha256 = "sha256-4+1f8sZJHsH6Xb1gpqCbC5BRZmDYz1mk7kaXShtsqPA=";
     };
   };
   linux-xanmod-6_0 = {
@@ -535,13 +535,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.47-xanmod1";
+    version = "6.1.49-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.47-xanmod1";
+      rev = "6.1.49-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-yF05EkQ/sAvmoNW2waxNJRGGB0gnL85fFdl6pc6U8Eo=";
+      sha256 = "sha256-4AO53AgISox+jFmCwFab7WFaGP9J1mtzdA3BxL/8pFo=";
     };
   };
   nbfc-linux-lantian = {
