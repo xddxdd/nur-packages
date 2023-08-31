@@ -14,6 +14,7 @@ with python3Packages;
       flask
       pygments
       setuptools
+      setuptools-scm
       xstatic
       xstatic-asciinema-player
       xstatic-bootbox
@@ -25,7 +26,7 @@ with python3Packages;
       xstatic-pygments
     ];
 
-    buildInputs = [setuptools-scm];
+    format = "pyproject";
 
     doCheck = false;
 
