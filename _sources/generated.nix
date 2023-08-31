@@ -1014,10 +1014,10 @@
   };
   xstatic-font-awesome = {
     pname = "xstatic-font-awesome";
-    version = "6.2.1.1";
+    version = "4.7.0.0";
     src = fetchurl {
-      url = "https://pypi.org/packages/source/X/XStatic-Font-Awesome/XStatic-Font-Awesome-6.2.1.1.tar.gz";
-      sha256 = "sha256-8HWHEJYShjjy4VOQINgid1TD2IXdaOfubemgEjUHaCg=";
+      url = "https://pypi.org/packages/source/X/XStatic-Font-Awesome/XStatic-Font-Awesome-4.7.0.0.tar.gz";
+      sha256 = "sha256-4B+0gMqqfHlj3LMyikcA5jG+9gcNsOi2hYFtIg5oX2w=";
     };
   };
   zstd-nginx-module = {

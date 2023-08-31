@@ -406,7 +406,8 @@ src.pypi = "XStatic-asciinema-player"
 fetch.pypi = "XStatic-asciinema-player"
 
 [xstatic-font-awesome]
-src.pypi = "XStatic-Font-Awesome"
+# src.pypi = "XStatic-Font-Awesome"
+src.manual = "4.7.0.0"
 fetch.pypi = "XStatic-Font-Awesome"
 
 [zstd-nginx-module]

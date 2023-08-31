@@ -1765,11 +1765,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8HWHEJYShjjy4VOQINgid1TD2IXdaOfubemgEjUHaCg=",
+            "sha256": "sha256-4B+0gMqqfHlj3LMyikcA5jG+9gcNsOi2hYFtIg5oX2w=",
             "type": "url",
-            "url": "https://pypi.org/packages/source/X/XStatic-Font-Awesome/XStatic-Font-Awesome-6.2.1.1.tar.gz"
+            "url": "https://pypi.org/packages/source/X/XStatic-Font-Awesome/XStatic-Font-Awesome-4.7.0.0.tar.gz"
         },
-        "version": "6.2.1.1"
+        "version": "4.7.0.0"
     },
     "zstd-nginx-module": {
         "cargoLocks": null,
