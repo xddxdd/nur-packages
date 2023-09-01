@@ -482,11 +482,11 @@
             "name": null,
             "owner": "FlareSolverr",
             "repo": "FlareSolverr",
-            "rev": "v3.3.2",
-            "sha256": "sha256-bvikixbun/S8x0qKiDKETgPq836prQGn02e5gNw3/Ek=",
+            "rev": "v3.3.3",
+            "sha256": "sha256-z9nBUD1S9psMLsEaPvUbY+/n0+yc9XwnS6CAaWG5yQY=",
             "type": "github"
         },
-        "version": "v3.3.2"
+        "version": "v3.3.3"
     },
     "flasgger": {
         "cargoLocks": null,
@@ -591,11 +591,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-3NIC/ZmiTn8SO84Al4FQwvmd/x8BWedRwE2inPuTbio=",
+            "sha256": "sha256-SnSbPHOM1kp5qkeI90vhRXb8Fd/GEO+JHFIjPC6zL5M=",
             "type": "url",
-            "url": "https://github.com/Grasscutters/Grasscutter/releases/download/v1.6.3/grasscutter-1.6.3.jar"
+            "url": "https://github.com/Grasscutters/Grasscutter/releases/download/v1.7.0/grasscutter-1.7.0.jar"
         },
-        "version": "1.6.3"
+        "version": "1.7.0"
     },
     "grasscutter-resources": {
         "cargoLocks": null,
@@ -1208,7 +1208,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2023-08-21",
+        "date": "2023-08-31",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1220,11 +1220,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "b6da1e97b7180a779981d1b0bfa0ab2cd723066d",
-            "sha256": "sha256-msHbC8BMhotPnlVBOJIn9cg6sLpvejXXcNdr0EOwr3w=",
+            "rev": "a15fc1bdf67ac6850deb52fc6d8487b3955277fe",
+            "sha256": "sha256-Tuel4XFrSNKtYuwWyQPXOtT74iATVr63jhByYmCFLTU=",
             "type": "github"
         },
-        "version": "b6da1e97b7180a779981d1b0bfa0ab2cd723066d"
+        "version": "a15fc1bdf67ac6850deb52fc6d8487b3955277fe"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -1335,11 +1335,11 @@
             "name": null,
             "owner": "c0re100",
             "repo": "qBittorrent-Enhanced-Edition",
-            "rev": "release-4.5.4.10",
-            "sha256": "sha256-2kHjW3CMcAEITbYzw8QNRqkTWrMkaktkdAd69moyk2M=",
+            "rev": "release-4.5.5.10",
+            "sha256": "sha256-wGEH83zX7u1KnHxKuMbVIhZ/AbNUkSme1leh5lHPLAk=",
             "type": "github"
         },
-        "version": "release-4.5.4.10"
+        "version": "release-4.5.5.10"
     },
     "qemu-user-static-amd64": {
         "cargoLocks": null,
@@ -1508,7 +1508,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-08-30",
+        "date": "2023-08-31",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -1520,11 +1520,11 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "f535fd31cb8ff0f6f40fe68eca7c1416923f12f5",
-            "sha256": "sha256-0o3PsL1LY+ni2HU5chcvdW0HEfljFfdGM9iWTaCgRAw=",
+            "rev": "6a1c50649f5d3c86118ef5d0e254f1df01d04c5e",
+            "sha256": "sha256-lyYZqwOT5KBSzMghFDtavNC5TGsy/KXENybk7ylnOqY=",
             "type": "github"
         },
-        "version": "f535fd31cb8ff0f6f40fe68eca7c1416923f12f5"
+        "version": "6a1c50649f5d3c86118ef5d0e254f1df01d04c5e"
     },
     "rime-moegirl": {
         "cargoLocks": null,
