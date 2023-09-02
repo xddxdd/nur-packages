@@ -599,7 +599,7 @@
     },
     "grasscutter-resources": {
         "cargoLocks": null,
-        "date": "2023-08-30",
+        "date": "2023-09-01",
         "extract": null,
         "name": "grasscutter-resources",
         "passthru": null,
@@ -609,12 +609,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "957e0205045a692ff3273d3db836a8b55c14d8a2",
-            "sha256": "sha256-AlVBqGnQ25w/13LJ/rWv0I/7ryaiuZ5eorysvzilp3c=",
+            "rev": "e2cfefe1fe38d57ec32a73c06c061a19fdcdfd4c",
+            "sha256": "sha256-td+i/LYZoAtB6+1PLs7VW10npUd92dUSKkGiAN2eT24=",
             "type": "git",
             "url": "https://gitlab.com/YuukiPS/GC-Resources.git"
         },
-        "version": "957e0205045a692ff3273d3db836a8b55c14d8a2"
+        "version": "e2cfefe1fe38d57ec32a73c06c061a19fdcdfd4c"
     },
     "hoyo-glyphs": {
         "cargoLocks": null,
@@ -1088,7 +1088,7 @@
     },
     "ngx_brotli": {
         "cargoLocks": null,
-        "date": "2022-04-29",
+        "date": "2023-09-01",
         "extract": null,
         "name": "ngx_brotli",
         "passthru": null,
@@ -1100,11 +1100,11 @@
             "name": null,
             "owner": "google",
             "repo": "ngx_brotli",
-            "rev": "6e975bcb015f62e1f303054897783355e2a877dc",
+            "rev": "8f726ea6614eb5541812647a673abd8f66eb4660",
             "sha256": "sha256-G0IDYlvaQzzJ6cNTSGbfuOuSXFp3RsEwIJLGapTbDgo=",
             "type": "github"
         },
-        "version": "6e975bcb015f62e1f303054897783355e2a877dc"
+        "version": "8f726ea6614eb5541812647a673abd8f66eb4660"
     },
     "noise-suppression-for-voice": {
         "cargoLocks": null,
@@ -1208,7 +1208,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2023-08-31",
+        "date": "2023-09-01",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1220,11 +1220,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "a15fc1bdf67ac6850deb52fc6d8487b3955277fe",
-            "sha256": "sha256-Tuel4XFrSNKtYuwWyQPXOtT74iATVr63jhByYmCFLTU=",
+            "rev": "3750149cc330f02bb94cd7e4fb10e5e585c6f423",
+            "sha256": "sha256-Zuz6l+c7YcFIS7Q8RDe8PCn0+PiIWPh/2z7mXY9/WIo=",
             "type": "github"
         },
-        "version": "a15fc1bdf67ac6850deb52fc6d8487b3955277fe"
+        "version": "3750149cc330f02bb94cd7e4fb10e5e585c6f423"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -1295,11 +1295,11 @@
             "name": null,
             "owner": "ReimuHakurei",
             "repo": "phppgadmin",
-            "rev": "v7.14.4-mod",
-            "sha256": "sha256-EfuoeEqzaUvACscAz/oDG2N6GJU6LUWIwH7O3hDYY5s=",
+            "rev": "v7.14.5-mod",
+            "sha256": "sha256-jp6O29JbQr1OeHCmOa2qAGHE5dIBU47BQA7xv7ypqns=",
             "type": "github"
         },
-        "version": "v7.14.4-mod"
+        "version": "v7.14.5-mod"
     },
     "plangothic-fonts": {
         "cargoLocks": null,
@@ -1410,11 +1410,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mBfeexWEYpGybFFianUFvlzMv0HoFR4EeFcwlGVXIRA=",
+            "sha256": "sha256-beDu/Ic3yGEu3lc9fxy3n8DuAqywYEUidgvUzNs+DHc=",
             "type": "url",
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/ad5b5393/linuxqq_3.1.2-13107_amd64.deb"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/1776936e/linuxqq_3.2.0-16605_amd64.deb"
         },
-        "version": "ad5b5393/linuxqq_3.1.2-13107"
+        "version": "1776936e/linuxqq_3.2.0-16605"
     },
     "qq-arm64": {
         "cargoLocks": null,
@@ -1425,11 +1425,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-V6kR2lb63nnNIEhn64Yg0BYYlz7W0Cw60TwnKaJuLgs=",
+            "sha256": "sha256-3Mk+qLVT7WYFHrW4P4FoHDL4rb3wTXRvCyqKw+4FHqk=",
             "type": "url",
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/ad5b5393/linuxqq_3.1.2-13107_arm64.deb"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/1776936e/linuxqq_3.2.0-16605_arm64.deb"
         },
-        "version": "ad5b5393/linuxqq_3.1.2-13107"
+        "version": "1776936e/linuxqq_3.2.0-16605"
     },
     "qqmusic": {
         "cargoLocks": null,

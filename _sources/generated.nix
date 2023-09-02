@@ -350,16 +350,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "957e0205045a692ff3273d3db836a8b55c14d8a2";
+    version = "e2cfefe1fe38d57ec32a73c06c061a19fdcdfd4c";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "957e0205045a692ff3273d3db836a8b55c14d8a2";
+      rev = "e2cfefe1fe38d57ec32a73c06c061a19fdcdfd4c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-AlVBqGnQ25w/13LJ/rWv0I/7ryaiuZ5eorysvzilp3c=";
+      sha256 = "sha256-td+i/LYZoAtB6+1PLs7VW10npUd92dUSKkGiAN2eT24=";
     };
-    date = "2023-08-30";
+    date = "2023-09-01";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -633,15 +633,15 @@
   };
   ngx_brotli = {
     pname = "ngx_brotli";
-    version = "6e975bcb015f62e1f303054897783355e2a877dc";
+    version = "8f726ea6614eb5541812647a673abd8f66eb4660";
     src = fetchFromGitHub {
       owner = "google";
       repo = "ngx_brotli";
-      rev = "6e975bcb015f62e1f303054897783355e2a877dc";
+      rev = "8f726ea6614eb5541812647a673abd8f66eb4660";
       fetchSubmodules = false;
       sha256 = "sha256-G0IDYlvaQzzJ6cNTSGbfuOuSXFp3RsEwIJLGapTbDgo=";
     };
-    date = "2022-04-29";
+    date = "2023-09-01";
   };
   noise-suppression-for-voice = {
     pname = "noise-suppression-for-voice";
@@ -704,15 +704,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "a15fc1bdf67ac6850deb52fc6d8487b3955277fe";
+    version = "3750149cc330f02bb94cd7e4fb10e5e585c6f423";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "a15fc1bdf67ac6850deb52fc6d8487b3955277fe";
+      rev = "3750149cc330f02bb94cd7e4fb10e5e585c6f423";
       fetchSubmodules = false;
-      sha256 = "sha256-Tuel4XFrSNKtYuwWyQPXOtT74iATVr63jhByYmCFLTU=";
+      sha256 = "sha256-Zuz6l+c7YcFIS7Q8RDe8PCn0+PiIWPh/2z7mXY9/WIo=";
     };
-    date = "2023-08-31";
+    date = "2023-09-01";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -746,13 +746,13 @@
   };
   phppgadmin = {
     pname = "phppgadmin";
-    version = "v7.14.4-mod";
+    version = "v7.14.5-mod";
     src = fetchFromGitHub {
       owner = "ReimuHakurei";
       repo = "phppgadmin";
-      rev = "v7.14.4-mod";
+      rev = "v7.14.5-mod";
       fetchSubmodules = false;
-      sha256 = "sha256-EfuoeEqzaUvACscAz/oDG2N6GJU6LUWIwH7O3hDYY5s=";
+      sha256 = "sha256-jp6O29JbQr1OeHCmOa2qAGHE5dIBU47BQA7xv7ypqns=";
     };
   };
   plangothic-fonts = {
@@ -811,18 +811,18 @@
   };
   qq-amd64 = {
     pname = "qq-amd64";
-    version = "ad5b5393/linuxqq_3.1.2-13107";
+    version = "1776936e/linuxqq_3.2.0-16605";
     src = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/ad5b5393/linuxqq_3.1.2-13107_amd64.deb";
-      sha256 = "sha256-mBfeexWEYpGybFFianUFvlzMv0HoFR4EeFcwlGVXIRA=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/1776936e/linuxqq_3.2.0-16605_amd64.deb";
+      sha256 = "sha256-beDu/Ic3yGEu3lc9fxy3n8DuAqywYEUidgvUzNs+DHc=";
     };
   };
   qq-arm64 = {
     pname = "qq-arm64";
-    version = "ad5b5393/linuxqq_3.1.2-13107";
+    version = "1776936e/linuxqq_3.2.0-16605";
     src = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/ad5b5393/linuxqq_3.1.2-13107_arm64.deb";
-      sha256 = "sha256-V6kR2lb63nnNIEhn64Yg0BYYlz7W0Cw60TwnKaJuLgs=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/1776936e/linuxqq_3.2.0-16605_arm64.deb";
+      sha256 = "sha256-3Mk+qLVT7WYFHrW4P4FoHDL4rb3wTXRvCyqKw+4FHqk=";
     };
   };
   qqmusic = {
