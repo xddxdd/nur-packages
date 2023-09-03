@@ -94,10 +94,10 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.11.4-1";
+    version = "1.11.4-2";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-1/io.github.msojocs.bilibili_1.11.4-1_amd64.deb";
-      sha256 = "sha256-fsHPbugjY9GAWrEFZDTNqVaewXDF/NZRmG+N2Pkc4bY=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-2/io.github.msojocs.bilibili_1.11.4-2_amd64.deb";
+      sha256 = "sha256-nUixkNZPIqeMUdjJxaNrHODFbShDqHFHVoKRZKAVjyc=";
     };
   };
   bird-babel-rtt = {
@@ -276,13 +276,13 @@
   };
   flaresolverr = {
     pname = "flaresolverr";
-    version = "v3.3.3";
+    version = "v3.3.4";
     src = fetchFromGitHub {
       owner = "FlareSolverr";
       repo = "FlareSolverr";
-      rev = "v3.3.3";
+      rev = "v3.3.4";
       fetchSubmodules = false;
-      sha256 = "sha256-z9nBUD1S9psMLsEaPvUbY+/n0+yc9XwnS6CAaWG5yQY=";
+      sha256 = "sha256-bMIa+Yx+XX6ua2CClB1t2b7kYqDjFyANnRb4rPIvWAU=";
     };
   };
   flasgger = {
@@ -342,10 +342,10 @@
   };
   grasscutter = {
     pname = "grasscutter";
-    version = "1.7.0";
+    version = "1.7.1";
     src = fetchurl {
-      url = "https://github.com/Grasscutters/Grasscutter/releases/download/v1.7.0/grasscutter-1.7.0.jar";
-      sha256 = "sha256-SnSbPHOM1kp5qkeI90vhRXb8Fd/GEO+JHFIjPC6zL5M=";
+      url = "https://github.com/Grasscutters/Grasscutter/releases/download/v1.7.1/grasscutter-1.7.1.jar";
+      sha256 = "sha256-mwnToKqarQmD85snYfrQY85T/Nba0bbTVdd9g3mcAOM=";
     };
   };
   grasscutter-resources = {
@@ -513,13 +513,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.5.0-xanmod1";
+    version = "6.5.1-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.5.0-xanmod1";
+      rev = "6.5.1-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-4+1f8sZJHsH6Xb1gpqCbC5BRZmDYz1mk7kaXShtsqPA=";
+      sha256 = "sha256-BMT9S3STac+wQoNoj2Tvh4mNhlDXJzXyicF/sRy2BMQ=";
     };
   };
   linux-xanmod-6_0 = {
@@ -535,13 +535,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.50-xanmod1";
+    version = "6.1.51-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.50-xanmod1";
+      rev = "6.1.51-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-wKw1kKfxS/CHXnfFqEMUBwKTroUnorqK530hjhZSw7c=";
+      sha256 = "sha256-atkxQPWPnZJEcRBfW9e3aEonTUzlDoU3bNnYMzWZQ9U=";
     };
   };
   nbfc-linux-lantian = {
