@@ -188,15 +188,15 @@
   };
   coredns-lantian = {
     pname = "coredns-lantian";
-    version = "c02cd42067dffcb773ebd9cecd32691d0bafebd9";
+    version = "a411a29f831648afa98aa79b164e790add2d6f14";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "coredns";
-      rev = "c02cd42067dffcb773ebd9cecd32691d0bafebd9";
+      rev = "a411a29f831648afa98aa79b164e790add2d6f14";
       fetchSubmodules = false;
-      sha256 = "sha256-j5nwobSO74zXp6ucyv/F3mXcyBcxFUAiFfcGgpXv22A=";
+      sha256 = "sha256-LPQWyDzpN1K9tJosDE70QxqP9BDuSVqlTVRYappYUUc=";
     };
-    date = "2023-02-17";
+    date = "2023-09-02";
   };
   dingtalk = {
     pname = "dingtalk";

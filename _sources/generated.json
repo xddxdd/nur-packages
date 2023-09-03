@@ -321,7 +321,7 @@
     },
     "coredns-lantian": {
         "cargoLocks": null,
-        "date": "2023-02-17",
+        "date": "2023-09-02",
         "extract": null,
         "name": "coredns-lantian",
         "passthru": null,
@@ -333,11 +333,11 @@
             "name": null,
             "owner": "xddxdd",
             "repo": "coredns",
-            "rev": "c02cd42067dffcb773ebd9cecd32691d0bafebd9",
-            "sha256": "sha256-j5nwobSO74zXp6ucyv/F3mXcyBcxFUAiFfcGgpXv22A=",
+            "rev": "a411a29f831648afa98aa79b164e790add2d6f14",
+            "sha256": "sha256-LPQWyDzpN1K9tJosDE70QxqP9BDuSVqlTVRYappYUUc=",
             "type": "github"
         },
-        "version": "c02cd42067dffcb773ebd9cecd32691d0bafebd9"
+        "version": "a411a29f831648afa98aa79b164e790add2d6f14"
     },
     "dingtalk": {
         "cargoLocks": null,
