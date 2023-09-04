@@ -94,10 +94,10 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.11.4-2";
+    version = "1.11.4-3";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-2/io.github.msojocs.bilibili_1.11.4-2_amd64.deb";
-      sha256 = "sha256-nUixkNZPIqeMUdjJxaNrHODFbShDqHFHVoKRZKAVjyc=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-3/io.github.msojocs.bilibili_1.11.4-3_amd64.deb";
+      sha256 = "sha256-v4IlrQL1iedVbIyyJNKBh0K6go7rrsAXVezQLuUyHN0=";
     };
   };
   bird-babel-rtt = {
@@ -465,15 +465,15 @@
   };
   librime-charcode = {
     pname = "librime-charcode";
-    version = "e8a49f503769427f9c0b14e40b2e1f02417515b2";
+    version = "3e73214fdf5d162517a74762433f486b70a5c0e1";
     src = fetchFromGitHub {
       owner = "rime";
       repo = "librime-charcode";
-      rev = "e8a49f503769427f9c0b14e40b2e1f02417515b2";
+      rev = "3e73214fdf5d162517a74762433f486b70a5c0e1";
       fetchSubmodules = false;
-      sha256 = "sha256-vOIdgpD6ZMvFmWJUREsuKbUGEuJeM+nl/sE7GW7WAFA=";
+      sha256 = "sha256-wfaz4ReCV2w+zRaPbJuZ1lgXQI9Pa1Xz9NuQe+UqcB0=";
     };
-    date = "2023-01-26";
+    date = "2023-09-03";
   };
   librime-lua = {
     pname = "librime-lua";
@@ -871,15 +871,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "6a1c50649f5d3c86118ef5d0e254f1df01d04c5e";
+    version = "bd2b6ba0219cd7b5a098cededde1b6747184a319";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "6a1c50649f5d3c86118ef5d0e254f1df01d04c5e";
+      rev = "bd2b6ba0219cd7b5a098cededde1b6747184a319";
       fetchSubmodules = false;
-      sha256 = "sha256-lyYZqwOT5KBSzMghFDtavNC5TGsy/KXENybk7ylnOqY=";
+      sha256 = "sha256-XLdb2FP3KjcyRDEIyu03j65eCi43NEYAhcGtXEp1F2w=";
     };
-    date = "2023-08-31";
+    date = "2023-09-03";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
