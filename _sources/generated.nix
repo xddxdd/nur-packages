@@ -75,13 +75,13 @@
   };
   baidupcs-go = {
     pname = "baidupcs-go";
-    version = "v3.9.3";
+    version = "v3.9.4";
     src = fetchFromGitHub {
       owner = "qjfoidnh";
       repo = "BaiduPCS-Go";
-      rev = "v3.9.3";
+      rev = "v3.9.4";
       fetchSubmodules = false;
-      sha256 = "sha256-dnSonEQSmVmpJzdvvl4wPA66vsCEnImOhEHECM7M724=";
+      sha256 = "sha256-7kjMCoT6r7AgqWtjqfEJnQCpo6CNDK8a3NvSdrMI12E=";
     };
   };
   bepasty = {
@@ -200,10 +200,10 @@
   };
   dingtalk = {
     pname = "dingtalk";
-    version = "7.0.40.30706";
+    version = "7.0.50.30831";
     src = fetchurl {
-      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.0.40.30706_amd64.deb";
-      sha256 = "sha256-AKii99JL3AyYQh8RmDSb1w7/gJ/K4DWhAIGHGgmfkps=";
+      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.0.50.30831_amd64.deb";
+      sha256 = "sha256-ZO65cSYyNTMoMJj8LbjBcmpf0+M04SFRlVIIrqUB+TE=";
     };
   };
   douban-openapi-server = {
@@ -243,15 +243,15 @@
   };
   etherguard = {
     pname = "etherguard";
-    version = "7775441e24d68b191fd285d851e58713bead8bc5";
+    version = "2897388568b68bb8d8de329eecce6e64dc361e8e";
     src = fetchFromGitHub {
       owner = "KusakabeShi";
       repo = "EtherGuard-VPN";
-      rev = "7775441e24d68b191fd285d851e58713bead8bc5";
+      rev = "2897388568b68bb8d8de329eecce6e64dc361e8e";
       fetchSubmodules = false;
-      sha256 = "sha256-KOJAD0IUE7HIrCbCg4RuERiyaasz7o053sEL+ZurdVQ=";
+      sha256 = "sha256-0EQL/0xbzovShRbUeOHyWEiGH5bi2SDiwhEe/k5g8tI=";
     };
-    date = "2023-02-23";
+    date = "2023-09-05";
   };
   fastapi-dls = {
     pname = "fastapi-dls";
@@ -350,16 +350,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "e2cfefe1fe38d57ec32a73c06c061a19fdcdfd4c";
+    version = "ef1e8a81b117462ff4a6ce3086df761e6e0bd98b";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "e2cfefe1fe38d57ec32a73c06c061a19fdcdfd4c";
+      rev = "ef1e8a81b117462ff4a6ce3086df761e6e0bd98b";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-td+i/LYZoAtB6+1PLs7VW10npUd92dUSKkGiAN2eT24=";
+      sha256 = "sha256-iy+iq35II5ONM5bazDBz0i9RH9b7bb22B2DTVQ7OF5Q=";
     };
-    date = "2023-09-01";
+    date = "2023-09-04";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -704,15 +704,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "3750149cc330f02bb94cd7e4fb10e5e585c6f423";
+    version = "cc3895f208730abfe1efc15f7c3ff4358ac6e4c0";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "3750149cc330f02bb94cd7e4fb10e5e585c6f423";
+      rev = "cc3895f208730abfe1efc15f7c3ff4358ac6e4c0";
       fetchSubmodules = false;
-      sha256 = "sha256-Zuz6l+c7YcFIS7Q8RDe8PCn0+PiIWPh/2z7mXY9/WIo=";
+      sha256 = "sha256-n2LKZEQJwR8uIMZSdJxJFt3C3/WjRTWUkoengdo84tM=";
     };
-    date = "2023-09-01";
+    date = "2023-09-04";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -871,15 +871,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "bd2b6ba0219cd7b5a098cededde1b6747184a319";
+    version = "06467aa0b35df190e340dbf4913ef0499455ee30";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "bd2b6ba0219cd7b5a098cededde1b6747184a319";
+      rev = "06467aa0b35df190e340dbf4913ef0499455ee30";
       fetchSubmodules = false;
-      sha256 = "sha256-XLdb2FP3KjcyRDEIyu03j65eCi43NEYAhcGtXEp1F2w=";
+      sha256 = "sha256-krU11Iu8nTmRFiOWuTB2Cyvb/VBG/Nv8FrCUlx/BFc0=";
     };
-    date = "2023-09-03";
+    date = "2023-09-04";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
