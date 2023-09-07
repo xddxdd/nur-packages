@@ -114,15 +114,15 @@
   };
   bird-lg-go = {
     pname = "bird-lg-go";
-    version = "a5f4452d02b542254d2c7e22010309f62cf7180d";
+    version = "4bd7a6bb9506382aa2af636d660ab651d8ecdd11";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "bird-lg-go";
-      rev = "a5f4452d02b542254d2c7e22010309f62cf7180d";
+      rev = "4bd7a6bb9506382aa2af636d660ab651d8ecdd11";
       fetchSubmodules = false;
-      sha256 = "sha256-v453EM7wdHhRVboF/Kb9bvRHbHrummvQhA1235O58nc=";
+      sha256 = "sha256-cv9Pl3U16iSrOk4cmCwB4pfkdfZO+Xg4ioGrNnb5qW4=";
     };
-    date = "2023-08-25";
+    date = "2023-09-06";
   };
   boringssl-oqs = {
     pname = "boringssl-oqs";
@@ -453,15 +453,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "f2f9076693f5712fd87efc3a4dee01133e5d788a";
+    version = "0dafd4f02c5a8fc000502ae51005a9962b671860";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "f2f9076693f5712fd87efc3a4dee01133e5d788a";
+      rev = "0dafd4f02c5a8fc000502ae51005a9962b671860";
       fetchSubmodules = false;
-      sha256 = "sha256-GMGIV6Z0P2Yj4HkIdJYh1wgbmVNSO/bwGJDGiRQtOv8=";
+      sha256 = "sha256-PwdXa2JffaZbWKVE+h0fTmki7UJul2Zv0a2SP6QcdiE=";
     };
-    date = "2023-08-28";
+    date = "2023-09-07";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -513,13 +513,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.5.1-xanmod1";
+    version = "6.5.2-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.5.1-xanmod1";
+      rev = "6.5.2-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-BMT9S3STac+wQoNoj2Tvh4mNhlDXJzXyicF/sRy2BMQ=";
+      sha256 = "sha256-edn2cwXBLprpk+/tGGtwZjtJE9yQQpE7hMKZe2D6EdY=";
     };
   };
   linux-xanmod-6_0 = {
@@ -535,13 +535,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.51-xanmod1";
+    version = "6.1.52-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.51-xanmod1";
+      rev = "6.1.52-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-atkxQPWPnZJEcRBfW9e3aEonTUzlDoU3bNnYMzWZQ9U=";
+      sha256 = "sha256-uzBmgrjNto2CwqkxdFCPeEPQnPSUZEO2pYMnKe8rCfY=";
     };
   };
   nbfc-linux-lantian = {
