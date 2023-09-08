@@ -114,15 +114,15 @@
   };
   bird-lg-go = {
     pname = "bird-lg-go";
-    version = "4bd7a6bb9506382aa2af636d660ab651d8ecdd11";
+    version = "f999d47d9f37644a206325146b1b1c9ff9d1a7f7";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "bird-lg-go";
-      rev = "4bd7a6bb9506382aa2af636d660ab651d8ecdd11";
+      rev = "f999d47d9f37644a206325146b1b1c9ff9d1a7f7";
       fetchSubmodules = false;
-      sha256 = "sha256-cv9Pl3U16iSrOk4cmCwB4pfkdfZO+Xg4ioGrNnb5qW4=";
+      sha256 = "sha256-whWeHt1yTcMrSEhPxjvOJFOyqj2OFnfpDS3zkqBve+A=";
     };
-    date = "2023-09-06";
+    date = "2023-09-07";
   };
   boringssl-oqs = {
     pname = "boringssl-oqs";
@@ -633,15 +633,15 @@
   };
   ngx_brotli = {
     pname = "ngx_brotli";
-    version = "8f726ea6614eb5541812647a673abd8f66eb4660";
+    version = "63ca02abdcf79c9e788d2eedcc388d2335902e52";
     src = fetchFromGitHub {
       owner = "google";
       repo = "ngx_brotli";
-      rev = "8f726ea6614eb5541812647a673abd8f66eb4660";
+      rev = "63ca02abdcf79c9e788d2eedcc388d2335902e52";
       fetchSubmodules = false;
-      sha256 = "sha256-G0IDYlvaQzzJ6cNTSGbfuOuSXFp3RsEwIJLGapTbDgo=";
+      sha256 = "sha256-muMN+Qq/RFhy04jnpDajLn5xetx2iFWj1IiC3rjER7A=";
     };
-    date = "2023-09-01";
+    date = "2023-09-07";
   };
   noise-suppression-for-voice = {
     pname = "noise-suppression-for-voice";
@@ -704,15 +704,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "cc3895f208730abfe1efc15f7c3ff4358ac6e4c0";
+    version = "6fb3b644f83496321e6eb7ac512592123cb28e40";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "cc3895f208730abfe1efc15f7c3ff4358ac6e4c0";
+      rev = "6fb3b644f83496321e6eb7ac512592123cb28e40";
       fetchSubmodules = false;
-      sha256 = "sha256-n2LKZEQJwR8uIMZSdJxJFt3C3/WjRTWUkoengdo84tM=";
+      sha256 = "sha256-1NyRN76Nb5mnOkliqKNERxy8I6T66b5rDMLHrW296aY=";
     };
-    date = "2023-09-04";
+    date = "2023-09-08";
   };
   osdlyrics = {
     pname = "osdlyrics";

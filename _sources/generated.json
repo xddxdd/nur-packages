@@ -191,7 +191,7 @@
     },
     "bird-lg-go": {
         "cargoLocks": null,
-        "date": "2023-09-06",
+        "date": "2023-09-07",
         "extract": null,
         "name": "bird-lg-go",
         "passthru": null,
@@ -203,11 +203,11 @@
             "name": null,
             "owner": "xddxdd",
             "repo": "bird-lg-go",
-            "rev": "4bd7a6bb9506382aa2af636d660ab651d8ecdd11",
-            "sha256": "sha256-cv9Pl3U16iSrOk4cmCwB4pfkdfZO+Xg4ioGrNnb5qW4=",
+            "rev": "f999d47d9f37644a206325146b1b1c9ff9d1a7f7",
+            "sha256": "sha256-whWeHt1yTcMrSEhPxjvOJFOyqj2OFnfpDS3zkqBve+A=",
             "type": "github"
         },
-        "version": "4bd7a6bb9506382aa2af636d660ab651d8ecdd11"
+        "version": "f999d47d9f37644a206325146b1b1c9ff9d1a7f7"
     },
     "boringssl-oqs": {
         "cargoLocks": null,
@@ -1088,7 +1088,7 @@
     },
     "ngx_brotli": {
         "cargoLocks": null,
-        "date": "2023-09-01",
+        "date": "2023-09-07",
         "extract": null,
         "name": "ngx_brotli",
         "passthru": null,
@@ -1100,11 +1100,11 @@
             "name": null,
             "owner": "google",
             "repo": "ngx_brotli",
-            "rev": "8f726ea6614eb5541812647a673abd8f66eb4660",
-            "sha256": "sha256-G0IDYlvaQzzJ6cNTSGbfuOuSXFp3RsEwIJLGapTbDgo=",
+            "rev": "63ca02abdcf79c9e788d2eedcc388d2335902e52",
+            "sha256": "sha256-muMN+Qq/RFhy04jnpDajLn5xetx2iFWj1IiC3rjER7A=",
             "type": "github"
         },
-        "version": "8f726ea6614eb5541812647a673abd8f66eb4660"
+        "version": "63ca02abdcf79c9e788d2eedcc388d2335902e52"
     },
     "noise-suppression-for-voice": {
         "cargoLocks": null,
@@ -1208,7 +1208,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2023-09-04",
+        "date": "2023-09-08",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1220,11 +1220,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "cc3895f208730abfe1efc15f7c3ff4358ac6e4c0",
-            "sha256": "sha256-n2LKZEQJwR8uIMZSdJxJFt3C3/WjRTWUkoengdo84tM=",
+            "rev": "6fb3b644f83496321e6eb7ac512592123cb28e40",
+            "sha256": "sha256-1NyRN76Nb5mnOkliqKNERxy8I6T66b5rDMLHrW296aY=",
             "type": "github"
         },
-        "version": "cc3895f208730abfe1efc15f7c3ff4358ac6e4c0"
+        "version": "6fb3b644f83496321e6eb7ac512592123cb28e40"
     },
     "osdlyrics": {
         "cargoLocks": null,
