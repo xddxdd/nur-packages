@@ -22,6 +22,10 @@ fetch.github = "arkadijs/asterisk-g72x"
 src.git = "https://github.com/traud/asterisk-gsm-efr.git"
 fetch.github = "traud/asterisk-gsm-efr"
 
+[attic]
+src.git = "https://github.com/zhaofengli/attic.git"
+fetch.github = "zhaofengli/attic"
+
 [baidupcs-go]
 src.github = "qjfoidnh/BaiduPCS-Go"
 fetch.github = "qjfoidnh/BaiduPCS-Go"

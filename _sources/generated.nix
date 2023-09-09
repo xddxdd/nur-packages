@@ -73,6 +73,18 @@
     };
     date = "2018-08-28";
   };
+  attic = {
+    pname = "attic";
+    version = "b43d12082e34bceb26038bdad0438fd68804cfcd";
+    src = fetchFromGitHub {
+      owner = "zhaofengli";
+      repo = "attic";
+      rev = "b43d12082e34bceb26038bdad0438fd68804cfcd";
+      fetchSubmodules = false;
+      sha256 = "sha256-jbQNvkgWGioiC6S39dZVyn6us8p/DlEvm5hQKEYkzDU=";
+    };
+    date = "2023-08-16";
+  };
   baidupcs-go = {
     pname = "baidupcs-go";
     version = "v3.9.4";

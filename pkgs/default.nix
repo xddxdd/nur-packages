@@ -55,6 +55,7 @@ in
     lantianCustomized = ifNotCI (pkgs.recurseIntoAttrs {
       # Packages with significant customization by Lan Tian
       asterisk = pkg ./lantian-customized/asterisk {};
+      attic-telnyx-compatible = pkg ./lantian-customized/attic-telnyx-compatible {};
       coredns = pkg ./lantian-customized/coredns {};
       librime-with-plugins = pkg ./lantian-customized/librime-with-plugins {};
 
