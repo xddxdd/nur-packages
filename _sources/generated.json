@@ -211,7 +211,7 @@
     },
     "bird-lg-go": {
         "cargoLocks": null,
-        "date": "2023-09-08",
+        "date": "2023-09-09",
         "extract": null,
         "name": "bird-lg-go",
         "passthru": null,
@@ -223,11 +223,11 @@
             "name": null,
             "owner": "xddxdd",
             "repo": "bird-lg-go",
-            "rev": "abb32abff3a299edee5d83282f5538fea4bd5aec",
-            "sha256": "sha256-I3TeNZXygFuJRjDQ/Sh0efU6P0nRRd+/KA6VoXT9l/E=",
+            "rev": "8457b18d4642c6f8c516e9d005adef76d3d62923",
+            "sha256": "sha256-2K+nF6pe3M55du/uexfLUaubbKDWEHPPoQsvUI2u0P0=",
             "type": "github"
         },
-        "version": "abb32abff3a299edee5d83282f5538fea4bd5aec"
+        "version": "8457b18d4642c6f8c516e9d005adef76d3d62923"
     },
     "boringssl-oqs": {
         "cargoLocks": null,
@@ -619,7 +619,7 @@
     },
     "grasscutter-resources": {
         "cargoLocks": null,
-        "date": "2023-09-04",
+        "date": "2023-09-10",
         "extract": null,
         "name": "grasscutter-resources",
         "passthru": null,
@@ -629,12 +629,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "ef1e8a81b117462ff4a6ce3086df761e6e0bd98b",
-            "sha256": "sha256-iy+iq35II5ONM5bazDBz0i9RH9b7bb22B2DTVQ7OF5Q=",
+            "rev": "4d19316a003b9a7a6df56fc1a3e4dd634717aec7",
+            "sha256": "sha256-rtphaZ7/nFOwdkUiACO6HRDCfc+6gVyb3Vh6oPs7Bko=",
             "type": "git",
             "url": "https://gitlab.com/YuukiPS/GC-Resources.git"
         },
-        "version": "ef1e8a81b117462ff4a6ce3086df761e6e0bd98b"
+        "version": "4d19316a003b9a7a6df56fc1a3e4dd634717aec7"
     },
     "hoyo-glyphs": {
         "cargoLocks": null,
@@ -985,11 +985,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-HSS8SwS6IE+gjD44MWb5XkFOSgcGZssiLpTpWeRIsv8=",
+            "sha256": "sha256-eUZz9cXASL+UlZz6lWJvHcizkyr+ejx0JldHs5v7iU8=",
             "type": "url",
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.70/netboot.xyz.efi"
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.71/netboot.xyz.efi"
         },
-        "version": "2.0.70"
+        "version": "2.0.71"
     },
     "netboot-xyz-lkrn": {
         "cargoLocks": null,
@@ -1000,11 +1000,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-IxVExNLrlu5N3VG2Y1bE77YaHLmXFwGR9BhFAnOgTrs=",
+            "sha256": "sha256-WeD8jCXofe3xg9rhM2A7hUBzODXFMHV9WrQa0inmbxE=",
             "type": "url",
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.70/netboot.xyz.lkrn"
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.71/netboot.xyz.lkrn"
         },
-        "version": "2.0.70"
+        "version": "2.0.71"
     },
     "netns-exec": {
         "cargoLocks": null,
@@ -1370,11 +1370,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-N1hPTdhVekJekXiDFdEjev2yA5ZNRbSN0dSLw8+/Epk=",
+            "sha256": "sha256-9wqh22J+JKq1Qy0cADXmkXfB06ypYIwTp6FQAL3esBw=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_amd64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_amd64.deb"
         },
-        "version": "8.0.4+dfsg-3+b1"
+        "version": "8.1.0+ds-1"
     },
     "qemu-user-static-arm64": {
         "cargoLocks": null,
@@ -1385,11 +1385,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-MdD+esAdiHpFUqCO6LPywwyQud/IIFhXbxMEetthu+g=",
+            "sha256": "sha256-CA3oJQ2NjkyuSiB78SOre16dRd0Re/YJwHpvDp3tI8Q=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_arm64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_arm64.deb"
         },
-        "version": "8.0.4+dfsg-3+b1"
+        "version": "8.1.0+ds-1"
     },
     "qemu-user-static-armhf": {
         "cargoLocks": null,
@@ -1400,11 +1400,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-UmHj2XjTX7AvF/9IIva5pI/HbzOqgCLJBc2ZTf4Yp3o=",
+            "sha256": "sha256-bquMEF9nDlOGsJwRP7xER6zdn+rd+P//git3R+tI/aQ=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_armhf.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_armhf.deb"
         },
-        "version": "8.0.4+dfsg-3+b1"
+        "version": "8.1.0+ds-1"
     },
     "qemu-user-static-i386": {
         "cargoLocks": null,
@@ -1415,11 +1415,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-hTuAbr7jDrBqFUGkVmiXNDmHSvei2kq2JoT8wFh+VTI=",
+            "sha256": "sha256-syi+e4ORU/NNsXbEE+0LoDn6gONg311110HulLL4iLA=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_i386.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_i386.deb"
         },
-        "version": "8.0.4+dfsg-3+b1"
+        "version": "8.1.0+ds-1"
     },
     "qq-amd64": {
         "cargoLocks": null,
@@ -1578,7 +1578,7 @@
     },
     "route-chain": {
         "cargoLocks": null,
-        "date": "2023-06-25",
+        "date": "2023-09-09",
         "extract": null,
         "name": "route-chain",
         "passthru": null,
@@ -1590,11 +1590,11 @@
             "name": null,
             "owner": "xddxdd",
             "repo": "route-chain",
-            "rev": "67194098375601f9ac8f39176179f21e44101cc1",
-            "sha256": "sha256-mfDl2j4ewZg1zJ7JnXGJ5cgMP8K/Mh7azW+F5HHTS3k=",
+            "rev": "8922b56c70f92f29a9bbd72a4e8a13fd8b8c4197",
+            "sha256": "sha256-nliVHuZ8MmirgQQAaaWl92nbx6zQhX+pXXimM+II0JY=",
             "type": "github"
         },
-        "version": "67194098375601f9ac8f39176179f21e44101cc1"
+        "version": "8922b56c70f92f29a9bbd72a4e8a13fd8b8c4197"
     },
     "sgx-software-enable": {
         "cargoLocks": null,

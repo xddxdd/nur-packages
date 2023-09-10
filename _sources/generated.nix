@@ -126,15 +126,15 @@
   };
   bird-lg-go = {
     pname = "bird-lg-go";
-    version = "abb32abff3a299edee5d83282f5538fea4bd5aec";
+    version = "8457b18d4642c6f8c516e9d005adef76d3d62923";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "bird-lg-go";
-      rev = "abb32abff3a299edee5d83282f5538fea4bd5aec";
+      rev = "8457b18d4642c6f8c516e9d005adef76d3d62923";
       fetchSubmodules = false;
-      sha256 = "sha256-I3TeNZXygFuJRjDQ/Sh0efU6P0nRRd+/KA6VoXT9l/E=";
+      sha256 = "sha256-2K+nF6pe3M55du/uexfLUaubbKDWEHPPoQsvUI2u0P0=";
     };
-    date = "2023-09-08";
+    date = "2023-09-09";
   };
   boringssl-oqs = {
     pname = "boringssl-oqs";
@@ -362,16 +362,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "ef1e8a81b117462ff4a6ce3086df761e6e0bd98b";
+    version = "4d19316a003b9a7a6df56fc1a3e4dd634717aec7";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "ef1e8a81b117462ff4a6ce3086df761e6e0bd98b";
+      rev = "4d19316a003b9a7a6df56fc1a3e4dd634717aec7";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-iy+iq35II5ONM5bazDBz0i9RH9b7bb22B2DTVQ7OF5Q=";
+      sha256 = "sha256-rtphaZ7/nFOwdkUiACO6HRDCfc+6gVyb3Vh6oPs7Bko=";
     };
-    date = "2023-09-04";
+    date = "2023-09-10";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -570,18 +570,18 @@
   };
   netboot-xyz-efi = {
     pname = "netboot-xyz-efi";
-    version = "2.0.70";
+    version = "2.0.71";
     src = fetchurl {
-      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.70/netboot.xyz.efi";
-      sha256 = "sha256-HSS8SwS6IE+gjD44MWb5XkFOSgcGZssiLpTpWeRIsv8=";
+      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.71/netboot.xyz.efi";
+      sha256 = "sha256-eUZz9cXASL+UlZz6lWJvHcizkyr+ejx0JldHs5v7iU8=";
     };
   };
   netboot-xyz-lkrn = {
     pname = "netboot-xyz-lkrn";
-    version = "2.0.70";
+    version = "2.0.71";
     src = fetchurl {
-      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.70/netboot.xyz.lkrn";
-      sha256 = "sha256-IxVExNLrlu5N3VG2Y1bE77YaHLmXFwGR9BhFAnOgTrs=";
+      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.71/netboot.xyz.lkrn";
+      sha256 = "sha256-WeD8jCXofe3xg9rhM2A7hUBzODXFMHV9WrQa0inmbxE=";
     };
   };
   netns-exec = {
@@ -791,34 +791,34 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.0.4+dfsg-3+b1";
+    version = "8.1.0+ds-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_amd64.deb";
-      sha256 = "sha256-N1hPTdhVekJekXiDFdEjev2yA5ZNRbSN0dSLw8+/Epk=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_amd64.deb";
+      sha256 = "sha256-9wqh22J+JKq1Qy0cADXmkXfB06ypYIwTp6FQAL3esBw=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.0.4+dfsg-3+b1";
+    version = "8.1.0+ds-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_arm64.deb";
-      sha256 = "sha256-MdD+esAdiHpFUqCO6LPywwyQud/IIFhXbxMEetthu+g=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_arm64.deb";
+      sha256 = "sha256-CA3oJQ2NjkyuSiB78SOre16dRd0Re/YJwHpvDp3tI8Q=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.0.4+dfsg-3+b1";
+    version = "8.1.0+ds-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_armhf.deb";
-      sha256 = "sha256-UmHj2XjTX7AvF/9IIva5pI/HbzOqgCLJBc2ZTf4Yp3o=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_armhf.deb";
+      sha256 = "sha256-bquMEF9nDlOGsJwRP7xER6zdn+rd+P//git3R+tI/aQ=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.0.4+dfsg-3+b1";
+    version = "8.1.0+ds-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.0.4+dfsg-3+b1_i386.deb";
-      sha256 = "sha256-hTuAbr7jDrBqFUGkVmiXNDmHSvei2kq2JoT8wFh+VTI=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_i386.deb";
+      sha256 = "sha256-syi+e4ORU/NNsXbEE+0LoDn6gONg311110HulLL4iLA=";
     };
   };
   qq-amd64 = {
@@ -911,15 +911,15 @@
   };
   route-chain = {
     pname = "route-chain";
-    version = "67194098375601f9ac8f39176179f21e44101cc1";
+    version = "8922b56c70f92f29a9bbd72a4e8a13fd8b8c4197";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "route-chain";
-      rev = "67194098375601f9ac8f39176179f21e44101cc1";
+      rev = "8922b56c70f92f29a9bbd72a4e8a13fd8b8c4197";
       fetchSubmodules = false;
-      sha256 = "sha256-mfDl2j4ewZg1zJ7JnXGJ5cgMP8K/Mh7azW+F5HHTS3k=";
+      sha256 = "sha256-nliVHuZ8MmirgQQAaaWl92nbx6zQhX+pXXimM+II0JY=";
     };
-    date = "2023-06-25";
+    date = "2023-09-09";
   };
   sgx-software-enable = {
     pname = "sgx-software-enable";
