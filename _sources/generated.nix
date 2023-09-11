@@ -106,10 +106,10 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.11.4-3";
+    version = "1.11.4-4";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-3/io.github.msojocs.bilibili_1.11.4-3_amd64.deb";
-      sha256 = "sha256-v4IlrQL1iedVbIyyJNKBh0K6go7rrsAXVezQLuUyHN0=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-4/io.github.msojocs.bilibili_1.11.4-4_amd64.deb";
+      sha256 = "sha256-O4aAQ1M/LQE5vRVh22WVFPm1doYYZZaTyNbjGeISn4s=";
     };
   };
   bird-babel-rtt = {
@@ -465,15 +465,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "0dafd4f02c5a8fc000502ae51005a9962b671860";
+    version = "b3b0fbb16c202280aec20bbeac690c06dd175c5a";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "0dafd4f02c5a8fc000502ae51005a9962b671860";
+      rev = "b3b0fbb16c202280aec20bbeac690c06dd175c5a";
       fetchSubmodules = false;
-      sha256 = "sha256-PwdXa2JffaZbWKVE+h0fTmki7UJul2Zv0a2SP6QcdiE=";
+      sha256 = "sha256-UR4iiWTRvKEXcZzUDnQe3EiUO1/XVwtsQgN9jYR/0d8=";
     };
-    date = "2023-09-07";
+    date = "2023-09-10";
   };
   librime-charcode = {
     pname = "librime-charcode";

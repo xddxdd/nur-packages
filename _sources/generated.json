@@ -183,11 +183,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-v4IlrQL1iedVbIyyJNKBh0K6go7rrsAXVezQLuUyHN0=",
+            "sha256": "sha256-O4aAQ1M/LQE5vRVh22WVFPm1doYYZZaTyNbjGeISn4s=",
             "type": "url",
-            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-3/io.github.msojocs.bilibili_1.11.4-3_amd64.deb"
+            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-4/io.github.msojocs.bilibili_1.11.4-4_amd64.deb"
         },
-        "version": "1.11.4-3"
+        "version": "1.11.4-4"
     },
     "bird-babel-rtt": {
         "cargoLocks": null,
@@ -798,7 +798,7 @@
     },
     "liboqs": {
         "cargoLocks": null,
-        "date": "2023-09-07",
+        "date": "2023-09-10",
         "extract": null,
         "name": "liboqs",
         "passthru": null,
@@ -810,11 +810,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "0dafd4f02c5a8fc000502ae51005a9962b671860",
-            "sha256": "sha256-PwdXa2JffaZbWKVE+h0fTmki7UJul2Zv0a2SP6QcdiE=",
+            "rev": "b3b0fbb16c202280aec20bbeac690c06dd175c5a",
+            "sha256": "sha256-UR4iiWTRvKEXcZzUDnQe3EiUO1/XVwtsQgN9jYR/0d8=",
             "type": "github"
         },
-        "version": "0dafd4f02c5a8fc000502ae51005a9962b671860"
+        "version": "b3b0fbb16c202280aec20bbeac690c06dd175c5a"
     },
     "librime-charcode": {
         "cargoLocks": null,
