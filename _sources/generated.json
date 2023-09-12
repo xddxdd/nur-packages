@@ -1228,7 +1228,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2023-09-08",
+        "date": "2023-09-11",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1240,11 +1240,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "6fb3b644f83496321e6eb7ac512592123cb28e40",
-            "sha256": "sha256-1NyRN76Nb5mnOkliqKNERxy8I6T66b5rDMLHrW296aY=",
+            "rev": "7dc61fe7049a3d6c63657e0628d9600220bbe6b4",
+            "sha256": "sha256-OcUGkM/TbGNHgCq1PZnaKP5xKf+kAgzGRIadA193Q9c=",
             "type": "github"
         },
-        "version": "6fb3b644f83496321e6eb7ac512592123cb28e40"
+        "version": "7dc61fe7049a3d6c63657e0628d9600220bbe6b4"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -1370,11 +1370,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9wqh22J+JKq1Qy0cADXmkXfB06ypYIwTp6FQAL3esBw=",
+            "sha256": "sha256-vcVuo3lWcxOjfI61v78Ov+TLqyK833Dh1124fcUlRcI=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_amd64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_amd64.deb"
         },
-        "version": "8.1.0+ds-1"
+        "version": "8.1.0+ds-4"
     },
     "qemu-user-static-arm64": {
         "cargoLocks": null,
@@ -1385,11 +1385,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-CA3oJQ2NjkyuSiB78SOre16dRd0Re/YJwHpvDp3tI8Q=",
+            "sha256": "sha256-mZhLPCdjgTfKerTOYiDF9JHJUXG+LDWXTNcwOHybiw0=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_arm64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_arm64.deb"
         },
-        "version": "8.1.0+ds-1"
+        "version": "8.1.0+ds-4"
     },
     "qemu-user-static-armhf": {
         "cargoLocks": null,
@@ -1400,11 +1400,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-bquMEF9nDlOGsJwRP7xER6zdn+rd+P//git3R+tI/aQ=",
+            "sha256": "sha256-9MqEP4c/59sO3hMjW6bc/m9DFUzE2h/JvlV2zbK9Evw=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_armhf.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_armhf.deb"
         },
-        "version": "8.1.0+ds-1"
+        "version": "8.1.0+ds-4"
     },
     "qemu-user-static-i386": {
         "cargoLocks": null,
@@ -1415,11 +1415,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-syi+e4ORU/NNsXbEE+0LoDn6gONg311110HulLL4iLA=",
+            "sha256": "sha256-PwL4Y64E0hYoGEcyfLgsDA2lPJRdxst4ERN6kMb2u4c=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_i386.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_i386.deb"
         },
-        "version": "8.1.0+ds-1"
+        "version": "8.1.0+ds-4"
     },
     "qq-amd64": {
         "cargoLocks": null,
@@ -1430,11 +1430,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-beDu/Ic3yGEu3lc9fxy3n8DuAqywYEUidgvUzNs+DHc=",
+            "sha256": "sha256-96h648bKOjTz6bnGtANMHXLPE9bhvMXZnOeNaMERHV0=",
             "type": "url",
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/1776936e/linuxqq_3.2.0-16605_amd64.deb"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/d3b9a722/linuxqq_3.2.0-16736_amd64.deb"
         },
-        "version": "1776936e/linuxqq_3.2.0-16605"
+        "version": "d3b9a722/linuxqq_3.2.0-16736"
     },
     "qq-arm64": {
         "cargoLocks": null,
@@ -1445,11 +1445,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-3Mk+qLVT7WYFHrW4P4FoHDL4rb3wTXRvCyqKw+4FHqk=",
+            "sha256": "sha256-egARnAYfG+7DfnWY90Eo88JFXioaPKzASpvKzlhfoq0=",
             "type": "url",
-            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/1776936e/linuxqq_3.2.0-16605_arm64.deb"
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/d3b9a722/linuxqq_3.2.0-16736_arm64.deb"
         },
-        "version": "1776936e/linuxqq_3.2.0-16605"
+        "version": "d3b9a722/linuxqq_3.2.0-16736"
     },
     "qqmusic": {
         "cargoLocks": null,

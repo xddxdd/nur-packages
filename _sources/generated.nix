@@ -716,15 +716,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "6fb3b644f83496321e6eb7ac512592123cb28e40";
+    version = "7dc61fe7049a3d6c63657e0628d9600220bbe6b4";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "6fb3b644f83496321e6eb7ac512592123cb28e40";
+      rev = "7dc61fe7049a3d6c63657e0628d9600220bbe6b4";
       fetchSubmodules = false;
-      sha256 = "sha256-1NyRN76Nb5mnOkliqKNERxy8I6T66b5rDMLHrW296aY=";
+      sha256 = "sha256-OcUGkM/TbGNHgCq1PZnaKP5xKf+kAgzGRIadA193Q9c=";
     };
-    date = "2023-09-08";
+    date = "2023-09-11";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -791,50 +791,50 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.1.0+ds-1";
+    version = "8.1.0+ds-4";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_amd64.deb";
-      sha256 = "sha256-9wqh22J+JKq1Qy0cADXmkXfB06ypYIwTp6FQAL3esBw=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_amd64.deb";
+      sha256 = "sha256-vcVuo3lWcxOjfI61v78Ov+TLqyK833Dh1124fcUlRcI=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.1.0+ds-1";
+    version = "8.1.0+ds-4";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_arm64.deb";
-      sha256 = "sha256-CA3oJQ2NjkyuSiB78SOre16dRd0Re/YJwHpvDp3tI8Q=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_arm64.deb";
+      sha256 = "sha256-mZhLPCdjgTfKerTOYiDF9JHJUXG+LDWXTNcwOHybiw0=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.1.0+ds-1";
+    version = "8.1.0+ds-4";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_armhf.deb";
-      sha256 = "sha256-bquMEF9nDlOGsJwRP7xER6zdn+rd+P//git3R+tI/aQ=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_armhf.deb";
+      sha256 = "sha256-9MqEP4c/59sO3hMjW6bc/m9DFUzE2h/JvlV2zbK9Evw=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.1.0+ds-1";
+    version = "8.1.0+ds-4";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-1_i386.deb";
-      sha256 = "sha256-syi+e4ORU/NNsXbEE+0LoDn6gONg311110HulLL4iLA=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_i386.deb";
+      sha256 = "sha256-PwL4Y64E0hYoGEcyfLgsDA2lPJRdxst4ERN6kMb2u4c=";
     };
   };
   qq-amd64 = {
     pname = "qq-amd64";
-    version = "1776936e/linuxqq_3.2.0-16605";
+    version = "d3b9a722/linuxqq_3.2.0-16736";
     src = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/1776936e/linuxqq_3.2.0-16605_amd64.deb";
-      sha256 = "sha256-beDu/Ic3yGEu3lc9fxy3n8DuAqywYEUidgvUzNs+DHc=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/d3b9a722/linuxqq_3.2.0-16736_amd64.deb";
+      sha256 = "sha256-96h648bKOjTz6bnGtANMHXLPE9bhvMXZnOeNaMERHV0=";
     };
   };
   qq-arm64 = {
     pname = "qq-arm64";
-    version = "1776936e/linuxqq_3.2.0-16605";
+    version = "d3b9a722/linuxqq_3.2.0-16736";
     src = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/1776936e/linuxqq_3.2.0-16605_arm64.deb";
-      sha256 = "sha256-3Mk+qLVT7WYFHrW4P4FoHDL4rb3wTXRvCyqKw+4FHqk=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/d3b9a722/linuxqq_3.2.0-16736_arm64.deb";
+      sha256 = "sha256-egARnAYfG+7DfnWY90Eo88JFXioaPKzASpvKzlhfoq0=";
     };
   };
   qqmusic = {

@@ -127,15 +127,15 @@ Or, use variables from this repository in case I change them:
 |  | `oci-arm-host-capacity` | [oci-arm-host-capacity](https://github.com/hitrov/oci-arm-host-capacity) | 1a655bf6150d64f4f3732f267477ed3e4c6f87d0 | This script allows to bypass Oracle Cloud Infrastructure 'Out of host capacity' error immediately when additional OCI capacity will appear in your Home Region / Availability domain. |
 |  | `onepush` | [onepush](https://gitlab.com/y1ndan/onepush) | 3a1d5880e3b8f1c5191ee28acd828def15fe135d | A Python library to send notifications to your iPhone, Discord, Telegram, WeChat, QQ and DingTalk. |
 |  | `openssl-oqs` | [openssl-oqs](https://www.openssl.org/) | 1.1.1 | A cryptographic library that implements the SSL and TLS protocols |
-|  | `openssl-oqs-provider` | [openssl-oqs-provider](https://openquantumsafe.org) | 6fb3b644f83496321e6eb7ac512592123cb28e40 | OpenSSL 3 provider containing post-quantum algorithms |
+|  | `openssl-oqs-provider` | [openssl-oqs-provider](https://openquantumsafe.org) | 7dc61fe7049a3d6c63657e0628d9600220bbe6b4 | OpenSSL 3 provider containing post-quantum algorithms |
 |  | `osdlyrics` | [osdlyrics](https://github.com/osdlyrics/osdlyrics) | 0.5.14 | Standalone lyrics fetcher/displayer (windowed and OSD mode). |
 |  | `payload-dumper-go` | [payload-dumper-go](https://github.com/ssut/payload-dumper-go) | 1.2.2 | An android OTA payload dumper written in Go |
 |  | `phpmyadmin` | [phpmyadmin](https://www.phpmyadmin.net/) | 5.2.1 | A web interface for MySQL and MariaDB |
 |  | `phppgadmin` | [phppgadmin](https://github.com/phppgadmin/phppgadmin) | v7.14.5-mod | The premier web-based administration tool for PostgreSQL |
 |  | `qbittorrent-enhanced-edition` | [qbittorrent-enhanced-edition](https://www.qbittorrent.org/) | release-4.5.5.10 | Featureful free software BitTorrent client |
 |  | `qbittorrent-enhanced-edition-nox` | [qbittorrent-enhanced-edition](https://www.qbittorrent.org/) | release-4.5.5.10 | Featureful free software BitTorrent client |
-|  | `qemu-user-static` | [qemu-user-static](http://www.qemu.org/) | 8.1.0+ds-1 | A generic and open source machine emulator and virtualizer |
-|  | `qq` | [qq](https://im.qq.com/linuxqq/index.html) | 3.2.0-16605 | QQ for Linux |
+|  | `qemu-user-static` | [qemu-user-static](http://www.qemu.org/) | 8.1.0+ds-4 | A generic and open source machine emulator and virtualizer |
+|  | `qq` | [qq](https://im.qq.com/linuxqq/index.html) | 3.2.0-16736 | QQ for Linux |
 |  | `qqmusic` | [qqmusic](https://y.qq.com/) | 1.1.5 | Tencent QQ Music (Packaging script adapted from https://aur.archlinux.org/packages/qqmusic-bin) |
 |  | `rime-aurora-pinyin` | [rime-aurora-pinyin](https://github.com/hosxy/rime-aurora-pinyin) | 122b46976401995cbafcfc748806985ff3a437a4 | 【极光拼音】输入方案 |
 |  | `rime-dict` | [rime-dict](https://github.com/Iorest/rime-dict) | 325ecbda51cd93e07e2fe02e37e5f14d94a4a541 | RIME 词库增强 |
