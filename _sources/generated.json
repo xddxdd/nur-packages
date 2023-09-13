@@ -798,7 +798,7 @@
     },
     "liboqs": {
         "cargoLocks": null,
-        "date": "2023-09-10",
+        "date": "2023-09-12",
         "extract": null,
         "name": "liboqs",
         "passthru": null,
@@ -810,11 +810,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "b3b0fbb16c202280aec20bbeac690c06dd175c5a",
-            "sha256": "sha256-UR4iiWTRvKEXcZzUDnQe3EiUO1/XVwtsQgN9jYR/0d8=",
+            "rev": "456015c16fd9e0c2295209f293cc637e778a49aa",
+            "sha256": "sha256-n90sYNACRfFtEdHQHxSL/LbldSEAQnUH2H0EqCk9iu8=",
             "type": "github"
         },
-        "version": "b3b0fbb16c202280aec20bbeac690c06dd175c5a"
+        "version": "456015c16fd9e0c2295209f293cc637e778a49aa"
     },
     "librime-charcode": {
         "cargoLocks": null,
@@ -1100,11 +1100,11 @@
             "name": null,
             "owner": "nginx",
             "repo": "njs",
-            "rev": "0.8.0",
-            "sha256": "sha256-Q2QZhPUZC5umTGb3OrK+PN+r9Av7pzBuBbBfSiEpGQM=",
+            "rev": "0.8.1",
+            "sha256": "sha256-bFHrcA1ROMwYf+s0EWOXzkru6wvfRLvjvN8BV/r2tMc=",
             "type": "github"
         },
-        "version": "0.8.0"
+        "version": "0.8.1"
     },
     "ngx_brotli": {
         "cargoLocks": null,

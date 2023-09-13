@@ -465,15 +465,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "b3b0fbb16c202280aec20bbeac690c06dd175c5a";
+    version = "456015c16fd9e0c2295209f293cc637e778a49aa";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "b3b0fbb16c202280aec20bbeac690c06dd175c5a";
+      rev = "456015c16fd9e0c2295209f293cc637e778a49aa";
       fetchSubmodules = false;
-      sha256 = "sha256-UR4iiWTRvKEXcZzUDnQe3EiUO1/XVwtsQgN9jYR/0d8=";
+      sha256 = "sha256-n90sYNACRfFtEdHQHxSL/LbldSEAQnUH2H0EqCk9iu8=";
     };
-    date = "2023-09-10";
+    date = "2023-09-12";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -634,13 +634,13 @@
   };
   nginx-njs = {
     pname = "nginx-njs";
-    version = "0.8.0";
+    version = "0.8.1";
     src = fetchFromGitHub {
       owner = "nginx";
       repo = "njs";
-      rev = "0.8.0";
+      rev = "0.8.1";
       fetchSubmodules = false;
-      sha256 = "sha256-Q2QZhPUZC5umTGb3OrK+PN+r9Av7pzBuBbBfSiEpGQM=";
+      sha256 = "sha256-bFHrcA1ROMwYf+s0EWOXzkru6wvfRLvjvN8BV/r2tMc=";
     };
   };
   ngx_brotli = {
