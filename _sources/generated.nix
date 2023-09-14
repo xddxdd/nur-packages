@@ -288,13 +288,13 @@
   };
   flaresolverr = {
     pname = "flaresolverr";
-    version = "v3.3.4";
+    version = "v3.3.5";
     src = fetchFromGitHub {
       owner = "FlareSolverr";
       repo = "FlareSolverr";
-      rev = "v3.3.4";
+      rev = "v3.3.5";
       fetchSubmodules = false;
-      sha256 = "sha256-bMIa+Yx+XX6ua2CClB1t2b7kYqDjFyANnRb4rPIvWAU=";
+      sha256 = "sha256-Brc7TBkNJzfPBc4HRqei0isEGTwwcmJOAYTIr+ztDnM=";
     };
   };
   flasgger = {
@@ -465,15 +465,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "456015c16fd9e0c2295209f293cc637e778a49aa";
+    version = "b8a0bc72dd951c881dbeef8db70f4944c6f21df1";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "456015c16fd9e0c2295209f293cc637e778a49aa";
+      rev = "b8a0bc72dd951c881dbeef8db70f4944c6f21df1";
       fetchSubmodules = false;
-      sha256 = "sha256-n90sYNACRfFtEdHQHxSL/LbldSEAQnUH2H0EqCk9iu8=";
+      sha256 = "sha256-7Ow1jApsTqr1jwXehi3mutHz1eStnXLlNZ0lZJ2rth8=";
     };
-    date = "2023-09-12";
+    date = "2023-09-13";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -525,13 +525,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.5.2-xanmod1";
+    version = "6.5.3-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.5.2-xanmod1";
+      rev = "6.5.3-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-edn2cwXBLprpk+/tGGtwZjtJE9yQQpE7hMKZe2D6EdY=";
+      sha256 = "sha256-2giaFyN3kWzQ9cl1mTM9ecSlwoQS+dm3/LvbTAHjZ/A=";
     };
   };
   linux-xanmod-6_0 = {
@@ -547,13 +547,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.52-xanmod1";
+    version = "6.1.53-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.52-xanmod1";
+      rev = "6.1.53-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-uzBmgrjNto2CwqkxdFCPeEPQnPSUZEO2pYMnKe8rCfY=";
+      sha256 = "sha256-+70dp+zVOvfKJv9hEy3FpEs2ldrxHiWbokaUnXrNj5o=";
     };
   };
   nbfc-linux-lantian = {
@@ -716,15 +716,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "7dc61fe7049a3d6c63657e0628d9600220bbe6b4";
+    version = "be4d0cf3c1fe9ac49b0c4fdaa6afd751bad84f7e";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "7dc61fe7049a3d6c63657e0628d9600220bbe6b4";
+      rev = "be4d0cf3c1fe9ac49b0c4fdaa6afd751bad84f7e";
       fetchSubmodules = false;
-      sha256 = "sha256-OcUGkM/TbGNHgCq1PZnaKP5xKf+kAgzGRIadA193Q9c=";
+      sha256 = "sha256-GGvbq0XHAg0/NUWL2aQSYHWKOM8CLllXoUZtTELfjsw=";
     };
-    date = "2023-09-11";
+    date = "2023-09-13";
   };
   osdlyrics = {
     pname = "osdlyrics";
