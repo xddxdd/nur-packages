@@ -489,15 +489,15 @@
   };
   librime-lua = {
     pname = "librime-lua";
-    version = "c985eb399d63c491c6e03fa1651ddb59e485c04a";
+    version = "7eca28fff386ad04b20a540bc8f99f90b2913869";
     src = fetchFromGitHub {
       owner = "hchunhui";
       repo = "librime-lua";
-      rev = "c985eb399d63c491c6e03fa1651ddb59e485c04a";
+      rev = "7eca28fff386ad04b20a540bc8f99f90b2913869";
       fetchSubmodules = false;
-      sha256 = "sha256-tpyX0NxAlNZ4Qeml2BeM0NbPN5xDW/uH/f0eqjBQKIM=";
+      sha256 = "sha256-xWByqSAnVJdrcRR9PR79ffXOhz8rOIvU2u5r0S29TKI=";
     };
-    date = "2023-06-25";
+    date = "2023-09-14";
   };
   librime-octagram = {
     pname = "librime-octagram";
@@ -895,10 +895,10 @@
   };
   rime-moegirl = {
     pname = "rime-moegirl";
-    version = "20230814";
+    version = "20230914";
     src = fetchurl {
-      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20230814/moegirl.dict.yaml";
-      sha256 = "sha256-Wl7a/LXP2zGGKjWcm1IjiljS+EyODDOQX2D9wuwYckQ=";
+      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20230914/moegirl.dict.yaml";
+      sha256 = "sha256-f4H0gV4fFNwY1rAUz80u84caRu92a/D1yi9XmpWegy0=";
     };
   };
   rime-zhwiki = {

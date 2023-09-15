@@ -838,7 +838,7 @@
     },
     "librime-lua": {
         "cargoLocks": null,
-        "date": "2023-06-25",
+        "date": "2023-09-14",
         "extract": null,
         "name": "librime-lua",
         "passthru": null,
@@ -850,11 +850,11 @@
             "name": null,
             "owner": "hchunhui",
             "repo": "librime-lua",
-            "rev": "c985eb399d63c491c6e03fa1651ddb59e485c04a",
-            "sha256": "sha256-tpyX0NxAlNZ4Qeml2BeM0NbPN5xDW/uH/f0eqjBQKIM=",
+            "rev": "7eca28fff386ad04b20a540bc8f99f90b2913869",
+            "sha256": "sha256-xWByqSAnVJdrcRR9PR79ffXOhz8rOIvU2u5r0S29TKI=",
             "type": "github"
         },
-        "version": "c985eb399d63c491c6e03fa1651ddb59e485c04a"
+        "version": "7eca28fff386ad04b20a540bc8f99f90b2913869"
     },
     "librime-octagram": {
         "cargoLocks": null,
@@ -1555,11 +1555,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Wl7a/LXP2zGGKjWcm1IjiljS+EyODDOQX2D9wuwYckQ=",
+            "sha256": "sha256-f4H0gV4fFNwY1rAUz80u84caRu92a/D1yi9XmpWegy0=",
             "type": "url",
-            "url": "https://github.com/outloudvi/mw2fcitx/releases/download/20230814/moegirl.dict.yaml"
+            "url": "https://github.com/outloudvi/mw2fcitx/releases/download/20230914/moegirl.dict.yaml"
         },
-        "version": "20230814"
+        "version": "20230914"
     },
     "rime-zhwiki": {
         "cargoLocks": null,
