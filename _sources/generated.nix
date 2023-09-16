@@ -106,10 +106,10 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.11.4-4";
+    version = "1.12.0-1";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-4/io.github.msojocs.bilibili_1.11.4-4_amd64.deb";
-      sha256 = "sha256-O4aAQ1M/LQE5vRVh22WVFPm1doYYZZaTyNbjGeISn4s=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.0-1/io.github.msojocs.bilibili_1.12.0-1_amd64.deb";
+      sha256 = "sha256-WSnHyO71VIZDXYTcTCXcXZUkw5ScbIscs9daQokj3kA=";
     };
   };
   bird-babel-rtt = {
@@ -288,13 +288,13 @@
   };
   flaresolverr = {
     pname = "flaresolverr";
-    version = "v3.3.5";
+    version = "v3.3.6";
     src = fetchFromGitHub {
       owner = "FlareSolverr";
       repo = "FlareSolverr";
-      rev = "v3.3.5";
+      rev = "v3.3.6";
       fetchSubmodules = false;
-      sha256 = "sha256-Brc7TBkNJzfPBc4HRqei0isEGTwwcmJOAYTIr+ztDnM=";
+      sha256 = "sha256-lSOw63yjFdi32N44r3A8Ggvexpov9CnaEP7fD7EBdKc=";
     };
   };
   flasgger = {
@@ -489,15 +489,15 @@
   };
   librime-lua = {
     pname = "librime-lua";
-    version = "7eca28fff386ad04b20a540bc8f99f90b2913869";
+    version = "a06b97396523c3424310435f8751b6a7f8ca4507";
     src = fetchFromGitHub {
       owner = "hchunhui";
       repo = "librime-lua";
-      rev = "7eca28fff386ad04b20a540bc8f99f90b2913869";
+      rev = "a06b97396523c3424310435f8751b6a7f8ca4507";
       fetchSubmodules = false;
-      sha256 = "sha256-xWByqSAnVJdrcRR9PR79ffXOhz8rOIvU2u5r0S29TKI=";
+      sha256 = "sha256-qsJYv+r9VxgEKspPFIQyjealWvcnBeegMwj5pHTJNIE=";
     };
-    date = "2023-09-14";
+    date = "2023-09-15";
   };
   librime-octagram = {
     pname = "librime-octagram";
@@ -570,18 +570,18 @@
   };
   netboot-xyz-efi = {
     pname = "netboot-xyz-efi";
-    version = "2.0.71";
+    version = "2.0.72";
     src = fetchurl {
-      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.71/netboot.xyz.efi";
-      sha256 = "sha256-eUZz9cXASL+UlZz6lWJvHcizkyr+ejx0JldHs5v7iU8=";
+      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.72/netboot.xyz.efi";
+      sha256 = "sha256-9iuCFz+eRXU+QBhC3fnTTtKU+ka1FOTMbkEYnSb4BVE=";
     };
   };
   netboot-xyz-lkrn = {
     pname = "netboot-xyz-lkrn";
-    version = "2.0.71";
+    version = "2.0.72";
     src = fetchurl {
-      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.71/netboot.xyz.lkrn";
-      sha256 = "sha256-WeD8jCXofe3xg9rhM2A7hUBzODXFMHV9WrQa0inmbxE=";
+      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.72/netboot.xyz.lkrn";
+      sha256 = "sha256-oNyqRzKhzI9yD8JyR2yEcGrapDHclfRtiO5y24vwaS8=";
     };
   };
   netns-exec = {
@@ -883,15 +883,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "9b05c4bf93a20ec37dce45a621c7ba545fa8a6e3";
+    version = "72881fdc1893f5f0ff68a7edc84d92fed8d2f37f";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "9b05c4bf93a20ec37dce45a621c7ba545fa8a6e3";
+      rev = "72881fdc1893f5f0ff68a7edc84d92fed8d2f37f";
       fetchSubmodules = false;
-      sha256 = "sha256-C/1HXCxHXAK0f4r8BFsWhiDQu9DtarpIjZ3VbJL5j0k=";
+      sha256 = "sha256-Q+qdQ+3RMFb+QmA/CKGFbvBvdOIh+3UN3C/l1kzl13w=";
     };
-    date = "2023-09-08";
+    date = "2023-09-15";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
@@ -1010,10 +1010,10 @@
   };
   wine-wechat = {
     pname = "wine-wechat";
-    version = "3.9.6";
+    version = "3.9.7";
     src = fetchurl {
-      url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.6";
-      sha256 = "sha256-XfOi0egDuIic3g1jf9nEE7aOksEUWsypCuTCu/wrBSQ=";
+      url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7";
+      sha256 = "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=";
     };
   };
   xstatic-asciinema-player = {

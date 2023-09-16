@@ -183,11 +183,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-O4aAQ1M/LQE5vRVh22WVFPm1doYYZZaTyNbjGeISn4s=",
+            "sha256": "sha256-WSnHyO71VIZDXYTcTCXcXZUkw5ScbIscs9daQokj3kA=",
             "type": "url",
-            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.11.4-4/io.github.msojocs.bilibili_1.11.4-4_amd64.deb"
+            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.0-1/io.github.msojocs.bilibili_1.12.0-1_amd64.deb"
         },
-        "version": "1.11.4-4"
+        "version": "1.12.0-1"
     },
     "bird-babel-rtt": {
         "cargoLocks": null,
@@ -502,11 +502,11 @@
             "name": null,
             "owner": "FlareSolverr",
             "repo": "FlareSolverr",
-            "rev": "v3.3.5",
-            "sha256": "sha256-Brc7TBkNJzfPBc4HRqei0isEGTwwcmJOAYTIr+ztDnM=",
+            "rev": "v3.3.6",
+            "sha256": "sha256-lSOw63yjFdi32N44r3A8Ggvexpov9CnaEP7fD7EBdKc=",
             "type": "github"
         },
-        "version": "v3.3.5"
+        "version": "v3.3.6"
     },
     "flasgger": {
         "cargoLocks": null,
@@ -838,7 +838,7 @@
     },
     "librime-lua": {
         "cargoLocks": null,
-        "date": "2023-09-14",
+        "date": "2023-09-15",
         "extract": null,
         "name": "librime-lua",
         "passthru": null,
@@ -850,11 +850,11 @@
             "name": null,
             "owner": "hchunhui",
             "repo": "librime-lua",
-            "rev": "7eca28fff386ad04b20a540bc8f99f90b2913869",
-            "sha256": "sha256-xWByqSAnVJdrcRR9PR79ffXOhz8rOIvU2u5r0S29TKI=",
+            "rev": "a06b97396523c3424310435f8751b6a7f8ca4507",
+            "sha256": "sha256-qsJYv+r9VxgEKspPFIQyjealWvcnBeegMwj5pHTJNIE=",
             "type": "github"
         },
-        "version": "7eca28fff386ad04b20a540bc8f99f90b2913869"
+        "version": "a06b97396523c3424310435f8751b6a7f8ca4507"
     },
     "librime-octagram": {
         "cargoLocks": null,
@@ -985,11 +985,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-eUZz9cXASL+UlZz6lWJvHcizkyr+ejx0JldHs5v7iU8=",
+            "sha256": "sha256-9iuCFz+eRXU+QBhC3fnTTtKU+ka1FOTMbkEYnSb4BVE=",
             "type": "url",
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.71/netboot.xyz.efi"
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.72/netboot.xyz.efi"
         },
-        "version": "2.0.71"
+        "version": "2.0.72"
     },
     "netboot-xyz-lkrn": {
         "cargoLocks": null,
@@ -1000,11 +1000,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-WeD8jCXofe3xg9rhM2A7hUBzODXFMHV9WrQa0inmbxE=",
+            "sha256": "sha256-oNyqRzKhzI9yD8JyR2yEcGrapDHclfRtiO5y24vwaS8=",
             "type": "url",
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.71/netboot.xyz.lkrn"
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.72/netboot.xyz.lkrn"
         },
-        "version": "2.0.71"
+        "version": "2.0.72"
     },
     "netns-exec": {
         "cargoLocks": null,
@@ -1528,7 +1528,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-09-08",
+        "date": "2023-09-15",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -1540,11 +1540,11 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "9b05c4bf93a20ec37dce45a621c7ba545fa8a6e3",
-            "sha256": "sha256-C/1HXCxHXAK0f4r8BFsWhiDQu9DtarpIjZ3VbJL5j0k=",
+            "rev": "72881fdc1893f5f0ff68a7edc84d92fed8d2f37f",
+            "sha256": "sha256-Q+qdQ+3RMFb+QmA/CKGFbvBvdOIh+3UN3C/l1kzl13w=",
             "type": "github"
         },
-        "version": "9b05c4bf93a20ec37dce45a621c7ba545fa8a6e3"
+        "version": "72881fdc1893f5f0ff68a7edc84d92fed8d2f37f"
     },
     "rime-moegirl": {
         "cargoLocks": null,
@@ -1755,11 +1755,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-XfOi0egDuIic3g1jf9nEE7aOksEUWsypCuTCu/wrBSQ=",
+            "sha256": "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=",
             "type": "url",
-            "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.6"
+            "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7"
         },
-        "version": "3.9.6"
+        "version": "3.9.7"
     },
     "xstatic-asciinema-player": {
         "cargoLocks": null,
