@@ -850,11 +850,11 @@
             "name": null,
             "owner": "hchunhui",
             "repo": "librime-lua",
-            "rev": "6773dea11818d04ae3c0c6187194453dd1accb9d",
-            "sha256": "sha256-HJLD4UBSBjP00G/24MU+8yNZL6ezbVPaHSbm+DJOL1c=",
+            "rev": "93230b0b4bbc7c86e9eaa551658628f92b8c887f",
+            "sha256": "sha256-q2fQPxlIBGAKKLb6LRevKnf9iqJDGowa1g8Spef9aXI=",
             "type": "github"
         },
-        "version": "6773dea11818d04ae3c0c6187194453dd1accb9d"
+        "version": "93230b0b4bbc7c86e9eaa551658628f92b8c887f"
     },
     "librime-octagram": {
         "cargoLocks": null,
@@ -1370,11 +1370,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vcVuo3lWcxOjfI61v78Ov+TLqyK833Dh1124fcUlRcI=",
+            "sha256": "sha256-Tihi8mAMtKa41CdNvYVMXsr7zt/UUbpXILt41opXQB4=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_amd64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-5_amd64.deb"
         },
-        "version": "8.1.0+ds-4"
+        "version": "8.1.0+ds-5"
     },
     "qemu-user-static-arm64": {
         "cargoLocks": null,
@@ -1400,11 +1400,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9MqEP4c/59sO3hMjW6bc/m9DFUzE2h/JvlV2zbK9Evw=",
+            "sha256": "sha256-nVA7BgQbOhQxw6dxTs6yH9UnwPEAL1KSVvUj11nSv8M=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_armhf.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-5_armhf.deb"
         },
-        "version": "8.1.0+ds-4"
+        "version": "8.1.0+ds-5"
     },
     "qemu-user-static-i386": {
         "cargoLocks": null,
@@ -1415,11 +1415,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-PwL4Y64E0hYoGEcyfLgsDA2lPJRdxst4ERN6kMb2u4c=",
+            "sha256": "sha256-uo90u+efWHzYEnFZVbct+YktjgFrigmubEiKnH7zCgM=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_i386.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-5_i386.deb"
         },
-        "version": "8.1.0+ds-4"
+        "version": "8.1.0+ds-5"
     },
     "qq-amd64": {
         "cargoLocks": null,

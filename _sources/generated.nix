@@ -489,13 +489,13 @@
   };
   librime-lua = {
     pname = "librime-lua";
-    version = "6773dea11818d04ae3c0c6187194453dd1accb9d";
+    version = "93230b0b4bbc7c86e9eaa551658628f92b8c887f";
     src = fetchFromGitHub {
       owner = "hchunhui";
       repo = "librime-lua";
-      rev = "6773dea11818d04ae3c0c6187194453dd1accb9d";
+      rev = "93230b0b4bbc7c86e9eaa551658628f92b8c887f";
       fetchSubmodules = false;
-      sha256 = "sha256-HJLD4UBSBjP00G/24MU+8yNZL6ezbVPaHSbm+DJOL1c=";
+      sha256 = "sha256-q2fQPxlIBGAKKLb6LRevKnf9iqJDGowa1g8Spef9aXI=";
     };
     date = "2023-09-17";
   };
@@ -791,10 +791,10 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.1.0+ds-4";
+    version = "8.1.0+ds-5";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_amd64.deb";
-      sha256 = "sha256-vcVuo3lWcxOjfI61v78Ov+TLqyK833Dh1124fcUlRcI=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-5_amd64.deb";
+      sha256 = "sha256-Tihi8mAMtKa41CdNvYVMXsr7zt/UUbpXILt41opXQB4=";
     };
   };
   qemu-user-static-arm64 = {
@@ -807,18 +807,18 @@
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.1.0+ds-4";
+    version = "8.1.0+ds-5";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_armhf.deb";
-      sha256 = "sha256-9MqEP4c/59sO3hMjW6bc/m9DFUzE2h/JvlV2zbK9Evw=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-5_armhf.deb";
+      sha256 = "sha256-nVA7BgQbOhQxw6dxTs6yH9UnwPEAL1KSVvUj11nSv8M=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.1.0+ds-4";
+    version = "8.1.0+ds-5";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_i386.deb";
-      sha256 = "sha256-PwL4Y64E0hYoGEcyfLgsDA2lPJRdxst4ERN6kMb2u4c=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-5_i386.deb";
+      sha256 = "sha256-uo90u+efWHzYEnFZVbct+YktjgFrigmubEiKnH7zCgM=";
     };
   };
   qq-amd64 = {

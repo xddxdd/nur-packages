@@ -134,7 +134,7 @@ Or, use variables from this repository in case I change them:
 |  | `phppgadmin` | [phppgadmin](https://github.com/phppgadmin/phppgadmin) | v7.14.5-mod | The premier web-based administration tool for PostgreSQL |
 |  | `qbittorrent-enhanced-edition` | [qbittorrent-enhanced-edition](https://www.qbittorrent.org/) | release-4.5.5.10 | Featureful free software BitTorrent client |
 |  | `qbittorrent-enhanced-edition-nox` | [qbittorrent-enhanced-edition](https://www.qbittorrent.org/) | release-4.5.5.10 | Featureful free software BitTorrent client |
-|  | `qemu-user-static` | [qemu-user-static](http://www.qemu.org/) | 8.1.0+ds-4 | A generic and open source machine emulator and virtualizer |
+|  | `qemu-user-static` | [qemu-user-static](http://www.qemu.org/) | 8.1.0+ds-5 | A generic and open source machine emulator and virtualizer |
 |  | `qq` | [qq](https://im.qq.com/linuxqq/index.html) | 3.2.0-16736 | QQ for Linux |
 |  | `qqmusic` | [qqmusic](https://y.qq.com/) | 1.1.5 | Tencent QQ Music (Packaging script adapted from https://aur.archlinux.org/packages/qqmusic-bin) |
 |  | `rime-aurora-pinyin` | [rime-aurora-pinyin](https://github.com/hosxy/rime-aurora-pinyin) | 122b46976401995cbafcfc748806985ff3a437a4 | 【极光拼音】输入方案 |
