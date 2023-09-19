@@ -465,15 +465,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "b8a0bc72dd951c881dbeef8db70f4944c6f21df1";
+    version = "e6c650c2efe70d78924d50286f5c8d3a9c877df8";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "b8a0bc72dd951c881dbeef8db70f4944c6f21df1";
+      rev = "e6c650c2efe70d78924d50286f5c8d3a9c877df8";
       fetchSubmodules = false;
-      sha256 = "sha256-7Ow1jApsTqr1jwXehi3mutHz1eStnXLlNZ0lZJ2rth8=";
+      sha256 = "sha256-hXsh/ApvLVIOgvExKfVE4aKGYlXcJb0ogI/KX+JOasU=";
     };
-    date = "2023-09-13";
+    date = "2023-09-18";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -799,10 +799,10 @@
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.1.0+ds-4";
+    version = "8.1.0+ds-5";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-4_arm64.deb";
-      sha256 = "sha256-mZhLPCdjgTfKerTOYiDF9JHJUXG+LDWXTNcwOHybiw0=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-5_arm64.deb";
+      sha256 = "sha256-LBELC+5fBysyugJ304eOm1sXlqB0azwua7bMf1kqJvQ=";
     };
   };
   qemu-user-static-armhf = {
