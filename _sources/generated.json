@@ -910,11 +910,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.5.3-xanmod1",
-            "sha256": "sha256-2giaFyN3kWzQ9cl1mTM9ecSlwoQS+dm3/LvbTAHjZ/A=",
+            "rev": "6.5.4-xanmod1",
+            "sha256": "sha256-zT+aU/pOtKgzVOH5Xg4qd88RcDVBmO4af/rgrkUrnfw=",
             "type": "github"
         },
-        "version": "6.5.3-xanmod1"
+        "version": "6.5.4-xanmod1"
     },
     "linux-xanmod-6_0": {
         "cargoLocks": null,
@@ -950,11 +950,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.1.53-xanmod1",
-            "sha256": "sha256-+70dp+zVOvfKJv9hEy3FpEs2ldrxHiWbokaUnXrNj5o=",
+            "rev": "6.1.54-xanmod1",
+            "sha256": "sha256-sAVWtpR0fzBcLR82MFREG4Qv/JEXyJ+5MZ/XDVE0fu8=",
             "type": "github"
         },
-        "version": "6.1.53-xanmod1"
+        "version": "6.1.54-xanmod1"
     },
     "nbfc-linux-lantian": {
         "cargoLocks": null,
