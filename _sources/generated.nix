@@ -255,15 +255,15 @@
   };
   etherguard = {
     pname = "etherguard";
-    version = "2897388568b68bb8d8de329eecce6e64dc361e8e";
+    version = "a96db9e8cf68da687c5e26696df9778162d42ad2";
     src = fetchFromGitHub {
       owner = "KusakabeShi";
       repo = "EtherGuard-VPN";
-      rev = "2897388568b68bb8d8de329eecce6e64dc361e8e";
+      rev = "a96db9e8cf68da687c5e26696df9778162d42ad2";
       fetchSubmodules = false;
-      sha256 = "sha256-0EQL/0xbzovShRbUeOHyWEiGH5bi2SDiwhEe/k5g8tI=";
+      sha256 = "sha256-fpjNCJs/Q02pMCG+LhYgX6G0MoIL7z5Hz77FL1Ms6RI=";
     };
-    date = "2023-09-05";
+    date = "2023-09-20";
   };
   fastapi-dls = {
     pname = "fastapi-dls";
@@ -465,15 +465,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "e6c650c2efe70d78924d50286f5c8d3a9c877df8";
+    version = "007219c3473dadfd188aed3616fcb2e36a0435fc";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "e6c650c2efe70d78924d50286f5c8d3a9c877df8";
+      rev = "007219c3473dadfd188aed3616fcb2e36a0435fc";
       fetchSubmodules = false;
-      sha256 = "sha256-hXsh/ApvLVIOgvExKfVE4aKGYlXcJb0ogI/KX+JOasU=";
+      sha256 = "sha256-3sp9vy2P2zB/PgwOpCWRIdY6izeAytqooV9S620KQzc=";
     };
-    date = "2023-09-18";
+    date = "2023-09-20";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -791,18 +791,18 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.1.0+ds-5";
+    version = "8.1.0+ds-6";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-5_amd64.deb";
-      sha256 = "sha256-Tihi8mAMtKa41CdNvYVMXsr7zt/UUbpXILt41opXQB4=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_amd64.deb";
+      sha256 = "sha256-ql6oTdc4d7av+ze2lcs01d6yWoIq6S27eMg/8bgmpQw=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.1.0+ds-5";
+    version = "8.1.0+ds-6";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-5_arm64.deb";
-      sha256 = "sha256-LBELC+5fBysyugJ304eOm1sXlqB0azwua7bMf1kqJvQ=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_arm64.deb";
+      sha256 = "sha256-sVCDEKu9ciO/JhUwjsZzswxOa6Yv6SWzEgNE5Mjp7PI=";
     };
   };
   qemu-user-static-armhf = {
