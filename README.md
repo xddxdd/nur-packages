@@ -127,7 +127,7 @@ Or, use variables from this repository in case I change them:
 |  | `oci-arm-host-capacity` | [oci-arm-host-capacity](https://github.com/hitrov/oci-arm-host-capacity) | 1a655bf6150d64f4f3732f267477ed3e4c6f87d0 | This script allows to bypass Oracle Cloud Infrastructure 'Out of host capacity' error immediately when additional OCI capacity will appear in your Home Region / Availability domain. |
 |  | `onepush` | [onepush](https://gitlab.com/y1ndan/onepush) | 3a1d5880e3b8f1c5191ee28acd828def15fe135d | A Python library to send notifications to your iPhone, Discord, Telegram, WeChat, QQ and DingTalk. |
 |  | `openssl-oqs` | [openssl-oqs](https://www.openssl.org/) | 1.1.1 | A cryptographic library that implements the SSL and TLS protocols |
-|  | `openssl-oqs-provider` | [openssl-oqs-provider](https://openquantumsafe.org) | be4d0cf3c1fe9ac49b0c4fdaa6afd751bad84f7e | OpenSSL 3 provider containing post-quantum algorithms |
+|  | `openssl-oqs-provider` | [openssl-oqs-provider](https://openquantumsafe.org) | f3325842e62f1c9fe1c1fb0a0beee0593e4d1efb | OpenSSL 3 provider containing post-quantum algorithms |
 |  | `osdlyrics` | [osdlyrics](https://github.com/osdlyrics/osdlyrics) | 0.5.14 | Standalone lyrics fetcher/displayer (windowed and OSD mode). |
 |  | `payload-dumper-go` | [payload-dumper-go](https://github.com/ssut/payload-dumper-go) | 1.2.2 | An android OTA payload dumper written in Go |
 |  | `phpmyadmin` | [phpmyadmin](https://www.phpmyadmin.net/) | 5.2.1 | A web interface for MySQL and MariaDB |
@@ -150,7 +150,7 @@ Or, use variables from this repository in case I change them:
 |  | `svp` | [svp](https://www.svp-team.com/wiki/SVP:Linux) | 4.5.210 | SmoothVideo Project 4 (SVP4) (Packaging script adapted from https://aur.archlinux.org/packages/svp) |
 |  | `tachidesk-server` | [tachidesk-server](https://github.com/Suwayomi/Tachidesk-Server) | 0.6.2-r1074 | A rewrite of Tachiyomi for the Desktop |
 |  | `undetected-chromedriver` | [undetected-chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver) | cea80717c5a3d95ccf5c40e6e38081d5454ec7a5 | Custom Selenium Chromedriver | Zero-Config | Passes ALL bot mitigation systems (like Distil / Imperva/ Datadadome / CloudFlare IUAM) |
-|  | `undetected-chromedriver-bin` | [undetected-chromedriver-bin](https://chromedriver.chromium.org/) | 116.0.5845.96 | Chromedriver with undetected-chromedriver patch |
+|  | `undetected-chromedriver-bin` | [undetected-chromedriver-bin](https://chromedriver.chromium.org/) | 117.0.5938.88 | Chromedriver with undetected-chromedriver patch |
 |  | `vivado-2022_2` | [vivado](https://www.xilinx.com/products/design-tools/vivado.html) | 2022.2 | Xilinx Vivado WebPack Edition (Packaging script adapted from https://github.com/lschuermann/nur-packages/blob/master/pkgs/vivado/vivado-2022_2.nix) |
 | `Broken` | `vs-rife` | [vs-rife](https://github.com/HolyWu/vs-rife) | v3.1.0 | Real-Time Intermediate Flow Estimation for Video Frame Interpolation for VapourSynth |
 |  | `wechat-uos` | [wechat-uos](https://weixin.qq.com/) | 2.1.5 | WeChat desktop (System Electron) (Packaging script adapted from https://aur.archlinux.org/packages/wechat-uos) |
@@ -212,7 +212,7 @@ Or, use variables from this repository in case I change them:
 |  | `lantianCustomized.asterisk` | [asterisk](https://www.asterisk.org/) | 20.2.1 | Asterisk with Lan Tian modifications |
 |  | `lantianCustomized.attic-telnyx-compatible` | [attic-telnyx-compatible](https://github.com/zhaofengli/attic) | b43d12082e34bceb26038bdad0438fd68804cfcd | Attic (Nix binary cache) patched for Telnyx Cloud Storage compatibility |
 |  | `lantianCustomized.coredns` | [coredns-lantian](https://github.com/xddxdd/coredns) | a411a29f831648afa98aa79b164e790add2d6f14 | CoreDNS with Lan Tian's modifications |
-|  | `lantianCustomized.librime-with-plugins` | [librime](https://rime.im/) | 1.8.5 | Librime with plugins (librime-charcode, librime-lua, librime-octagram, librime-proto) |
+|  | `lantianCustomized.librime-with-plugins` | [librime](https://rime.im/) | 1.9.0 | Librime with plugins (librime-charcode, librime-lua, librime-octagram, librime-proto) |
 |  | `lantianCustomized.linux-xanmod-lantian` | [linux](https://www.kernel.org/) | 6.5.4-xanmod1 | Linux Xanmod Kernel with Lan Tian Modifications |
 |  | `lantianCustomized.linux-xanmod-lantian-lto` | [linux](https://www.kernel.org/) | 6.5.4-xanmod1 | Linux Xanmod Kernel with Lan Tian Modifications and Clang+ThinLTO |
 |  | `lantianCustomized.linux-xanmod-lantian-unstable` | [linux](https://www.kernel.org/) | 6.5.4-xanmod1 | Linux Xanmod Kernel with Lan Tian Modifications |
