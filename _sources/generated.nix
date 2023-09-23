@@ -109,7 +109,7 @@
     version = "1.12.0-1";
     src = fetchurl {
       url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.0-1/io.github.msojocs.bilibili_1.12.0-1_amd64.deb";
-      sha256 = "sha256-WSnHyO71VIZDXYTcTCXcXZUkw5ScbIscs9daQokj3kA=";
+      sha256 = "sha256-ZTEWd9lrk2eiJfkT8h4BohCvS8Fv0EC+Wya8krV5Gvs=";
     };
   };
   bird-babel-rtt = {
@@ -465,15 +465,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "007219c3473dadfd188aed3616fcb2e36a0435fc";
+    version = "352cd051f2005e20ceebe28770697a6ebde89c5e";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "007219c3473dadfd188aed3616fcb2e36a0435fc";
+      rev = "352cd051f2005e20ceebe28770697a6ebde89c5e";
       fetchSubmodules = false;
-      sha256 = "sha256-3sp9vy2P2zB/PgwOpCWRIdY6izeAytqooV9S620KQzc=";
+      sha256 = "sha256-0SL/TsA3n8QRLdPhHNr5qoUR3JxoUi/NaFIJRY+WEnw=";
     };
-    date = "2023-09-20";
+    date = "2023-09-22";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -834,18 +834,18 @@
   };
   qq-amd64 = {
     pname = "qq-amd64";
-    version = "d3b9a722/linuxqq_3.2.0-16736";
+    version = "b69de82d/linuxqq_3.2.1-17153";
     src = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/d3b9a722/linuxqq_3.2.0-16736_amd64.deb";
-      sha256 = "sha256-96h648bKOjTz6bnGtANMHXLPE9bhvMXZnOeNaMERHV0=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/b69de82d/linuxqq_3.2.1-17153_amd64.deb";
+      sha256 = "sha256-+GjTjv0K2vnlkb46KhMvRRFWuIEBz23Lg3QhiA7QzkA=";
     };
   };
   qq-arm64 = {
     pname = "qq-arm64";
-    version = "d3b9a722/linuxqq_3.2.0-16736";
+    version = "b69de82d/linuxqq_3.2.1-17153";
     src = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/d3b9a722/linuxqq_3.2.0-16736_arm64.deb";
-      sha256 = "sha256-egARnAYfG+7DfnWY90Eo88JFXioaPKzASpvKzlhfoq0=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/b69de82d/linuxqq_3.2.1-17153_arm64.deb";
+      sha256 = "sha256-BtmmVpKZF15aU7RRmXl9g5leg2jz5sT4vYXluq9aIYk=";
     };
   };
   qqmusic = {
@@ -894,15 +894,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "72881fdc1893f5f0ff68a7edc84d92fed8d2f37f";
+    version = "34fbc4043e780049de7ddf62e1aeb57fa369204b";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "72881fdc1893f5f0ff68a7edc84d92fed8d2f37f";
+      rev = "34fbc4043e780049de7ddf62e1aeb57fa369204b";
       fetchSubmodules = false;
-      sha256 = "sha256-Q+qdQ+3RMFb+QmA/CKGFbvBvdOIh+3UN3C/l1kzl13w=";
+      sha256 = "sha256-jkknQv58AhB0dcX7b/qvzbZsE3UToCHBi6bpj79oxqE=";
     };
-    date = "2023-09-15";
+    date = "2023-09-22";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
