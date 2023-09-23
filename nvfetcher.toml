@@ -297,6 +297,10 @@ fetch.github = "ReimuHakurei/phppgadmin"
 src.github = "Fitzgerald-Porthmouth-Koenigsegg/Plangothic"
 fetch.github = "Fitzgerald-Porthmouth-Koenigsegg/Plangothic"
 
+[pterodactyl-wings]
+src.github = "pterodactyl/wings"
+fetch.github = "pterodactyl/wings"
+
 [qbittorrent-enhanced-edition]
 src.github = "c0re100/qBittorrent-Enhanced-Edition"
 fetch.github = "c0re100/qBittorrent-Enhanced-Edition"

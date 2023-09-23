@@ -146,6 +146,7 @@ in
     payload-dumper-go = pkg ./uncategorized/payload-dumper-go {};
     phpmyadmin = pkg ./uncategorized/phpmyadmin {};
     phppgadmin = pkg ./uncategorized/phppgadmin {};
+    pterodactyl-wings = pkg ./uncategorized/pterodactyl-wings {};
     qbittorrent-enhanced-edition = pkg ./uncategorized/qbittorrent-enhanced-edition {};
     qbittorrent-enhanced-edition-nox = pkg ./uncategorized/qbittorrent-enhanced-edition/nox.nix {};
     qemu-user-static = pkg ./uncategorized/qemu-user-static {};

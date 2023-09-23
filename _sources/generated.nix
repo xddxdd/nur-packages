@@ -778,6 +778,17 @@
       sha256 = "sha256-PW0P6Ndekmsw6Y1ChCKHSVRxLPtqwYmi4CnrptpfUfE=";
     };
   };
+  pterodactyl-wings = {
+    pname = "pterodactyl-wings";
+    version = "v1.11.7";
+    src = fetchFromGitHub {
+      owner = "pterodactyl";
+      repo = "wings";
+      rev = "v1.11.7";
+      fetchSubmodules = false;
+      sha256 = "sha256-MWeUSlJsKNnV/oZotIne3KN3j+fjKNfPJQb+DbhNYLk=";
+    };
+  };
   qbittorrent-enhanced-edition = {
     pname = "qbittorrent-enhanced-edition";
     version = "release-4.5.5.10";

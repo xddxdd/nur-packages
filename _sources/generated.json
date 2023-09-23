@@ -1341,6 +1341,26 @@
         },
         "version": "V1.8.5746"
     },
+    "pterodactyl-wings": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "pterodactyl-wings",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "pterodactyl",
+            "repo": "wings",
+            "rev": "v1.11.7",
+            "sha256": "sha256-MWeUSlJsKNnV/oZotIne3KN3j+fjKNfPJQb+DbhNYLk=",
+            "type": "github"
+        },
+        "version": "v1.11.7"
+    },
     "qbittorrent-enhanced-edition": {
         "cargoLocks": null,
         "date": null,
