@@ -106,10 +106,10 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.12.0-1";
+    version = "1.12.0-2";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.0-1/io.github.msojocs.bilibili_1.12.0-1_amd64.deb";
-      sha256 = "sha256-ZTEWd9lrk2eiJfkT8h4BohCvS8Fv0EC+Wya8krV5Gvs=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.0-2/io.github.msojocs.bilibili_1.12.0-2_amd64.deb";
+      sha256 = "sha256-LnTRznIUXU7h0SyOCfVjfqhNv2OCRujNoM1PtGUVJeU=";
     };
   };
   bird-babel-rtt = {
@@ -525,13 +525,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.5.4-xanmod1";
+    version = "6.5.5-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.5.4-xanmod1";
+      rev = "6.5.5-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-zT+aU/pOtKgzVOH5Xg4qd88RcDVBmO4af/rgrkUrnfw=";
+      sha256 = "sha256-XjSuhZ5ooXOVllKc29Pd+PlOK6OtcgVMVFzxOx5nkIw=";
     };
   };
   linux-xanmod-6_0 = {
@@ -547,13 +547,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.54-xanmod1";
+    version = "6.1.55-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.54-xanmod1";
+      rev = "6.1.55-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-sAVWtpR0fzBcLR82MFREG4Qv/JEXyJ+5MZ/XDVE0fu8=";
+      sha256 = "sha256-kmiMbzH1hyteicjk1WfCQPYhLsVAbl1t5LJ83rUNZ1k=";
     };
   };
   nbfc-linux-lantian = {

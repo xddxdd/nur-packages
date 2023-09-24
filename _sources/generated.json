@@ -183,11 +183,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ZTEWd9lrk2eiJfkT8h4BohCvS8Fv0EC+Wya8krV5Gvs=",
+            "sha256": "sha256-LnTRznIUXU7h0SyOCfVjfqhNv2OCRujNoM1PtGUVJeU=",
             "type": "url",
-            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.0-1/io.github.msojocs.bilibili_1.12.0-1_amd64.deb"
+            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.0-2/io.github.msojocs.bilibili_1.12.0-2_amd64.deb"
         },
-        "version": "1.12.0-1"
+        "version": "1.12.0-2"
     },
     "bird-babel-rtt": {
         "cargoLocks": null,
@@ -910,11 +910,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.5.4-xanmod1",
-            "sha256": "sha256-zT+aU/pOtKgzVOH5Xg4qd88RcDVBmO4af/rgrkUrnfw=",
+            "rev": "6.5.5-xanmod1",
+            "sha256": "sha256-XjSuhZ5ooXOVllKc29Pd+PlOK6OtcgVMVFzxOx5nkIw=",
             "type": "github"
         },
-        "version": "6.5.4-xanmod1"
+        "version": "6.5.5-xanmod1"
     },
     "linux-xanmod-6_0": {
         "cargoLocks": null,
@@ -950,11 +950,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.1.54-xanmod1",
-            "sha256": "sha256-sAVWtpR0fzBcLR82MFREG4Qv/JEXyJ+5MZ/XDVE0fu8=",
+            "rev": "6.1.55-xanmod1",
+            "sha256": "sha256-kmiMbzH1hyteicjk1WfCQPYhLsVAbl1t5LJ83rUNZ1k=",
             "type": "github"
         },
-        "version": "6.1.54-xanmod1"
+        "version": "6.1.55-xanmod1"
     },
     "nbfc-linux-lantian": {
         "cargoLocks": null,
