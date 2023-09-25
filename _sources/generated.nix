@@ -335,13 +335,13 @@
   };
   glauth = {
     pname = "glauth";
-    version = "v2.2.0";
+    version = "v2.2.1";
     src = fetchFromGitHub {
       owner = "glauth";
       repo = "glauth";
-      rev = "v2.2.0";
+      rev = "v2.2.1";
       fetchSubmodules = false;
-      sha256 = "sha256-sQEfDwgqHi+6LQhUxA5RO0hwzB9loTncrOyP8SXatok=";
+      sha256 = "sha256-LQtlmEx5lZ4fYIbpKRJiDvpw20oyGI30APdCxFY8kk8=";
     };
   };
   google-earth-pro = {
@@ -716,15 +716,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "f3325842e62f1c9fe1c1fb0a0beee0593e4d1efb";
+    version = "9d4faab2d330df8b032995ed58f757c25b1c68c7";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "f3325842e62f1c9fe1c1fb0a0beee0593e4d1efb";
+      rev = "9d4faab2d330df8b032995ed58f757c25b1c68c7";
       fetchSubmodules = false;
-      sha256 = "sha256-JdMQfu+yDrMN5qPP5bByyEZ75LF4R3wJnLFebz0N2Ik=";
+      sha256 = "sha256-rtJwkNG1ZH9CyYvHrAQYpIS8FXdDMVgsZyMvOMHzM0A=";
     };
-    date = "2023-09-22";
+    date = "2023-09-24";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -894,15 +894,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "34fbc4043e780049de7ddf62e1aeb57fa369204b";
+    version = "4ba55b87a181be93b22d9e76693ad6e55b52d906";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "34fbc4043e780049de7ddf62e1aeb57fa369204b";
+      rev = "4ba55b87a181be93b22d9e76693ad6e55b52d906";
       fetchSubmodules = false;
-      sha256 = "sha256-jkknQv58AhB0dcX7b/qvzbZsE3UToCHBi6bpj79oxqE=";
+      sha256 = "sha256-na/YI4dsZPb1+ORRhkAbZLiE23yuSjVMtY9npflhDUk=";
     };
-    date = "2023-09-22";
+    date = "2023-09-24";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
