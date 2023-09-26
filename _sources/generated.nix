@@ -362,16 +362,16 @@
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "4d19316a003b9a7a6df56fc1a3e4dd634717aec7";
+    version = "56fb686ea29bdfd1b1624eefd8cb9a7e7f5be7ad";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "4d19316a003b9a7a6df56fc1a3e4dd634717aec7";
+      rev = "56fb686ea29bdfd1b1624eefd8cb9a7e7f5be7ad";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-rtphaZ7/nFOwdkUiACO6HRDCfc+6gVyb3Vh6oPs7Bko=";
+      sha256 = "sha256-171l7uYXTZcPyzHascytIEVTCurQJEWKIWRlCW3YBrI=";
     };
-    date = "2023-09-10";
+    date = "2023-09-26";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -645,15 +645,15 @@
   };
   ngx_brotli = {
     pname = "ngx_brotli";
-    version = "63ca02abdcf79c9e788d2eedcc388d2335902e52";
+    version = "659b4b3e16ef1066988233ef2d6ea5ea34e8443b";
     src = fetchFromGitHub {
       owner = "google";
       repo = "ngx_brotli";
-      rev = "63ca02abdcf79c9e788d2eedcc388d2335902e52";
+      rev = "659b4b3e16ef1066988233ef2d6ea5ea34e8443b";
       fetchSubmodules = false;
-      sha256 = "sha256-muMN+Qq/RFhy04jnpDajLn5xetx2iFWj1IiC3rjER7A=";
+      sha256 = "sha256-50pmaKpa4XRThCvs3ZlwGd5Kh3RetTuEMeGGT0NoPII=";
     };
-    date = "2023-09-07";
+    date = "2023-09-25";
   };
   noise-suppression-for-voice = {
     pname = "noise-suppression-for-voice";
@@ -894,15 +894,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "4ba55b87a181be93b22d9e76693ad6e55b52d906";
+    version = "72acbc7a2e53cbac7d6f3ab4a82bc457a7ed8f27";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "4ba55b87a181be93b22d9e76693ad6e55b52d906";
+      rev = "72acbc7a2e53cbac7d6f3ab4a82bc457a7ed8f27";
       fetchSubmodules = false;
-      sha256 = "sha256-na/YI4dsZPb1+ORRhkAbZLiE23yuSjVMtY9npflhDUk=";
+      sha256 = "sha256-5vV8Vj+99rFtT5kUioPXZ4fx5xKtGnQFSmxl09AkmzM=";
     };
-    date = "2023-09-24";
+    date = "2023-09-25";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
