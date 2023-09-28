@@ -465,15 +465,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "352cd051f2005e20ceebe28770697a6ebde89c5e";
+    version = "1e094b136bba0bb97c704678888eef621f245102";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "352cd051f2005e20ceebe28770697a6ebde89c5e";
+      rev = "1e094b136bba0bb97c704678888eef621f245102";
       fetchSubmodules = false;
-      sha256 = "sha256-0SL/TsA3n8QRLdPhHNr5qoUR3JxoUi/NaFIJRY+WEnw=";
+      sha256 = "sha256-ENDFZ1gCHnXDUar86N3Co0xipGAgFXMiS5h70X8OpIc=";
     };
-    date = "2023-09-22";
+    date = "2023-09-27";
   };
   librime-charcode = {
     pname = "librime-charcode";
@@ -894,15 +894,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "72acbc7a2e53cbac7d6f3ab4a82bc457a7ed8f27";
+    version = "5c9ca840314d92348a4e3404159836efe74e42e1";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "72acbc7a2e53cbac7d6f3ab4a82bc457a7ed8f27";
+      rev = "5c9ca840314d92348a4e3404159836efe74e42e1";
       fetchSubmodules = false;
-      sha256 = "sha256-5vV8Vj+99rFtT5kUioPXZ4fx5xKtGnQFSmxl09AkmzM=";
+      sha256 = "sha256-QGsQBptn+AQailKLFqFW2O+CEwIePe4oMgdTiN5nwqM=";
     };
-    date = "2023-09-25";
+    date = "2023-09-27";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
@@ -1024,7 +1024,7 @@
     version = "3.9.7";
     src = fetchurl {
       url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7";
-      sha256 = "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=";
+      sha256 = "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=";
     };
   };
   xstatic-asciinema-player = {
