@@ -153,11 +153,11 @@
             "name": null,
             "owner": "qjfoidnh",
             "repo": "BaiduPCS-Go",
-            "rev": "v3.9.4",
-            "sha256": "sha256-7kjMCoT6r7AgqWtjqfEJnQCpo6CNDK8a3NvSdrMI12E=",
+            "rev": "v3.9.5",
+            "sha256": "sha256-zNodRQzflOOB3hAeq4KbjRFlHQwknVy+4ucipUcoufY=",
             "type": "github"
         },
-        "version": "v3.9.4"
+        "version": "v3.9.5"
     },
     "bepasty": {
         "cargoLocks": null,
@@ -798,7 +798,7 @@
     },
     "liboqs": {
         "cargoLocks": null,
-        "date": "2023-09-28",
+        "date": "2023-09-29",
         "extract": null,
         "name": "liboqs",
         "passthru": null,
@@ -810,11 +810,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "cdc8a971c67c236540f5bb0ef1a756b6e4ef1a9c",
-            "sha256": "sha256-EEzQJ5fCsmGmVHByOlC8NdSitwNwa4D0f2KNLHCnmIU=",
+            "rev": "f0326a42209491a2333d351b60474ef8fc2dc065",
+            "sha256": "sha256-g7hTuogz2Tgjy8sFGdqyth8SZeVhkhzy4cphLO2CM2s=",
             "type": "github"
         },
-        "version": "cdc8a971c67c236540f5bb0ef1a756b6e4ef1a9c"
+        "version": "f0326a42209491a2333d351b60474ef8fc2dc065"
     },
     "librime-charcode": {
         "cargoLocks": null,

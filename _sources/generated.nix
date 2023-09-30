@@ -87,13 +87,13 @@
   };
   baidupcs-go = {
     pname = "baidupcs-go";
-    version = "v3.9.4";
+    version = "v3.9.5";
     src = fetchFromGitHub {
       owner = "qjfoidnh";
       repo = "BaiduPCS-Go";
-      rev = "v3.9.4";
+      rev = "v3.9.5";
       fetchSubmodules = false;
-      sha256 = "sha256-7kjMCoT6r7AgqWtjqfEJnQCpo6CNDK8a3NvSdrMI12E=";
+      sha256 = "sha256-zNodRQzflOOB3hAeq4KbjRFlHQwknVy+4ucipUcoufY=";
     };
   };
   bepasty = {
@@ -465,15 +465,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "cdc8a971c67c236540f5bb0ef1a756b6e4ef1a9c";
+    version = "f0326a42209491a2333d351b60474ef8fc2dc065";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "cdc8a971c67c236540f5bb0ef1a756b6e4ef1a9c";
+      rev = "f0326a42209491a2333d351b60474ef8fc2dc065";
       fetchSubmodules = false;
-      sha256 = "sha256-EEzQJ5fCsmGmVHByOlC8NdSitwNwa4D0f2KNLHCnmIU=";
+      sha256 = "sha256-g7hTuogz2Tgjy8sFGdqyth8SZeVhkhzy4cphLO2CM2s=";
     };
-    date = "2023-09-28";
+    date = "2023-09-29";
   };
   librime-charcode = {
     pname = "librime-charcode";
