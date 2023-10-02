@@ -1,8 +1,7 @@
 {
   stdenv,
-  buildFHSUserEnvBubblewrap,
+  buildFHSEnv,
   fetchurl,
-  # Libraries for SVP
   ffmpeg,
   glibc,
   gnome,
@@ -11,14 +10,12 @@
   libsForQt5,
   libusb1,
   lsof,
-  makeWrapper,
   mpv-unwrapped,
   ocl-icd,
   p7zip,
   patchelf,
   vapoursynth,
   wrapMpv,
-  writeShellScript,
   writeText,
   xdg-utils,
   xorg,
@@ -64,9 +61,9 @@ let
 
   svp-dist = stdenv.mkDerivation rec {
     pname = "svp-dist";
-    version = "4.5.210";
+    version = "4.5.210-2";
     src = fetchurl {
-      url = "https://www.svp-team.com/files/svp4-linux.${version}-2.tar.bz2";
+      url = "https://www.svp-team.com/files/svp4-linux.${version}.tar.bz2";
       sha256 = "sha256-dY9uQ9jzTHiN2XSnOrXtHD11IIJW6t9BUzGGQFfZ+yg=";
     };
 
@@ -98,7 +95,7 @@ let
     '';
   };
 
-  fhs = buildFHSUserEnvBubblewrap {
+  fhs = buildFHSEnv {
     name = "SVPManager";
     targetPkgs = pkgs: libraries;
     runScript = "${svp-dist}/opt/SVPManager";
