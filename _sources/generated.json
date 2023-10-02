@@ -183,11 +183,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-LnTRznIUXU7h0SyOCfVjfqhNv2OCRujNoM1PtGUVJeU=",
+            "sha256": "sha256-vYoVHVT/Deooxq/0WVzPebR68N9KBJfgLU30lJPB89M=",
             "type": "url",
-            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.0-2/io.github.msojocs.bilibili_1.12.0-2_amd64.deb"
+            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.1-2/io.github.msojocs.bilibili_1.12.1-2_amd64.deb"
         },
-        "version": "1.12.0-2"
+        "version": "1.12.1-2"
     },
     "bird-babel-rtt": {
         "cargoLocks": null,
@@ -581,11 +581,11 @@
             "name": null,
             "owner": "glauth",
             "repo": "glauth",
-            "rev": "v2.2.1",
-            "sha256": "sha256-LQtlmEx5lZ4fYIbpKRJiDvpw20oyGI30APdCxFY8kk8=",
+            "rev": "v2.3.0",
+            "sha256": "sha256-XYNNR3bVLNtAl+vbGRv0VhbLf+em8Ay983jqcW7KDFU=",
             "type": "github"
         },
-        "version": "v2.2.1"
+        "version": "v2.3.0"
     },
     "google-earth-pro": {
         "cargoLocks": null,
@@ -611,15 +611,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mwnToKqarQmD85snYfrQY85T/Nba0bbTVdd9g3mcAOM=",
+            "sha256": "sha256-HyYu+SOtmTqGvN29VoVsLALMIT1XpLr9HupQG+QbnT8=",
             "type": "url",
-            "url": "https://github.com/Grasscutters/Grasscutter/releases/download/v1.7.1/grasscutter-1.7.1.jar"
+            "url": "https://github.com/Grasscutters/Grasscutter/releases/download/v1.7.2/grasscutter-1.7.2.jar"
         },
-        "version": "1.7.1"
+        "version": "1.7.2"
     },
     "grasscutter-resources": {
         "cargoLocks": null,
-        "date": "2023-09-26",
+        "date": "2023-09-28",
         "extract": null,
         "name": "grasscutter-resources",
         "passthru": null,
@@ -629,12 +629,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "56fb686ea29bdfd1b1624eefd8cb9a7e7f5be7ad",
-            "sha256": "sha256-171l7uYXTZcPyzHascytIEVTCurQJEWKIWRlCW3YBrI=",
+            "rev": "c1e9481457f10cf48cdf60e493d4c2477d0e2e0d",
+            "sha256": "sha256-NhGSX4PILIa8IABVMO3ZnrvdWyJMPCa10kYNKAg2UAg=",
             "type": "git",
             "url": "https://gitlab.com/YuukiPS/GC-Resources.git"
         },
-        "version": "56fb686ea29bdfd1b1624eefd8cb9a7e7f5be7ad"
+        "version": "c1e9481457f10cf48cdf60e493d4c2477d0e2e0d"
     },
     "hoyo-glyphs": {
         "cargoLocks": null,
@@ -1390,11 +1390,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ql6oTdc4d7av+ze2lcs01d6yWoIq6S27eMg/8bgmpQw=",
+            "sha256": "sha256-50qbqX/zDu2oIToOzJqQb9/tBqhMYooV91vyIrXjc5o=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_amd64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_amd64.deb"
         },
-        "version": "8.1.0+ds-6"
+        "version": "8.1.1+ds-1"
     },
     "qemu-user-static-arm64": {
         "cargoLocks": null,
@@ -1405,11 +1405,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-sVCDEKu9ciO/JhUwjsZzswxOa6Yv6SWzEgNE5Mjp7PI=",
+            "sha256": "sha256-YSpvhhGU9jum4SgAP0ohccWr98iqnbC9ipZhFHKpn90=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_arm64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_arm64.deb"
         },
-        "version": "8.1.0+ds-6"
+        "version": "8.1.1+ds-1"
     },
     "qemu-user-static-armhf": {
         "cargoLocks": null,
@@ -1420,11 +1420,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Hl8jitu4nsqNUD7p1XhhcnP5nx5pN3gruxo32BrKpr0=",
+            "sha256": "sha256-2AHDcw2eq7XKb3g5JEa2Bs1VkjHBYFrLlnVBGtMoqCI=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_armhf.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_armhf.deb"
         },
-        "version": "8.1.0+ds-6"
+        "version": "8.1.1+ds-1"
     },
     "qemu-user-static-i386": {
         "cargoLocks": null,
@@ -1435,11 +1435,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-IM70O/xh9ZVqAqirz7v1iQLoqkev7h0fXYXgqmnH2Ng=",
+            "sha256": "sha256-knsq8L9nRJSmm6GzF5EDE1t+dkLEVyxakEUZwQStXX4=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_i386.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_i386.deb"
         },
-        "version": "8.1.0+ds-6"
+        "version": "8.1.1+ds-1"
     },
     "qq-amd64": {
         "cargoLocks": null,

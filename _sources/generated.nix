@@ -106,10 +106,10 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.12.0-2";
+    version = "1.12.1-2";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.0-2/io.github.msojocs.bilibili_1.12.0-2_amd64.deb";
-      sha256 = "sha256-LnTRznIUXU7h0SyOCfVjfqhNv2OCRujNoM1PtGUVJeU=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.12.1-2/io.github.msojocs.bilibili_1.12.1-2_amd64.deb";
+      sha256 = "sha256-vYoVHVT/Deooxq/0WVzPebR68N9KBJfgLU30lJPB89M=";
     };
   };
   bird-babel-rtt = {
@@ -335,13 +335,13 @@
   };
   glauth = {
     pname = "glauth";
-    version = "v2.2.1";
+    version = "v2.3.0";
     src = fetchFromGitHub {
       owner = "glauth";
       repo = "glauth";
-      rev = "v2.2.1";
+      rev = "v2.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-LQtlmEx5lZ4fYIbpKRJiDvpw20oyGI30APdCxFY8kk8=";
+      sha256 = "sha256-XYNNR3bVLNtAl+vbGRv0VhbLf+em8Ay983jqcW7KDFU=";
     };
   };
   google-earth-pro = {
@@ -354,24 +354,24 @@
   };
   grasscutter = {
     pname = "grasscutter";
-    version = "1.7.1";
+    version = "1.7.2";
     src = fetchurl {
-      url = "https://github.com/Grasscutters/Grasscutter/releases/download/v1.7.1/grasscutter-1.7.1.jar";
-      sha256 = "sha256-mwnToKqarQmD85snYfrQY85T/Nba0bbTVdd9g3mcAOM=";
+      url = "https://github.com/Grasscutters/Grasscutter/releases/download/v1.7.2/grasscutter-1.7.2.jar";
+      sha256 = "sha256-HyYu+SOtmTqGvN29VoVsLALMIT1XpLr9HupQG+QbnT8=";
     };
   };
   grasscutter-resources = {
     pname = "grasscutter-resources";
-    version = "56fb686ea29bdfd1b1624eefd8cb9a7e7f5be7ad";
+    version = "c1e9481457f10cf48cdf60e493d4c2477d0e2e0d";
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
-      rev = "56fb686ea29bdfd1b1624eefd8cb9a7e7f5be7ad";
+      rev = "c1e9481457f10cf48cdf60e493d4c2477d0e2e0d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-171l7uYXTZcPyzHascytIEVTCurQJEWKIWRlCW3YBrI=";
+      sha256 = "sha256-NhGSX4PILIa8IABVMO3ZnrvdWyJMPCa10kYNKAg2UAg=";
     };
-    date = "2023-09-26";
+    date = "2023-09-28";
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
@@ -802,34 +802,34 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.1.0+ds-6";
+    version = "8.1.1+ds-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_amd64.deb";
-      sha256 = "sha256-ql6oTdc4d7av+ze2lcs01d6yWoIq6S27eMg/8bgmpQw=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_amd64.deb";
+      sha256 = "sha256-50qbqX/zDu2oIToOzJqQb9/tBqhMYooV91vyIrXjc5o=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.1.0+ds-6";
+    version = "8.1.1+ds-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_arm64.deb";
-      sha256 = "sha256-sVCDEKu9ciO/JhUwjsZzswxOa6Yv6SWzEgNE5Mjp7PI=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_arm64.deb";
+      sha256 = "sha256-YSpvhhGU9jum4SgAP0ohccWr98iqnbC9ipZhFHKpn90=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.1.0+ds-6";
+    version = "8.1.1+ds-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_armhf.deb";
-      sha256 = "sha256-Hl8jitu4nsqNUD7p1XhhcnP5nx5pN3gruxo32BrKpr0=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_armhf.deb";
+      sha256 = "sha256-2AHDcw2eq7XKb3g5JEa2Bs1VkjHBYFrLlnVBGtMoqCI=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.1.0+ds-6";
+    version = "8.1.1+ds-1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.0+ds-6_i386.deb";
-      sha256 = "sha256-IM70O/xh9ZVqAqirz7v1iQLoqkev7h0fXYXgqmnH2Ng=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_i386.deb";
+      sha256 = "sha256-knsq8L9nRJSmm6GzF5EDE1t+dkLEVyxakEUZwQStXX4=";
     };
   };
   qq-amd64 = {
