@@ -5,7 +5,7 @@
 }:
 buildGoModule rec {
   inherit (sources.glauth) pname version src;
-  vendorSha256 = "sha256-XPEksbrVtAiOC3KYHJkKUfvkryVb1Rxj3kbejcxcIco=";
+  vendorSha256 = "sha256-EalZdQbGs7YHZfuqxsrxP1592OJtGUYvzkFiBYKHEBA=";
   modRoot = "v2";
 
   preBuild = ''
