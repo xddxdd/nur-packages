@@ -489,15 +489,15 @@
   };
   librime-lua = {
     pname = "librime-lua";
-    version = "aa517eb2e5a816399efbdbfb5db8002494772a53";
+    version = "be8ea3b527602de40813b1313c29fde267a6cc7f";
     src = fetchFromGitHub {
       owner = "hchunhui";
       repo = "librime-lua";
-      rev = "aa517eb2e5a816399efbdbfb5db8002494772a53";
+      rev = "be8ea3b527602de40813b1313c29fde267a6cc7f";
       fetchSubmodules = false;
-      sha256 = "sha256-XYZfM6LhirFKYYhS87R2w7WtzXve9QkLdi0EQQT5/QQ=";
+      sha256 = "sha256-9pW4d0uk4V4sFc/4kZpLEOWnLRlLDoqB2+ZmNRR7hck=";
     };
-    date = "2023-10-04";
+    date = "2023-10-05";
   };
   librime-octagram = {
     pname = "librime-octagram";
@@ -716,15 +716,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "5515b4b4d084b2f06a7a935b9c6e796ae070de15";
+    version = "5fd47f991a8a04887d1313d287f7ba5ba5fbaefa";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "5515b4b4d084b2f06a7a935b9c6e796ae070de15";
+      rev = "5fd47f991a8a04887d1313d287f7ba5ba5fbaefa";
       fetchSubmodules = false;
-      sha256 = "sha256-T+7tsEVpHFBpeibaBFBb5YbyTbvwIuXkWjXRr2ZNyUo=";
+      sha256 = "sha256-+ypf5C9vSjixPzv+J4/sJmRRYSZBtLt27jGvLghEhg8=";
     };
-    date = "2023-10-05";
+    date = "2023-10-06";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -1002,13 +1002,13 @@
   };
   vs-rife = {
     pname = "vs-rife";
-    version = "v3.1.0";
+    version = "v4.0.0";
     src = fetchFromGitHub {
       owner = "HolyWu";
       repo = "vs-rife";
-      rev = "v3.1.0";
+      rev = "v4.0.0";
       fetchSubmodules = false;
-      sha256 = "sha256-U3LRcfEw/1Yh5H0xLlNyNy0w8Lf7ZZeIPQMETYrybJE=";
+      sha256 = "sha256-POwmpYeZLFFqtDuxB8R1F/6I8ZLP8+AOdhCou+9G+5E=";
     };
   };
   wechat-uos = {
@@ -1024,7 +1024,7 @@
     version = "3.9.7";
     src = fetchurl {
       url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7";
-      sha256 = "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=";
+      sha256 = "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=";
     };
   };
   xstatic-asciinema-player = {
