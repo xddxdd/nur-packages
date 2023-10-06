@@ -645,15 +645,15 @@
   };
   ngx_brotli = {
     pname = "ngx_brotli";
-    version = "659b4b3e16ef1066988233ef2d6ea5ea34e8443b";
+    version = "3de5fda259f12a7fdefd040173c77114644cc11f";
     src = fetchFromGitHub {
-      owner = "google";
+      owner = "u5surf";
       repo = "ngx_brotli";
-      rev = "659b4b3e16ef1066988233ef2d6ea5ea34e8443b";
+      rev = "3de5fda259f12a7fdefd040173c77114644cc11f";
       fetchSubmodules = false;
-      sha256 = "sha256-50pmaKpa4XRThCvs3ZlwGd5Kh3RetTuEMeGGT0NoPII=";
+      sha256 = "sha256-5XSEqXyaIKoUzs1OC6WGPwqpx8JWaE0aMlfjvOoYs3U=";
     };
-    date = "2023-09-25";
+    date = "2023-10-04";
   };
   noise-suppression-for-voice = {
     pname = "noise-suppression-for-voice";
@@ -1024,7 +1024,7 @@
     version = "3.9.7";
     src = fetchurl {
       url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7";
-      sha256 = "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=";
+      sha256 = "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=";
     };
   };
   xstatic-asciinema-player = {

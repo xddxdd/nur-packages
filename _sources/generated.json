@@ -1108,7 +1108,7 @@
     },
     "ngx_brotli": {
         "cargoLocks": null,
-        "date": "2023-09-25",
+        "date": "2023-10-04",
         "extract": null,
         "name": "ngx_brotli",
         "passthru": null,
@@ -1118,13 +1118,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "google",
+            "owner": "u5surf",
             "repo": "ngx_brotli",
-            "rev": "659b4b3e16ef1066988233ef2d6ea5ea34e8443b",
-            "sha256": "sha256-50pmaKpa4XRThCvs3ZlwGd5Kh3RetTuEMeGGT0NoPII=",
+            "rev": "3de5fda259f12a7fdefd040173c77114644cc11f",
+            "sha256": "sha256-5XSEqXyaIKoUzs1OC6WGPwqpx8JWaE0aMlfjvOoYs3U=",
             "type": "github"
         },
-        "version": "659b4b3e16ef1066988233ef2d6ea5ea34e8443b"
+        "version": "3de5fda259f12a7fdefd040173c77114644cc11f"
     },
     "noise-suppression-for-voice": {
         "cargoLocks": null,
@@ -1775,7 +1775,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=",
+            "sha256": "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=",
             "type": "url",
             "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7"
         },

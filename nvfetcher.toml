@@ -246,8 +246,11 @@ src.github_tag = "nginx/njs"
 fetch.github = "nginx/njs"
 
 [ngx_brotli]
-src.git = "https://github.com/google/ngx_brotli.git"
-fetch.github = "google/ngx_brotli"
+# src.git = "https://github.com/google/ngx_brotli.git"
+# fetch.github = "google/ngx_brotli"
+src.git = "https://github.com/u5surf/ngx_brotli.git"
+src.branch = "fix_build_failed"
+fetch.github = "u5surf/ngx_brotli"
 
 [noise-suppression-for-voice]
 src.github = "werman/noise-suppression-for-voice"
