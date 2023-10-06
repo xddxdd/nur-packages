@@ -28,7 +28,11 @@
       channels.nixpkgs = {
         config = {
           allowUnfree = true;
-          # contentAddressedByDefault = true;
+          permittedInsecurePackages = [
+            "electron-19.1.9"
+            "openssl-1.1.1w"
+            "python-2.7.18.7"
+          ];
         };
         input = inputs.nixpkgs;
       };
