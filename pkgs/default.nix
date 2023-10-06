@@ -39,9 +39,11 @@
       "packages"
     ];
 in
-  mkScope (self: pkg: rec {
+  mkScope (self: pkg: let
+    mergePkgs = self.callPackage ../helpers/merge-pkgs.nix {};
+  in {
     # Binary cache information
-    _meta = pkgs.recurseIntoAttrs {
+    _meta = mergePkgs {
       url = "https://xddxdd.cachix.org";
       publicKey = "xddxdd.cachix.org-1:ay1HJyNDYmlSwj5NXQG065C8LfoqqKaTNCyzeixGjf8=";
 
@@ -50,9 +52,9 @@ in
     };
 
     # Package groups
-    asteriskDigiumCodecs = pkgs.recurseIntoAttrs (pkg ./asterisk-digium-codecs {});
+    asteriskDigiumCodecs = mergePkgs (pkg ./asterisk-digium-codecs {});
 
-    lantianCustomized = ifNotCI (pkgs.recurseIntoAttrs {
+    lantianCustomized = ifNotCI (mergePkgs {
       # Packages with significant customization by Lan Tian
       asterisk = pkg ./lantian-customized/asterisk {};
       attic-telnyx-compatible = pkg ./lantian-customized/attic-telnyx-compatible {};
@@ -72,18 +74,18 @@ in
       transmission-with-webui = pkg ./lantian-customized/transmission-with-webui {};
     });
 
-    lantianLinuxXanmod = ifNotCI (pkgs.recurseIntoAttrs (pkg ./lantian-linux-xanmod {}));
-    lantianLinuxXanmodPackages = ifNotCI (pkgs.recurseIntoAttrs (pkg ./lantian-linux-xanmod/packages.nix {}));
+    lantianLinuxXanmod = ifNotCI (mergePkgs (pkg ./lantian-linux-xanmod {}));
+    lantianLinuxXanmodPackages = ifNotCI (mergePkgs (pkg ./lantian-linux-xanmod/packages.nix {}));
 
-    lantianPersonal = ifNotCI (pkgs.recurseIntoAttrs {
+    lantianPersonal = ifNotCI (mergePkgs {
       # Personal packages with no intention to be used by others
       libltnginx = pkg ./lantian-personal/libltnginx {};
     });
 
-    openj9-ibm-semeru = ifNotCI (pkgs.recurseIntoAttrs (pkg ./openj9-ibm-semeru {}));
-    openjdk-adoptium = ifNotCI (pkgs.recurseIntoAttrs (pkg ./openjdk-adoptium {}));
-    plangothic-fonts = pkgs.recurseIntoAttrs (pkg ./plangothic-fonts {});
-    th-fonts = pkgs.recurseIntoAttrs (pkg ./th-fonts {});
+    openj9-ibm-semeru = ifNotCI (mergePkgs (pkg ./openj9-ibm-semeru {}));
+    openjdk-adoptium = ifNotCI (mergePkgs (pkg ./openjdk-adoptium {}));
+    plangothic-fonts = mergePkgs (pkg ./plangothic-fonts {});
+    th-fonts = mergePkgs (pkg ./th-fonts {});
 
     # Other packages
     amule-dlp = pkg ./uncategorized/amule-dlp {};
