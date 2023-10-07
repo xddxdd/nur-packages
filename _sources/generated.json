@@ -638,7 +638,7 @@
     },
     "hoyo-glyphs": {
         "cargoLocks": null,
-        "date": "2023-06-30",
+        "date": "2023-10-06",
         "extract": null,
         "name": "hoyo-glyphs",
         "passthru": null,
@@ -650,11 +650,11 @@
             "name": null,
             "owner": "SpeedyOrc-C",
             "repo": "Hoyo-Glyphs",
-            "rev": "235f46de1815ab385b4d002d2cd6f0985f776f7e",
-            "sha256": "sha256-qY/iZ/tqWvxvDyAnfpdRj+KgXHfC8LdueScphO6OtaQ=",
+            "rev": "9914343c51384e45496522074c6cc6b15394543c",
+            "sha256": "sha256-c4AyuP2eDeJ1rG61BBCIlnDdPe2+DPhLnxIQJW7VVJ4=",
             "type": "github"
         },
-        "version": "235f46de1815ab385b4d002d2cd6f0985f776f7e"
+        "version": "9914343c51384e45496522074c6cc6b15394543c"
     },
     "hoyo-glyphs-star-rail-neue": {
         "cargoLocks": null,
@@ -838,7 +838,7 @@
     },
     "librime-lua": {
         "cargoLocks": null,
-        "date": "2023-10-05",
+        "date": "2023-10-06",
         "extract": null,
         "name": "librime-lua",
         "passthru": null,
@@ -850,11 +850,11 @@
             "name": null,
             "owner": "hchunhui",
             "repo": "librime-lua",
-            "rev": "be8ea3b527602de40813b1313c29fde267a6cc7f",
-            "sha256": "sha256-9pW4d0uk4V4sFc/4kZpLEOWnLRlLDoqB2+ZmNRR7hck=",
+            "rev": "a0e78c446e5842968a96f7e43d6dbd7402a8ff8d",
+            "sha256": "sha256-Ve0oRC5sWpY/IP8GI747Kni1Mirsa44rKuiTe6wOJJ4=",
             "type": "github"
         },
-        "version": "be8ea3b527602de40813b1313c29fde267a6cc7f"
+        "version": "a0e78c446e5842968a96f7e43d6dbd7402a8ff8d"
     },
     "librime-octagram": {
         "cargoLocks": null,
@@ -1390,11 +1390,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-50qbqX/zDu2oIToOzJqQb9/tBqhMYooV91vyIrXjc5o=",
+            "sha256": "sha256-N/+5eenmwzjs3icOHAGBcZ4iubd9rAyOAk2KwShboII=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_amd64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1+b1_amd64.deb"
         },
-        "version": "8.1.1+ds-1"
+        "version": "8.1.1+ds-1+b1"
     },
     "qemu-user-static-arm64": {
         "cargoLocks": null,
@@ -1435,11 +1435,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-knsq8L9nRJSmm6GzF5EDE1t+dkLEVyxakEUZwQStXX4=",
+            "sha256": "sha256-oEAiici4xk3KSsv8Xo+JT5xNySXP8oFc8dRww0gr6uY=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_i386.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1+b1_i386.deb"
         },
-        "version": "8.1.1+ds-1"
+        "version": "8.1.1+ds-1+b1"
     },
     "qq-amd64": {
         "cargoLocks": null,

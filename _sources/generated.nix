@@ -375,15 +375,15 @@
   };
   hoyo-glyphs = {
     pname = "hoyo-glyphs";
-    version = "235f46de1815ab385b4d002d2cd6f0985f776f7e";
+    version = "9914343c51384e45496522074c6cc6b15394543c";
     src = fetchFromGitHub {
       owner = "SpeedyOrc-C";
       repo = "Hoyo-Glyphs";
-      rev = "235f46de1815ab385b4d002d2cd6f0985f776f7e";
+      rev = "9914343c51384e45496522074c6cc6b15394543c";
       fetchSubmodules = false;
-      sha256 = "sha256-qY/iZ/tqWvxvDyAnfpdRj+KgXHfC8LdueScphO6OtaQ=";
+      sha256 = "sha256-c4AyuP2eDeJ1rG61BBCIlnDdPe2+DPhLnxIQJW7VVJ4=";
     };
-    date = "2023-06-30";
+    date = "2023-10-06";
   };
   hoyo-glyphs-star-rail-neue = {
     pname = "hoyo-glyphs-star-rail-neue";
@@ -489,15 +489,15 @@
   };
   librime-lua = {
     pname = "librime-lua";
-    version = "be8ea3b527602de40813b1313c29fde267a6cc7f";
+    version = "a0e78c446e5842968a96f7e43d6dbd7402a8ff8d";
     src = fetchFromGitHub {
       owner = "hchunhui";
       repo = "librime-lua";
-      rev = "be8ea3b527602de40813b1313c29fde267a6cc7f";
+      rev = "a0e78c446e5842968a96f7e43d6dbd7402a8ff8d";
       fetchSubmodules = false;
-      sha256 = "sha256-9pW4d0uk4V4sFc/4kZpLEOWnLRlLDoqB2+ZmNRR7hck=";
+      sha256 = "sha256-Ve0oRC5sWpY/IP8GI747Kni1Mirsa44rKuiTe6wOJJ4=";
     };
-    date = "2023-10-05";
+    date = "2023-10-06";
   };
   librime-octagram = {
     pname = "librime-octagram";
@@ -802,10 +802,10 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.1.1+ds-1";
+    version = "8.1.1+ds-1+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_amd64.deb";
-      sha256 = "sha256-50qbqX/zDu2oIToOzJqQb9/tBqhMYooV91vyIrXjc5o=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1+b1_amd64.deb";
+      sha256 = "sha256-N/+5eenmwzjs3icOHAGBcZ4iubd9rAyOAk2KwShboII=";
     };
   };
   qemu-user-static-arm64 = {
@@ -826,10 +826,10 @@
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.1.1+ds-1";
+    version = "8.1.1+ds-1+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_i386.deb";
-      sha256 = "sha256-knsq8L9nRJSmm6GzF5EDE1t+dkLEVyxakEUZwQStXX4=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1+b1_i386.deb";
+      sha256 = "sha256-oEAiici4xk3KSsv8Xo+JT5xNySXP8oFc8dRww0gr6uY=";
     };
   };
   qq-amd64 = {
