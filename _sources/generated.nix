@@ -114,15 +114,15 @@
   };
   bird-babel-rtt = {
     pname = "bird-babel-rtt";
-    version = "0b28efeace71a2c489b178a12b6aa6ed3e6ed4a4";
+    version = "bcbd53c4966cb59a50aa9d004250e08d10038250";
     src = fetchFromGitHub {
       owner = "NickCao";
       repo = "bird";
-      rev = "0b28efeace71a2c489b178a12b6aa6ed3e6ed4a4";
+      rev = "bcbd53c4966cb59a50aa9d004250e08d10038250";
       fetchSubmodules = false;
-      sha256 = "sha256-qOI7b3Ut4/JjnFOW+Cjt1ypWJdy2g95qizGgEpr6xTc=";
+      sha256 = "sha256-9DxTnftcJ52JTvTWW+V37VQR1aXL0Nt0sHXVcOicrbU=";
     };
-    date = "2023-06-27";
+    date = "2023-10-07";
   };
   bird-lg-go = {
     pname = "bird-lg-go";
@@ -489,15 +489,15 @@
   };
   librime-lua = {
     pname = "librime-lua";
-    version = "a0e78c446e5842968a96f7e43d6dbd7402a8ff8d";
+    version = "757a01445905f89bf58af0d7da8e283c5fbfd973";
     src = fetchFromGitHub {
       owner = "hchunhui";
       repo = "librime-lua";
-      rev = "a0e78c446e5842968a96f7e43d6dbd7402a8ff8d";
+      rev = "757a01445905f89bf58af0d7da8e283c5fbfd973";
       fetchSubmodules = false;
-      sha256 = "sha256-Ve0oRC5sWpY/IP8GI747Kni1Mirsa44rKuiTe6wOJJ4=";
+      sha256 = "sha256-XCNtwcAq8pmzGaPa4CvaE8Cj6tyI6cjsJUGutSinfpA=";
     };
-    date = "2023-10-06";
+    date = "2023-10-07";
   };
   librime-octagram = {
     pname = "librime-octagram";
@@ -810,18 +810,18 @@
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.1.1+ds-1";
+    version = "8.1.1+ds-1+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_arm64.deb";
-      sha256 = "sha256-YSpvhhGU9jum4SgAP0ohccWr98iqnbC9ipZhFHKpn90=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1+b1_arm64.deb";
+      sha256 = "sha256-5PMiWRJJpZNNDj1XGImKQ8ZbohxJ/JmtxooiXhHzaO0=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.1.1+ds-1";
+    version = "8.1.1+ds-1+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1_armhf.deb";
-      sha256 = "sha256-2AHDcw2eq7XKb3g5JEa2Bs1VkjHBYFrLlnVBGtMoqCI=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.1.1+ds-1+b1_armhf.deb";
+      sha256 = "sha256-GqHfHYAap5FcNWQ2Jn9wCfv71cwsXoboLJ9NtQm/S8w=";
     };
   };
   qemu-user-static-i386 = {
