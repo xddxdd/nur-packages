@@ -41,6 +41,7 @@
 in
   mkScope (self: pkg: let
     mergePkgs = self.callPackage ../helpers/merge-pkgs.nix {};
+    error = self.callPackage ../helpers/error.nix {};
   in {
     # Binary cache information
     _meta = mergePkgs {
@@ -93,7 +94,7 @@ in
     baidupcs-go = pkg ./uncategorized/baidupcs-go {};
     bepasty = pkg ./uncategorized/bepasty {};
     bilibili = pkg ./uncategorized/bilibili {};
-    bird-babel-rtt = pkg ./uncategorized/bird-babel-rtt {};
+    bird-babel-rtt = error "bird-babel-rtt" "Babel RTT extension support is in official BIRD 2.14";
     bird-lg-go = pkg ./uncategorized/bird-lg-go {};
     bird-lgproxy-go = pkg ./uncategorized/bird-lgproxy-go {};
     boringssl-oqs = pkg ./uncategorized/boringssl-oqs {};

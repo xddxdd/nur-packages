@@ -189,26 +189,6 @@
         },
         "version": "1.12.1-2"
     },
-    "bird-babel-rtt": {
-        "cargoLocks": null,
-        "date": "2023-10-07",
-        "extract": null,
-        "name": "bird-babel-rtt",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "NickCao",
-            "repo": "bird",
-            "rev": "bcbd53c4966cb59a50aa9d004250e08d10038250",
-            "sha256": "sha256-9DxTnftcJ52JTvTWW+V37VQR1aXL0Nt0sHXVcOicrbU=",
-            "type": "github"
-        },
-        "version": "bcbd53c4966cb59a50aa9d004250e08d10038250"
-    },
     "bird-lg-go": {
         "cargoLocks": null,
         "date": "2023-10-08",
@@ -368,11 +348,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ZO65cSYyNTMoMJj8LbjBcmpf0+M04SFRlVIIrqUB+TE=",
+            "sha256": "sha256-Mu6uJxrydFa1irIdtqLoTXyShxr5VK/NDYIgZF5BeQQ=",
             "type": "url",
-            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.0.50.30831_amd64.deb"
+            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.1.0.30927_amd64.deb"
         },
-        "version": "7.0.50.30831"
+        "version": "7.1.0.30927"
     },
     "douban-openapi-server": {
         "cargoLocks": null,
@@ -1548,7 +1528,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-09-29",
+        "date": "2023-10-09",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -1560,11 +1540,11 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "c2d62e43855c24620b99a87e35b3a3bd74521c6f",
-            "sha256": "sha256-OyDQCfzxHHa2+pd8Chsv/Gfo4pwbrZTxrKkWbLr4FiA=",
+            "rev": "b6655c82fb71892e9c6bf8cdeec369258e38d006",
+            "sha256": "sha256-GIG64ZAyJEFNBSXO3HTWB6ULt1EmTk19lPn4D33wLaI=",
             "type": "github"
         },
-        "version": "c2d62e43855c24620b99a87e35b3a3bd74521c6f"
+        "version": "b6655c82fb71892e9c6bf8cdeec369258e38d006"
     },
     "rime-moegirl": {
         "cargoLocks": null,
@@ -1775,7 +1755,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=",
+            "sha256": "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=",
             "type": "url",
             "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7"
         },

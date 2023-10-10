@@ -112,18 +112,6 @@
       sha256 = "sha256-vYoVHVT/Deooxq/0WVzPebR68N9KBJfgLU30lJPB89M=";
     };
   };
-  bird-babel-rtt = {
-    pname = "bird-babel-rtt";
-    version = "bcbd53c4966cb59a50aa9d004250e08d10038250";
-    src = fetchFromGitHub {
-      owner = "NickCao";
-      repo = "bird";
-      rev = "bcbd53c4966cb59a50aa9d004250e08d10038250";
-      fetchSubmodules = false;
-      sha256 = "sha256-9DxTnftcJ52JTvTWW+V37VQR1aXL0Nt0sHXVcOicrbU=";
-    };
-    date = "2023-10-07";
-  };
   bird-lg-go = {
     pname = "bird-lg-go";
     version = "43b4ad93dd0a84c64a3c24c071c6e328cb5ea91e";
@@ -212,10 +200,10 @@
   };
   dingtalk = {
     pname = "dingtalk";
-    version = "7.0.50.30831";
+    version = "7.1.0.30927";
     src = fetchurl {
-      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.0.50.30831_amd64.deb";
-      sha256 = "sha256-ZO65cSYyNTMoMJj8LbjBcmpf0+M04SFRlVIIrqUB+TE=";
+      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.1.0.30927_amd64.deb";
+      sha256 = "sha256-Mu6uJxrydFa1irIdtqLoTXyShxr5VK/NDYIgZF5BeQQ=";
     };
   };
   douban-openapi-server = {
@@ -894,15 +882,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "c2d62e43855c24620b99a87e35b3a3bd74521c6f";
+    version = "b6655c82fb71892e9c6bf8cdeec369258e38d006";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "c2d62e43855c24620b99a87e35b3a3bd74521c6f";
+      rev = "b6655c82fb71892e9c6bf8cdeec369258e38d006";
       fetchSubmodules = false;
-      sha256 = "sha256-OyDQCfzxHHa2+pd8Chsv/Gfo4pwbrZTxrKkWbLr4FiA=";
+      sha256 = "sha256-GIG64ZAyJEFNBSXO3HTWB6ULt1EmTk19lPn4D33wLaI=";
     };
-    date = "2023-09-29";
+    date = "2023-10-09";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
@@ -1024,7 +1012,7 @@
     version = "3.9.7";
     src = fetchurl {
       url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7";
-      sha256 = "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=";
+      sha256 = "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=";
     };
   };
   xstatic-asciinema-player = {
