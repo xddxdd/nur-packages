@@ -29,6 +29,8 @@
     in
       if lib.hasPrefix "_" n
       then []
+      else if !(builtins.tryEval v).success
+      then []
       else if shouldRecurseForDerivations v
       then packageTraverse path v
       else if lib.isDerivation v
@@ -44,7 +46,13 @@
       else [])
     packageSet;
 
-  packageSets = lib.filterAttrs (n: v: !(lib.hasPrefix "_" n) && (shouldRecurseForDerivations v)) nurPackages;
+  packageSets =
+    lib.filterAttrs
+    (n: v:
+      (builtins.tryEval v).success
+      && !(lib.hasPrefix "_" n)
+      && (shouldRecurseForDerivations v))
+    nurPackages;
 
   packageList = prefix: ps:
     builtins.map
@@ -73,7 +81,13 @@
     </details>
   '';
 
-  uncategorizedOutput = packageSetOutput "(Uncategorized)" "" (lib.filterAttrs (n: lib.isDerivation) nurPackages);
+  uncategorizedOutput =
+    packageSetOutput
+    "(Uncategorized)"
+    ""
+    (lib.filterAttrs
+      (n: v: (builtins.tryEval v).success && lib.isDerivation v)
+      nurPackages);
 
   packageSetsOutput = builtins.concatStringsSep "\n" (lib.mapAttrsToList (n: v: packageSetOutput n n v) packageSets);
 in

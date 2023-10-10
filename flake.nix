@@ -61,6 +61,8 @@
               in
                 if lib.hasPrefix "_" n
                 then []
+                else if !(builtins.tryEval p).success
+                then []
                 else if shouldRecurseForDerivations p
                 then flattenPkgs path p
                 else if isDerivation p && isTargetPlatform p && isBuildable p
