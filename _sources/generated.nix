@@ -513,13 +513,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.5.5-xanmod1";
+    version = "6.5.7-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.5.5-xanmod1";
+      rev = "6.5.7-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-XjSuhZ5ooXOVllKc29Pd+PlOK6OtcgVMVFzxOx5nkIw=";
+      sha256 = "sha256-D4DMyBSaBZXHScmpkC3/fKlDylO1xVSZhar2F5bMjkY=";
     };
   };
   linux-xanmod-6_0 = {
@@ -535,13 +535,13 @@
   };
   linux-xanmod-6_1 = {
     pname = "linux-xanmod-6_1";
-    version = "6.1.55-xanmod1";
+    version = "6.1.57-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.1.55-xanmod1";
+      rev = "6.1.57-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-kmiMbzH1hyteicjk1WfCQPYhLsVAbl1t5LJ83rUNZ1k=";
+      sha256 = "sha256-ZzZj1Ij9L6WtjEJRcOdNtZ18oFRybNPV4uID6umC2Zg=";
     };
   };
   nbfc-linux-lantian = {
@@ -704,15 +704,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "5fd47f991a8a04887d1313d287f7ba5ba5fbaefa";
+    version = "9bb30016e44a84e199074d3bc01463e3db9f2295";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "5fd47f991a8a04887d1313d287f7ba5ba5fbaefa";
+      rev = "9bb30016e44a84e199074d3bc01463e3db9f2295";
       fetchSubmodules = false;
-      sha256 = "sha256-+ypf5C9vSjixPzv+J4/sJmRRYSZBtLt27jGvLghEhg8=";
+      sha256 = "sha256-Itrep5FltIfLMW/Dp4lkPURsidFyZnxNAF225lizBrI=";
     };
-    date = "2023-10-06";
+    date = "2023-10-10";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -768,13 +768,13 @@
   };
   pterodactyl-wings = {
     pname = "pterodactyl-wings";
-    version = "v1.11.7";
+    version = "v1.11.8";
     src = fetchFromGitHub {
       owner = "pterodactyl";
       repo = "wings";
-      rev = "v1.11.7";
+      rev = "v1.11.8";
       fetchSubmodules = false;
-      sha256 = "sha256-MWeUSlJsKNnV/oZotIne3KN3j+fjKNfPJQb+DbhNYLk=";
+      sha256 = "sha256-JzbxROashDAL4NSeqMcWR9PgFqe9peBNpeofA347oE4=";
     };
   };
   qbittorrent-enhanced-edition = {
@@ -822,18 +822,18 @@
   };
   qq-amd64 = {
     pname = "qq-amd64";
-    version = "b69de82d/linuxqq_3.2.1-17153";
+    version = "5b1d2011/linuxqq_3.2.1-17260";
     src = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/b69de82d/linuxqq_3.2.1-17153_amd64.deb";
-      sha256 = "sha256-+GjTjv0K2vnlkb46KhMvRRFWuIEBz23Lg3QhiA7QzkA=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/5b1d2011/linuxqq_3.2.1-17260_amd64.deb";
+      sha256 = "sha256-uRa3jeOdKzGWpdYiFr4LjUXbQcnG/LPVDEeaHDtubD8=";
     };
   };
   qq-arm64 = {
     pname = "qq-arm64";
-    version = "b69de82d/linuxqq_3.2.1-17153";
+    version = "5b1d2011/linuxqq_3.2.1-17260";
     src = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/b69de82d/linuxqq_3.2.1-17153_arm64.deb";
-      sha256 = "sha256-BtmmVpKZF15aU7RRmXl9g5leg2jz5sT4vYXluq9aIYk=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/5b1d2011/linuxqq_3.2.1-17260_arm64.deb";
+      sha256 = "sha256-roRGzbHdVDCr08Hce0Gg49VOl8DBuc66SjN/l5aRBHc=";
     };
   };
   qqmusic = {
