@@ -76,6 +76,7 @@ let
   };
 
   startWechat = writeShellScript "wine-wechat" ''
+    export WINE="${wechatWine}/bin/wine64"
     export WINEARCH="win64"
     export WINEPREFIX="$HOME/.local/share/wine-wechat"
     export WINEDLLOVERRIDES="winemenubuilder.exe=d"
@@ -96,6 +97,7 @@ let
   '';
 
   startWinecfg = writeShellScript "wine-wechat-cfg" ''
+    export WINE="${wechatWine}/bin/wine64"
     export WINEARCH="win64"
     export WINEPREFIX="$HOME/.local/share/wine-wechat"
     export WINEDLLOVERRIDES="winemenubuilder.exe=d"
@@ -121,9 +123,9 @@ in
     phases = ["installPhase"];
     installPhase = ''
       mkdir -p $out/bin
-      ln -s ${startWechat} $out/bin/wine-wechat
-      ln -s ${startWinecfg} $out/bin/wine-wechat-cfg
-      ln -s ${./share} $out/share
+      cp -r ${startWechat} $out/bin/wine-wechat
+      cp -r ${startWinecfg} $out/bin/wine-wechat-cfg
+      cp -r ${./share} $out/share
     '';
 
     meta = with lib; {
