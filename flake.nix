@@ -42,6 +42,8 @@
         inherit (pkgs) system;
 
         isDerivation = p: lib.isAttrs p && p ? type && p.type == "derivation";
+        isIndependentDerivation = p: isDerivation p && p.name != "merged-packages";
+        isHiddenName = n: lib.hasPrefix "_" n || n == "stdenv";
         isTargetPlatform = p: lib.elem system (p.meta.platforms or [system]);
         isBuildable = p: !(p.meta.broken or false) && p.meta.license.free or true;
         shouldRecurseForDerivations = p: lib.isAttrs p && p.recurseForDerivations or false;
@@ -59,13 +61,13 @@
                   then "${prefix}-${n}"
                   else n;
               in
-                if lib.hasPrefix "_" n
+                if isHiddenName n
                 then []
                 else if !(builtins.tryEval p).success
                 then []
                 else if shouldRecurseForDerivations p
                 then flattenPkgs path p
-                else if isDerivation p && isTargetPlatform p && isBuildable p
+                else if isIndependentDerivation p && isTargetPlatform p && isBuildable p
                 then [
                   {
                     name = path;
