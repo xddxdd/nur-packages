@@ -12,10 +12,10 @@
     pkg = import lib/grid_base.nix {
       version = source.guest.version;
       src = extractGridDriver version source;
-      settingsSha256 = sources.guest.settings_hash;
-      settingsVersion = sources.guest.settings_version;
-      persistencedSha256 = sources.guest.persistenced_hash;
-      persistencedVersion = sources.guest.persistenced_version;
+      settingsSha256 = source.guest.settings_hash;
+      settingsVersion = source.guest.settings_version;
+      persistencedSha256 = source.guest.persistenced_hash;
+      persistencedVersion = source.guest.persistenced_version;
     };
   in
     callPackage pkg {kernel = linux;};
@@ -24,10 +24,10 @@
     pkg = import lib/vgpu_base.nix {
       version = source.host.version;
       src = extractVgpuDriver version source;
-      settingsSha256 = sources.host.settings_hash;
-      settingsVersion = sources.host.settings_version;
-      persistencedSha256 = sources.host.persistenced_hash;
-      persistencedVersion = sources.host.persistenced_version;
+      settingsSha256 = source.host.settings_hash;
+      settingsVersion = source.host.settings_version;
+      persistencedSha256 = source.host.persistenced_hash;
+      persistencedVersion = source.host.persistenced_version;
     };
   in
     callPackage pkg {kernel = linux;};
