@@ -82,6 +82,7 @@ in
       libltnginx = pkg ./lantian-personal/libltnginx {};
     });
 
+    nvidia-grid = ifNotCI (mergePkgs (pkg ./nvidia-grid {}));
     openj9-ibm-semeru = ifNotCI (mergePkgs (pkg ./openj9-ibm-semeru {}));
     openjdk-adoptium = ifNotCI (mergePkgs (pkg ./openjdk-adoptium {}));
     plangothic-fonts = mergePkgs (pkg ./plangothic-fonts {});
