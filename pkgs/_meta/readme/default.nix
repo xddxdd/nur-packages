@@ -17,6 +17,9 @@
       "packages"
     ];
 
+  isIndependentDerivation = p: lib.isDerivation p && p.name != "merged-packages";
+  isHiddenName = n: lib.hasPrefix "_" n || n == "stdenv";
+
   shouldRecurseForDerivations = p: lib.isAttrs p && p.recurseForDerivations or false;
 
   packageTraverse = prefix: packageSet:
@@ -27,13 +30,13 @@
         then "${prefix}.${n}"
         else n;
     in
-      if lib.hasPrefix "_" n
+      if isHiddenName n
       then []
       else if !(builtins.tryEval v).success
       then []
       else if shouldRecurseForDerivations v
       then packageTraverse path v
-      else if lib.isDerivation v
+      else if isIndependentDerivation v
       then {
         inherit path;
         pname = v.pname or n;
@@ -50,7 +53,7 @@
     lib.filterAttrs
     (n: v:
       (builtins.tryEval v).success
-      && !(lib.hasPrefix "_" n)
+      && !(isHiddenName n)
       && (shouldRecurseForDerivations v))
     nurPackages;
 
@@ -86,7 +89,7 @@
     "(Uncategorized)"
     ""
     (lib.filterAttrs
-      (n: v: (builtins.tryEval v).success && lib.isDerivation v)
+      (n: v: (builtins.tryEval v).success && isIndependentDerivation v)
       nurPackages);
 
   packageSetsOutput = builtins.concatStringsSep "\n" (lib.mapAttrsToList (n: v: packageSetOutput n n v) packageSets);

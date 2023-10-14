@@ -8,15 +8,17 @@
 let
   packages' = lib.filterAttrs (k: v: lib.isDerivation v) packages;
 in
-stdenv.mkDerivation {
-  pname = "merged-" + lib.concatStringsSep "-" (builtins.attrNames packages');
-  version = "1.0.0";
-  phases = ["installPhase"];
-  installPhase =
-    ''
-      mkdir -p $out
-    ''
-    + lib.concatStringsSep "\n" (lib.mapAttrsToList (k: v: "ln -s ${v} $out/${k}") packages');
+  (stdenv.mkDerivation {
+    name = "merged-packages";
+    phases = ["installPhase"];
+    installPhase =
+      ''
+        mkdir -p $out
+      ''
+      + lib.concatStringsSep "\n" (lib.mapAttrsToList (k: v: "ln -s ${v} $out/${k}") packages');
 
-  passthru = packages;
-}
+    passthru = packages;
+  })
+  // {
+    recurseForDerivations = true;
+  }
