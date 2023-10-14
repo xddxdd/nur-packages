@@ -746,13 +746,13 @@
   };
   phppgadmin = {
     pname = "phppgadmin";
-    version = "v7.14.5-mod";
+    version = "v7.14.6-mod";
     src = fetchFromGitHub {
       owner = "ReimuHakurei";
       repo = "phppgadmin";
-      rev = "v7.14.5-mod";
+      rev = "v7.14.6-mod";
       fetchSubmodules = false;
-      sha256 = "sha256-jp6O29JbQr1OeHCmOa2qAGHE5dIBU47BQA7xv7ypqns=";
+      sha256 = "sha256-VRV0vyBqFHMe3Czrj9v88UGGFwqNv1gnzh+kDoN1ilM=";
     };
   };
   plangothic-fonts = {

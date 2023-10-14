@@ -1295,11 +1295,11 @@
             "name": null,
             "owner": "ReimuHakurei",
             "repo": "phppgadmin",
-            "rev": "v7.14.5-mod",
-            "sha256": "sha256-jp6O29JbQr1OeHCmOa2qAGHE5dIBU47BQA7xv7ypqns=",
+            "rev": "v7.14.6-mod",
+            "sha256": "sha256-VRV0vyBqFHMe3Czrj9v88UGGFwqNv1gnzh+kDoN1ilM=",
             "type": "github"
         },
-        "version": "v7.14.5-mod"
+        "version": "v7.14.6-mod"
     },
     "plangothic-fonts": {
         "cargoLocks": null,
