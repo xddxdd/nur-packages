@@ -882,22 +882,22 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "9155d0d04f866717abcd30933b658d62b8d730cf";
+    version = "649f4935b8f32d06890b0228f3c448b498af5140";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "9155d0d04f866717abcd30933b658d62b8d730cf";
+      rev = "649f4935b8f32d06890b0228f3c448b498af5140";
       fetchSubmodules = false;
-      sha256 = "sha256-wA40SdQZsS5pl7WL2tgWwAP3sdQr1oIxqiZueRa00jA=";
+      sha256 = "sha256-Bb1Kr+KNpAC5BtYME5VSl/Kn0DkljqXqsG4MBWJ2lsU=";
     };
-    date = "2023-10-12";
+    date = "2023-10-14";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
-    version = "20230914";
+    version = "20231014";
     src = fetchurl {
-      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20230914/moegirl.dict.yaml";
-      sha256 = "sha256-f4H0gV4fFNwY1rAUz80u84caRu92a/D1yi9XmpWegy0=";
+      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20231014/moegirl.dict.yaml";
+      sha256 = "sha256-je1mM1s7j4oUNSM6DjOzSIImNp86l2rcUXv0uHhV8i4=";
     };
   };
   rime-zhwiki = {
