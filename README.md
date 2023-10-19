@@ -116,7 +116,7 @@ Or, use variables from this repository in case I change them:
 |  | `konnect` | [konnect](https://github.com/Kopano-dev/konnect) | v0.34.0 | Kopano Konnect implements an OpenID provider (OP) with integrated web login and consent forms. |
 |  | `ldap-auth-proxy` | [ldap-auth-proxy](https://github.com/pinepain/ldap-auth-proxy) | 66a8236af574f554478fe376051b95f61235efc9 | A simple drop-in HTTP proxy for transparent LDAP authentication which is also a HTTP auth backend. |
 |  | `libnftnl-fullcone` | [libnftnl](https://netfilter.org/projects/libnftnl/) | 1.2.6 | A userspace library providing a low-level netlink API to the in-kernel nf_tables subsystem |
-|  | `liboqs` | [liboqs](https://openquantumsafe.org) | b7c623e732720fecf491beccb0a1d3fa54a1a5c1 | C library for prototyping and experimenting with quantum-resistant cryptography |
+|  | `liboqs` | [liboqs](https://openquantumsafe.org) | bac716cc91c53529e3fad88e92ff9dfd19c04577 | C library for prototyping and experimenting with quantum-resistant cryptography |
 |  | `netboot-xyz` | [netboot-xyz](https://netboot.xyz/) | 2.0.72 | Your favorite operating systems in one place. A network-based bootable operating system installer based on iPXE. |
 |  | `netns-exec` | [netns-exec](https://github.com/pekman/netns-exec) | aa346fd058d47b238ae1b86250f414bcab2e7927 | Run command in Linux network namespace as normal user |
 |  | `nftables-fullcone` | [nftables](https://netfilter.org/projects/nftables/) | 1.0.8 | The project that aims to replace the existing {ip,ip6,arp,eb}tables framework |
@@ -596,11 +596,11 @@ Or, use variables from this repository in case I change them:
 </details>
 
 <details>
-<summary>Package set: openjdk-adoptium (82 packages)</summary>
+<summary>Package set: openjdk-adoptium (84 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
-|  | `openjdk-adoptium.jdk-bin-11` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 11.0.20.1_1_adopt | OpenJDK binaries built by Eclipse Adoptium |
+|  | `openjdk-adoptium.jdk-bin-11` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 11.0.21_9_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-11_0_12_7` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 11.0.12_7_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-11_0_13_8` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 11.0.13_8_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-11_0_14_1_1` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 11.0.14.1_1_adopt | OpenJDK binaries built by Eclipse Adoptium |
@@ -613,6 +613,7 @@ Or, use variables from this repository in case I change them:
 |  | `openjdk-adoptium.jdk-bin-11_0_19_7` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 11.0.19_7_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-11_0_20_1_1` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 11.0.20.1_1_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-11_0_20_8` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 11.0.20_8_adopt | OpenJDK binaries built by Eclipse Adoptium |
+|  | `openjdk-adoptium.jdk-bin-11_0_21_9` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 11.0.21_9_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-16` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 16.0.2_7_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-16_0_2_7` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 16.0.2_7_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-17` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 17.0.8.1_1_adopt | OpenJDK binaries built by Eclipse Adoptium |
@@ -643,7 +644,7 @@ Or, use variables from this repository in case I change them:
 |  | `openjdk-adoptium.jdk-bin-8u362_b09` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 8u362-b09_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-8u372_b07` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 8u372-b07_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jdk-bin-8u382_b05` | [openjdk-adoptium-jdk-bin](https://adoptium.net/) | 8u382-b05_adopt | OpenJDK binaries built by Eclipse Adoptium |
-|  | `openjdk-adoptium.jre-bin-11` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 11.0.20.1_1_adopt | OpenJDK binaries built by Eclipse Adoptium |
+|  | `openjdk-adoptium.jre-bin-11` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 11.0.21_9_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jre-bin-11_0_12_7` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 11.0.12_7_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jre-bin-11_0_13_8` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 11.0.13_8_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jre-bin-11_0_14_1_1` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 11.0.14.1_1_adopt | OpenJDK binaries built by Eclipse Adoptium |
@@ -656,6 +657,7 @@ Or, use variables from this repository in case I change them:
 |  | `openjdk-adoptium.jre-bin-11_0_19_7` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 11.0.19_7_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jre-bin-11_0_20_1_1` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 11.0.20.1_1_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jre-bin-11_0_20_8` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 11.0.20_8_adopt | OpenJDK binaries built by Eclipse Adoptium |
+|  | `openjdk-adoptium.jre-bin-11_0_21_9` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 11.0.21_9_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jre-bin-17` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 17.0.8.1_1_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jre-bin-17_0_1_12` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 17.0.1_12_adopt | OpenJDK binaries built by Eclipse Adoptium |
 |  | `openjdk-adoptium.jre-bin-17_0_2_8` | [openjdk-adoptium-jre-bin](https://adoptium.net/) | 17.0.2_8_adopt | OpenJDK binaries built by Eclipse Adoptium |
