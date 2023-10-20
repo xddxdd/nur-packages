@@ -348,11 +348,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-3koQaL2ttYktO9uZOVoq/6xu3beEszxNJQ0dydEEMvk=",
+            "sha256": "sha256-wlu1h3YB5yO6BlDVmc9FTDQ9iIC8A97HenK4y/bhupA=",
             "type": "url",
-            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.1.0.31011_amd64.deb"
+            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.1.0.31017_amd64.deb"
         },
-        "version": "7.1.0.31011"
+        "version": "7.1.0.31017"
     },
     "douban-openapi-server": {
         "cargoLocks": null,
@@ -1208,7 +1208,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2023-10-16",
+        "date": "2023-10-19",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1220,11 +1220,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "afd36e7761bdcb8e88846c6239c5ed9506525dc9",
-            "sha256": "sha256-kFaejcGYe8Kes8bGn3fv1Yxwap7dOQGFnFpKtwxwHbI=",
+            "rev": "39fdbfe9593607bc7f4a9fee9dee0ab322cf21de",
+            "sha256": "sha256-FdPH7YNTNgDHvYyKaqir55XZV89VYkR/SAbgrI3+sf8=",
             "type": "github"
         },
-        "version": "afd36e7761bdcb8e88846c6239c5ed9506525dc9"
+        "version": "39fdbfe9593607bc7f4a9fee9dee0ab322cf21de"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -1528,7 +1528,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-10-18",
+        "date": "2023-10-19",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -1540,11 +1540,11 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "4539dcb86602982476bd60c68c3a6763812123ac",
-            "sha256": "sha256-puGkZLxE6OVDrejD2JcY9ezjc1OvaA+NpHTW2ySgSVE=",
+            "rev": "764a0f180ee2fb9a06a37cbb2f62a30677507053",
+            "sha256": "sha256-zs0SFufWUOeCMfKExdfuL5NXLaxewXfJ4mBOS0mVFao=",
             "type": "github"
         },
-        "version": "4539dcb86602982476bd60c68c3a6763812123ac"
+        "version": "764a0f180ee2fb9a06a37cbb2f62a30677507053"
     },
     "rime-moegirl": {
         "cargoLocks": null,

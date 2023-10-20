@@ -200,10 +200,10 @@
   };
   dingtalk = {
     pname = "dingtalk";
-    version = "7.1.0.31011";
+    version = "7.1.0.31017";
     src = fetchurl {
-      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.1.0.31011_amd64.deb";
-      sha256 = "sha256-3koQaL2ttYktO9uZOVoq/6xu3beEszxNJQ0dydEEMvk=";
+      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.1.0.31017_amd64.deb";
+      sha256 = "sha256-wlu1h3YB5yO6BlDVmc9FTDQ9iIC8A97HenK4y/bhupA=";
     };
   };
   douban-openapi-server = {
@@ -704,15 +704,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "afd36e7761bdcb8e88846c6239c5ed9506525dc9";
+    version = "39fdbfe9593607bc7f4a9fee9dee0ab322cf21de";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "afd36e7761bdcb8e88846c6239c5ed9506525dc9";
+      rev = "39fdbfe9593607bc7f4a9fee9dee0ab322cf21de";
       fetchSubmodules = false;
-      sha256 = "sha256-kFaejcGYe8Kes8bGn3fv1Yxwap7dOQGFnFpKtwxwHbI=";
+      sha256 = "sha256-FdPH7YNTNgDHvYyKaqir55XZV89VYkR/SAbgrI3+sf8=";
     };
-    date = "2023-10-16";
+    date = "2023-10-19";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -882,15 +882,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "4539dcb86602982476bd60c68c3a6763812123ac";
+    version = "764a0f180ee2fb9a06a37cbb2f62a30677507053";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "4539dcb86602982476bd60c68c3a6763812123ac";
+      rev = "764a0f180ee2fb9a06a37cbb2f62a30677507053";
       fetchSubmodules = false;
-      sha256 = "sha256-puGkZLxE6OVDrejD2JcY9ezjc1OvaA+NpHTW2ySgSVE=";
+      sha256 = "sha256-zs0SFufWUOeCMfKExdfuL5NXLaxewXfJ4mBOS0mVFao=";
     };
-    date = "2023-10-18";
+    date = "2023-10-19";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
