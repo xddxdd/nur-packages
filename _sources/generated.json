@@ -890,11 +890,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.5.7-xanmod1",
-            "sha256": "sha256-D4DMyBSaBZXHScmpkC3/fKlDylO1xVSZhar2F5bMjkY=",
+            "rev": "6.5.8-xanmod1",
+            "sha256": "sha256-lHi+O7RE6YdiqPmuxHajGkc7jS9F5cB89+JbTVKkB/c=",
             "type": "github"
         },
-        "version": "6.5.7-xanmod1"
+        "version": "6.5.8-xanmod1"
     },
     "linux-xanmod-6_0": {
         "cargoLocks": null,
@@ -930,11 +930,11 @@
             "name": null,
             "owner": "xanmod",
             "repo": "linux",
-            "rev": "6.1.58-xanmod1",
-            "sha256": "sha256-Lnp1CSh1jLbIkEx9hLfxhdIA12iQZmywhOec9uZ7UjI=",
+            "rev": "6.1.59-xanmod1",
+            "sha256": "sha256-pBe9yeXNYSaN3c0XJSLdNJ1qidl5nsOMIiAqiYWlnDs=",
             "type": "github"
         },
-        "version": "6.1.58-xanmod1"
+        "version": "6.1.59-xanmod1"
     },
     "nbfc-linux-lantian": {
         "cargoLocks": null,
@@ -1208,7 +1208,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2023-10-19",
+        "date": "2023-10-21",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1220,11 +1220,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "39fdbfe9593607bc7f4a9fee9dee0ab322cf21de",
-            "sha256": "sha256-FdPH7YNTNgDHvYyKaqir55XZV89VYkR/SAbgrI3+sf8=",
+            "rev": "b32dfe2be5eb8cd506838777a8c83cff5bb15545",
+            "sha256": "sha256-gt3UfwZwp+vvpDLJoaUDOQKDhCoM/Lm3Dx7HcUuln1M=",
             "type": "github"
         },
-        "version": "39fdbfe9593607bc7f4a9fee9dee0ab322cf21de"
+        "version": "b32dfe2be5eb8cd506838777a8c83cff5bb15545"
     },
     "osdlyrics": {
         "cargoLocks": null,
