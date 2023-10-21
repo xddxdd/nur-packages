@@ -45,7 +45,7 @@ src.git = "https://github.com/xddxdd/bird-lg-go.git"
 fetch.github = "xddxdd/bird-lg-go"
 
 [boringssl-oqs]
-src.github = "open-quantum-safe/boringssl"
+src.git = "https://github.com/open-quantum-safe/boringssl.git"
 fetch.github = "open-quantum-safe/boringssl"
 
 [calibre-cops]

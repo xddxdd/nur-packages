@@ -211,7 +211,7 @@
     },
     "boringssl-oqs": {
         "cargoLocks": null,
-        "date": null,
+        "date": "2023-07-04",
         "extract": null,
         "name": "boringssl-oqs",
         "passthru": null,
@@ -223,11 +223,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "boringssl",
-            "rev": "OQS-BoringSSL-snapshot-2023-06",
-            "sha256": "sha256-km8QTjtetAA8pYqxkdUyWUotDXZC3+6J9vL1PHWlU7w=",
+            "rev": "1ca41b49e9198f510991fb4f350b4a5fd4c1d5ff",
+            "sha256": "sha256-hXxamoRftHyU5ATPNsQpQhDDa6ghBypEwQbZpeMPyZk=",
             "type": "github"
         },
-        "version": "OQS-BoringSSL-snapshot-2023-06"
+        "version": "1ca41b49e9198f510991fb4f350b4a5fd4c1d5ff"
     },
     "calibre-cops": {
         "cargoLocks": null,
@@ -1755,7 +1755,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=",
+            "sha256": "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=",
             "type": "url",
             "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7"
         },

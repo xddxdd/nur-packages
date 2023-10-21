@@ -126,14 +126,15 @@
   };
   boringssl-oqs = {
     pname = "boringssl-oqs";
-    version = "OQS-BoringSSL-snapshot-2023-06";
+    version = "1ca41b49e9198f510991fb4f350b4a5fd4c1d5ff";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "boringssl";
-      rev = "OQS-BoringSSL-snapshot-2023-06";
+      rev = "1ca41b49e9198f510991fb4f350b4a5fd4c1d5ff";
       fetchSubmodules = false;
-      sha256 = "sha256-km8QTjtetAA8pYqxkdUyWUotDXZC3+6J9vL1PHWlU7w=";
+      sha256 = "sha256-hXxamoRftHyU5ATPNsQpQhDDa6ghBypEwQbZpeMPyZk=";
     };
+    date = "2023-07-04";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -1012,7 +1013,7 @@
     version = "3.9.7";
     src = fetchurl {
       url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7";
-      sha256 = "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=";
+      sha256 = "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=";
     };
   };
   xstatic-asciinema-player = {
