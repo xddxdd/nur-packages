@@ -141,6 +141,7 @@ in
     noise-suppression-for-voice = pkg ./uncategorized/noise-suppression-for-voice {};
     nullfs = pkg ./uncategorized/nullfs {};
     nvlax = pkg ./uncategorized/nvlax {};
+    nvlax-530 = pkg ./uncategorized/nvlax/nvidia-530.nix {};
     oci-arm-host-capacity = pkg ./uncategorized/oci-arm-host-capacity {};
     onepush = pkg ./uncategorized/onepush {};
     openssl-oqs = pkg ./uncategorized/openssl-oqs {cryptodev = pkgs.linuxPackages.cryptodev;};
