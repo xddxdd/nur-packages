@@ -83,7 +83,7 @@ with lib; let
 
     meta = with lib; {
       homepage = "https://www.nvidia.com/object/unix.html";
-      description = "X.org driver and kernel module for NVIDIA graphics cards";
+      description = "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)";
       license = licenses.unfreeRedistributable;
       platforms = ["x86_64-linux"];
     };

@@ -32,25 +32,11 @@
   in
     callPackage pkg {kernel = linux;};
 in {
-  gridSrc = mergePkgs (lib.mapAttrs'
-    (k: v:
-      lib.nameValuePair
-      (builtins.replaceStrings ["."] ["_"] k)
-      (extractGridDriver k v))
-    sources);
-
   grid = mergePkgs (lib.mapAttrs'
     (k: v:
       lib.nameValuePair
       (builtins.replaceStrings ["."] ["_"] k)
       (gridDriver k v))
-    sources);
-
-  vgpuSrc = mergePkgs (lib.mapAttrs'
-    (k: v:
-      lib.nameValuePair
-      (builtins.replaceStrings ["."] ["_"] k)
-      (extractVgpuDriver k v))
     sources);
 
   vgpu = mergePkgs (lib.mapAttrs'
