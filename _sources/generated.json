@@ -191,7 +191,7 @@
     },
     "bird-lg-go": {
         "cargoLocks": null,
-        "date": "2023-10-08",
+        "date": "2023-10-21",
         "extract": null,
         "name": "bird-lg-go",
         "passthru": null,
@@ -203,11 +203,11 @@
             "name": null,
             "owner": "xddxdd",
             "repo": "bird-lg-go",
-            "rev": "43b4ad93dd0a84c64a3c24c071c6e328cb5ea91e",
-            "sha256": "sha256-agFAalbvd2L/oA1DMOyJ4NGTsPi647miLL7nREY7WIA=",
+            "rev": "27c348a86409cf8106d138a0b7b6d73e39e8e410",
+            "sha256": "sha256-8+E75v4obMjwmCl2FifCYYTq/KmH/ueM/Mzhy3csuFs=",
             "type": "github"
         },
-        "version": "43b4ad93dd0a84c64a3c24c071c6e328cb5ea91e"
+        "version": "27c348a86409cf8106d138a0b7b6d73e39e8e410"
     },
     "boringssl-oqs": {
         "cargoLocks": null,
@@ -965,11 +965,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9iuCFz+eRXU+QBhC3fnTTtKU+ka1FOTMbkEYnSb4BVE=",
+            "sha256": "sha256-f3IO5Sh/ROuP2ob7AI5UAxa2Tt4tK7oDXrl3/YDRqdU=",
             "type": "url",
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.72/netboot.xyz.efi"
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.73/netboot.xyz.efi"
         },
-        "version": "2.0.72"
+        "version": "2.0.73"
     },
     "netboot-xyz-lkrn": {
         "cargoLocks": null,
@@ -980,11 +980,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-oNyqRzKhzI9yD8JyR2yEcGrapDHclfRtiO5y24vwaS8=",
+            "sha256": "sha256-QL9LTU2qbcHud/qn1pbPJGZqlaqbbt32A5x0XBsQTWs=",
             "type": "url",
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.72/netboot.xyz.lkrn"
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.73/netboot.xyz.lkrn"
         },
-        "version": "2.0.72"
+        "version": "2.0.73"
     },
     "netns-exec": {
         "cargoLocks": null,
@@ -1220,11 +1220,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "b32dfe2be5eb8cd506838777a8c83cff5bb15545",
-            "sha256": "sha256-gt3UfwZwp+vvpDLJoaUDOQKDhCoM/Lm3Dx7HcUuln1M=",
+            "rev": "270d423057930bd8cb9df613b5f7fe23caf17c8b",
+            "sha256": "sha256-uocLoV8hlR87ntVH5w+g/i26kjX7+WP5p67Zc8rQVJc=",
             "type": "github"
         },
-        "version": "b32dfe2be5eb8cd506838777a8c83cff5bb15545"
+        "version": "270d423057930bd8cb9df613b5f7fe23caf17c8b"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -1528,7 +1528,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2023-10-19",
+        "date": "2023-10-22",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -1540,11 +1540,11 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "764a0f180ee2fb9a06a37cbb2f62a30677507053",
-            "sha256": "sha256-zs0SFufWUOeCMfKExdfuL5NXLaxewXfJ4mBOS0mVFao=",
+            "rev": "94311677252f7353943f2fa80dfc28e065a3b611",
+            "sha256": "sha256-8HGT+Z4C+YiKwrWEQG6mTUJ7dpgzzyjyCyrFnR7RsF8=",
             "type": "github"
         },
-        "version": "764a0f180ee2fb9a06a37cbb2f62a30677507053"
+        "version": "94311677252f7353943f2fa80dfc28e065a3b611"
     },
     "rime-moegirl": {
         "cargoLocks": null,
@@ -1755,7 +1755,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=",
+            "sha256": "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=",
             "type": "url",
             "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7"
         },

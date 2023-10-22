@@ -114,15 +114,15 @@
   };
   bird-lg-go = {
     pname = "bird-lg-go";
-    version = "43b4ad93dd0a84c64a3c24c071c6e328cb5ea91e";
+    version = "27c348a86409cf8106d138a0b7b6d73e39e8e410";
     src = fetchFromGitHub {
       owner = "xddxdd";
       repo = "bird-lg-go";
-      rev = "43b4ad93dd0a84c64a3c24c071c6e328cb5ea91e";
+      rev = "27c348a86409cf8106d138a0b7b6d73e39e8e410";
       fetchSubmodules = false;
-      sha256 = "sha256-agFAalbvd2L/oA1DMOyJ4NGTsPi647miLL7nREY7WIA=";
+      sha256 = "sha256-8+E75v4obMjwmCl2FifCYYTq/KmH/ueM/Mzhy3csuFs=";
     };
-    date = "2023-10-08";
+    date = "2023-10-21";
   };
   boringssl-oqs = {
     pname = "boringssl-oqs";
@@ -559,18 +559,18 @@
   };
   netboot-xyz-efi = {
     pname = "netboot-xyz-efi";
-    version = "2.0.72";
+    version = "2.0.73";
     src = fetchurl {
-      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.72/netboot.xyz.efi";
-      sha256 = "sha256-9iuCFz+eRXU+QBhC3fnTTtKU+ka1FOTMbkEYnSb4BVE=";
+      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.73/netboot.xyz.efi";
+      sha256 = "sha256-f3IO5Sh/ROuP2ob7AI5UAxa2Tt4tK7oDXrl3/YDRqdU=";
     };
   };
   netboot-xyz-lkrn = {
     pname = "netboot-xyz-lkrn";
-    version = "2.0.72";
+    version = "2.0.73";
     src = fetchurl {
-      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.72/netboot.xyz.lkrn";
-      sha256 = "sha256-oNyqRzKhzI9yD8JyR2yEcGrapDHclfRtiO5y24vwaS8=";
+      url = "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.73/netboot.xyz.lkrn";
+      sha256 = "sha256-QL9LTU2qbcHud/qn1pbPJGZqlaqbbt32A5x0XBsQTWs=";
     };
   };
   netns-exec = {
@@ -705,13 +705,13 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "b32dfe2be5eb8cd506838777a8c83cff5bb15545";
+    version = "270d423057930bd8cb9df613b5f7fe23caf17c8b";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "b32dfe2be5eb8cd506838777a8c83cff5bb15545";
+      rev = "270d423057930bd8cb9df613b5f7fe23caf17c8b";
       fetchSubmodules = false;
-      sha256 = "sha256-gt3UfwZwp+vvpDLJoaUDOQKDhCoM/Lm3Dx7HcUuln1M=";
+      sha256 = "sha256-uocLoV8hlR87ntVH5w+g/i26kjX7+WP5p67Zc8rQVJc=";
     };
     date = "2023-10-21";
   };
@@ -883,15 +883,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "764a0f180ee2fb9a06a37cbb2f62a30677507053";
+    version = "94311677252f7353943f2fa80dfc28e065a3b611";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "764a0f180ee2fb9a06a37cbb2f62a30677507053";
+      rev = "94311677252f7353943f2fa80dfc28e065a3b611";
       fetchSubmodules = false;
-      sha256 = "sha256-zs0SFufWUOeCMfKExdfuL5NXLaxewXfJ4mBOS0mVFao=";
+      sha256 = "sha256-8HGT+Z4C+YiKwrWEQG6mTUJ7dpgzzyjyCyrFnR7RsF8=";
     };
-    date = "2023-10-19";
+    date = "2023-10-22";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
@@ -1013,7 +1013,7 @@
     version = "3.9.7";
     src = fetchurl {
       url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7";
-      sha256 = "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=";
+      sha256 = "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=";
     };
   };
   xstatic-asciinema-player = {
