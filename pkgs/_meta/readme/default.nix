@@ -39,7 +39,7 @@
       else if isIndependentDerivation v
       then {
         inherit path;
-        pname = v.pname or n;
+        pname = v.pname or v.name or n;
         version = v.version or "";
         description = v.meta.description or "";
         broken = v.meta.broken or false;
