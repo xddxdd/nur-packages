@@ -400,21 +400,21 @@
   };
   kata-containers = {
     pname = "kata-containers";
-    version = "3.1.3";
+    version = "3.2.0";
     src = fetchFromGitHub {
       owner = "kata-containers";
       repo = "kata-containers";
-      rev = "3.1.3";
+      rev = "3.2.0";
       fetchSubmodules = false;
-      sha256 = "sha256-nzXLqnNrYHZSbu+PX0x7GlleeAfCRGvirj7GGcvdaRU=";
+      sha256 = "sha256-zEKuEjw8a5hRNULNSkozjuHT6+hcbuTIbVPPImy/TsQ=";
     };
   };
   kata-image = {
     pname = "kata-image";
-    version = "3.1.3";
+    version = "3.2.0";
     src = fetchurl {
-      url = "https://github.com/kata-containers/kata-containers/releases/download/3.1.3/kata-static-3.1.3-x86_64.tar.xz";
-      sha256 = "sha256-JmyQYiLIW2eGfeo8m9tYxtoLZWvjop+eC+0ifJOfPyY=";
+      url = "https://github.com/kata-containers/kata-containers/releases/download/3.2.0/kata-static-3.2.0-amd64.tar.xz";
+      sha256 = "sha256-IbuEhKBgRQ1lIvKb7X2I13PChSB3TqosUitvR/0SxKE=";
     };
   };
   konnect = {
@@ -1013,7 +1013,7 @@
     version = "3.9.7";
     src = fetchurl {
       url = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe?v=3.9.7";
-      sha256 = "sha256-vx8KeQE7HyU+9HpgbiCrY2yugKiqQsOrTwHwtAiTpdA=";
+      sha256 = "sha256-esiCE8KzxfHzjnhzUKc+1UWMF/Fhz6mxuono0H/6GHI=";
     };
   };
   xstatic-asciinema-player = {

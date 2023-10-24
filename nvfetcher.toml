@@ -160,7 +160,7 @@ fetch.github = "kata-containers/kata-containers"
 
 [kata-image]
 src.github = "kata-containers/kata-containers"
-fetch.url = "https://github.com/kata-containers/kata-containers/releases/download/$ver/kata-static-$ver-x86_64.tar.xz"
+fetch.url = "https://github.com/kata-containers/kata-containers/releases/download/$ver/kata-static-$ver-amd64.tar.xz"
 
 [konnect]
 src.github_tag = "Kopano-dev/konnect"
