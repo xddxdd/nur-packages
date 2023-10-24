@@ -34,6 +34,7 @@ jobs:
       - name: Install nix
         uses: cachix/install-nix-action@v23
         with:
+          nix_path: nixpkgs=channel:nixos-unstable
           extra_nix_config: |
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
@@ -71,6 +72,7 @@ jobs:
       - name: Install nix
         uses: cachix/install-nix-action@v23
         with:
+          nix_path: nixpkgs=channel:nixos-unstable
           extra_nix_config: |
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
