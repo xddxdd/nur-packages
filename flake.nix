@@ -78,18 +78,17 @@
               s));
 
         outputsOf = p: map (o: p.${o}) p.outputs;
-
-        NurCiPackages = import ./pkgs {
-          inherit inputs pkgs;
-          ci = true;
-        };
       in rec {
-        packages = import ./pkgs {
+        packages = import ./pkgs null {
           inherit inputs pkgs;
-          ci = false;
         };
 
-        ciPackages = builtins.listToAttrs (flattenPkgs "" NurCiPackages);
+        ciPackages =
+          builtins.listToAttrs
+          (flattenPkgs ""
+            (import ./pkgs "ci" {
+              inherit inputs pkgs;
+            }));
 
         ciExports = lib.mapAttrsToList (_: outputsOf) ciPackages;
 
@@ -125,6 +124,18 @@
               ${readme}
             '';
 
+            nur-check = ''
+              set -euo pipefail
+              TMPDIR=$(mktemp -d)
+              FLAKEDIR=$(pwd)
+
+              git clone --depth=1 https://github.com/nix-community/NUR.git "$TMPDIR"
+              cd "$TMPDIR"
+              bin/nur eval "$FLAKEDIR"
+              cd "$FLAKEDIR"
+              rm -rf "$TMPDIR"
+            '';
+
             readme = ''
               set -euo pipefail
               nix build .#_meta.readme
@@ -148,7 +159,7 @@
       overlay = self.overlays.default;
       overlays = {
         default = final: prev:
-          import ./pkgs {
+          import ./pkgs null {
             pkgs = prev;
             inherit inputs;
           };

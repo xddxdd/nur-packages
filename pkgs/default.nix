@@ -5,22 +5,26 @@
 # Having pkgs default to <nixpkgs> is fine though, and it lets you use short
 # commands such as:
 #     nix-build -A mypackage
-{
+# mode:
+# - null: Default mode
+# - "ci": from Garnix CI
+# - "nur": from NUR bot
+mode: {
   pkgs ? import <nixpkgs> {},
   inputs ? null,
-  ci ? false,
   ...
 }: let
   inherit (pkgs) lib;
 
   ifNotCI = p:
-    if ci
+    if mode == "ci"
     then null
     else p;
-  ifFlakes = p:
-    if inputs != null
-    then p
-    else null;
+
+  ifNotNUR = p:
+    if mode == "nur"
+    then null
+    else p;
 
   mkScope = f:
     builtins.removeAttrs
@@ -40,7 +44,10 @@
     ];
 in
   mkScope (self: pkg: let
-    mergePkgs = self.callPackage ../helpers/merge-pkgs.nix {};
+    # Wrapper will greatly increase NUR evaluation time. Disable on NUR to stay within 15s time limit.
+    mergePkgs = self.callPackage ../helpers/merge-pkgs.nix {
+      enableWrapper = mode != "nur";
+    };
   in {
     # Binary cache information
     _meta = mergePkgs {
@@ -57,7 +64,7 @@ in
     lantianCustomized = ifNotCI (mergePkgs {
       # Packages with significant customization by Lan Tian
       asterisk = pkg ./lantian-customized/asterisk {};
-      attic-telnyx-compatible = pkg ./lantian-customized/attic-telnyx-compatible {};
+      attic-telnyx-compatible = ifNotNUR (pkg ./lantian-customized/attic-telnyx-compatible {});
       coredns = pkg ./lantian-customized/coredns {};
       librime-with-plugins = pkg ./lantian-customized/librime-with-plugins {};
 
