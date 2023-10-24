@@ -59,7 +59,7 @@ in
     };
 
     # Package groups
-    asteriskDigiumCodecs = mergePkgs (pkg ./asterisk-digium-codecs {});
+    asteriskDigiumCodecs = mergePkgs (pkg ./asterisk-digium-codecs {inherit mergePkgs;});
 
     lantianCustomized = ifNotCI (mergePkgs {
       # Packages with significant customization by Lan Tian
@@ -89,7 +89,7 @@ in
       libltnginx = pkg ./lantian-personal/libltnginx {};
     });
 
-    nvidia-grid = ifNotCI (mergePkgs (pkg ./nvidia-grid {}));
+    nvidia-grid = ifNotCI (mergePkgs (pkg ./nvidia-grid {inherit mergePkgs;}));
     openj9-ibm-semeru = ifNotCI (mergePkgs (pkg ./openj9-ibm-semeru {}));
     openjdk-adoptium = ifNotCI (mergePkgs (pkg ./openjdk-adoptium {}));
     plangothic-fonts = mergePkgs (pkg ./plangothic-fonts {});
