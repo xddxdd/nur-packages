@@ -182,7 +182,7 @@ in
     wechat-uos = pkg ./uncategorized/wechat-uos {};
     wechat-uos-bin = pkg ./uncategorized/wechat-uos/official-bin.nix {};
     wine-wechat = lib.makeOverridable pkg ./uncategorized/wine-wechat {};
-    wine-wechat-x86 = lib.makeOverridable pkg ./uncategorized/wine-wechat/x86.nix {};
+    wine-wechat-x86 = lib.makeOverridable pkg ./uncategorized/wine-wechat-x86 {};
     xstatic-asciinema-player = pkg ./uncategorized/xstatic-asciinema-player {};
     xstatic-font-awesome = pkg ./uncategorized/xstatic-font-awesome {};
   })
