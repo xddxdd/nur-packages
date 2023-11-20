@@ -84,7 +84,9 @@
 
             nvfetcher = ''
               set -euo pipefail
-              [ -f "$HOME/Secrets/nvfetcher.toml" ] && KEY_FLAG="-k $HOME/Secrets/nvfetcher.toml" || KEY_FLAG=""
+              KEY_FLAG=""
+              [ -f "$HOME/Secrets/nvfetcher.toml" ] && KEY_FLAG="$KEY_FLAG -k $HOME/Secrets/nvfetcher.toml"
+              [ -f "secrets.toml" ] && KEY_FLAG="$KEY_FLAG -k secrets.toml"
               export PATH=${pkgs.nix-prefetch-scripts}/bin:$PATH
               ${inputs.nvfetcher.packages."${system}".default}/bin/nvfetcher $KEY_FLAG -c nvfetcher.toml -o _sources "$@"
               ${readme}
