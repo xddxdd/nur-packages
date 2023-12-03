@@ -64,8 +64,9 @@ jobs:
       - name: Build nix packages
         run: |
           nix flake update
-          mkdir tmpdir
-          env TMPDIR=$(pwd)/tmpdir nix run .#ci -- ${{ matrix.system }}
+          sudo mkdir -p /nix/tmpdir
+          sudo chown $(whoami) /nix/tmpdir
+          env TMPDIR=/nix/tmpdir nix run .#ci -- ${{ matrix.system }}
 
   test-nur-eval:
     strategy:
