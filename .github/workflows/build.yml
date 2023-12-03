@@ -23,6 +23,17 @@ jobs:
     env:
       GIT_SSL_NO_VERIFY: 'true'
     steps:
+      - name: Maximize build space
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 512
+          swap-size-mb: 1024
+          build-mount-path: '/nix'
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Set up QEMU
