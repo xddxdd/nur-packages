@@ -65,6 +65,7 @@ jobs:
         run: |
           nix flake update
           sudo mkdir -p /nix/tmpdir
+          sudo chown ${whoami} /nix/tmpdir
           env TMPDIR=/nix/tmpdir nix run .#ci -- ${{ matrix.system }}
 
   test-nur-eval:
