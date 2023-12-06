@@ -161,6 +161,7 @@ in
     pterodactyl-wings = pkg ./uncategorized/pterodactyl-wings {};
     qbittorrent-enhanced-edition = pkg ./uncategorized/qbittorrent-enhanced-edition {};
     qbittorrent-enhanced-edition-nox = pkg ./uncategorized/qbittorrent-enhanced-edition/nox.nix {};
+    libqcef = pkg ./uncategorized/libqcef {};
     qemu-user-static = pkg ./uncategorized/qemu-user-static {};
     qq = pkg ./uncategorized/qq {};
     qqmusic = pkg ./uncategorized/qqmusic {};

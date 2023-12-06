@@ -9,27 +9,24 @@
   at-spi2-atk,
   cairo,
   cups,
-  dbus,
   gdk-pixbuf,
+  glib,
   gnome,
   gnome2,
   gtk2,
-  icu60,
   libjpeg8,
   libpulseaudio,
   libvlc,
-  libxkbcommon,
   nspr,
   nss,
   openssl_1_1,
   pango,
   pciutils,
+  libqcef,
   qt5,
-  sqlite,
   taglib,
   udev,
   xorg,
-  zlib,
   ...
 } @ args:
 # Modified from:
@@ -41,22 +38,23 @@ let
     at-spi2-atk
     cairo
     cups
-    dbus
     gdk-pixbuf
+    glib
     gnome.gnome-themes-extra
     gnome2.GConf
     gtk2
-    icu60
     libjpeg8
     libpulseaudio
     libvlc
-    libxkbcommon
     nspr
     nss
     openssl_1_1
     pango
     pciutils
-    sqlite
+    libqcef
+    qt5.qtbase
+    qt5.qtwebengine
+    qt5.qtx11extras
     taglib
     udev
     xorg.libXcomposite
@@ -69,11 +67,6 @@ let
     xorg.libXrender
     xorg.libXScrnSaver
     xorg.libXtst
-    xorg.xcbutilimage
-    xorg.xcbutilkeysyms
-    xorg.xcbutilrenderutil
-    xorg.xcbutilwm
-    zlib
   ];
 in
   stdenv.mkDerivation rec {
@@ -97,22 +90,12 @@ in
       mkdir -p $out/bin
       cp -r opt/netease/netease-cloud-music/netease-cloud-music $out/bin/
 
-      mkdir -p $out/lib
-      cp -r opt/netease/netease-cloud-music/libs/libdouble-conversion* $out/lib/
-      cp -r opt/netease/netease-cloud-music/libs/libQt5* $out/lib/
-      cp -r opt/netease/netease-cloud-music/libs/libqcef* $out/lib/
-      cp -r opt/netease/netease-cloud-music/libs/qcef* $out/lib/
-      cp -r opt/netease/netease-cloud-music/plugins $out/lib/plugins
-
       mkdir -p $out/share
       cp -r usr/share/* $out/share/
 
       wrapProgram $out/bin/netease-cloud-music \
-        --set QT_PLUGIN_PATH "$out/lib/plugins" \
-        --set QT_QPA_PLATFORM_PLUGIN_PATH "$out/lib/plugins/platforms" \
-        --set QCEF_INSTALL_PATH "$out/lib/qcef" \
+        --set QCEF_INSTALL_PATH "${libqcef}/lib/qcef" \
         --set QT_QPA_PLATFORM xcb \
-        --set QT_XKB_CONFIG_ROOT "${xorg.xkeyboardconfig}/share/X11/xkb" \
         --set XDG_SESSION_TYPE x11 \
         --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath libraries}" \
         --add-flags "--ignore-certificate-errors"
