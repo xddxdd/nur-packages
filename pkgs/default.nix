@@ -143,6 +143,7 @@ in
     libnftnl-fullcone = pkg ./uncategorized/libnftnl-fullcone {};
     liboqs = pkg ./uncategorized/liboqs {};
     netboot-xyz = pkg ./uncategorized/netboot-xyz {};
+    netease-cloud-music = pkg ./uncategorized/netease-cloud-music {};
     netns-exec = pkg ./uncategorized/netns-exec {};
     nftables-fullcone = pkg ./uncategorized/nftables-fullcone {};
     noise-suppression-for-voice = pkg ./uncategorized/noise-suppression-for-voice {};
