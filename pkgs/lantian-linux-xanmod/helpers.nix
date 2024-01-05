@@ -88,31 +88,32 @@
       })
       (builtins.attrNames (builtins.readDir patchDir));
 
-    patchesFromCachyOS = let
+    combinedPatchFromCachyOS = let
       splitted = lib.splitString "-" version;
       ver0 = builtins.elemAt splitted 0;
       major = lib.versions.pad 2 ver0;
       cachyDir = sources.cachyos-kernel-patches.src + "/${major}";
-    in
-      builtins.map
-      (n: {
-        inherit n;
-        patch = cachyDir + "/${n}";
-      })
-      (builtins.filter
-        (
-          v:
-            lib.hasSuffix ".patch" v
+    in rec {
+      name = "cachyos-patches-combined.patch";
+      patch = pkgs.runCommandNoCC name {} ''
+        for F in ${cachyDir}/*.patch; do
+          case "$F" in
             # AMD pref core patch conflicts with me disabling AMD pstate for VMs
-            && !lib.hasInfix "amd-pref-core.patch" v
+            *amd-pref-core.patch) continue;;
+
             # BBRv2/BBRv3 is already included in Xanmod
-            && !lib.hasInfix "bbr2.patch" v
-            && !lib.hasInfix "bbr3.patch" v
+            *bbr2.patch) continue;;
+            *bbr3.patch) continue;;
+
             # Patches that conflict with Xanmod
-            && !lib.hasInfix "cachy.patch" v
-            && !lib.hasInfix "clr.patch" v
-        )
-        (builtins.attrNames (builtins.readDir cachyDir)));
+            *cachy.patch) continue;;
+            *clr.patch) continue;;
+          esac
+
+          cat "$F" >> $out
+        done
+      '';
+    };
   in
     lib.nameValuePair name (buildLinux {
       inherit lib;
@@ -154,7 +155,32 @@
           pkgs.kernelPatches.request_key_helper
         ]
         ++ patchesInPatchDir
-        ++ lib.optionals (lib.versionAtLeast version "6.1") patchesFromCachyOS;
+        ++ lib.optional (lib.versionAtLeast version "6.1") combinedPatchFromCachyOS;
+
+      postPatch = let
+        splitted = lib.splitString "-" version;
+        ver0 = builtins.elemAt splitted 0;
+        major = lib.versions.pad 2 ver0;
+        cachyDir = sources.cachyos-kernel-patches.src + "/${major}";
+      in
+        lib.optionalString (lib.versionAtLeast version "6.1") ''
+          for F in ${cachyDir}/*.patch; do
+            case "$F" in
+              # AMD pref core patch conflicts with me disabling AMD pstate for VMs
+              *amd-pref-core.patch) continue;;
+
+              # BBRv2/BBRv3 is already included in Xanmod
+              *bbr2.patch) continue;;
+              *bbr3.patch) continue;;
+
+              # Patches that conflict with Xanmod
+              *cachy.patch) continue;;
+              *clr.patch) continue;;
+            esac
+
+            patch -p1 -N < "$F"
+          done
+        '';
 
       extraMeta = {
         description = "Linux Xanmod Kernel with Lan Tian Modifications" + lib.optionalString lto " and Clang+ThinLTO";
