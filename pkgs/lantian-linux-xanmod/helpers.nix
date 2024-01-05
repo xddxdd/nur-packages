@@ -99,15 +99,17 @@
         for F in ${cachyDir}/*.patch; do
           case "$F" in
             # AMD pref core patch conflicts with me disabling AMD pstate for VMs
-            *amd-pref-core.patch) continue;;
+            *-amd-pref-core.patch) continue;;
 
-            # BBRv2/BBRv3 is already included in Xanmod
-            *bbr2.patch) continue;;
-            *bbr3.patch) continue;;
+            # Patches already included in Xanmod
+            *-bbr2.patch) continue;;
+            *-bbr3.patch) continue;;
+            *-futex-winesync.patch) continue;;
 
             # Patches that conflict with Xanmod
-            *cachy.patch) continue;;
-            *clr.patch) continue;;
+            *-cachy.patch) continue;;
+            *-clr.patch) continue;;
+            *-mm-*.patch) continue;;
           esac
 
           cat "$F" >> $out
@@ -153,9 +155,9 @@
         [
           pkgs.kernelPatches.bridge_stp_helper
           pkgs.kernelPatches.request_key_helper
+          combinedPatchFromCachyOS
         ]
-        ++ patchesInPatchDir
-        ++ lib.optional (lib.versionAtLeast version "6.1") combinedPatchFromCachyOS;
+        ++ patchesInPatchDir;
 
       extraMeta = {
         description = "Linux Xanmod Kernel with Lan Tian Modifications" + lib.optionalString lto " and Clang+ThinLTO";
