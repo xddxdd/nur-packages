@@ -167,10 +167,10 @@ index 765e7ff..d4f5463 100644
  };
  
 diff --git a/src/http/ngx_http_parse.c b/src/http/ngx_http_parse.c
-index d4f2dae..6888b65 100644
+index d4f2dae..193ac48 100644
 --- a/src/http/ngx_http_parse.c
 +++ b/src/http/ngx_http_parse.c
-@@ -815,6 +815,206 @@ done:
+@@ -815,6 +815,207 @@ done:
  }
  
  
@@ -253,9 +253,10 @@ index d4f2dae..6888b65 100644
 +            case '+':
 +                r->plus_in_uri = 1;
 +                break;
-+            case '\0':
-+                return NGX_HTTP_PARSE_INVALID_REQUEST;
 +            default:
++                if (ch < 0x20 || ch == 0x7f) {
++                    return NGX_HTTP_PARSE_INVALID_REQUEST;
++                }
 +                state = sw_check_uri;
 +                break;
 +            }
@@ -378,175 +379,83 @@ index d4f2dae..6888b65 100644
  ngx_http_parse_header_line(ngx_http_request_t *r, ngx_buf_t *b,
      ngx_uint_t allow_underscores)
 diff --git a/src/http/ngx_http_request.c b/src/http/ngx_http_request.c
-index bd2be5e..e18f357 100644
+index bd2be5e..a424696 100644
 --- a/src/http/ngx_http_request.c
 +++ b/src/http/ngx_http_request.c
-@@ -15,6 +15,12 @@ static ngx_http_request_t *ngx_http_alloc_request(ngx_connection_t *c);
+@@ -15,6 +15,11 @@ static ngx_http_request_t *ngx_http_alloc_request(ngx_connection_t *c);
  static void ngx_http_process_request_line(ngx_event_t *rev);
  static void ngx_http_process_request_headers(ngx_event_t *rev);
  static ssize_t ngx_http_read_request_header(ngx_http_request_t *r);
 +
 +#if (NGX_HTTP_PLAIN)
-+static void ngx_http_plain_wait_request_handler(ngx_event_t *ev);
 +static void ngx_http_plain_process_request_line(ngx_event_t *rev);
 +#endif
 +
  static ngx_int_t ngx_http_alloc_large_header_buffer(ngx_http_request_t *r,
      ngx_uint_t request_line);
  
-@@ -486,6 +492,11 @@ ngx_http_wait_request_handler(ngx_event_t *rev)
-         }
+@@ -420,6 +425,16 @@ ngx_http_wait_request_handler(ngx_event_t *rev)
+         b->end = b->last + size;
      }
  
 +#if (NGX_HTTP_PLAIN)
 +    if (hc->addr_conf->plain) {
-+        rev->handler = ngx_http_plain_wait_request_handler;
++        /* inject a slash at request beginning */
++        if (b->last == b->start) {
++            *b->start = '/';
++            b->last++;
++        }
 +    }
 +#endif
- #if (NGX_HTTP_V2)
++
+     size = b->end - b->last;
  
-     h2scf = ngx_http_get_module_srv_conf(hc->conf_ctx, ngx_http_v2_module);
-@@ -524,6 +535,139 @@ ngx_http_wait_request_handler(ngx_event_t *rev)
- }
- 
+     n = c->recv(c, b->last, size);
+@@ -468,6 +483,13 @@ ngx_http_wait_request_handler(ngx_event_t *rev)
+     if (hc->proxy_protocol) {
+         hc->proxy_protocol = 0;
  
 +#if (NGX_HTTP_PLAIN)
-+static void
-+ngx_http_plain_wait_request_handler(ngx_event_t *rev)
-+{
-+    u_char                    *p;
-+    size_t                     size;
-+    ssize_t                    n;
-+    ngx_buf_t                 *b;
-+    ngx_connection_t          *c;
-+    ngx_http_connection_t     *hc;
-+    ngx_http_core_srv_conf_t  *cscf;
-+
-+    c = rev->data;
-+
-+    ngx_log_debug0(NGX_LOG_DEBUG_HTTP, c->log, 0, "http plain wait request handler");
-+
-+    if (rev->timedout) {
-+        ngx_log_error(NGX_LOG_INFO, c->log, NGX_ETIMEDOUT, "client timed out");
-+        ngx_http_close_connection(c);
-+        return;
-+    }
-+
-+    if (c->close) {
-+        ngx_http_close_connection(c);
-+        return;
-+    }
-+
-+    hc = c->data;
-+    cscf = ngx_http_get_module_srv_conf(hc->conf_ctx, ngx_http_core_module);
-+
-+    size = cscf->client_header_buffer_size;
-+
-+    b = c->buffer;
-+
-+    if (b == NULL) {
-+        b = ngx_create_temp_buf(c->pool, size);
-+        if (b == NULL) {
-+            ngx_http_close_connection(c);
-+            return;
++        if (hc->addr_conf->plain) {
++            /* the first byte is our injected slash, skip it */
++            b->pos++;
 +        }
-+
-+        c->buffer = b;
-+
-+    } else if (b->start == NULL) {
-+
-+        b->start = ngx_palloc(c->pool, size);
-+        if (b->start == NULL) {
-+            ngx_http_close_connection(c);
-+            return;
-+        }
-+
-+        b->pos = b->start;
-+        b->last = b->start;
-+        b->end = b->last + size;
-+    }
-+
-+    /* inject a slash at request beginning */
-+    if (b->last == b->start) {
-+        *b->start = '/';
-+        b->last++;
-+    }
-+
-+    n = c->recv(c, b->last, size);
-+
-+    if (n == NGX_AGAIN) {
-+
-+        if (!rev->timer_set) {
-+            ngx_add_timer(rev, cscf->client_header_timeout);
-+            ngx_reusable_connection(c, 1);
-+        }
-+
-+        if (ngx_handle_read_event(rev, 0) != NGX_OK) {
-+            ngx_http_close_connection(c);
-+            return;
-+        }
-+
-+        /*
-+         * We are trying to not hold c->buffer's memory for an idle connection.
-+         */
-+
-+        if (ngx_pfree(c->pool, b->start) == NGX_OK) {
-+            b->start = NULL;
-+        }
-+
-+        return;
-+    }
-+
-+    if (n == NGX_ERROR) {
-+        ngx_http_close_connection(c);
-+        return;
-+    }
-+
-+    if (n == 0) {
-+        ngx_log_error(NGX_LOG_INFO, c->log, 0,
-+                      "client closed connection");
-+        ngx_http_close_connection(c);
-+        return;
-+    }
-+
-+    b->last += n;
-+
-+    if (hc->proxy_protocol) {
-+        hc->proxy_protocol = 0;
-+
-+        /* the first byte is our injected slash, skip it */
-+        p = ngx_proxy_protocol_read(c, b->pos + 1, b->last);
-+
-+        if (p == NULL) {
-+            ngx_http_close_connection(c);
-+            return;
-+        }
-+
-+        /* re-inject the slash */
-+        b->pos = p - 1;
-+        *b->pos = '/';
-+    }
-+
-+    c->log->action = "reading client request line";
-+
-+    ngx_reusable_connection(c, 0);
-+
-+    c->data = ngx_http_create_request(c);
-+    if (c->data == NULL) {
-+        ngx_http_close_connection(c);
-+        return;
-+    }
-+
-+    rev->handler = ngx_http_plain_process_request_line;
-+    ngx_http_plain_process_request_line(rev);
-+}
 +#endif
 +
+         p = ngx_proxy_protocol_read(c, b->pos, b->last);
+ 
+         if (p == NULL) {
+@@ -477,6 +499,14 @@ ngx_http_wait_request_handler(ngx_event_t *rev)
+ 
+         b->pos = p;
+ 
++#if (NGX_HTTP_PLAIN)
++        if (hc->addr_conf->plain) {
++            /* re-inject the slash */
++            b->pos = p - 1;
++            *b->pos = '/';
++        }
++#endif
 +
- ngx_http_request_t *
- ngx_http_create_request(ngx_connection_t *c)
- {
-@@ -3574,6 +3718,110 @@ ngx_http_request_empty_handler(ngx_http_request_t *r)
+         if (b->pos == b->last) {
+             c->log->action = "waiting for request";
+             b->pos = b->start;
+@@ -519,6 +549,14 @@ ngx_http_wait_request_handler(ngx_event_t *rev)
+         return;
+     }
+ 
++#if (NGX_HTTP_PLAIN)
++    if (hc->addr_conf->plain) {
++        rev->handler = ngx_http_plain_process_request_line;
++        ngx_http_plain_process_request_line(rev);
++        return;
++    }
++#endif
++
+     rev->handler = ngx_http_process_request_line;
+     ngx_http_process_request_line(rev);
+ }
+@@ -3574,6 +3612,110 @@ ngx_http_request_empty_handler(ngx_http_request_t *r)
  }
  
  
