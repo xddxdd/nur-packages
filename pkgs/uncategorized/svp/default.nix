@@ -124,7 +124,7 @@ let
     Terminal=false
     StartupNotify=true
     Exec=${fhs}/bin/SVPManager %f
-    Icon=svp-manager4.png
+    Icon=svp-manager4
   '';
 in
   stdenv.mkDerivation {
