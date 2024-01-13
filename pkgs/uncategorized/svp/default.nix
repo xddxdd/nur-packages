@@ -51,6 +51,7 @@ let
     gnome.zenity
     libmediainfo
     libsForQt5.qtbase
+    libsForQt5.qtwayland
     libsForQt5.qtdeclarative
     libsForQt5.qtscript
     libsForQt5.qtsvg
