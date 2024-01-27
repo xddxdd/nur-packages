@@ -29,7 +29,7 @@ let
     dontUnpack = true;
     installPhase = ''
       mkdir -p $out
-      tar xf ${src} -C $out
+      tar xf $src -C $out
     '';
   };
 
