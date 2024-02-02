@@ -74,7 +74,7 @@
             '';
 
             garnix = ''
-              nix eval --raw .#garnixConfig > garnix.yaml
+              nix eval --raw .#garnixConfig | ${pkgs.jq}/bin/jq > garnix.yaml
             '';
 
             nvfetcher = ''
