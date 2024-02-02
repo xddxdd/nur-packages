@@ -45,6 +45,7 @@
 
         isBuildable = p:
           !(p.meta.broken or false)
+          && !(p.preferLocalBuild or false)
           && (
             if (p.meta.platforms or []) != []
             then builtins.elem "${system}" p.meta.platforms
