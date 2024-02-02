@@ -47,11 +47,7 @@
           (p != null)
           && !(p.meta.broken or false)
           && !(p.preferLocalBuild or false)
-          && (
-            if (p.meta.platforms or []) != []
-            then builtins.elem system p.meta.platforms
-            else true
-          );
+          && (lib.elem system (p.meta.platforms or [system]));
         outputsOf = p: map (o: p.${o}) p.outputs;
 
         ciPackages = import ./pkgs "ci" {
