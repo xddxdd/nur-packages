@@ -42,12 +42,8 @@
         pkgs = channels.nixpkgs;
         inherit (pkgs) system;
         inherit (pkgs.callPackage ./helpers/flatten-pkgs.nix {}) flattenPkgs;
+        inherit (pkgs.callPackage ./helpers/is-buildable.nix {}) isBuildable;
 
-        isBuildable = p:
-          (p != null)
-          && !(p.meta.broken or false)
-          && !(p.preferLocalBuild or false)
-          && (lib.elem system (p.meta.platforms or [system]));
         outputsOf = p: map (o: p.${o}) p.outputs;
 
         ciPackages = import ./pkgs "ci" {
