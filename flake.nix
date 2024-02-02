@@ -44,11 +44,12 @@
         inherit (pkgs.callPackage ./helpers/flatten-pkgs.nix {}) flattenPkgs;
 
         isBuildable = p:
-          !(p.meta.broken or false)
+          (p != null)
+          && !(p.meta.broken or false)
           && !(p.preferLocalBuild or false)
           && (
             if (p.meta.platforms or []) != []
-            then builtins.elem "${system}" p.meta.platforms
+            then builtins.elem system p.meta.platforms
             else true
           );
         outputsOf = p: map (o: p.${o}) p.outputs;
@@ -60,12 +61,6 @@
         ciPackageNames = lib.mapAttrsToList (k: v: k) (lib.filterAttrs (_: isBuildable) ciPackages);
         ciPackageNamesFlattened = lib.mapAttrsToList (k: v: k) (lib.filterAttrs (_: isBuildable) ciPackagesFlattened);
         ciOutputs = lib.mapAttrsToList (_: outputsOf) (lib.filterAttrs (_: isBuildable) ciPackagesFlattened);
-
-        garnixConfigFile = pkgs.writeText "garnix.yaml" (builtins.toJSON {
-          builds.include =
-            (builtins.map (p: "packages.x86_64-linux.${p}") self.ciPackageNames.x86_64-linux)
-            ++ (builtins.map (p: "packages.aarch64-linux.${p}") self.ciPackageNames.aarch64-linux);
-        });
 
         commands =
           lib.mapAttrs
@@ -87,7 +82,7 @@
             '';
 
             garnix = ''
-              cat ${garnixConfigFile} > garnix.yaml
+              nix eval --raw .#garnixConfig > garnix.yaml
             '';
 
             nvfetcher = ''
@@ -162,6 +157,12 @@
         devShells.default = pkgs.mkShell {
           buildInputs = lib.mapAttrsToList (n: v: v) commands;
         };
+      };
+
+      garnixConfig = builtins.toJSON {
+        builds.include =
+          (builtins.map (p: "packages.x86_64-linux.${p}") self.ciPackageNames.x86_64-linux)
+          ++ (builtins.map (p: "packages.aarch64-linux.${p}") self.ciPackageNames.aarch64-linux);
       };
 
       overlay = self.overlays.default;
