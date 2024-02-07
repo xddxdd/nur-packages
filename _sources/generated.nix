@@ -832,6 +832,14 @@
       sha256 = "sha256-d2CK+OSkMxmAt8qogCyG/J841JI9qG+3xM8TVoWe96Q=";
     };
   };
+  procps4 = {
+    pname = "procps4";
+    version = "4.0.4";
+    src = fetchTarball {
+      url = "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.4.tar.xz/download";
+      sha256 = "sha256-yLgFtuTPv9667ExZLukxPl59rv/YABRISRMvGQEEbpw=";
+    };
+  };
   pterodactyl-wings = {
     pname = "pterodactyl-wings";
     version = "v1.11.8";
@@ -1062,6 +1070,17 @@
       rev = "v0.3.0";
       fetchSubmodules = false;
       sha256 = "sha256-YRn14rF94zSTnFAIRuvw84GDRBaqmns9nvaHCTjhWQg=";
+    };
+  };
+  uksmd = {
+    pname = "uksmd";
+    version = "v1.2.9";
+    src = fetchFromGitHub {
+      owner = "CachyOS";
+      repo = "uksmd";
+      rev = "v1.2.9";
+      fetchSubmodules = false;
+      sha256 = "sha256-sRQzGBtJuoOwO7aNzwiA7VOfeIGjvXR+tM9pr208Cm0=";
     };
   };
   undetected-chromedriver = {

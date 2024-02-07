@@ -1436,6 +1436,20 @@
         },
         "version": "V1.8.5757"
     },
+    "procps4": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "procps4",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-yLgFtuTPv9667ExZLukxPl59rv/YABRISRMvGQEEbpw=",
+            "type": "tarball",
+            "url": "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.4.tar.xz/download"
+        },
+        "version": "4.0.4"
+    },
     "pterodactyl-wings": {
         "cargoLocks": null,
         "date": null,
@@ -1845,6 +1859,26 @@
             "type": "github"
         },
         "version": "v0.3.0"
+    },
+    "uksmd": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "uksmd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "CachyOS",
+            "repo": "uksmd",
+            "rev": "v1.2.9",
+            "sha256": "sha256-sRQzGBtJuoOwO7aNzwiA7VOfeIGjvXR+tM9pr208Cm0=",
+            "type": "github"
+        },
+        "version": "v1.2.9"
     },
     "undetected-chromedriver": {
         "cargoLocks": null,
