@@ -1444,9 +1444,10 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-yLgFtuTPv9667ExZLukxPl59rv/YABRISRMvGQEEbpw=",
-            "type": "tarball",
-            "url": "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.4.tar.xz/download"
+            "name": null,
+            "sha256": "sha256-IocNb+skeK22F85PCaeHrdry0mDFqKp7F9iJqWLF5C4=",
+            "type": "url",
+            "url": "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.4.tar.xz"
         },
         "version": "4.0.4"
     },

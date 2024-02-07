@@ -327,7 +327,7 @@ fetch.github = "Fitzgerald-Porthmouth-Koenigsegg/Plangothic"
 
 [procps4]
 src.archpkg = "procps-ng"
-fetch.tarball = "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-$ver.tar.xz/download"
+fetch.url = "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-$ver.tar.xz"
 
 [pterodactyl-wings]
 src.github = "pterodactyl/wings"

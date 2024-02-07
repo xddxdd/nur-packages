@@ -835,9 +835,9 @@
   procps4 = {
     pname = "procps4";
     version = "4.0.4";
-    src = fetchTarball {
-      url = "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.4.tar.xz/download";
-      sha256 = "sha256-yLgFtuTPv9667ExZLukxPl59rv/YABRISRMvGQEEbpw=";
+    src = fetchurl {
+      url = "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.4.tar.xz";
+      sha256 = "sha256-IocNb+skeK22F85PCaeHrdry0mDFqKp7F9iJqWLF5C4=";
     };
   };
   pterodactyl-wings = {
