@@ -11,7 +11,6 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [pkg-config];
   buildInputs = [ncurses];
 
-  # makeFlags = ["usrbin_execdir=$(out)/bin"];
   configureFlags = ["--disable-modern-top"];
 
   meta = with lib; {
