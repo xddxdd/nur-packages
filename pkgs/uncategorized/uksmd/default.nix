@@ -17,8 +17,9 @@ stdenv.mkDerivation rec {
   buildInputs = [procps4 libcap_ng systemd];
 
   postPatch = ''
-    sed -i "/uksmd.service/d" meson.build
+    sed -i "s#install_dir: systemd_system_unit_dir#install_dir: '$out/lib/systemd/system'#g" meson.build
     sed -i "s#/usr/bin#$out/bin#g" meson.build
+    sed -i "s#/usr/bin#$out/bin#g" uksmd.service
   '';
 
   meta = with lib; {
