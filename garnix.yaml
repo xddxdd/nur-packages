@@ -37,7 +37,6 @@
       "packages.aarch64-linux.kata-image",
       "packages.aarch64-linux.kata-runtime",
       "packages.aarch64-linux.konnect",
-      "packages.aarch64-linux.lantianLinuxXanmod",
       "packages.aarch64-linux.ldap-auth-proxy",
       "packages.aarch64-linux.libnftnl-fullcone",
       "packages.aarch64-linux.liboqs",

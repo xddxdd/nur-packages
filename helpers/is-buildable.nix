@@ -5,13 +5,11 @@
   ...
 }: let
   flattenPkgs = callPackage ./flatten-pkgs.nix {};
-  inherit (flattenPkgs) isDerivation isPlatform;
+  inherit (flattenPkgs) isDerivation isTargetPlatform;
 in rec {
-  isBuildable = isBuildableOnPlatform system;
-
-  isBuildableOnPlatform = platform: p:
+  isBuildable = p:
     (isDerivation p)
     && !(p.meta.broken or false)
     && !(p.preferLocalBuild or false)
-    && (isPlatform platform p);
+    && (isTargetPlatform p);
 }
