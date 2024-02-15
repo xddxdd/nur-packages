@@ -18,44 +18,24 @@
       "packages"
     ];
 
-  inherit
-    (callPackage ../../../helpers/flatten-pkgs.nix {})
-    isIndependentDerivation
-    isHiddenName
-    shouldRecurseForDerivations
-    flattenPkgs'
-    isPlatform
-    ;
+  inherit (callPackage ../../../helpers/is-buildable.nix {}) isBuildableOnPlatform;
 
-  packageSets =
-    lib.filterAttrs
-    (n: v:
-      (builtins.tryEval v).success
-      && !(isHiddenName n)
-      && (shouldRecurseForDerivations v))
-    nurPackages;
+  platforms = ["x86_64-linux" "aarch64-linux"];
 
-  packageList = prefix: ps: (lib.mapAttrsToList (n: v:
-    (lib.optionals (isPlatform "x86_64-linux" v) [
-      "packages.x86_64-linux.${n}"
-    ])
-    ++ (lib.optionals (isPlatform "aarch64-linux" v) [
-      "packages.aarch64-linux.${n}"
-    ])) (flattenPkgs' prefix "." ps));
-
-  uncategorizedOutput =
-    packageList
-    ""
-    (lib.filterAttrs
-      (n: v: (builtins.tryEval v).success && isIndependentDerivation v)
-      nurPackages);
-
-  packageSetsOutput = lib.mapAttrsToList (n: v: packageList n v) packageSets;
+  packageNames =
+    lib.genAttrs
+    platforms
+    (platform: builtins.attrNames (lib.filterAttrs (_: isBuildableOnPlatform platform) nurPackages));
 in
   writeTextFile rec {
     name = "garnix.yaml";
     text = builtins.toJSON {
-      builds.include = lib.naturalSort (lib.flatten (uncategorizedOutput ++ packageSetsOutput));
+      builds.include =
+        lib.naturalSort
+        (lib.flatten
+          (builtins.map
+            (platform: (builtins.map (p: "packages.${platform}.${p}") packageNames."${platform}"))
+            platforms));
     };
     derivationArgs.passthru.text = text;
     meta = {

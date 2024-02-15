@@ -50,8 +50,6 @@
           inherit inputs pkgs;
         };
         ciPackagesFlattened = flattenPkgs ciPackages;
-        ciPackageNames = lib.mapAttrsToList (k: v: k) (lib.filterAttrs (_: isBuildable) ciPackages);
-        ciPackageNamesFlattened = lib.mapAttrsToList (k: v: k) (lib.filterAttrs (_: isBuildable) ciPackagesFlattened);
         ciOutputs = lib.mapAttrsToList (_: outputsOf) (lib.filterAttrs (_: isBuildable) ciPackagesFlattened);
 
         commands =
@@ -138,23 +136,17 @@
         packages = import ./pkgs null {
           inherit inputs pkgs;
         };
-        packageNames = lib.mapAttrsToList (k: v: k) (flattenPkgs packages);
+        packageNames = builtins.attrNames (flattenPkgs packages);
 
-        inherit ciPackages ciPackagesFlattened ciPackageNames ciPackageNamesFlattened ciOutputs;
+        inherit ciPackages ciOutputs;
 
         formatter = pkgs.alejandra;
 
         apps = lib.mapAttrs (n: v: flake-utils.lib.mkApp {drv = v;}) commands;
 
         devShells.default = pkgs.mkShell {
-          buildInputs = lib.mapAttrsToList (n: v: v) commands;
+          buildInputs = builtins.attrValues commands;
         };
-      };
-
-      garnixConfig = builtins.toJSON {
-        builds.include =
-          (builtins.map (p: "packages.x86_64-linux.${p}") self.ciPackageNames.x86_64-linux)
-          ++ (builtins.map (p: "packages.aarch64-linux.${p}") self.ciPackageNames.aarch64-linux);
       };
 
       overlay = self.overlays.default;
