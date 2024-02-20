@@ -81,7 +81,7 @@ in
       transmission-with-webui = pkg ./lantian-customized/transmission-with-webui {};
     };
 
-    lantianLinuxXanmod = mergePkgs (pkg ./lantian-linux-xanmod {});
+    lantianLinuxXanmod = ifNotCI (mergePkgs (pkg ./lantian-linux-xanmod {}));
     lantianLinuxXanmodPackages = ifNotCI (mergePkgs (pkg ./lantian-linux-xanmod/packages.nix {}));
 
     lantianPersonal = ifNotCI (mergePkgs {
