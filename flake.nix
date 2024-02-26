@@ -93,7 +93,8 @@
 
         readme = ''
           set -euo pipefail
-          nix eval --raw .#readme.${system} > README.md
+          nix build .#_meta.readme
+          cat result > README.md
           ${garnix}
         '';
 
@@ -134,6 +135,22 @@
       apps = lib.mapAttrs (n: v: flake-utils.lib.mkApp {drv = pkgs.writeShellScriptBin n v;}) commands;
 
       devShells.default = makeAppsShell apps;
+
+      nixosConfigurations = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules =
+          (builtins.attrValues self.nixosModules)
+          ++ [
+            {
+              # Minimal config to make test configuration build
+              boot.loader.grub.devices = ["/dev/vda"];
+              fileSystems."/" = {
+                device = "tmpfs";
+                fsType = "tmpfs";
+              };
+            }
+          ];
+      };
     }))
     // {
       garnixConfig = builtins.toJSON {
