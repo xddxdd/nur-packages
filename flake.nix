@@ -155,11 +155,12 @@
     // {
       garnixConfig = builtins.toJSON {
         builds.include =
-          lib.naturalSort
-          (lib.flatten
-            (builtins.map
-              (platform: (builtins.map (p: "packages.${platform}.${p}") (builtins.attrNames (self.ciPackages."${platform}"))))
-              supportedSystems));
+          (lib.naturalSort
+            (lib.flatten
+              (builtins.map
+                (platform: (builtins.map (p: "packages.${platform}.${p}") (builtins.attrNames (self.ciPackages."${platform}"))))
+                supportedSystems)))
+          ++ ["nixosConfigurations.*"];
       };
 
       overlay = self.overlays.default;
