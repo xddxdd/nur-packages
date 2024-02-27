@@ -109,6 +109,7 @@
             # Patches that conflict with Xanmod
             *-cachy.patch) continue;;
             *-clr.patch) continue;;
+            *-fixes.patch) continue;;
             *-mm-*.patch) continue;;
           esac
 
