@@ -47,7 +47,7 @@
         git clone --depth=1 https://github.com/nix-community/NUR.git "$TMPDIR"
         cd "$TMPDIR"
 
-        cp ${./repos.json} repos.json
+        cp ${../repos.json} repos.json
         rm -f repos.json.lock
 
         bin/nur update
