@@ -96,6 +96,7 @@ mkScope (
     nft-fullcone = pkg ./kernel-modules/nft-fullcone { };
     nullfsvfs = pkg ./kernel-modules/nullfsvfs { };
     ovpn-dco = pkg ./kernel-modules/ovpn-dco { };
+    r8168 = pkg ./kernel-modules/r8168 { };
 
     # Other packages
     amule-dlp = pkg ./uncategorized/amule-dlp { };
