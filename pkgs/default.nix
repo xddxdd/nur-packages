@@ -96,6 +96,7 @@ mkScope (
     nft-fullcone = pkg ./kernel-modules/nft-fullcone { };
     nullfsvfs = pkg ./kernel-modules/nullfsvfs { };
     ovpn-dco = pkg ./kernel-modules/ovpn-dco { };
+    r8125 = pkg ./kernel-modules/r8125 { };
     r8168 = pkg ./kernel-modules/r8168 { };
 
     # Other packages

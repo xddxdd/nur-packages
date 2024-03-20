@@ -1810,6 +1810,26 @@
         },
         "version": "1b6289dac9f7caf89d26bad2f1cf3cd628507af2"
     },
+    "r8125": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "r8125",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "awesometic",
+            "repo": "realtek-r8125-dkms",
+            "rev": "9.012.04-1",
+            "sha256": "sha256-OUhST4Ez4hew4uBSVrMoqni5OJh0zI/7eqK8W9qjhJk=",
+            "type": "github"
+        },
+        "version": "9.012.04-1"
+    },
     "r8168": {
         "cargoLocks": null,
         "date": null,

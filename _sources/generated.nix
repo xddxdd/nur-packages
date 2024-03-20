@@ -1043,6 +1043,17 @@
     };
     date = "2023-03-30";
   };
+  r8125 = {
+    pname = "r8125";
+    version = "9.012.04-1";
+    src = fetchFromGitHub {
+      owner = "awesometic";
+      repo = "realtek-r8125-dkms";
+      rev = "9.012.04-1";
+      fetchSubmodules = false;
+      sha256 = "sha256-OUhST4Ez4hew4uBSVrMoqni5OJh0zI/7eqK8W9qjhJk=";
+    };
+  };
   r8168 = {
     pname = "r8168";
     version = "8.052.01";
