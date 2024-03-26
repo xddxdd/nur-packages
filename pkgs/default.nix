@@ -122,6 +122,7 @@ mkScope (
     douban-openapi-server = pkg ./uncategorized/douban-openapi-server { };
     drone-file-secret = pkg ./uncategorized/drone-file-secret { };
     drone-vault = pkg ./uncategorized/drone-vault { };
+    electron_11 = pkg ./uncategorized/electron_11 { };
     etherguard = pkg ./uncategorized/etherguard { };
     fastapi-dls = pkg ./uncategorized/fastapi-dls { };
     fcitx5-breeze = pkg ./uncategorized/fcitx5-breeze { };
