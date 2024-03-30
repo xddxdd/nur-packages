@@ -16,6 +16,7 @@
   at-spi2-atk,
   at-spi2-core,
   cairo,
+  dbus,
   gtk3,
   gtk4,
   libglvnd,
@@ -43,6 +44,7 @@ let
     at-spi2-atk
     at-spi2-core
     cairo
+    dbus
     gtk3
     gtk4
     libglvnd
@@ -103,7 +105,13 @@ let
 
   # Adapted from https://aur.archlinux.org/cgit/aur.git/tree/open.sh?h=wechat-uos-bwrap
   fake-dde-file-manager = writeShellScriptBin "dde-file-manager" ''
-    if command -v dolphin &> /dev/null; then
+    if command -v dbus-send &> /dev/null; then
+      dbus-send --print-reply --dest=org.freedesktop.FileManager1 \
+        /org/freedesktop/FileManager1 \
+        org.freedesktop.FileManager1.ShowItems \
+        array:string:"file://''${2}" \
+        string:fake-dde-show-items
+    elif command -v dolphin &> /dev/null; then
       dolphin --select "$2"
     elif command -v nautilus &> /dev/null; then
       nautilus $(dirname "$2")
