@@ -83,7 +83,7 @@
         '';
 
         search-lib = ''
-          ${pkgs.nix-index}/bin/nix-locate -w "$@" | grep -v "("
+          ${inputs'.nix-index-database.packages.default}/bin/nix-locate -w "$@" | grep -v "("
         '';
 
         trace = ''
