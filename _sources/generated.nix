@@ -502,15 +502,15 @@
   };
   i915-sriov-dkms = {
     pname = "i915-sriov-dkms";
-    version = "d2b3b6e374c2f1799fb5bc07aad1f4ed5d058919";
+    version = "19a8abe3241c97aca28a7bba9971225592d70e9e";
     src = fetchFromGitHub {
       owner = "strongtz";
       repo = "i915-sriov-dkms";
-      rev = "d2b3b6e374c2f1799fb5bc07aad1f4ed5d058919";
+      rev = "19a8abe3241c97aca28a7bba9971225592d70e9e";
       fetchSubmodules = false;
-      sha256 = "sha256-VyFAvAtIqX+tDvjkpAzWPgKiX5xuIAzsac1xorAz9vk=";
+      sha256 = "sha256-uw/4+R7OH1FB6BYQXpFlhGjtvAgaRPUQQdsr4Q7aPOQ=";
     };
-    date = "2024-04-28";
+    date = "2024-05-04";
   };
   jproxy = {
     pname = "jproxy";
@@ -576,15 +576,15 @@
   };
   liboqs = {
     pname = "liboqs";
-    version = "9c8db18ec164492c352fe5748a8badc9f4ce3156";
+    version = "a23046ffcea9b16b6bf9e2a4dc9c045316134dc2";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "9c8db18ec164492c352fe5748a8badc9f4ce3156";
+      rev = "a23046ffcea9b16b6bf9e2a4dc9c045316134dc2";
       fetchSubmodules = false;
-      sha256 = "sha256-/BHe1nIiRMdcr33iGLB8NkB6I1qQi1Q3mtAcBFMZDas=";
+      sha256 = "sha256-onZ1kA1Y4n129rbvy/wD6MUVMkI5I0quxLi9wfS1g08=";
     };
-    date = "2024-04-25";
+    date = "2024-05-03";
   };
   libqcef = {
     pname = "libqcef";
@@ -612,15 +612,15 @@
   };
   librime-lua = {
     pname = "librime-lua";
-    version = "cb1152c4bb3be910ad26d67470fbc5ff21570cb5";
+    version = "43229d766f1e0f3198f61dc9d2e38bc1f921387f";
     src = fetchFromGitHub {
       owner = "hchunhui";
       repo = "librime-lua";
-      rev = "cb1152c4bb3be910ad26d67470fbc5ff21570cb5";
+      rev = "43229d766f1e0f3198f61dc9d2e38bc1f921387f";
       fetchSubmodules = false;
-      sha256 = "sha256-E6pczxHzSY15J1YrTWvWNutN+o/oShTofcv9UdBbzwA=";
+      sha256 = "sha256-JdT47lb3+HrDq3xbcm2nNHfL4/wg7h+ei+MMF6SbsGg=";
     };
-    date = "2024-05-02";
+    date = "2024-05-03";
   };
   librime-octagram = {
     pname = "librime-octagram";
@@ -1018,13 +1018,13 @@
   };
   pterodactyl-wings = {
     pname = "pterodactyl-wings";
-    version = "v1.11.11";
+    version = "v1.11.12";
     src = fetchFromGitHub {
       owner = "pterodactyl";
       repo = "wings";
-      rev = "v1.11.11";
+      rev = "v1.11.12";
       fetchSubmodules = false;
-      sha256 = "sha256-7rpnPKeFZM6QZfiI1Vp7ibCdBNTOo7stf8lNZlN4I4M=";
+      sha256 = "sha256-DFUnT1B2t8waiV64n4fWCPIiIyoaPuRwOEfWDR71je4=";
     };
   };
   py-rcon = {
