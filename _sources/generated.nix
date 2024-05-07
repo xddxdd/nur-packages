@@ -172,15 +172,15 @@
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "fefa20cb087b5047c37c69e40eb4829c9aa91bb3";
+    version = "ef3a066a39cc0df81d360585658e4ba5feef98d1";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "fefa20cb087b5047c37c69e40eb4829c9aa91bb3";
+      rev = "ef3a066a39cc0df81d360585658e4ba5feef98d1";
       fetchSubmodules = false;
-      sha256 = "sha256-j/h+YKIE8StfCIeQVYimpccXz1OS+DJbnvhMsPtmW1Y=";
+      sha256 = "sha256-zrbdTu3ipjFr07Lm/StZd4No+bfH6XpollAEzrtmhdQ=";
     };
-    date = "2024-05-05";
+    date = "2024-05-06";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -904,15 +904,15 @@
   };
   ovpn-dco = {
     pname = "ovpn-dco";
-    version = "2aa7f931803f81d2745b0cefafb63654a35cc3d5";
+    version = "879d252672dc4554e035df367b67ad04102f4247";
     src = fetchFromGitHub {
       owner = "OpenVPN";
       repo = "ovpn-dco";
-      rev = "2aa7f931803f81d2745b0cefafb63654a35cc3d5";
+      rev = "879d252672dc4554e035df367b67ad04102f4247";
       fetchSubmodules = false;
-      sha256 = "sha256-Iupo1wdZwel/Q8GvP2MPOhoLK3uBj5JAbT1/Fib/Bsk=";
+      sha256 = "sha256-H+x44+rhXXi0HiAWreIY/9D9cFKfiX++ZZkTTE0pCak=";
     };
-    date = "2024-02-02";
+    date = "2024-05-06";
   };
   palworld-exporter = {
     pname = "palworld-exporter";

@@ -296,7 +296,7 @@
     },
     "cachyos-kernel-patches": {
         "cargoLocks": null,
-        "date": "2024-05-05",
+        "date": "2024-05-06",
         "extract": null,
         "name": "cachyos-kernel-patches",
         "passthru": null,
@@ -308,11 +308,11 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "kernel-patches",
-            "rev": "fefa20cb087b5047c37c69e40eb4829c9aa91bb3",
-            "sha256": "sha256-j/h+YKIE8StfCIeQVYimpccXz1OS+DJbnvhMsPtmW1Y=",
+            "rev": "ef3a066a39cc0df81d360585658e4ba5feef98d1",
+            "sha256": "sha256-zrbdTu3ipjFr07Lm/StZd4No+bfH6XpollAEzrtmhdQ=",
             "type": "github"
         },
-        "version": "fefa20cb087b5047c37c69e40eb4829c9aa91bb3"
+        "version": "ef3a066a39cc0df81d360585658e4ba5feef98d1"
     },
     "calibre-cops": {
         "cargoLocks": null,
@@ -1557,7 +1557,7 @@
     },
     "ovpn-dco": {
         "cargoLocks": null,
-        "date": "2024-02-02",
+        "date": "2024-05-06",
         "extract": null,
         "name": "ovpn-dco",
         "passthru": null,
@@ -1569,11 +1569,11 @@
             "name": null,
             "owner": "OpenVPN",
             "repo": "ovpn-dco",
-            "rev": "2aa7f931803f81d2745b0cefafb63654a35cc3d5",
-            "sha256": "sha256-Iupo1wdZwel/Q8GvP2MPOhoLK3uBj5JAbT1/Fib/Bsk=",
+            "rev": "879d252672dc4554e035df367b67ad04102f4247",
+            "sha256": "sha256-H+x44+rhXXi0HiAWreIY/9D9cFKfiX++ZZkTTE0pCak=",
             "type": "github"
         },
-        "version": "2aa7f931803f81d2745b0cefafb63654a35cc3d5"
+        "version": "879d252672dc4554e035df367b67ad04102f4247"
     },
     "palworld-exporter": {
         "cargoLocks": null,
