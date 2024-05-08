@@ -296,7 +296,7 @@
     },
     "cachyos-kernel-patches": {
         "cargoLocks": null,
-        "date": "2024-05-06",
+        "date": "2024-05-07",
         "extract": null,
         "name": "cachyos-kernel-patches",
         "passthru": null,
@@ -308,11 +308,11 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "kernel-patches",
-            "rev": "ef3a066a39cc0df81d360585658e4ba5feef98d1",
-            "sha256": "sha256-zrbdTu3ipjFr07Lm/StZd4No+bfH6XpollAEzrtmhdQ=",
+            "rev": "c6e17e01f6475a1ce29b03827091a9d757a7a7b2",
+            "sha256": "sha256-QpONnM54pN5GrZtoMMQ9c3jngU5j5bF1DEFR3/mVwrs=",
             "type": "github"
         },
-        "version": "ef3a066a39cc0df81d360585658e4ba5feef98d1"
+        "version": "c6e17e01f6475a1ce29b03827091a9d757a7a7b2"
     },
     "calibre-cops": {
         "cargoLocks": null,
@@ -862,7 +862,7 @@
     },
     "i915-sriov-dkms": {
         "cargoLocks": null,
-        "date": "2024-05-04",
+        "date": "2024-05-08",
         "extract": null,
         "name": "i915-sriov-dkms",
         "passthru": null,
@@ -874,11 +874,11 @@
             "name": null,
             "owner": "strongtz",
             "repo": "i915-sriov-dkms",
-            "rev": "19a8abe3241c97aca28a7bba9971225592d70e9e",
-            "sha256": "sha256-uw/4+R7OH1FB6BYQXpFlhGjtvAgaRPUQQdsr4Q7aPOQ=",
+            "rev": "3d7a1b3fa4706d8da316d8e794d54db96856a2b9",
+            "sha256": "sha256-TJk0zmXA2sUhbDu0jsA/1kFeIba8ZIZ0a4joPK4v8Ck=",
             "type": "github"
         },
-        "version": "19a8abe3241c97aca28a7bba9971225592d70e9e"
+        "version": "3d7a1b3fa4706d8da316d8e794d54db96856a2b9"
     },
     "jproxy": {
         "cargoLocks": null,
@@ -992,7 +992,7 @@
     },
     "liboqs": {
         "cargoLocks": null,
-        "date": "2024-05-04",
+        "date": "2024-05-07",
         "extract": null,
         "name": "liboqs",
         "passthru": null,
@@ -1004,11 +1004,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "b392919f6eb1ff4daa9eee7da2d2812fb2f0c987",
-            "sha256": "sha256-jyMhhXXfuiIw6T1Zkj4FbJKmJwL/n9QJGIXatTuIDFQ=",
+            "rev": "a5ec23cf19763d36a558b8358345823ae45d57e5",
+            "sha256": "sha256-RdI5WbjRS6SRqLXP9v56KQp5w9zqJw9dUjK4XM9WtoE=",
             "type": "github"
         },
-        "version": "b392919f6eb1ff4daa9eee7da2d2812fb2f0c987"
+        "version": "a5ec23cf19763d36a558b8358345823ae45d57e5"
     },
     "libqcef": {
         "cargoLocks": null,
@@ -1517,7 +1517,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2024-04-27",
+        "date": "2024-05-08",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1529,11 +1529,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "86605d767a0c7de9462ce4eb70891f8d5e8e248f",
-            "sha256": "sha256-Phg6R1muKTKmQdSMGwG7D9g/FmdbqHnmTUsvR9bL3PU=",
+            "rev": "d82c5c4ca3afb8c085e14b170cb9d21a21795bc5",
+            "sha256": "sha256-gYWQ++DYFXNSLVmOjcQ3J6bMtxb3pN0EHl6ysX2GMKg=",
             "type": "github"
         },
-        "version": "86605d767a0c7de9462ce4eb70891f8d5e8e248f"
+        "version": "d82c5c4ca3afb8c085e14b170cb9d21a21795bc5"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -1774,11 +1774,11 @@
             "name": null,
             "owner": "pterodactyl",
             "repo": "wings",
-            "rev": "v1.11.12",
-            "sha256": "sha256-DFUnT1B2t8waiV64n4fWCPIiIyoaPuRwOEfWDR71je4=",
+            "rev": "v1.11.13",
+            "sha256": "sha256-UpYUHWM2J8nH+srdKSpFQEaPx2Rj2+YdphV8jJXcoBU=",
             "type": "github"
         },
-        "version": "v1.11.12"
+        "version": "v1.11.13"
     },
     "py-rcon": {
         "cargoLocks": null,
@@ -2027,7 +2027,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2024-05-02",
+        "date": "2024-05-08",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -2039,11 +2039,11 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "e9a730f7f464d5fc38b6f69c68598763017afa09",
-            "sha256": "sha256-yulh2p5gynaRNsCHrKqZPEbUFVvyF4bJwsegb6rJkcU=",
+            "rev": "bcfcb57c89f4d073cb3f41dd101a7cb7452856c6",
+            "sha256": "sha256-j51Dp48GcBbtMM8OKkZUbjo+dLSIHA52mjOCe07wUcU=",
             "type": "github"
         },
-        "version": "e9a730f7f464d5fc38b6f69c68598763017afa09"
+        "version": "bcfcb57c89f4d073cb3f41dd101a7cb7452856c6"
     },
     "rime-moegirl": {
         "cargoLocks": null,
