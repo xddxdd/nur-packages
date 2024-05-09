@@ -172,15 +172,15 @@
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "c6e17e01f6475a1ce29b03827091a9d757a7a7b2";
+    version = "989675d1eb41abab22ab0bb7539cfc3c7a8db734";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "c6e17e01f6475a1ce29b03827091a9d757a7a7b2";
+      rev = "989675d1eb41abab22ab0bb7539cfc3c7a8db734";
       fetchSubmodules = false;
-      sha256 = "sha256-QpONnM54pN5GrZtoMMQ9c3jngU5j5bF1DEFR3/mVwrs=";
+      sha256 = "sha256-Op18/UYG+GAXxdU2EPwBCtCrerIZ06IR761Sdd2qKQA=";
     };
-    date = "2024-05-07";
+    date = "2024-05-08";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -881,13 +881,13 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "d82c5c4ca3afb8c085e14b170cb9d21a21795bc5";
+    version = "6ae3ecac79c9dcb022ca666d95fb463772aa84be";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "d82c5c4ca3afb8c085e14b170cb9d21a21795bc5";
+      rev = "6ae3ecac79c9dcb022ca666d95fb463772aa84be";
       fetchSubmodules = false;
-      sha256 = "sha256-gYWQ++DYFXNSLVmOjcQ3J6bMtxb3pN0EHl6ysX2GMKg=";
+      sha256 = "sha256-a6HSihl8a91n1dcRAOa+BfSf31sPJ+o7OPD/2xe9GBQ=";
     };
     date = "2024-05-08";
   };
