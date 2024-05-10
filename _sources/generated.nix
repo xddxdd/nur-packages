@@ -156,31 +156,31 @@
   };
   browser360-amd64 = {
     pname = "browser360-amd64";
-    version = "13.3.1012.21";
+    version = "13.3.1013.37";
     src = fetchurl {
-      url = "https://gedown.360safe.com/gc/signed_com.360.browser-stable_13.3.1012.21-1_amd64.deb";
-      sha256 = "sha256-v1uLjIfxnBvug1Yu/1slTfoWGD+TI6snPTKRAj3q0AI=";
+      url = "https://gedown.360safe.com/gc/signed_com.360.browser-stable_13.3.1013.37-1_amd64.deb";
+      sha256 = "sha256-GfM+DSevpUBjfJc9eK/+jFhtWCPO7BWZrv9dqJp3uLE=";
     };
   };
   browser360-arm64 = {
     pname = "browser360-arm64";
-    version = "13.3.1012.21";
+    version = "13.3.1013.37";
     src = fetchurl {
-      url = "https://gedown.360safe.com/gc/signed_com.360.browser-stable_13.3.1012.21-1_arm64.deb";
-      sha256 = "sha256-1xsF4mMapZnf1O4Q+RNpoxpcRZBKgQUV3lc1N+PiuAQ=";
+      url = "https://gedown.360safe.com/gc/signed_com.360.browser-stable_13.3.1013.37-1_arm64.deb";
+      sha256 = "sha256-amDIIPpV0QBlaA9+5aiHNa+1SkFhdljTqGOiGAIkiCU=";
     };
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "989675d1eb41abab22ab0bb7539cfc3c7a8db734";
+    version = "4bc1b146f2e0a907bf827933039fcd5f000ef463";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "989675d1eb41abab22ab0bb7539cfc3c7a8db734";
+      rev = "4bc1b146f2e0a907bf827933039fcd5f000ef463";
       fetchSubmodules = false;
-      sha256 = "sha256-Op18/UYG+GAXxdU2EPwBCtCrerIZ06IR761Sdd2qKQA=";
+      sha256 = "sha256-6+rwCNxvoU+dxuTSRcR6aa8932ll+Z0SuEBMKIizpZI=";
     };
-    date = "2024-05-08";
+    date = "2024-05-09";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -1177,10 +1177,10 @@
   };
   rime-moegirl = {
     pname = "rime-moegirl";
-    version = "20240309";
+    version = "20240509";
     src = fetchurl {
-      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20240309/moegirl.dict.yaml";
-      sha256 = "sha256-XUJX0mcqXM0O7c+7cGQKwws1wACqchP8gshJbuhAYAk=";
+      url = "https://github.com/outloudvi/mw2fcitx/releases/download/20240509/moegirl.dict.yaml";
+      sha256 = "sha256-wslWy5crWhdqoY6g3yNG01P15aOMjtA0NAXeEnjmBpQ=";
     };
   };
   rime-zhwiki = {
