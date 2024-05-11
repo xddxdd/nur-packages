@@ -368,7 +368,8 @@ src.github = "ssut/payload-dumper-go"
 fetch.github = "ssut/payload-dumper-go"
 
 [peerbanhelper]
-src.github = "Ghost-chu/PeerBanHelper"
+# src.github = "Ghost-chu/PeerBanHelper"
+src.manual = "v3.3.7"
 fetch.url = "https://github.com/Ghost-chu/PeerBanHelper/releases/download/$ver/PeerBanHelper.jar"
 
 [phpmyadmin]
