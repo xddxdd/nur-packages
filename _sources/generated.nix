@@ -125,10 +125,10 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.13.2-1";
+    version = "1.13.2-2";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.2-1/io.github.msojocs.bilibili_1.13.2-1_amd64.deb";
-      sha256 = "sha256-yqgQNsTD4iT54LJYEbV6dk7OD7KoZvX61XERYQ4MsSA=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.2-2/io.github.msojocs.bilibili_1.13.2-2_amd64.deb";
+      sha256 = "sha256-hwnrzbnlt9Z9cOqo/li1nvsrGv62ovMfybNVadIlk/Y=";
     };
   };
   bird-lg-go = {
@@ -172,15 +172,15 @@
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "4bc1b146f2e0a907bf827933039fcd5f000ef463";
+    version = "1761acdec8ea19de190c240edf73217169079b4b";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "4bc1b146f2e0a907bf827933039fcd5f000ef463";
+      rev = "1761acdec8ea19de190c240edf73217169079b4b";
       fetchSubmodules = false;
-      sha256 = "sha256-6+rwCNxvoU+dxuTSRcR6aa8932ll+Z0SuEBMKIizpZI=";
+      sha256 = "sha256-QyXyGfu1x3MZxKdg3vzLo8ElbMAK9Xrl1d4SUk+jEM4=";
     };
-    date = "2024-05-09";
+    date = "2024-05-10";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -350,16 +350,16 @@
   };
   fastapi-dls = {
     pname = "fastapi-dls";
-    version = "42fe066e1a3c92b0d141c5a5f3bd485ca7a8a754";
+    version = "006d3a18335190da554da997eaab021a7201181a";
     src = fetchgit {
       url = "https://git.collinwebdesigns.de/oscar.krause/fastapi-dls.git";
-      rev = "42fe066e1a3c92b0d141c5a5f3bd485ca7a8a754";
+      rev = "006d3a18335190da554da997eaab021a7201181a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-9i6PAAhG/9MralhpB1IX2j41WRwFhurJXPEKyP17w5c=";
+      sha256 = "sha256-I7VqkP1D+JOKOMGRJZl4qxTf49sGNrPTjnV+6YOBAYg=";
     };
-    date = "2024-04-18";
+    date = "2024-05-10";
   };
   fcitx5-breeze = {
     pname = "fcitx5-breeze";
@@ -1051,34 +1051,34 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "8.2.3+ds-2";
+    version = "8.2.3+ds-2+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.2.3+ds-2_amd64.deb";
-      sha256 = "sha256-xw9OzHNW6zu+vLl3ZDE8siHLrRcWF6f+GvyvCM0mFOU=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.2.3+ds-2+b1_amd64.deb";
+      sha256 = "sha256-5U6yu0DWllvpocLbYdvYtwZaRR+RYKLEfaP/F92Mhls=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "8.2.3+ds-2";
+    version = "8.2.3+ds-2+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.2.3+ds-2_arm64.deb";
-      sha256 = "sha256-UVGae8OecChmGHdMlhFsOKgiYVD5k+n3g9G2IYnwbnI=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.2.3+ds-2+b1_arm64.deb";
+      sha256 = "sha256-DlNAuay0CRrp89brhE2Y/UxXjobDZ8Dk8OqbyYptlm8=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "8.2.3+ds-2";
+    version = "8.2.3+ds-2+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.2.3+ds-2_armhf.deb";
-      sha256 = "sha256-DiKKyCAKwwk172XVZRZPdw/NBSWWCd+C9JJVaru5lkM=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.2.3+ds-2+b1_armhf.deb";
+      sha256 = "sha256-wVObeLjyxzmbrYOk+NsV1B4oeOtXJigGwIarqWsZznI=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "8.2.3+ds-2";
+    version = "8.2.3+ds-2+b1";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.2.3+ds-2_i386.deb";
-      sha256 = "sha256-GywuMfKb0wRb06asubK4KlkBliukzIX383nzghfF7/g=";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_8.2.3+ds-2+b1_i386.deb";
+      sha256 = "sha256-RcLiu0i7hJNxhM66NnX1XHh347IbSwytvTMm17t4MJ8=";
     };
   };
   qq-amd64 = {
