@@ -70,8 +70,7 @@ let
   };
 in
 stdenv.mkDerivation {
-  pname = "baidunetdisk";
-  version = "4.17.7";
+  inherit (sources.baidunetdisk) pname version;
   dontUnpack = true;
 
   nativeBuildInputs = [

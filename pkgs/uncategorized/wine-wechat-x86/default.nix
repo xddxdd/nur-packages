@@ -1,7 +1,6 @@
 {
   sources,
   stdenv,
-  fetchurl,
   lib,
   p7zip,
   wine,
@@ -19,29 +18,8 @@
 # - In-app browser doesn't work.
 ################################################################################
 let
-  wineGecko = stdenv.mkDerivation rec {
-    pname = "wine-gecko";
-    version = "2.47.4";
-    src = fetchurl {
-      url = "http://dl.winehq.org/wine/wine-gecko/${version}/wine-gecko-${version}-x86.tar.xz";
-      sha256 = "1dmg221nxmgyhz7clwlnvwrx1wi630z62y4azwgf40l6jif8vz1c";
-    };
-    dontUnpack = true;
-    installPhase = ''
-      mkdir -p $out
-      tar xf $src -C $out
-    '';
-  };
-
   wechatWine = wine.overrideAttrs (old: {
     patches = (old.patches or [ ]) ++ [ ./wine-wechat.patch ];
-
-    postInstall =
-      (old.postInstall or "")
-      + ''
-        rm -rf $out/share/wine/gecko
-        ln -sf ${wineGecko} $out/share/wine/gecko
-      '';
   });
 
   wechatFiles = stdenv.mkDerivation {

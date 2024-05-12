@@ -692,6 +692,21 @@
         },
         "version": "0.9.5"
     },
+    "ftp-proxy": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "ftp-proxy",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-36r+iOaKEA9DMHBufEW+eoiRlEu1+VsYaWvK957l1uU=",
+            "type": "url",
+            "url": "http://www.ftpproxy.org/download/ftpproxy-1.2.3.tgz"
+        },
+        "version": "1.2.3"
+    },
     "genshin-checkin-helper": {
         "cargoLocks": null,
         "date": "2021-11-09",
@@ -765,6 +780,21 @@
             "url": "https://dl.google.com/linux/earth/deb/pool/main/g/google-earth-pro-stable/google-earth-pro-stable_7.3.6.9796-r0_amd64.deb"
         },
         "version": "7.3.6.9796"
+    },
+    "gopherus": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "gopherus",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-7l/7ZK5KQ/V2Ym02Sbc0qAGov36P4P0hVWzIzbQzipo=",
+            "type": "url",
+            "url": "https://gopherus.sourceforge.net/gopherus-1.2.2.tar.xz"
+        },
+        "version": "1.2.2"
     },
     "grasscutter": {
         "cargoLocks": null,
@@ -2209,6 +2239,36 @@
             "type": "github"
         },
         "version": "b7b76b853131b6fa7579d20c2816b4b6abb16bea"
+    },
+    "suwayomi-server": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "suwayomi-server",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-CskVYc+byfn3mNzbOX1fCXPpjihtWpoRGBpXDY378c0=",
+            "type": "url",
+            "url": "https://github.com/Suwayomi/Suwayomi-Server/releases/download/v1.0.0/Suwayomi-Server-v1.0.0-r1498.jar"
+        },
+        "version": "v1.0.0/Suwayomi-Server-v1.0.0-r1498"
+    },
+    "svp": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "svp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-HyRDVFHVmTan/Si3QjGQpC3za30way10d0Hk79oXG98=",
+            "type": "url",
+            "url": "https://www.svp-team.com/files/svp4-linux.4.6.263.tar.bz2"
+        },
+        "version": "4.6.263"
     },
     "th-hak": {
         "cargoLocks": null,

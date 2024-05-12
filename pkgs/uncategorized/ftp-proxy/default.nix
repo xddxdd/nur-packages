@@ -1,18 +1,11 @@
 {
   lib,
   stdenv,
-  ctags,
-  fetchurl,
+  sources,
   ...
 }@args:
 stdenv.mkDerivation rec {
-  pname = "ftp-proxy";
-  version = "1.2.3";
-
-  src = fetchurl {
-    url = "http://www.ftpproxy.org/download/ftpproxy-${version}.tgz";
-    sha256 = "1rfnwngggjkbd4c5pydm9fa9323spr2pqvkh611hy44aws4gxanz";
-  };
+  inherit (sources.ftp-proxy) pname version src;
 
   buildPhase = ''
     cd src && make clean && make

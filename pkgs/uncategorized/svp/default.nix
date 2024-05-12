@@ -2,7 +2,7 @@
   stdenv,
   buildFHSEnv,
   writeShellScriptBin,
-  fetchurl,
+  sources,
   callPackage,
   makeDesktopItem,
   copyDesktopItems,
@@ -70,11 +70,7 @@ let
 
   svp-dist = stdenv.mkDerivation rec {
     pname = "svp-dist";
-    version = "4.5.210-2";
-    src = fetchurl {
-      url = "https://www.svp-team.com/files/svp4-linux.${version}.tar.bz2";
-      hash = "sha256-dY9uQ9jzTHiN2XSnOrXtHD11IIJW6t9BUzGGQFfZ+yg=";
-    };
+    inherit (sources.svp) version src;
 
     nativeBuildInputs = [
       p7zip
@@ -119,8 +115,7 @@ let
   };
 in
 stdenv.mkDerivation {
-  pname = "svp";
-  inherit (svp-dist) version;
+  inherit (sources.svp) pname version;
 
   dontUnpack = true;
 

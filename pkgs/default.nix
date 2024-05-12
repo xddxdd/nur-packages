@@ -200,7 +200,7 @@ mkScope (
     space-cadet-pinball-full-tilt = pkg ./uncategorized/space-cadet-pinball-full-tilt { };
     svp = pkg ./uncategorized/svp { };
     svp-mpv = pkg ./uncategorized/svp/mpv.nix { };
-    tachidesk-server = pkg ./uncategorized/tachidesk-server { };
+    suwayomi-server = pkg ./uncategorized/suwayomi-server { };
     uesave = pkg ./uncategorized/uesave { };
     uksmd = pkg ./uncategorized/uksmd { };
     undetected-chromedriver = pkg ./uncategorized/undetected-chromedriver { };
