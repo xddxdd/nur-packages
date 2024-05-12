@@ -127,8 +127,19 @@
     pname = "bilibili";
     version = "1.13.2-2";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.2-2/io.github.msojocs.bilibili_1.13.2-2_amd64.deb";
-      sha256 = "sha256-hwnrzbnlt9Z9cOqo/li1nvsrGv62ovMfybNVadIlk/Y=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.2-2/bilibili-asar-v1.13.2-2.tar.gz";
+      sha256 = "sha256-DluiTp7fGnFBbaPD89pzIUGV0yh6fIgcFlQdzi6aVNM=";
+    };
+  };
+  bilibili-src = {
+    pname = "bilibili-src";
+    version = "v1.13.2-2";
+    src = fetchFromGitHub {
+      owner = "msojocs";
+      repo = "bilibili-linux";
+      rev = "v1.13.2-2";
+      fetchSubmodules = false;
+      sha256 = "sha256-jfjuQWTxlNTE6M7eRxy58wXGcrULle8aVmmle/K0DAU=";
     };
   };
   bird-lg-go = {

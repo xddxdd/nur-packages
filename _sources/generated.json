@@ -218,11 +218,31 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-hwnrzbnlt9Z9cOqo/li1nvsrGv62ovMfybNVadIlk/Y=",
+            "sha256": "sha256-DluiTp7fGnFBbaPD89pzIUGV0yh6fIgcFlQdzi6aVNM=",
             "type": "url",
-            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.2-2/io.github.msojocs.bilibili_1.13.2-2_amd64.deb"
+            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.2-2/bilibili-asar-v1.13.2-2.tar.gz"
         },
         "version": "1.13.2-2"
+    },
+    "bilibili-src": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "bilibili-src",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "msojocs",
+            "repo": "bilibili-linux",
+            "rev": "v1.13.2-2",
+            "sha256": "sha256-jfjuQWTxlNTE6M7eRxy58wXGcrULle8aVmmle/K0DAU=",
+            "type": "github"
+        },
+        "version": "v1.13.2-2"
     },
     "bird-lg-go": {
         "cargoLocks": null,
