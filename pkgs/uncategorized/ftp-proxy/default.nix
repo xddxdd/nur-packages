@@ -19,8 +19,7 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-    mkdir -p $out/bin
-    cp ftp.proxy $out/bin/ftp.proxy
+    install -Dm755 ftp.proxy $out/bin/ftp.proxy
   '';
 
   meta = with lib; {

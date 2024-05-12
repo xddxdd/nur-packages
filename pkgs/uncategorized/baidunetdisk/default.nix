@@ -85,8 +85,7 @@ stdenv.mkDerivation {
       --add-flags "--no-sandbox" \
       --add-flags "${dist}/resources/app.asar"
 
-    mkdir -p $out/share/icons/hicolor/scalable/apps
-    ln -s ${dist}/baidunetdisk.svg $out/share/icons/hicolor/scalable/apps/baidunetdisk.svg
+    install -Dm644 ${dist}/baidunetdisk.svg $out/share/icons/hicolor/scalable/apps/baidunetdisk.svg
   '';
 
   desktopItems = [

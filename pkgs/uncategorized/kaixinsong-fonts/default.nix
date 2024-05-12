@@ -21,8 +21,10 @@ stdenvNoCC.mkDerivation rec {
   dontUnpack = true;
   postInstall = ''
     mkdir -p $out/share/fonts/truetype/
-    cp ${kaixinsong-a} $out/share/fonts/truetype/KaiXinSongA.ttf
-    cp ${kaixinsong-b} $out/share/fonts/truetype/KaiXinSongB.ttf
+    install -m644 \
+      ${kaixinsong-a} \
+      ${kaixinsong-b} \
+      $out/share/fonts/truetype/
   '';
 
   meta = with lib; {

@@ -26,7 +26,6 @@ stdenv.mkDerivation {
   '';
 
   installPhase = ''
-    mkdir -p $out/lib
-    cp libnetease-patch.so $out/lib/
+    install -Dm755 libnetease-patch.so $out/lib/libnetease-patch.so
   '';
 }

@@ -12,7 +12,7 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/bin
-    cp nul1fs nullfs nulnfs $out/bin/
+    install -m755 nul1fs nullfs nulnfs $out/bin/
   '';
 
   meta = with lib; {

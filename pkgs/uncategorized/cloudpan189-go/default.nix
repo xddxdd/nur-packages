@@ -31,8 +31,7 @@ stdenvNoCC.mkDerivation {
   inherit (sources.cloudpan189-go) pname version;
   dontUnpack = true;
   postInstall = ''
-    mkdir -p $out/bin
-    ln -s ${startScript} $out/bin/cloudpan189-go
+    install -Dm755 ${startScript} $out/bin/cloudpan189-go
   '';
 
   meta = with lib; {

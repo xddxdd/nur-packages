@@ -99,8 +99,7 @@ stdenv.mkDerivation rec {
   dontWrapQtApps = true;
 
   installPhase = ''
-    mkdir -p $out/bin
-    cp -r opt/netease/netease-cloud-music/netease-cloud-music $out/bin/
+    install -Dm755 opt/netease/netease-cloud-music/netease-cloud-music $out/bin/netease-cloud-music
 
     mkdir -p $out/share
     cp -r usr/share/* $out/share/

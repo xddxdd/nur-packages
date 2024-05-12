@@ -18,9 +18,9 @@ stdenvNoCC.mkDerivation rec {
   nativeBuildInputs = [ makeWrapper ];
 
   installPhase = ''
-    mkdir -p $out/bin $out/opt
-    cp HentaiAtHome.jar $out/opt/
+    install -Dm644 HentaiAtHome.jar $out/opt/HentaiAtHome.jar
 
+    mkdir -p $out/bin
     makeWrapper ${jre_headless}/bin/java $out/bin/hath \
       --add-flags "-Xms16m" \
       --add-flags "-Xmx512m" \

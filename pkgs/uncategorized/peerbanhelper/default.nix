@@ -16,7 +16,7 @@ stdenvNoCC.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/bin $out/opt
-    cp $src $out/opt/peerbanhelper.jar
+    install -Dm644 $src $out/opt/peerbanhelper.jar
 
     makeWrapper ${jre_headless}/bin/java $out/bin/peerbanhelper \
       --add-flags "-jar" \

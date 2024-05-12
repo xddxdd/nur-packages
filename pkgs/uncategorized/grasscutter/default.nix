@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/bin $out/opt
-    cp $src $out/grasscutter.jar
+    install -Dm644 $src $out/grasscutter.jar
 
     ln -s ${resources}/Resources $out/opt/resources
     ln -s ${keystore} $out/opt/keystore.p12

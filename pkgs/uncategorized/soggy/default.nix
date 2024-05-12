@@ -24,9 +24,8 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
 
-    mkdir -p $out/bin $out/opt
-    cp soggy $out/bin/
-    cp $src/soggy.cfg $out/opt/
+    install -Dm755 soggy $out/bin/soggy
+    install -Dm644 $src/soggy.cfg $out/opt/soggy.cfg
     cp -r $src/static $out/opt/
 
     runHook postInstall

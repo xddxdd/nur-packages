@@ -96,8 +96,7 @@ let
       mkdir -p $out
       tar xf data.tar.xz -C $out
 
-      mkdir -p $out/lib/license
-      mv $out/opt/apps/com.tencent.wechat/files/libuosdevicea.so $out/lib/license/libuosdevicea.so
+      install -Dm755 $out/opt/apps/com.tencent.wechat/files/libuosdevicea.so $out/lib/license/libuosdevicea.so
     '';
   };
 

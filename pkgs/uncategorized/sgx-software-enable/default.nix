@@ -8,8 +8,7 @@ stdenv.mkDerivation rec {
   inherit (sources.sgx-software-enable) pname version src;
 
   installPhase = ''
-    mkdir -p $out/bin
-    cp sgx_enable $out/bin/sgx_enable
+    install -Dm755 sgx_enable $out/bin/sgx_enable
     ln -sf $out/bin/sgx_enable $out/bin/sgx-software-enable
   '';
 

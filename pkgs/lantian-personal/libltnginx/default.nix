@@ -11,8 +11,7 @@ stdenv.mkDerivation rec {
   enableParallelBuilding = true;
 
   installPhase = ''
-    mkdir -p $out/lib
-    mv libltnginx.so $out/lib
+    install -Dm755 libltnginx.so $out/lib/libltnginx.so
   '';
 
   nativeBuildInputs = [ cmake ];

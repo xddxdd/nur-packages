@@ -22,7 +22,7 @@ stdenvNoCC.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/share/fonts/opentype/
-    find . -name \*.otf -exec cp {} $out/share/fonts/opentype/ \;
+    find . -name \*.otf -exec install -m644 {} $out/share/fonts/opentype/ \;
   '';
 
   meta = with lib; {

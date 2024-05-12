@@ -100,8 +100,7 @@ let
       done
 
       for SIZE in 32 48 64 128; do
-        mkdir -p "$out/share/icons/hicolor/''${SIZE}x''${SIZE}/apps"
-        mv "$out/opt/svp-manager4-''${SIZE}.png" "$out/share/icons/hicolor/''${SIZE}x''${SIZE}/apps/svp-manager4.png"
+        install -Dm644 "$out/opt/svp-manager4-''${SIZE}.png" "$out/share/icons/hicolor/''${SIZE}x''${SIZE}/apps/svp-manager4.png"
       done
       rm -f $out/opt/{add,remove}-menuitem.sh
     '';
@@ -128,8 +127,9 @@ stdenv.mkDerivation {
   nativeBuildInputs = [ copyDesktopItems ];
 
   postInstall = ''
-    mkdir -p $out/bin $out/share
-    ln -s ${fhs}/bin/SVPManager $out/bin/SVPManager
+    install -Dm755 ${fhs}/bin/SVPManager $out/bin/SVPManager
+
+    mkdir -p $out/share
     ln -s ${svp-dist}/share/icons $out/share/icons
   '';
 

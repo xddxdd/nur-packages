@@ -26,9 +26,9 @@ stdenvNoCC.mkDerivation rec {
   ];
 
   installPhase = ''
-    mkdir -p $out/bin $out/opt
-    cp $src $out/opt/tachidesk-server.jar
+    install -Dm644 $src $out/opt/tachidesk-server.jar
 
+    mkdir -p $out/bin
     makeWrapper ${jre_headless}/bin/java $out/bin/tachidesk-server \
       --add-flags "-jar" \
       --add-flags "$out/opt/tachidesk-server.jar" \

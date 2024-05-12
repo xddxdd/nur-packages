@@ -112,10 +112,9 @@ stdenv.mkDerivation {
   nativeBuildInputs = [ copyDesktopItems ];
 
   postInstall = ''
-    mkdir -p $out/bin $out/share/pixmaps
-    cp -r ${startWechat} $out/bin/wine-wechat
-    cp -r ${startWinecfg} $out/bin/wine-wechat-cfg
-    cp -r ${./wine-wechat.png} $out/share/pixmaps/wine-wechat.png
+    install -Dm755 ${startWechat} $out/bin/wine-wechat
+    install -Dm755 ${startWinecfg} $out/bin/wine-wechat-cfg
+    install -Dm644 ${./wine-wechat.png} $out/share/pixmaps/wine-wechat.png
   '';
 
   desktopItems = [
