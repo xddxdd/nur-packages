@@ -1,7 +1,12 @@
 { lib, ... }:
 {
   perSystem =
-    { pkgs, inputs', ... }:
+    {
+      pkgs,
+      config,
+      inputs',
+      ...
+    }:
     let
       commands = rec {
         ci = ''
@@ -104,8 +109,6 @@
             ${readme}
           '';
       };
-
-      makeAppsShell = pkgs.callPackage ../../helpers/make-apps-shell.nix { };
     in
     rec {
       apps = lib.mapAttrs (n: v: {
@@ -113,6 +116,18 @@
         program = pkgs.writeShellScriptBin n v;
       }) commands;
 
-      devShells.default = makeAppsShell apps;
+      devShells.default = pkgs.mkShell {
+        nativeBuildInputs = config.pre-commit.settings.enabledPackages ++ [
+          config.pre-commit.settings.package
+        ];
+        shellHook = config.pre-commit.installationScript;
+
+        buildInputs = lib.mapAttrsToList (
+          n: _v:
+          pkgs.writeShellScriptBin n ''
+            exec nix run .#${n} -- "$@"
+          ''
+        ) apps;
+      };
     };
 }

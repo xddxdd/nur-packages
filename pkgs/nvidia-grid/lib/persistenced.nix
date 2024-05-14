@@ -45,6 +45,5 @@ stdenv.mkDerivation rec {
     description = "Settings application for NVIDIA graphics cards";
     license = licenses.unfreeRedistributable;
     inherit (nvidia_x11.meta) platforms;
-    maintainers = with maintainers; [ abbradar ];
   };
 }

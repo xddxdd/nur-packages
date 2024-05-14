@@ -52,9 +52,7 @@ def get_available_versions() -> List[str]:
 def nix_prefetch_url(url: str):
     result = subprocess.run(["nix-prefetch-url", url], stdout=subprocess.PIPE)
     if result.returncode != 0:
-        raise RuntimeError(
-            "nix-prefetch-url exited with error {}".format(result.returncode)
-        )
+        raise RuntimeError(f"nix-prefetch-url exited with error {result.returncode}")
     return result.stdout.decode("utf-8").strip()
 
 
@@ -64,9 +62,7 @@ def nix_prefetch_git(url: str, rev: str):
         ["nix-prefetch-git", "--url", url, "--rev", rev], stdout=subprocess.PIPE
     )
     if result.returncode != 0:
-        raise RuntimeError(
-            "nix-prefetch-git exited with error {}".format(result.returncode)
-        )
+        raise RuntimeError(f"nix-prefetch-git exited with error {result.returncode}")
     result = json.loads(result.stdout.decode("utf-8").strip())
     return result["hash"]
 

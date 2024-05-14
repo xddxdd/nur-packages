@@ -4,7 +4,7 @@ import re
 import sys
 
 if len(sys.argv) < 2:
-    print("Usage: {} log.txt".format(sys.argv[0]))
+    print(f"Usage: {sys.argv[0]} log.txt")
     exit(1)
 
 libraries_ok = set()

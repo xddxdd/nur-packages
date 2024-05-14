@@ -20,9 +20,7 @@ def get_selector(name: str):
         }
     )
     sources = session.get(
-        "https://downloads.digium.com/pub/telephony/codec_{}/selector-{}.js".format(
-            name, name
-        )
+        f"https://downloads.digium.com/pub/telephony/codec_{name}/selector-{name}.js"
     ).text
 
     # Find body of json value
@@ -46,9 +44,7 @@ def get_selector(name: str):
 def nix_prefetch_url(url: str):
     result = subprocess.run(["nix-prefetch-url", url], stdout=subprocess.PIPE)
     if result.returncode != 0:
-        raise RuntimeError(
-            "nix-prefetch-url exited with error {}".format(result.returncode)
-        )
+        raise RuntimeError(f"nix-prefetch-url exited with error {result.returncode}")
     return result.stdout.decode("utf-8").strip()
 
 

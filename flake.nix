@@ -16,6 +16,10 @@
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    pre-commit-hooks-nix = {
+      url = "github:cachix/pre-commit-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     {
@@ -31,6 +35,7 @@
         ./flake-modules/_internal/meta.nix
         ./flake-modules/_internal/modules-test-nixos-config.nix
         ./flake-modules/_internal/nixpkgs-options.nix
+        ./flake-modules/_internal/pre-commit-hooks.nix
         ./flake-modules/_internal/treefmt.nix
       ];
 
