@@ -23,7 +23,10 @@
 
         programs = {
           black.enable = true;
-          deadnix.enable = true;
+          deadnix = {
+            enable = true;
+            no-lambda-pattern-names = true;
+          };
           isort.enable = true;
           nixfmt-rfc-style.enable = true;
           statix.enable = true;
