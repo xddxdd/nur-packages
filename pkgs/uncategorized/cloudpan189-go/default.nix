@@ -35,6 +35,7 @@ stdenvNoCC.mkDerivation {
   '';
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "天翼云盘命令行客户端(CLI)，基于GO语言实现";
     homepage = "https://github.com/tickstep/cloudpan189-go";
     license = licenses.asl20;

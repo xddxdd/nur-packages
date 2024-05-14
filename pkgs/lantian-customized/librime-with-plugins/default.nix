@@ -1,5 +1,6 @@
 {
   sources,
+  lib,
   librime,
   luajit,
   ...
@@ -24,6 +25,7 @@
     buildInputs = (old.buildInputs or [ ]) ++ [ luajit ];
 
     meta = old.meta // {
+      maintainers = with lib.maintainers; [ xddxdd ];
       description = "Librime with plugins (librime-charcode, librime-lua, librime-octagram, librime-proto)";
     };
   })

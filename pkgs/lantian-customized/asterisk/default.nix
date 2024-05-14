@@ -77,6 +77,7 @@ in
     '';
 
   meta = old.meta // {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "Asterisk with Lan Tian modifications";
     platforms = [ "x86_64-linux" ];
   };

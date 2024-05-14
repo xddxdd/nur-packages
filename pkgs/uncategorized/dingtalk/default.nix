@@ -249,6 +249,7 @@ stdenv.mkDerivation rec {
   ];
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "钉钉";
     homepage = "https://www.dingtalk.com/";
     platforms = [ "x86_64-linux" ];

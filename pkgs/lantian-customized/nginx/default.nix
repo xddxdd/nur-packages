@@ -163,6 +163,7 @@ stdenv.mkDerivation rec {
   };
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "OpenResty with Lan Tian modifications";
     homepage = "https://openresty.org";
     license = licenses.bsd2;

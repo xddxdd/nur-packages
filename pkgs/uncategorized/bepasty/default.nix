@@ -33,6 +33,7 @@ python3Packages.buildPythonPackage rec {
   doCheck = false;
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "universal pastebin server";
     homepage = "https://bepasty-server.readthedocs.org/";
     license = with licenses; [ bsd2 ];

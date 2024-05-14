@@ -28,6 +28,7 @@
       imports = [
         ./flake-modules/_internal/ci-outputs.nix
         ./flake-modules/_internal/commands.nix
+        ./flake-modules/_internal/meta.nix
         ./flake-modules/_internal/modules-test-nixos-config.nix
         ./flake-modules/_internal/nixpkgs-options.nix
         ./flake-modules/_internal/treefmt.nix

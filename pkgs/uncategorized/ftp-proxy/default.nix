@@ -16,6 +16,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "ftp.proxy - FTP Proxy Server";
     homepage = "http://www.ftpproxy.org/";
     license = licenses.gpl2Only;

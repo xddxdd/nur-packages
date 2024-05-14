@@ -37,6 +37,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "Bilibili desktop client";
     homepage = "https://app.bilibili.com/";
     license = licenses.unfreeRedistributable;

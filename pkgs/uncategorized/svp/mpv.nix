@@ -8,7 +8,7 @@
 let
   libraries = [ ocl-icd ];
 in
-wrapMpv
+(wrapMpv
   ((mpv-unwrapped.override { vapoursynthSupport = true; }).overrideAttrs (old: {
     patches = (old.patches or [ ]) ++ [
       # Credit to @xrun1
@@ -26,3 +26,9 @@ wrapMpv
       "/run/opengl-driver/lib:${lib.makeLibraryPath libraries}"
     ];
   }
+)
+// {
+  meta = mpv-unwrapped.meta // {
+    maintainers = with lib.maintainers; [ xddxdd ];
+  };
+}

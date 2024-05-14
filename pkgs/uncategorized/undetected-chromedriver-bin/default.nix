@@ -1,5 +1,6 @@
 {
   pkgs,
+  lib,
   python3,
   chromedriver,
   undetected-chromedriver,
@@ -53,6 +54,7 @@ chromedriver.overrideAttrs (old: {
     '';
 
   meta = old.meta // {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "Chromedriver with undetected-chromedriver patch";
   };
 })

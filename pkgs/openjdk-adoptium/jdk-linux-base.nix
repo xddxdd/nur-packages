@@ -109,6 +109,7 @@ let
     passthru.home = result;
 
     meta = with lib; {
+      maintainers = with lib.maintainers; [ xddxdd ];
       license = licenses.gpl2Classpath;
       description = "OpenJDK binaries built by Eclipse Adoptium";
       homepage = "https://adoptium.net/";

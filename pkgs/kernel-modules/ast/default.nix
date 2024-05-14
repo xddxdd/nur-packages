@@ -32,6 +32,7 @@ stdenv.mkDerivation rec {
   installTargets = [ "modules_install" ];
 
   meta = {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "Aspeed Graphics Driver";
     homepage = "https://www.aspeedtech.com/support_driver/";
     license = lib.licenses.unfree;

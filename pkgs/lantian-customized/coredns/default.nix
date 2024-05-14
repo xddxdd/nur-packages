@@ -18,6 +18,7 @@
     patches = (old.patches or [ ]) ++ [ ./fix-large-axfr.patch ];
 
     meta = with lib; {
+      maintainers = with lib.maintainers; [ xddxdd ];
       homepage = "https://github.com/xddxdd/coredns";
       description = "CoreDNS with Lan Tian's modifications";
       license = licenses.asl20;

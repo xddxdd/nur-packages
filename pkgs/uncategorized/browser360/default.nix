@@ -238,6 +238,7 @@ stdenv.mkDerivation {
   '';
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "360 Browser";
     homepage = "https://browser.360.net/gc/index.html";
     platforms = [

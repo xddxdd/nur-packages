@@ -28,7 +28,9 @@ stdenvNoCC.mkDerivation rec {
   '';
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "KaiXinSong";
     homepage = "http://www.guoxuedashi.net/zidian/bujian/KaiXinSong.php";
+    license = with lib.licenses; [ unfreeRedistributable ];
   };
 }

@@ -16,6 +16,7 @@ buildPythonPackage rec {
   doCheck = false;
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "Api for SmartRent locks, thermostats, moisture sensors and switches";
     homepage = "https://github.com/ZacheryThomas/smartrent.py";
     license = with licenses; [ mit ];

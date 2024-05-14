@@ -108,6 +108,7 @@ stdenv.mkDerivation {
   ];
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description =
       "Future-proof NvENC & NvFBC patcher"
       + lib.optionalString enableNvidia530Patch " (for NVIDIA driver >= 530)";

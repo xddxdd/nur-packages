@@ -10,6 +10,7 @@ stdenv.mkDerivation {
   makeFlags = [ "PREFIX=${placeholder "out"}" ];
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "NoteBook FanControl ported to Linux (with Lan Tian's modifications)";
     homepage = "https://github.com/xddxdd/nbfc-linux";
     license = licenses.gpl3Only;

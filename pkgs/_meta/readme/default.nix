@@ -157,6 +157,7 @@ writeTextFile {
     ${packageSetsOutput}
   '';
   meta = {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "README.md for Lan Tian's NUR Repo";
     homepage = "https://github.com/xddxdd/nur-packages";
     license = lib.licenses.unlicense;

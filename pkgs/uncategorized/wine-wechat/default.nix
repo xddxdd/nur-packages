@@ -142,6 +142,7 @@ stdenv.mkDerivation {
   ];
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "Wine WeChat x64 (Packaging script adapted from https://aur.archlinux.org/packages/deepin-wine-wechat)";
     homepage = "https://weixin.qq.com/";
     platforms = [ "x86_64-linux" ];

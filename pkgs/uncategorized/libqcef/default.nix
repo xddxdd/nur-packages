@@ -80,6 +80,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "Qt5 binding of CEF";
     homepage = "https://github.com/martyr-deepin/libqcef";
     platforms = [ "x86_64-linux" ];

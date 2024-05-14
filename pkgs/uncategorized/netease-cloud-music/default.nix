@@ -114,6 +114,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "NetEase Cloud Music Linux Client (package script adapted from NixOS-CN and Freed-Wu)";
     homepage = "https://music.163.com";
     platforms = [ "x86_64-linux" ];

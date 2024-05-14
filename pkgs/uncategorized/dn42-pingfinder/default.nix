@@ -30,6 +30,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
+    maintainers = with lib.maintainers; [ xddxdd ];
     description = "DN42 Pingfinder";
     homepage = "https://git.dn42.dev/dn42/pingfinder/src/branch/master/clients";
     license = licenses.unfreeRedistributable;
