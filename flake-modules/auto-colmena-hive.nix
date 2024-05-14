@@ -30,7 +30,7 @@ in
 {
   flake = {
     colmenaHive = mkColmenaHive { allowApplyAll = false; } (
-      lib.filterAttrs (n: v: !lib.hasPrefix "_" n) config.flake.nixosConfigurations
+      lib.filterAttrs (n: _v: !lib.hasPrefix "_" n) config.flake.nixosConfigurations
     );
   };
 }

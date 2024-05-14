@@ -12,7 +12,7 @@
   libvorbis,
   vo-amrwbenc,
   ...
-}@args:
+}:
 let
   asterisk-actual = asterisk_20;
   codecs-actual = asteriskDigiumCodecs."20";

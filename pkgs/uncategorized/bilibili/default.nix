@@ -5,7 +5,7 @@
   lib,
   makeWrapper,
   ...
-}@args:
+}:
 let
   res = "${sources.bilibili-src.src}/res";
 in

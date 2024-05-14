@@ -42,7 +42,7 @@
         overlay = self.overlays.default;
         overlays = {
           default =
-            final: prev:
+            _final: prev:
             import ./pkgs null {
               pkgs = prev;
               inherit inputs;

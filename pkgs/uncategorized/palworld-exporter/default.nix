@@ -5,7 +5,7 @@
   click-loglevel,
   py-rcon,
   ...
-}@args:
+}:
 with python3Packages;
 buildPythonApplication rec {
   inherit (sources.palworld-exporter) pname version src;

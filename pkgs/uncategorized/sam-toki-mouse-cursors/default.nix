@@ -5,7 +5,7 @@
   python3,
   win2xcur,
   ...
-}@args:
+}:
 let
   py = python3.withPackages (p: [
     p.requests

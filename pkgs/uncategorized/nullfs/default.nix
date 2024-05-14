@@ -4,7 +4,7 @@
   lib,
   fuse,
   ...
-}@args:
+}:
 stdenv.mkDerivation rec {
   inherit (sources.nullfs) pname version src;
 

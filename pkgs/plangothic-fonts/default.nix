@@ -3,7 +3,7 @@
   lib,
   sources,
   ...
-}@args:
+}:
 let
   package =
     P1_variant:

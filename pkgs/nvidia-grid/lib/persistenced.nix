@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
     homepage = "https://www.nvidia.com/object/unix.html";
     description = "Settings application for NVIDIA graphics cards";
     license = licenses.unfreeRedistributable;
-    platforms = nvidia_x11.meta.platforms;
+    inherit (nvidia_x11.meta) platforms;
     maintainers = with maintainers; [ abbradar ];
   };
 }

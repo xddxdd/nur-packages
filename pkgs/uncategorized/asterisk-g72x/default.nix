@@ -6,7 +6,7 @@
   bcg729,
   asterisk,
   ...
-}@args:
+}:
 stdenv.mkDerivation rec {
   inherit (sources.asterisk-g72x) pname version src;
 

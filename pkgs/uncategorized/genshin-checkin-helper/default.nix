@@ -5,7 +5,7 @@
   onepush,
   genshinhelper2,
   ...
-}@args:
+}:
 with python3Packages;
 let
   setupPy = ./setup.py;

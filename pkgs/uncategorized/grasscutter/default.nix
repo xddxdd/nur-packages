@@ -8,7 +8,7 @@
   makeWrapper,
   writeScript,
   ...
-}@args:
+}:
 let
   resources = sources.grasscutter-resources.src;
   keystore = fetchurl {

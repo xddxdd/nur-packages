@@ -7,7 +7,7 @@
   utils,
   inputs,
   ...
-}@args:
+}:
 {
   # Remove lingering WireGuard links after they are shut down.
   systemd.services =

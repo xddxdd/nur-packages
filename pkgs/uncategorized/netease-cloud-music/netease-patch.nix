@@ -4,7 +4,7 @@
   # Dependencies
   libvlc,
   ...
-}@args:
+}:
 # Source: https://aur.archlinux.org/packages/netease-cloud-music
 stdenv.mkDerivation {
   pname = "netease-cloud-music-patch";

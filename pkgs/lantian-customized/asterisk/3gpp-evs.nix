@@ -4,7 +4,7 @@
   fetchurl,
   unzip,
   ...
-}@args:
+}:
 stdenv.mkDerivation rec {
   pname = "3gpp-evs";
   version = "16.1.0";

@@ -3,7 +3,7 @@
   sources,
   lib,
   ...
-}@args:
+}:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.rime-zhwiki) pname version src;
   dontUnpack = true;

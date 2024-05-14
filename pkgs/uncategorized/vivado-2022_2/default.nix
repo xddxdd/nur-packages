@@ -96,7 +96,7 @@ let
 
   fhs = buildFHSUserEnvBubblewrap {
     name = "vivado-fhs";
-    multiPkgs = pkgs: libraries;
+    multiPkgs = _pkgs: libraries;
     unshareUser = false;
     unshareIpc = false;
     unsharePid = false;

@@ -7,16 +7,16 @@
 }:
 (librime.override {
   plugins = [
-    (sources.librime-charcode.src.overrideAttrs (old: {
+    (sources.librime-charcode.src.overrideAttrs (_old: {
       name = "librime-charcode";
     }))
-    (sources.librime-lua.src.overrideAttrs (old: {
+    (sources.librime-lua.src.overrideAttrs (_old: {
       name = "librime-lua";
     }))
-    (sources.librime-octagram.src.overrideAttrs (old: {
+    (sources.librime-octagram.src.overrideAttrs (_old: {
       name = "librime-octagram";
     }))
-    (sources.librime-proto.src.overrideAttrs (old: {
+    (sources.librime-proto.src.overrideAttrs (_old: {
       name = "librime-proto";
     }))
   ];

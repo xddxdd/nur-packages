@@ -166,7 +166,7 @@ mkScope (
     nvlax-530 = pkg ./uncategorized/nvlax/nvidia-530.nix { };
     oci-arm-host-capacity = pkg ./uncategorized/oci-arm-host-capacity { };
     onepush = pkg ./uncategorized/onepush { };
-    openssl-oqs = pkg ./uncategorized/openssl-oqs { cryptodev = pkgs.linuxPackages.cryptodev; };
+    openssl-oqs = pkg ./uncategorized/openssl-oqs { inherit (pkgs.linuxPackages) cryptodev; };
     openssl-oqs-provider = pkg ./uncategorized/openssl-oqs-provider { };
     osdlyrics = pkg ./uncategorized/osdlyrics { };
     palworld-exporter = pkg ./uncategorized/palworld-exporter { };

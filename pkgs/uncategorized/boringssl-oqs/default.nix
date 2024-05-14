@@ -9,7 +9,7 @@
   pkg-config,
   liboqs,
   ...
-}@args:
+}:
 let
   # CMAKE_OSX_ARCHITECTURES is set to x86_64 by Nix, but it confuses boringssl on aarch64-linux.
   cmakeFlags = [
@@ -18,7 +18,7 @@ let
     "-DLIBOQS_DIR=${liboqs}"
     "-DLIBOQS_SHARED=ON"
     "-DBUILD_SHARED_LIBS=ON"
-  ] ++ lib.optionals (stdenv.isLinux) [ "-DCMAKE_OSX_ARCHITECTURES=" ];
+  ] ++ lib.optionals stdenv.isLinux [ "-DCMAKE_OSX_ARCHITECTURES=" ];
 in
 buildGoModule {
   inherit (sources.boringssl-oqs) pname version src;

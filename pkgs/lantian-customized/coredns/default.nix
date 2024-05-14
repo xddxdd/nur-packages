@@ -4,7 +4,7 @@
   coredns,
   buildGoModule,
   ...
-}@args:
+}:
 (coredns.override {
   externalPlugins = [
     {
