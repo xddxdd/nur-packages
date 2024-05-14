@@ -12,6 +12,10 @@
       url = "github:berberman/nvfetcher";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    treefmt-nix = {
+      url = "github:numtide/treefmt-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     {
@@ -26,6 +30,7 @@
         ./flake-modules/_internal/commands.nix
         ./flake-modules/_internal/modules-test-nixos-config.nix
         ./flake-modules/_internal/nixpkgs-options.nix
+        ./flake-modules/_internal/treefmt.nix
       ];
 
       systems = [
@@ -73,8 +78,6 @@
         {
           packages = import ./pkgs null { inherit inputs pkgs; };
           legacyPackages = import ./pkgs "legacy" { inherit inputs pkgs; };
-
-          formatter = pkgs.nixfmt-rfc-style;
         };
     };
 }
