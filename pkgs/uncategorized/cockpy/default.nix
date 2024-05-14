@@ -5,7 +5,7 @@
   python3Packages,
   makeWrapper,
   ...
-}@args:
+}:
 with python3Packages;
 let
   pyenet = buildPythonPackage {
@@ -18,7 +18,7 @@ let
 
   pythonEnv = python3.withPackages (
     ps: with ps; [
-      (betterproto.overridePythonAttrs (old: {
+      (betterproto.overridePythonAttrs (_old: {
         doCheck = false;
       }))
       bottle

@@ -5,7 +5,7 @@
   python3,
   makeWrapper,
   ...
-}@args:
+}:
 let
   py = python3.withPackages (
     p: with p; [

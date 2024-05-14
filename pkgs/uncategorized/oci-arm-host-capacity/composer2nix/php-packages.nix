@@ -1,9 +1,6 @@
 {
   composerEnv,
   fetchurl,
-  fetchgit ? null,
-  fetchhg ? null,
-  fetchsvn ? null,
   noDev ? false,
 }:
 

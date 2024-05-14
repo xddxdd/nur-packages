@@ -1,6 +1,5 @@
 {
   stdenv,
-  sources,
   lib,
   makeWrapper,
   # Runtime dependnecies
@@ -8,7 +7,7 @@
   inetutils,
   which,
   ...
-}@args:
+}:
 let
   additionalPath = lib.makeBinPath [
     curl

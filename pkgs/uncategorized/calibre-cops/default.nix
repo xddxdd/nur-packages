@@ -5,7 +5,7 @@
   dos2unix,
   unzip,
   ...
-}@args:
+}:
 let
   configFile = ./config_local.php;
 in

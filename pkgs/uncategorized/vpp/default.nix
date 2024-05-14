@@ -21,7 +21,7 @@
   xdp-tools,
   zlib,
   ...
-}@args:
+}:
 let
   dpdk-vpp = dpdk.overrideAttrs (old: {
     mesonFlags = (old.mesonFlags or [ ]) ++ [ "-Denable_driver_sdk=true" ];

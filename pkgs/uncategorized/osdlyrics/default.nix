@@ -14,7 +14,7 @@
   libnotify,
   python3,
   ...
-}@args:
+}:
 let
   osdlyricsPython = python3Packages.buildPythonPackage rec {
     inherit (sources.osdlyrics) pname version src;

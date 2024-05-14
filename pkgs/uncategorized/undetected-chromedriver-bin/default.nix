@@ -1,7 +1,5 @@
 {
   pkgs,
-  lib,
-  sources,
   python3,
   chromedriver,
   undetected-chromedriver,

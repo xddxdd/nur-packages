@@ -3,7 +3,7 @@
   stdenv,
   lib,
   ...
-}@args:
+}:
 stdenv.mkDerivation {
   inherit (sources.nbfc-linux-lantian) pname version src;
 

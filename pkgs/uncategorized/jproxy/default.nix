@@ -6,7 +6,7 @@
   makeWrapper,
   unzip,
   ...
-}@args:
+}:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.jproxy) pname version src;
 

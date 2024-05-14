@@ -1,7 +1,6 @@
 {
   sources,
   lib,
-  stdenv,
   rustPlatform,
 }:
 rustPlatform.buildRustPackage {

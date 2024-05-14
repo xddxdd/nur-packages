@@ -19,7 +19,7 @@
   systemd,
   xorg,
   ...
-}@args:
+}:
 let
   libraries = [
     alsa-lib

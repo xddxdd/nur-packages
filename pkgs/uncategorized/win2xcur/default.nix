@@ -3,7 +3,7 @@
   sources,
   python3Packages,
   ...
-}@args:
+}:
 with python3Packages;
 buildPythonPackage rec {
   inherit (sources.win2xcur) pname version src;

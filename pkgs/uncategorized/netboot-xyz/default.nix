@@ -3,7 +3,7 @@
   stdenvNoCC,
   sources,
   ...
-}@args:
+}:
 assert (sources.netboot-xyz-lkrn.version == sources.netboot-xyz-lkrn.version);
 stdenvNoCC.mkDerivation rec {
   pname = "netboot-xyz";

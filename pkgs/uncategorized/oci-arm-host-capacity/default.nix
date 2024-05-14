@@ -3,11 +3,11 @@
   sources,
   callPackage,
   ...
-}@args:
+}:
 let
   composer2nixOutput = callPackage ./composer2nix { };
 in
-composer2nixOutput.overrideAttrs (old: rec {
+composer2nixOutput.overrideAttrs (_old: rec {
   inherit (sources.oci-arm-host-capacity) pname version src;
   name = "${pname}-${version}";
 

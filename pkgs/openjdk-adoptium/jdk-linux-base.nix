@@ -35,7 +35,7 @@ let
 
   result = stdenv.mkDerivation rec {
     pname = "openjdk-adoptium-${thisSource.type}-bin";
-    version = thisSource.version;
+    inherit (thisSource) version;
     src = fetchurl { inherit (thisSource) url sha256; };
 
     buildInputs = [

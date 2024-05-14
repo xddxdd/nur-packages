@@ -5,7 +5,7 @@
   stdenvNoCC,
   writeShellScript,
   ...
-}@args:
+}:
 let
   cmd = buildGoModule rec {
     inherit (sources.cloudpan189-go) pname version src;
