@@ -70,7 +70,7 @@ let
     '';
 
   uncategorizedOutput = packageSetOutput "(Uncategorized)" "" (
-    lib.filterAttrs (_n: v: (builtins.tryEval v).success && isIndependentDerivation v) nurPackages
+    lib.filterAttrs (n: v: (builtins.tryEval v).success && isIndependentDerivation v) nurPackages
   );
 
   packageSetsOutput = builtins.concatStringsSep "\n" (

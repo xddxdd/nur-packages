@@ -10,7 +10,7 @@
   systemd,
   ninja,
   ...
-}:
+}@args:
 stdenv.mkDerivation rec {
   inherit (sources.uksmd) pname version src;
   nativeBuildInputs = [

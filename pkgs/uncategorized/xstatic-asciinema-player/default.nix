@@ -3,7 +3,7 @@
   sources,
   python3Packages,
   ...
-}:
+}@args:
 with python3Packages;
 buildPythonPackage rec {
   inherit (sources.xstatic-asciinema-player) pname version src;

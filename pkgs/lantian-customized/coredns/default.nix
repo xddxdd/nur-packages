@@ -1,4 +1,10 @@
-{ lib, coredns, ... }:
+{
+  sources,
+  lib,
+  coredns,
+  buildGoModule,
+  ...
+}@args:
 (coredns.override {
   externalPlugins = [
     {

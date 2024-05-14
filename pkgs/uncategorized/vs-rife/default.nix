@@ -2,8 +2,9 @@
   sources,
   lib,
   python3Packages,
+  vapoursynth,
   ...
-}:
+}@args:
 with python3Packages;
 buildPythonPackage {
   inherit (sources.vs-rife) pname version src;

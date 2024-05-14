@@ -5,7 +5,7 @@
   unzip,
   p7zip,
   ...
-}:
+}@args:
 let
   unpack =
     args: version: source:
@@ -16,7 +16,7 @@ let
         srcs = lib.mapAttrsToList (
           url: hash:
           fetchurl {
-            inherit url;
+            url = url;
             sha256 = hash;
           }
         ) source.urls;

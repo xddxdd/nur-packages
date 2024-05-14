@@ -1,4 +1,4 @@
-{ sources, qbittorrent, ... }:
-qbittorrent.overrideAttrs (_old: {
+{ sources, qbittorrent, ... }@args:
+qbittorrent.overrideAttrs (old: {
   inherit (sources.qbittorrent-enhanced-edition) pname version src;
 })

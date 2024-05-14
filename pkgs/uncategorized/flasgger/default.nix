@@ -3,7 +3,7 @@
   sources,
   python3Packages,
   ...
-}:
+}@args:
 python3Packages.buildPythonPackage rec {
   inherit (sources.flasgger) pname version src;
 

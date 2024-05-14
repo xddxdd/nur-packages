@@ -11,7 +11,7 @@
   libdbusmenu,
   libglvnd,
   ...
-}:
+}@args:
 ################################################################################
 # Mostly based on baidnetdisk-electron package from AUR:
 # https://aur.archlinux.org/packages/baidunetdisk-electron

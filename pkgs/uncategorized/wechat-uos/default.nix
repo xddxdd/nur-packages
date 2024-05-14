@@ -32,7 +32,7 @@
   xorg,
   wayland,
   ...
-}:
+}@args:
 ################################################################################
 # Mostly based on wechat-uos-bwrap package from AUR:
 # https://aur.archlinux.org/packages/wechat-uos-bwrap
@@ -128,7 +128,7 @@ let
   fhs = buildFHSUserEnvBubblewrap {
     name = "wechat-uos";
     targetPkgs =
-      _pkgs:
+      pkgs:
       [
         license
         resource

@@ -4,7 +4,7 @@
   python3Packages,
   gettext,
   ...
-}:
+}@args:
 with python3Packages;
 buildPythonPackage rec {
   inherit (sources.genshinhelper2) pname version src;

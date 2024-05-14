@@ -1,4 +1,9 @@
-{ lib, ... }:
+{
+  self,
+  lib,
+  inputs,
+  ...
+}:
 
 {
   perSystem =
@@ -8,7 +13,7 @@
         apps:
         pkgs.mkShell {
           buildInputs = lib.mapAttrsToList (
-            n: _v:
+            n: v:
             pkgs.writeShellScriptBin n ''
               exec nix run .#${n} -- "$@"
             ''

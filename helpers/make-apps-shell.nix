@@ -7,7 +7,7 @@
 apps:
 mkShell {
   buildInputs = lib.mapAttrsToList (
-    n: _v:
+    n: v:
     writeShellScriptBin n ''
       exec nix run .#${n} -- "$@"
     ''

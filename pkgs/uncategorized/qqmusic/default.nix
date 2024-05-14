@@ -3,6 +3,7 @@
   stdenv,
   autoPatchelfHook,
   makeWrapper,
+  writeText,
   lib,
   makeDesktopItem,
   copyDesktopItems,
@@ -28,7 +29,7 @@
   udev,
   xorg,
   ...
-}:
+}@args:
 ################################################################################
 # Mostly based on qqmusic-bin package from AUR:
 # https://aur.archlinux.org/packages/qqmusic-bin

@@ -1,4 +1,5 @@
 {
+  lib,
   fetchurl,
   space-cadet-pinball,
   unzip,

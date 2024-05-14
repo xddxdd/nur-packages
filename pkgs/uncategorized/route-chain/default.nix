@@ -3,7 +3,7 @@
   sources,
   lib,
   ...
-}:
+}@args:
 stdenv.mkDerivation rec {
   inherit (sources.route-chain) pname version src;
   enableParallelBuilding = true;

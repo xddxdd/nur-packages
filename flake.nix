@@ -42,7 +42,7 @@
         overlay = self.overlays.default;
         overlays = {
           default =
-            _final: prev:
+            final: prev:
             import ./pkgs null {
               pkgs = prev;
               inherit inputs;
@@ -55,7 +55,11 @@
         };
 
         nixosModules = {
-          setupOverlay = _: { nixpkgs.overlays = [ self.overlays.default ]; };
+          setupOverlay =
+            { config, ... }:
+            {
+              nixpkgs.overlays = [ self.overlays.default ];
+            };
           kata-containers = import ./modules/kata-containers.nix;
           openssl-oqs-provider = import ./modules/openssl-oqs-provider.nix;
           plasma-desktop-lyrics = import ./modules/plasma-desktop-lyrics.nix;
@@ -65,7 +69,12 @@
       };
 
       perSystem =
-        { pkgs, ... }:
+        {
+          config,
+          system,
+          pkgs,
+          ...
+        }:
         {
           packages = import ./pkgs null { inherit inputs pkgs; };
           legacyPackages = import ./pkgs "legacy" { inherit inputs pkgs; };

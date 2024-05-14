@@ -3,7 +3,7 @@
   lib,
   fetchurl,
   ...
-}:
+}@args:
 let
   kaixinsong-a = fetchurl {
     url = "https://backblaze.lantian.pub/KaiXinSongA.ttf";

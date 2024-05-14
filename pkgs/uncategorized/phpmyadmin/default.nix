@@ -3,7 +3,7 @@
   stdenvNoCC,
   sources,
   ...
-}:
+}@args:
 let
   configFile = ./config.inc.php;
 in

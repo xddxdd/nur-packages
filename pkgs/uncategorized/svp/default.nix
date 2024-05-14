@@ -104,7 +104,7 @@ let
 
   fhs = buildFHSEnv {
     name = "SVPManager";
-    targetPkgs = _pkgs: libraries;
+    targetPkgs = pkgs: libraries;
     runScript = "${svp-dist}/opt/SVPManager";
     unshareUser = false;
     unshareIpc = false;

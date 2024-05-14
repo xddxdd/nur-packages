@@ -22,7 +22,7 @@
   qt5,
   xorg,
   ...
-}:
+}@args:
 let
   libraries = [
     alsa-lib

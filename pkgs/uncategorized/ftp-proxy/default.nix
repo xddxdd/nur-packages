@@ -3,7 +3,7 @@
   stdenv,
   sources,
   ...
-}:
+}@args:
 stdenv.mkDerivation rec {
   inherit (sources.ftp-proxy) pname version src;
 

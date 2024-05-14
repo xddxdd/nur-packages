@@ -2,17 +2,25 @@
   stdenv,
   lib,
   runCommand,
+  autoPatchelfHook,
+  alsa-lib,
+  bash,
   buildFHSUserEnvBubblewrap,
   busybox,
   coreutils,
   envsubst,
+  ffmpeg_4,
   fontconfig,
   freetype,
   gcc,
   glib,
   glibc,
+  gnutar,
   gperftools,
   gtk2,
+  gtk3,
+  gzip,
+  icu68,
   liberation_ttf,
   libX11,
   libxcb,
@@ -21,11 +29,14 @@
   libXi,
   libXrender,
   libXtst,
+  libXxf86vm,
   makeWrapper,
   ncurses5,
   patchelf,
   procps,
   requireFile,
+  writeScript,
+  xorg,
   zlib,
 }:
 # Modified from https://github.com/lschuermann/nur-packages/blob/master/pkgs/vivado/vivado-2022_2.nix
@@ -85,7 +96,7 @@ let
 
   fhs = buildFHSUserEnvBubblewrap {
     name = "vivado-fhs";
-    multiPkgs = _pkgs: libraries;
+    multiPkgs = pkgs: libraries;
     unshareUser = false;
     unshareIpc = false;
     unsharePid = false;

@@ -1,4 +1,9 @@
-{ callPackage, ... }:
+{
+  lib,
+  system,
+  callPackage,
+  ...
+}:
 let
   flattenPkgs = callPackage ./flatten-pkgs.nix { };
   inherit (flattenPkgs) isDerivation isTargetPlatform;

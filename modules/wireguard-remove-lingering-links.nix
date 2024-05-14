@@ -1,9 +1,13 @@
 {
   pkgs,
   lib,
+  LT,
   config,
+  options,
+  utils,
+  inputs,
   ...
-}:
+}@args:
 {
   # Remove lingering WireGuard links after they are shut down.
   systemd.services =

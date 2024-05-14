@@ -1,9 +1,20 @@
-{ inputs, ... }:
+{
+  self,
+  lib,
+  flake-parts-lib,
+  inputs,
+  ...
+}:
 {
   imports = [ inputs.treefmt-nix.flakeModule ];
 
   perSystem =
-    { config, pkgs, ... }:
+    {
+      config,
+      system,
+      pkgs,
+      ...
+    }:
     {
       treefmt = {
         flakeFormatter = false;

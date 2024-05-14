@@ -5,7 +5,7 @@
   pkg-config,
   ncurses,
   ...
-}:
+}@args:
 stdenv.mkDerivation rec {
   inherit (sources.procps4) pname version src;
   nativeBuildInputs = [ pkg-config ];

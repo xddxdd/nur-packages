@@ -5,6 +5,7 @@
   fetchurl,
   cmake,
   ninja,
+  lief,
   enableNvidia530Patch ? false,
   ...
 }:

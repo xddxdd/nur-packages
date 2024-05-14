@@ -7,7 +7,7 @@
 }:
 let
   deepspeech = callPackage ./default.nix { };
-  inherit (deepspeech) version;
+  version = deepspeech.version;
 
   model-en = fetchurl {
     url = "https://github.com/mozilla/DeepSpeech/releases/download/v${version}/deepspeech-${version}-models.pbmm";

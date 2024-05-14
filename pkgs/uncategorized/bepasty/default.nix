@@ -5,7 +5,7 @@
   xstatic-asciinema-player,
   xstatic-font-awesome,
   ...
-}:
+}@args:
 python3Packages.buildPythonPackage rec {
   inherit (sources.bepasty) pname version src;
 

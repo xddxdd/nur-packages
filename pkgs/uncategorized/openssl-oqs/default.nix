@@ -8,7 +8,7 @@
   cryptodev-unstable,
   static ? stdenv.hostPlatform.isStatic,
   ...
-}:
+}@args:
 with lib;
 stdenv.mkDerivation rec {
   inherit (sources.openssl-oqs) pname src;

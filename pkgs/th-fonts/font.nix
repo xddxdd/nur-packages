@@ -3,7 +3,7 @@
   lib,
   p7zip,
   ...
-}:
+}@args:
 # Args
 source:
 stdenvNoCC.mkDerivation rec {

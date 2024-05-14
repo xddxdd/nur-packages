@@ -6,8 +6,9 @@
   jre_headless,
   procps,
   makeWrapper,
+  writeScript,
   ...
-}:
+}@args:
 let
   resources = sources.grasscutter-resources.src;
   keystore = fetchurl {

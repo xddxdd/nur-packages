@@ -7,7 +7,7 @@
   openssl_3_0,
   python3,
   ...
-}:
+}@args:
 stdenv.mkDerivation rec {
   inherit (sources.openssl-oqs-provider) pname version src;
 

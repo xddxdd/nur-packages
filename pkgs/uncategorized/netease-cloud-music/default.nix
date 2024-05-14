@@ -29,7 +29,7 @@
   udev,
   xorg,
   ...
-}:
+}@args:
 # Modified from:
 # - https://github.com/NixOS-CN/flakes/blob/main/packages/netease-cloud-music/default.nix
 # - https://github.com/Freed-Wu/nur-packages/blob/main/pkgs/applications/audio/netease-cloud-music/default.nix

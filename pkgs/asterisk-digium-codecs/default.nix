@@ -6,15 +6,15 @@
   curl,
   mergePkgs,
   ...
-}:
+}@args:
 let
   mkLibrary =
-    asterisk_version: name: _bits: value:
+    asterisk_version: name: bits: value:
     stdenv.mkDerivation rec {
       pname = "asterisk-${asterisk_version}-codec-${name}";
-      inherit (value) version;
+      version = value.version;
       src = fetchurl {
-        inherit (value) url;
+        url = value.url;
         sha256 = value.hash;
       };
 

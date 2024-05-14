@@ -6,7 +6,7 @@
   python3,
   flasgger,
   ...
-}:
+}@args:
 let
   pythonEnv = python3.withPackages (
     ps: with ps; [

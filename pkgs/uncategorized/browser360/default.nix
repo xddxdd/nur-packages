@@ -184,7 +184,7 @@ let
 
   fhs = buildFHSEnv {
     name = "browser360";
-    targetPkgs = _pkgs: libraries;
+    targetPkgs = pkgs: libraries;
     runScript = builtins.toString (
       writeShellScript "browser360" ''
         ${coreutils}/bin/install -Dm666 ${distPkg}/opt/apps/com.360.browser-stable/files/components/professional.qcert /var/lib/browser360/professional.qcert

@@ -1,7 +1,11 @@
 {
   lib,
   sources,
+  qemu_kvm,
+  go,
   stdenv,
+  buildGoModule,
+  fetchFromGitHub,
 }:
 # https://github.com/TUM-DSE/doctor-cluster-config/blob/0c40be8dd86282122f8f04df738c409ef5e3da1c/pkgs/kata-images/default.nix
 stdenv.mkDerivation {

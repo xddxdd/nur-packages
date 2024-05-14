@@ -6,7 +6,7 @@
   jre_headless,
   makeWrapper,
   ...
-}:
+}@args:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.suwayomi-server) pname src;
   version =

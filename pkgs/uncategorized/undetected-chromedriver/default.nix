@@ -1,7 +1,11 @@
 {
   lib,
   sources,
+  stdenv,
+  glibc,
+  python3,
   python3Packages,
+  chromedriver,
   ...
 }:
 with python3Packages;

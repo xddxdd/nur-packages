@@ -1,5 +1,10 @@
-{ sources, amule, ... }:
-amule.overrideAttrs (_old: {
+{
+  lib,
+  sources,
+  amule,
+  ...
+}:
+amule.overrideAttrs (old: {
   inherit (sources.amule-dlp) pname version src;
   patches = [ ];
 })

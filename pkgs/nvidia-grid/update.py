@@ -1,12 +1,11 @@
 import functools
 import json
 import os
+import requests
 import re
 import subprocess
 import sys
 from typing import List, Optional, Tuple
-
-import requests
 
 REPO = "Crystalast029/nv-vgpu-driver-archive"
 

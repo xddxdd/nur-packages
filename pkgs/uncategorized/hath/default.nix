@@ -5,7 +5,7 @@
   jre_headless,
   makeWrapper,
   ...
-}:
+}@args:
 stdenvNoCC.mkDerivation rec {
   pname = "hath";
   version = "1.6.2";

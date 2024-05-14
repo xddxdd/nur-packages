@@ -7,7 +7,7 @@
   protobufc,
   lua5_3_compat,
   ...
-}:
+}@args:
 stdenv.mkDerivation rec {
   inherit (sources.soggy) pname version src;
   enableParallelBuilding = true;

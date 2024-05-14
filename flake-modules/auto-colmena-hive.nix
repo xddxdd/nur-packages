@@ -1,4 +1,10 @@
-{ lib, config, ... }:
+{
+  self,
+  lib,
+  inputs,
+  config,
+  ...
+}:
 let
   mkColmenaHive =
     metaConfig: nodes:
@@ -24,7 +30,7 @@ in
 {
   flake = {
     colmenaHive = mkColmenaHive { allowApplyAll = false; } (
-      lib.filterAttrs (n: _v: !lib.hasPrefix "_" n) config.flake.nixosConfigurations
+      lib.filterAttrs (n: v: !lib.hasPrefix "_" n) config.flake.nixosConfigurations
     );
   };
 }

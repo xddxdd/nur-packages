@@ -3,7 +3,7 @@
   sources,
   lib,
   ...
-}:
+}@args:
 stdenv.mkDerivation rec {
   inherit (sources.sgx-software-enable) pname version src;
 
