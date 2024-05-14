@@ -2,7 +2,6 @@
   callPackage,
   lib,
   linuxKernel,
-  sources,
   ...
 }@args:
 let

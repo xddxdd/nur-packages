@@ -2,7 +2,6 @@
   sources,
   stdenvNoCC,
   lib,
-  fetchurl,
   ...
 }:
 stdenvNoCC.mkDerivation {

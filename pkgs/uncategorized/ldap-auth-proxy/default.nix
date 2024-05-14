@@ -1,7 +1,6 @@
 {
   sources,
   lib,
-  fetchFromGitHub,
   buildGoPackage,
   ...
 }:

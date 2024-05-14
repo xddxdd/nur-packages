@@ -1,5 +1,4 @@
 {
-  self,
   lib,
   flake-parts-lib,
   inputs,
@@ -30,12 +29,7 @@ in
   ];
 
   perSystem =
-    {
-      config,
-      system,
-      pkgs,
-      ...
-    }:
+    { pkgs, ... }:
     let
       inherit (pkgs.callPackage ../../helpers/is-buildable.nix { }) isBuildable;
       outputsOf = p: map (o: p.${o}) p.outputs;

@@ -2,7 +2,6 @@
   sources,
   lib,
   python3Packages,
-  vapoursynth,
   ...
 }:
 with python3Packages;

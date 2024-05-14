@@ -1,8 +1,4 @@
-{
-  lib,
-  sources,
-  googleearth-pro,
-}:
+{ sources, googleearth-pro }:
 googleearth-pro.overrideAttrs (old: {
   inherit (sources.google-earth-pro) pname version src;
   unpackPhase = ''

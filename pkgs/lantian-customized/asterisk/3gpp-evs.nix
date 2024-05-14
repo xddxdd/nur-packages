@@ -1,6 +1,5 @@
 {
   stdenv,
-  lib,
   fetchurl,
   unzip,
   ...

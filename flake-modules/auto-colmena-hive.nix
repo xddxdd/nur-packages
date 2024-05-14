@@ -1,10 +1,4 @@
-{
-  self,
-  lib,
-  inputs,
-  config,
-  ...
-}:
+{ lib, config, ... }:
 let
   mkColmenaHive =
     metaConfig: nodes:

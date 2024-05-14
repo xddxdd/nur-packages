@@ -6,7 +6,6 @@
   jre_headless,
   procps,
   makeWrapper,
-  writeScript,
   ...
 }:
 let

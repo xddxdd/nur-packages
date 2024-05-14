@@ -1,6 +1,5 @@
 {
   stdenv,
-  sources,
   lib,
   makeWrapper,
   # Runtime dependnecies

@@ -1,5 +1,4 @@
 {
-  lib,
   sources,
   librime,
   luajit,

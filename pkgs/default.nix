@@ -13,7 +13,6 @@
 mode:
 {
   pkgs ? import <nixpkgs> { },
-  inputs ? null,
   ...
 }:
 let

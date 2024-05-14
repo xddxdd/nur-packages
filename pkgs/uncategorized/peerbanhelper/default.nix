@@ -4,7 +4,6 @@
   lib,
   jre_headless,
   makeWrapper,
-  unzip,
   ...
 }:
 stdenvNoCC.mkDerivation rec {

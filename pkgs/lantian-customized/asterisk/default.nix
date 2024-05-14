@@ -5,7 +5,6 @@
   asterisk_20,
   asteriskDigiumCodecs,
   asterisk-g72x,
-  fetchFromGitHub,
   opencore-amr,
   spandsp3,
   codec2,

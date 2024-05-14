@@ -55,11 +55,7 @@
         };
 
         nixosModules = {
-          setupOverlay =
-            { config, ... }:
-            {
-              nixpkgs.overlays = [ self.overlays.default ];
-            };
+          setupOverlay = _: { nixpkgs.overlays = [ self.overlays.default ]; };
           kata-containers = import ./modules/kata-containers.nix;
           openssl-oqs-provider = import ./modules/openssl-oqs-provider.nix;
           plasma-desktop-lyrics = import ./modules/plasma-desktop-lyrics.nix;
@@ -69,12 +65,7 @@
       };
 
       perSystem =
-        {
-          config,
-          system,
-          pkgs,
-          ...
-        }:
+        { pkgs, ... }:
         {
           packages = import ./pkgs null { inherit inputs pkgs; };
           legacyPackages = import ./pkgs "legacy" { inherit inputs pkgs; };

@@ -3,7 +3,6 @@
   stdenv,
   autoPatchelfHook,
   makeWrapper,
-  writeText,
   lib,
   makeDesktopItem,
   copyDesktopItems,

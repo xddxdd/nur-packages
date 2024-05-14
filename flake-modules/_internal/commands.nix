@@ -1,13 +1,7 @@
-{ self, lib, ... }:
+{ lib, ... }:
 {
   perSystem =
-    {
-      config,
-      system,
-      pkgs,
-      inputs',
-      ...
-    }:
+    { pkgs, inputs', ... }:
     let
       commands = rec {
         ci = ''
