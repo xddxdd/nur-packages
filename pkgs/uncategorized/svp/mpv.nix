@@ -26,9 +26,9 @@ in
       "/run/opengl-driver/lib:${lib.makeLibraryPath libraries}"
     ];
   }
-)
-// {
-  meta = mpv-unwrapped.meta // {
-    maintainers = with lib.maintainers; [ xddxdd ];
-  };
-}
+).overrideAttrs
+  (old: {
+    meta = old.meta // {
+      maintainers = with lib.maintainers; [ xddxdd ];
+    };
+  })
