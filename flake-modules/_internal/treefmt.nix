@@ -19,14 +19,15 @@
       treefmt = {
         flakeFormatter = false;
         projectRootFile = "flake.nix";
-        settings.global.excludes = [ "./_sources/**" ];
+
+        settings = {
+          formatter.deadnix.excludes = [ "**/composer2nix/**" ];
+          global.excludes = [ "./_sources/**" ];
+        };
 
         programs = {
           black.enable = true;
-          deadnix = {
-            enable = true;
-            no-lambda-pattern-names = true;
-          };
+          deadnix.enable = true;
           isort.enable = true;
           nixfmt-rfc-style.enable = true;
           statix.enable = true;
