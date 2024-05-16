@@ -183,15 +183,15 @@
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "92c65d89096b3fb0fd5ab8704ff6480928cd1160";
+    version = "46db3003049ed61d9a347b72977b66ceac8f8571";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "92c65d89096b3fb0fd5ab8704ff6480928cd1160";
+      rev = "46db3003049ed61d9a347b72977b66ceac8f8571";
       fetchSubmodules = false;
-      sha256 = "sha256-a6wVWJ4fJpmgiOfN7iYdvd8rKMwRqTsSpzNrlqhKVh4=";
+      sha256 = "sha256-cMly8VjDpF1jWiRkybqS4tAYnOA8gBj+zdn7kCae/1U=";
     };
-    date = "2024-05-13";
+    date = "2024-05-15";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -549,21 +549,21 @@
   };
   kata-containers = {
     pname = "kata-containers";
-    version = "3.4.0";
+    version = "3.5.0";
     src = fetchFromGitHub {
       owner = "kata-containers";
       repo = "kata-containers";
-      rev = "3.4.0";
+      rev = "3.5.0";
       fetchSubmodules = false;
-      sha256 = "sha256-8KNWZuTEez6eTbIPo6JXkkYVfpWH0EyXd6Y5CfPm5QM=";
+      sha256 = "sha256-5pIJpyeydOVA+GrbCvNqJsmK3zbtF/5iSJLI2C1wkLM=";
     };
   };
   kata-image = {
     pname = "kata-image";
-    version = "3.4.0";
+    version = "3.5.0";
     src = fetchurl {
-      url = "https://github.com/kata-containers/kata-containers/releases/download/3.4.0/kata-static-3.4.0-amd64.tar.xz";
-      sha256 = "sha256-E/LCRCpLvK/dy0c5QovulesmYAUWqW4pV2+g/zEVLkQ=";
+      url = "https://github.com/kata-containers/kata-containers/releases/download/3.5.0/kata-static-3.5.0-amd64.tar.xz";
+      sha256 = "sha256-zQ5qcIKNs/nic5DwjIY+3aNoJMIBw16qCkx0mLfkyeM=";
     };
   };
   konnect = {
@@ -908,15 +908,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "6ae3ecac79c9dcb022ca666d95fb463772aa84be";
+    version = "ca582f93dab83232f3072a5dedcc175d017493f1";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "6ae3ecac79c9dcb022ca666d95fb463772aa84be";
+      rev = "ca582f93dab83232f3072a5dedcc175d017493f1";
       fetchSubmodules = false;
-      sha256 = "sha256-a6HSihl8a91n1dcRAOa+BfSf31sPJ+o7OPD/2xe9GBQ=";
+      sha256 = "sha256-5q8nMEv1cUO66ugJSfGbhdqEBjenYgOvWC9TjDPZz7Q=";
     };
-    date = "2024-05-08";
+    date = "2024-05-15";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -1192,15 +1192,15 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "98d18b74df12e9995be2942ad518cd340e1b33e8";
+    version = "d934ea14097f14d88e17690152f5d9c286b68747";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "98d18b74df12e9995be2942ad518cd340e1b33e8";
+      rev = "d934ea14097f14d88e17690152f5d9c286b68747";
       fetchSubmodules = false;
-      sha256 = "sha256-JMoiH7uIYQDVZy67m8fvppl056TsN8ITT1T6l2yrFXk=";
+      sha256 = "sha256-5sdDigQR9J5ViRtSjqUPk+/o/lbv2evSmgkr8Z9tXcM=";
     };
-    date = "2024-05-15";
+    date = "2024-05-16";
   };
   rime-moegirl = {
     pname = "rime-moegirl";

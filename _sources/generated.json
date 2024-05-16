@@ -316,7 +316,7 @@
     },
     "cachyos-kernel-patches": {
         "cargoLocks": null,
-        "date": "2024-05-13",
+        "date": "2024-05-15",
         "extract": null,
         "name": "cachyos-kernel-patches",
         "passthru": null,
@@ -328,11 +328,11 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "kernel-patches",
-            "rev": "92c65d89096b3fb0fd5ab8704ff6480928cd1160",
-            "sha256": "sha256-a6wVWJ4fJpmgiOfN7iYdvd8rKMwRqTsSpzNrlqhKVh4=",
+            "rev": "46db3003049ed61d9a347b72977b66ceac8f8571",
+            "sha256": "sha256-cMly8VjDpF1jWiRkybqS4tAYnOA8gBj+zdn7kCae/1U=",
             "type": "github"
         },
-        "version": "92c65d89096b3fb0fd5ab8704ff6480928cd1160"
+        "version": "46db3003049ed61d9a347b72977b66ceac8f8571"
     },
     "calibre-cops": {
         "cargoLocks": null,
@@ -959,11 +959,11 @@
             "name": null,
             "owner": "kata-containers",
             "repo": "kata-containers",
-            "rev": "3.4.0",
-            "sha256": "sha256-8KNWZuTEez6eTbIPo6JXkkYVfpWH0EyXd6Y5CfPm5QM=",
+            "rev": "3.5.0",
+            "sha256": "sha256-5pIJpyeydOVA+GrbCvNqJsmK3zbtF/5iSJLI2C1wkLM=",
             "type": "github"
         },
-        "version": "3.4.0"
+        "version": "3.5.0"
     },
     "kata-image": {
         "cargoLocks": null,
@@ -974,11 +974,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-E/LCRCpLvK/dy0c5QovulesmYAUWqW4pV2+g/zEVLkQ=",
+            "sha256": "sha256-zQ5qcIKNs/nic5DwjIY+3aNoJMIBw16qCkx0mLfkyeM=",
             "type": "url",
-            "url": "https://github.com/kata-containers/kata-containers/releases/download/3.4.0/kata-static-3.4.0-amd64.tar.xz"
+            "url": "https://github.com/kata-containers/kata-containers/releases/download/3.5.0/kata-static-3.5.0-amd64.tar.xz"
         },
-        "version": "3.4.0"
+        "version": "3.5.0"
     },
     "konnect": {
         "cargoLocks": null,
@@ -1567,7 +1567,7 @@
     },
     "openssl-oqs-provider": {
         "cargoLocks": null,
-        "date": "2024-05-08",
+        "date": "2024-05-15",
         "extract": null,
         "name": "openssl-oqs-provider",
         "passthru": null,
@@ -1579,11 +1579,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "oqs-provider",
-            "rev": "6ae3ecac79c9dcb022ca666d95fb463772aa84be",
-            "sha256": "sha256-a6HSihl8a91n1dcRAOa+BfSf31sPJ+o7OPD/2xe9GBQ=",
+            "rev": "ca582f93dab83232f3072a5dedcc175d017493f1",
+            "sha256": "sha256-5q8nMEv1cUO66ugJSfGbhdqEBjenYgOvWC9TjDPZz7Q=",
             "type": "github"
         },
-        "version": "6ae3ecac79c9dcb022ca666d95fb463772aa84be"
+        "version": "ca582f93dab83232f3072a5dedcc175d017493f1"
     },
     "osdlyrics": {
         "cargoLocks": null,
@@ -2077,7 +2077,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2024-05-15",
+        "date": "2024-05-16",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -2089,11 +2089,11 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "98d18b74df12e9995be2942ad518cd340e1b33e8",
-            "sha256": "sha256-JMoiH7uIYQDVZy67m8fvppl056TsN8ITT1T6l2yrFXk=",
+            "rev": "d934ea14097f14d88e17690152f5d9c286b68747",
+            "sha256": "sha256-5sdDigQR9J5ViRtSjqUPk+/o/lbv2evSmgkr8Z9tXcM=",
             "type": "github"
         },
-        "version": "98d18b74df12e9995be2942ad518cd340e1b33e8"
+        "version": "d934ea14097f14d88e17690152f5d9c286b68747"
     },
     "rime-moegirl": {
         "cargoLocks": null,
