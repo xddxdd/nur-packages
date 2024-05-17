@@ -266,7 +266,7 @@
     },
     "boringssl-oqs": {
         "cargoLocks": null,
-        "date": "2024-04-02",
+        "date": "2024-05-16",
         "extract": null,
         "name": "boringssl-oqs",
         "passthru": null,
@@ -278,11 +278,11 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "boringssl",
-            "rev": "e11ac27e37ce100c2ad197a73ece9b46bf46737c",
-            "sha256": "sha256-HK0BLewhy8xCaf3PGCnj3pmDMF6/LDEjvSyGQfK1ZnM=",
+            "rev": "c4e62514e7f14ce5325226ccf9472617d810bcd0",
+            "sha256": "sha256-Q4YQx9EahKV6I4kZJY+cTC8ss2j85RqXvmlvGNw5CWs=",
             "type": "github"
         },
-        "version": "e11ac27e37ce100c2ad197a73ece9b46bf46737c"
+        "version": "c4e62514e7f14ce5325226ccf9472617d810bcd0"
     },
     "browser360-amd64": {
         "cargoLocks": null,
@@ -2089,11 +2089,11 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "d934ea14097f14d88e17690152f5d9c286b68747",
-            "sha256": "sha256-5sdDigQR9J5ViRtSjqUPk+/o/lbv2evSmgkr8Z9tXcM=",
+            "rev": "c29d07abe402ea3d79d3357dc458bdb78084f9b5",
+            "sha256": "sha256-JbDETlkNAq9SqJ2FHO7RT0AylLUiNhktpvZVXzVQ/gw=",
             "type": "github"
         },
-        "version": "d934ea14097f14d88e17690152f5d9c286b68747"
+        "version": "c29d07abe402ea3d79d3357dc458bdb78084f9b5"
     },
     "rime-moegirl": {
         "cargoLocks": null,

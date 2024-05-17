@@ -155,15 +155,15 @@
   };
   boringssl-oqs = {
     pname = "boringssl-oqs";
-    version = "e11ac27e37ce100c2ad197a73ece9b46bf46737c";
+    version = "c4e62514e7f14ce5325226ccf9472617d810bcd0";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "boringssl";
-      rev = "e11ac27e37ce100c2ad197a73ece9b46bf46737c";
+      rev = "c4e62514e7f14ce5325226ccf9472617d810bcd0";
       fetchSubmodules = false;
-      sha256 = "sha256-HK0BLewhy8xCaf3PGCnj3pmDMF6/LDEjvSyGQfK1ZnM=";
+      sha256 = "sha256-Q4YQx9EahKV6I4kZJY+cTC8ss2j85RqXvmlvGNw5CWs=";
     };
-    date = "2024-04-02";
+    date = "2024-05-16";
   };
   browser360-amd64 = {
     pname = "browser360-amd64";
@@ -1192,13 +1192,13 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "d934ea14097f14d88e17690152f5d9c286b68747";
+    version = "c29d07abe402ea3d79d3357dc458bdb78084f9b5";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "d934ea14097f14d88e17690152f5d9c286b68747";
+      rev = "c29d07abe402ea3d79d3357dc458bdb78084f9b5";
       fetchSubmodules = false;
-      sha256 = "sha256-5sdDigQR9J5ViRtSjqUPk+/o/lbv2evSmgkr8Z9tXcM=";
+      sha256 = "sha256-JbDETlkNAq9SqJ2FHO7RT0AylLUiNhktpvZVXzVQ/gw=";
     };
     date = "2024-05-16";
   };
