@@ -183,15 +183,15 @@
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "46db3003049ed61d9a347b72977b66ceac8f8571";
+    version = "39e7422cac9705a25643e587d908777cc064bc2b";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "46db3003049ed61d9a347b72977b66ceac8f8571";
+      rev = "39e7422cac9705a25643e587d908777cc064bc2b";
       fetchSubmodules = false;
-      sha256 = "sha256-cMly8VjDpF1jWiRkybqS4tAYnOA8gBj+zdn7kCae/1U=";
+      sha256 = "sha256-ZGN+xUMQ3TH5NxF0Y+wLvymjs4vNCixpYN1ZvOSqJTI=";
     };
-    date = "2024-05-15";
+    date = "2024-05-17";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -675,13 +675,13 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.9.0-xanmod1";
+    version = "6.9.1-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.9.0-xanmod1";
+      rev = "6.9.1-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-gTBguLZ48S57BK6VgbFOBSt6nUeZ1Aqlu7lud4tzsuA=";
+      sha256 = "sha256-ZX7Ys83vuh1X+iu73aM4ro73EcIs1+A42ztDXDz3kjI=";
     };
   };
   linux-xanmod-6_0 = {
@@ -708,13 +708,13 @@
   };
   linux-xanmod-6_6 = {
     pname = "linux-xanmod-6_6";
-    version = "6.6.30-xanmod1";
+    version = "6.6.31-xanmod1";
     src = fetchFromGitHub {
       owner = "xanmod";
       repo = "linux";
-      rev = "6.6.30-xanmod1";
+      rev = "6.6.31-xanmod1";
       fetchSubmodules = false;
-      sha256 = "sha256-fQATjYekxV/+24mqyel3bYfgUMN4NhOHR9yyL6L5bl0=";
+      sha256 = "sha256-Hs2DjNG7mj4qb1P0u7XAgrNizx8oqs1ot563IvRKnhU=";
     };
   };
   nbfc-linux-lantian = {
