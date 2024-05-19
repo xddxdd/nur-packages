@@ -125,21 +125,21 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "1.13.2-2";
+    version = "1.13.4-1";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.2-2/bilibili-asar-v1.13.2-2.tar.gz";
-      sha256 = "sha256-DluiTp7fGnFBbaPD89pzIUGV0yh6fIgcFlQdzi6aVNM=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.4-1/bilibili-asar-v1.13.4-1.tar.gz";
+      sha256 = "sha256-PTe8wL+fNMnoyIEiC+Thk/mOVdLHTnvWuH5TRl+SbWk=";
     };
   };
   bilibili-src = {
     pname = "bilibili-src";
-    version = "v1.13.2-2";
+    version = "v1.13.4-1";
     src = fetchFromGitHub {
       owner = "msojocs";
       repo = "bilibili-linux";
-      rev = "v1.13.2-2";
+      rev = "v1.13.4-1";
       fetchSubmodules = false;
-      sha256 = "sha256-jfjuQWTxlNTE6M7eRxy58wXGcrULle8aVmmle/K0DAU=";
+      sha256 = "sha256-NRRP6uTs1sU94PNhhdNaZM2smTmK6lHLI5qxjXxrtMo=";
     };
   };
   bird-lg-go = {
@@ -639,15 +639,15 @@
   };
   librime-lua = {
     pname = "librime-lua";
-    version = "43229d766f1e0f3198f61dc9d2e38bc1f921387f";
+    version = "f5ffb6bec04f935b9a2be52ee82db53283326c6d";
     src = fetchFromGitHub {
       owner = "hchunhui";
       repo = "librime-lua";
-      rev = "43229d766f1e0f3198f61dc9d2e38bc1f921387f";
+      rev = "f5ffb6bec04f935b9a2be52ee82db53283326c6d";
       fetchSubmodules = false;
-      sha256 = "sha256-JdT47lb3+HrDq3xbcm2nNHfL4/wg7h+ei+MMF6SbsGg=";
+      sha256 = "sha256-qMCuk74jMHgKIsTB86xOW0zF0Z7ZtZM8D0D8EldTLzQ=";
     };
-    date = "2024-05-03";
+    date = "2024-05-19";
   };
   librime-octagram = {
     pname = "librime-octagram";
@@ -1432,13 +1432,13 @@
   };
   vs-rife = {
     pname = "vs-rife";
-    version = "v4.2.0";
+    version = "v5.0.0";
     src = fetchFromGitHub {
       owner = "HolyWu";
       repo = "vs-rife";
-      rev = "v4.2.0";
+      rev = "v5.0.0";
       fetchSubmodules = false;
-      sha256 = "sha256-6mmH3HK9HgnbAHUHQyIhpRzA5rrznqM0WmAovD6VrQg=";
+      sha256 = "sha256-DJQW7W8ntL7GQVy2AXPAJQXrLFbnplVojM0q4oPh1gw=";
     };
   };
   wechat-uos = {

@@ -218,11 +218,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-DluiTp7fGnFBbaPD89pzIUGV0yh6fIgcFlQdzi6aVNM=",
+            "sha256": "sha256-PTe8wL+fNMnoyIEiC+Thk/mOVdLHTnvWuH5TRl+SbWk=",
             "type": "url",
-            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.2-2/bilibili-asar-v1.13.2-2.tar.gz"
+            "url": "https://github.com/msojocs/bilibili-linux/releases/download/v1.13.4-1/bilibili-asar-v1.13.4-1.tar.gz"
         },
-        "version": "1.13.2-2"
+        "version": "1.13.4-1"
     },
     "bilibili-src": {
         "cargoLocks": null,
@@ -238,11 +238,11 @@
             "name": null,
             "owner": "msojocs",
             "repo": "bilibili-linux",
-            "rev": "v1.13.2-2",
-            "sha256": "sha256-jfjuQWTxlNTE6M7eRxy58wXGcrULle8aVmmle/K0DAU=",
+            "rev": "v1.13.4-1",
+            "sha256": "sha256-NRRP6uTs1sU94PNhhdNaZM2smTmK6lHLI5qxjXxrtMo=",
             "type": "github"
         },
-        "version": "v1.13.2-2"
+        "version": "v1.13.4-1"
     },
     "bird-lg-go": {
         "cargoLocks": null,
@@ -1102,7 +1102,7 @@
     },
     "librime-lua": {
         "cargoLocks": null,
-        "date": "2024-05-03",
+        "date": "2024-05-19",
         "extract": null,
         "name": "librime-lua",
         "passthru": null,
@@ -1114,11 +1114,11 @@
             "name": null,
             "owner": "hchunhui",
             "repo": "librime-lua",
-            "rev": "43229d766f1e0f3198f61dc9d2e38bc1f921387f",
-            "sha256": "sha256-JdT47lb3+HrDq3xbcm2nNHfL4/wg7h+ei+MMF6SbsGg=",
+            "rev": "f5ffb6bec04f935b9a2be52ee82db53283326c6d",
+            "sha256": "sha256-qMCuk74jMHgKIsTB86xOW0zF0Z7ZtZM8D0D8EldTLzQ=",
             "type": "github"
         },
-        "version": "43229d766f1e0f3198f61dc9d2e38bc1f921387f"
+        "version": "f5ffb6bec04f935b9a2be52ee82db53283326c6d"
     },
     "librime-octagram": {
         "cargoLocks": null,
@@ -2519,11 +2519,11 @@
             "name": null,
             "owner": "HolyWu",
             "repo": "vs-rife",
-            "rev": "v4.2.0",
-            "sha256": "sha256-6mmH3HK9HgnbAHUHQyIhpRzA5rrznqM0WmAovD6VrQg=",
+            "rev": "v5.0.0",
+            "sha256": "sha256-DJQW7W8ntL7GQVy2AXPAJQXrLFbnplVojM0q4oPh1gw=",
             "type": "github"
         },
-        "version": "v4.2.0"
+        "version": "v5.0.0"
     },
     "wechat-uos": {
         "cargoLocks": null,
