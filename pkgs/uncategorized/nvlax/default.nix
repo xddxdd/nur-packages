@@ -85,7 +85,7 @@ let
 in
 stdenv.mkDerivation {
   pname = "nvlax";
-  version = "b3699ad40c4dfbb9d46c53325d63ae8bf4a94d7f";
+  version = "unstable-2021-10-29";
   src = fetchFromGitHub {
     owner = "illnyang";
     repo = "nvlax";

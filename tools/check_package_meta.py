@@ -1,4 +1,6 @@
+#!/usr/bin/env python
 import json
+import re
 import subprocess
 
 PLATFORMS = [
@@ -32,6 +34,12 @@ def verify_version(platform: str, name: str, version: str) -> bool:
 
     if version.startswith("v"):
         print(f"{platform}: {name}: version should not start with v")
+        valid = False
+
+    if re.match(r"[0-9a-f]{40}", version):
+        print(
+            f'{platform}: {name}: should use date for version similar to "unstable-2020-01-01"'
+        )
         valid = False
 
     return valid

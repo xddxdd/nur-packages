@@ -15,6 +15,7 @@
           check-json.enable = true;
           check-merge-conflicts.enable = true;
           check-python.enable = true;
+          check-shebang-scripts-are-executable.enable = true;
           check-symlinks.enable = true;
           check-toml.enable = true;
           check-vcs-permalinks.enable = true;
