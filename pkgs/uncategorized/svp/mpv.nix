@@ -30,5 +30,6 @@ in
   (old: {
     meta = old.meta // {
       maintainers = with lib.maintainers; [ xddxdd ];
+      inherit (mpv-unwrapped.meta) license;
     };
   })
