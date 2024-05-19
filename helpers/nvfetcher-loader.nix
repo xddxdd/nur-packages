@@ -10,7 +10,11 @@ lib.mapAttrs (
       version = lib.removePrefix "v" v.version;
     };
     unstableDateVersion =
-      if (builtins.match "[0-9a-f]{40}" v.version != null) && (builtins.hasAttr "date" v) then
+      if
+        (builtins.hasAttr "version" v)
+        && (builtins.match "[0-9a-f]{40}" v.version != null)
+        && (builtins.hasAttr "date" v)
+      then
         { version = "unstable-${v.date}"; }
       else
         { };
