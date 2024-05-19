@@ -7,8 +7,10 @@
   ...
 }:
 let
+  inherit (sources.cloudpan189-go) pname version;
   cmd = buildGoModule {
-    inherit (sources.cloudpan189-go) pname version src;
+    inherit pname version;
+    inherit (sources.cloudpan189-go) src;
     vendorHash = "sha256-6t4wJqUGJneR6Hv7Dotr4P9MTA1oQcCe/ujDojS0g8s=";
 
     # Dirty way to fix dependency issue
@@ -28,7 +30,7 @@ let
   '';
 in
 stdenvNoCC.mkDerivation {
-  inherit (sources.cloudpan189-go) pname version;
+  inherit pname version;
   dontUnpack = true;
   postInstall = ''
     install -Dm755 ${startScript} $out/bin/cloudpan189-go
