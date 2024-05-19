@@ -7,7 +7,8 @@
   ...
 }:
 let
-  inherit (sources.cloudpan189-go) pname version;
+  inherit (sources.cloudpan189-go) pname;
+  version = lib.removePrefix "v" sources.cloudpan189-go.version;
   cmd = buildGoModule {
     inherit pname version;
     inherit (sources.cloudpan189-go) src;
