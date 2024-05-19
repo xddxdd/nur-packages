@@ -17,6 +17,26 @@ def get_metas(platform: str) -> dict:
     return json.loads(nix_output.stdout)
 
 
+def get_versions(platform: str) -> dict:
+    nix_output = subprocess.run(
+        ["nix", "eval", "--raw", f".#versionJson.{platform}"],
+        check=True,
+        text=True,
+        stdout=subprocess.PIPE,
+    )
+    return json.loads(nix_output.stdout)
+
+
+def verify_version(platform: str, name: str, version: str) -> bool:
+    valid = True
+
+    if version.startswith("v"):
+        print(f"{platform}: {name}: version should not start with v")
+        valid = False
+
+    return valid
+
+
 def verify_package(platform: str, name: str, package: dict) -> bool:
     # Skip special packages
     if name in [
@@ -52,6 +72,11 @@ def verify_package(platform: str, name: str, package: dict) -> bool:
 
 all_valid = True
 for platform in PLATFORMS:
+    versions = get_versions(platform)
+    for name, version in versions.items():
+        if not verify_version(platform, name, version):
+            all_valid = False
+
     metas = get_metas(platform)
     for name, package in metas.items():
         if not verify_package(platform, name, package):

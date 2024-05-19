@@ -8,15 +8,31 @@ let
     };
     file = ./meta.nix;
   };
+  versionJsonOptionModule = flake-parts-lib.mkTransposedPerSystemModule {
+    name = "versionJson";
+    option = lib.mkOption {
+      type = lib.types.str;
+      default = { };
+    };
+    file = ./meta.nix;
+  };
 in
 {
-  imports = [ metaJsonOptionModule ];
+  imports = [
+    metaJsonOptionModule
+    versionJsonOptionModule
+  ];
 
   perSystem =
     { config, ... }:
     {
       metaJson = builtins.toJSON (
         lib.filterAttrs (_: v: v != null) (builtins.mapAttrs (_: v: v.meta or null) config.legacyPackages)
+      );
+      versionJson = builtins.toJSON (
+        lib.filterAttrs (_: v: v != null) (
+          builtins.mapAttrs (_: v: v.version or null) config.legacyPackages
+        )
       );
     };
 }
