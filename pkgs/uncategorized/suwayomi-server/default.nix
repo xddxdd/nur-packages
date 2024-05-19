@@ -12,7 +12,7 @@ stdenvNoCC.mkDerivation rec {
   version =
     let
       arr = lib.splitString "-" sources.suwayomi-server.version;
-      v = builtins.elemAt arr ((builtins.length arr) - 2);
+      v = lib.removePrefix "v" (builtins.elemAt arr ((builtins.length arr) - 2));
       r = builtins.elemAt arr ((builtins.length arr) - 1);
     in
     "${v}-${r}";

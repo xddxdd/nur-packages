@@ -33,7 +33,8 @@ in
     let
       inherit (pkgs.callPackage ../../helpers/is-buildable.nix { }) isBuildable;
       outputsOf = p: map (o: p.${o}) p.outputs;
-      sources = pkgs.callPackage ../../_sources/generated.nix { };
+      nvfetcherLoader = pkgs.callPackage ../../helpers/nvfetcher-loader.nix { };
+      sources = nvfetcherLoader ../../_sources/generated.nix;
     in
     rec {
       ciPackages = lib.filterAttrs (_n: isBuildable) (import ../../pkgs "ci" { inherit inputs pkgs; });

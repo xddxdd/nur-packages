@@ -28,9 +28,10 @@ let
       (lib.makeScope pkgs.newScope (
         self:
         let
-          pkg = self.newScope {
+          pkg = self.newScope rec {
             inherit mkScope;
-            sources = self.callPackage ../_sources/generated.nix { };
+            nvfetcherLoader = pkgs.callPackage ../helpers/nvfetcher-loader.nix { };
+            sources = nvfetcherLoader ../_sources/generated.nix;
           };
         in
         f self pkg
