@@ -127,9 +127,9 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     maintainers = with lib.maintainers; [ xddxdd ];
-    description = "Tencent QQ Music (Packaging script adapted from https://aur.archlinux.org/packages/qqmusic-bin)";
+    description = "Tencent QQ Music";
     homepage = "https://y.qq.com/";
     platforms = [ "x86_64-linux" ];
-    license = licenses.unfreeRedistributable;
+    license = licenses.unfree;
   };
 }
