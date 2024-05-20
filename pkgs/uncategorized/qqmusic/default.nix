@@ -20,7 +20,7 @@
   libdbusmenu,
   libglvnd,
   libpulseaudio,
-  mesa_drivers,
+  mesa,
   nspr,
   nss,
   pango,
@@ -48,7 +48,7 @@ let
     libdbusmenu
     libglvnd
     libpulseaudio
-    mesa_drivers
+    mesa
     nspr
     nss
     pango

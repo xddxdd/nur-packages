@@ -21,7 +21,7 @@
   libglvnd,
   libpulseaudio,
   libva,
-  mesa_drivers,
+  mesa,
   nspr,
   nss,
   openssl_1_1,
@@ -48,7 +48,7 @@ let
     libglvnd
     libpulseaudio
     libva
-    mesa_drivers
+    mesa
     nspr
     nss
     openssl_1_1
