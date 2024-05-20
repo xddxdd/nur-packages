@@ -666,11 +666,11 @@
             "name": null,
             "owner": "FlareSolverr",
             "repo": "FlareSolverr",
-            "rev": "v3.3.17",
-            "sha256": "sha256-mCHR9DP+Dprp06W/yIccqdNvwgruSqZokVwRhmGvz8A=",
+            "rev": "v3.3.18",
+            "sha256": "sha256-VpW3Rvn4UZAV02ymbZPo5baeDIFNGWx7VA5254Hhw1E=",
             "type": "github"
         },
-        "version": "v3.3.17"
+        "version": "v3.3.18"
     },
     "flasgger": {
         "cargoLocks": null,
@@ -1114,11 +1114,11 @@
             "name": null,
             "owner": "hchunhui",
             "repo": "librime-lua",
-            "rev": "f5ffb6bec04f935b9a2be52ee82db53283326c6d",
-            "sha256": "sha256-qMCuk74jMHgKIsTB86xOW0zF0Z7ZtZM8D0D8EldTLzQ=",
+            "rev": "7be6974b6d81c116bba39f6707dc640f6636fa4e",
+            "sha256": "sha256-jsrnAFE99d0U0LdddTL7G1p416qJfSNR935TZFH3Swk=",
             "type": "github"
         },
-        "version": "f5ffb6bec04f935b9a2be52ee82db53283326c6d"
+        "version": "7be6974b6d81c116bba39f6707dc640f6636fa4e"
     },
     "librime-octagram": {
         "cargoLocks": null,
@@ -1444,11 +1444,11 @@
             "name": null,
             "owner": "werman",
             "repo": "noise-suppression-for-voice",
-            "rev": "v1.03",
-            "sha256": "sha256-1DgrpGYF7G5Zr9vbgtKm/Yv0HSdI7LrFYPSGKYNnNDQ=",
+            "rev": "v1.10",
+            "sha256": "sha256-sfwHd5Fl2DIoGuPDjELrPp5KpApZJKzQikCJmCzhtY8=",
             "type": "github"
         },
-        "version": "v1.03"
+        "version": "v1.10"
     },
     "nullfs": {
         "cargoLocks": null,

@@ -382,13 +382,13 @@
   };
   flaresolverr = {
     pname = "flaresolverr";
-    version = "v3.3.17";
+    version = "v3.3.18";
     src = fetchFromGitHub {
       owner = "FlareSolverr";
       repo = "FlareSolverr";
-      rev = "v3.3.17";
+      rev = "v3.3.18";
       fetchSubmodules = false;
-      sha256 = "sha256-mCHR9DP+Dprp06W/yIccqdNvwgruSqZokVwRhmGvz8A=";
+      sha256 = "sha256-VpW3Rvn4UZAV02ymbZPo5baeDIFNGWx7VA5254Hhw1E=";
     };
   };
   flasgger = {
@@ -639,13 +639,13 @@
   };
   librime-lua = {
     pname = "librime-lua";
-    version = "f5ffb6bec04f935b9a2be52ee82db53283326c6d";
+    version = "7be6974b6d81c116bba39f6707dc640f6636fa4e";
     src = fetchFromGitHub {
       owner = "hchunhui";
       repo = "librime-lua";
-      rev = "f5ffb6bec04f935b9a2be52ee82db53283326c6d";
+      rev = "7be6974b6d81c116bba39f6707dc640f6636fa4e";
       fetchSubmodules = false;
-      sha256 = "sha256-qMCuk74jMHgKIsTB86xOW0zF0Z7ZtZM8D0D8EldTLzQ=";
+      sha256 = "sha256-jsrnAFE99d0U0LdddTL7G1p416qJfSNR935TZFH3Swk=";
     };
     date = "2024-05-19";
   };
@@ -830,13 +830,13 @@
   };
   noise-suppression-for-voice = {
     pname = "noise-suppression-for-voice";
-    version = "v1.03";
+    version = "v1.10";
     src = fetchFromGitHub {
       owner = "werman";
       repo = "noise-suppression-for-voice";
-      rev = "v1.03";
+      rev = "v1.10";
       fetchSubmodules = false;
-      sha256 = "sha256-1DgrpGYF7G5Zr9vbgtKm/Yv0HSdI7LrFYPSGKYNnNDQ=";
+      sha256 = "sha256-sfwHd5Fl2DIoGuPDjELrPp5KpApZJKzQikCJmCzhtY8=";
     };
   };
   nullfs = {
