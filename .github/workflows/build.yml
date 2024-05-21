@@ -127,6 +127,7 @@ jobs:
 
   update-nur:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
     needs:
       - build-packages
       - test-nur-eval
@@ -136,6 +137,7 @@ jobs:
 
   update-flakehub:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
     needs:
       - build-packages
       - test-nur-eval
