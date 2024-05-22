@@ -25,6 +25,8 @@ stdenv.mkDerivation rec {
     systemd
   ];
 
+  mesonFlags = [ "-Dlibalpm=disabled" ];
+
   postPatch = ''
     sed -i "s#install_dir: systemd_system_unit_dir#install_dir: '$out/lib/systemd/system'#g" meson.build
     sed -i "s#/usr/bin#$out/bin#g" meson.build
