@@ -27,14 +27,21 @@
   pciutils,
   udev,
   xorg,
-  ...
 }:
 ################################################################################
 # Mostly based on qqmusic-bin package from AUR:
 # https://aur.archlinux.org/packages/qqmusic-bin
 ################################################################################
-let
-  libraries = [
+stdenv.mkDerivation (finalAttrs: {
+  inherit (sources.qqmusic) pname version src;
+
+  nativeBuildInputs = [
+    autoPatchelfHook
+    makeWrapper
+    copyDesktopItems
+  ];
+
+  buildInputs = [
     alsa-lib
     at-spi2-atk
     at-spi2-core
@@ -67,23 +74,15 @@ let
     xorg.libXScrnSaver
     xorg.libXtst
   ];
-in
-stdenv.mkDerivation rec {
-  inherit (sources.qqmusic) pname version src;
-
-  nativeBuildInputs = [
-    autoPatchelfHook
-    makeWrapper
-    copyDesktopItems
-  ];
-  buildInputs = libraries;
 
   unpackPhase = ''
     ar x $src
     tar xf data.tar.xz
   '';
 
-  postInstall = ''
+  installPhase = ''
+    runHook preInstall
+
     mkdir -p $out
     cp -r opt/qqmusic $out/opt
     cp -r usr/* $out/
@@ -94,9 +93,9 @@ stdenv.mkDerivation rec {
     mkdir -p $out/bin
     makeWrapper $out/opt/qqmusic $out/bin/qqmusic \
       --argv0 "qqmusic" \
-      --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath libraries}"
+      --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath finalAttrs.buildInputs}"
 
-    # Hex patch
+    # Hex patch from https://aur.archlinux.org/packages/qqmusic-bin
     # 1. Fix orphaned processes
     # 2. Fix search
     local _subst="
@@ -104,6 +103,8 @@ stdenv.mkDerivation rec {
         s|\xB3\x1D\xF5\xCB\x24\xBC|\xA3\x63\xBB\xC9\x3F\xBC|
     "
     sed "$_subst" -i "$out/opt/resources/app.asar"
+
+    runHook postInstall
   '';
 
   desktopItems = [
@@ -125,11 +126,12 @@ stdenv.mkDerivation rec {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Tencent QQ Music";
     homepage = "https://y.qq.com/";
     platforms = [ "x86_64-linux" ];
-    license = licenses.unfree;
+    license = lib.licenses.unfree;
+    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
   };
-}
+})
