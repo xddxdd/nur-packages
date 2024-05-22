@@ -35,6 +35,7 @@
         ./flake-modules/_internal/meta.nix
         ./flake-modules/_internal/modules-test-nixos-config.nix
         ./flake-modules/_internal/nixpkgs-options.nix
+        ./flake-modules/_internal/package-meta.nix
         ./flake-modules/_internal/pre-commit-hooks.nix
         ./flake-modules/_internal/treefmt.nix
       ];
@@ -63,6 +64,9 @@
         nixosModules = {
           setupOverlay = _: { nixpkgs.overlays = [ self.overlays.default ]; };
           kata-containers = import ./modules/kata-containers.nix;
+          nix-cache-attic = import ./modules/nix-cache-attic.nix;
+          nix-cache-cachix = import ./modules/nix-cache-cachix.nix;
+          nix-cache-garnix = import ./modules/nix-cache-garnix.nix;
           openssl-oqs-provider = import ./modules/openssl-oqs-provider.nix;
           plasma-desktop-lyrics = import ./modules/plasma-desktop-lyrics.nix;
           qemu-user-static-binfmt = import ./modules/qemu-user-static-binfmt.nix;

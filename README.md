@@ -19,10 +19,8 @@ Packages in all other categories are for public use. I will try my best to minim
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
     nur-xddxdd = {
       url = "github:xddxdd/nur-packages";
-      inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -37,11 +35,10 @@ Packages in all other categories are for public use. I will try my best to minim
         # Setup QEMU userspace emulation that works with Docker
         inputs.nur-xddxdd.nixosModules.qemu-user-static-binfmt
 
-        # Binary cache (optional)
-        ({ ... }: {
-          nix.settings.substituters = [ "https://xddxdd.cachix.org" ];
-          nix.settings.trusted-public-keys = [ "xddxdd.cachix.org-1:ay1HJyNDYmlSwj5NXQG065C8LfoqqKaTNCyzeixGjf8=" ];
-        })
+        # Binary cache (optional, choose any one, or see guide below)
+        inputs.nur-xddxdd.nixosModules.nix-cache-attic
+        inputs.nur-xddxdd.nixosModules.nix-cache-cachix
+        inputs.nur-xddxdd.nixosModules.nix-cache-garnix
       ];
     };
   };
@@ -50,7 +47,27 @@ Packages in all other categories are for public use. I will try my best to minim
 
 ## Binary Cache
 
-This NUR has a binary cache. Use the following settings to access it:
+This NUR automatically builds and pushes build artifacts to several binary caches. You can use any one of them to speed up your build.
+
+### Self-hosted (Attic)
+
+```nix
+{
+  nix.settings.substituters = [ "https://attic.xuyh0120.win/lantian" ];
+  nix.settings.trusted-public-keys = [ "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc=" ];
+}
+```
+
+Or, use variables from this repository in case I change them:
+
+```nix
+{
+  nix.settings.substituters = [ nur.repos.xddxdd._meta.atticUrl ];
+  nix.settings.trusted-public-keys = [ nur.repos.xddxdd._meta.atticPublicKey ];
+}
+```
+
+### Cachix
 
 ```nix
 {
@@ -63,8 +80,26 @@ Or, use variables from this repository in case I change them:
 
 ```nix
 {
-  nix.settings.substituters = [ nur.repos.xddxdd._meta.url ];
-  nix.settings.trusted-public-keys = [ nur.repos.xddxdd._meta.publicKey ];
+  nix.settings.substituters = [ nur.repos.xddxdd._meta.cachixUrl ];
+  nix.settings.trusted-public-keys = [ nur.repos.xddxdd._meta.cachixPublicKey ];
+}
+```
+
+### Garnix.io
+
+```nix
+{
+  nix.settings.substituters = [ "https://cache.garnix.io" ];
+  nix.settings.trusted-public-keys = [ "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=" ];
+}
+```
+
+Or, use variables from this repository in case I change them:
+
+```nix
+{
+  nix.settings.substituters = [ nur.repos.xddxdd._meta.garnixUrl ];
+  nix.settings.trusted-public-keys = [ nur.repos.xddxdd._meta.garnixPublicKey ];
 }
 ```
 

@@ -11,7 +11,7 @@ PLATFORMS = [
 
 def get_metas(platform: str) -> dict:
     nix_output = subprocess.run(
-        ["nix", "eval", "--raw", f".#metaJson.{platform}"],
+        ["nix", "eval", "--raw", f".#_metaJson.{platform}"],
         check=True,
         text=True,
         stdout=subprocess.PIPE,
@@ -21,7 +21,7 @@ def get_metas(platform: str) -> dict:
 
 def get_versions(platform: str) -> dict:
     nix_output = subprocess.run(
-        ["nix", "eval", "--raw", f".#versionJson.{platform}"],
+        ["nix", "eval", "--raw", f".#_versionJson.{platform}"],
         check=True,
         text=True,
         stdout=subprocess.PIPE,

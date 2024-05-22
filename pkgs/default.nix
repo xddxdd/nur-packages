@@ -55,16 +55,18 @@ mkScope (
           "legacy"
         ]);
     };
+
+    meta = import ../helpers/meta.nix;
   in
   {
     # Binary cache information
-    _meta = mergePkgs {
-      url = "https://xddxdd.cachix.org";
-      publicKey = "xddxdd.cachix.org-1:ay1HJyNDYmlSwj5NXQG065C8LfoqqKaTNCyzeixGjf8=";
-
-      howto = pkg ./_meta/howto { };
-      readme = pkg ./_meta/readme { };
-    };
+    _meta = mergePkgs (
+      {
+        howto = pkg ./_meta/howto { };
+        readme = pkg ./_meta/readme { };
+      }
+      // meta
+    );
 
     # Package groups
     asteriskDigiumCodecs = mergePkgs (pkg ./asterisk-digium-codecs { inherit mergePkgs; });
