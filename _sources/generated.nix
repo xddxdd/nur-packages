@@ -908,15 +908,15 @@
   };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
-    version = "ca582f93dab83232f3072a5dedcc175d017493f1";
+    version = "67ad18305605bf4f13b4a334cc3fe60c87d9309a";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "oqs-provider";
-      rev = "ca582f93dab83232f3072a5dedcc175d017493f1";
+      rev = "67ad18305605bf4f13b4a334cc3fe60c87d9309a";
       fetchSubmodules = false;
-      sha256 = "sha256-5q8nMEv1cUO66ugJSfGbhdqEBjenYgOvWC9TjDPZz7Q=";
+      sha256 = "sha256-z8H5dqL4pqtow0Q9c3US3pJIYuGYlbH7EtVEs5XFSM4=";
     };
-    date = "2024-05-15";
+    date = "2024-05-21";
   };
   osdlyrics = {
     pname = "osdlyrics";
@@ -931,15 +931,15 @@
   };
   ovpn-dco = {
     pname = "ovpn-dco";
-    version = "879d252672dc4554e035df367b67ad04102f4247";
+    version = "c4c4f80edad9f4b94461dff861e63e722cc0590d";
     src = fetchFromGitHub {
       owner = "OpenVPN";
       repo = "ovpn-dco";
-      rev = "879d252672dc4554e035df367b67ad04102f4247";
+      rev = "c4c4f80edad9f4b94461dff861e63e722cc0590d";
       fetchSubmodules = false;
-      sha256 = "sha256-H+x44+rhXXi0HiAWreIY/9D9cFKfiX++ZZkTTE0pCak=";
+      sha256 = "sha256-y0ASzKRkjjOdcsz2CxaWSSp4pJMpPmLd5VJFsP+G49Y=";
     };
-    date = "2024-05-06";
+    date = "2024-05-21";
   };
   palworld-exporter = {
     pname = "palworld-exporter";
