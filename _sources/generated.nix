@@ -1230,6 +1230,17 @@
     };
     date = "2023-09-09";
   };
+  runpod-python = {
+    pname = "runpod-python";
+    version = "1.6.2";
+    src = fetchFromGitHub {
+      owner = "runpod";
+      repo = "runpod-python";
+      rev = "1.6.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-nVkrqVgNbbdq7UQWjWkPPYIYsRQVcTIVzy4wT69ZoyY=";
+    };
+  };
   runpodctl = {
     pname = "runpodctl";
     version = "v1.14.3";
@@ -1382,6 +1393,14 @@
     src = fetchurl {
       url = "http://cheonhyeong.com/File/TH-Tshyn-4.1.0.7z";
       sha256 = "sha256-QqDKNGOnrtFK1p5JdoVLQr+PoZr9TvsVICvMxqSxdyA=";
+    };
+  };
+  tqdm-loggable = {
+    pname = "tqdm-loggable";
+    version = "0.2";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/t/tqdm-loggable/tqdm_loggable-0.2.tar.gz";
+      sha256 = "sha256-F1q+w+H2O70urBkvpdoHXoDHu3FdfM880aKberWvBhc=";
     };
   };
   transmission-web-control = {
