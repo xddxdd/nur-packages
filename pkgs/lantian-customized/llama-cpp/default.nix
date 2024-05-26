@@ -4,7 +4,15 @@
   llama-cpp,
 }:
 
-(llama-cpp.override { cudaSupport = true; }).overrideAttrs (_old: {
+(llama-cpp.override { cudaSupport = true; }).overrideAttrs (old: {
   version = lib.removePrefix "b" sources.llama-cpp.version;
   inherit (sources.llama-cpp) src;
+
+  cmakeFlags = (old.cmakeFlags or [ ]) ++ [
+    (lib.cmakeBool "LLAMA_LTO" true)
+    (lib.cmakeBool "LLAMA_AVX" false)
+    (lib.cmakeBool "LLAMA_AVX2" false)
+    (lib.cmakeBool "LLAMA_FMA" false)
+    (lib.cmakeBool "LLAMA_F16C" false)
+  ];
 })
