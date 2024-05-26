@@ -1230,6 +1230,17 @@
     };
     date = "2023-09-09";
   };
+  runpodctl = {
+    pname = "runpodctl";
+    version = "v1.14.3";
+    src = fetchFromGitHub {
+      owner = "runpod";
+      repo = "runpodctl";
+      rev = "v1.14.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-ot/xxCL0RnMG39KDqINdAj6BSX+OLY6CusmP9Ubn8QI=";
+    };
+  };
   sam-toki-mouse-cursors = {
     pname = "sam-toki-mouse-cursors";
     version = "v6.04";

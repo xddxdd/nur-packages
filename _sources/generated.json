@@ -2145,6 +2145,26 @@
         },
         "version": "8922b56c70f92f29a9bbd72a4e8a13fd8b8c4197"
     },
+    "runpodctl": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "runpodctl",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "runpod",
+            "repo": "runpodctl",
+            "rev": "v1.14.3",
+            "sha256": "sha256-ot/xxCL0RnMG39KDqINdAj6BSX+OLY6CusmP9Ubn8QI=",
+            "type": "github"
+        },
+        "version": "v1.14.3"
+    },
     "sam-toki-mouse-cursors": {
         "cargoLocks": null,
         "date": null,

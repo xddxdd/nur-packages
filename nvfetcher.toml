@@ -496,6 +496,10 @@ fetch.url = "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/downlo
 src.git = "https://github.com/xddxdd/route-chain.git"
 fetch.github = "xddxdd/route-chain"
 
+[runpodctl]
+src.github = "runpod/runpodctl"
+fetch.github = "runpod/runpodctl"
+
 [sam-toki-mouse-cursors]
 src.github = "SamToki/IconDesign---Sam-Toki-Mouse-Cursors"
 fetch.github = "SamToki/IconDesign---Sam-Toki-Mouse-Cursors"

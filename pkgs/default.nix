@@ -195,6 +195,7 @@ mkScope (
     rime-moegirl = pkg ./uncategorized/rime-moegirl { };
     rime-zhwiki = pkg ./uncategorized/rime-zhwiki { };
     route-chain = pkg ./uncategorized/route-chain { };
+    runpodctl = pkg ./uncategorized/runpodctl { };
     sam-toki-mouse-cursors = pkg ./uncategorized/sam-toki-mouse-cursors { };
     smartrent_py = pkg ./uncategorized/smartrent_py { };
     sgx-software-enable = pkg ./uncategorized/sgx-software-enable { };
