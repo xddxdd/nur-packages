@@ -539,6 +539,17 @@
     };
     date = "2024-05-08";
   };
+  imewlconverter = {
+    pname = "imewlconverter";
+    version = "v3.1.0";
+    src = fetchFromGitHub {
+      owner = "studyzy";
+      repo = "imewlconverter";
+      rev = "v3.1.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-TSB0SmRoI79nlGlFm/+FQ8GymhCEkuNKX0NXHHw0u8s=";
+    };
+  };
   jproxy = {
     pname = "jproxy";
     version = "v3.4.1";

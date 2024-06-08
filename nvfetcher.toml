@@ -213,6 +213,10 @@ fetch.url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/xianzh
 src.git = "https://github.com/strongtz/i915-sriov-dkms.git"
 fetch.github = "strongtz/i915-sriov-dkms"
 
+[imewlconverter]
+src.github = "studyzy/imewlconverter"
+fetch.github = "studyzy/imewlconverter"
+
 [jproxy]
 src.manual = "v3.4.1"
 fetch.url = "https://github.com/LuckyPuppy514/jproxy/releases/download/$ver/windows-$ver.zip"

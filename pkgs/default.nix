@@ -151,6 +151,7 @@ mkScope (
     hath = pkg ./uncategorized/hath { };
     hesuvi-hrir = pkg ./uncategorized/hesuvi-hrir { };
     hoyo-glyphs = pkg ./uncategorized/hoyo-glyphs { };
+    imewlconverter = pkg ./uncategorized/imewlconverter { };
     jproxy = pkg ./uncategorized/jproxy { };
     kaixinsong-fonts = pkg ./uncategorized/kaixinsong-fonts { };
     kata-image = pkg ./uncategorized/kata-image { };
