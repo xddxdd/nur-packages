@@ -487,6 +487,11 @@ fetch.github = "mtorromeo/r8168"
 src.git = "https://github.com/hosxy/rime-aurora-pinyin.git"
 fetch.github = "hosxy/rime-aurora-pinyin"
 
+[rime-custom-pinyin-dictionary]
+src.webpage = "https://github.com/wuhgit/CustomPinyinDictionary/releases/expanded_assets/assets"
+src.regex = "CustomPinyinDictionary_Fcitx_([0-9]+)\\.tar\\.gz"
+fetch.url = "https://github.com/wuhgit/CustomPinyinDictionary/releases/download/assets/CustomPinyinDictionary_Fcitx_$ver.tar.gz"
+
 [rime-dict]
 src.git = "https://github.com/Iorest/rime-dict.git"
 fetch.github = "Iorest/rime-dict"

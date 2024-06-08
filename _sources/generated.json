@@ -2115,6 +2115,21 @@
         },
         "version": "122b46976401995cbafcfc748806985ff3a437a4"
     },
+    "rime-custom-pinyin-dictionary": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "rime-custom-pinyin-dictionary",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-zZfhRcBQQFcGGy1fiNdA//IOXoMiyasUUDcUcYFDUj0=",
+            "type": "url",
+            "url": "https://github.com/wuhgit/CustomPinyinDictionary/releases/download/assets/CustomPinyinDictionary_Fcitx_20240517.tar.gz"
+        },
+        "version": "20240517"
+    },
     "rime-dict": {
         "cargoLocks": null,
         "date": "2020-12-26",
