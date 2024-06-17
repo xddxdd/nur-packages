@@ -24,6 +24,8 @@ jobs:
             experimental-features = nix-command flakes
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
             extra-platforms = i686-linux aarch64-linux arm-linux
+      - name: Speed Up nix build
+        uses: DeterminateSystems/magic-nix-cache-action@main
       - name: Build nix packages
         run: |
           cat > secrets.toml <<EOF
