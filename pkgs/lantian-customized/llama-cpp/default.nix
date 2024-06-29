@@ -32,6 +32,6 @@
 
   postInstall = ''
     mkdir -p $out/include
-    cp $src/llama.h $out/include/
+    cp $src/include/llama.h $out/include/
   '';
 })
