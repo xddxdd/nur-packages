@@ -192,6 +192,7 @@ mkScope (
     qbittorrent-enhanced-edition-nox = pkg ./uncategorized/qbittorrent-enhanced-edition/nox.nix { };
     libqcef = pkg ./uncategorized/libqcef { };
     qemu-user-static = pkg ./uncategorized/qemu-user-static { };
+    qhttpengine = pkg ./uncategorized/qhttpengine { };
     qq = pkg ./uncategorized/qq { };
     qqmusic = pkg ./uncategorized/qqmusic { };
     rime-aurora-pinyin = pkg ./uncategorized/rime-aurora-pinyin { };

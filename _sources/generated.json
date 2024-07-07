@@ -2095,6 +2095,27 @@
         },
         "version": "9.0.1+ds-1"
     },
+    "qhttpengine": {
+        "cargoLocks": null,
+        "date": "2018-03-22",
+        "extract": null,
+        "name": "qhttpengine",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "nitroshare",
+            "repo": "qhttpengine",
+            "rev": "43f55df51623621ed3efb4e42c7894586d988667",
+            "sha256": "sha256-XO56DUKyUIOhp+xpArMeoNHmlgAld9tUFMCY+tjyI4M=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "43f55df51623621ed3efb4e42c7894586d988667"
+    },
     "qq-amd64": {
         "cargoLocks": null,
         "date": null,

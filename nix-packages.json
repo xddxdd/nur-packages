@@ -2674,6 +2674,11 @@
     "pname": "qemu-user-static",
     "version": "9.0.1+ds-1"
   },
+  "legacyPackages.x86_64-linux.qhttpengine": {
+    "description": " HTTP server for Qt applications",
+    "pname": "qhttpengine-unstable",
+    "version": "2018-03-22"
+  },
   "legacyPackages.x86_64-linux.qq": {
     "description": "QQ for Linux",
     "pname": "qq",
@@ -3388,6 +3393,11 @@
     "description": "A generic and open source machine emulator and virtualizer",
     "pname": "qemu-user-static",
     "version": "9.0.1+ds-1"
+  },
+  "packages.x86_64-linux.qhttpengine": {
+    "description": " HTTP server for Qt applications",
+    "pname": "qhttpengine-unstable",
+    "version": "2018-03-22"
   },
   "packages.x86_64-linux.qq": {
     "description": "QQ for Linux",

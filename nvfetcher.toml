@@ -458,6 +458,10 @@ src.webpage = "https://packages.debian.org/sid/i386/qemu-user-static/download"
 src.regex = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_([^\"]+)_i386.deb"
 fetch.url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user-static_$ver_i386.deb"
 
+[qhttpengine]
+src.git = "https://github.com/nitroshare/qhttpengine.git"
+fetch.github = "nitroshare/qhttpengine"
+
 [qq-amd64]
 src.webpage = "https://im.qq.com/rainbow/linuxQQDownload/"
 src.regex = "\"https://dldir1.qq.com/qqfile/qq/QQNT/([^\"]+_amd64[^\"]*).deb\""

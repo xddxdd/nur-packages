@@ -1160,6 +1160,18 @@
       sha256 = "sha256-xV8S9MXUuarcJHAdkRxd/q7gDdPtfBhCIJXuqOA9Ivw=";
     };
   };
+  qhttpengine = {
+    pname = "qhttpengine";
+    version = "43f55df51623621ed3efb4e42c7894586d988667";
+    src = fetchFromGitHub {
+      owner = "nitroshare";
+      repo = "qhttpengine";
+      rev = "43f55df51623621ed3efb4e42c7894586d988667";
+      fetchSubmodules = false;
+      sha256 = "sha256-XO56DUKyUIOhp+xpArMeoNHmlgAld9tUFMCY+tjyI4M=";
+    };
+    date = "2018-03-22";
+  };
   qq-amd64 = {
     pname = "qq-amd64";
     version = "Linux/QQ_3.2.9_240617_amd64_01";
