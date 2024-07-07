@@ -231,6 +231,18 @@ src.github_tag = "kata-containers/kata-containers"
 src.include_regex = "^[0-9\\.]+$"
 fetch.url = "https://github.com/kata-containers/kata-containers/releases/download/$ver/kata-static-$ver-amd64.tar.xz"
 
+[kikoplay]
+src.github = "KikoPlayProject/KikoPlay"
+fetch.github = "KikoPlayProject/KikoPlay"
+
+[kikoplay-app]
+src.git = "https://github.com/KikoPlayProject/KikoPlayApp.git"
+fetch.github = "KikoPlayProject/KikoPlayApp"
+
+[kikoplay-script]
+src.git = "https://github.com/KikoPlayProject/KikoPlayScript.git"
+fetch.github = "KikoPlayProject/KikoPlayScript"
+
 [konnect]
 src.github_tag = "Kopano-dev/konnect"
 fetch.github = "Kopano-dev/konnect"

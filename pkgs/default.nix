@@ -156,6 +156,7 @@ mkScope (
     kaixinsong-fonts = pkg ./uncategorized/kaixinsong-fonts { };
     kata-image = pkg ./uncategorized/kata-image { };
     kata-runtime = pkg ./uncategorized/kata-runtime { };
+    kikoplay = pkg ./uncategorized/kikoplay { };
     konnect = pkg ./uncategorized/konnect { };
     ldap-auth-proxy = pkg ./uncategorized/ldap-auth-proxy { };
     libnftnl-fullcone = pkg ./uncategorized/libnftnl-fullcone { };

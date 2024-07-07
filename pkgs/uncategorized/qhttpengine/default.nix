@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     maintainers = with lib.maintainers; [ xddxdd ];
-    description = " HTTP server for Qt applications";
+    description = "HTTP server for Qt applications";
     homepage = "https://github.com/nitroshare/qhttpengine";
     license = lib.licenses.mit;
   };

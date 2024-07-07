@@ -439,6 +439,11 @@
     "pname": "linux",
     "version": "6.6.36"
   },
+  "legacyPackages.x86_64-linux.kikoplay": {
+    "description": "KikoPlay - NOT ONLY A Full-Featured Danmu Player 不仅仅是全功能弹幕播放器 ",
+    "pname": "kikoplay",
+    "version": "1.0.3"
+  },
   "legacyPackages.x86_64-linux.konnect": {
     "description": "Kopano Konnect implements an OpenID provider (OP) with integrated web login and consent forms.",
     "pname": "konnect",
@@ -2675,7 +2680,7 @@
     "version": "9.0.1+ds-1"
   },
   "legacyPackages.x86_64-linux.qhttpengine": {
-    "description": " HTTP server for Qt applications",
+    "description": "HTTP server for Qt applications",
     "pname": "qhttpengine-unstable",
     "version": "2018-03-22"
   },
@@ -3159,6 +3164,11 @@
     "pname": "linux",
     "version": "6.6.36"
   },
+  "packages.x86_64-linux.kikoplay": {
+    "description": "KikoPlay - NOT ONLY A Full-Featured Danmu Player 不仅仅是全功能弹幕播放器 ",
+    "pname": "kikoplay",
+    "version": "1.0.3"
+  },
   "packages.x86_64-linux.konnect": {
     "description": "Kopano Konnect implements an OpenID provider (OP) with integrated web login and consent forms.",
     "pname": "konnect",
@@ -3395,7 +3405,7 @@
     "version": "9.0.1+ds-1"
   },
   "packages.x86_64-linux.qhttpengine": {
-    "description": " HTTP server for Qt applications",
+    "description": "HTTP server for Qt applications",
     "pname": "qhttpengine-unstable",
     "version": "2018-03-22"
   },
