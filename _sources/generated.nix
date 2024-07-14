@@ -542,6 +542,22 @@
       sha256 = "sha256-1cXp5ZH6oY6LPdeN7EpiMJzO4SiXmeJTnLLrBPJD4g4=";
     };
   };
+  hoyo-glyphs-zzz-a = {
+    pname = "hoyo-glyphs-zzz-a";
+    version = "1.000";
+    src = fetchurl {
+      url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/zzz-a-1.000/ZZZ-A-1.000.zip";
+      sha256 = "sha256-QH+pywg6lDBqXww/sbGw8lH3gY5/xzhf2B1eLwr88bY=";
+    };
+  };
+  hoyo-glyphs-zzz-system = {
+    pname = "hoyo-glyphs-zzz-system";
+    version = "1.000";
+    src = fetchurl {
+      url = "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/zzz-system-1.000/ZZZ-System-1.000.zip";
+      sha256 = "sha256-HiqwvY3g55qxXIXU+098LaOvu7CZls+w1NdIwYonJ38=";
+    };
+  };
   i915-sriov-dkms = {
     pname = "i915-sriov-dkms";
     version = "42b49ff81ccdb1bac924925ba522ed8343c34b5a";

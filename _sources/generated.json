@@ -964,6 +964,36 @@
         },
         "version": "1.000"
     },
+    "hoyo-glyphs-zzz-a": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "hoyo-glyphs-zzz-a",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-QH+pywg6lDBqXww/sbGw8lH3gY5/xzhf2B1eLwr88bY=",
+            "type": "url",
+            "url": "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/zzz-a-1.000/ZZZ-A-1.000.zip"
+        },
+        "version": "1.000"
+    },
+    "hoyo-glyphs-zzz-system": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "hoyo-glyphs-zzz-system",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-HiqwvY3g55qxXIXU+098LaOvu7CZls+w1NdIwYonJ38=",
+            "type": "url",
+            "url": "https://github.com/SpeedyOrc-C/HoYo-Glyphs/releases/download/zzz-system-1.000/ZZZ-System-1.000.zip"
+        },
+        "version": "1.000"
+    },
     "i915-sriov-dkms": {
         "cargoLocks": null,
         "date": "2024-06-22",
