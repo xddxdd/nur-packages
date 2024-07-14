@@ -1,6 +1,7 @@
 {
   lib,
   sources,
+  dos2unix,
   python3Packages,
   ...
 }:
@@ -8,6 +9,12 @@ python3Packages.buildPythonPackage {
   inherit (sources.undetected-chromedriver) pname version src;
 
   patches = [ ./1766-use-packaging.patch ];
+
+  prePatch = ''
+    dos2unix **/*
+  '';
+
+  nativeBuildInputs = [ dos2unix ];
 
   buildInputs = with python3Packages; [
     selenium
