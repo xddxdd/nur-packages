@@ -11,7 +11,7 @@ python3Packages.buildPythonPackage {
   patches = [ ./1766-use-packaging.patch ];
 
   prePatch = ''
-    dos2unix **/*
+    find . | xargs dos2unix
   '';
 
   nativeBuildInputs = [ dos2unix ];
