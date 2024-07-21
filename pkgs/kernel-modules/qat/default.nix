@@ -29,7 +29,10 @@ stdenv.mkDerivation rec {
     zlib
   ];
 
-  patches = [ ./fix-build-without-pcieaer.patch ];
+  patches = [
+    ./fix-build-without-pcieaer.patch
+    ./fix-build-with-clang.patch
+  ];
 
   KERNEL_SOURCE_ROOT = "${kernel.dev}/lib/modules/${kernel.modDirVersion}/build";
   INSTALL_MOD_PATH = placeholder "out";
@@ -45,6 +48,14 @@ stdenv.mkDerivation rec {
   postInstall = ''
     find $out/lib/modules/${kernel.modDirVersion}/updates/drivers/crypto/qat/ -name \*.ko.\* -exec mv {} $out/lib/modules/${kernel.modDirVersion}/updates \;
     rm -rf $out/lib/modules/${kernel.modDirVersion}/updates/drivers
+
+    cp -r build/*.ko $out/lib/modules/${kernel.modDirVersion}/updates/
+
+    mkdir -p $out/bin
+    cp -r build/adf_ctl build/du_mgr build/sla_mgr $out/bin/
+
+    mkdir -p $out/etc
+    cp -r build/*.conf build/*.km $out/etc/
   '';
 
   meta = {
