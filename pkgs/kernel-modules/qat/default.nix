@@ -3,12 +3,6 @@
   sources,
   lib,
   kernel,
-  pkg-config,
-  udev,
-  libnl,
-  pciutils,
-  nasm,
-  zlib,
   ...
 }:
 stdenv.mkDerivation rec {
@@ -20,42 +14,26 @@ stdenv.mkDerivation rec {
     "pic"
     "format"
   ];
-  nativeBuildInputs = kernel.moduleBuildDependencies ++ [ pkg-config ];
-  buildInputs = [
-    udev
-    libnl
-    pciutils
-    nasm
-    zlib
-  ];
+  nativeBuildInputs = kernel.moduleBuildDependencies;
 
-  patches = [
-    ./fix-build-without-pcieaer.patch
-    ./fix-build-with-clang.patch
-  ];
+  patches = [ ./fix-build-without-pcieaer.patch ];
 
-  KERNEL_SOURCE_ROOT = "${kernel.dev}/lib/modules/${kernel.modDirVersion}/build";
+  KSRC = "${kernel.dev}/lib/modules/${kernel.modDirVersion}/build";
   INSTALL_MOD_PATH = placeholder "out";
 
-  configureFlags = [
-    "--enable-kapi"
-    "--enable-qat-lkcf"
-    "--enable-legacy-algorithms"
-  ];
+  preConfigure = ''
+    cd quickassist/qat
+  '';
 
   inherit (kernel) makeFlags;
+  preBuild = ''
+    makeFlags="$makeFlags -C ${KSRC} M=$(pwd) QAT_LEGACY_ALGORITHMS=y"
+  '';
+  installTargets = [ "modules_install" ];
 
   postInstall = ''
     find $out/lib/modules/${kernel.modDirVersion}/updates/drivers/crypto/qat/ -name \*.ko.\* -exec mv {} $out/lib/modules/${kernel.modDirVersion}/updates \;
     rm -rf $out/lib/modules/${kernel.modDirVersion}/updates/drivers
-
-    cp -r build/*.ko $out/lib/modules/${kernel.modDirVersion}/updates/
-
-    mkdir -p $out/bin
-    cp -r build/adf_ctl build/du_mgr build/sla_mgr $out/bin/
-
-    mkdir -p $out/etc
-    cp -r build/*.conf build/*.km $out/etc/
   '';
 
   meta = {
