@@ -44,6 +44,7 @@ let
   });
 
   libraries = [
+    # Make sure our glibc without hardening gets picked up first
     (lib.hiPrio glibcWithoutHardening)
 
     alsa-lib
