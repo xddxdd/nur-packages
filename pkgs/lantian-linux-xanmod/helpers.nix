@@ -73,6 +73,12 @@ rec {
     };
   };
 
+  contentAddressedFlag = {
+    __contentAddressed = true;
+    outputHashAlgo = "sha256";
+    outputHashMode = "recursive";
+  };
+
   # https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/os-specific/linux/kernel/linux-xanmod.nix
   mkKernel =
     {
@@ -101,34 +107,27 @@ rec {
         in
         rec {
           name = "cachyos-patches-combined.patch";
-          patch =
-            pkgs.runCommandNoCC name
-              {
-                __contentAddressed = true;
-                outputHashAlgo = "sha256";
-                outputHashMode = "recursive";
-              }
-              ''
-                for F in ${cachyDir}/*.patch; do
-                  case "$F" in
-                    # AMD pref core patch conflicts with me disabling AMD pstate for VMs
-                    *-amd-pref-core.patch) continue;;
+          patch = pkgs.runCommandNoCC name contentAddressedFlag ''
+            for F in ${cachyDir}/*.patch; do
+              case "$F" in
+                # AMD pref core patch conflicts with me disabling AMD pstate for VMs
+                *-amd-pref-core.patch) continue;;
 
-                    # Patches already included in Xanmod
-                    *-bbr2.patch) continue;;
-                    *-bbr3.patch) continue;;
-                    *-futex-winesync.patch) continue;;
+                # Patches already included in Xanmod
+                *-bbr2.patch) continue;;
+                *-bbr3.patch) continue;;
+                *-futex-winesync.patch) continue;;
 
-                    # Patches that conflict with Xanmod
-                    *-cachy.patch) continue;;
-                    *-clr.patch) continue;;
-                    *-fixes.patch) continue;;
-                    *-mm-*.patch) continue;;
-                  esac
+                # Patches that conflict with Xanmod
+                *-cachy.patch) continue;;
+                *-clr.patch) continue;;
+                *-fixes.patch) continue;;
+                *-mm-*.patch) continue;;
+              esac
 
-                  cat "$F" >> $out
-                done
-              '';
+              cat "$F" >> $out
+            done
+          '';
         };
 
       patches = [
@@ -137,25 +136,18 @@ rec {
         combinedPatchFromCachyOS
       ] ++ patchesInPatchDir;
 
-      patchedSrc =
-        pkgs.runCommandNoCC "linux-src"
-          {
-            __contentAddressed = true;
-            outputHashAlgo = "sha256";
-            outputHashMode = "recursive";
-          }
-          (
-            ''
-              mkdir -p $out
-              cp -r ${src}/* $out/
-              chmod -R 755 $out
+      patchedSrc = pkgs.runCommandNoCC "linux-src" contentAddressedFlag (
+        ''
+          mkdir -p $out
+          cp -r ${src}/* $out/
+          chmod -R 755 $out
 
-              cd $out
-            ''
-            + (lib.concatMapStringsSep "\n" (p: ''
-              patch -p1 < ${p.patch}
-            '') patches)
-          );
+          cd $out
+        ''
+        + (lib.concatMapStringsSep "\n" (p: ''
+          patch -p1 < ${p.patch}
+        '') patches)
+      );
     in
     lib.nameValuePair name (buildLinux {
       inherit lib;
