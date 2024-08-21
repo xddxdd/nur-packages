@@ -1,4 +1,5 @@
 {
+  mode ? null,
   pkgs,
   stdenv,
   lib,
@@ -73,11 +74,15 @@ rec {
     };
   };
 
-  contentAddressedFlag = {
-    __contentAddressed = true;
-    outputHashAlgo = "sha256";
-    outputHashMode = "recursive";
-  };
+  contentAddressedFlag =
+    if mode == "nur" then
+      { }
+    else
+      {
+        __contentAddressed = true;
+        outputHashAlgo = "sha256";
+        outputHashMode = "recursive";
+      };
 
   # https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/os-specific/linux/kernel/linux-xanmod.nix
   mkKernel =
