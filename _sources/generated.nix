@@ -594,6 +594,14 @@
       sha256 = "sha256-TSB0SmRoI79nlGlFm/+FQ8GymhCEkuNKX0NXHHw0u8s=";
     };
   };
+  inter-knot = {
+    pname = "inter-knot";
+    version = "v2.11.0+14";
+    src = fetchurl {
+      url = "https://github.com/share121/inter-knot/releases/download/v2.11.0+14/inter_knot_linux.zip";
+      sha256 = "sha256-uzm1+5LWKcoqbaAXPzb1za3ffAbCGPztg7Nq7TEPc6k=";
+    };
+  };
   jproxy = {
     pname = "jproxy";
     version = "v3.4.1";
