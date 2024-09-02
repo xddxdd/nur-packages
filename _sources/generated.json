@@ -1065,10 +1065,16 @@
         "passthru": null,
         "pinned": false,
         "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
             "name": null,
-            "sha256": "sha256-uzm1+5LWKcoqbaAXPzb1za3ffAbCGPztg7Nq7TEPc6k=",
-            "type": "url",
-            "url": "https://github.com/share121/inter-knot/releases/download/v2.11.0+14/inter_knot_linux.zip"
+            "owner": "share121",
+            "repo": "inter-knot",
+            "rev": "v2.11.0+14",
+            "sha256": "sha256-JAhL/LxWONwqObFpLNAo8CSm/Gc5Iej63btVwiyRn3w=",
+            "sparseCheckout": [],
+            "type": "github"
         },
         "version": "v2.11.0+14"
     },

@@ -597,9 +597,12 @@
   inter-knot = {
     pname = "inter-knot";
     version = "v2.11.0+14";
-    src = fetchurl {
-      url = "https://github.com/share121/inter-knot/releases/download/v2.11.0+14/inter_knot_linux.zip";
-      sha256 = "sha256-uzm1+5LWKcoqbaAXPzb1za3ffAbCGPztg7Nq7TEPc6k=";
+    src = fetchFromGitHub {
+      owner = "share121";
+      repo = "inter-knot";
+      rev = "v2.11.0+14";
+      fetchSubmodules = false;
+      sha256 = "sha256-JAhL/LxWONwqObFpLNAo8CSm/Gc5Iej63btVwiyRn3w=";
     };
   };
   jproxy = {
