@@ -64,9 +64,15 @@ stdenv.mkDerivation {
       name = "inter-knot";
       exec = "inter-knot";
       icon = "inter-knot";
-      desktopName = "绳网";
-      comment = "绳网是一个游戏、技术交流平台";
+      desktopName = "Inter-Knot";
+      comment = "Inter-Knot is a platform for discussing gaming and technology.";
       categories = [ "Network" ];
+      extraConfig = {
+        "Name[zh_CN]" = "绳网";
+        "Name[zh_TW]" = "绳网";
+        "Comment[zh_CN]" = "绳网是一个游戏、技术交流平台";
+        "Comment[zh_TW]" = "绳网是一个游戏、技术交流平台";
+      };
     })
   ];
 
