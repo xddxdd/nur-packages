@@ -23,6 +23,7 @@
 with lib;
 let
   nameSuffix = "-${kernel.version}";
+  i686bundled = true;
 
   libPathFor =
     pkgs:
@@ -50,12 +51,13 @@ let
 
     inherit version src;
     inherit (stdenv.hostPlatform) system;
+    inherit i686bundled;
     inherit patches;
 
     outputs = [
       "out"
       "bin"
-    ];
+    ] ++ optional i686bundled "lib32";
     outputDev = "bin";
 
     kernel = kernel.dev;
@@ -77,6 +79,7 @@ let
     dontPatchELF = true;
 
     libPath = libPathFor pkgs;
+    libPath32 = optionalString i686bundled (libPathFor pkgsi686Linux);
 
     buildInputs = [ which ];
     nativeBuildInputs = [
@@ -92,7 +95,7 @@ let
       persistenced = callPackage (import ./persistenced.nix persistencedSha256) { nvidia_x11 = self; };
       inherit persistencedVersion settingsVersion;
       compressFirmware = false;
-    };
+    } // optionalAttrs (!i686bundled) { inherit lib32; };
 
     meta = with lib; {
       maintainers = with lib.maintainers; [ xddxdd ];
