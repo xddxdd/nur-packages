@@ -114,6 +114,9 @@ installPhase() {
         # FIXME: needs PATH and other fixes
         # install -Dm755 nvidia-bug-report.sh $bin/bin/nvidia-bug-report.sh
         install -Dm755 sriov-manage $bin/bin/sriov-manage
+
+        # Install vGPU config
+        install -Dm644 vgpuConfig.xml $bin/share/nvidia/vgpu/vgpuConfig.xml
     fi
 }
 
