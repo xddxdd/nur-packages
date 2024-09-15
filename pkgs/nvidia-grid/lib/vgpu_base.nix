@@ -10,9 +10,9 @@
 }:
 {
   lib,
-  stdenv,
   callPackage,
   pkgs,
+  pkgsi686Linux,
   kernel,
   perl,
   nukeReferences,
@@ -20,7 +20,6 @@
   libarchive,
   ...
 }:
-with lib;
 let
   nameSuffix = "-${kernel.version}";
   i686bundled = true;
@@ -44,20 +43,20 @@ let
       ]
     );
 
-  self = stdenv.mkDerivation {
+  self = kernel.stdenv.mkDerivation {
     name = "nvidia-x11-${version}${nameSuffix}";
 
     builder = ./vgpu-builder.sh;
 
     inherit version src;
-    inherit (stdenv.hostPlatform) system;
+    inherit (kernel.stdenv.hostPlatform) system;
     inherit i686bundled;
     inherit patches;
 
     outputs = [
       "out"
       "bin"
-    ] ++ optional i686bundled "lib32";
+    ] ++ lib.optional i686bundled "lib32";
     outputDev = "bin";
 
     kernel = kernel.dev;
@@ -79,7 +78,7 @@ let
     dontPatchELF = true;
 
     libPath = libPathFor pkgs;
-    libPath32 = optionalString i686bundled (libPathFor pkgsi686Linux);
+    libPath32 = lib.optionalString i686bundled (libPathFor pkgsi686Linux);
 
     buildInputs = [ which ];
     nativeBuildInputs = [
@@ -95,7 +94,7 @@ let
       persistenced = callPackage (import ./persistenced.nix persistencedSha256) { nvidia_x11 = self; };
       inherit persistencedVersion settingsVersion;
       compressFirmware = false;
-    } // optionalAttrs (!i686bundled) { inherit lib32; };
+    } // lib.optionalAttrs (!i686bundled) { inherit (self) lib32; };
 
     meta = with lib; {
       maintainers = with lib.maintainers; [ xddxdd ];
