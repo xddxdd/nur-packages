@@ -94,7 +94,7 @@ let
       persistenced = callPackage (import ./persistenced.nix persistencedSha256) { nvidia_x11 = self; };
       inherit persistencedVersion settingsVersion;
       compressFirmware = false;
-    } // lib.optionalAttrs (!i686bundled) { inherit (self) lib32; };
+    };
 
     meta = with lib; {
       maintainers = with lib.maintainers; [ xddxdd ];
