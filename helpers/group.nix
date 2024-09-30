@@ -47,8 +47,8 @@ rec {
           );
     in
     lib.mapAttrs (
-      n: v:
-      pkgs.callPackages v {
+      _n: v:
+      pkgs.callPackage v {
         inherit
           _packages
           callPackage
@@ -60,7 +60,7 @@ rec {
           sources
           ;
       }
-    ) (lib.filterAttrs (n: v: v != null) groups);
+    ) (lib.filterAttrs (_n: v: v != null) groups);
 
-  doMergePkgs = lib.mapAttrs (n: v: if lib.isDerivation v then v else mergePkgs v);
+  doMergePkgs = lib.mapAttrs (_n: v: if lib.isDerivation v then v else mergePkgs v);
 }

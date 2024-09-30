@@ -47,11 +47,13 @@ let
   groupPackages = doGroupPackages packages groups;
 
   packages =
-    (builtins.removeAttrs groupPackages [
-      "kernel-modules"
-      "uncategorized"
-    ])
-    // groupPackages.kernel-modules
-    // groupPackages.uncategorized;
+    builtins.removeAttrs (groupPackages // groupPackages.kernel-modules // groupPackages.uncategorized)
+      [
+        "kernel-modules"
+        "uncategorized"
+        # Additional fields added by callPackage
+        "override"
+        "overrideDerivation"
+      ];
 in
 doMergePkgs packages
