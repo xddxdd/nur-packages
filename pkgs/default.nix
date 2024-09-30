@@ -24,7 +24,7 @@ let
     asteriskDigiumCodecs = ./asterisk-digium-codecs;
     lantianCustomized = ./lantian-customized;
     lantianLinuxXanmod = ./lantian-linux-xanmod;
-    lantianLinuxXanmodPackages = ifNotCI ./lantian-linux-xanmod/packages.nix;
+    lantianLinuxXanmodPackages = ifNotNUR (ifNotCI ./lantian-linux-xanmod/packages.nix);
     lantianPersonal = ifNotCI ./lantian-personal;
     nvidia-grid = ifNotCI ./nvidia-grid;
     openj9-ibm-semeru = ifNotCI ./openj9-ibm-semeru;
@@ -39,6 +39,7 @@ let
 
   inherit (pkgs.callPackage ../helpers/group.nix { inherit mode; })
     ifNotCI
+    ifNotNUR
     doGroupPackages
     doMergePkgs
     ;
