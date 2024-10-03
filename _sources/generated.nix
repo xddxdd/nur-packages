@@ -1602,6 +1602,14 @@
       sha256 = "sha256-mcqiTqu/KIZ+W9yvZfyFekjRdiVavkHVKVRh0xUytg0=";
     };
   };
+  unigine-superposition = {
+    pname = "unigine-superposition";
+    version = "1.1";
+    src = fetchurl {
+      url = "https://assets.unigine.com/d/Unigine_Superposition-1.1.run";
+      sha256 = "sha256-zZ634FUbLggErgMn3OfnH0MF8eDcjeD6vshdkc6nH4o=";
+    };
+  };
   vbmeta-disable-verification = {
     pname = "vbmeta-disable-verification";
     version = "v1.0";

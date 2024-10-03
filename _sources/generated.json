@@ -2911,6 +2911,21 @@
         },
         "version": "v1.2.11"
     },
+    "unigine-superposition": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "unigine-superposition",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-zZ634FUbLggErgMn3OfnH0MF8eDcjeD6vshdkc6nH4o=",
+            "type": "url",
+            "url": "https://assets.unigine.com/d/Unigine_Superposition-1.1.run"
+        },
+        "version": "1.1"
+    },
     "vbmeta-disable-verification": {
         "cargoLocks": null,
         "date": null,

@@ -651,6 +651,11 @@ fetch.github = "trumank/uesave-rs"
 src.github_tag = "CachyOS/uksmd"
 fetch.github = "CachyOS/uksmd"
 
+[unigine-superposition]
+src.webpage = "https://benchmark.unigine.com/superposition"
+src.regex = "\"https://assets.unigine.com/d/Unigine_Superposition-([0-9\\.]+).run\""
+fetch.url = "https://assets.unigine.com/d/Unigine_Superposition-$ver.run"
+
 [vbmeta-disable-verification]
 src.github = "libxzr/vbmeta-disable-verification"
 fetch.github = "libxzr/vbmeta-disable-verification"

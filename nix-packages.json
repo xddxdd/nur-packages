@@ -3389,6 +3389,11 @@
     "pname": "uksmd",
     "version": "1.2.11"
   },
+  "legacyPackages.x86_64-linux.unigine-superposition": {
+    "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system.",
+    "pname": "unigine-superposition",
+    "version": "1.1"
+  },
   "legacyPackages.x86_64-linux.vbmeta-disable-verification": {
     "description": "Patch Android vbmeta image and disable verification flags inside.",
     "pname": "vbmeta-disable-verification",
@@ -4113,6 +4118,11 @@
     "description": "Userspace KSM helper daemon",
     "pname": "uksmd",
     "version": "1.2.11"
+  },
+  "packages.x86_64-linux.unigine-superposition": {
+    "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system.",
+    "pname": "unigine-superposition",
+    "version": "1.1"
   },
   "packages.x86_64-linux.vbmeta-disable-verification": {
     "description": "Patch Android vbmeta image and disable verification flags inside.",
