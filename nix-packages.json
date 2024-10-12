@@ -489,6 +489,11 @@
     "pname": "llama-cpp",
     "version": "3899"
   },
+  "legacyPackages.x86_64-linux.lantianCustomized.materialgram": {
+    "description": "Telegram Desktop fork with material icons and some improvements (Without anti-features)",
+    "pname": "materialgram",
+    "version": "5.5.4.1"
+  },
   "legacyPackages.x86_64-linux.lantianCustomized.nbfc-linux": {
     "description": "NoteBook FanControl ported to Linux (with Lan Tian's modifications)",
     "pname": "nbfc-linux-lantian-unstable",
