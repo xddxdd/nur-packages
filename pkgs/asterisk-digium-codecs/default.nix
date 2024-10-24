@@ -47,10 +47,12 @@ let
       mergePkgs (
         lib.mapAttrs (
           name: value:
-          if stdenv.isx86_64 then
+          if stdenv.isx86_64 && (value."64" or false) then
             mkLibrary asterisk_version name "64" value."64"
-          else
+          else if stdenv.isi686 && (value."32" or false) then
             mkLibrary asterisk_version name "32" value."32"
+          else
+            null
         ) v
       )
     );
