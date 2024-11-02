@@ -1,4 +1,5 @@
-_: {
+{ inputs, ... }:
+{
   perSystem =
     {
       pkgs,
@@ -57,6 +58,14 @@ _: {
           done
 
           exit 1
+        '';
+
+        nix-update = ''
+          nix-shell \
+            ${inputs.nixpkgs.outPath}/maintainers/scripts/update.nix \
+            --arg include-overlays "[(final: prev: import $(pwd)/pkgs null { pkgs = prev; })]" \
+            --argstr skip-prompt true \
+            --argstr path "$@"
         '';
 
         nvfetcher = ''
