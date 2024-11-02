@@ -2,12 +2,19 @@
   sources,
   lib,
   rustPlatform,
+  versionCheckHook,
 }:
-rustPlatform.buildRustPackage {
+rustPlatform.buildRustPackage rec {
   pname = "uesave";
   inherit (sources.uesave-0_3_0) version src;
 
   cargoHash = "sha256-sSiiMtCuSic0PQn4m1Udv2UbEwHUy0VldpGMYSDGh8g=";
+
+  nativeInstallCheckInputs = [
+    versionCheckHook
+  ];
+  doInstallCheck = true;
+  versionCheckProgram = "${placeholder "out"}/bin/${meta.mainProgram}";
 
   meta = with lib; {
     mainProgram = "uesave";

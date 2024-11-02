@@ -2,12 +2,19 @@
   buildGo122Module,
   lib,
   sources,
+  versionCheckHook,
   ...
 }:
-buildGo122Module {
+buildGo122Module rec {
   inherit (sources.baidupcs-go) pname version src;
   vendorHash = "sha256-msTlXtidxLTe3xjxTOWCqx/epFT0XPdwGPantDJUGpc=";
   doCheck = false;
+
+  nativeInstallCheckInputs = [
+    versionCheckHook
+  ];
+  doInstallCheck = true;
+  versionCheckProgram = "${placeholder "out"}/bin/${meta.mainProgram}";
 
   meta = with lib; {
     mainProgram = "BaiduPCS-Go";

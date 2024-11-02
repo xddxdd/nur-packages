@@ -4,6 +4,7 @@
   sources,
   stdenvNoCC,
   writeShellScript,
+  versionCheckHook,
   ...
 }:
 let
@@ -29,14 +30,21 @@ let
     exec ${cmd}/bin/cloudpan189-go "$@"
   '';
 in
-stdenvNoCC.mkDerivation {
+stdenvNoCC.mkDerivation rec {
   inherit pname version;
   dontUnpack = true;
   postInstall = ''
     install -Dm755 ${startScript} $out/bin/cloudpan189-go
   '';
 
+  nativeInstallCheckInputs = [
+    versionCheckHook
+  ];
+  doInstallCheck = true;
+  versionCheckProgram = "${placeholder "out"}/bin/${meta.mainProgram}";
+
   meta = with lib; {
+    mainProgram = "cloudpan189-go";
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "CLI for China Telecom 189 Cloud Drive service, implemented in Go";
     homepage = "https://github.com/tickstep/cloudpan189-go";
