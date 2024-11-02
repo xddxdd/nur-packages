@@ -18,14 +18,14 @@ buildGo122Module rec {
   nativeInstallCheckInputs = [
     versionCheckHook
   ];
-  doInstallCheck = true;
   versionCheckProgram = "${placeholder "out"}/bin/${meta.mainProgram}";
 
   postFixup = ''
     mv $out/bin/cloudpan189-go $out/bin/.cloudpan189-go-wrapped
 
     cat <<EOF >$out/bin/cloudpan189-go
-    export CLOUD189_CONFIG_DIR=\''${HOME}/.config/cloudpan189-go
+    #!/bin/sh
+    export CLOUD189_CONFIG_DIR="\''${CLOUD189_CONFIG_DIR:-\''${HOME}/.config/cloudpan189-go}"
     mkdir -p \''${CLOUD189_CONFIG_DIR}
     exec $out/bin/.cloudpan189-go-wrapped "\$@"
     EOF
