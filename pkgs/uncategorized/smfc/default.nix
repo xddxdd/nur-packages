@@ -7,7 +7,6 @@
   hddtemp,
   ipmitool,
   smartmontools,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.smfc) pname version src;

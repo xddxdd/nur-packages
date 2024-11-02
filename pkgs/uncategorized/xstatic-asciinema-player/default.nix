@@ -2,7 +2,6 @@
   lib,
   sources,
   python3Packages,
-  ...
 }:
 with python3Packages;
 buildPythonPackage rec {

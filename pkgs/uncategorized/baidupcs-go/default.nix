@@ -3,7 +3,6 @@
   lib,
   sources,
   versionCheckHook,
-  ...
 }:
 buildGo122Module rec {
   inherit (sources.baidupcs-go) pname version src;

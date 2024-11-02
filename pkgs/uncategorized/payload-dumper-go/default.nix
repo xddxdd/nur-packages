@@ -3,7 +3,6 @@
   sources,
   buildGoModule,
   xz,
-  ...
 }:
 buildGoModule rec {
   inherit (sources.payload-dumper-go) pname version src;

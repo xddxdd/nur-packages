@@ -4,7 +4,6 @@
   python3,
   python3Packages,
   keystone,
-  ...
 }:
 python3Packages.buildPythonPackage rec {
   inherit (sources.mtkclient) pname version src;

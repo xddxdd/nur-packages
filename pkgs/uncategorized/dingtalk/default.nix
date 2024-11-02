@@ -57,7 +57,6 @@
   udev,
   util-linux,
   xorg,
-  ...
 }:
 ################################################################################
 # Mostly based on dingtalk-bin package from AUR:

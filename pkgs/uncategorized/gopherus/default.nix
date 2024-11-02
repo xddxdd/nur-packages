@@ -3,7 +3,6 @@
   sources,
   lib,
   ncurses,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.gopherus) pname version src;

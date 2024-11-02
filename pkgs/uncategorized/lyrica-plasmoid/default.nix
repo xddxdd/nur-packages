@@ -3,7 +3,6 @@
   sources,
   stdenvNoCC,
   lyrica,
-  ...
 }:
 stdenvNoCC.mkDerivation {
   inherit (sources.lyrica) pname version src;

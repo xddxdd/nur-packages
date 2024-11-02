@@ -10,7 +10,6 @@
   wayland-scanner,
   wayland,
   xorg,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.vk-hdr-layer) pname version src;

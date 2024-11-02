@@ -13,7 +13,6 @@
   gtk2,
   libnotify,
   python3,
-  ...
 }:
 let
   osdlyricsPython = python3Packages.buildPythonPackage rec {

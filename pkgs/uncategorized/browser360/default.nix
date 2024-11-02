@@ -60,7 +60,6 @@
   udev,
   util-linux,
   xorg,
-  ...
 }:
 let
   libraries = [

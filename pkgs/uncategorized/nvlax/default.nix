@@ -6,7 +6,6 @@
   cmake,
   ninja,
   enableNvidia530Patch ? false,
-  ...
 }:
 let
   zycoreOld = stdenv.mkDerivation rec {

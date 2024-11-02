@@ -6,7 +6,6 @@
   persistencedSha256,
   persistencedVersion,
   patches ? [ ],
-  ...
 }:
 {
   lib,
@@ -21,7 +20,6 @@
   # Options
   useGLVND ? true,
   useProfiles ? true,
-  ...
 }:
 let
   nameSuffix = "-${kernel.version}";

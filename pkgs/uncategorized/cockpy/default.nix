@@ -4,7 +4,6 @@
   python3,
   python3Packages,
   makeWrapper,
-  ...
 }:
 with python3Packages;
 let

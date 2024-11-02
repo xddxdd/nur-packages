@@ -2,7 +2,6 @@
   lib,
   sources,
   stdenvNoCC,
-  ...
 }:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.plasma-smart-video-wallpaper-reborn) pname version src;

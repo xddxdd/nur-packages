@@ -8,7 +8,6 @@
   perl,
   pkg-config,
   liboqs-unstable,
-  ...
 }:
 let
   # CMAKE_OSX_ARCHITECTURES is set to x86_64 by Nix, but it confuses boringssl on aarch64-linux.

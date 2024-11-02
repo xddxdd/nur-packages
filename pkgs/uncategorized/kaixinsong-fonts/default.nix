@@ -2,7 +2,6 @@
   stdenvNoCC,
   lib,
   fetchurl,
-  ...
 }:
 let
   kaixinsong-a = fetchurl {

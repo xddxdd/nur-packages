@@ -4,7 +4,6 @@
   lib,
   jre_headless,
   makeWrapper,
-  ...
 }:
 stdenvNoCC.mkDerivation rec {
   pname = "hath";

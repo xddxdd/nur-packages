@@ -2,7 +2,6 @@
   stdenv,
   sources,
   lib,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.sx1302-hal) pname version src;

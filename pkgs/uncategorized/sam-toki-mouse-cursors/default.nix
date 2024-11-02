@@ -4,7 +4,6 @@
   lib,
   python3,
   win2xcur,
-  ...
 }:
 let
   py = python3.withPackages (p: [

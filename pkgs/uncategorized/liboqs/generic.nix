@@ -5,7 +5,6 @@
   lib,
   stdenv,
   cmake,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit pname version src;

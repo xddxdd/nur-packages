@@ -3,7 +3,6 @@
   lib,
   sources,
   unzip,
-  ...
 }:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.hoyo-glyphs) pname version src;

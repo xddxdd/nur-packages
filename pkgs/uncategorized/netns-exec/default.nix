@@ -2,7 +2,6 @@
   stdenv,
   sources,
   lib,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.netns-exec) pname version src;

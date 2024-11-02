@@ -4,7 +4,6 @@
   lib,
   cmake,
   qt5,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.qhttpengine) pname version src;

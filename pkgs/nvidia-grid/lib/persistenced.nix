@@ -6,7 +6,6 @@ sha256:
   nvidia_x11,
   m4,
   libtirpc,
-  ...
 }:
 stdenv.mkDerivation rec {
   pname = "nvidia-persistenced";

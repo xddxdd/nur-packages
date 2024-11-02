@@ -3,7 +3,6 @@
   lib,
   stdenvNoCC,
   unzip,
-  ...
 }:
 let
   configFile = ./config_local.php;

@@ -25,7 +25,6 @@
   vtk,
   webkitgtk,
   xorg,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.noise-suppression-for-voice) pname version src;

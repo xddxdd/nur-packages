@@ -5,7 +5,6 @@
   makeWrapper,
   python3,
   flasgger,
-  ...
 }:
 let
   pythonEnv = python3.withPackages (

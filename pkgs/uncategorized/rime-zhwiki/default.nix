@@ -2,7 +2,6 @@
   stdenvNoCC,
   sources,
   lib,
-  ...
 }:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.rime-zhwiki) pname version src;

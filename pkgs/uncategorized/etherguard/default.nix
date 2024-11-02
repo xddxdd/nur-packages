@@ -2,7 +2,6 @@
   buildGoModule,
   lib,
   sources,
-  ...
 }:
 buildGoModule rec {
   pname = "etherguard";

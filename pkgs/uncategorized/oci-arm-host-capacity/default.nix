@@ -2,7 +2,6 @@
   lib,
   sources,
   callPackage,
-  ...
 }:
 let
   composer2nixOutput = callPackage ./composer2nix { };

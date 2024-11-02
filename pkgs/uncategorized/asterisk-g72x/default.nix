@@ -5,7 +5,6 @@
   autoreconfHook,
   bcg729,
   asterisk,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.asterisk-g72x) pname version src;

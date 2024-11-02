@@ -3,7 +3,6 @@
   linkFarm,
   runCommand,
   imagemagick,
-  ...
 }:
 let
   resizeIcon =

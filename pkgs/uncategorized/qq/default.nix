@@ -19,7 +19,6 @@
   pciutils,
   systemd,
   xorg,
-  ...
 }:
 let
   libraries = [

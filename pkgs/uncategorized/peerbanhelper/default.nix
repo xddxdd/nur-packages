@@ -4,7 +4,6 @@
   lib,
   jre_headless,
   makeWrapper,
-  ...
 }:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.peerbanhelper) pname version src;

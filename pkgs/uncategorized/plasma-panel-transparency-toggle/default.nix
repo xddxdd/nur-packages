@@ -2,7 +2,6 @@
   lib,
   sources,
   stdenvNoCC,
-  ...
 }:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.plasma-panel-transparency-toggle) pname version src;

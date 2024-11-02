@@ -6,7 +6,6 @@
   curl,
   inetutils,
   which,
-  ...
 }:
 let
   additionalPath = lib.makeBinPath [

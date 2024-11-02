@@ -31,7 +31,6 @@
   udev,
   xorg,
   wayland,
-  ...
 }:
 ################################################################################
 # Mostly based on wechat-uos-bwrap package from AUR:

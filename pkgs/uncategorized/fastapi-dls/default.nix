@@ -5,7 +5,6 @@
   openssl,
   python3,
   makeWrapper,
-  ...
 }:
 let
   python = python3.withPackages (

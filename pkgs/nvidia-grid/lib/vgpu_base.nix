@@ -6,7 +6,6 @@
   persistencedSha256,
   persistencedVersion,
   patches ? [ ],
-  ...
 }:
 {
   lib,
@@ -18,7 +17,6 @@
   nukeReferences,
   which,
   libarchive,
-  ...
 }:
 let
   nameSuffix = "-${kernel.version}";

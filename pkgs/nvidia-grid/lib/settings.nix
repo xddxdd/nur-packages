@@ -20,7 +20,6 @@ sha256:
   nvidia_x11,
   withGtk2 ? false,
   withGtk3 ? true,
-  ...
 }:
 let
   src = fetchFromGitHub {

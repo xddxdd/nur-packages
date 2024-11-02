@@ -24,7 +24,6 @@
   zenity,
   # MPV dependencies
   mpv-unwrapped,
-  ...
 }:
 ################################################################################
 # Based on svp package from AUR:

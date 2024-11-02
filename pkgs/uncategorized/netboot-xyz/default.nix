@@ -2,7 +2,6 @@
   lib,
   stdenvNoCC,
   sources,
-  ...
 }:
 assert (sources.netboot-xyz-lkrn.version == sources.netboot-xyz-lkrn.version);
 stdenvNoCC.mkDerivation rec {

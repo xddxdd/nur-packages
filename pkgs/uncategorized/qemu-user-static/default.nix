@@ -2,7 +2,6 @@
   sources,
   stdenv,
   lib,
-  ...
 }:
 let
   mkPackage =

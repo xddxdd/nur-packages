@@ -2,7 +2,6 @@
   sources,
   lib,
   buildGoModule,
-  ...
 }:
 buildGoModule {
   inherit (sources.ldap-auth-proxy) pname version src;

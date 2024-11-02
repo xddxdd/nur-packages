@@ -4,7 +4,6 @@
   lib,
   python3,
   makeWrapper,
-  ...
 }:
 let
   py = python3.withPackages (

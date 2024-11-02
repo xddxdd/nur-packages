@@ -4,7 +4,6 @@
   electron,
   lib,
   makeWrapper,
-  ...
 }:
 let
   res = "${sources.bilibili-src.src}/res";

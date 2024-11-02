@@ -2,7 +2,6 @@
   stdenvNoCC,
   lib,
   sources,
-  ...
 }:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.hi3-ii-martian-font) pname version src;

@@ -2,7 +2,6 @@
   lib,
   stdenvNoCC,
   sources,
-  ...
 }:
 let
   configFile = ./config.inc.php;

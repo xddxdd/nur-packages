@@ -20,7 +20,6 @@
   srtp,
   xdp-tools,
   zlib,
-  ...
 }:
 let
   dpdk-vpp = dpdk.overrideAttrs (old: {

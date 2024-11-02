@@ -6,7 +6,6 @@
   protobuf3_21,
   protobufc,
   lua5_3_compat,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.soggy) pname version src;

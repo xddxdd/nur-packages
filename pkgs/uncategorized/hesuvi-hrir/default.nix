@@ -3,7 +3,6 @@
   lib,
   fetchurl,
   p7zip,
-  ...
 }:
 stdenvNoCC.mkDerivation rec {
   pname = "hesuvi-hrir";

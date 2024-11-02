@@ -3,7 +3,6 @@
   lib,
   fetchurl,
   unzip,
-  ...
 }:
 stdenv.mkDerivation rec {
   pname = "3gpp-evs";

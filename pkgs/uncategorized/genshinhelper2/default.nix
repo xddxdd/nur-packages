@@ -3,7 +3,6 @@
   sources,
   python3Packages,
   gettext,
-  ...
 }:
 with python3Packages;
 buildPythonPackage rec {

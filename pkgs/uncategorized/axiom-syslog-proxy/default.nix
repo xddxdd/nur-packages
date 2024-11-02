@@ -2,7 +2,6 @@
   buildGoModule,
   lib,
   sources,
-  ...
 }:
 buildGoModule {
   inherit (sources.axiom-syslog-proxy) pname version src;

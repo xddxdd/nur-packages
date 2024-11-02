@@ -5,7 +5,6 @@
   stdenvNoCC,
   writeShellScript,
   versionCheckHook,
-  ...
 }:
 let
   inherit (sources.cloudpan189-go) pname version;

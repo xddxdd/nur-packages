@@ -8,7 +8,6 @@
   writeShellScript,
   makeDesktopItem,
   copyDesktopItems,
-  ...
 }:
 ################################################################################
 # Some assets are copied from AUR:

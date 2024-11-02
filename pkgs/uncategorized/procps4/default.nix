@@ -4,7 +4,6 @@
   lib,
   pkg-config,
   ncurses,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.procps4) pname version src;

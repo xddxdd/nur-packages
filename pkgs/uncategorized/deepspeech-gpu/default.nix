@@ -6,7 +6,6 @@
   fetchurl,
   autoPatchelfHook,
   stdenv,
-  ...
 }:
 with python39Packages;
 let

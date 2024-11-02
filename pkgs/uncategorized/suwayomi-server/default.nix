@@ -5,7 +5,6 @@
   unzip,
   jre_headless,
   makeWrapper,
-  ...
 }:
 stdenvNoCC.mkDerivation rec {
   inherit (sources.suwayomi-server) pname src;

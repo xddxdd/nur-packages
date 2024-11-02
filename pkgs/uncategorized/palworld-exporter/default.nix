@@ -4,7 +4,6 @@
   python3Packages,
   click-loglevel,
   py-rcon,
-  ...
 }:
 with python3Packages;
 buildPythonApplication rec {

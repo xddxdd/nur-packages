@@ -10,7 +10,6 @@
   libappindicator,
   libdbusmenu,
   libglvnd,
-  ...
 }:
 ################################################################################
 # Mostly based on baidnetdisk-electron package from AUR:

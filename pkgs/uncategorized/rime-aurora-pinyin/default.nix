@@ -2,7 +2,6 @@
   sources,
   stdenvNoCC,
   lib,
-  ...
 }:
 stdenvNoCC.mkDerivation {
   inherit (sources.rime-aurora-pinyin) pname version src;

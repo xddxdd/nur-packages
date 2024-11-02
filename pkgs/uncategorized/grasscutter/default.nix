@@ -6,7 +6,6 @@
   jre_headless,
   procps,
   makeWrapper,
-  ...
 }:
 let
   resources = sources.grasscutter-resources.src;

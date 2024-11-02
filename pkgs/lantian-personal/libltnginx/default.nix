@@ -3,7 +3,6 @@
   lib,
   sources,
   cmake,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.libltnginx) pname version src;

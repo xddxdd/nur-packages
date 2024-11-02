@@ -8,7 +8,6 @@
   mpv,
   qhttpengine,
   lua5_3_compat,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.kikoplay) pname version src;

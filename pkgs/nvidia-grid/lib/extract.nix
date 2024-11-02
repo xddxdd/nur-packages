@@ -4,7 +4,6 @@
   fetchurl,
   unzip,
   p7zip,
-  ...
 }:
 let
   unpack =

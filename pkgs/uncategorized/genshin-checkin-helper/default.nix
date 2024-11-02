@@ -4,7 +4,6 @@
   python3Packages,
   onepush,
   genshinhelper2,
-  ...
 }:
 with python3Packages;
 let

@@ -9,7 +9,6 @@
   libcap_ng,
   systemd,
   ninja,
-  ...
 }:
 stdenv.mkDerivation rec {
   inherit (sources.uksmd) pname version src;

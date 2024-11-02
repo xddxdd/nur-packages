@@ -23,7 +23,6 @@
   zstd,
   # extra args to make nixpkgs happy
   modules ? [ ],
-  ...
 }:
 let
   patchUseOpensslMd5Sha1 = fetchurl {

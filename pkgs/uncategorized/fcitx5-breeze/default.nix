@@ -4,7 +4,6 @@
   lib,
   python3,
   inkscape,
-  ...
 }:
 stdenvNoCC.mkDerivation {
   inherit (sources.fcitx5-breeze) pname version src;
