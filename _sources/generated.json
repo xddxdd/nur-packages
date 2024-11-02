@@ -1942,11 +1942,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-lBNor0FKa3iUStl/3tzOdpy14TKNYVmbtckWkYG2g9M=",
+            "sha256": "sha256-NJCQV5eRw2V3vHiKhUwrF+N1YN35baynY2svzwn+qVo=",
             "type": "url",
-            "url": "https://github.com/Ghost-chu/PeerBanHelper/releases/download/v7.0.0/PeerBanHelper.jar"
+            "url": "https://github.com/Ghost-chu/PeerBanHelper/releases/download/v7.0.2/PeerBanHelper_7.0.2.zip"
         },
-        "version": "v7.0.0"
+        "version": "7.0.2"
     },
     "phpmyadmin": {
         "cargoLocks": null,
