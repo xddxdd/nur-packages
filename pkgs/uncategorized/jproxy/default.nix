@@ -31,10 +31,10 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Proxy between Sonarr / Radarr and Jackett / Prowlarr, mainly used to optimize search and improve recognition rate";
     homepage = "https://github.com/LuckyPuppy514/jproxy";
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 }

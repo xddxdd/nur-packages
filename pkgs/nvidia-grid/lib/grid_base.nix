@@ -105,11 +105,11 @@ let
       compressFirmware = false;
     };
 
-    meta = with lib; {
+    meta = {
       maintainers = with lib.maintainers; [ xddxdd ];
       homepage = "https://www.nvidia.com/object/unix.html";
       description = "NVIDIA vGPU guest driver (GRID driver, experimental package)";
-      license = licenses.unfreeRedistributable;
+      license = lib.licenses.unfreeRedistributable;
       platforms = [ "x86_64-linux" ];
     };
   };

@@ -32,11 +32,11 @@ python3Packages.buildPythonPackage rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     mainProgram = "bepasty-server";
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Universal pastebin server";
     homepage = "https://bepasty-server.readthedocs.org/";
-    license = with licenses; [ bsd2 ];
+    license = with lib.licenses; [ bsd2 ];
   };
 }

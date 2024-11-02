@@ -11,11 +11,11 @@ buildGoModule rec {
 
   modRoot = "proxy";
 
-  meta = with lib; {
+  meta = {
     mainProgram = "proxy";
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint";
     homepage = "https://github.com/xddxdd/bird-lg-go";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
   };
 }

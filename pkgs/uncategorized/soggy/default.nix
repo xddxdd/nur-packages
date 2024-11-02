@@ -31,10 +31,10 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Experimental server emulator for a game I forgot its name";
     homepage = "https://github.com/LDAsuku/soggy";
-    license = licenses.agpl3Only;
+    license = lib.licenses.agpl3Only;
   };
 }

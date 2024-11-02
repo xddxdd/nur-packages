@@ -56,10 +56,10 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Public and open source version of the cbt2 ps im working on";
     homepage = "https://github.com/Hiro420/CockPY";
-    license = with licenses; [ unfreeRedistributable ];
+    license = with lib.licenses; [ unfreeRedistributable ];
   };
 }

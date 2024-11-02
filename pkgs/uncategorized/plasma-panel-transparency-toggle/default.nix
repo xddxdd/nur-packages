@@ -12,10 +12,10 @@ stdenvNoCC.mkDerivation rec {
     cp -r * $out/share/plasma/plasmoids/org.kde.panel.transparency.toggle
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Rewrite of [Panel Transparency Button](https://github.com/psifidotos/paneltransparencybutton) for plasma 6";
     homepage = "https://github.com/sanjay-kr-commit/panelTransparencyToggleForPlasma6";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
   };
 }

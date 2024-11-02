@@ -52,10 +52,10 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "OpenSSL 3 provider containing post-quantum algorithms";
     homepage = "https://openquantumsafe.org";
-    license = with licenses; [ mit ];
+    license = with lib.licenses; [ mit ];
   };
 }

@@ -17,10 +17,10 @@ python3Packages.buildPythonPackage rec {
 
   doCheck = false;
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Easy OpenAPI specs and Swagger UI for your Flask API";
     homepage = "http://flasgger.pythonanywhere.com/";
-    license = with licenses; [ mit ];
+    license = with lib.licenses; [ mit ];
   };
 }

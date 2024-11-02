@@ -33,10 +33,10 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Super Micro Fan Control";
     homepage = "https://github.com/petersulyok/smfc";
-    license = with licenses; [ gpl3Only ];
+    license = with lib.licenses; [ gpl3Only ];
   };
 }

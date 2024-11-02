@@ -15,10 +15,10 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "【极光拼音】输入方案";
     homepage = "https://github.com/hosxy/rime-aurora-pinyin";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
   };
 }

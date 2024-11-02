@@ -23,11 +23,11 @@ stdenv.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     mainProgram = "ftp.proxy";
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "FTP Proxy Server";
     homepage = "http://www.ftpproxy.org/";
-    license = licenses.gpl2Only;
+    license = lib.licenses.gpl2Only;
   };
 }

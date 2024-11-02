@@ -80,12 +80,12 @@ buildGoModule {
     "dev"
   ];
 
-  meta = with lib; {
+  meta = {
     mainProgram = "bssl";
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Fork of BoringSSL that includes prototype quantum-resistant key exchange and authentication in the TLS handshake based on liboqs";
     homepage = "https://openquantumsafe.org";
-    license = with licenses; [
+    license = with lib.licenses; [
       openssl
       isc
       mit

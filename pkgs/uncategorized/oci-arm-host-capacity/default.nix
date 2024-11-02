@@ -37,10 +37,10 @@ composer2nixOutput.overrideAttrs (old: rec {
         '$dotenv = Dotenv::createUnsafeImmutable(dirname($envFilename), basename($envFilename));'
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "This script allows to bypass Oracle Cloud Infrastructure 'Out of host capacity' error immediately when additional OCI capacity will appear in your Home Region / Availability domain";
     homepage = "https://github.com/hitrov/oci-arm-host-capacity";
-    license = with licenses; [ mit ];
+    license = with lib.licenses; [ mit ];
   };
 })

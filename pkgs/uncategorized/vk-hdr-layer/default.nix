@@ -33,10 +33,10 @@ stdenv.mkDerivation rec {
     chmod -R +w subprojects/vkroots
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Vulkan layer utilizing a small color management / HDR protocol for experimentation";
     homepage = "https://github.com/Zamundaaa/VK_hdr_layer";
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 }

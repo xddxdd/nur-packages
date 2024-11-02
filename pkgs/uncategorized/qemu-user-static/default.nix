@@ -35,12 +35,12 @@ let
 
       dontFixup = true;
 
-      meta = with lib; {
+      meta = {
         mainProgram = "qemu-amd64-static";
         maintainers = with lib.maintainers; [ xddxdd ];
         homepage = "http://www.qemu.org/";
         description = "Generic and open source machine emulator and virtualizer";
-        license = licenses.gpl2Plus;
+        license = lib.licenses.gpl2Plus;
       };
     };
 in

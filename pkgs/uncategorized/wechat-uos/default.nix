@@ -237,7 +237,7 @@ stdenv.mkDerivation {
     })
   ];
 
-  meta = with lib; {
+  meta = {
     mainProgram = "wechat-uos";
     maintainers = with lib.maintainers; [ xddxdd ];
     description =
@@ -247,6 +247,6 @@ stdenv.mkDerivation {
         "WeChat desktop without sandbox (Adapted from https://aur.archlinux.org/packages/wechat-uos-bwrap)";
     homepage = "https://weixin.qq.com/";
     platforms = [ "x86_64-linux" ];
-    license = licenses.unfreeRedistributable;
+    license = lib.licenses.unfreeRedistributable;
   };
 }

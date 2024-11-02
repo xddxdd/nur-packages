@@ -33,10 +33,10 @@ stdenv.mkDerivation rec {
     sed -i "s#/usr/bin#$out/bin#g" uksmd.service
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Userspace KSM helper daemon";
     homepage = "https://github.com/CachyOS/uksmd";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
   };
 }

@@ -39,11 +39,11 @@ stdenv.mkDerivation rec {
   env.NIX_CFLAGS_COMPILE = toString [ "-I${libtirpc.dev}/include/tirpc" ];
   NIX_LDFLAGS = [ "-ltirpc" ];
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     homepage = "https://www.nvidia.com/object/unix.html";
     description = "Settings application for NVIDIA graphics cards";
-    license = licenses.unfreeRedistributable;
+    license = lib.licenses.unfreeRedistributable;
     inherit (nvidia_x11.meta) platforms;
   };
 }

@@ -16,7 +16,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Font for Martian in Honkai Impact 3rd";
     homepage = "https://github.com/Wenti-D/HI3IIMartianFont";

@@ -15,11 +15,11 @@ rustPlatform.buildRustPackage rec {
   doInstallCheck = true;
   versionCheckProgram = "${placeholder "out"}/bin/${meta.mainProgram}";
 
-  meta = with lib; {
+  meta = {
     mainProgram = "uesave";
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Library for reading and writing Unreal Engine save files (commonly referred to as GVAS)";
     homepage = "https://github.com/trumank/uesave-rs";
-    license = licenses.mit;
+    license = lib.licenses.mit;
   };
 }

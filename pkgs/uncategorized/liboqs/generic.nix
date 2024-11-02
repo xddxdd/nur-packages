@@ -36,10 +36,10 @@ stdenv.mkDerivation rec {
     sed -i "s#//#/#g" $out/lib/pkgconfig/liboqs.pc
   '';
 
-  meta = with lib; {
+  meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "C library for prototyping and experimenting with quantum-resistant cryptography";
     homepage = "https://openquantumsafe.org";
-    license = with licenses; [ mit ];
+    license = with lib.licenses; [ mit ];
   };
 }

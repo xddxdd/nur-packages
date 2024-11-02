@@ -16,11 +16,11 @@ buildGo122Module rec {
   doInstallCheck = true;
   versionCheckProgram = "${placeholder "out"}/bin/${meta.mainProgram}";
 
-  meta = with lib; {
+  meta = {
     mainProgram = "BaiduPCS-Go";
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Baidu Netdisk commandline client, mimicking Linux shell file handling commands";
     homepage = "https://github.com/qjfoidnh/BaiduPCS-Go";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
   };
 }

@@ -43,11 +43,11 @@ stdenvNoCC.mkDerivation rec {
   doInstallCheck = true;
   versionCheckProgram = "${placeholder "out"}/bin/${meta.mainProgram}";
 
-  meta = with lib; {
+  meta = {
     mainProgram = "cloudpan189-go";
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "CLI for China Telecom 189 Cloud Drive service, implemented in Go";
     homepage = "https://github.com/tickstep/cloudpan189-go";
-    license = licenses.asl20;
+    license = lib.licenses.asl20;
   };
 }

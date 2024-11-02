@@ -10,11 +10,11 @@ buildPythonPackage rec {
 
   propagatedBuildInputs = [ tkinter ];
 
-  meta = with lib; {
+  meta = {
     mainProgram = "rcon-shell";
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "Python implementation of RCON";
     homepage = "https://github.com/ttk1/py-rcon";
-    license = with licenses; [ mit ];
+    license = with lib.licenses; [ mit ];
   };
 }
