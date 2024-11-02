@@ -75,6 +75,12 @@
           [ -f "secrets.toml" ] && KEY_FLAG="$KEY_FLAG -k secrets.toml"
           export PYTHONPATH=${pkgs.python3Packages.packaging}/lib/python${pkgs.python3.pythonVersion}/site-packages:''${PYTHONPATH:-}
           ${inputs'.nvfetcher.packages.default}/bin/nvfetcher $KEY_FLAG -c nvfetcher.toml -o _sources "$@"
+
+          # Postprocess _sources/generated.nix
+          sed -i "/ = false;/d" _sources/generated.nix
+          sed -i "/ = \[ \];/d" _sources/generated.nix
+          sed -i "s/sha256 = \"/hash = \"/g" _sources/generated.nix
+
           ${readme}
         '';
 
