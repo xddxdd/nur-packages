@@ -505,7 +505,7 @@
     "version": "11.5.0"
   },
   "legacyPackages.x86_64-linux.etherguard": {
-    "description": "Layer 2 version of WireGuard with Floyd Warshal implementation in Go",
+    "description": "Layer 2 version of WireGuard with Floyd Warshall implementation in Go",
     "pname": "etherguard",
     "version": "0.3.5-f5"
   },
@@ -3885,7 +3885,7 @@
     "version": "11.5.0"
   },
   "packages.x86_64-linux.etherguard": {
-    "description": "Layer 2 version of WireGuard with Floyd Warshal implementation in Go",
+    "description": "Layer 2 version of WireGuard with Floyd Warshall implementation in Go",
     "pname": "etherguard",
     "version": "0.3.5-f5"
   },
