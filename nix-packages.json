@@ -3500,12 +3500,12 @@
     "version": "2024-11-08"
   },
   "legacyPackages.x86_64-linux.rime-moegirl": {
-    "description": "Releases for dict of zh.moegirl.org.cn",
+    "description": "RIME dictionary file for entries from zh.moegirl.org.cn",
     "pname": "rime-moegirl",
     "version": "20241009"
   },
   "legacyPackages.x86_64-linux.rime-zhwiki": {
-    "description": "Fcitx 5 Pinyin Dictionary from zh.wikipedia.org",
+    "description": "RIME dictionary file for entries from zh.wikipedia.org",
     "pname": "rime-zhwiki",
     "version": "20240426"
   },
@@ -4310,12 +4310,12 @@
     "version": "2024-11-08"
   },
   "packages.x86_64-linux.rime-moegirl": {
-    "description": "Releases for dict of zh.moegirl.org.cn",
+    "description": "RIME dictionary file for entries from zh.moegirl.org.cn",
     "pname": "rime-moegirl",
     "version": "20241009"
   },
   "packages.x86_64-linux.rime-zhwiki": {
-    "description": "Fcitx 5 Pinyin Dictionary from zh.wikipedia.org",
+    "description": "RIME dictionary file for entries from zh.wikipedia.org",
     "pname": "rime-zhwiki",
     "version": "20240426"
   },
