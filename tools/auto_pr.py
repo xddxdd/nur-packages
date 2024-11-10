@@ -218,7 +218,10 @@ if __name__ == "__main__":
         if f.name == "default.nix":
             nixpkgs_target_path = nixpkgs_target_path.parent / "package.nix"
 
-        if not f.name.endswith(".nix"):
+        if f.name.startswith("update."):
+            # Do not copy update script specific to this repo
+            pass
+        elif not f.name.endswith(".nix"):
             shutil.copyfile(f, nixpkgs_target_path)
         else:
             with open(f) as fd:
