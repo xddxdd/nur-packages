@@ -470,7 +470,7 @@
     "version": "0.9.3"
   },
   "legacyPackages.x86_64-linux.dingtalk": {
-    "description": "钉钉",
+    "description": "DingTalk is an enterprise communication and collaboration platform developed by Alibaba Group",
     "pname": "dingtalk",
     "version": "7.6.15.4102301"
   },
@@ -505,9 +505,9 @@
     "version": "11.5.0"
   },
   "legacyPackages.x86_64-linux.etherguard": {
-    "description": "Layer2 version of wireguard with Floyd Warshall implement in go",
-    "pname": "etherguard-unstable",
-    "version": "2024-01-12"
+    "description": "Layer 2 version of WireGuard with Floyd Warshal implementation in Go",
+    "pname": "etherguard",
+    "version": "0.3.5-f5"
   },
   "legacyPackages.x86_64-linux.fastapi-dls": {
     "description": "Minimal Delegated License Service (DLS)",
@@ -3855,7 +3855,7 @@
     "version": "0.9.3"
   },
   "packages.x86_64-linux.dingtalk": {
-    "description": "钉钉",
+    "description": "DingTalk is an enterprise communication and collaboration platform developed by Alibaba Group",
     "pname": "dingtalk",
     "version": "7.6.15.4102301"
   },
@@ -3890,9 +3890,9 @@
     "version": "11.5.0"
   },
   "packages.x86_64-linux.etherguard": {
-    "description": "Layer2 version of wireguard with Floyd Warshall implement in go",
-    "pname": "etherguard-unstable",
-    "version": "2024-01-12"
+    "description": "Layer 2 version of WireGuard with Floyd Warshal implementation in Go",
+    "pname": "etherguard",
+    "version": "0.3.5-f5"
   },
   "packages.x86_64-linux.fastapi-dls": {
     "description": "Minimal Delegated License Service (DLS)",
