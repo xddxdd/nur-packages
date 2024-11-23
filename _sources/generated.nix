@@ -310,6 +310,7 @@
     src = fetchgit {
       url = "https://git.lantian.pub/backup/dn42-pingfinder.git";
       rev = "8fd1af682dd6fab6bee6a72f44b8157661b7b65b";
+      fetchSubmodules = false;
       hash = "sha256-eDTiY1OSR1+5DUaieaepxMVFe1qBVSyKhSMWtXavKUI=";
     };
     date = "2022-11-06";
@@ -331,6 +332,7 @@
     src = fetchgit {
       url = "git://dpdk.org/dpdk-kmods";
       rev = "9b182be2ee4bf003c892e1312440e1e5d93eff2c";
+      fetchSubmodules = false;
       hash = "sha256-8XXLJT18ivnTJcHaCefRpbsuG9K/yERaHbNMHH4l62A=";
     };
     date = "2024-11-20";
@@ -372,6 +374,7 @@
     src = fetchgit {
       url = "https://git.collinwebdesigns.de/oscar.krause/fastapi-dls.git";
       rev = "53c88a79ac9ff169b86fdf7330b8620a1b5b177d";
+      fetchSubmodules = false;
       hash = "sha256-ODzUT8RWm4D13WIY5Iib1BwPxWUuxiD7C3rB39EOzi0=";
     };
     date = "2024-11-22";
@@ -450,6 +453,7 @@
     src = fetchgit {
       url = "https://gitlab.com/YuukiPS/GC-Resources.git";
       rev = "316c31f7b0b2fc2565d99548de44ba7b024177c1";
+      fetchSubmodules = false;
       hash = "sha256-Zae3MymhyrkCmIJXWQuIXmQSBUT1aKmwyHEYMnmUyVU=";
     };
     date = "2024-08-29";
@@ -701,6 +705,7 @@
     src = fetchgit {
       url = "https://gitlab.com/xanmod/linux.git";
       rev = "6.12.1-xanmod1";
+      fetchSubmodules = false;
       hash = "sha256-vL3+VhecP+uByH8GHtYV0JTGI8gBN1o99Cm5Bkb2NjY=";
     };
   };
@@ -710,6 +715,7 @@
     src = fetchgit {
       url = "https://gitlab.com/xanmod/linux.git";
       rev = "6.0.12-xanmod1";
+      fetchSubmodules = false;
       hash = "sha256-k3fePBhb2zJfvPupdgenkdqG4sHNu2iv6T01EvOgbCg=";
     };
   };
@@ -719,6 +725,7 @@
     src = fetchgit {
       url = "https://gitlab.com/xanmod/linux.git";
       rev = "6.1.77-xanmod1";
+      fetchSubmodules = false;
       hash = "sha256-O+XB+avpx9Kkt+7RW6pT5mXMtAVhXNHe+ohgIm1ql8w=";
     };
   };
@@ -728,6 +735,7 @@
     src = fetchgit {
       url = "https://gitlab.com/xanmod/linux.git";
       rev = "6.6.63-xanmod1";
+      fetchSubmodules = false;
       hash = "sha256-P4B6r3p+Buu1Hf+RQsw5h2oUANVvQvQ4e/2gQcZ0vKw=";
     };
   };
