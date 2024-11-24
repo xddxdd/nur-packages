@@ -684,6 +684,21 @@
     "pname": "linux-cachyos-latest",
     "version": "6.12.1"
   },
+  "legacyPackages.x86_64-linux.lantianLinuxCachyOS.latest-configfile": {
+    "description": "",
+    "pname": "linux-config",
+    "version": "6.12.1"
+  },
+  "legacyPackages.x86_64-linux.lantianLinuxCachyOS.latest-lto": {
+    "description": "Linux CachyOS Kernel with Lan Tian Modifications and Clang+ThinLTO",
+    "pname": "linux-cachyos-latest-lto",
+    "version": "6.12.1"
+  },
+  "legacyPackages.x86_64-linux.lantianLinuxCachyOS.latest-lto-configfile": {
+    "description": "",
+    "pname": "linux-config",
+    "version": "6.12.1"
+  },
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.generic": {
     "description": "Linux Xanmod Kernel with Lan Tian Modifications",
     "pname": "linux-xanmod-generic",

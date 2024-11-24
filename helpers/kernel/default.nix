@@ -139,7 +139,7 @@ rec {
     let
       splitted = lib.splitString "-" version;
       ver0 = builtins.elemAt splitted 0;
-      ver1 = builtins.elemAt splitted 1;
+      ver1 = if builtins.length splitted > 1 then builtins.elemAt splitted 1 else null;
       major = lib.versions.pad 2 ver0;
 
       patches = [
@@ -183,7 +183,7 @@ rec {
         inherit pname version;
         src = patchedSrc;
 
-        modDirVersion = "${ver0}-lantian-${ver1}";
+        modDirVersion = if ver1 == null then "${ver0}-lantian" else "${ver0}-lantian-${ver1}";
 
         structuredExtraConfig =
           if !lto then
