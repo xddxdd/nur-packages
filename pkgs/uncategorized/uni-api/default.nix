@@ -16,6 +16,7 @@ let
       greenlet
       h2
       httpx
+      pillow
       pytest
       python-multipart
       ruamel-yaml
