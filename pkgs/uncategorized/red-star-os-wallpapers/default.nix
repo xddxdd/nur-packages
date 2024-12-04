@@ -7,7 +7,7 @@
 }:
 stdenv.mkDerivation {
   pname = "red-star-os-wallpapers";
-  version = "1.0";
+  version = "3.0";
   src = fetchurl {
     url = "https://archive.org/download/RedStarOS/Red%20Star%20OS%203.0%20Desktop/DESKTOP_redstar_desktop3.0_sign.iso";
     hash = "sha256-iVrQ4Brg01pl6axC3TTQodaF1t+jMc5bTyS7x1NDm+M=";

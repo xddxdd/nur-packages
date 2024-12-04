@@ -3382,12 +3382,12 @@
   "legacyPackages.x86_64-linux.red-star-os-rgjanggi": {
     "description": "Rgjanggi game from DPRK Red Star OS 3.0, heavily sandboxed. Use at your own risk",
     "pname": "red-star-os-rgjanggi",
-    "version": "1.0"
+    "version": "3.0"
   },
   "legacyPackages.x86_64-linux.red-star-os-wallpapers": {
     "description": "Wallpapers from DPRK Red Star OS 3.0",
     "pname": "red-star-os-wallpapers",
-    "version": "1.0"
+    "version": "3.0"
   },
   "legacyPackages.x86_64-linux.rime-aurora-pinyin": {
     "description": "【极光拼音】输入方案",
@@ -4202,12 +4202,12 @@
   "packages.x86_64-linux.red-star-os-rgjanggi": {
     "description": "Rgjanggi game from DPRK Red Star OS 3.0, heavily sandboxed. Use at your own risk",
     "pname": "red-star-os-rgjanggi",
-    "version": "1.0"
+    "version": "3.0"
   },
   "packages.x86_64-linux.red-star-os-wallpapers": {
     "description": "Wallpapers from DPRK Red Star OS 3.0",
     "pname": "red-star-os-wallpapers",
-    "version": "1.0"
+    "version": "3.0"
   },
   "packages.x86_64-linux.rime-aurora-pinyin": {
     "description": "【极光拼音】输入方案",

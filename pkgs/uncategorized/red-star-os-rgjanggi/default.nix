@@ -8,7 +8,7 @@
 }:
 let
   pname = "red-star-os-rgjanggi";
-  version = "1.0";
+  version = "3.0";
   src = stdenv.mkDerivation {
     inherit pname version;
     src = fetchurl {
