@@ -10,6 +10,7 @@ buildPythonPackage rec {
 
   propagatedBuildInputs = [
     click
+    hatchling
     setuptools
   ];
 

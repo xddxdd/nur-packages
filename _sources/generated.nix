@@ -228,10 +228,12 @@
   };
   click-loglevel = {
     pname = "click-loglevel";
-    version = "0.5.0";
-    src = fetchurl {
-      url = "https://pypi.org/packages/source/c/click-loglevel/click-loglevel-0.5.0.tar.gz";
-      hash = "sha256-/MmKE2qWR5tHaElN8lAXEUuhy1JdrAvtYZIJs1eP1PM=";
+    version = "v0.5.1";
+    src = fetchFromGitHub {
+      owner = "jwodder";
+      repo = "click-loglevel";
+      rev = "v0.5.1";
+      hash = "sha256-hSfedaZjzH71IAJnxekbMJjmeRG95q4d/dYk6LPNupw=";
     };
   };
   cloudpan189-go = {
@@ -1016,7 +1018,7 @@
       owner = "open-quantum-safe";
       repo = "oqs-provider";
       rev = "0.7.0";
-      hash = "sha256-KKZMb6ebaXxLSr5aV0m0VIHj2ofaRYQ0JF5JMAfiEj4=";
+      hash = "sha256-2+TpYpZwC8vx6tGgS2waD/BQDfnbq0PJIwvX5wDDBEg=";
     };
   };
   osdlyrics = {
@@ -1453,10 +1455,12 @@
   };
   smartrent_py = {
     pname = "smartrent_py";
-    version = "0.4.0";
-    src = fetchurl {
-      url = "https://pypi.org/packages/source/s/smartrent.py/smartrent.py-0.4.0.tar.gz";
-      hash = "sha256-02RMZhytJrRYHGv1ugRY2MMHpk10TcoDgvRkEGIuabo=";
+    version = "v0.4.5";
+    src = fetchFromGitHub {
+      owner = "zacherythomas";
+      repo = "smartrent-py";
+      rev = "v0.4.5";
+      hash = "sha256-9FkbIrnVRnu7Lt76YgjqqmmvDv8RRuevHbzsX9PTQXE=";
     };
   };
   smfc = {
@@ -1611,11 +1615,14 @@
   };
   tqdm-loggable = {
     pname = "tqdm-loggable";
-    version = "0.2";
-    src = fetchurl {
-      url = "https://pypi.org/packages/source/t/tqdm-loggable/tqdm_loggable-0.2.tar.gz";
-      hash = "sha256-F1q+w+H2O70urBkvpdoHXoDHu3FdfM880aKberWvBhc=";
+    version = "0cea2d244416abad69b463365465bc7620e88c39";
+    src = fetchFromGitHub {
+      owner = "tradingstrategy-ai";
+      repo = "tqdm-loggable";
+      rev = "0cea2d244416abad69b463365465bc7620e88c39";
+      hash = "sha256-hjpGwmb2QQi/WCr+nY4PQvmRSGBoOAGvZWvsg7hCtw0=";
     };
+    date = "2024-10-10";
   };
   transmission-web-control = {
     pname = "transmission-web-control";

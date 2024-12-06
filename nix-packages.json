@@ -437,7 +437,7 @@
   "legacyPackages.x86_64-linux.click-loglevel": {
     "description": "Log level parameter type for Click",
     "pname": "python3.12-click-loglevel",
-    "version": "0.5.0"
+    "version": "0.5.1"
   },
   "legacyPackages.x86_64-linux.cloudpan189-go": {
     "description": "CLI for China Telecom 189 Cloud Drive service, implemented in Go",
@@ -3447,7 +3447,7 @@
   "legacyPackages.x86_64-linux.smartrent_py": {
     "description": "Api for SmartRent locks, thermostats, moisture sensors and switches",
     "pname": "python3.12-smartrent_py",
-    "version": "0.4.0"
+    "version": "0.4.5"
   },
   "legacyPackages.x86_64-linux.smfc": {
     "description": "Super Micro Fan Control",
@@ -3532,7 +3532,7 @@
   "legacyPackages.x86_64-linux.tqdm-loggable": {
     "description": "TQDM progress bar helpers for logging and other headless application",
     "pname": "python3.12-tqdm-loggable",
-    "version": "0.2"
+    "version": "0-unstable-2024-10-10"
   },
   "legacyPackages.x86_64-linux.uesave": {
     "description": "Library for reading and writing Unreal Engine save files (commonly referred to as GVAS)",
@@ -3727,7 +3727,7 @@
   "packages.x86_64-linux.click-loglevel": {
     "description": "Log level parameter type for Click",
     "pname": "python3.12-click-loglevel",
-    "version": "0.5.0"
+    "version": "0.5.1"
   },
   "packages.x86_64-linux.cloudpan189-go": {
     "description": "CLI for China Telecom 189 Cloud Drive service, implemented in Go",
@@ -4267,7 +4267,7 @@
   "packages.x86_64-linux.smartrent_py": {
     "description": "Api for SmartRent locks, thermostats, moisture sensors and switches",
     "pname": "python3.12-smartrent_py",
-    "version": "0.4.0"
+    "version": "0.4.5"
   },
   "packages.x86_64-linux.smfc": {
     "description": "Super Micro Fan Control",
@@ -4312,7 +4312,7 @@
   "packages.x86_64-linux.tqdm-loggable": {
     "description": "TQDM progress bar helpers for logging and other headless application",
     "pname": "python3.12-tqdm-loggable",
-    "version": "0.2"
+    "version": "0-unstable-2024-10-10"
   },
   "packages.x86_64-linux.uesave": {
     "description": "Library for reading and writing Unreal Engine save files (commonly referred to as GVAS)",
