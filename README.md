@@ -85,7 +85,7 @@ Or, use variables from this repository in case I change them:
 ## Packages
 
 <details>
-<summary>Package set: (Uncategorized) (143 packages)</summary>
+<summary>Package set: (Uncategorized) (144 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
@@ -144,6 +144,7 @@ Or, use variables from this repository in case I change them:
 |  | `lyrica` | [lyrica](https://github.com/chiyuki0325/lyrica) | 0.12 | Linux desktop lyrics widget focused on simplicity and integration |
 |  | `lyrica-plasmoid` | [lyrica](https://github.com/chiyuki0325/lyrica) | 0.12 | Linux desktop lyrics widget focused on simplicity and integration (Plasmoid component) |
 |  | `magiskboot` | [magiskboot](https://topjohnwu.github.io/Magisk/tools.html) | 28.0 | Tool to unpack / repack boot images, parse / patch / extract cpio, patch dtb, hex patch binaries, and compress / decompress files with multiple algorithms |
+|  | `mautrix-gmessages` | [mautrix-gmessages](https://github.com/mautrix/gmessages) | 0.5.2 | Matrix-Google Messages puppeting bridge |
 |  | `mtkclient` | [mtkclient](https://github.com/bkerler/mtkclient) | 2.0.1.freeze | MTK reverse engineering and flash tool |
 |  | `ncmdump-rs` | [ncmdump-rs](https://github.com/iqiziqi/ncmdump.rs) | 0.8.0 | NetEase Cloud Music copyright protection file dump by rust |
 |  | `netboot-xyz` | [netboot-xyz](https://netboot.xyz/) | 2.0.83 | Your favorite operating systems in one place. A network-based bootable operating system installer based on iPXE |

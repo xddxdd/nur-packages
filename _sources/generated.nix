@@ -799,6 +799,16 @@
       hash = "sha256-Gx7rrCn4qxpB5fILvc7vszQek7w9VaD5lckCsP6Hf+I=";
     };
   };
+  mautrix-gmessages = {
+    pname = "mautrix-gmessages";
+    version = "v0.5.2";
+    src = fetchFromGitHub {
+      owner = "mautrix";
+      repo = "gmessages";
+      rev = "v0.5.2";
+      hash = "sha256-3sx2XxzH/cj2zJIkV9QKKVadxSWwf4YZbdg3p4repqs=";
+    };
+  };
   mtkclient = {
     pname = "mtkclient";
     version = "2.0.1.freeze";
@@ -1018,7 +1028,7 @@
       owner = "open-quantum-safe";
       repo = "oqs-provider";
       rev = "0.7.0";
-      hash = "sha256-KKZMb6ebaXxLSr5aV0m0VIHj2ofaRYQ0JF5JMAfiEj4=";
+      hash = "sha256-2+TpYpZwC8vx6tGgS2waD/BQDfnbq0PJIwvX5wDDBEg=";
     };
   };
   osdlyrics = {

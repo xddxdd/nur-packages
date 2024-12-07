@@ -1184,6 +1184,11 @@
     "pname": "magiskboot",
     "version": "28.0"
   },
+  "legacyPackages.x86_64-linux.mautrix-gmessages": {
+    "description": "Matrix-Google Messages puppeting bridge",
+    "pname": "mautrix-gmessages",
+    "version": "0.5.2"
+  },
   "legacyPackages.x86_64-linux.mtkclient": {
     "description": "MTK reverse engineering and flash tool",
     "pname": "python3.12-mtkclient",
@@ -3983,6 +3988,11 @@
     "description": "Tool to unpack / repack boot images, parse / patch / extract cpio, patch dtb, hex patch binaries, and compress / decompress files with multiple algorithms",
     "pname": "magiskboot",
     "version": "28.0"
+  },
+  "packages.x86_64-linux.mautrix-gmessages": {
+    "description": "Matrix-Google Messages puppeting bridge",
+    "pname": "mautrix-gmessages",
+    "version": "0.5.2"
   },
   "packages.x86_64-linux.mtkclient": {
     "description": "MTK reverse engineering and flash tool",
