@@ -20,11 +20,11 @@
         },
         "version": "v1.0.4"
     },
-    "adspower-global": {
+    "adspower": {
         "cargoLocks": null,
         "date": null,
         "extract": null,
-        "name": "adspower-global",
+        "name": "adspower",
         "passthru": null,
         "pinned": false,
         "src": {

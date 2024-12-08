@@ -92,12 +92,12 @@ let
       }
       ''
         mkdir -p $out
-        ar x ${sources.adspower-global.src}
+        ar x ${sources.adspower.src}
         tar xf data.tar.xz -C $out
       '';
 
   fhs = buildFHSEnv {
-    name = sources.adspower-global.pname;
+    name = sources.adspower.pname;
     targetPkgs = _pkgs: libraries;
     runScript = "${distPkg}/opt/AdsPower\\ Global/adspower_global";
 
@@ -110,7 +110,7 @@ let
   };
 in
 stdenv.mkDerivation rec {
-  inherit (sources.adspower-global) pname version;
+  inherit (sources.adspower) pname version;
 
   dontUnpack = true;
 

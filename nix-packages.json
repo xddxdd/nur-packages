@@ -14,9 +14,9 @@
     "pname": "acpi-ec",
     "version": "1.0.4"
   },
-  "legacyPackages.x86_64-linux.adspower-global": {
+  "legacyPackages.x86_64-linux.adspower": {
     "description": "Antidetect Browser for Multi-Accounts",
-    "pname": "adspower-global",
+    "pname": "adspower",
     "version": "6.10.20"
   },
   "legacyPackages.x86_64-linux.amule-dlp": {
@@ -3664,9 +3664,9 @@
     "pname": "acpi-ec",
     "version": "1.0.4"
   },
-  "packages.x86_64-linux.adspower-global": {
+  "packages.x86_64-linux.adspower": {
     "description": "Antidetect Browser for Multi-Accounts",
-    "pname": "adspower-global",
+    "pname": "adspower",
     "version": "6.10.20"
   },
   "packages.x86_64-linux.amule-dlp": {

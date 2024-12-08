@@ -11,8 +11,8 @@
       hash = "sha256-gDcEzZKtHMULtTtJSDTRH1W9otSB6IC0E6EBF9j6F7Q=";
     };
   };
-  adspower-global = {
-    pname = "adspower-global";
+  adspower = {
+    pname = "adspower";
     version = "6.10.20";
     src = fetchurl {
       url = "https://version.adspower.net/software/linux-x64-global/AdsPower-Global-6.10.20-x64.deb";
