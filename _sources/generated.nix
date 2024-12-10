@@ -1031,6 +1031,16 @@
     };
     date = "2024-12-03";
   };
+  openedai-speech = {
+    pname = "openedai-speech";
+    version = "0.18.2";
+    src = fetchFromGitHub {
+      owner = "matatonic";
+      repo = "openedai-speech";
+      rev = "0.18.2";
+      hash = "sha256-AC9fClFDUj8TV5W7sTZy+AjvNZgU6Vuvq9nP8Iy+WLY=";
+    };
+  };
   openresty = {
     pname = "openresty";
     version = "67aff27ddca1a5d9e31614025d2934b569b9ab3e";

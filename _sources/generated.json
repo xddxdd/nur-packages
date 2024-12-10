@@ -2001,6 +2001,27 @@
         },
         "version": "10f613cf333b07253813c0c35d6cd8ebbab7cb87"
     },
+    "openedai-speech": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "openedai-speech",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "matatonic",
+            "repo": "openedai-speech",
+            "rev": "0.18.2",
+            "sha256": "sha256-AC9fClFDUj8TV5W7sTZy+AjvNZgU6Vuvq9nP8Iy+WLY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "0.18.2"
+    },
     "openresty": {
         "cargoLocks": null,
         "date": "2024-11-05",

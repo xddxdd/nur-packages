@@ -1914,6 +1914,11 @@
     "pname": "openai-edge-tts",
     "version": "0-unstable-2024-12-03"
   },
+  "legacyPackages.x86_64-linux.openedai-speech": {
+    "description": "OpenAI API compatible text to speech server using Coqui AI's xtts_v2 and/or piper tts as the backend",
+    "pname": "openedai-speech",
+    "version": "0.18.2"
+  },
   "legacyPackages.x86_64-linux.openj9-ibm-semeru.jdk-bin-11": {
     "description": "OpenJ9 binaries built by IBM Semeru",
     "pname": "openj9-ibm-semeru-jdk-bin",
@@ -3314,6 +3319,11 @@
     "pname": "phppgadmin",
     "version": "7.14.7-mod"
   },
+  "legacyPackages.x86_64-linux.piper-tts-python": {
+    "description": "Python component for piper-tts",
+    "pname": "python3.12-piper",
+    "version": "2023.11.14-2"
+  },
   "legacyPackages.x86_64-linux.plangothic-fonts.allideo": {
     "description": "Plangothic Project",
     "pname": "plangothic-fonts-allideo-V1.9.5766",
@@ -4104,6 +4114,11 @@
     "pname": "openai-edge-tts",
     "version": "0-unstable-2024-12-03"
   },
+  "packages.x86_64-linux.openedai-speech": {
+    "description": "OpenAI API compatible text to speech server using Coqui AI's xtts_v2 and/or piper tts as the backend",
+    "pname": "openedai-speech",
+    "version": "0.18.2"
+  },
   "packages.x86_64-linux.openj9-ibm-semeru": {
     "description": "",
     "pname": "merged-packages",
@@ -4163,6 +4178,11 @@
     "description": "Premier web-based administration tool for PostgreSQL",
     "pname": "phppgadmin",
     "version": "7.14.7-mod"
+  },
+  "packages.x86_64-linux.piper-tts-python": {
+    "description": "Python component for piper-tts",
+    "pname": "python3.12-piper",
+    "version": "2023.11.14-2"
   },
   "packages.x86_64-linux.plangothic-fonts": {
     "description": "",
