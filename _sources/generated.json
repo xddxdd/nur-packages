@@ -1980,6 +1980,27 @@
         },
         "version": "v0.6.8"
     },
+    "openai-edge-tts": {
+        "cargoLocks": null,
+        "date": "2024-12-03",
+        "extract": null,
+        "name": "openai-edge-tts",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "travisvn",
+            "repo": "openai-edge-tts",
+            "rev": "10f613cf333b07253813c0c35d6cd8ebbab7cb87",
+            "sha256": "sha256-RUfZjNR+3cmxDZCf+hcNOnXhWgKcT1XeTaQfISSZexA=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "10f613cf333b07253813c0c35d6cd8ebbab7cb87"
+    },
     "openresty": {
         "cargoLocks": null,
         "date": "2024-11-05",

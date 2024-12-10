@@ -1020,6 +1020,17 @@
       hash = "sha256-iaFzBcAk7XOmkfqHz/v4nx7GmKQ+XxvmJgs46/eCx1M=";
     };
   };
+  openai-edge-tts = {
+    pname = "openai-edge-tts";
+    version = "10f613cf333b07253813c0c35d6cd8ebbab7cb87";
+    src = fetchFromGitHub {
+      owner = "travisvn";
+      repo = "openai-edge-tts";
+      rev = "10f613cf333b07253813c0c35d6cd8ebbab7cb87";
+      hash = "sha256-RUfZjNR+3cmxDZCf+hcNOnXhWgKcT1XeTaQfISSZexA=";
+    };
+    date = "2024-12-03";
+  };
   openresty = {
     pname = "openresty";
     version = "67aff27ddca1a5d9e31614025d2934b569b9ab3e";

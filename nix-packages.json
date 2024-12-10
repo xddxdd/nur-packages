@@ -1909,6 +1909,11 @@
     "pname": "one-api",
     "version": "0.6.8"
   },
+  "legacyPackages.x86_64-linux.openai-edge-tts": {
+    "description": "Text-to-speech API endpoint compatible with OpenAI's TTS API endpoint, using Microsoft Edge TTS to generate speech for free locally",
+    "pname": "openai-edge-tts",
+    "version": "0-unstable-2024-12-03"
+  },
   "legacyPackages.x86_64-linux.openj9-ibm-semeru.jdk-bin-11": {
     "description": "OpenJ9 binaries built by IBM Semeru",
     "pname": "openj9-ibm-semeru-jdk-bin",
@@ -4093,6 +4098,11 @@
     "description": "OpenAI key management & redistribution system, using a single API for all LLMs",
     "pname": "one-api",
     "version": "0.6.8"
+  },
+  "packages.x86_64-linux.openai-edge-tts": {
+    "description": "Text-to-speech API endpoint compatible with OpenAI's TTS API endpoint, using Microsoft Edge TTS to generate speech for free locally",
+    "pname": "openai-edge-tts",
+    "version": "0-unstable-2024-12-03"
   },
   "packages.x86_64-linux.openj9-ibm-semeru": {
     "description": "",
