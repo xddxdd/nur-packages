@@ -163,6 +163,10 @@ fetch.github = "xddxdd/drone-file-secret"
 src.github_tag = "drone/drone-vault"
 fetch.github = "drone/drone-vault"
 
+[edge-tts]
+src.github = "rany2/edge-tts"
+fetch.github = "rany2/edge-tts"
+
 [etherguard]
 src.github = "KusakabeShi/EtherGuard-VPN"
 fetch.github = "KusakabeShi/EtherGuard-VPN"

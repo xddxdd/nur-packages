@@ -504,6 +504,11 @@
     "pname": "drone-vault",
     "version": "1.3.0"
   },
+  "legacyPackages.x86_64-linux.edge-tts": {
+    "description": "Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key",
+    "pname": "python3.12-edge-tts",
+    "version": "7.0.0"
+  },
   "legacyPackages.x86_64-linux.electron_11": {
     "description": "Cross platform desktop application shell",
     "pname": "electron",
@@ -3808,6 +3813,11 @@
     "description": "Drone plugin for integrating with the Vault secrets manager",
     "pname": "drone-vault",
     "version": "1.3.0"
+  },
+  "packages.x86_64-linux.edge-tts": {
+    "description": "Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key",
+    "pname": "python3.12-edge-tts",
+    "version": "7.0.0"
   },
   "packages.x86_64-linux.electron_11": {
     "description": "Cross platform desktop application shell",
