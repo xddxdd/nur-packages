@@ -454,6 +454,11 @@
     "pname": "cockpy",
     "version": "0-unstable-2024-09-07"
   },
+  "legacyPackages.x86_64-linux.coqui-tts": {
+    "description": "Deep learning toolkit for Text-to-Speech, battle-tested in research and production",
+    "pname": "python3.12-coqui-tts",
+    "version": "0.22.0"
+  },
   "legacyPackages.x86_64-linux.cryptodev-unstable": {
     "description": "Device that allows access to Linux kernel cryptographic drivers",
     "pname": "cryptodev-linux",
@@ -3778,6 +3783,11 @@
     "description": "Public and open source version of the cbt2 ps im working on",
     "pname": "cockpy",
     "version": "0-unstable-2024-09-07"
+  },
+  "packages.x86_64-linux.coqui-tts": {
+    "description": "Deep learning toolkit for Text-to-Speech, battle-tested in research and production",
+    "pname": "python3.12-coqui-tts",
+    "version": "0.22.0"
   },
   "packages.x86_64-linux.cryptodev-unstable": {
     "description": "Device that allows access to Linux kernel cryptographic drivers",
