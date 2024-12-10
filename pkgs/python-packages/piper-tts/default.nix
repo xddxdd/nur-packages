@@ -12,7 +12,8 @@ python3Packages.buildPythonPackage rec {
     onnxruntime
   ];
 
-  pythonImportsCheck = [ "piper" ];
+  # onnxruntime may fail to start in sandbox, disable check if onnxruntime does too
+  pythonImportsCheck = lib.optionals python3Packages.onnxruntime.doCheck [ "piper" ];
 
   meta = {
     mainProgram = "piper";
