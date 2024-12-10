@@ -479,6 +479,41 @@
     "pname": "deepspeech",
     "version": "0.9.3"
   },
+  "legacyPackages.x86_64-linux.deprecated.glauth": {
+    "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
+    "pname": "glauth",
+    "version": "2.3.2"
+  },
+  "legacyPackages.x86_64-linux.deprecated.kata-image": {
+    "description": "(DEPRECATED: kata-image is available in nixpkgs by a different maintainer) Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. (Packaging script adapted from https://github.com/TUM-DSE/doctor-cluster-config/blob/0c40be8dd86282122f8f04df738c409ef5e3da1c/pkgs/kata-images/default.nix)",
+    "pname": "kata-image",
+    "version": "3.11.0"
+  },
+  "legacyPackages.x86_64-linux.deprecated.kata-runtime": {
+    "description": "(DEPRECATED: kata-runtime is available in nixpkgs by a different maintainer) Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. (Packaging script adapted from https://github.com/TUM-DSE/doctor-cluster-config/blob/0c40be8dd86282122f8f04df738c409ef5e3da1c/pkgs/kata-runtime/default.nix)",
+    "pname": "kata-runtime",
+    "version": "3.11.0"
+  },
+  "legacyPackages.x86_64-linux.deprecated.payload-dumper-go": {
+    "description": "(DEPRECATED: payload-dumper-go is available in nixpkgs by a different maintainer) Android OTA payload dumper written in Go",
+    "pname": "payload-dumper-go",
+    "version": "1.3.0"
+  },
+  "legacyPackages.x86_64-linux.deprecated.wechat-uos": {
+    "description": "(DEPRECATED: wechat-uos is available in nixpkgs. If you still want sandbox functionality, use wechat-uos-sandboxed package.) WeChat desktop with sandbox enabled ($HOME/Documents/WeChat_Data) (Adapted from https://aur.archlinux.org/packages/wechat-uos-bwrap)",
+    "pname": "wechat-uos",
+    "version": "4.0.0.21"
+  },
+  "legacyPackages.x86_64-linux.deprecated.wechat-uos-bin": {
+    "description": "(DEPRECATED: wechat-uos is available in nixpkgs. If you still want sandbox functionality, use wechat-uos-sandboxed package.) WeChat desktop with sandbox enabled ($HOME/Documents/WeChat_Data) (Adapted from https://aur.archlinux.org/packages/wechat-uos-bwrap)",
+    "pname": "wechat-uos",
+    "version": "4.0.0.21"
+  },
+  "legacyPackages.x86_64-linux.deprecated.wechat-uos-without-sandbox": {
+    "description": "(DEPRECATED: wechat-uos is available in nixpkgs. If you still want sandbox functionality, use wechat-uos-sandboxed package.) WeChat desktop without sandbox (Adapted from https://aur.archlinux.org/packages/wechat-uos-bwrap)",
+    "pname": "wechat-uos",
+    "version": "4.0.0.21"
+  },
   "legacyPackages.x86_64-linux.dingtalk": {
     "description": "Enterprise communication and collaboration platform developed by Alibaba Group",
     "pname": "dingtalk",
@@ -538,11 +573,6 @@
     "description": "Proxy server to bypass Cloudflare protection, with 21hsmw modifications to support nodriver",
     "pname": "flaresolverr",
     "version": "21hsmw-0-unstable-2024-11-01"
-  },
-  "legacyPackages.x86_64-linux.flasgger": {
-    "description": "Easy OpenAPI specs and Swagger UI for your Flask API",
-    "pname": "python3.12-flasgger",
-    "version": "0.9.5"
   },
   "legacyPackages.x86_64-linux.ftp-proxy": {
     "description": "FTP Proxy Server",
@@ -628,6 +658,56 @@
     "description": "(DEPRECATED: kata-runtime is available in nixpkgs by a different maintainer) Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. (Packaging script adapted from https://github.com/TUM-DSE/doctor-cluster-config/blob/0c40be8dd86282122f8f04df738c409ef5e3da1c/pkgs/kata-runtime/default.nix)",
     "pname": "kata-runtime",
     "version": "3.11.0"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.acpi-ec": {
+    "description": "Kernel module to access directly to the ACPI EC",
+    "pname": "acpi-ec",
+    "version": "1.0.4"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.ast": {
+    "description": "Aspeed Graphics Driver",
+    "pname": "ast",
+    "version": "1.14.3_3"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.cryptodev-unstable": {
+    "description": "Device that allows access to Linux kernel cryptographic drivers",
+    "pname": "cryptodev-linux",
+    "version": "1.14-unstable-2024-10-10"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.dpdk-kmod": {
+    "description": "DPDK kernel modules or add-ons",
+    "pname": "dpdk-kmod",
+    "version": "0-unstable-2024-11-20"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.i915-sriov": {
+    "description": "DKMS module of Linux i915 driver with SR-IOV support",
+    "pname": "i915-sriov",
+    "version": "0-unstable-2024-10-04"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.nft-fullcone": {
+    "description": "Nftables fullcone expression kernel module",
+    "pname": "nft-fullcone",
+    "version": "0-unstable-2023-05-17"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.nullfsvfs": {
+    "description": "Virtual black hole file system that behaves like /dev/null",
+    "pname": "nullfsvfs",
+    "version": "0.17"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.ovpn-dco": {
+    "description": "OpenVPN Data Channel Offload in the linux kernel",
+    "pname": "ovpn-dco",
+    "version": "0.2.20240712"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.r8125": {
+    "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
+    "pname": "r8125",
+    "version": "9.014.01-1"
+  },
+  "legacyPackages.x86_64-linux.kernel-modules.r8168": {
+    "description": "Linux device driver for Realtek Ethernet controllers",
+    "pname": "r8168",
+    "version": "8.054.00"
   },
   "legacyPackages.x86_64-linux.kikoplay": {
     "description": "More than a Full-Featured Danmu Player",
@@ -3324,7 +3404,7 @@
     "pname": "phppgadmin",
     "version": "7.14.7-mod"
   },
-  "legacyPackages.x86_64-linux.piper-tts-python": {
+  "legacyPackages.x86_64-linux.piper-tts": {
     "description": "Python component for piper-tts",
     "pname": "python3.12-piper",
     "version": "2023.11.14-2"
@@ -3373,6 +3453,81 @@
     "description": "Python implementation of RCON",
     "pname": "python3.12-py-rcon",
     "version": "1.3.0"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.bepasty": {
+    "description": "Universal pastebin server",
+    "pname": "python3.12-bepasty",
+    "version": "1.2.1"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.click-loglevel": {
+    "description": "Log level parameter type for Click",
+    "pname": "python3.12-click-loglevel",
+    "version": "0.5.1"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.coqui-tts": {
+    "description": "Deep learning toolkit for Text-to-Speech, battle-tested in research and production",
+    "pname": "python3.12-coqui-tts",
+    "version": "0.22.0"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.deepspeech-gpu": {
+    "description": "Speech-to-text engine which can run in real time on devices ranging from a Raspberry Pi 4 to high power GPU servers",
+    "pname": "python3.9-deepspeech-gpu",
+    "version": "0.9.3"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.deepspeech-wrappers": {
+    "description": "Speech-to-text engine which can run in real time on devices ranging from a Raspberry Pi 4 to high power GPU servers",
+    "pname": "deepspeech",
+    "version": "0.9.3"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.edge-tts": {
+    "description": "Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key",
+    "pname": "python3.12-edge-tts",
+    "version": "7.0.0"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.mtkclient": {
+    "description": "MTK reverse engineering and flash tool",
+    "pname": "python3.12-mtkclient",
+    "version": "2.0.1.freeze"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.piper-tts": {
+    "description": "Python component for piper-tts",
+    "pname": "python3.12-piper",
+    "version": "2023.11.14-2"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.py-rcon": {
+    "description": "Python implementation of RCON",
+    "pname": "python3.12-py-rcon",
+    "version": "1.3.0"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.runpod-python": {
+    "description": "Python library for RunPod API and serverless worker SDK",
+    "pname": "python3.12-runpod-python",
+    "version": "1.7.6"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.smartrent_py": {
+    "description": "Api for SmartRent locks, thermostats, moisture sensors and switches",
+    "pname": "python3.12-smartrent_py",
+    "version": "0.4.5"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.tqdm-loggable": {
+    "description": "TQDM progress bar helpers for logging and other headless application",
+    "pname": "python3.12-tqdm-loggable",
+    "version": "0-unstable-2024-10-10"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.xstatic-asciinema-player": {
+    "description": "Asciinema-player packaged for setuptools (easy_install) / pip",
+    "pname": "python3.12-xstatic-asciinema-player",
+    "version": "2.6.1.1"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.xstatic-font-awesome": {
+    "description": "Font Awesome packaged for setuptools (easy_install) / pip",
+    "pname": "python3.12-xstatic-font-awesome",
+    "version": "4.7.0.0"
+  },
+  "legacyPackages.x86_64-linux.python3Packages.xue": {
+    "description": "Minimalist web front-end framework composed of HTMX and Python",
+    "pname": "python3.12-xue",
+    "version": "0.0.34"
   },
   "legacyPackages.x86_64-linux.qemu-user-static": {
     "description": "Generic and open source machine emulator and virtualizer",
@@ -3809,6 +3964,11 @@
     "pname": "deepspeech",
     "version": "0.9.3"
   },
+  "packages.x86_64-linux.deprecated": {
+    "description": "",
+    "pname": "merged-packages",
+    "version": ""
+  },
   "packages.x86_64-linux.dingtalk": {
     "description": "Enterprise communication and collaboration platform developed by Alibaba Group",
     "pname": "dingtalk",
@@ -3868,11 +4028,6 @@
     "description": "Proxy server to bypass Cloudflare protection, with 21hsmw modifications to support nodriver",
     "pname": "flaresolverr",
     "version": "21hsmw-0-unstable-2024-11-01"
-  },
-  "packages.x86_64-linux.flasgger": {
-    "description": "Easy OpenAPI specs and Swagger UI for your Flask API",
-    "pname": "python3.12-flasgger",
-    "version": "0.9.5"
   },
   "packages.x86_64-linux.ftp-proxy": {
     "description": "FTP Proxy Server",
@@ -3958,6 +4113,11 @@
     "description": "(DEPRECATED: kata-runtime is available in nixpkgs by a different maintainer) Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. (Packaging script adapted from https://github.com/TUM-DSE/doctor-cluster-config/blob/0c40be8dd86282122f8f04df738c409ef5e3da1c/pkgs/kata-runtime/default.nix)",
     "pname": "kata-runtime",
     "version": "3.11.0"
+  },
+  "packages.x86_64-linux.kernel-modules": {
+    "description": "",
+    "pname": "merged-packages",
+    "version": ""
   },
   "packages.x86_64-linux.kikoplay": {
     "description": "More than a Full-Featured Danmu Player",
@@ -4189,7 +4349,7 @@
     "pname": "phppgadmin",
     "version": "7.14.7-mod"
   },
-  "packages.x86_64-linux.piper-tts-python": {
+  "packages.x86_64-linux.piper-tts": {
     "description": "Python component for piper-tts",
     "pname": "python3.12-piper",
     "version": "2023.11.14-2"
@@ -4233,6 +4393,11 @@
     "description": "Python implementation of RCON",
     "pname": "python3.12-py-rcon",
     "version": "1.3.0"
+  },
+  "packages.x86_64-linux.python3Packages": {
+    "description": "",
+    "pname": "merged-packages",
+    "version": ""
   },
   "packages.x86_64-linux.qemu-user-static": {
     "description": "Generic and open source machine emulator and virtualizer",

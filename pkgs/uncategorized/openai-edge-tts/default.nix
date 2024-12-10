@@ -3,7 +3,6 @@
   lib,
   sources,
   python3,
-  edge-tts,
   makeWrapper,
 }:
 let

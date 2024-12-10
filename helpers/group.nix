@@ -30,34 +30,28 @@ rec {
           sources
           ;
         kernel = pkgs.linux;
+        python3Packages = pkgs.python3Packages // _packages.python3Packages;
       }
     );
 
   createCallGroupDeps =
     _packages: callPackage:
     let
-      loadPackages =
-        path: mapping:
-        lib.genAttrs
-          (builtins.filter (v: !(lib.hasSuffix ".nix" v)) (builtins.attrNames (builtins.readDir path)))
-          (
-            n:
-            let
-              pkg = callPackage (path + "/${n}") { };
-            in
-            (mapping."${n}" or (v: v)) pkg
-          );
+      loadPackages = createLoadPackages callPackage;
     in
     {
       inherit
         _packages
         callPackage
+        createCallPackage
+        createLoadPackages
         ifNotCI
         ifNotNUR
         lib
         loadPackages
         mergePkgs
         mode
+        pkgs
         sources
         ;
     };
