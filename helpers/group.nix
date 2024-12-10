@@ -24,13 +24,16 @@ rec {
     lib.callPackageWith (
       pkgs
       // _packages
-      // {
+      // rec {
         inherit
           _packages
           sources
           ;
         kernel = pkgs.linux;
-        python3Packages = pkgs.python3Packages // _packages.python3Packages;
+        # Integrate to nixpkgs python3Packages
+        python = pkgs.python.override { packageOverrides = _final: _prev: _packages.python3Packages; };
+        python3 = pkgs.python3.override { packageOverrides = _final: _prev: _packages.python3Packages; };
+        python3Packages = python3.pkgs;
       }
     );
 
