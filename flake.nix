@@ -25,7 +25,12 @@
   outputs =
     { self, flake-parts, ... }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } (
-      { flake-parts-lib, config, ... }:
+      {
+        flake-parts-lib,
+        lib,
+        config,
+        ...
+      }:
       let
         inherit (flake-parts-lib) importApply;
         flakeModules = {
@@ -107,10 +112,18 @@
               };
             }
             // (builtins.listToAttrs (
-              builtins.map (s: {
-                name = "pinnedNixpkgs-${s}";
-                value = _final: _prev: self.legacyPackages.${s};
-              }) systems
+              lib.flatten (
+                builtins.map (s: [
+                  {
+                    name = "pinnedNixpkgs-${s}";
+                    value = _final: _prev: self.legacyPackages.${s};
+                  }
+                  {
+                    name = "pinnedNixpkgsWithCuda-${s}";
+                    value = _final: _prev: self.legacyPackagesWithCuda.${s};
+                  }
+                ]) systems
+              )
             ));
 
           inherit flakeModules;
