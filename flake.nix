@@ -90,10 +90,10 @@
                 // rec {
                   # Integrate to nixpkgs python3Packages
                   python = prev.python.override {
-                    packageOverrides = _final: _prev: _packages.python3Packages.__unwrapped;
+                    packageOverrides = _final: _prev: _packages.python3Packages;
                   };
                   python3 = prev.python3.override {
-                    packageOverrides = _final: _prev: _packages.python3Packages.__unwrapped;
+                    packageOverrides = _final: _prev: _packages.python3Packages;
                   };
                   python3Packages = python3.pkgs;
                 };
