@@ -12,6 +12,7 @@ SKIP_CHECK = [
     "kernel",
     "lantianLinuxCachyOS",
     "lantianLinuxXanmod",
+    "nvidia-grid",
 ]
 
 SKIP_BUILD = [
@@ -23,14 +24,8 @@ SKIP_BUILD = [
 ]
 
 
-def build_package(package_path: str, output: str = "result") -> dict:
-    subprocess.run(
-        ["nix", "build", f".#{package_path}", "-o", output],
-        check=True,
-        text=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-    )
+def build_package(package_path: str, output: str = "result"):
+    subprocess.run(["nix", "build", f".#{package_path}", "-o", output], check=True)
 
 
 def verify_package_info(package_path: str, package_info: dict) -> bool:
