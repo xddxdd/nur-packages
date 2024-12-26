@@ -446,12 +446,12 @@
   };
   fish-speech = {
     pname = "fish-speech";
-    version = "v1.4.3";
+    version = "v1.5.0";
     src = fetchFromGitHub {
       owner = "fishaudio";
       repo = "fish-speech";
-      tag = "v1.4.3";
-      hash = "sha256-5uzox/yVASKyAEmpy92BgscMzMWUm+cLw4rnxWFUqkY=";
+      tag = "v1.5.0";
+      hash = "sha256-uT9VX57oZU0nsP3fRsMCBVMVjuS/0swoIJFtEOJFltg=";
     };
   };
   flaresolverr-21hsmw = {

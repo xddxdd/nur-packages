@@ -577,7 +577,7 @@
   "legacyPackages.x86_64-linux.fish-speech": {
     "description": "SOTA Open Source TTS",
     "pname": "python3.12-fish-speech",
-    "version": "1.4.3"
+    "version": "1.5.0"
   },
   "legacyPackages.x86_64-linux.flaresolverr-21hsmw": {
     "description": "Proxy server to bypass Cloudflare protection, with 21hsmw modifications to support nodriver",
@@ -3532,7 +3532,7 @@
   "legacyPackages.x86_64-linux.python3Packages.fish-speech": {
     "description": "SOTA Open Source TTS",
     "pname": "python3.12-fish-speech",
-    "version": "1.4.3"
+    "version": "1.5.0"
   },
   "legacyPackages.x86_64-linux.python3Packages.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
@@ -4747,7 +4747,7 @@
   "packages.x86_64-linux.fish-speech": {
     "description": "SOTA Open Source TTS",
     "pname": "python3.12-fish-speech",
-    "version": "1.4.3"
+    "version": "1.5.0"
   },
   "packages.x86_64-linux.flaresolverr-21hsmw": {
     "description": "Proxy server to bypass Cloudflare protection, with 21hsmw modifications to support nodriver",
