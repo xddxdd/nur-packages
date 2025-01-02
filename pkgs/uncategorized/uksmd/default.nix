@@ -2,17 +2,14 @@
   stdenv,
   sources,
   lib,
-  callPackage,
   meson,
   cmake,
   pkg-config,
+  procps4,
   libcap_ng,
   systemd,
   ninja,
 }:
-let
-  procps-ng = callPackage ./procps-ng.nix { };
-in
 stdenv.mkDerivation rec {
   inherit (sources.uksmd) pname version src;
   nativeBuildInputs = [
@@ -22,7 +19,7 @@ stdenv.mkDerivation rec {
     ninja
   ];
   buildInputs = [
-    procps-ng
+    procps4
     libcap_ng
     systemd
   ];
