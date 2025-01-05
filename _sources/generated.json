@@ -1007,6 +1007,27 @@
         },
         "version": "1.2.2"
     },
+    "gost-engine": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "gost-engine",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "gost-engine",
+            "repo": "engine",
+            "rev": "v3.0.3",
+            "sha256": "sha256-52nt0TtPDpMjC0QCTrWYUhpHXZNCDrds0LrkQdDN1Mo=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v3.0.3"
+    },
     "grasscutter": {
         "cargoLocks": null,
         "date": null,

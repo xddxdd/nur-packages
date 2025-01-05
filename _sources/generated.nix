@@ -520,6 +520,17 @@
       hash = "sha256-7l/7ZK5KQ/V2Ym02Sbc0qAGov36P4P0hVWzIzbQzipo=";
     };
   };
+  gost-engine = {
+    pname = "gost-engine";
+    version = "v3.0.3";
+    src = fetchFromGitHub {
+      owner = "gost-engine";
+      repo = "engine";
+      tag = "v3.0.3";
+      fetchSubmodules = true;
+      hash = "sha256-52nt0TtPDpMjC0QCTrWYUhpHXZNCDrds0LrkQdDN1Mo=";
+    };
+  };
   grasscutter = {
     pname = "grasscutter";
     version = "1.7.4";

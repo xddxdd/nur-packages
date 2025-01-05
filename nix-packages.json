@@ -609,6 +609,11 @@
     "pname": "gopherus",
     "version": "1.2.2"
   },
+  "legacyPackages.x86_64-linux.gost-engine": {
+    "description": "reference implementation of the Russian GOST crypto algorithms for OpenSSL",
+    "pname": "gost-engine",
+    "version": "3.0.3"
+  },
   "legacyPackages.x86_64-linux.grasscutter": {
     "description": "Server software reimplementation for a certain anime game",
     "pname": "grasscutter",
@@ -4039,6 +4044,11 @@
     "pname": "gopherus",
     "version": "1.2.2"
   },
+  "legacyPackages.x86_64-linux.uncategorized.gost-engine": {
+    "description": "reference implementation of the Russian GOST crypto algorithms for OpenSSL",
+    "pname": "gost-engine",
+    "version": "3.0.3"
+  },
   "legacyPackages.x86_64-linux.uncategorized.grasscutter": {
     "description": "Server software reimplementation for a certain anime game",
     "pname": "grasscutter",
@@ -4808,6 +4818,11 @@
     "description": "Gopherus is a free, multiplatform, console-mode gopher client that provides a classic text interface to the gopherspace",
     "pname": "gopherus",
     "version": "1.2.2"
+  },
+  "packages.x86_64-linux.gost-engine": {
+    "description": "reference implementation of the Russian GOST crypto algorithms for OpenSSL",
+    "pname": "gost-engine",
+    "version": "3.0.3"
   },
   "packages.x86_64-linux.grasscutter": {
     "description": "Server software reimplementation for a certain anime game",

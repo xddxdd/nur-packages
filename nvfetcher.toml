@@ -223,6 +223,11 @@ src.webpage = "https://gopherus.sourceforge.net/"
 src.regex = "\"gopherus-([0-9\\.]+).tar.xz"
 fetch.url = "https://gopherus.sourceforge.net/gopherus-$ver.tar.xz"
 
+[gost-engine]
+src.github = "gost-engine/engine"
+git.fetchSubmodules = true
+fetch.github = "gost-engine/engine"
+
 [grasscutter]
 src.github = "Grasscutters/Grasscutter"
 src.from_pattern = "v(.*)"
