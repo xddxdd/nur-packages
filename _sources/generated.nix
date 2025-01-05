@@ -1153,6 +1153,17 @@
       hash = "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=";
     };
   };
+  openssl-ech = {
+    pname = "openssl-ech";
+    version = "2881d0f7fe3c8efc07ae30b27bbbf0d032a5fab3";
+    src = fetchFromGitHub {
+      owner = "sftcd";
+      repo = "openssl";
+      rev = "2881d0f7fe3c8efc07ae30b27bbbf0d032a5fab3";
+      hash = "sha256-/Sgilv/4EUQY7D8SuDsXorCVWGi9o5q1hpi8OKTPct8=";
+    };
+    date = "2024-11-03";
+  };
   openssl-oqs-provider = {
     pname = "openssl-oqs-provider";
     version = "0.8.0";
