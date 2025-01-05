@@ -14,10 +14,10 @@
   libxcrypt,
   libxml2,
   libxslt,
-  openssl-ech,
   pcre,
   perl,
   quickjs-ng,
+  quictls,
   which,
   zlib,
   zstd,
@@ -62,10 +62,10 @@ stdenv.mkDerivation rec {
     libxcrypt
     libxml2
     libxslt
-    openssl-ech
     pcre
     perl
     quickjs-ng
+    quictls
     zlib
     zstd
   ];
@@ -94,8 +94,6 @@ stdenv.mkDerivation rec {
 
       pushd bundle/nginx-1.*
       ${patch patchUseOpensslMd5Sha1}
-      # https://github.com/sftcd/nginx/tree/ECH-experimental
-      ${patch ./patches/nginx-ech.patch}
       ${patch ./patches/nginx-plain.patch}
       ${patch ./patches/nginx-plain-proxy.patch}
       ${patch patchNixEtag}
@@ -134,7 +132,7 @@ stdenv.mkDerivation rec {
     "--with-http_stub_status_module"
     "--with-http_sub_module"
     "--with-http_v2_module"
-    # "--with-http_v3_module" # Disabled because I'm using OpenSSL with ECH but without QUIC
+    "--with-http_v3_module"
     "--with-http_xslt_module"
     "--with-stream"
     "--with-stream_realip_module"
