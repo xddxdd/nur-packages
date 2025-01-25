@@ -427,7 +427,7 @@
   "legacyPackages.x86_64-linux.boringssl-oqs": {
     "description": "Fork of BoringSSL that includes prototype quantum-resistant key exchange and authentication in the TLS handshake based on liboqs",
     "pname": "boringssl-oqs",
-    "version": "0-unstable-2024-12-20"
+    "version": "0-unstable-2025-01-20"
   },
   "legacyPackages.x86_64-linux.browser360": {
     "description": "360 Browser",
@@ -572,7 +572,7 @@
   "legacyPackages.x86_64-linux.fastapi-dls": {
     "description": "Minimal Delegated License Service (DLS)",
     "pname": "fastapi-dls",
-    "version": "1.3.12-unstable-2024-12-16"
+    "version": "1.3.12-unstable-2025-01-21"
   },
   "legacyPackages.x86_64-linux.fcitx5-breeze": {
     "description": "Fcitx5 theme to match KDE's Breeze style",
@@ -587,7 +587,7 @@
   "legacyPackages.x86_64-linux.flaresolverr-21hsmw": {
     "description": "Proxy server to bypass Cloudflare protection, with 21hsmw modifications to support nodriver",
     "pname": "flaresolverr",
-    "version": "21hsmw-0-unstable-2024-11-01"
+    "version": "21hsmw-0-unstable-2025-01-19"
   },
   "legacyPackages.x86_64-linux.ftp-proxy": {
     "description": "FTP Proxy Server",
@@ -597,7 +597,7 @@
   "legacyPackages.x86_64-linux.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.12-funasr",
-    "version": "0-unstable-2025-01-16"
+    "version": "0-unstable-2025-01-24"
   },
   "legacyPackages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
@@ -657,7 +657,7 @@
   "legacyPackages.x86_64-linux.i915-sriov": {
     "description": "DKMS module of Linux i915 driver with SR-IOV support",
     "pname": "i915-sriov",
-    "version": "0-unstable-2025-01-03"
+    "version": "0-unstable-2025-01-22"
   },
   "legacyPackages.x86_64-linux.imewlconverter": {
     "description": "FOSS program for converting IME dictionaries",
@@ -717,7 +717,7 @@
   "legacyPackages.x86_64-linux.kernel-modules.i915-sriov": {
     "description": "DKMS module of Linux i915 driver with SR-IOV support",
     "pname": "i915-sriov",
-    "version": "0-unstable-2025-01-03"
+    "version": "0-unstable-2025-01-22"
   },
   "legacyPackages.x86_64-linux.kernel-modules.nft-fullcone": {
     "description": "Nftables fullcone expression kernel module",
@@ -787,7 +787,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.llama-cpp": {
     "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
     "pname": "llama-cpp",
-    "version": "4508"
+    "version": "4549"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.materialgram": {
     "description": "Telegram Desktop fork with material icons and some improvements (Without anti-features)",
@@ -857,22 +857,22 @@
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.lts-generic": {
     "description": "Linux Xanmod Kernel with Lan Tian Modifications",
     "pname": "linux-xanmod-lts-generic",
-    "version": "6.12.10-xanmod1"
+    "version": "6.12.11-xanmod1"
   },
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.lts-generic-configfile": {
     "description": "",
     "pname": "linux-config",
-    "version": "6.12.10-xanmod1"
+    "version": "6.12.11-xanmod1"
   },
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.lts-generic-lto": {
     "description": "Linux Xanmod Kernel with Lan Tian Modifications and Clang+ThinLTO",
     "pname": "linux-xanmod-lts-generic-lto",
-    "version": "6.12.10-xanmod1"
+    "version": "6.12.11-xanmod1"
   },
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.lts-generic-lto-configfile": {
     "description": "",
     "pname": "linux-config",
-    "version": "6.12.10-xanmod1"
+    "version": "6.12.11-xanmod1"
   },
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.v6_0-generic": {
     "description": "Linux Xanmod Kernel with Lan Tian Modifications",
@@ -1077,22 +1077,22 @@
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.v6_12-generic": {
     "description": "Linux Xanmod Kernel with Lan Tian Modifications",
     "pname": "linux-xanmod-v6_12-generic",
-    "version": "6.12.10-xanmod1"
+    "version": "6.12.11-xanmod1"
   },
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.v6_12-generic-configfile": {
     "description": "",
     "pname": "linux-config",
-    "version": "6.12.10-xanmod1"
+    "version": "6.12.11-xanmod1"
   },
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.v6_12-generic-lto": {
     "description": "Linux Xanmod Kernel with Lan Tian Modifications and Clang+ThinLTO",
     "pname": "linux-xanmod-v6_12-generic-lto",
-    "version": "6.12.10-xanmod1"
+    "version": "6.12.11-xanmod1"
   },
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.v6_12-generic-lto-configfile": {
     "description": "",
     "pname": "linux-config",
-    "version": "6.12.10-xanmod1"
+    "version": "6.12.11-xanmod1"
   },
   "legacyPackages.x86_64-linux.lantianLinuxXanmod.v6_6-generic": {
     "description": "Linux Xanmod Kernel with Lan Tian Modifications",
@@ -2007,7 +2007,7 @@
   "legacyPackages.x86_64-linux.openai-edge-tts": {
     "description": "Text-to-speech API endpoint compatible with OpenAI's TTS API endpoint, using Microsoft Edge TTS to generate speech for free locally",
     "pname": "openai-edge-tts",
-    "version": "0-unstable-2024-12-27"
+    "version": "0-unstable-2025-01-22"
   },
   "legacyPackages.x86_64-linux.opencc-python-reimplemented": {
     "description": "OpenCC made with Python",
@@ -2812,12 +2812,7 @@
   "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-11": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
     "pname": "openjdk-adoptium-jdk-bin",
-    "version": "11.0.25_9_adopt"
-  },
-  "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-11_0_12_7": {
-    "description": "OpenJDK binaries built by Eclipse Adoptium",
-    "pname": "openjdk-adoptium-jdk-bin",
-    "version": "11.0.12_7_adopt"
+    "version": "11.0.26_4_adopt"
   },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-11_0_13_8": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
@@ -2899,6 +2894,11 @@
     "pname": "openjdk-adoptium-jdk-bin",
     "version": "11.0.25_9_adopt"
   },
+  "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-11_0_26_4": {
+    "description": "OpenJDK binaries built by Eclipse Adoptium",
+    "pname": "openjdk-adoptium-jdk-bin",
+    "version": "11.0.26_4_adopt"
+  },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-16": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
     "pname": "openjdk-adoptium-jdk-bin",
@@ -2912,7 +2912,7 @@
   "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-17": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
     "pname": "openjdk-adoptium-jdk-bin",
-    "version": "17.0.13_11_adopt"
+    "version": "17.0.14_7_adopt"
   },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-17_0_10_7": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
@@ -2933,6 +2933,11 @@
     "description": "OpenJDK binaries built by Eclipse Adoptium",
     "pname": "openjdk-adoptium-jdk-bin",
     "version": "17.0.13_11_adopt"
+  },
+  "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-17_0_14_7": {
+    "description": "OpenJDK binaries built by Eclipse Adoptium",
+    "pname": "openjdk-adoptium-jdk-bin",
+    "version": "17.0.14_7_adopt"
   },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-17_0_1_12": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
@@ -3022,7 +3027,7 @@
   "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-8": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
     "pname": "openjdk-adoptium-jdk-bin",
-    "version": "8u432-b06_adopt"
+    "version": "8u442-b06_adopt"
   },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-8u302_b08": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
@@ -3099,15 +3104,15 @@
     "pname": "openjdk-adoptium-jdk-bin",
     "version": "8u432-b06_adopt"
   },
+  "legacyPackages.x86_64-linux.openjdk-adoptium.jdk-bin-8u442_b06": {
+    "description": "OpenJDK binaries built by Eclipse Adoptium",
+    "pname": "openjdk-adoptium-jdk-bin",
+    "version": "8u442-b06_adopt"
+  },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-11": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
     "pname": "openjdk-adoptium-jre-bin",
-    "version": "11.0.25_9_adopt"
-  },
-  "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-11_0_12_7": {
-    "description": "OpenJDK binaries built by Eclipse Adoptium",
-    "pname": "openjdk-adoptium-jre-bin",
-    "version": "11.0.12_7_adopt"
+    "version": "11.0.26_4_adopt"
   },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-11_0_13_8": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
@@ -3189,10 +3194,15 @@
     "pname": "openjdk-adoptium-jre-bin",
     "version": "11.0.25_9_adopt"
   },
+  "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-11_0_26_4": {
+    "description": "OpenJDK binaries built by Eclipse Adoptium",
+    "pname": "openjdk-adoptium-jre-bin",
+    "version": "11.0.26_4_adopt"
+  },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-17": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
     "pname": "openjdk-adoptium-jre-bin",
-    "version": "17.0.13_11_adopt"
+    "version": "17.0.14_7_adopt"
   },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-17_0_10_7": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
@@ -3213,6 +3223,11 @@
     "description": "OpenJDK binaries built by Eclipse Adoptium",
     "pname": "openjdk-adoptium-jre-bin",
     "version": "17.0.13_11_adopt"
+  },
+  "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-17_0_14_7": {
+    "description": "OpenJDK binaries built by Eclipse Adoptium",
+    "pname": "openjdk-adoptium-jre-bin",
+    "version": "17.0.14_7_adopt"
   },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-17_0_1_12": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
@@ -3292,7 +3307,7 @@
   "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-8": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
     "pname": "openjdk-adoptium-jre-bin",
-    "version": "8u432-b06_adopt"
+    "version": "8u442-b06_adopt"
   },
   "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-8u302_b08": {
     "description": "OpenJDK binaries built by Eclipse Adoptium",
@@ -3369,6 +3384,11 @@
     "pname": "openjdk-adoptium-jre-bin",
     "version": "8u432-b06_adopt"
   },
+  "legacyPackages.x86_64-linux.openjdk-adoptium.jre-bin-8u442_b06": {
+    "description": "OpenJDK binaries built by Eclipse Adoptium",
+    "pname": "openjdk-adoptium-jre-bin",
+    "version": "8u442-b06_adopt"
+  },
   "legacyPackages.x86_64-linux.openssl-ech": {
     "description": "OpenSSL with Encrypted Client Hello support",
     "pname": "openssl-ech",
@@ -3417,12 +3437,12 @@
   "legacyPackages.x86_64-linux.peerbanhelper": {
     "description": "自动封禁不受欢迎、吸血和异常的 BT 客户端，并支持自定义规则。PeerId黑名单/UserAgent黑名单/IP CIDR/假进度检测/超量下载检测/主动探测 支持 qBittorrent/Transmission",
     "pname": "peerbanhelper",
-    "version": "7.3.2"
+    "version": "7.3.3"
   },
   "legacyPackages.x86_64-linux.phpmyadmin": {
     "description": "Web interface for MySQL and MariaDB",
     "pname": "phpmyadmin",
-    "version": "5.2.1"
+    "version": "5.2.2"
   },
   "legacyPackages.x86_64-linux.phppgadmin": {
     "description": "Premier web-based administration tool for PostgreSQL",
@@ -3512,7 +3532,7 @@
   "legacyPackages.x86_64-linux.python3Packages.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.12-funasr",
-    "version": "0-unstable-2025-01-16"
+    "version": "0-unstable-2025-01-24"
   },
   "legacyPackages.x86_64-linux.python3Packages.kaldiio": {
     "description": "Pure python module for reading and writing kaldi ark files",
@@ -3647,7 +3667,7 @@
   "legacyPackages.x86_64-linux.qsp-lib": {
     "description": "QSP is an Interactive Fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-01-13"
+    "version": "0-unstable-2025-01-21"
   },
   "legacyPackages.x86_64-linux.r8125": {
     "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
@@ -3687,7 +3707,7 @@
   "legacyPackages.x86_64-linux.rime-ice": {
     "description": "Rime 配置：雾凇拼音 | 长期维护的简体词库",
     "pname": "rime-ice",
-    "version": "0-unstable-2025-01-19"
+    "version": "0-unstable-2025-01-24"
   },
   "legacyPackages.x86_64-linux.rime-moegirl": {
     "description": "RIME dictionary file for entries from zh.moegirl.org.cn",
@@ -3897,7 +3917,7 @@
   "legacyPackages.x86_64-linux.uncategorized.boringssl-oqs": {
     "description": "Fork of BoringSSL that includes prototype quantum-resistant key exchange and authentication in the TLS handshake based on liboqs",
     "pname": "boringssl-oqs",
-    "version": "0-unstable-2024-12-20"
+    "version": "0-unstable-2025-01-20"
   },
   "legacyPackages.x86_64-linux.uncategorized.browser360": {
     "description": "360 Browser",
@@ -3967,7 +3987,7 @@
   "legacyPackages.x86_64-linux.uncategorized.fastapi-dls": {
     "description": "Minimal Delegated License Service (DLS)",
     "pname": "fastapi-dls",
-    "version": "1.3.12-unstable-2024-12-16"
+    "version": "1.3.12-unstable-2025-01-21"
   },
   "legacyPackages.x86_64-linux.uncategorized.fcitx5-breeze": {
     "description": "Fcitx5 theme to match KDE's Breeze style",
@@ -3977,7 +3997,7 @@
   "legacyPackages.x86_64-linux.uncategorized.flaresolverr-21hsmw": {
     "description": "Proxy server to bypass Cloudflare protection, with 21hsmw modifications to support nodriver",
     "pname": "flaresolverr",
-    "version": "21hsmw-0-unstable-2024-11-01"
+    "version": "21hsmw-0-unstable-2025-01-19"
   },
   "legacyPackages.x86_64-linux.uncategorized.ftp-proxy": {
     "description": "FTP Proxy Server",
@@ -4162,7 +4182,7 @@
   "legacyPackages.x86_64-linux.uncategorized.openai-edge-tts": {
     "description": "Text-to-speech API endpoint compatible with OpenAI's TTS API endpoint, using Microsoft Edge TTS to generate speech for free locally",
     "pname": "openai-edge-tts",
-    "version": "0-unstable-2024-12-27"
+    "version": "0-unstable-2025-01-22"
   },
   "legacyPackages.x86_64-linux.uncategorized.openedai-speech": {
     "description": "OpenAI API compatible text to speech server using Coqui AI's xtts_v2 and/or piper tts as the backend",
@@ -4202,12 +4222,12 @@
   "legacyPackages.x86_64-linux.uncategorized.peerbanhelper": {
     "description": "自动封禁不受欢迎、吸血和异常的 BT 客户端，并支持自定义规则。PeerId黑名单/UserAgent黑名单/IP CIDR/假进度检测/超量下载检测/主动探测 支持 qBittorrent/Transmission",
     "pname": "peerbanhelper",
-    "version": "7.3.2"
+    "version": "7.3.3"
   },
   "legacyPackages.x86_64-linux.uncategorized.phpmyadmin": {
     "description": "Web interface for MySQL and MariaDB",
     "pname": "phpmyadmin",
-    "version": "5.2.1"
+    "version": "5.2.2"
   },
   "legacyPackages.x86_64-linux.uncategorized.phppgadmin": {
     "description": "Premier web-based administration tool for PostgreSQL",
@@ -4267,7 +4287,7 @@
   "legacyPackages.x86_64-linux.uncategorized.qsp-lib": {
     "description": "QSP is an Interactive Fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-01-13"
+    "version": "0-unstable-2025-01-21"
   },
   "legacyPackages.x86_64-linux.uncategorized.red-star-os-rgjanggi": {
     "description": "Rgjanggi game from DPRK Red Star OS 3.0, heavily sandboxed. Use at your own risk",
@@ -4297,7 +4317,7 @@
   "legacyPackages.x86_64-linux.uncategorized.rime-ice": {
     "description": "Rime 配置：雾凇拼音 | 长期维护的简体词库",
     "pname": "rime-ice",
-    "version": "0-unstable-2025-01-19"
+    "version": "0-unstable-2025-01-24"
   },
   "legacyPackages.x86_64-linux.uncategorized.rime-moegirl": {
     "description": "RIME dictionary file for entries from zh.moegirl.org.cn",
@@ -4382,7 +4402,7 @@
   "legacyPackages.x86_64-linux.uncategorized.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-01-16"
+    "version": "0-unstable-2025-01-23"
   },
   "legacyPackages.x86_64-linux.uncategorized.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -4452,7 +4472,7 @@
   "legacyPackages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-01-16"
+    "version": "0-unstable-2025-01-23"
   },
   "legacyPackages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -4632,7 +4652,7 @@
   "packages.x86_64-linux.boringssl-oqs": {
     "description": "Fork of BoringSSL that includes prototype quantum-resistant key exchange and authentication in the TLS handshake based on liboqs",
     "pname": "boringssl-oqs",
-    "version": "0-unstable-2024-12-20"
+    "version": "0-unstable-2025-01-20"
   },
   "packages.x86_64-linux.browser360": {
     "description": "360 Browser",
@@ -4742,7 +4762,7 @@
   "packages.x86_64-linux.fastapi-dls": {
     "description": "Minimal Delegated License Service (DLS)",
     "pname": "fastapi-dls",
-    "version": "1.3.12-unstable-2024-12-16"
+    "version": "1.3.12-unstable-2025-01-21"
   },
   "packages.x86_64-linux.fcitx5-breeze": {
     "description": "Fcitx5 theme to match KDE's Breeze style",
@@ -4757,7 +4777,7 @@
   "packages.x86_64-linux.flaresolverr-21hsmw": {
     "description": "Proxy server to bypass Cloudflare protection, with 21hsmw modifications to support nodriver",
     "pname": "flaresolverr",
-    "version": "21hsmw-0-unstable-2024-11-01"
+    "version": "21hsmw-0-unstable-2025-01-19"
   },
   "packages.x86_64-linux.ftp-proxy": {
     "description": "FTP Proxy Server",
@@ -4767,7 +4787,7 @@
   "packages.x86_64-linux.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.12-funasr",
-    "version": "0-unstable-2025-01-16"
+    "version": "0-unstable-2025-01-24"
   },
   "packages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
@@ -4827,7 +4847,7 @@
   "packages.x86_64-linux.i915-sriov": {
     "description": "DKMS module of Linux i915 driver with SR-IOV support",
     "pname": "i915-sriov",
-    "version": "0-unstable-2025-01-03"
+    "version": "0-unstable-2025-01-22"
   },
   "packages.x86_64-linux.imewlconverter": {
     "description": "FOSS program for converting IME dictionaries",
@@ -5047,7 +5067,7 @@
   "packages.x86_64-linux.openai-edge-tts": {
     "description": "Text-to-speech API endpoint compatible with OpenAI's TTS API endpoint, using Microsoft Edge TTS to generate speech for free locally",
     "pname": "openai-edge-tts",
-    "version": "0-unstable-2024-12-27"
+    "version": "0-unstable-2025-01-22"
   },
   "packages.x86_64-linux.opencc-python-reimplemented": {
     "description": "OpenCC made with Python",
@@ -5117,12 +5137,12 @@
   "packages.x86_64-linux.peerbanhelper": {
     "description": "自动封禁不受欢迎、吸血和异常的 BT 客户端，并支持自定义规则。PeerId黑名单/UserAgent黑名单/IP CIDR/假进度检测/超量下载检测/主动探测 支持 qBittorrent/Transmission",
     "pname": "peerbanhelper",
-    "version": "7.3.2"
+    "version": "7.3.3"
   },
   "packages.x86_64-linux.phpmyadmin": {
     "description": "Web interface for MySQL and MariaDB",
     "pname": "phpmyadmin",
-    "version": "5.2.1"
+    "version": "5.2.2"
   },
   "packages.x86_64-linux.phppgadmin": {
     "description": "Premier web-based administration tool for PostgreSQL",
@@ -5207,7 +5227,7 @@
   "packages.x86_64-linux.qsp-lib": {
     "description": "QSP is an Interactive Fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-01-13"
+    "version": "0-unstable-2025-01-21"
   },
   "packages.x86_64-linux.r8125": {
     "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
@@ -5247,7 +5267,7 @@
   "packages.x86_64-linux.rime-ice": {
     "description": "Rime 配置：雾凇拼音 | 长期维护的简体词库",
     "pname": "rime-ice",
-    "version": "0-unstable-2025-01-19"
+    "version": "0-unstable-2025-01-24"
   },
   "packages.x86_64-linux.rime-moegirl": {
     "description": "RIME dictionary file for entries from zh.moegirl.org.cn",
@@ -5372,7 +5392,7 @@
   "packages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-01-16"
+    "version": "0-unstable-2025-01-23"
   },
   "packages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
