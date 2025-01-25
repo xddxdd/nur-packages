@@ -63,6 +63,7 @@ stdenv.mkDerivation {
     description = "Proxy server to bypass Cloudflare protection, with 21hsmw modifications to support nodriver";
     homepage = "https://github.com/21hsmw/FlareSolverr";
     license = licenses.mit;
+    broken = true;
     # Platform depends on chromedriver
     inherit (undetected-chromedriver.meta) platforms;
   };
