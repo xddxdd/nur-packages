@@ -140,20 +140,20 @@
   };
   bilibili = {
     pname = "bilibili";
-    version = "v1.16.2-2";
+    version = "v1.16.2-3";
     src = fetchurl {
-      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.16.2-2/bilibili-asar-v1.16.2-2.tar.gz";
-      hash = "sha256-22h1OBxUySgUoCtda6wH9faR3U19tUQPSFD/EPPixnY=";
+      url = "https://github.com/msojocs/bilibili-linux/releases/download/v1.16.2-3/bilibili-asar-v1.16.2-3.tar.gz";
+      hash = "sha256-olQR2Lo2Ijxm73FugnXWo4W9MmzaO+OGjJTIYSCz0po=";
     };
   };
   bilibili-src = {
     pname = "bilibili-src";
-    version = "v1.16.2-2";
+    version = "v1.16.2-3";
     src = fetchFromGitHub {
       owner = "msojocs";
       repo = "bilibili-linux";
-      tag = "v1.16.2-2";
-      hash = "sha256-hQODfU/AjAoMhfqM6L7o6YY6ED7dCAKBCgoV9Ecjzyc=";
+      tag = "v1.16.2-3";
+      hash = "sha256-bPRq4oAN/4QHX0S2bTkhv+q6MB3KsKLGHNoVSw60gFs=";
     };
   };
   bird-lg-go = {
@@ -195,14 +195,14 @@
   };
   cachyos-kernel = {
     pname = "cachyos-kernel";
-    version = "fe164b042957e08ff5260b555c9be9352bf95d3b";
+    version = "6c94d9edc244cad1dcfddb8a7015d3e30ad7b2c5";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "linux-cachyos";
-      rev = "fe164b042957e08ff5260b555c9be9352bf95d3b";
-      hash = "sha256-frQgcu76KxIZVXsq3XqCfZrUmXl1b8mbwkuK3vNBsdI=";
+      rev = "6c94d9edc244cad1dcfddb8a7015d3e30ad7b2c5";
+      hash = "sha256-OTs22M+AQe0B6sjG9uJQs5RIjHi2cM7HfHEK3Zd9jic=";
     };
-    date = "2025-01-30";
+    date = "2025-01-31";
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
@@ -485,14 +485,14 @@
   };
   funasr = {
     pname = "funasr";
-    version = "c4e70144920401a4f5d9b569929b6914af5d324c";
+    version = "c1e365fea09aafda387cac12fdff43d28c598979";
     src = fetchFromGitHub {
       owner = "modelscope";
       repo = "FunASR";
-      rev = "c4e70144920401a4f5d9b569929b6914af5d324c";
-      hash = "sha256-RPhxzdcADOePgekMfUTOEcSwrzYacn7B3Be2USh2tUE=";
+      rev = "c1e365fea09aafda387cac12fdff43d28c598979";
+      hash = "sha256-DK3XjzfPRx9YtTfgAV7bsbyhMtXADozhGzdMvcGmjek=";
     };
-    date = "2025-01-24";
+    date = "2025-02-01";
   };
   glauth = {
     pname = "glauth";
@@ -873,12 +873,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b4604";
+    version = "b4613";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b4604";
-      hash = "sha256-eHLw3tO+t9fP/9+EV4VpfLv+PJo7poSpow0yMvycm+U=";
+      tag = "b4613";
+      hash = "sha256-Me7/IZ9h3U9X6m7ntfliBwUkVA15pc0A1f6i/xxrd3g=";
     };
   };
   loralib = {
@@ -1257,10 +1257,10 @@
   };
   peerbanhelper = {
     pname = "peerbanhelper";
-    version = "7.4.0";
+    version = "7.4.2";
     src = fetchurl {
-      url = "https://github.com/Ghost-chu/PeerBanHelper/releases/download/v7.4.0/PeerBanHelper_7.4.0.zip";
-      hash = "sha256-OR/zbHpB7pHRbvuino216qp7mx7HOoVdLW1nNV/0j4s=";
+      url = "https://github.com/Ghost-chu/PeerBanHelper/releases/download/v7.4.2/PeerBanHelper_7.4.2.zip";
+      hash = "sha256-+LnIApgo4X2OO+D9ugj7Y721ji48bVnodya23QS9p9w=";
     };
   };
   phpmyadmin = {
@@ -1554,14 +1554,14 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "508d378c4ed54e5eef2a2c68d5019c6f03d72ab4";
+    version = "84f99f21cd1c7c93f708e4dab5db3171d2e6f602";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "508d378c4ed54e5eef2a2c68d5019c6f03d72ab4";
-      hash = "sha256-1uIHaWTTSS7K86W5JJKZHtKEWck4lIJqF7RnGc1Y4Aw=";
+      rev = "84f99f21cd1c7c93f708e4dab5db3171d2e6f602";
+      hash = "sha256-+oPCl9tmcBrbsAL3cZkSR9v7CxYMAaSJLwmp3eUjAlA=";
     };
-    date = "2025-01-31";
+    date = "2025-02-02";
   };
   rime-moegirl = {
     pname = "rime-moegirl";
@@ -1889,14 +1889,14 @@
   };
   uni-api = {
     pname = "uni-api";
-    version = "e07de17c717949250bfe721577d2291e1b57e0de";
+    version = "bf21c5d335af5ce6d4f62dcf63691c39e61eb110";
     src = fetchFromGitHub {
       owner = "yym68686";
       repo = "uni-api";
-      rev = "e07de17c717949250bfe721577d2291e1b57e0de";
-      hash = "sha256-UVClC3KBLCCWGv6PRoGTFC30oaLLePlc96U+z1ua31E=";
+      rev = "bf21c5d335af5ce6d4f62dcf63691c39e61eb110";
+      hash = "sha256-K5Lms7ufVVPFbIZT3Vlk2sE4DLbJjITYsh5MCyMAWAY=";
     };
-    date = "2025-01-26";
+    date = "2025-02-01";
   };
   unigine-heaven = {
     pname = "unigine-heaven";
