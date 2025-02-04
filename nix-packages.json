@@ -767,7 +767,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.attic-telnyx-compatible": {
     "description": "Multi-tenant Nix Binary Cache",
     "pname": "attic",
-    "version": "0-unstable-2024-11-10"
+    "version": "0-unstable-2025-02-02"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.coredns": {
     "description": "CoreDNS with Lan Tian's modifications",
@@ -787,7 +787,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.llama-cpp": {
     "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
     "pname": "llama-cpp",
-    "version": "4621"
+    "version": "4628"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.materialgram": {
     "description": "Telegram Desktop fork with material icons and some improvements (Without anti-features)",
@@ -1217,7 +1217,7 @@
   "legacyPackages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-01-29"
+    "version": "0-unstable-2025-02-03"
   },
   "legacyPackages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -3657,7 +3657,7 @@
   "legacyPackages.x86_64-linux.python3Packages.vector-quantize-pytorch": {
     "description": "Vector (and Scalar) Quantization, in Pytorch",
     "pname": "python3.12-vector-quantize-pytorch",
-    "version": "1.21.4"
+    "version": "1.21.7"
   },
   "legacyPackages.x86_64-linux.python3Packages.xstatic-asciinema-player": {
     "description": "Asciinema-player packaged for setuptools (easy_install) / pip",
@@ -4137,7 +4137,7 @@
   "legacyPackages.x86_64-linux.uncategorized.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-01-29"
+    "version": "0-unstable-2025-02-03"
   },
   "legacyPackages.x86_64-linux.uncategorized.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -4442,7 +4442,7 @@
   "legacyPackages.x86_64-linux.uncategorized.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-02"
+    "version": "0-unstable-2025-02-03"
   },
   "legacyPackages.x86_64-linux.uncategorized.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -4512,7 +4512,7 @@
   "legacyPackages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-02"
+    "version": "0-unstable-2025-02-03"
   },
   "legacyPackages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -4547,7 +4547,7 @@
   "legacyPackages.x86_64-linux.vector-quantize-pytorch": {
     "description": "Vector (and Scalar) Quantization, in Pytorch",
     "pname": "python3.12-vector-quantize-pytorch",
-    "version": "1.21.4"
+    "version": "1.21.7"
   },
   "legacyPackages.x86_64-linux.vgpu-unlock-rs": {
     "description": "Unlock vGPU functionality for consumer grade GPUs",
@@ -4992,7 +4992,7 @@
   "packages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-01-29"
+    "version": "0-unstable-2025-02-03"
   },
   "packages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -5432,7 +5432,7 @@
   "packages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-02"
+    "version": "0-unstable-2025-02-03"
   },
   "packages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -5467,7 +5467,7 @@
   "packages.x86_64-linux.vector-quantize-pytorch": {
     "description": "Vector (and Scalar) Quantization, in Pytorch",
     "pname": "python3.12-vector-quantize-pytorch",
-    "version": "1.21.4"
+    "version": "1.21.7"
   },
   "packages.x86_64-linux.vgpu-unlock-rs": {
     "description": "Unlock vGPU functionality for consumer grade GPUs",

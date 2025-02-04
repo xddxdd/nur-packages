@@ -385,16 +385,16 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "linux-cachyos",
-            "rev": "a58f3db6eaec00bad18973d011722e4d33ec4cf9",
-            "sha256": "sha256-TtwuADlnrCRfpVFut+utIpJSf/LeUKG14wN5iVNWeUQ=",
+            "rev": "60dcda7bf8d0043c7f5ef1a35e33a74efd9d3eb4",
+            "sha256": "sha256-H60me9WIJkqGZHN03NRkrranT1zB+/RRk9JC+GxWT4A=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a58f3db6eaec00bad18973d011722e4d33ec4cf9"
+        "version": "60dcda7bf8d0043c7f5ef1a35e33a74efd9d3eb4"
     },
     "cachyos-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-02-03",
+        "date": "2025-02-04",
         "extract": null,
         "name": "cachyos-kernel-patches",
         "passthru": null,
@@ -406,12 +406,12 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "kernel-patches",
-            "rev": "39cc09aac4643e39d00cc699a62dd5354bd4acb8",
-            "sha256": "sha256-26XMT0chVSRA4RtVrVVT3qys5HQLrjm3O+rOw4cgPmA=",
+            "rev": "707cc86911e9e0210f301f16f16123c34264822c",
+            "sha256": "sha256-yaVtyXbyClQgaP85YHn1jWPEMbi18n/OfKK9Q3Zsw3w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "39cc09aac4643e39d00cc699a62dd5354bd4acb8"
+        "version": "707cc86911e9e0210f301f16f16123c34264822c"
     },
     "calibre-cops": {
         "cargoLocks": null,
@@ -1470,7 +1470,7 @@
     },
     "liboqs-unstable": {
         "cargoLocks": null,
-        "date": "2025-01-29",
+        "date": "2025-02-03",
         "extract": null,
         "name": "liboqs-unstable",
         "passthru": null,
@@ -1482,12 +1482,12 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "f8778123148fd08bd478d87b3fa1460ca96d2e25",
-            "sha256": "sha256-PnS4U0wRw7clltwedMDj9RzDn0xJF38PbVRLkL8vUig=",
+            "rev": "47612ee6d83231da92d5814fe5318e0512f06b41",
+            "sha256": "sha256-V2+D57qYy21Sa2wFr7W1yA3BYfOpWnlYVQ982xiJNFI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f8778123148fd08bd478d87b3fa1460ca96d2e25"
+        "version": "47612ee6d83231da92d5814fe5318e0512f06b41"
     },
     "libqcef": {
         "cargoLocks": null,
@@ -1708,12 +1708,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b4621",
-            "sha256": "sha256-YFOUaDYFQ3rwMDc7vnN+XCQiOdLTYUkHoTlYpI+yqkY=",
+            "rev": "b4628",
+            "sha256": "sha256-G/7qkke/eKd/H46HKdpATbUorNh6OKLdUnCD3O94hbc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b4621"
+        "version": "b4628"
     },
     "loralib": {
         "cargoLocks": null,
@@ -3697,7 +3697,7 @@
     },
     "uni-api": {
         "cargoLocks": null,
-        "date": "2025-02-02",
+        "date": "2025-02-03",
         "extract": null,
         "name": "uni-api",
         "passthru": null,
@@ -3709,12 +3709,12 @@
             "name": null,
             "owner": "yym68686",
             "repo": "uni-api",
-            "rev": "546214ca103970c4d056e52e320c915b7d34d33a",
-            "sha256": "sha256-SRVVvlpxL+Re+WZsZW/nQTwvcq1yNlYPsyCxJQ8SmR4=",
+            "rev": "90a877e328e691508da1ea73e2f3f45782cae18a",
+            "sha256": "sha256-0LoRGmQ5gu0foEah0KWk0X4hwhTNF8uru3t+WVjQyWs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "546214ca103970c4d056e52e320c915b7d34d33a"
+        "version": "90a877e328e691508da1ea73e2f3f45782cae18a"
     },
     "unigine-heaven": {
         "cargoLocks": null,
@@ -3826,12 +3826,12 @@
             "name": null,
             "owner": "lucidrains",
             "repo": "vector-quantize-pytorch",
-            "rev": "1.21.4",
-            "sha256": "sha256-lLaqA3V+bVdoMidEYbcuEh5RROR9DJ58y+BxPtj9V6w=",
+            "rev": "1.21.7",
+            "sha256": "sha256-pTYuQGs+PWpUg/kpsx9OY9WfNbggbYTb8JVXdf5+dKk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.21.4"
+        "version": "1.21.7"
     },
     "vgpu-unlock-rs": {
         "cargoLocks": null,
