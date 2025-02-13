@@ -937,7 +937,7 @@
     },
     "funasr": {
         "cargoLocks": null,
-        "date": "2025-02-12",
+        "date": "2025-02-13",
         "extract": null,
         "name": "funasr",
         "passthru": null,
@@ -949,12 +949,12 @@
             "name": null,
             "owner": "modelscope",
             "repo": "FunASR",
-            "rev": "5052ca8bf03c178d9ae73cb68785cd4afb0144d2",
-            "sha256": "sha256-mx5TSOcCeipLN2zZV+vflLbM2JqgfBJmhDXG1LcVWDg=",
+            "rev": "53ac0cb4016205320ee20fea65c5d5b2e5e0f76a",
+            "sha256": "sha256-CNi0jAWEVfRmmFgsVJhWGzkeDbRwRa+H918Zj9mJScA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5052ca8bf03c178d9ae73cb68785cd4afb0144d2"
+        "version": "53ac0cb4016205320ee20fea65c5d5b2e5e0f76a"
     },
     "glauth": {
         "cargoLocks": null,
@@ -1708,12 +1708,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b4689",
-            "sha256": "sha256-YyHGqnJ88ffQvXsKwpcL1EvyjR/XTRoqx/INCzLK2i4=",
+            "rev": "b4705",
+            "sha256": "sha256-jdF7n1kVEmwkysrGFx1tWWWh/ut9L4yCrNC29yejmPc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b4689"
+        "version": "b4705"
     },
     "loralib": {
         "cargoLocks": null,
@@ -3697,7 +3697,7 @@
     },
     "uni-api": {
         "cargoLocks": null,
-        "date": "2025-02-11",
+        "date": "2025-02-13",
         "extract": null,
         "name": "uni-api",
         "passthru": null,
@@ -3709,12 +3709,12 @@
             "name": null,
             "owner": "yym68686",
             "repo": "uni-api",
-            "rev": "90f7a526e9a4036a7e68d75591fcd72bd8d11e9d",
-            "sha256": "sha256-0Jgh72crMg/WirDb7VjsBgVH5WZiXhQ9gTPPqLsbP0w=",
+            "rev": "205514436166931b829cc4d83ec91ac143d09bb2",
+            "sha256": "sha256-tgkFCF5YlkbG1TWeCCpPh9/09U5qPnWupYpm9xEjB0E=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "90f7a526e9a4036a7e68d75591fcd72bd8d11e9d"
+        "version": "205514436166931b829cc4d83ec91ac143d09bb2"
     },
     "unigine-heaven": {
         "cargoLocks": null,

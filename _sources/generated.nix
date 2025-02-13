@@ -485,14 +485,14 @@
   };
   funasr = {
     pname = "funasr";
-    version = "5052ca8bf03c178d9ae73cb68785cd4afb0144d2";
+    version = "53ac0cb4016205320ee20fea65c5d5b2e5e0f76a";
     src = fetchFromGitHub {
       owner = "modelscope";
       repo = "FunASR";
-      rev = "5052ca8bf03c178d9ae73cb68785cd4afb0144d2";
-      hash = "sha256-mx5TSOcCeipLN2zZV+vflLbM2JqgfBJmhDXG1LcVWDg=";
+      rev = "53ac0cb4016205320ee20fea65c5d5b2e5e0f76a";
+      hash = "sha256-CNi0jAWEVfRmmFgsVJhWGzkeDbRwRa+H918Zj9mJScA=";
     };
-    date = "2025-02-12";
+    date = "2025-02-13";
   };
   glauth = {
     pname = "glauth";
@@ -873,12 +873,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b4689";
+    version = "b4705";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b4689";
-      hash = "sha256-YyHGqnJ88ffQvXsKwpcL1EvyjR/XTRoqx/INCzLK2i4=";
+      tag = "b4705";
+      hash = "sha256-jdF7n1kVEmwkysrGFx1tWWWh/ut9L4yCrNC29yejmPc=";
     };
   };
   loralib = {
@@ -1889,14 +1889,14 @@
   };
   uni-api = {
     pname = "uni-api";
-    version = "90f7a526e9a4036a7e68d75591fcd72bd8d11e9d";
+    version = "205514436166931b829cc4d83ec91ac143d09bb2";
     src = fetchFromGitHub {
       owner = "yym68686";
       repo = "uni-api";
-      rev = "90f7a526e9a4036a7e68d75591fcd72bd8d11e9d";
-      hash = "sha256-0Jgh72crMg/WirDb7VjsBgVH5WZiXhQ9gTPPqLsbP0w=";
+      rev = "205514436166931b829cc4d83ec91ac143d09bb2";
+      hash = "sha256-tgkFCF5YlkbG1TWeCCpPh9/09U5qPnWupYpm9xEjB0E=";
     };
-    date = "2025-02-11";
+    date = "2025-02-13";
   };
   unigine-heaven = {
     pname = "unigine-heaven";
