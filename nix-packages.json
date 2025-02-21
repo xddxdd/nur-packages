@@ -659,6 +659,11 @@
     "pname": "i915-sriov",
     "version": "0-unstable-2025-02-05"
   },
+  "legacyPackages.x86_64-linux.igsc": {
+    "description": "Intel graphics system controller firmware update library",
+    "pname": "igsc",
+    "version": "0.9.5"
+  },
   "legacyPackages.x86_64-linux.imewlconverter": {
     "description": "FOSS program for converting IME dictionaries",
     "pname": "imewlconverter",
@@ -1248,6 +1253,11 @@
     "description": "Matrix-Google Messages puppeting bridge",
     "pname": "mautrix-gmessages",
     "version": "0.6.0"
+  },
+  "legacyPackages.x86_64-linux.metee": {
+    "description": "C library to access CSE/CSME/GSC firmware via a MEI interface",
+    "pname": "metee",
+    "version": "4.3.1"
   },
   "legacyPackages.x86_64-linux.modelscope": {
     "description": "Bring the notion of Model-as-a-Service to life",
@@ -3546,13 +3556,13 @@
   },
   "legacyPackages.x86_64-linux.plangothic-fonts.allideo": {
     "description": "Plangothic Project",
-    "pname": "plangothic-fonts-allideo-V1.9.5769",
-    "version": ""
+    "pname": "plangothic-fonts-allideo",
+    "version": "1.9.5769"
   },
   "legacyPackages.x86_64-linux.plangothic-fonts.fallback": {
     "description": "Plangothic Project",
-    "pname": "plangothic-fonts-fallback-V1.9.5769",
-    "version": ""
+    "pname": "plangothic-fonts-fallback",
+    "version": "1.9.5769"
   },
   "legacyPackages.x86_64-linux.plasma-panel-transparency-toggle": {
     "description": "Rewrite of [Panel Transparency Button](https://github.com/psifidotos/paneltransparencybutton) for plasma 6",
@@ -4144,6 +4154,11 @@
     "pname": "hoyo-glyphs",
     "version": "20241116"
   },
+  "legacyPackages.x86_64-linux.uncategorized.igsc": {
+    "description": "Intel graphics system controller firmware update library",
+    "pname": "igsc",
+    "version": "0.9.5"
+  },
   "legacyPackages.x86_64-linux.uncategorized.imewlconverter": {
     "description": "FOSS program for converting IME dictionaries",
     "pname": "imewlconverter",
@@ -4213,6 +4228,11 @@
     "description": "Matrix-Google Messages puppeting bridge",
     "pname": "mautrix-gmessages",
     "version": "0.6.0"
+  },
+  "legacyPackages.x86_64-linux.uncategorized.metee": {
+    "description": "C library to access CSE/CSME/GSC firmware via a MEI interface",
+    "pname": "metee",
+    "version": "4.3.1"
   },
   "legacyPackages.x86_64-linux.uncategorized.ncmdump-rs": {
     "description": "NetEase Cloud Music copyright protection file dump by rust",
@@ -4939,6 +4959,11 @@
     "pname": "i915-sriov",
     "version": "0-unstable-2025-02-05"
   },
+  "packages.x86_64-linux.igsc": {
+    "description": "Intel graphics system controller firmware update library",
+    "pname": "igsc",
+    "version": "0.9.5"
+  },
   "packages.x86_64-linux.imewlconverter": {
     "description": "FOSS program for converting IME dictionaries",
     "pname": "imewlconverter",
@@ -5073,6 +5098,11 @@
     "description": "Matrix-Google Messages puppeting bridge",
     "pname": "mautrix-gmessages",
     "version": "0.6.0"
+  },
+  "packages.x86_64-linux.metee": {
+    "description": "C library to access CSE/CSME/GSC firmware via a MEI interface",
+    "pname": "metee",
+    "version": "4.3.1"
   },
   "packages.x86_64-linux.modelscope": {
     "description": "Bring the notion of Model-as-a-Service to life",

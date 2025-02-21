@@ -329,9 +329,9 @@
   };
   dingtalk = {
     pname = "dingtalk";
-    version = "7.6.25.4122001";
+    version = "0211/com.alibabainc.dingtalk_7.6.25.4122001";
     src = fetchurl {
-      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.6.25.4122001_amd64.deb";
+      url = "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/0211/com.alibabainc.dingtalk_7.6.25.4122001_amd64.deb";
       hash = "sha256-Fjzlqj/ALgYAipEVxdk7FUk83KsgDstcHYVojbK+aD4=";
     };
   };
@@ -608,6 +608,16 @@
       hash = "sha256-bBcV4Na1VVlw8ftCg6SPG+levrhsxZFJ2BKna5Ar2EQ=";
     };
     date = "2025-02-05";
+  };
+  igsc = {
+    pname = "igsc";
+    version = "V0.9.5";
+    src = fetchFromGitHub {
+      owner = "intel";
+      repo = "igsc";
+      tag = "V0.9.5";
+      hash = "sha256-r6lJi21xiMnQDufrO+LHADhSaJXnD/rvc6+xWVjW2GE=";
+    };
   };
   imewlconverter = {
     pname = "imewlconverter";
@@ -918,6 +928,16 @@
       repo = "gmessages";
       tag = "v0.6.0";
       hash = "sha256-FNjFGO/4j3kLo79oU5fsYA2/yhc9cAsAGIAQ5OJ2VPE=";
+    };
+  };
+  metee = {
+    pname = "metee";
+    version = "4.3.1";
+    src = fetchFromGitHub {
+      owner = "intel";
+      repo = "metee";
+      tag = "4.3.1";
+      hash = "sha256-MYGHoRiNUcuCviu2mpFkErfYxm2JLB1qov6NPNtnRZs=";
     };
   };
   modelscope = {

@@ -643,9 +643,9 @@
             "name": null,
             "sha256": "sha256-Fjzlqj/ALgYAipEVxdk7FUk83KsgDstcHYVojbK+aD4=",
             "type": "url",
-            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_7.6.25.4122001_amd64.deb"
+            "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/0211/com.alibabainc.dingtalk_7.6.25.4122001_amd64.deb"
         },
-        "version": "7.6.25.4122001"
+        "version": "0211/com.alibabainc.dingtalk_7.6.25.4122001"
     },
     "dn42-pingfinder": {
         "cargoLocks": null,
@@ -1176,6 +1176,27 @@
             "type": "github"
         },
         "version": "234e8cf71741d8dd110d79fe66dd8c8444c581a3"
+    },
+    "igsc": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "igsc",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "intel",
+            "repo": "igsc",
+            "rev": "V0.9.5",
+            "sha256": "sha256-r6lJi21xiMnQDufrO+LHADhSaJXnD/rvc6+xWVjW2GE=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "V0.9.5"
     },
     "imewlconverter": {
         "cargoLocks": null,
@@ -1792,6 +1813,27 @@
             "type": "github"
         },
         "version": "v0.6.0"
+    },
+    "metee": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "metee",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "intel",
+            "repo": "metee",
+            "rev": "4.3.1",
+            "sha256": "sha256-MYGHoRiNUcuCviu2mpFkErfYxm2JLB1qov6NPNtnRZs=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "4.3.1"
     },
     "modelscope": {
         "cargoLocks": null,
