@@ -792,7 +792,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.llama-cpp": {
     "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
     "pname": "llama-cpp",
-    "version": "4755"
+    "version": "4762"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.materialgram": {
     "description": "Telegram Desktop fork with material icons and some improvements (Without anti-features)",
@@ -3507,7 +3507,7 @@
   "legacyPackages.x86_64-linux.ormsgpack": {
     "description": "Msgpack serialization/deserialization library for Python, written in Rust using PyO3 and rust-msgpack",
     "pname": "python3.12-ormsgpack",
-    "version": "1.7.0"
+    "version": "1.8.0"
   },
   "legacyPackages.x86_64-linux.osdlyrics": {
     "description": "Standalone lyrics fetcher/displayer (windowed and OSD mode)",
@@ -3667,7 +3667,7 @@
   "legacyPackages.x86_64-linux.python3Packages.ormsgpack": {
     "description": "Msgpack serialization/deserialization library for Python, written in Rust using PyO3 and rust-msgpack",
     "pname": "python3.12-ormsgpack",
-    "version": "1.7.0"
+    "version": "1.8.0"
   },
   "legacyPackages.x86_64-linux.python3Packages.piper-tts": {
     "description": "Python component for piper-tts",
@@ -4512,7 +4512,7 @@
   "legacyPackages.x86_64-linux.uncategorized.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-19"
+    "version": "0-unstable-2025-02-22"
   },
   "legacyPackages.x86_64-linux.uncategorized.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -4582,7 +4582,7 @@
   "legacyPackages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-19"
+    "version": "0-unstable-2025-02-22"
   },
   "legacyPackages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -5227,7 +5227,7 @@
   "packages.x86_64-linux.ormsgpack": {
     "description": "Msgpack serialization/deserialization library for Python, written in Rust using PyO3 and rust-msgpack",
     "pname": "python3.12-ormsgpack",
-    "version": "1.7.0"
+    "version": "1.8.0"
   },
   "packages.x86_64-linux.osdlyrics": {
     "description": "Standalone lyrics fetcher/displayer (windowed and OSD mode)",
@@ -5512,7 +5512,7 @@
   "packages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-19"
+    "version": "0-unstable-2025-02-22"
   },
   "packages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",

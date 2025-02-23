@@ -883,12 +883,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b4755";
+    version = "b4762";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b4755";
-      hash = "sha256-+EjsR0otKlTfk5ahnh+048yW9PUPxlYkWgdS5K+b1ZE=";
+      tag = "b4762";
+      hash = "sha256-r9logQtEQFZ9zCJQHGOygZtI4HQRTJJUPtrpvMNE6q8=";
     };
   };
   loralib = {
@@ -1217,12 +1217,12 @@
   };
   ormsgpack = {
     pname = "ormsgpack";
-    version = "1.7.0";
+    version = "1.8.0";
     src = fetchFromGitHub {
       owner = "aviramha";
       repo = "ormsgpack";
-      tag = "1.7.0";
-      hash = "sha256-YVkG5XyJ3eBgAwvLwJaCcL+584NhGVFMZ4/XbQ9UZWc=";
+      tag = "1.8.0";
+      hash = "sha256-nKAdLiZYeFwIt+jfbNngc3E+tpjuuSV4/RvMuYujOhI=";
     };
   };
   osdlyrics = {
@@ -1909,14 +1909,14 @@
   };
   uni-api = {
     pname = "uni-api";
-    version = "1afd3fad61afa569bb3b7ee87f0bef8af2f6bb21";
+    version = "2f073c8111bec4b646944c61ad0073a2cea584d8";
     src = fetchFromGitHub {
       owner = "yym68686";
       repo = "uni-api";
-      rev = "1afd3fad61afa569bb3b7ee87f0bef8af2f6bb21";
-      hash = "sha256-ri4e17XwiWyFAXk/LFxh0c5Kn7YGlo+Hghy5to5aZ48=";
+      rev = "2f073c8111bec4b646944c61ad0073a2cea584d8";
+      hash = "sha256-7rIdnzSzJBYo3iK/KkqAwFfewcI02CwiYHL0zW2Bu48=";
     };
-    date = "2025-02-19";
+    date = "2025-02-22";
   };
   unigine-heaven = {
     pname = "unigine-heaven";
