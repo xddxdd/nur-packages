@@ -1729,12 +1729,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b4762",
-            "sha256": "sha256-r9logQtEQFZ9zCJQHGOygZtI4HQRTJJUPtrpvMNE6q8=",
+            "rev": "b4764",
+            "sha256": "sha256-m4rtKmnUofO8ZauMcp8PbhGrXgBTwJFDsMFYYy0UQOE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b4762"
+        "version": "b4764"
     },
     "loralib": {
         "cargoLocks": null,
@@ -1928,11 +1928,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-l8FKNBuMK5nPR50oK++mY6IYThw7QkA1r3K+mxpbaa4=",
+            "sha256": "sha256-H5cE6JtZCSRaJC8PT+Fqv7YakmAJyPFq46D6CIBp+kU=",
             "type": "url",
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.84/netboot.xyz.efi"
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.85/netboot.xyz.efi"
         },
-        "version": "2.0.84"
+        "version": "2.0.85"
     },
     "netboot-xyz-lkrn": {
         "cargoLocks": null,
@@ -1943,11 +1943,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-IqhrzHbHoU2rkrjOhQh5TNLaB3lfoLD3WyN9wJgz0t8=",
+            "sha256": "sha256-k1JUzJAnqyCbqdGKKFDNUDXQBwTnNQoinA90rzZbcHg=",
             "type": "url",
-            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.84/netboot.xyz.lkrn"
+            "url": "https://github.com/netbootxyz/netboot.xyz/releases/download/2.0.85/netboot.xyz.lkrn"
         },
-        "version": "2.0.84"
+        "version": "2.0.85"
     },
     "netns-exec": {
         "cargoLocks": null,
@@ -3085,7 +3085,7 @@
     },
     "rime-ice": {
         "cargoLocks": null,
-        "date": "2025-02-20",
+        "date": "2025-02-24",
         "extract": null,
         "name": "rime-ice",
         "passthru": null,
@@ -3097,12 +3097,12 @@
             "name": null,
             "owner": "iDvel",
             "repo": "rime-ice",
-            "rev": "65f915247295ca8097d29f36afa2927740558c7a",
-            "sha256": "sha256-xzAPMRVBjR+0S7nGO9TBJmf5ZaFB49nB0Od9gU1jsh4=",
+            "rev": "e3fd65b4f806e7e7e48402ea75d8e6def6281a86",
+            "sha256": "sha256-eAOkda8IdDKBgfXNVezlgA7BmyUortonlinHdCb/Tr4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "65f915247295ca8097d29f36afa2927740558c7a"
+        "version": "e3fd65b4f806e7e7e48402ea75d8e6def6281a86"
     },
     "rime-moegirl": {
         "cargoLocks": null,
@@ -3739,7 +3739,7 @@
     },
     "uni-api": {
         "cargoLocks": null,
-        "date": "2025-02-22",
+        "date": "2025-02-23",
         "extract": null,
         "name": "uni-api",
         "passthru": null,
@@ -3751,12 +3751,12 @@
             "name": null,
             "owner": "yym68686",
             "repo": "uni-api",
-            "rev": "2f073c8111bec4b646944c61ad0073a2cea584d8",
-            "sha256": "sha256-7rIdnzSzJBYo3iK/KkqAwFfewcI02CwiYHL0zW2Bu48=",
+            "rev": "1db184c3d39ffb778ffc60620d0a142ef3be282e",
+            "sha256": "sha256-fTNueostSCgaeS1m48DioLjxoRbjcZCMqf64Ar/h0lQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2f073c8111bec4b646944c61ad0073a2cea584d8"
+        "version": "1db184c3d39ffb778ffc60620d0a142ef3be282e"
     },
     "unigine-heaven": {
         "cargoLocks": null,
