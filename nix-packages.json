@@ -597,7 +597,7 @@
   "legacyPackages.x86_64-linux.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.12-funasr",
-    "version": "0-unstable-2025-02-18"
+    "version": "0-unstable-2025-02-25"
   },
   "legacyPackages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
@@ -792,7 +792,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.llama-cpp": {
     "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
     "pname": "llama-cpp",
-    "version": "4764"
+    "version": "4769"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.materialgram": {
     "description": "Telegram Desktop fork with material icons and some improvements (Without anti-features)",
@@ -1222,7 +1222,7 @@
   "legacyPackages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-02-21"
+    "version": "0-unstable-2025-02-24"
   },
   "legacyPackages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -3502,7 +3502,7 @@
   "legacyPackages.x86_64-linux.openvswitch-dpdk": {
     "description": "Multilayer virtual switch",
     "pname": "openvswitch-dpdk",
-    "version": "3.4.1"
+    "version": "3.5.0"
   },
   "legacyPackages.x86_64-linux.ormsgpack": {
     "description": "Msgpack serialization/deserialization library for Python, written in Rust using PyO3 and rust-msgpack",
@@ -3632,7 +3632,7 @@
   "legacyPackages.x86_64-linux.python3Packages.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.12-funasr",
-    "version": "0-unstable-2025-02-18"
+    "version": "0-unstable-2025-02-25"
   },
   "legacyPackages.x86_64-linux.python3Packages.kaldiio": {
     "description": "Pure python module for reading and writing kaldi ark files",
@@ -4202,7 +4202,7 @@
   "legacyPackages.x86_64-linux.uncategorized.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-02-21"
+    "version": "0-unstable-2025-02-24"
   },
   "legacyPackages.x86_64-linux.uncategorized.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -4312,7 +4312,7 @@
   "legacyPackages.x86_64-linux.uncategorized.openvswitch-dpdk": {
     "description": "Multilayer virtual switch",
     "pname": "openvswitch-dpdk",
-    "version": "3.4.1"
+    "version": "3.5.0"
   },
   "legacyPackages.x86_64-linux.uncategorized.osdlyrics": {
     "description": "Standalone lyrics fetcher/displayer (windowed and OSD mode)",
@@ -4512,7 +4512,7 @@
   "legacyPackages.x86_64-linux.uncategorized.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-23"
+    "version": "0-unstable-2025-02-25"
   },
   "legacyPackages.x86_64-linux.uncategorized.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -4567,12 +4567,12 @@
   "legacyPackages.x86_64-linux.uncategorized.wine-wechat": {
     "description": "Wine WeChat x64 (Packaging script adapted from https://aur.archlinux.org/packages/deepin-wine-wechat)",
     "pname": "wine-wechat",
-    "version": "3.9.12.17"
+    "version": "3.9.12.45"
   },
   "legacyPackages.x86_64-linux.uncategorized.wine-wechat-x86": {
     "description": "Wine WeChat x86 (Packaging script adapted from https://aur.archlinux.org/packages/deepin-wine-wechat)",
     "pname": "wine-wechat-x86",
-    "version": "3.9.12.16"
+    "version": "3.9.12.44"
   },
   "legacyPackages.x86_64-linux.uncategorized.xvcd": {
     "description": "Xilinx Virtual Cable Daemon",
@@ -4582,7 +4582,7 @@
   "legacyPackages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-23"
+    "version": "0-unstable-2025-02-25"
   },
   "legacyPackages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -4657,12 +4657,12 @@
   "legacyPackages.x86_64-linux.wine-wechat": {
     "description": "Wine WeChat x64 (Packaging script adapted from https://aur.archlinux.org/packages/deepin-wine-wechat)",
     "pname": "wine-wechat",
-    "version": "3.9.12.17"
+    "version": "3.9.12.45"
   },
   "legacyPackages.x86_64-linux.wine-wechat-x86": {
     "description": "Wine WeChat x86 (Packaging script adapted from https://aur.archlinux.org/packages/deepin-wine-wechat)",
     "pname": "wine-wechat-x86",
-    "version": "3.9.12.16"
+    "version": "3.9.12.44"
   },
   "legacyPackages.x86_64-linux.xstatic-asciinema-player": {
     "description": "Asciinema-player packaged for setuptools (easy_install) / pip",
@@ -4897,7 +4897,7 @@
   "packages.x86_64-linux.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.12-funasr",
-    "version": "0-unstable-2025-02-18"
+    "version": "0-unstable-2025-02-25"
   },
   "packages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
@@ -5067,7 +5067,7 @@
   "packages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-02-21"
+    "version": "0-unstable-2025-02-24"
   },
   "packages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -5222,7 +5222,7 @@
   "packages.x86_64-linux.openvswitch-dpdk": {
     "description": "Multilayer virtual switch",
     "pname": "openvswitch-dpdk",
-    "version": "3.4.1"
+    "version": "3.5.0"
   },
   "packages.x86_64-linux.ormsgpack": {
     "description": "Msgpack serialization/deserialization library for Python, written in Rust using PyO3 and rust-msgpack",
@@ -5512,7 +5512,7 @@
   "packages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-23"
+    "version": "0-unstable-2025-02-25"
   },
   "packages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -5587,12 +5587,12 @@
   "packages.x86_64-linux.wine-wechat": {
     "description": "Wine WeChat x64 (Packaging script adapted from https://aur.archlinux.org/packages/deepin-wine-wechat)",
     "pname": "wine-wechat",
-    "version": "3.9.12.17"
+    "version": "3.9.12.45"
   },
   "packages.x86_64-linux.wine-wechat-x86": {
     "description": "Wine WeChat x86 (Packaging script adapted from https://aur.archlinux.org/packages/deepin-wine-wechat)",
     "pname": "wine-wechat-x86",
-    "version": "3.9.12.16"
+    "version": "3.9.12.44"
   },
   "packages.x86_64-linux.xstatic-asciinema-player": {
     "description": "Asciinema-player packaged for setuptools (easy_install) / pip",

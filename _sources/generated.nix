@@ -485,14 +485,14 @@
   };
   funasr = {
     pname = "funasr";
-    version = "57e023e5cfa522007e24d87c8e3d82bf7c4a19cd";
+    version = "82e5ca37a8bd80f56c99f9d790a03b458ced716b";
     src = fetchFromGitHub {
       owner = "modelscope";
       repo = "FunASR";
-      rev = "57e023e5cfa522007e24d87c8e3d82bf7c4a19cd";
-      hash = "sha256-4VXjQLLhVl6UJY3T1c1FQVz9hMLIDIZ7r5qNK3RV4Uk=";
+      rev = "82e5ca37a8bd80f56c99f9d790a03b458ced716b";
+      hash = "sha256-RuZY8O51YQg0IZdjF0yM1s6dc8AE9WsQ/U2bxwvUxgo=";
     };
-    date = "2025-02-18";
+    date = "2025-02-25";
   };
   glauth = {
     pname = "glauth";
@@ -767,14 +767,14 @@
   };
   liboqs-unstable = {
     pname = "liboqs-unstable";
-    version = "ef47d9af27a7d143826f170637ef9c2946701573";
+    version = "f5a044874d13dd15f9c67b59e74a61836c40f97b";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "ef47d9af27a7d143826f170637ef9c2946701573";
-      hash = "sha256-M2pwDJ5a391QHw9DuqMrNJfOiilkt9OlBc61Un0uFBc=";
+      rev = "f5a044874d13dd15f9c67b59e74a61836c40f97b";
+      hash = "sha256-8e/vGDNSyHjT61eVNAcE0W82bJzniAl+oAQ20S6iypc=";
     };
-    date = "2025-02-21";
+    date = "2025-02-24";
   };
   libqcef = {
     pname = "libqcef";
@@ -883,12 +883,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b4764";
+    version = "b4769";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b4764";
-      hash = "sha256-m4rtKmnUofO8ZauMcp8PbhGrXgBTwJFDsMFYYy0UQOE=";
+      tag = "b4769";
+      hash = "sha256-1xCaqJQIyGUJxntQoicJM6MQnSB2ZBddQYR5HnoJnAk=";
     };
   };
   loralib = {
@@ -1909,14 +1909,14 @@
   };
   uni-api = {
     pname = "uni-api";
-    version = "1db184c3d39ffb778ffc60620d0a142ef3be282e";
+    version = "8df91945270ca4ffe17b9554f2e81f0674ac389f";
     src = fetchFromGitHub {
       owner = "yym68686";
       repo = "uni-api";
-      rev = "1db184c3d39ffb778ffc60620d0a142ef3be282e";
-      hash = "sha256-fTNueostSCgaeS1m48DioLjxoRbjcZCMqf64Ar/h0lQ=";
+      rev = "8df91945270ca4ffe17b9554f2e81f0674ac389f";
+      hash = "sha256-KFpsckIpi4N/GkdQZXFUt6jLHUPFnD71T+SMfw4NFys=";
     };
-    date = "2025-02-23";
+    date = "2025-02-25";
   };
   unigine-heaven = {
     pname = "unigine-heaven";
@@ -2030,18 +2030,18 @@
   };
   wine-wechat-x64 = {
     pname = "wine-wechat-x64";
-    version = "3.9.12.17";
+    version = "3.9.12.45";
     src = fetchurl {
-      url = "https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.12.17/WeChatSetup-3.9.12.17.exe";
-      hash = "sha256-SYX5YjUVT8QXbjly8UcJ9fEPwGBuVYkHWm2pttx/zNM=";
+      url = "https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.12.45/WeChatSetup-3.9.12.45.exe";
+      hash = "sha256-RypZspQhaVjNG751GEcwSdxhg42lBWQ1iGQrXGsReA0=";
     };
   };
   wine-wechat-x86 = {
     pname = "wine-wechat-x86";
-    version = "3.9.12.16";
+    version = "3.9.12.44";
     src = fetchurl {
-      url = "https://github.com/tom-snow/wechat-windows-versions-x86/releases/download/v3.9.12.16/WeChatSetupX86-3.9.12.16.exe";
-      hash = "sha256-oISntkFvSvSnEIpGzgpPKIViR1WStgU74E7puNkdjZY=";
+      url = "https://github.com/tom-snow/wechat-windows-versions-x86/releases/download/v3.9.12.44/WeChatSetupX86-3.9.12.44.exe";
+      hash = "sha256-XCiGIGbyj+ZyPXs8l4Fwi3+v5hE0tjIt2fjmR8flmZI=";
     };
   };
   xstatic-asciinema-player = {

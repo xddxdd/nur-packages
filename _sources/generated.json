@@ -937,7 +937,7 @@
     },
     "funasr": {
         "cargoLocks": null,
-        "date": "2025-02-18",
+        "date": "2025-02-25",
         "extract": null,
         "name": "funasr",
         "passthru": null,
@@ -949,12 +949,12 @@
             "name": null,
             "owner": "modelscope",
             "repo": "FunASR",
-            "rev": "57e023e5cfa522007e24d87c8e3d82bf7c4a19cd",
-            "sha256": "sha256-4VXjQLLhVl6UJY3T1c1FQVz9hMLIDIZ7r5qNK3RV4Uk=",
+            "rev": "82e5ca37a8bd80f56c99f9d790a03b458ced716b",
+            "sha256": "sha256-RuZY8O51YQg0IZdjF0yM1s6dc8AE9WsQ/U2bxwvUxgo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "57e023e5cfa522007e24d87c8e3d82bf7c4a19cd"
+        "version": "82e5ca37a8bd80f56c99f9d790a03b458ced716b"
     },
     "glauth": {
         "cargoLocks": null,
@@ -1491,7 +1491,7 @@
     },
     "liboqs-unstable": {
         "cargoLocks": null,
-        "date": "2025-02-21",
+        "date": "2025-02-24",
         "extract": null,
         "name": "liboqs-unstable",
         "passthru": null,
@@ -1503,12 +1503,12 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "ef47d9af27a7d143826f170637ef9c2946701573",
-            "sha256": "sha256-M2pwDJ5a391QHw9DuqMrNJfOiilkt9OlBc61Un0uFBc=",
+            "rev": "f5a044874d13dd15f9c67b59e74a61836c40f97b",
+            "sha256": "sha256-8e/vGDNSyHjT61eVNAcE0W82bJzniAl+oAQ20S6iypc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ef47d9af27a7d143826f170637ef9c2946701573"
+        "version": "f5a044874d13dd15f9c67b59e74a61836c40f97b"
     },
     "libqcef": {
         "cargoLocks": null,
@@ -1729,12 +1729,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b4764",
-            "sha256": "sha256-m4rtKmnUofO8ZauMcp8PbhGrXgBTwJFDsMFYYy0UQOE=",
+            "rev": "b4769",
+            "sha256": "sha256-1xCaqJQIyGUJxntQoicJM6MQnSB2ZBddQYR5HnoJnAk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b4764"
+        "version": "b4769"
     },
     "loralib": {
         "cargoLocks": null,
@@ -3739,7 +3739,7 @@
     },
     "uni-api": {
         "cargoLocks": null,
-        "date": "2025-02-23",
+        "date": "2025-02-25",
         "extract": null,
         "name": "uni-api",
         "passthru": null,
@@ -3751,12 +3751,12 @@
             "name": null,
             "owner": "yym68686",
             "repo": "uni-api",
-            "rev": "1db184c3d39ffb778ffc60620d0a142ef3be282e",
-            "sha256": "sha256-fTNueostSCgaeS1m48DioLjxoRbjcZCMqf64Ar/h0lQ=",
+            "rev": "8df91945270ca4ffe17b9554f2e81f0674ac389f",
+            "sha256": "sha256-KFpsckIpi4N/GkdQZXFUt6jLHUPFnD71T+SMfw4NFys=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1db184c3d39ffb778ffc60620d0a142ef3be282e"
+        "version": "8df91945270ca4ffe17b9554f2e81f0674ac389f"
     },
     "unigine-heaven": {
         "cargoLocks": null,
@@ -3983,11 +3983,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-SYX5YjUVT8QXbjly8UcJ9fEPwGBuVYkHWm2pttx/zNM=",
+            "sha256": "sha256-RypZspQhaVjNG751GEcwSdxhg42lBWQ1iGQrXGsReA0=",
             "type": "url",
-            "url": "https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.12.17/WeChatSetup-3.9.12.17.exe"
+            "url": "https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.12.45/WeChatSetup-3.9.12.45.exe"
         },
-        "version": "3.9.12.17"
+        "version": "3.9.12.45"
     },
     "wine-wechat-x86": {
         "cargoLocks": null,
@@ -3998,11 +3998,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-oISntkFvSvSnEIpGzgpPKIViR1WStgU74E7puNkdjZY=",
+            "sha256": "sha256-XCiGIGbyj+ZyPXs8l4Fwi3+v5hE0tjIt2fjmR8flmZI=",
             "type": "url",
-            "url": "https://github.com/tom-snow/wechat-windows-versions-x86/releases/download/v3.9.12.16/WeChatSetupX86-3.9.12.16.exe"
+            "url": "https://github.com/tom-snow/wechat-windows-versions-x86/releases/download/v3.9.12.44/WeChatSetupX86-3.9.12.44.exe"
         },
-        "version": "3.9.12.16"
+        "version": "3.9.12.44"
     },
     "xstatic-asciinema-player": {
         "cargoLocks": null,
