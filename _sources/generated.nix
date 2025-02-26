@@ -767,14 +767,14 @@
   };
   liboqs-unstable = {
     pname = "liboqs-unstable";
-    version = "f5a044874d13dd15f9c67b59e74a61836c40f97b";
+    version = "38725ba063363836a4f31d71cd47b6de52895c3e";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "f5a044874d13dd15f9c67b59e74a61836c40f97b";
-      hash = "sha256-8e/vGDNSyHjT61eVNAcE0W82bJzniAl+oAQ20S6iypc=";
+      rev = "38725ba063363836a4f31d71cd47b6de52895c3e";
+      hash = "sha256-Yx7sKcPWK64NDXbRdOdEV1SVoInUmXPaGj6CfRKtyKo=";
     };
-    date = "2025-02-24";
+    date = "2025-02-26";
   };
   libqcef = {
     pname = "libqcef";
@@ -883,12 +883,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b4769";
+    version = "b4778";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b4769";
-      hash = "sha256-1xCaqJQIyGUJxntQoicJM6MQnSB2ZBddQYR5HnoJnAk=";
+      tag = "b4778";
+      hash = "sha256-c4E/0tNWSAolVh93whS8KvMDflSR5mhXf6TC7cCAx10=";
     };
   };
   loralib = {
@@ -1909,12 +1909,12 @@
   };
   uni-api = {
     pname = "uni-api";
-    version = "8df91945270ca4ffe17b9554f2e81f0674ac389f";
+    version = "76408967a1e3b148b5a1620e998b8951fa097a54";
     src = fetchFromGitHub {
       owner = "yym68686";
       repo = "uni-api";
-      rev = "8df91945270ca4ffe17b9554f2e81f0674ac389f";
-      hash = "sha256-KFpsckIpi4N/GkdQZXFUt6jLHUPFnD71T+SMfw4NFys=";
+      rev = "76408967a1e3b148b5a1620e998b8951fa097a54";
+      hash = "sha256-jEGUv7wZvgyOFQxYHbKOs84KGear0CvlI/bFHIuGFQo=";
     };
     date = "2025-02-25";
   };
@@ -1970,12 +1970,12 @@
   };
   vector-quantize-pytorch = {
     pname = "vector-quantize-pytorch";
-    version = "1.21.8";
+    version = "1.21.9";
     src = fetchFromGitHub {
       owner = "lucidrains";
       repo = "vector-quantize-pytorch";
-      tag = "1.21.8";
-      hash = "sha256-6XonE8hAtRPoBGGz+o8wvpyT2MY/6PvSiQQpWlgqluU=";
+      tag = "1.21.9";
+      hash = "sha256-jt3rLsI846EB/RRDapSr73RFOKR0hT+kQSdNJBfpGoI=";
     };
   };
   vgpu-unlock-rs = {

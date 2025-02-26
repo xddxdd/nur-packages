@@ -1491,7 +1491,7 @@
     },
     "liboqs-unstable": {
         "cargoLocks": null,
-        "date": "2025-02-24",
+        "date": "2025-02-26",
         "extract": null,
         "name": "liboqs-unstable",
         "passthru": null,
@@ -1503,12 +1503,12 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "f5a044874d13dd15f9c67b59e74a61836c40f97b",
-            "sha256": "sha256-8e/vGDNSyHjT61eVNAcE0W82bJzniAl+oAQ20S6iypc=",
+            "rev": "38725ba063363836a4f31d71cd47b6de52895c3e",
+            "sha256": "sha256-Yx7sKcPWK64NDXbRdOdEV1SVoInUmXPaGj6CfRKtyKo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f5a044874d13dd15f9c67b59e74a61836c40f97b"
+        "version": "38725ba063363836a4f31d71cd47b6de52895c3e"
     },
     "libqcef": {
         "cargoLocks": null,
@@ -1729,12 +1729,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b4769",
-            "sha256": "sha256-1xCaqJQIyGUJxntQoicJM6MQnSB2ZBddQYR5HnoJnAk=",
+            "rev": "b4778",
+            "sha256": "sha256-c4E/0tNWSAolVh93whS8KvMDflSR5mhXf6TC7cCAx10=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b4769"
+        "version": "b4778"
     },
     "loralib": {
         "cargoLocks": null,
@@ -3751,12 +3751,12 @@
             "name": null,
             "owner": "yym68686",
             "repo": "uni-api",
-            "rev": "8df91945270ca4ffe17b9554f2e81f0674ac389f",
-            "sha256": "sha256-KFpsckIpi4N/GkdQZXFUt6jLHUPFnD71T+SMfw4NFys=",
+            "rev": "76408967a1e3b148b5a1620e998b8951fa097a54",
+            "sha256": "sha256-jEGUv7wZvgyOFQxYHbKOs84KGear0CvlI/bFHIuGFQo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8df91945270ca4ffe17b9554f2e81f0674ac389f"
+        "version": "76408967a1e3b148b5a1620e998b8951fa097a54"
     },
     "unigine-heaven": {
         "cargoLocks": null,
@@ -3868,12 +3868,12 @@
             "name": null,
             "owner": "lucidrains",
             "repo": "vector-quantize-pytorch",
-            "rev": "1.21.8",
-            "sha256": "sha256-6XonE8hAtRPoBGGz+o8wvpyT2MY/6PvSiQQpWlgqluU=",
+            "rev": "1.21.9",
+            "sha256": "sha256-jt3rLsI846EB/RRDapSr73RFOKR0hT+kQSdNJBfpGoI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.21.8"
+        "version": "1.21.9"
     },
     "vgpu-unlock-rs": {
         "cargoLocks": null,
