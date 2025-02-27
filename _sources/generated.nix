@@ -883,12 +883,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b4778";
+    version = "b4784";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b4778";
-      hash = "sha256-c4E/0tNWSAolVh93whS8KvMDflSR5mhXf6TC7cCAx10=";
+      tag = "b4784";
+      hash = "sha256-RUFODtbgWi9nq3fU5+3dOlehzREktJnBpNM9TQVAw2A=";
     };
   };
   loralib = {
@@ -1324,12 +1324,12 @@
   };
   plasma-smart-video-wallpaper-reborn = {
     pname = "plasma-smart-video-wallpaper-reborn";
-    version = "v1.1.1";
+    version = "v2.0.0";
     src = fetchFromGitHub {
       owner = "luisbocanegra";
       repo = "plasma-smart-video-wallpaper-reborn";
-      tag = "v1.1.1";
-      hash = "sha256-cq0h9NewaUNpk8TxuYCW9qWHqZNlq5S0OvVv3lO8/r0=";
+      tag = "v2.0.0";
+      hash = "sha256-hwJzUTPYQoROA56E3pm9BWRH1/cKpa0ahCtIj8B9wjM=";
     };
   };
   plasma-yesplaymusic-lyric = {
@@ -1909,14 +1909,14 @@
   };
   uni-api = {
     pname = "uni-api";
-    version = "76408967a1e3b148b5a1620e998b8951fa097a54";
+    version = "cf165f0384e6126d42c9e7be5b8f53c697ce9928";
     src = fetchFromGitHub {
       owner = "yym68686";
       repo = "uni-api";
-      rev = "76408967a1e3b148b5a1620e998b8951fa097a54";
-      hash = "sha256-jEGUv7wZvgyOFQxYHbKOs84KGear0CvlI/bFHIuGFQo=";
+      rev = "cf165f0384e6126d42c9e7be5b8f53c697ce9928";
+      hash = "sha256-SGQufe/1BDInMCGMMRbvQVQ5S79nu1NTCD/TEb9lK7s=";
     };
-    date = "2025-02-25";
+    date = "2025-02-27";
   };
   unigine-heaven = {
     pname = "unigine-heaven";
@@ -2012,12 +2012,12 @@
   };
   vpp = {
     pname = "vpp";
-    version = "v24.10";
+    version = "v25.02";
     src = fetchFromGitHub {
       owner = "FDio";
       repo = "vpp";
-      tag = "v24.10";
-      hash = "sha256-GcmblIAu/BDbqZRycmnBsHkvzJe07qB2lSfDnO7ZYtg=";
+      tag = "v25.02";
+      hash = "sha256-UDO1mlOEQNCmtR18CCTF+ng5Ms9gfTsnohSygLlPopY=";
     };
   };
   wechat-uos = {

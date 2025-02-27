@@ -792,7 +792,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.llama-cpp": {
     "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
     "pname": "llama-cpp",
-    "version": "4778"
+    "version": "4784"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.materialgram": {
     "description": "Telegram Desktop fork with material icons and some improvements (Without anti-features)",
@@ -3572,7 +3572,7 @@
   "legacyPackages.x86_64-linux.plasma-smart-video-wallpaper-reborn": {
     "description": "Plasma 6 wallpaper plugin to play videos on your Desktop/Lock Screen",
     "pname": "plasma-smart-video-wallpaper-reborn",
-    "version": "1.1.1"
+    "version": "2.0.0"
   },
   "legacyPackages.x86_64-linux.plasma-yesplaymusic-lyric": {
     "description": "Display YesPlayMusic lyrics on the plasma panel | 在KDE plasma面板中显示YesPlayMusic的歌词",
@@ -4352,7 +4352,7 @@
   "legacyPackages.x86_64-linux.uncategorized.plasma-smart-video-wallpaper-reborn": {
     "description": "Plasma 6 wallpaper plugin to play videos on your Desktop/Lock Screen",
     "pname": "plasma-smart-video-wallpaper-reborn",
-    "version": "1.1.1"
+    "version": "2.0.0"
   },
   "legacyPackages.x86_64-linux.uncategorized.plasma-yesplaymusic-lyric": {
     "description": "Display YesPlayMusic lyrics on the plasma panel | 在KDE plasma面板中显示YesPlayMusic的歌词",
@@ -4512,7 +4512,7 @@
   "legacyPackages.x86_64-linux.uncategorized.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-25"
+    "version": "0-unstable-2025-02-27"
   },
   "legacyPackages.x86_64-linux.uncategorized.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -4557,7 +4557,7 @@
   "legacyPackages.x86_64-linux.uncategorized.vpp": {
     "description": "Vector Packet Processing",
     "pname": "vpp",
-    "version": "24.10"
+    "version": "25.02"
   },
   "legacyPackages.x86_64-linux.uncategorized.wechat-uos-sandboxed": {
     "description": "WeChat desktop with sandbox enabled ($HOME/Documents/WeChat_Data) (Adapted from https://aur.archlinux.org/packages/wechat-uos-bwrap)",
@@ -4582,7 +4582,7 @@
   "legacyPackages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-25"
+    "version": "0-unstable-2025-02-27"
   },
   "legacyPackages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -4632,7 +4632,7 @@
   "legacyPackages.x86_64-linux.vpp": {
     "description": "Vector Packet Processing",
     "pname": "vpp",
-    "version": "24.10"
+    "version": "25.02"
   },
   "legacyPackages.x86_64-linux.wechat-uos": {
     "description": "(DEPRECATED: wechat-uos is available in nixpkgs. If you still want sandbox functionality, use wechat-uos-sandboxed package.) WeChat desktop with sandbox enabled ($HOME/Documents/WeChat_Data) (Adapted from https://aur.archlinux.org/packages/wechat-uos-bwrap)",
@@ -5287,7 +5287,7 @@
   "packages.x86_64-linux.plasma-smart-video-wallpaper-reborn": {
     "description": "Plasma 6 wallpaper plugin to play videos on your Desktop/Lock Screen",
     "pname": "plasma-smart-video-wallpaper-reborn",
-    "version": "1.1.1"
+    "version": "2.0.0"
   },
   "packages.x86_64-linux.plasma-yesplaymusic-lyric": {
     "description": "Display YesPlayMusic lyrics on the plasma panel | 在KDE plasma面板中显示YesPlayMusic的歌词",
@@ -5512,7 +5512,7 @@
   "packages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-02-25"
+    "version": "0-unstable-2025-02-27"
   },
   "packages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -5562,7 +5562,7 @@
   "packages.x86_64-linux.vpp": {
     "description": "Vector Packet Processing",
     "pname": "vpp",
-    "version": "24.10"
+    "version": "25.02"
   },
   "packages.x86_64-linux.wechat-uos": {
     "description": "(DEPRECATED: wechat-uos is available in nixpkgs. If you still want sandbox functionality, use wechat-uos-sandboxed package.) WeChat desktop with sandbox enabled ($HOME/Documents/WeChat_Data) (Adapted from https://aur.archlinux.org/packages/wechat-uos-bwrap)",

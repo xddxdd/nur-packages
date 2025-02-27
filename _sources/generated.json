@@ -1729,12 +1729,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b4778",
-            "sha256": "sha256-c4E/0tNWSAolVh93whS8KvMDflSR5mhXf6TC7cCAx10=",
+            "rev": "b4784",
+            "sha256": "sha256-RUFODtbgWi9nq3fU5+3dOlehzREktJnBpNM9TQVAw2A=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b4778"
+        "version": "b4784"
     },
     "loralib": {
         "cargoLocks": null,
@@ -2605,12 +2605,12 @@
             "name": null,
             "owner": "luisbocanegra",
             "repo": "plasma-smart-video-wallpaper-reborn",
-            "rev": "v1.1.1",
-            "sha256": "sha256-cq0h9NewaUNpk8TxuYCW9qWHqZNlq5S0OvVv3lO8/r0=",
+            "rev": "v2.0.0",
+            "sha256": "sha256-hwJzUTPYQoROA56E3pm9BWRH1/cKpa0ahCtIj8B9wjM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.1.1"
+        "version": "v2.0.0"
     },
     "plasma-yesplaymusic-lyric": {
         "cargoLocks": null,
@@ -3739,7 +3739,7 @@
     },
     "uni-api": {
         "cargoLocks": null,
-        "date": "2025-02-25",
+        "date": "2025-02-27",
         "extract": null,
         "name": "uni-api",
         "passthru": null,
@@ -3751,12 +3751,12 @@
             "name": null,
             "owner": "yym68686",
             "repo": "uni-api",
-            "rev": "76408967a1e3b148b5a1620e998b8951fa097a54",
-            "sha256": "sha256-jEGUv7wZvgyOFQxYHbKOs84KGear0CvlI/bFHIuGFQo=",
+            "rev": "cf165f0384e6126d42c9e7be5b8f53c697ce9928",
+            "sha256": "sha256-SGQufe/1BDInMCGMMRbvQVQ5S79nu1NTCD/TEb9lK7s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "76408967a1e3b148b5a1620e998b8951fa097a54"
+        "version": "cf165f0384e6126d42c9e7be5b8f53c697ce9928"
     },
     "unigine-heaven": {
         "cargoLocks": null,
@@ -3952,12 +3952,12 @@
             "name": null,
             "owner": "FDio",
             "repo": "vpp",
-            "rev": "v24.10",
-            "sha256": "sha256-GcmblIAu/BDbqZRycmnBsHkvzJe07qB2lSfDnO7ZYtg=",
+            "rev": "v25.02",
+            "sha256": "sha256-UDO1mlOEQNCmtR18CCTF+ng5Ms9gfTsnohSygLlPopY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v24.10"
+        "version": "v25.02"
     },
     "wechat-uos": {
         "cargoLocks": null,
