@@ -373,7 +373,7 @@
     },
     "cachyos-kernel": {
         "cargoLocks": null,
-        "date": "2025-02-21",
+        "date": "2025-02-27",
         "extract": null,
         "name": "cachyos-kernel",
         "passthru": null,
@@ -385,16 +385,16 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "linux-cachyos",
-            "rev": "7f2abaee0147008889f78c6acebda9b8abc7ec96",
-            "sha256": "sha256-hSppJXfVDrVhLEvCE5BVMSaJhcczcqieCKxd6/rAwtQ=",
+            "rev": "c00e68df8b2d8cb99b4b996fcc29005b5e415707",
+            "sha256": "sha256-PY40Kx5dOHMUkuQeVMfxA1exoh4JWlnYaCrzuSNvN3k=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7f2abaee0147008889f78c6acebda9b8abc7ec96"
+        "version": "c00e68df8b2d8cb99b4b996fcc29005b5e415707"
     },
     "cachyos-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-02-21",
+        "date": "2025-02-27",
         "extract": null,
         "name": "cachyos-kernel-patches",
         "passthru": null,
@@ -406,12 +406,12 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "kernel-patches",
-            "rev": "ba60fcffc6b1a5df65ca84a858d98dff897b8f6e",
-            "sha256": "sha256-Njngz7pslbPtPUUeMAyaGyiRaJOJPT9OQSV06b+rkyE=",
+            "rev": "2b0b1fcd753ac3532f6a7fa5d408144dc0b7d935",
+            "sha256": "sha256-rVK3O91/NhkrLEuJOY/aD8IDmY5HisvpIsFWjr+mdI8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ba60fcffc6b1a5df65ca84a858d98dff897b8f6e"
+        "version": "2b0b1fcd753ac3532f6a7fa5d408144dc0b7d935"
     },
     "calibre-cops": {
         "cargoLocks": null,
@@ -1627,13 +1627,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "6.13.4-xanmod1",
-            "sha256": "sha256-ggOIjYPFShjEltrYz4p4y8KzBVcpQDSmTZwA/8Vb7pw=",
+            "rev": "6.13.5-xanmod1",
+            "sha256": "sha256-GwOpa1//Y3KWsApvk8jmSFmeKchehtg9DLFzZTeWgRA=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/xanmod/linux.git"
         },
-        "version": "6.13.4-xanmod1"
+        "version": "6.13.5-xanmod1"
     },
     "linux-xanmod-6_0": {
         "cargoLocks": null,
@@ -1687,13 +1687,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "6.12.16-xanmod1",
-            "sha256": "sha256-fuWlirNfup6M2XC4Tu8GX2CE46bVwTo30sm7XwO8qG4=",
+            "rev": "6.12.17-xanmod1",
+            "sha256": "sha256-tyYjwNVJapFZ6vnt4/6KgaB6yKbH3X9YB0927uvIb/M=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/xanmod/linux.git"
         },
-        "version": "6.12.16-xanmod1"
+        "version": "6.12.17-xanmod1"
     },
     "linux-xanmod-6_6": {
         "cargoLocks": null,
@@ -1729,12 +1729,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b4784",
-            "sha256": "sha256-RUFODtbgWi9nq3fU5+3dOlehzREktJnBpNM9TQVAw2A=",
+            "rev": "b4790",
+            "sha256": "sha256-TMGLz9fe/y7fBlNA2t/fB5OIeTXP49ErHkE29OGsF8s=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b4784"
+        "version": "b4790"
     },
     "loralib": {
         "cargoLocks": null,
