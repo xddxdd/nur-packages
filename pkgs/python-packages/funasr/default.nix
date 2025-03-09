@@ -2,6 +2,7 @@
   lib,
   sources,
   buildPythonPackage,
+  stdenv,
   # Dependencies
   editdistance,
   hydra-core,
@@ -70,6 +71,6 @@ buildPythonPackage rec {
     license = with lib.licenses; [ mit ];
     mainProgram = "funasr";
     # Dependency librosa doesn't work on ARM64
-    badPlatforms = [ "aarch64-linux" ];
+    broken = stdenv.isAarch64;
   };
 }
