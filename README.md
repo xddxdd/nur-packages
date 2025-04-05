@@ -105,7 +105,6 @@ Or, use variables from this repository in case I change them:
 |  | `calibre-cops` | [calibre-cops](http://blog.slucas.fr/en/oss/calibre-opds-php-server) | 3.5.7 | Calibre OPDS (and HTML) PHP Server : web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...) |
 |  | `chmlib-utils` | [chmlib](http://www.jedrea.com/chmlib) | 0.40a | Library for dealing with Microsoft ITSS/CHM format files |
 |  | `click-loglevel` | [click-loglevel](https://github.com/jwodder/click-loglevel) | 0.6.0 | Log level parameter type for Click |
-|  | `cloudpan189-go` | [cloudpan189-go](https://github.com/tickstep/cloudpan189-go) | 0.1.3 | CLI for China Telecom 189 Cloud Drive service, implemented in Go |
 |  | `cockpy` | [cockpy](https://github.com/Hiro420/CockPY) | 0-unstable-2024-09-07 | Public and open source version of the cbt2 ps im working on |
 |  | `cryptodev-unstable` | [cryptodev-linux](http://cryptodev-linux.org/) | 1.14-unstable-2024-10-10 | Device that allows access to Linux kernel cryptographic drivers |
 |  | `data-recorder` | [data-recorder](https://github.com/g1879/DataRecorder) | 3.6.2 | Python-based toolkit to record data into files |
@@ -248,6 +247,7 @@ Or, use variables from this repository in case I change them:
 |  | `xvcd` | [xvcd](https://github.com/RHSResearchLLC/xvcd) | 0-unstable-2019-11-20 | Xilinx Virtual Cable Daemon |
 | `Broken` | `amule-dlp` | [amule-dlp](https://github.com/persmule/amule-dlp) | 2.3.2-unstable-2023-03-02 | Peer-to-peer client for the eD2K and Kademlia networks (with Dynamic Leech Protection) |
 | `Broken` | `ast` | [ast](https://www.aspeedtech.com/support_driver/) | 1.15.1_4 | Aspeed Graphics Driver |
+| `Deprecated` | `cloudpan189-go` | [cloudpan189-go](https://github.com/tickstep/cloudpan189-go) | 0.1.3 | (DEPRECATED: cloudpan189-go is abandoned upstream and no longer works) CLI for China Telecom 189 Cloud Drive service, implemented in Go |
 | `Broken` | `coqui-tts` | [coqui-tts](http://coqui.ai) | 0.22.0 | Deep learning toolkit for Text-to-Speech, battle-tested in research and production |
 | `Broken` | `douban-openapi-server` | [douban-openapi-server](https://github.com/caryyu/douban-openapi-server) | 0-unstable-2022-12-17 | Douban API server that provides an unofficial APIs for media information gathering |
 | `Broken` | `fish-speech` | [fish-speech](https://speech.fish.audio/) | 1.5.0 | SOTA Open Source TTS |
@@ -344,10 +344,11 @@ Or, use variables from this repository in case I change them:
 </details>
 
 <details>
-<summary>Package set: deprecated (8 packages)</summary>
+<summary>Package set: deprecated (9 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
+|  | `deprecated.cloudpan189-go` | [cloudpan189-go](https://github.com/tickstep/cloudpan189-go) | 0.1.3 | (DEPRECATED: cloudpan189-go is abandoned upstream and no longer works) CLI for China Telecom 189 Cloud Drive service, implemented in Go |
 |  | `deprecated.glauth` | [glauth](https://github.com/glauth/glauth) | 2.3.2 | (DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI |
 | `x86_64-linux` | `deprecated.inter-knot` | [inter-knot](https://inot.top) | 2.16.9+36 | (DEPRECATED: Service has ceased operation) 绳网是一个游戏、技术交流平台 |
 |  | `deprecated.kata-image` | [kata-image](https://github.com/kata-containers/kata-containers) | 3.15.0 | (DEPRECATED: kata-image is available in nixpkgs by a different maintainer) Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs. (Packaging script adapted from https://github.com/TUM-DSE/doctor-cluster-config/blob/0c40be8dd86282122f8f04df738c409ef5e3da1c/pkgs/kata-images/default.nix) |
@@ -1022,7 +1023,7 @@ Or, use variables from this repository in case I change them:
 </details>
 
 <details>
-<summary>Package set: uncategorized (127 packages)</summary>
+<summary>Package set: uncategorized (126 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
@@ -1039,7 +1040,6 @@ Or, use variables from this repository in case I change them:
 |  | `uncategorized.browser360` | [browser360](https://browser.360.net/gc/index.html) | 13.3.1016.4 | 360 Browser |
 |  | `uncategorized.calibre-cops` | [calibre-cops](http://blog.slucas.fr/en/oss/calibre-opds-php-server) | 3.5.7 | Calibre OPDS (and HTML) PHP Server : web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...) |
 |  | `uncategorized.chmlib-utils` | [chmlib](http://www.jedrea.com/chmlib) | 0.40a | Library for dealing with Microsoft ITSS/CHM format files |
-|  | `uncategorized.cloudpan189-go` | [cloudpan189-go](https://github.com/tickstep/cloudpan189-go) | 0.1.3 | CLI for China Telecom 189 Cloud Drive service, implemented in Go |
 |  | `uncategorized.cockpy` | [cockpy](https://github.com/Hiro420/CockPY) | 0-unstable-2024-09-07 | Public and open source version of the cbt2 ps im working on |
 |  | `uncategorized.decluttarr` | [decluttarr](https://github.com/ManiMatter/decluttarr) | 1.50.2 | Watches radarr, sonarr, lidarr and readarr download queues and removes downloads if they become stalled or no longer needed |
 | `x86_64-linux` | `uncategorized.dingtalk` | [dingtalk](https://www.dingtalk.com/) | 7.6.25.4122001 | Enterprise communication and collaboration platform developed by Alibaba Group |
