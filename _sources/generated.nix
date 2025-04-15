@@ -1409,6 +1409,17 @@
   };
   pterodactyl-wings = {
     pname = "pterodactyl-wings";
+    version = "3855eecb602eebe7361dfe7223547a99db3720ba";
+    src = fetchFromGitHub {
+      owner = "pterodactyl";
+      repo = "wings";
+      rev = "3855eecb602eebe7361dfe7223547a99db3720ba";
+      hash = "sha256-KZDqXDW2Gvf9LEdwYQNyttUx+dc3fSSMjzsyQibrDko=";
+    };
+    date = "2025-04-07";
+  };
+  pterodactyl-wings-stable = {
+    pname = "pterodactyl-wings-stable";
     version = "v1.11.13";
     src = fetchFromGitHub {
       owner = "pterodactyl";

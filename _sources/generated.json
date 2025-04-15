@@ -2758,9 +2758,30 @@
     },
     "pterodactyl-wings": {
         "cargoLocks": null,
-        "date": null,
+        "date": "2025-04-07",
         "extract": null,
         "name": "pterodactyl-wings",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "pterodactyl",
+            "repo": "wings",
+            "rev": "3855eecb602eebe7361dfe7223547a99db3720ba",
+            "sha256": "sha256-KZDqXDW2Gvf9LEdwYQNyttUx+dc3fSSMjzsyQibrDko=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "3855eecb602eebe7361dfe7223547a99db3720ba"
+    },
+    "pterodactyl-wings-stable": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "pterodactyl-wings-stable",
         "passthru": null,
         "pinned": false,
         "src": {
