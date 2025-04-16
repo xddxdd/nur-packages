@@ -18,5 +18,6 @@ buildGoModule rec {
     description = "Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol";
     homepage = "https://github.com/Diniboy1123/usque";
     license = lib.licenses.mit;
+    changelog = "https://github.com/Diniboy1123/usque/releases/tag/v${version}";
   };
 }
