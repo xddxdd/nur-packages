@@ -1,6 +1,7 @@
 {
   lib,
   buildGoModule,
+  # fetchFromGitHub,
   stdenv,
   nix-update-script,
   buildPackages,
