@@ -2,6 +2,7 @@
   lib,
   buildGoModule,
   stdenv,
+  nix-update-script,
   buildPackages,
   sources,
   installShellFiles,
@@ -37,6 +38,8 @@ buildGoModule (finalAttrs: {
   doInstallCheck = true;
   versionCheckProgram = "${placeholder "out"}/bin/${finalAttrs.meta.mainProgram}";
   versionCheckProgramArg = "version";
+
+  passthru.updateScript = nix-update-script { };
 
   meta = {
     mainProgram = "usque";
