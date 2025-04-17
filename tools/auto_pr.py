@@ -236,19 +236,16 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--no-branch",
-        "-g",
         help="Do not create Git branch automatically",
         action="store_true",
     )
     parser.add_argument(
         "--no-commit",
-        "-g",
         help="Do not create Git commit automatically. Default to on if dest is set",
         action="store_true",
     )
     parser.add_argument(
         "--no-push",
-        "-g",
         help="Do not push changes automatically. Default to on if dest is set",
         action="store_true",
     )
