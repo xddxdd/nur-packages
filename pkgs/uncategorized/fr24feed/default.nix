@@ -68,8 +68,7 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
 
-    install -Dm755 ${distPkg}/bin/fr24feed $out/bin/fr24feed
-    install -Dm755 ${fhs}/bin/fr24feed-fhs $out/bin/fr24feed-fhs
+    install -Dm755 ${fhs}/bin/fr24feed-fhs $out/bin/fr24feed
     install -Dm755 ${distPkg}/bin/fr24feed-signup-adsb $out/bin/fr24feed-signup-adsb
     install -Dm755 ${distPkg}/bin/fr24feed-signup-uat $out/bin/fr24feed-signup-uat
     install -Dm644 ${distPkg}/etc/fr24feed.ini $out/etc/fr24feed.ini
@@ -80,9 +79,9 @@ stdenv.mkDerivation rec {
   postFixup = ''
     # Signup scripts need FHS for a few utils in /usr/bin
     substituteInPlace $out/bin/fr24feed-signup-adsb \
-      --replace-fail "/usr/bin/fr24feed" "$out/bin/fr24feed-fhs"
+      --replace-fail "/usr/bin/fr24feed" "$out/bin/fr24feed"
     substituteInPlace $out/bin/fr24feed-signup-uat \
-      --replace-fail "/usr/bin/fr24feed" "$out/bin/fr24feed-fhs"
+      --replace-fail "/usr/bin/fr24feed" "$out/bin/fr24feed"
   '';
 
   passthru = { inherit distPkg; };
