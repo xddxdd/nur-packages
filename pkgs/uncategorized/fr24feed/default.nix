@@ -3,7 +3,6 @@
   lib,
   stdenv,
   buildFHSEnv,
-  autoPatchelfHook,
   dpkg,
 }:
 let
@@ -23,10 +22,7 @@ let
     pname = "fr24feed-dist";
     inherit (source) version src;
 
-    nativeBuildInputs = [
-      autoPatchelfHook
-      dpkg
-    ];
+    nativeBuildInputs = [ dpkg ];
 
     unpackPhase = ''
       runHook preUnpack
