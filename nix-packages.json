@@ -3706,12 +3706,12 @@
   },
   "legacyPackages.x86_64-linux.plangothic-fonts.allideo": {
     "description": "Plangothic Project",
-    "pname": "plangothic-fonts-allideo",
+    "pname": "plangothic-fonts",
     "version": "2.9.5777"
   },
   "legacyPackages.x86_64-linux.plangothic-fonts.fallback": {
     "description": "Plangothic Project",
-    "pname": "plangothic-fonts-fallback",
+    "pname": "plangothic-fonts",
     "version": "2.9.5777"
   },
   "legacyPackages.x86_64-linux.plasma-panel-transparency-toggle": {
