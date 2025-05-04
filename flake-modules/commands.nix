@@ -14,23 +14,29 @@
           program = pkgs.writeShellScriptBin n v;
         }) config.commands;
 
-        devShells.default = pkgs.mkShell (
-          {
-            buildInputs = lib.mapAttrsToList (
-              n: _v:
-              pkgs.writeShellScriptBin n ''
+        devshells.default = {
+          commands = lib.mapAttrsToList (n: _v: {
+            name = n;
+            command = builtins.toString (
+              pkgs.writeShellScript n ''
                 exec nix run .#${n} -- "$@"
               ''
-            ) apps;
-          }
-          // (lib.optionalAttrs (config ? pre-commit) {
-            nativeBuildInputs = config.pre-commit.settings.enabledPackages ++ [
-              config.pre-commit.settings.package
-            ];
-            shellHook = config.pre-commit.installationScript;
+            );
+          }) apps;
 
-          })
-        );
+          motd = lib.mkDefault "";
+
+          packages = lib.optionals (config ? pre-commit) (
+            config.pre-commit.settings.enabledPackages
+            ++ [
+              config.pre-commit.settings.package
+            ]
+          );
+
+          devshell.startup = lib.optionalAttrs (config ? pre-commit) {
+            pre-commit.text = config.pre-commit.installationScript;
+          };
+        };
       };
     }
   );

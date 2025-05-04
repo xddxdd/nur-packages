@@ -5,6 +5,10 @@
     nixpkgs-24_05.url = "github:NixOS/nixpkgs/nixos-24.05";
     flake-parts.url = "github:hercules-ci/flake-parts";
 
+    devshell = {
+      url = "github:numtide/devshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -66,6 +70,7 @@
           flakeModules.lantian-pre-commit-hooks
           flakeModules.lantian-treefmt
           flakeModules.nixpkgs-options
+          inputs.devshell.flakeModule
         ];
 
         systems = [
