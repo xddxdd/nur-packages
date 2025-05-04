@@ -29,11 +29,7 @@
         devshells.default = {
           commands = lib.mapAttrsToList (n: _v: {
             name = n;
-            command = builtins.toString (
-              pkgs.writeShellScript n ''
-                exec nix run .#${n} -- "$@"
-              ''
-            );
+            command = "exec nix run .#${n} -- \"$@\"";
           }) apps;
 
           motd = lib.mkDefault "";
