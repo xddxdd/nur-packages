@@ -769,6 +769,10 @@ fetch.github = "ashleve/rootutils"
 src.git = "https://github.com/xddxdd/route-chain.git"
 fetch.github = "xddxdd/route-chain"
 
+[rtpengine]
+src.github = "sipwise/rtpengine"
+fetch.github = "sipwise/rtpengine"
+
 [runpodctl]
 src.github = "runpod/runpodctl"
 fetch.github = "runpod/runpodctl"

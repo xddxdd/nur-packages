@@ -1745,6 +1745,16 @@
     };
     date = "2023-09-09";
   };
+  rtpengine = {
+    pname = "rtpengine";
+    version = "mr13.2.1.1";
+    src = fetchFromGitHub {
+      owner = "sipwise";
+      repo = "rtpengine";
+      tag = "mr13.2.1.1";
+      hash = "sha256-M0MWWHGx9FRkE4iBJhHY3ErsILgWT6ear2bUI0nKn3c=";
+    };
+  };
   runpod-python = {
     pname = "runpod-python";
     version = "1.7.9";
