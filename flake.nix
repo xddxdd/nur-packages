@@ -42,7 +42,10 @@
           auto-colmena-hive = ./flake-modules/auto-colmena-hive-v0.nix;
           auto-colmena-hive-v0 = ./flake-modules/auto-colmena-hive-v0.nix;
           auto-colmena-hive-v0_20241006 = ./flake-modules/auto-colmena-hive-v0_20241006.nix;
-          commands = ./flake-modules/commands.nix;
+          commands = importApply ./flake-modules/commands.nix {
+            inherit (inputs) devshell;
+            inherit flake-parts-lib;
+          };
           lantian-pre-commit-hooks = importApply ./flake-modules/lantian-pre-commit-hooks.nix {
             inherit (inputs) pre-commit-hooks-nix;
           };
@@ -70,7 +73,6 @@
           flakeModules.lantian-pre-commit-hooks
           flakeModules.lantian-treefmt
           flakeModules.nixpkgs-options
-          inputs.devshell.flakeModule
         ];
 
         systems = [

@@ -1,8 +1,20 @@
-{ lib, flake-parts-lib, ... }:
 {
+  devshell,
+  flake-parts-lib,
+  ...
+}:
+{
+  imports = [ devshell.flakeModule ];
+
   options.perSystem = flake-parts-lib.mkPerSystemOption (
-    { pkgs, config, ... }:
     {
+      pkgs,
+      lib,
+      config,
+      ...
+    }:
+    {
+
       options.commands = lib.mkOption {
         type = lib.types.attrsOf lib.types.str;
         default = { };
