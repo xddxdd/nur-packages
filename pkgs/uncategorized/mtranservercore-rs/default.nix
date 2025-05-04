@@ -46,5 +46,6 @@ rustPlatform.buildRustPackage (finalAttrs: {
     description = "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs";
     homepage = "https://github.com/LinguaSpark/server";
     license = lib.licenses.agpl3Only;
+    inherit (mklStatic.meta) platforms;
   };
 })
