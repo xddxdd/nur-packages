@@ -15,10 +15,6 @@ jobs:
           - ubuntu-24.04-arm
         ci-command:
           - ci
-          - ci-cuda
-        exclude:
-          - base-image: ubuntu-24.04-arm
-            ci-command: ci-cuda
     runs-on: ${{ matrix.base-image }}
     env:
       GIT_SSL_NO_VERIFY: 'true'
