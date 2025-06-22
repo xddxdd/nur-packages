@@ -18,6 +18,12 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
+  passthru = {
+    asn = sources.geolite2-asn.src;
+    city = sources.geolite2-city.src;
+    country = sources.geolite2-country.src;
+  };
+
   meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
     description = "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases";
