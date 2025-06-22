@@ -616,6 +616,30 @@
     };
     date = "2025-06-16";
   };
+  geolite2-asn = {
+    pname = "geolite2-asn";
+    version = "2025.06.22";
+    src = fetchurl {
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.06.22/GeoLite2-ASN.mmdb";
+      hash = "sha256-GLNbpVFoBVY/bn/Si04t+47jkeAgUhHBWB9oRsZ1OqU=";
+    };
+  };
+  geolite2-city = {
+    pname = "geolite2-city";
+    version = "2025.06.22";
+    src = fetchurl {
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.06.22/GeoLite2-City.mmdb";
+      hash = "sha256-N8/rk1xTcoTviLrB2sc0op6owYM4RQ0B+AELyBmHabw=";
+    };
+  };
+  geolite2-country = {
+    pname = "geolite2-country";
+    version = "2025.06.22";
+    src = fetchurl {
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.06.22/GeoLite2-Country.mmdb";
+      hash = "sha256-fIV9EW8apTRZlCHVbBHMiMFKXE+ZllFvPoemjt49PMg=";
+    };
+  };
   glauth = {
     pname = "glauth";
     version = "v2.3.2";

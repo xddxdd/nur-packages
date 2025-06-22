@@ -639,6 +639,11 @@
     "pname": "python3.13-funasr",
     "version": "0-unstable-2025-06-16"
   },
+  "legacyPackages.x86_64-linux.geolite2": {
+    "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
+    "pname": "geolite2",
+    "version": "2025.06.22"
+  },
   "legacyPackages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
     "pname": "glauth",
@@ -4419,6 +4424,11 @@
     "pname": "ftp-proxy",
     "version": "1.2.3"
   },
+  "legacyPackages.x86_64-linux.uncategorized.geolite2": {
+    "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
+    "pname": "geolite2",
+    "version": "2025.06.22"
+  },
   "legacyPackages.x86_64-linux.uncategorized.google-earth-pro": {
     "description": "World sphere viewer",
     "pname": "google-earth-pro",
@@ -5298,6 +5308,11 @@
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.13-funasr",
     "version": "0-unstable-2025-06-16"
+  },
+  "packages.x86_64-linux.geolite2": {
+    "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
+    "pname": "geolite2",
+    "version": "2025.06.22"
   },
   "packages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",

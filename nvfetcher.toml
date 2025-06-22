@@ -268,6 +268,18 @@ fetch.url = "http://www.ftpproxy.org/download/ftpproxy-$ver.tgz"
 src.git = "https://github.com/modelscope/FunASR.git"
 fetch.github = "modelscope/FunASR"
 
+[geolite2-asn]
+src.github = "P3TERX/GeoLite.mmdb"
+fetch.url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/$ver/GeoLite2-ASN.mmdb"
+
+[geolite2-city]
+src.github = "P3TERX/GeoLite.mmdb"
+fetch.url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/$ver/GeoLite2-City.mmdb"
+
+[geolite2-country]
+src.github = "P3TERX/GeoLite.mmdb"
+fetch.url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/$ver/GeoLite2-Country.mmdb"
+
 [glauth]
 src.manual = "v2.3.2"
 # src.github = "glauth/glauth"
