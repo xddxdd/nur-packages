@@ -168,6 +168,16 @@
       hash = "sha256-gOxeShqi7XtFYqHbV8E98qaukTrCNt4WC5bqPy749Uo=";
     };
   };
+  bin-cpuflags-x86 = {
+    pname = "bin-cpuflags-x86";
+    version = "1.0.3";
+    src = fetchFromGitHub {
+      owner = "HanabishiRecca";
+      repo = "bin-cpuflags-x86";
+      tag = "1.0.3";
+      hash = "sha256-N+B9z5BZw8mF9TAja0Dq6tH0msIyRsrLZB2+AqDclL4=";
+    };
+  };
   bird-lg-go = {
     pname = "bird-lg-go";
     version = "v1.3.9";

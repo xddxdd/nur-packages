@@ -72,6 +72,10 @@ fetch.url = "https://github.com/msojocs/bilibili-linux/releases/download/$ver/bi
 src.github = "msojocs/bilibili-linux"
 fetch.github = "msojocs/bilibili-linux"
 
+[bin-cpuflags-x86]
+src.github = "HanabishiRecca/bin-cpuflags-x86"
+fetch.github = "HanabishiRecca/bin-cpuflags-x86"
+
 [bird-lg-go]
 src.github = "xddxdd/bird-lg-go"
 fetch.github = "xddxdd/bird-lg-go"
