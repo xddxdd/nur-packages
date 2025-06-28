@@ -22,30 +22,20 @@ jobs:
       - uses: wimpysworld/nothing-but-nix@main
         with:
           hatchet-protocol: rampage
-          witness-carnage: true
 
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.AUTOMERGE_TOKEN }}
 
-      - name: Set up QEMU
-        id: qemu
-        uses: docker/setup-qemu-action@v3
-        if: matrix.base-image == 'ubuntu-24.04'
-        with:
-          image: tonistiigi/binfmt:latest
-          platforms: all
-
       - name: Install nix
         uses: cachix/install-nix-action@v31
         with:
           nix_path: nixpkgs=channel:nixos-unstable
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
           extra_nix_config: |
             experimental-features = nix-command flakes ca-derivations
             extra-experimental-features = nix-command flakes ca-derivations
-            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-            extra-platforms = i686-linux aarch64-linux arm-linux
             keep-going = true
             log-lines = 25
             substituters = https://nix-community.cachix.org https://cache.garnix.io https://cache.nixos.org/
