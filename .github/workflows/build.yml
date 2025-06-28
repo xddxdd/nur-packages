@@ -19,10 +19,17 @@ jobs:
     env:
       GIT_SSL_NO_VERIFY: 'true'
     steps:
-      - uses: wimpysworld/nothing-but-nix@main
+      - name: Maximize build space
+        uses: easimon/maximize-build-space@master
         with:
-          hatchet-protocol: rampage
-          witness-carnage: true
+          root-reserve-mb: 8192
+          swap-size-mb: 4096
+          build-mount-path: '/nix'
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -59,6 +66,20 @@ jobs:
           endpoint: https://attic.xuyh0120.win
           cache: lantian
           token: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Set nix daemon tmpdir path
+        run: |
+          sudo mkdir -p /nix/tmpdir
+          sudo chown "$(whoami)" /nix/tmpdir
+
+          cat > override.conf <<EOF
+          [Service]
+          Environment="TMPDIR=/nix/tmpdir"
+          EOF
+          sudo mkdir /etc/systemd/system/nix-daemon.service.d/
+          sudo mv override.conf /etc/systemd/system/nix-daemon.service.d/override.conf
+          sudo systemctl daemon-reload
+          sudo systemctl restart nix-daemon
 
       - name: Build nix packages
         run: |
