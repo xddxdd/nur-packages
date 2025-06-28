@@ -1901,48 +1901,6 @@
         },
         "version": "55e7f563e999802d41a13ba02657c1be4b2011b4"
     },
-    "librime-lua": {
-        "cargoLocks": null,
-        "date": "2025-06-28",
-        "extract": null,
-        "name": "librime-lua",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "hchunhui",
-            "repo": "librime-lua",
-            "rev": "4a2898fcafdcfaff105be18dfda1076e6b6e825d",
-            "sha256": "sha256-oxFPutLwkuDeGuHk+qoAIT9+ebLVGldAzeDxwcAb+Kw=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "4a2898fcafdcfaff105be18dfda1076e6b6e825d"
-    },
-    "librime-octagram": {
-        "cargoLocks": null,
-        "date": "2024-11-18",
-        "extract": null,
-        "name": "librime-octagram",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "lotem",
-            "repo": "librime-octagram",
-            "rev": "dfcc15115788c828d9dd7b4bff68067d3ce2ffb8",
-            "sha256": "sha256-dgUsH10V87mEcX/k3N118qbKo3fKDFcS8inhS6p5bJc=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "dfcc15115788c828d9dd7b4bff68067d3ce2ffb8"
-    },
     "librime-proto": {
         "cargoLocks": null,
         "date": "2023-10-17",
