@@ -436,7 +436,7 @@
     },
     "cachyos-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-06-27",
+        "date": "2025-06-30",
         "extract": null,
         "name": "cachyos-kernel-patches",
         "passthru": null,
@@ -448,12 +448,12 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "kernel-patches",
-            "rev": "865e7c9b83309b8e78b4539f26b4e13b604beed6",
-            "sha256": "sha256-xGRPNFbgqE05/LV/VTPWXnAFvUFDn4RIHISyX0V7GDk=",
+            "rev": "ef2f2fbc3b570bbf171e2e6574a9ff893ed045ac",
+            "sha256": "sha256-uHDFuRSAhub92JidlhhHCsEzxwfYy8jck26YPmXXapc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "865e7c9b83309b8e78b4539f26b4e13b604beed6"
+        "version": "ef2f2fbc3b570bbf171e2e6574a9ff893ed045ac"
     },
     "calibre-cops": {
         "cargoLocks": null,
@@ -2078,12 +2078,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b5775",
-            "sha256": "sha256-GqdWhI8JpN4FdwMs+ZZgZlOYpoMOO33O7H5+yyN9NTY=",
+            "rev": "b5780",
+            "sha256": "sha256-QE3bv6efSwwOvyi0Qz4lwQSUMEdiSNwTlgpIvG6tzeQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b5775"
+        "version": "b5780"
     },
     "loralib": {
         "cargoLocks": null,
@@ -4255,7 +4255,7 @@
     },
     "uni-api": {
         "cargoLocks": null,
-        "date": "2025-06-29",
+        "date": "2025-06-30",
         "extract": null,
         "name": "uni-api",
         "passthru": null,
@@ -4267,12 +4267,12 @@
             "name": null,
             "owner": "yym68686",
             "repo": "uni-api",
-            "rev": "57d5ac13886fa265c4d1148376092fd38223f9ce",
-            "sha256": "sha256-nXBbtkcCwBhh1fVukYBfQAyodS+MpCzYMha5ocn+Ge8=",
+            "rev": "57a175825dfab68b14b7b6482af7a0f9319b86c4",
+            "sha256": "sha256-zDqvght122RfIHMyYvk+n4FXFWJsXzM9dIo5kRljUfk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "57d5ac13886fa265c4d1148376092fd38223f9ce"
+        "version": "57a175825dfab68b14b7b6482af7a0f9319b86c4"
     },
     "unigine-heaven": {
         "cargoLocks": null,
