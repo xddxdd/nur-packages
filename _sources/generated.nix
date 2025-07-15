@@ -217,23 +217,23 @@
   };
   cachyos-kernel = {
     pname = "cachyos-kernel";
-    version = "51b3a59289a42bc286d9cac2d13bf41971cd3bb9";
+    version = "e691849df754984ab7deb31737ee2457d77bd749";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "linux-cachyos";
-      rev = "51b3a59289a42bc286d9cac2d13bf41971cd3bb9";
-      hash = "sha256-NvreQT5GExmoF/l996i85cobXaDLwFGhswpSb+e5Jf8=";
+      rev = "e691849df754984ab7deb31737ee2457d77bd749";
+      hash = "sha256-vCTmUrUonNwqqM+ad6bmbr1rPkCCmOethEjhXqPWUG4=";
     };
-    date = "2025-07-11";
+    date = "2025-07-14";
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "e72f3ba5858166d9a93f8e205f723db946a46056";
+    version = "f435ec707555a2d044e8e1a53dac8df89610e06f";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "e72f3ba5858166d9a93f8e205f723db946a46056";
-      hash = "sha256-TH18jAz1XTBXlgpoArPNurotvd0JRYCc/PcjXOqushA=";
+      rev = "f435ec707555a2d044e8e1a53dac8df89610e06f";
+      hash = "sha256-OWhXk361D1SxKF2Sd2DuiNI6YhiWax0AZEjxlsJ2Q3s=";
     };
     date = "2025-07-14";
   };
@@ -947,14 +947,14 @@
   };
   liboqs-unstable = {
     pname = "liboqs-unstable";
-    version = "94b421ebb82405c843dba4e9aa521a56ee5a333d";
+    version = "78e23891802a8bc058ad435491f1b5aefcef092a";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "94b421ebb82405c843dba4e9aa521a56ee5a333d";
-      hash = "sha256-BJgsXbKcQjJFk/A7JvkA0NKztv0BAnkgCAXv/TM2/04=";
+      rev = "78e23891802a8bc058ad435491f1b5aefcef092a";
+      hash = "sha256-TEpmqoHwbHdekpFXqUDNmEvkRPfD3ZYvsOxyUp3TKJo=";
     };
-    date = "2025-07-10";
+    date = "2025-07-14";
   };
   libqcef = {
     pname = "libqcef";
@@ -1065,12 +1065,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b5891";
+    version = "b5898";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b5891";
-      hash = "sha256-UeoFLOyPR/Dbj3NOHQzE3/f2ct5HtbIfMq+ZI508IQw=";
+      tag = "b5898";
+      hash = "sha256-ZVhPu2+YkVki99RPy+bUwEHNjOOZiRVGObTwSGu2Z+0=";
     };
   };
   loralib = {
