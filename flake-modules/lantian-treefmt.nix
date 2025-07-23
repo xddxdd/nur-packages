@@ -36,6 +36,7 @@
           # nixfmt.enable = true;
           shfmt.enable = true;
           statix.enable = true;
+          toml-sort.enable = true;
         };
 
         settings.formatter.dos2unix.excludes = [ "*.reg" ];
