@@ -4174,27 +4174,6 @@
         },
         "version": "0cea2d244416abad69b463365465bc7620e88c39"
     },
-    "transmission": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "transmission",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": true,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "transmission",
-            "repo": "transmission",
-            "rev": "4.1.0-beta.2",
-            "sha256": "sha256-eGBlXgNQ/6Xt//9KPCNCKAL1jnk/2uRb4nM01Ha68dE=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "4.1.0-beta.2"
-    },
     "transmission-web-control": {
         "cargoLocks": null,
         "date": "2025-06-01",

@@ -2140,17 +2140,6 @@
     };
     date = "2024-10-10";
   };
-  transmission = {
-    pname = "transmission";
-    version = "4.1.0-beta.2";
-    src = fetchFromGitHub {
-      owner = "transmission";
-      repo = "transmission";
-      tag = "4.1.0-beta.2";
-      fetchSubmodules = true;
-      hash = "sha256-eGBlXgNQ/6Xt//9KPCNCKAL1jnk/2uRb4nM01Ha68dE=";
-    };
-  };
   transmission-web-control = {
     pname = "transmission-web-control";
     version = "054e2edf7ee1ec859cec3ee5661a550481321a27";
