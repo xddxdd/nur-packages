@@ -897,7 +897,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.transmission-with-webui": {
     "description": "Fast, easy and free BitTorrent client",
     "pname": "transmission",
-    "version": "4.0.6"
+    "version": "4.1.0-beta.2"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.x86-arch-level": {
     "description": "Check x86 architecture level",

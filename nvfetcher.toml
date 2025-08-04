@@ -953,6 +953,11 @@ src.pypi = "torch_complex"
 fetch.github = "tradingstrategy-ai/tqdm-loggable"
 src.git = "https://github.com/tradingstrategy-ai/tqdm-loggable.git"
 
+[transmission]
+fetch.github = "transmission/transmission"
+git.fetchSubmodules = true
+src.github_tag = "transmission/transmission"
+
 [transmission-web-control]
 fetch.github = "ronggang/transmission-web-control"
 src.git = "https://github.com/ronggang/transmission-web-control.git"

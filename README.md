@@ -414,7 +414,7 @@ Or, use variables from this repository in case I change them:
 |  | `lantianCustomized.nginx` | [nginx-lantian](https://openresty.org) | 1.27.1.2-unstable-2025-07-14 | OpenResty with Lan Tian modifications |
 |  | `lantianCustomized.nixos-cleanup` | [nixos-cleanup](https://github.com/xddxdd/nur-packages) | 1.0 | Cleanup old profiles on NixOS |
 |  | `lantianCustomized.telegram-desktop` | [telegram-desktop](https://desktop.telegram.org/) | 5.16.4 | Telegram Desktop messaging app (Without anti-features) |
-|  | `lantianCustomized.transmission-with-webui` | [transmission](https://www.transmissionbt.com/) | 4.0.6 | Fast, easy and free BitTorrent client |
+|  | `lantianCustomized.transmission-with-webui` | [transmission](https://www.transmissionbt.com/) | 4.1.0-beta.2 | Fast, easy and free BitTorrent client |
 |  | `lantianCustomized.x86-arch-level` | [x86-arch-level](https://unix.stackexchange.com/a/631226) | 1.0 | Check x86 architecture level |
 </details>
 
