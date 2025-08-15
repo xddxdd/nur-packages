@@ -384,6 +384,31 @@
     "pname": "asterisk",
     "version": "22-codec-siren7-1.0.7"
   },
+  "legacyPackages.x86_64-linux.asteriskDigiumCodecs.23.g729a": {
+    "description": "Asterisk 23 g729a Codec by Digium",
+    "pname": "asterisk",
+    "version": "23-codec-g729a-3.1.10"
+  },
+  "legacyPackages.x86_64-linux.asteriskDigiumCodecs.23.opus": {
+    "description": "Asterisk 23 opus Codec by Digium",
+    "pname": "asterisk",
+    "version": "23-codec-opus-1.3.0"
+  },
+  "legacyPackages.x86_64-linux.asteriskDigiumCodecs.23.silk": {
+    "description": "Asterisk 23 silk Codec by Digium",
+    "pname": "asterisk",
+    "version": "23-codec-silk-1.0.3"
+  },
+  "legacyPackages.x86_64-linux.asteriskDigiumCodecs.23.siren14": {
+    "description": "Asterisk 23 siren14 Codec by Digium",
+    "pname": "asterisk",
+    "version": "23-codec-siren14-1.0.7"
+  },
+  "legacyPackages.x86_64-linux.asteriskDigiumCodecs.23.siren7": {
+    "description": "Asterisk 23 siren7 Codec by Digium",
+    "pname": "asterisk",
+    "version": "23-codec-siren7-1.0.7"
+  },
   "legacyPackages.x86_64-linux.axiom-syslog-proxy": {
     "description": "Syslog push interface to Axiom",
     "pname": "axiom-syslog-proxy",
@@ -652,7 +677,7 @@
   "legacyPackages.x86_64-linux.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.13-funasr",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-15"
   },
   "legacyPackages.x86_64-linux.geolite2": {
     "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
@@ -1312,7 +1337,7 @@
   "legacyPackages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "legacyPackages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -1322,12 +1347,12 @@
   "legacyPackages.x86_64-linux.linguaspark-server": {
     "description": "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs",
     "pname": "linguaspark-server",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "legacyPackages.x86_64-linux.linguaspark-server-x86-64-v3": {
     "description": "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs",
     "pname": "linguaspark-server",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "legacyPackages.x86_64-linux.loralib": {
     "description": "Implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\"",
@@ -1372,7 +1397,7 @@
   "legacyPackages.x86_64-linux.mtranservercore-rs": {
     "description": "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs",
     "pname": "linguaspark-server",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "legacyPackages.x86_64-linux.ncmdump-rs": {
     "description": "NetEase Cloud Music copyright protection file dump by rust",
@@ -4077,7 +4102,7 @@
   "legacyPackages.x86_64-linux.python3Packages.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.13-funasr",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-15"
   },
   "legacyPackages.x86_64-linux.python3Packages.kaldiio": {
     "description": "Pure python module for reading and writing kaldi ark files",
@@ -4202,7 +4227,7 @@
   "legacyPackages.x86_64-linux.qemu-user-static": {
     "description": "Generic and open source machine emulator and virtualizer",
     "pname": "qemu-user-static",
-    "version": "10.0.3+ds-2"
+    "version": "10.0.3+ds-3"
   },
   "legacyPackages.x86_64-linux.qq": {
     "description": "QQ for Linux",
@@ -4227,7 +4252,7 @@
   "legacyPackages.x86_64-linux.qsp-lib": {
     "description": "QSP is an Interactive Fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-15"
   },
   "legacyPackages.x86_64-linux.r8125": {
     "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
@@ -4722,7 +4747,7 @@
   "legacyPackages.x86_64-linux.uncategorized.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "legacyPackages.x86_64-linux.uncategorized.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -4732,12 +4757,12 @@
   "legacyPackages.x86_64-linux.uncategorized.linguaspark-server": {
     "description": "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs",
     "pname": "linguaspark-server",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "legacyPackages.x86_64-linux.uncategorized.linguaspark-server-x86-64-v3": {
     "description": "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs",
     "pname": "linguaspark-server",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "legacyPackages.x86_64-linux.uncategorized.lyrica": {
     "description": "Linux desktop lyrics widget focused on simplicity and integration",
@@ -4767,7 +4792,7 @@
   "legacyPackages.x86_64-linux.uncategorized.mtranservercore-rs": {
     "description": "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs",
     "pname": "linguaspark-server",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "legacyPackages.x86_64-linux.uncategorized.ncmdump-rs": {
     "description": "NetEase Cloud Music copyright protection file dump by rust",
@@ -4917,7 +4942,7 @@
   "legacyPackages.x86_64-linux.uncategorized.qemu-user-static": {
     "description": "Generic and open source machine emulator and virtualizer",
     "pname": "qemu-user-static",
-    "version": "10.0.3+ds-2"
+    "version": "10.0.3+ds-3"
   },
   "legacyPackages.x86_64-linux.uncategorized.qq": {
     "description": "QQ for Linux",
@@ -4942,7 +4967,7 @@
   "legacyPackages.x86_64-linux.uncategorized.qsp-lib": {
     "description": "QSP is an Interactive Fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-15"
   },
   "legacyPackages.x86_64-linux.uncategorized.red-star-os-rgjanggi": {
     "description": "Rgjanggi game from DPRK Red Star OS 3.0, heavily sandboxed. Use at your own risk",
@@ -5062,7 +5087,7 @@
   "legacyPackages.x86_64-linux.uncategorized.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-15"
   },
   "legacyPackages.x86_64-linux.uncategorized.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -5142,7 +5167,7 @@
   "legacyPackages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-15"
   },
   "legacyPackages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -5522,7 +5547,7 @@
   "packages.x86_64-linux.funasr": {
     "description": "Fundamental End-to-End Speech Recognition Toolkit and Open Source SOTA Pretrained Models",
     "pname": "python3.13-funasr",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-15"
   },
   "packages.x86_64-linux.geolite2": {
     "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
@@ -5707,7 +5732,7 @@
   "packages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "packages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -5717,12 +5742,12 @@
   "packages.x86_64-linux.linguaspark-server": {
     "description": "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs",
     "pname": "linguaspark-server",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "packages.x86_64-linux.linguaspark-server-x86-64-v3": {
     "description": "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs",
     "pname": "linguaspark-server",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "packages.x86_64-linux.loralib": {
     "description": "Implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\"",
@@ -5767,7 +5792,7 @@
   "packages.x86_64-linux.mtranservercore-rs": {
     "description": "Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs",
     "pname": "linguaspark-server",
-    "version": "0-unstable-2025-08-13"
+    "version": "0-unstable-2025-08-14"
   },
   "packages.x86_64-linux.ncmdump-rs": {
     "description": "NetEase Cloud Music copyright protection file dump by rust",
@@ -5992,7 +6017,7 @@
   "packages.x86_64-linux.qemu-user-static": {
     "description": "Generic and open source machine emulator and virtualizer",
     "pname": "qemu-user-static",
-    "version": "10.0.3+ds-2"
+    "version": "10.0.3+ds-3"
   },
   "packages.x86_64-linux.qq": {
     "description": "QQ for Linux",
@@ -6017,7 +6042,7 @@
   "packages.x86_64-linux.qsp-lib": {
     "description": "QSP is an Interactive Fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-15"
   },
   "packages.x86_64-linux.r8125": {
     "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
@@ -6192,7 +6217,7 @@
   "packages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-15"
   },
   "packages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
