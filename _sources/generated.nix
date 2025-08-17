@@ -919,12 +919,12 @@
   };
   kui = {
     pname = "kui";
-    version = "v1.12.0";
+    version = "v1.13.0";
     src = fetchFromGitHub {
       owner = "abersheeran";
       repo = "kui";
-      tag = "v1.12.0";
-      hash = "sha256-VIXK8bSuHhw75K6v+h/AYTsePSbBkf2QLt1UBZ58+jo=";
+      tag = "v1.13.0";
+      hash = "sha256-rD7y2IpJCBbgXF2xeSPN+aPUH9OcTjmqn6+g4qYx6LM=";
     };
   };
   ldap-auth-proxy = {
@@ -1087,12 +1087,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b6181";
+    version = "b6184";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b6181";
-      hash = "sha256-w/FWh/QmaBJ4ZWKR1AyN2oaiPoCGhWSxb8gEUXNiDWo=";
+      tag = "b6184";
+      hash = "sha256-zGgOBcJUgvf/WYVBeFaMOj9C9zVfu4l/OJJajzsSCy0=";
     };
   };
   loralib = {
@@ -1108,12 +1108,12 @@
   };
   lyrica = {
     pname = "lyrica";
-    version = "v0.13";
+    version = "v0.14-1";
     src = fetchFromGitHub {
       owner = "chiyuki0325";
       repo = "lyrica";
-      tag = "v0.13";
-      hash = "sha256-4v3CvWhs6vSIKo2FJK6jXFxd7VdXShr2lIuly+vIyAs=";
+      tag = "v0.14-1";
+      hash = "sha256-Lo3PLZaeGVw9ZbTVxC5PQ3eKBXirYz+jEGEjf3m7OLw=";
     };
   };
   magiskboot = {
@@ -1126,12 +1126,12 @@
   };
   mautrix-gmessages = {
     pname = "mautrix-gmessages";
-    version = "v0.6.4";
+    version = "v0.6.5";
     src = fetchFromGitHub {
       owner = "mautrix";
       repo = "gmessages";
-      tag = "v0.6.4";
-      hash = "sha256-J0nlO4jYa9QjkiZTHduzTjrkw5wG/0GD1y60cwgQfZ4=";
+      tag = "v0.6.5";
+      hash = "sha256-AIw7Grh4BEDT33N4004XjOtIepguO2SbdUmTHGJ1A2M=";
     };
   };
   metee = {
@@ -1753,14 +1753,14 @@
   };
   qsp-lib = {
     pname = "qsp-lib";
-    version = "8c3c9c9ee8352df10061c00deb5919f9ae78aacb";
+    version = "d7b1a5f350c3413fe4c2f176efdb36da4dbf0dd2";
     src = fetchFromGitHub {
       owner = "QSPFoundation";
       repo = "qsp";
-      rev = "8c3c9c9ee8352df10061c00deb5919f9ae78aacb";
-      hash = "sha256-u514qX4Jv442dD0nFoY427JFBx/obrJ6a1JQwErOB44=";
+      rev = "d7b1a5f350c3413fe4c2f176efdb36da4dbf0dd2";
+      hash = "sha256-MfKX0HvItlE8abcQLYt592lYxHiUs8ZqKmvK1s4Wa5g=";
     };
-    date = "2025-08-15";
+    date = "2025-08-17";
   };
   qsp-stable = {
     pname = "qsp-stable";
@@ -1835,12 +1835,12 @@
   };
   rime-ice = {
     pname = "rime-ice";
-    version = "8544a7bee4f8b775e7794bf991d1db65049e4080";
+    version = "39b04584c216fec7cdc30270fc9b6f054423e202";
     src = fetchFromGitHub {
       owner = "iDvel";
       repo = "rime-ice";
-      rev = "8544a7bee4f8b775e7794bf991d1db65049e4080";
-      hash = "sha256-D/ozd7E7sjjydONLWmvLZU+5U6PkIF54xRTmO7sGKB4=";
+      rev = "39b04584c216fec7cdc30270fc9b6f054423e202";
+      hash = "sha256-AP2T4G/KDVOLzzRXHrO2c33bV/HxSOhu8QCeiUP/IzI=";
     };
     date = "2025-08-16";
   };
@@ -1913,12 +1913,12 @@
   };
   sam-toki-mouse-cursors = {
     pname = "sam-toki-mouse-cursors";
-    version = "v8.00";
+    version = "v8.01";
     src = fetchFromGitHub {
       owner = "SamToki";
       repo = "Sam-Toki-Mouse-Cursors";
-      tag = "v8.00";
-      hash = "sha256-6z2JUokqjaV3nykI+kI0DChti8FeuPyQ566ycGEWQxc=";
+      tag = "v8.01";
+      hash = "sha256-kUJYGgVSv6CAoH8iBS2w2Zlkt8l15FzabIxM34Rdufk=";
     };
   };
   sgx-software-enable = {
@@ -2191,15 +2191,15 @@
   };
   uni-api = {
     pname = "uni-api";
-    version = "9e4a5e579e1bf6149671fb733e90966fd2887148";
+    version = "b193229bd5d7b4864b3ac16916f05de79267b506";
     src = fetchFromGitHub {
       owner = "yym68686";
       repo = "uni-api";
-      rev = "9e4a5e579e1bf6149671fb733e90966fd2887148";
+      rev = "b193229bd5d7b4864b3ac16916f05de79267b506";
       fetchSubmodules = true;
-      hash = "sha256-cEs9+q8s/MsfCuo1aSwyOe0HgKVE4XbCnrPtpecSIFk=";
+      hash = "sha256-htbl5BDVQMWjdruQgPMgUTflzDZXDGop1P0Qis57HYw=";
     };
-    date = "2025-08-16";
+    date = "2025-08-17";
   };
   unigine-heaven = {
     pname = "unigine-heaven";

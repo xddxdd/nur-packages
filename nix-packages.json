@@ -857,7 +857,7 @@
   "legacyPackages.x86_64-linux.kui": {
     "description": "Easy-to-use web framework",
     "pname": "python3.13-kui",
-    "version": "1.12.0"
+    "version": "1.13.0"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.asterisk": {
     "description": "Asterisk with Lan Tian modifications",
@@ -887,7 +887,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.llama-cpp": {
     "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
     "pname": "llama-cpp",
-    "version": "6181"
+    "version": "6184"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.ls-iommu": {
     "description": "List IOMMUs on system",
@@ -1362,12 +1362,12 @@
   "legacyPackages.x86_64-linux.lyrica": {
     "description": "Linux desktop lyrics widget focused on simplicity and integration",
     "pname": "lyrica",
-    "version": "0.13"
+    "version": "0.14-1"
   },
   "legacyPackages.x86_64-linux.lyrica-plasmoid": {
     "description": "Linux desktop lyrics widget focused on simplicity and integration (Plasmoid component)",
     "pname": "lyrica",
-    "version": "0.13"
+    "version": "0.14-1"
   },
   "legacyPackages.x86_64-linux.magiskboot": {
     "description": "Tool to unpack / repack boot images, parse / patch / extract cpio, patch dtb, hex patch binaries, and compress / decompress files with multiple algorithms",
@@ -1377,7 +1377,7 @@
   "legacyPackages.x86_64-linux.mautrix-gmessages": {
     "description": "Matrix-Google Messages puppeting bridge",
     "pname": "mautrix-gmessages",
-    "version": "0.6.4"
+    "version": "0.6.5"
   },
   "legacyPackages.x86_64-linux.metee": {
     "description": "C library to access CSE/CSME/GSC firmware via a MEI interface",
@@ -4112,7 +4112,7 @@
   "legacyPackages.x86_64-linux.python3Packages.kui": {
     "description": "Easy-to-use web framework",
     "pname": "python3.13-kui",
-    "version": "1.12.0"
+    "version": "1.13.0"
   },
   "legacyPackages.x86_64-linux.python3Packages.loralib": {
     "description": "Implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\"",
@@ -4252,7 +4252,7 @@
   "legacyPackages.x86_64-linux.qsp-lib": {
     "description": "QSP is an Interactive Fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-08-15"
+    "version": "0-unstable-2025-08-17"
   },
   "legacyPackages.x86_64-linux.r8125": {
     "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
@@ -4332,7 +4332,7 @@
   "legacyPackages.x86_64-linux.sam-toki-mouse-cursors": {
     "description": "Original mouse cursors (pointers) for Windows, with minimalistic design",
     "pname": "sam-toki-mouse-cursors",
-    "version": "8.00"
+    "version": "8.01"
   },
   "legacyPackages.x86_64-linux.sgx-software-enable": {
     "description": "This application will enable Intel SGX on Linux systems where the BIOS supports Intel SGX, but does not provide an explicit option to enable it. These systems can only enable Intel SGX via the \"software enable\" procedure",
@@ -4767,12 +4767,12 @@
   "legacyPackages.x86_64-linux.uncategorized.lyrica": {
     "description": "Linux desktop lyrics widget focused on simplicity and integration",
     "pname": "lyrica",
-    "version": "0.13"
+    "version": "0.14-1"
   },
   "legacyPackages.x86_64-linux.uncategorized.lyrica-plasmoid": {
     "description": "Linux desktop lyrics widget focused on simplicity and integration (Plasmoid component)",
     "pname": "lyrica",
-    "version": "0.13"
+    "version": "0.14-1"
   },
   "legacyPackages.x86_64-linux.uncategorized.magiskboot": {
     "description": "Tool to unpack / repack boot images, parse / patch / extract cpio, patch dtb, hex patch binaries, and compress / decompress files with multiple algorithms",
@@ -4782,7 +4782,7 @@
   "legacyPackages.x86_64-linux.uncategorized.mautrix-gmessages": {
     "description": "Matrix-Google Messages puppeting bridge",
     "pname": "mautrix-gmessages",
-    "version": "0.6.4"
+    "version": "0.6.5"
   },
   "legacyPackages.x86_64-linux.uncategorized.metee": {
     "description": "C library to access CSE/CSME/GSC firmware via a MEI interface",
@@ -4967,7 +4967,7 @@
   "legacyPackages.x86_64-linux.uncategorized.qsp-lib": {
     "description": "QSP is an Interactive Fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-08-15"
+    "version": "0-unstable-2025-08-17"
   },
   "legacyPackages.x86_64-linux.uncategorized.red-star-os-rgjanggi": {
     "description": "Rgjanggi game from DPRK Red Star OS 3.0, heavily sandboxed. Use at your own risk",
@@ -5027,7 +5027,7 @@
   "legacyPackages.x86_64-linux.uncategorized.sam-toki-mouse-cursors": {
     "description": "Original mouse cursors (pointers) for Windows, with minimalistic design",
     "pname": "sam-toki-mouse-cursors",
-    "version": "8.00"
+    "version": "8.01"
   },
   "legacyPackages.x86_64-linux.uncategorized.sgx-software-enable": {
     "description": "This application will enable Intel SGX on Linux systems where the BIOS supports Intel SGX, but does not provide an explicit option to enable it. These systems can only enable Intel SGX via the \"software enable\" procedure",
@@ -5087,7 +5087,7 @@
   "legacyPackages.x86_64-linux.uncategorized.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-08-16"
+    "version": "0-unstable-2025-08-17"
   },
   "legacyPackages.x86_64-linux.uncategorized.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -5167,7 +5167,7 @@
   "legacyPackages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-08-16"
+    "version": "0-unstable-2025-08-17"
   },
   "legacyPackages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
@@ -5677,7 +5677,7 @@
   "packages.x86_64-linux.kui": {
     "description": "Easy-to-use web framework",
     "pname": "python3.13-kui",
-    "version": "1.12.0"
+    "version": "1.13.0"
   },
   "packages.x86_64-linux.lantianCustomized": {
     "description": "",
@@ -5757,12 +5757,12 @@
   "packages.x86_64-linux.lyrica": {
     "description": "Linux desktop lyrics widget focused on simplicity and integration",
     "pname": "lyrica",
-    "version": "0.13"
+    "version": "0.14-1"
   },
   "packages.x86_64-linux.lyrica-plasmoid": {
     "description": "Linux desktop lyrics widget focused on simplicity and integration (Plasmoid component)",
     "pname": "lyrica",
-    "version": "0.13"
+    "version": "0.14-1"
   },
   "packages.x86_64-linux.magiskboot": {
     "description": "Tool to unpack / repack boot images, parse / patch / extract cpio, patch dtb, hex patch binaries, and compress / decompress files with multiple algorithms",
@@ -5772,7 +5772,7 @@
   "packages.x86_64-linux.mautrix-gmessages": {
     "description": "Matrix-Google Messages puppeting bridge",
     "pname": "mautrix-gmessages",
-    "version": "0.6.4"
+    "version": "0.6.5"
   },
   "packages.x86_64-linux.metee": {
     "description": "C library to access CSE/CSME/GSC firmware via a MEI interface",
@@ -6042,7 +6042,7 @@
   "packages.x86_64-linux.qsp-lib": {
     "description": "QSP is an Interactive Fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-08-15"
+    "version": "0-unstable-2025-08-17"
   },
   "packages.x86_64-linux.r8125": {
     "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
@@ -6122,7 +6122,7 @@
   "packages.x86_64-linux.sam-toki-mouse-cursors": {
     "description": "Original mouse cursors (pointers) for Windows, with minimalistic design",
     "pname": "sam-toki-mouse-cursors",
-    "version": "8.00"
+    "version": "8.01"
   },
   "packages.x86_64-linux.sgx-software-enable": {
     "description": "This application will enable Intel SGX on Linux systems where the BIOS supports Intel SGX, but does not provide an explicit option to enable it. These systems can only enable Intel SGX via the \"software enable\" procedure",
@@ -6217,7 +6217,7 @@
   "packages.x86_64-linux.uni-api": {
     "description": "Unifies the management of LLM APIs. Call multiple backend services through a unified API interface",
     "pname": "uni-api",
-    "version": "0-unstable-2025-08-16"
+    "version": "0-unstable-2025-08-17"
   },
   "packages.x86_64-linux.unigine-heaven": {
     "description": "Extreme performance and stability test for PC hardware: video card, power supply, cooling system",
