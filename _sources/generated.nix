@@ -217,25 +217,25 @@
   };
   cachyos-kernel = {
     pname = "cachyos-kernel";
-    version = "a21451e0b25b93d4902b7159195f63cc86a36392";
+    version = "1597dfad0b6b2a4b446456d23330083efc9f8fab";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "linux-cachyos";
-      rev = "a21451e0b25b93d4902b7159195f63cc86a36392";
-      hash = "sha256-pdQAvWXocOW6N4wdJge67U0BQcHRhEH+Fj93w6VcGHI=";
+      rev = "1597dfad0b6b2a4b446456d23330083efc9f8fab";
+      hash = "sha256-ri81QghV0+7lzi43ESkW9qQU/CO0tsYWe8t7QO8yVfE=";
     };
-    date = "2025-08-15";
+    date = "2025-08-18";
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "28e3bd8b232005a81775697a734e93bdb0f339c7";
+    version = "90d3125d505dc1ea326b1d4ab326ceb48523186f";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "28e3bd8b232005a81775697a734e93bdb0f339c7";
-      hash = "sha256-zOZdVKBwF6VevHUpO5mkbsv4Es19U38ODBHVUWWT1Ds=";
+      rev = "90d3125d505dc1ea326b1d4ab326ceb48523186f";
+      hash = "sha256-GqZ+yoRsBHQBrNKykW1YftaztOEJUBh0ghbfxgpGSUM=";
     };
-    date = "2025-08-15";
+    date = "2025-08-18";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -623,34 +623,34 @@
   };
   fr24feed-amd64 = {
     pname = "fr24feed-amd64";
-    version = "1.0.51-0";
+    version = "1.0.52-0";
     src = fetchurl {
-      url = "https://repo-feed.flightradar24.com/pool/linux-stable/f/fr24feed/fr24feed_1.0.51-0_amd64.deb";
-      hash = "sha256-yGTCBxEgRkErbZeiu6/EMIwrQA+8Qu9R55OhSA1iko0=";
+      url = "https://repo-feed.flightradar24.com/pool/linux-stable/f/fr24feed/fr24feed_1.0.52-0_amd64.deb";
+      hash = "sha256-WXx0OEoNlXNi4cW5zqiDLUHpe5k9oiHgzRdrq9Oepr0=";
     };
   };
   fr24feed-arm64 = {
     pname = "fr24feed-arm64";
-    version = "1.0.51-0";
+    version = "1.0.52-0";
     src = fetchurl {
-      url = "https://repo-feed.flightradar24.com/pool/raspberrypi-stable/f/fr24feed/fr24feed_1.0.51-0_arm64.deb";
-      hash = "sha256-dQ7N/atF/D2IAuk4ZUkrhC5FzfXMHU6+pq0IvScGnhw=";
+      url = "https://repo-feed.flightradar24.com/pool/raspberrypi-stable/f/fr24feed/fr24feed_1.0.52-0_arm64.deb";
+      hash = "sha256-ACalUMhZLHPpRbeVHWxrZfjcGuTQTMGiZw81ZAagnZQ=";
     };
   };
   fr24feed-armhf = {
     pname = "fr24feed-armhf";
-    version = "1.0.51-0";
+    version = "1.0.52-0";
     src = fetchurl {
-      url = "https://repo-feed.flightradar24.com/pool/raspberrypi-stable/f/fr24feed/fr24feed_1.0.51-0_armhf.deb";
-      hash = "sha256-33TeySayN7L4rxCDbFKaLt/xfRqLRniWfmbwI51cq8A=";
+      url = "https://repo-feed.flightradar24.com/pool/raspberrypi-stable/f/fr24feed/fr24feed_1.0.52-0_armhf.deb";
+      hash = "sha256-zB+nkW0qi96+w0VYNkIJdjXTW/izdYAJuyxO+EiQZ5c=";
     };
   };
   fr24feed-i386 = {
     pname = "fr24feed-i386";
-    version = "1.0.51-0";
+    version = "1.0.52-0";
     src = fetchurl {
-      url = "https://repo-feed.flightradar24.com/pool/linux-stable/f/fr24feed/fr24feed_1.0.51-0_i386.deb";
-      hash = "sha256-8KP9HrACfNTamzp1o2aqecvEe0FUn+DZSCvMWFaRp1c=";
+      url = "https://repo-feed.flightradar24.com/pool/linux-stable/f/fr24feed/fr24feed_1.0.52-0_i386.deb";
+      hash = "sha256-SZxihzEiVSBTpI/yIRV9vFjW9mjH6HqjVlCvdcqerrM=";
     };
   };
   ftp-proxy = {
@@ -674,25 +674,25 @@
   };
   geolite2-asn = {
     pname = "geolite2-asn";
-    version = "2025.08.16";
+    version = "2025.08.19";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.16/GeoLite2-ASN.mmdb";
-      hash = "sha256-NIt8zSMtf+7ziZQWGdq1i2MQi46zePCSJ+3S876r5/M=";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.19/GeoLite2-ASN.mmdb";
+      hash = "sha256-KDWAO5aN6YiNGE9l2v3P+m0z6HTtloU/k22C3I4mzHw=";
     };
   };
   geolite2-city = {
     pname = "geolite2-city";
-    version = "2025.08.16";
+    version = "2025.08.19";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.16/GeoLite2-City.mmdb";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.19/GeoLite2-City.mmdb";
       hash = "sha256-F/vosS1pVvVa8ksWAeAL1u3F6k2pt3PnUzSRMGbKGb8=";
     };
   };
   geolite2-country = {
     pname = "geolite2-country";
-    version = "2025.08.16";
+    version = "2025.08.19";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.16/GeoLite2-Country.mmdb";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.19/GeoLite2-Country.mmdb";
       hash = "sha256-zZHInoxziygaqiO2ObYlBUSc/3LbilIeGAxvntiYyBc=";
     };
   };
@@ -969,14 +969,14 @@
   };
   liboqs-unstable = {
     pname = "liboqs-unstable";
-    version = "16b862997207eb717dd84e27ec7f893bb06fe7ab";
+    version = "2dc4afc2cf001e900dd496561907fb49de210123";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "16b862997207eb717dd84e27ec7f893bb06fe7ab";
-      hash = "sha256-DYZM0Cz9mF/Kb/UpUuY8xdeS17L4fYqrFTQAElwRFOg=";
+      rev = "2dc4afc2cf001e900dd496561907fb49de210123";
+      hash = "sha256-MFW0iH3mzlGysVbV88u48ccqqhv61yKS6SRWdNWUUfE=";
     };
-    date = "2025-08-14";
+    date = "2025-08-18";
   };
   libqcef = {
     pname = "libqcef";
@@ -1087,12 +1087,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b6184";
+    version = "b6202";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b6184";
-      hash = "sha256-zGgOBcJUgvf/WYVBeFaMOj9C9zVfu4l/OJJajzsSCy0=";
+      tag = "b6202";
+      hash = "sha256-xLlM/4Bah9a8K4cGjikQ6iOijyucJWKf9GIcCcSA80Q=";
     };
   };
   loralib = {
@@ -1785,12 +1785,12 @@
   };
   r8125 = {
     pname = "r8125";
-    version = "9.016.00-1";
+    version = "9.016.01-1";
     src = fetchFromGitHub {
       owner = "awesometic";
       repo = "realtek-r8125-dkms";
-      tag = "9.016.00-1";
-      hash = "sha256-OxIUAygHDj16mf7SPC9/CJGXafxQh6P91OJWcYvCMck=";
+      tag = "9.016.01-1";
+      hash = "sha256-bVVIUIuQZBtJD55n60TgWR25L06v6z5WmAcZAQalzHg=";
     };
   };
   r8168 = {

@@ -667,7 +667,7 @@
   "legacyPackages.x86_64-linux.fr24feed": {
     "description": "Flightradar24 Decoder & Feeder lets you effortlessly share ADS-B data with Flightradar24",
     "pname": "fr24feed",
-    "version": "1.0.51-0"
+    "version": "1.0.52-0"
   },
   "legacyPackages.x86_64-linux.ftp-proxy": {
     "description": "FTP Proxy Server",
@@ -682,7 +682,7 @@
   "legacyPackages.x86_64-linux.geolite2": {
     "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
     "pname": "geolite2",
-    "version": "2025.08.16"
+    "version": "2025.08.19"
   },
   "legacyPackages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
@@ -832,7 +832,7 @@
   "legacyPackages.x86_64-linux.kernel-modules.r8125": {
     "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
     "pname": "r8125",
-    "version": "9.016.00-1"
+    "version": "9.016.01-1"
   },
   "legacyPackages.x86_64-linux.kernel-modules.r8168": {
     "description": "Linux device driver for Realtek Ethernet controllers",
@@ -867,7 +867,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.attic-telnyx-compatible": {
     "description": "Multi-tenant Nix Binary Cache",
     "pname": "attic",
-    "version": "0-unstable-2025-08-07"
+    "version": "0-unstable-2025-08-16"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.coredns": {
     "description": "CoreDNS with Lan Tian's modifications",
@@ -887,7 +887,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.llama-cpp": {
     "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
     "pname": "llama-cpp",
-    "version": "6184"
+    "version": "6202"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.ls-iommu": {
     "description": "List IOMMUs on system",
@@ -1337,7 +1337,7 @@
   "legacyPackages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-18"
   },
   "legacyPackages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -4257,7 +4257,7 @@
   "legacyPackages.x86_64-linux.r8125": {
     "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
     "pname": "r8125",
-    "version": "9.016.00-1"
+    "version": "9.016.01-1"
   },
   "legacyPackages.x86_64-linux.r8168": {
     "description": "Linux device driver for Realtek Ethernet controllers",
@@ -4627,7 +4627,7 @@
   "legacyPackages.x86_64-linux.uncategorized.fr24feed": {
     "description": "Flightradar24 Decoder & Feeder lets you effortlessly share ADS-B data with Flightradar24",
     "pname": "fr24feed",
-    "version": "1.0.51-0"
+    "version": "1.0.52-0"
   },
   "legacyPackages.x86_64-linux.uncategorized.ftp-proxy": {
     "description": "FTP Proxy Server",
@@ -4637,7 +4637,7 @@
   "legacyPackages.x86_64-linux.uncategorized.geolite2": {
     "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
     "pname": "geolite2",
-    "version": "2025.08.16"
+    "version": "2025.08.19"
   },
   "legacyPackages.x86_64-linux.uncategorized.google-earth-pro": {
     "description": "World sphere viewer",
@@ -4747,7 +4747,7 @@
   "legacyPackages.x86_64-linux.uncategorized.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-18"
   },
   "legacyPackages.x86_64-linux.uncategorized.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -5537,7 +5537,7 @@
   "packages.x86_64-linux.fr24feed": {
     "description": "Flightradar24 Decoder & Feeder lets you effortlessly share ADS-B data with Flightradar24",
     "pname": "fr24feed",
-    "version": "1.0.51-0"
+    "version": "1.0.52-0"
   },
   "packages.x86_64-linux.ftp-proxy": {
     "description": "FTP Proxy Server",
@@ -5552,7 +5552,7 @@
   "packages.x86_64-linux.geolite2": {
     "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
     "pname": "geolite2",
-    "version": "2025.08.16"
+    "version": "2025.08.19"
   },
   "packages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
@@ -5732,7 +5732,7 @@
   "packages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-08-14"
+    "version": "0-unstable-2025-08-18"
   },
   "packages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -6047,7 +6047,7 @@
   "packages.x86_64-linux.r8125": {
     "description": "Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface",
     "pname": "r8125",
-    "version": "9.016.00-1"
+    "version": "9.016.01-1"
   },
   "packages.x86_64-linux.r8168": {
     "description": "Linux device driver for Realtek Ethernet controllers",
