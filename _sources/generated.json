@@ -4629,7 +4629,7 @@
     },
     "zstd-nginx-module": {
         "cargoLocks": null,
-        "date": "2025-06-23",
+        "date": "2025-07-07",
         "extract": null,
         "name": "zstd-nginx-module",
         "passthru": null,
@@ -4639,13 +4639,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "tokers",
-            "repo": "zstd-nginx-module",
-            "rev": "057a7d339af1111d04b5a9ac5ae9b0250d17cd94",
-            "sha256": "sha256-bDHtHdmFoLkJo9pizkBl3ctnzQjGqbU84tEL2Vb/6tA=",
+            "owner": "HanadaLee",
+            "repo": "ngx_http_zstd_module",
+            "rev": "87f3302e72e0faf721db0cc9462d0a9b960e4061",
+            "sha256": "sha256-OJEEUK1inS8chCLWNZOh3VsW6TwYgh2F1z0jKV5IE8c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "057a7d339af1111d04b5a9ac5ae9b0250d17cd94"
+        "version": "87f3302e72e0faf721db0cc9462d0a9b960e4061"
     }
 }

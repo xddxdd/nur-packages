@@ -2374,13 +2374,13 @@
   };
   zstd-nginx-module = {
     pname = "zstd-nginx-module";
-    version = "057a7d339af1111d04b5a9ac5ae9b0250d17cd94";
+    version = "87f3302e72e0faf721db0cc9462d0a9b960e4061";
     src = fetchFromGitHub {
-      owner = "tokers";
-      repo = "zstd-nginx-module";
-      rev = "057a7d339af1111d04b5a9ac5ae9b0250d17cd94";
-      hash = "sha256-bDHtHdmFoLkJo9pizkBl3ctnzQjGqbU84tEL2Vb/6tA=";
+      owner = "HanadaLee";
+      repo = "ngx_http_zstd_module";
+      rev = "87f3302e72e0faf721db0cc9462d0a9b960e4061";
+      hash = "sha256-OJEEUK1inS8chCLWNZOh3VsW6TwYgh2F1z0jKV5IE8c=";
     };
-    date = "2025-06-23";
+    date = "2025-07-07";
   };
 }
