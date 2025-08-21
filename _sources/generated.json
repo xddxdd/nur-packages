@@ -436,7 +436,7 @@
     },
     "cachyos-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-08-18",
+        "date": "2025-08-21",
         "extract": null,
         "name": "cachyos-kernel-patches",
         "passthru": null,
@@ -448,12 +448,12 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "kernel-patches",
-            "rev": "90d3125d505dc1ea326b1d4ab326ceb48523186f",
-            "sha256": "sha256-GqZ+yoRsBHQBrNKykW1YftaztOEJUBh0ghbfxgpGSUM=",
+            "rev": "2125b43af7979df316c6a66e29304e00a328d5c6",
+            "sha256": "sha256-5fNwe+/rJBKEuAZw4ky2d2kzBdizFcFsXmY/gd/tPiM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "90d3125d505dc1ea326b1d4ab326ceb48523186f"
+        "version": "2125b43af7979df316c6a66e29304e00a328d5c6"
     },
     "calibre-cops": {
         "cargoLocks": null,
@@ -994,12 +994,12 @@
             "name": null,
             "owner": "rany2",
             "repo": "edge-tts",
-            "rev": "7.2.0",
-            "sha256": "sha256-HnMMh3N9mUF8ALRpgx1wjrF2RL2ntRyVOOz4RcJyRMI=",
+            "rev": "7.2.1",
+            "sha256": "sha256-Q1mtdvX79yRhpmTXU398kw6dM4M3D1tQE78Bh7+p/uY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7.2.0"
+        "version": "7.2.1"
     },
     "etherguard": {
         "cargoLocks": null,
@@ -1674,12 +1674,12 @@
             "name": null,
             "owner": "kata-containers",
             "repo": "kata-containers",
-            "rev": "3.19.1",
-            "sha256": "sha256-h9Jsto2l1NhQEwIQoecT/D+yt/QbGoqqH/l6NNzJOwk=",
+            "rev": "3.20.0",
+            "sha256": "sha256-9HnT13f0aC713z9JOn3lsXicljrEIc5zxicTz2COJdM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3.19.1"
+        "version": "3.20.0"
     },
     "kata-image": {
         "cargoLocks": null,
@@ -1690,11 +1690,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ruJEib+iM/5+iYfHhK2/FOmtdwfQJKNe4vv6pkaGp7w=",
+            "sha256": "sha256-vGvEKcvygZkZPP9d6kSZkRU4Qpcb6KuV8HuVTkuuzvU=",
             "type": "url",
-            "url": "https://github.com/kata-containers/kata-containers/releases/download/3.19.1/kata-static-3.19.1-amd64.tar.xz"
+            "url": "https://github.com/kata-containers/kata-containers/releases/download/3.20.0/kata-static-3.20.0-amd64.tar.xz"
         },
-        "version": "3.19.1"
+        "version": "3.20.0"
     },
     "kikoplay": {
         "cargoLocks": null,
@@ -1881,7 +1881,7 @@
     },
     "liboqs-unstable": {
         "cargoLocks": null,
-        "date": "2025-08-18",
+        "date": "2025-08-19",
         "extract": null,
         "name": "liboqs-unstable",
         "passthru": null,
@@ -1893,12 +1893,12 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "2dc4afc2cf001e900dd496561907fb49de210123",
-            "sha256": "sha256-MFW0iH3mzlGysVbV88u48ccqqhv61yKS6SRWdNWUUfE=",
+            "rev": "1698d86177c51aeea3f22eb531a793625edd321f",
+            "sha256": "sha256-zJdC/ZmBMc+xz1RKG21DdJ+B3k5ZUOqkzkHGa3NADX4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2dc4afc2cf001e900dd496561907fb49de210123"
+        "version": "1698d86177c51aeea3f22eb531a793625edd321f"
     },
     "libqcef": {
         "cargoLocks": null,
@@ -2017,13 +2017,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "6.16.1-xanmod1",
-            "sha256": "sha256-J3kUSR0I3p/OLBGEq5aQHwLcUX6bWOq2f0CZxY+Dd4k=",
+            "rev": "6.16.2-xanmod1",
+            "sha256": "sha256-Wn6uqKuOnGlVG9mSpX38+hVBAct2b/GO/WRHbWH7y2w=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/xanmod/linux.git"
         },
-        "version": "6.16.1-xanmod1"
+        "version": "6.16.2-xanmod1"
     },
     "linux-xanmod-6_0": {
         "cargoLocks": null,
@@ -2077,13 +2077,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "6.12.42-xanmod1",
-            "sha256": "sha256-q/a6ik5kKRKOcbmGxGBdCDW3dsgIDf/7tvEpcGjDrHI=",
+            "rev": "6.12.43-xanmod1",
+            "sha256": "sha256-Jc3VKpUaIc1nBbbCZ/jAx/kteuQBQBO6TEPlaNq8Jrk=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/xanmod/linux.git"
         },
-        "version": "6.12.42-xanmod1"
+        "version": "6.12.43-xanmod1"
     },
     "linux-xanmod-6_6": {
         "cargoLocks": null,
@@ -2119,12 +2119,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b6202",
-            "sha256": "sha256-xLlM/4Bah9a8K4cGjikQ6iOijyucJWKf9GIcCcSA80Q=",
+            "rev": "b6225",
+            "sha256": "sha256-0Ea9rj+lPAmFLsn2sNWjKjGTO/Tg0voegmmZPrDG4Ek=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b6202"
+        "version": "b6225"
     },
     "loralib": {
         "cargoLocks": null,
@@ -3747,12 +3747,12 @@
             "name": null,
             "owner": "SamToki",
             "repo": "Sam-Toki-Mouse-Cursors",
-            "rev": "v8.01",
-            "sha256": "sha256-kUJYGgVSv6CAoH8iBS2w2Zlkt8l15FzabIxM34Rdufk=",
+            "rev": "v9.02",
+            "sha256": "sha256-ZhG+PW+BJ33qvtWSVSAu3zsGCVbT8zFnun1NwsTmmEU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v8.01"
+        "version": "v9.02"
     },
     "sgx-software-enable": {
         "cargoLocks": null,
@@ -4275,7 +4275,7 @@
     },
     "uni-api": {
         "cargoLocks": null,
-        "date": "2025-08-17",
+        "date": "2025-08-21",
         "extract": null,
         "name": "uni-api",
         "passthru": null,
@@ -4287,12 +4287,12 @@
             "name": null,
             "owner": "yym68686",
             "repo": "uni-api",
-            "rev": "b193229bd5d7b4864b3ac16916f05de79267b506",
-            "sha256": "sha256-htbl5BDVQMWjdruQgPMgUTflzDZXDGop1P0Qis57HYw=",
+            "rev": "fdb963ec7f8a22d1523831a3372ce536b058f2d2",
+            "sha256": "sha256-KYoBfEhgla8zPHykBR4ODdZKr0YTF4iigGulaTiq6DQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b193229bd5d7b4864b3ac16916f05de79267b506"
+        "version": "fdb963ec7f8a22d1523831a3372ce536b058f2d2"
     },
     "unigine-heaven": {
         "cargoLocks": null,
@@ -4425,12 +4425,12 @@
             "name": null,
             "owner": "lucidrains",
             "repo": "vector-quantize-pytorch",
-            "rev": "1.22.18a",
-            "sha256": "sha256-PxlGSt4oAuktTMHWIhP8G+vcvHoeD/1M4IpfCzHdA6Y=",
+            "rev": "1.23.1",
+            "sha256": "sha256-fMdZnQCZBeTHjnxaf4+VvKH2xp+nywHysNrog01I/bs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.22.18a"
+        "version": "1.23.1"
     },
     "vgpu-unlock-rs": {
         "cargoLocks": null,
