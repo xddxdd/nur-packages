@@ -469,11 +469,6 @@
     "pname": "calibre-cops",
     "version": "3.6.5"
   },
-  "legacyPackages.x86_64-linux.chmlib-utils": {
-    "description": "Library for dealing with Microsoft ITSS/CHM format files",
-    "pname": "chmlib",
-    "version": "0.40a"
-  },
   "legacyPackages.x86_64-linux.click-loglevel": {
     "description": "Log level parameter type for Click",
     "pname": "python3.13-click-loglevel",
@@ -4529,11 +4524,6 @@
     "pname": "calibre-cops",
     "version": "3.6.5"
   },
-  "legacyPackages.x86_64-linux.uncategorized.chmlib-utils": {
-    "description": "Library for dealing with Microsoft ITSS/CHM format files",
-    "pname": "chmlib",
-    "version": "0.40a"
-  },
   "legacyPackages.x86_64-linux.uncategorized.cockpy": {
     "description": "Public and open source version of the cbt2 ps im working on",
     "pname": "cockpy",
@@ -5378,11 +5368,6 @@
     "description": "Calibre OPDS (and HTML) PHP Server : web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...)",
     "pname": "calibre-cops",
     "version": "3.6.5"
-  },
-  "packages.x86_64-linux.chmlib-utils": {
-    "description": "Library for dealing with Microsoft ITSS/CHM format files",
-    "pname": "chmlib",
-    "version": "0.40a"
   },
   "packages.x86_64-linux.click-loglevel": {
     "description": "Log level parameter type for Click",
