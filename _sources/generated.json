@@ -415,7 +415,7 @@
     },
     "cachyos-kernel": {
         "cargoLocks": null,
-        "date": "2025-08-18",
+        "date": "2025-08-22",
         "extract": null,
         "name": "cachyos-kernel",
         "passthru": null,
@@ -427,16 +427,16 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "linux-cachyos",
-            "rev": "1597dfad0b6b2a4b446456d23330083efc9f8fab",
-            "sha256": "sha256-ri81QghV0+7lzi43ESkW9qQU/CO0tsYWe8t7QO8yVfE=",
+            "rev": "aa16ca36ace17e51fc2649fcebc5def4dd81de5a",
+            "sha256": "sha256-67yIND0+PZwX8U7uzpouj2tDxMFznCKqMWdTXsprGdI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1597dfad0b6b2a4b446456d23330083efc9f8fab"
+        "version": "aa16ca36ace17e51fc2649fcebc5def4dd81de5a"
     },
     "cachyos-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-08-21",
+        "date": "2025-08-22",
         "extract": null,
         "name": "cachyos-kernel-patches",
         "passthru": null,
@@ -448,12 +448,12 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "kernel-patches",
-            "rev": "2125b43af7979df316c6a66e29304e00a328d5c6",
-            "sha256": "sha256-5fNwe+/rJBKEuAZw4ky2d2kzBdizFcFsXmY/gd/tPiM=",
+            "rev": "5fa8a55ebcc1f87d22ae2cee888ecf39b377c2b5",
+            "sha256": "sha256-THToR0uQbLfvwlpAH2Yi7VUx/aWRb0r8ADXhAPNaJV0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2125b43af7979df316c6a66e29304e00a328d5c6"
+        "version": "5fa8a55ebcc1f87d22ae2cee888ecf39b377c2b5"
     },
     "calibre-cops": {
         "cargoLocks": null,
@@ -1310,11 +1310,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-KDWAO5aN6YiNGE9l2v3P+m0z6HTtloU/k22C3I4mzHw=",
+            "sha256": "sha256-IMe46l12gDj5huQZ3sL0cQ3mgMyuHGcmDsviZlERf/8=",
             "type": "url",
-            "url": "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.19/GeoLite2-ASN.mmdb"
+            "url": "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.22/GeoLite2-ASN.mmdb"
         },
-        "version": "2025.08.19"
+        "version": "2025.08.22"
     },
     "geolite2-city": {
         "cargoLocks": null,
@@ -1325,11 +1325,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-F/vosS1pVvVa8ksWAeAL1u3F6k2pt3PnUzSRMGbKGb8=",
+            "sha256": "sha256-Dy1gHlKqd7K8c1Icz3Td0P+PIwyeqZy5oOKFyDeMuFU=",
             "type": "url",
-            "url": "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.19/GeoLite2-City.mmdb"
+            "url": "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.22/GeoLite2-City.mmdb"
         },
-        "version": "2025.08.19"
+        "version": "2025.08.22"
     },
     "geolite2-country": {
         "cargoLocks": null,
@@ -1340,11 +1340,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-zZHInoxziygaqiO2ObYlBUSc/3LbilIeGAxvntiYyBc=",
+            "sha256": "sha256-V5MVvmrmAxk1N+uuwZv/HXs1oikL/G9hwUWls3uXE7s=",
             "type": "url",
-            "url": "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.19/GeoLite2-Country.mmdb"
+            "url": "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.22/GeoLite2-Country.mmdb"
         },
-        "version": "2025.08.19"
+        "version": "2025.08.22"
     },
     "glauth": {
         "cargoLocks": null,
@@ -2119,12 +2119,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b6225",
-            "sha256": "sha256-0Ea9rj+lPAmFLsn2sNWjKjGTO/Tg0voegmmZPrDG4Ek=",
+            "rev": "b6245",
+            "sha256": "sha256-bWWeRxj/0VZ2x9wwr/n7Sv06nMG8DFyEt7Ku3eyy6Cw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b6225"
+        "version": "b6245"
     },
     "loralib": {
         "cargoLocks": null,
@@ -3235,11 +3235,11 @@
         "pinned": false,
         "src": {
             "name": "qemu.deb",
-            "sha256": "sha256-uSzZQKfRp/bXwDzIhwR+S84Zb96h67fzp1z5V2Xwp2o=",
+            "sha256": "sha256-ljmFx6hMlxEjUpPm8pspN6CFS3loQAwYdt4Soqc0FXw=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-3_amd64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-4_amd64.deb"
         },
-        "version": "10.0.3+ds-3"
+        "version": "10.0.3+ds-4"
     },
     "qemu-user-static-arm64": {
         "cargoLocks": null,
@@ -3250,11 +3250,11 @@
         "pinned": false,
         "src": {
             "name": "qemu.deb",
-            "sha256": "sha256-zmHx5YLLqsKxzvz59dzpM4Zhk9xK50hhHFnPBBBQPxs=",
+            "sha256": "sha256-PJO1hLKv4t4d4hVR6sX2BL4C0S/WlMeVXX1/WKmTwW8=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-3_arm64.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-4_arm64.deb"
         },
-        "version": "10.0.3+ds-3"
+        "version": "10.0.3+ds-4"
     },
     "qemu-user-static-armhf": {
         "cargoLocks": null,
@@ -3265,11 +3265,11 @@
         "pinned": false,
         "src": {
             "name": "qemu.deb",
-            "sha256": "sha256-vCh76U1PcX51JnNo+elmh1gXXFyoGDZstIeyWapvyz0=",
+            "sha256": "sha256-c4f+SSRPJB+ciYMfeXOmId1VZrBp9NXHYqYN2fCFCnU=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-3_armhf.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-4_armhf.deb"
         },
-        "version": "10.0.3+ds-3"
+        "version": "10.0.3+ds-4"
     },
     "qemu-user-static-i386": {
         "cargoLocks": null,
@@ -3280,11 +3280,11 @@
         "pinned": false,
         "src": {
             "name": "qemu.deb",
-            "sha256": "sha256-JVG4i4UaPUuCAI6HYsItY3rmxab8LdTC87JBDzSjD3c=",
+            "sha256": "sha256-/0Ki+H2qdP398xIHqmJE4abOxuZ8qrpvoA0YnzBu4tQ=",
             "type": "url",
-            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-3_i386.deb"
+            "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-4_i386.deb"
         },
-        "version": "10.0.3+ds-3"
+        "version": "10.0.3+ds-4"
     },
     "qhttpengine": {
         "cargoLocks": null,
@@ -3417,7 +3417,7 @@
     },
     "qsp-lib": {
         "cargoLocks": null,
-        "date": "2025-08-17",
+        "date": "2025-08-22",
         "extract": null,
         "name": "qsp-lib",
         "passthru": null,
@@ -3429,12 +3429,12 @@
             "name": null,
             "owner": "QSPFoundation",
             "repo": "qsp",
-            "rev": "d7b1a5f350c3413fe4c2f176efdb36da4dbf0dd2",
-            "sha256": "sha256-MfKX0HvItlE8abcQLYt592lYxHiUs8ZqKmvK1s4Wa5g=",
+            "rev": "21d41c4460246a51fe26d0a679eff9c00cfedde8",
+            "sha256": "sha256-GtXCrTHMwC3hrhIpE6Mzg4cjW2aQKWy/AzVl6vaoV+M=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d7b1a5f350c3413fe4c2f176efdb36da4dbf0dd2"
+        "version": "21d41c4460246a51fe26d0a679eff9c00cfedde8"
     },
     "qsp-stable": {
         "cargoLocks": null,
@@ -4287,12 +4287,12 @@
             "name": null,
             "owner": "yym68686",
             "repo": "uni-api",
-            "rev": "fdb963ec7f8a22d1523831a3372ce536b058f2d2",
-            "sha256": "sha256-KYoBfEhgla8zPHykBR4ODdZKr0YTF4iigGulaTiq6DQ=",
+            "rev": "e936312eff2a813ba3ebea4efc65ccc81ab03110",
+            "sha256": "sha256-BrKq5/B48V+IQE3/dClNhJQ1SO46cRIBXqTdaWwxFK4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "fdb963ec7f8a22d1523831a3372ce536b058f2d2"
+        "version": "e936312eff2a813ba3ebea4efc65ccc81ab03110"
     },
     "unigine-heaven": {
         "cargoLocks": null,

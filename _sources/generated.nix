@@ -217,25 +217,25 @@
   };
   cachyos-kernel = {
     pname = "cachyos-kernel";
-    version = "1597dfad0b6b2a4b446456d23330083efc9f8fab";
+    version = "aa16ca36ace17e51fc2649fcebc5def4dd81de5a";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "linux-cachyos";
-      rev = "1597dfad0b6b2a4b446456d23330083efc9f8fab";
-      hash = "sha256-ri81QghV0+7lzi43ESkW9qQU/CO0tsYWe8t7QO8yVfE=";
+      rev = "aa16ca36ace17e51fc2649fcebc5def4dd81de5a";
+      hash = "sha256-67yIND0+PZwX8U7uzpouj2tDxMFznCKqMWdTXsprGdI=";
     };
-    date = "2025-08-18";
+    date = "2025-08-22";
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "2125b43af7979df316c6a66e29304e00a328d5c6";
+    version = "5fa8a55ebcc1f87d22ae2cee888ecf39b377c2b5";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "2125b43af7979df316c6a66e29304e00a328d5c6";
-      hash = "sha256-5fNwe+/rJBKEuAZw4ky2d2kzBdizFcFsXmY/gd/tPiM=";
+      rev = "5fa8a55ebcc1f87d22ae2cee888ecf39b377c2b5";
+      hash = "sha256-THToR0uQbLfvwlpAH2Yi7VUx/aWRb0r8ADXhAPNaJV0=";
     };
-    date = "2025-08-21";
+    date = "2025-08-22";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -674,26 +674,26 @@
   };
   geolite2-asn = {
     pname = "geolite2-asn";
-    version = "2025.08.19";
+    version = "2025.08.22";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.19/GeoLite2-ASN.mmdb";
-      hash = "sha256-KDWAO5aN6YiNGE9l2v3P+m0z6HTtloU/k22C3I4mzHw=";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.22/GeoLite2-ASN.mmdb";
+      hash = "sha256-IMe46l12gDj5huQZ3sL0cQ3mgMyuHGcmDsviZlERf/8=";
     };
   };
   geolite2-city = {
     pname = "geolite2-city";
-    version = "2025.08.19";
+    version = "2025.08.22";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.19/GeoLite2-City.mmdb";
-      hash = "sha256-F/vosS1pVvVa8ksWAeAL1u3F6k2pt3PnUzSRMGbKGb8=";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.22/GeoLite2-City.mmdb";
+      hash = "sha256-Dy1gHlKqd7K8c1Icz3Td0P+PIwyeqZy5oOKFyDeMuFU=";
     };
   };
   geolite2-country = {
     pname = "geolite2-country";
-    version = "2025.08.19";
+    version = "2025.08.22";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.19/GeoLite2-Country.mmdb";
-      hash = "sha256-zZHInoxziygaqiO2ObYlBUSc/3LbilIeGAxvntiYyBc=";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.22/GeoLite2-Country.mmdb";
+      hash = "sha256-V5MVvmrmAxk1N+uuwZv/HXs1oikL/G9hwUWls3uXE7s=";
     };
   };
   glauth = {
@@ -1087,12 +1087,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b6225";
+    version = "b6245";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b6225";
-      hash = "sha256-0Ea9rj+lPAmFLsn2sNWjKjGTO/Tg0voegmmZPrDG4Ek=";
+      tag = "b6245";
+      hash = "sha256-bWWeRxj/0VZ2x9wwr/n7Sv06nMG8DFyEt7Ku3eyy6Cw=";
     };
   };
   loralib = {
@@ -1650,38 +1650,38 @@
   };
   qemu-user-static-amd64 = {
     pname = "qemu-user-static-amd64";
-    version = "10.0.3+ds-3";
+    version = "10.0.3+ds-4";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-3_amd64.deb";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-4_amd64.deb";
       name = "qemu.deb";
-      hash = "sha256-uSzZQKfRp/bXwDzIhwR+S84Zb96h67fzp1z5V2Xwp2o=";
+      hash = "sha256-ljmFx6hMlxEjUpPm8pspN6CFS3loQAwYdt4Soqc0FXw=";
     };
   };
   qemu-user-static-arm64 = {
     pname = "qemu-user-static-arm64";
-    version = "10.0.3+ds-3";
+    version = "10.0.3+ds-4";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-3_arm64.deb";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-4_arm64.deb";
       name = "qemu.deb";
-      hash = "sha256-zmHx5YLLqsKxzvz59dzpM4Zhk9xK50hhHFnPBBBQPxs=";
+      hash = "sha256-PJO1hLKv4t4d4hVR6sX2BL4C0S/WlMeVXX1/WKmTwW8=";
     };
   };
   qemu-user-static-armhf = {
     pname = "qemu-user-static-armhf";
-    version = "10.0.3+ds-3";
+    version = "10.0.3+ds-4";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-3_armhf.deb";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-4_armhf.deb";
       name = "qemu.deb";
-      hash = "sha256-vCh76U1PcX51JnNo+elmh1gXXFyoGDZstIeyWapvyz0=";
+      hash = "sha256-c4f+SSRPJB+ciYMfeXOmId1VZrBp9NXHYqYN2fCFCnU=";
     };
   };
   qemu-user-static-i386 = {
     pname = "qemu-user-static-i386";
-    version = "10.0.3+ds-3";
+    version = "10.0.3+ds-4";
     src = fetchurl {
-      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-3_i386.deb";
+      url = "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.0.3+ds-4_i386.deb";
       name = "qemu.deb";
-      hash = "sha256-JVG4i4UaPUuCAI6HYsItY3rmxab8LdTC87JBDzSjD3c=";
+      hash = "sha256-/0Ki+H2qdP398xIHqmJE4abOxuZ8qrpvoA0YnzBu4tQ=";
     };
   };
   qhttpengine = {
@@ -1753,14 +1753,14 @@
   };
   qsp-lib = {
     pname = "qsp-lib";
-    version = "d7b1a5f350c3413fe4c2f176efdb36da4dbf0dd2";
+    version = "21d41c4460246a51fe26d0a679eff9c00cfedde8";
     src = fetchFromGitHub {
       owner = "QSPFoundation";
       repo = "qsp";
-      rev = "d7b1a5f350c3413fe4c2f176efdb36da4dbf0dd2";
-      hash = "sha256-MfKX0HvItlE8abcQLYt592lYxHiUs8ZqKmvK1s4Wa5g=";
+      rev = "21d41c4460246a51fe26d0a679eff9c00cfedde8";
+      hash = "sha256-GtXCrTHMwC3hrhIpE6Mzg4cjW2aQKWy/AzVl6vaoV+M=";
     };
-    date = "2025-08-17";
+    date = "2025-08-22";
   };
   qsp-stable = {
     pname = "qsp-stable";
@@ -2191,13 +2191,13 @@
   };
   uni-api = {
     pname = "uni-api";
-    version = "fdb963ec7f8a22d1523831a3372ce536b058f2d2";
+    version = "e936312eff2a813ba3ebea4efc65ccc81ab03110";
     src = fetchFromGitHub {
       owner = "yym68686";
       repo = "uni-api";
-      rev = "fdb963ec7f8a22d1523831a3372ce536b058f2d2";
+      rev = "e936312eff2a813ba3ebea4efc65ccc81ab03110";
       fetchSubmodules = true;
-      hash = "sha256-KYoBfEhgla8zPHykBR4ODdZKr0YTF4iigGulaTiq6DQ=";
+      hash = "sha256-BrKq5/B48V+IQE3/dClNhJQ1SO46cRIBXqTdaWwxFK4=";
     };
     date = "2025-08-21";
   };
