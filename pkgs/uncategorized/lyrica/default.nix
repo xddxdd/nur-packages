@@ -10,7 +10,6 @@ rustPlatform.buildRustPackage (finalAttrs: {
   inherit (sources.lyrica) pname version src;
 
   cargoHash = "sha256-1v8NrVcrJD1skuZ+ojAa31nw5DxWN/EknJZvtpqocHM=";
-  useFetchCargoVendor = true;
 
   nativeBuildInputs = [ pkg-config ];
 
