@@ -217,25 +217,25 @@
   };
   cachyos-kernel = {
     pname = "cachyos-kernel";
-    version = "5bd608d0adf9d3d98f9e10e190ce643f4f4d2ff1";
+    version = "31dcaa942221f6ff643cdf81bdf32110d7523a00";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "linux-cachyos";
-      rev = "5bd608d0adf9d3d98f9e10e190ce643f4f4d2ff1";
-      hash = "sha256-JFqqOibygbjJjCeWz+c/ebI/OTQ/g8sXColhHw/8T4M=";
+      rev = "31dcaa942221f6ff643cdf81bdf32110d7523a00";
+      hash = "sha256-EAQkI9IlwfLazWruKqaVEwlF/rvS1db8O7DqdVUcA/0=";
     };
-    date = "2025-08-28";
+    date = "2025-09-01";
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "fbff1cb24201b2e1039d33dbe04b3ae6ba376e56";
+    version = "0befc0c424ef82a383a7a70ae866e78b48040d6d";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "fbff1cb24201b2e1039d33dbe04b3ae6ba376e56";
-      hash = "sha256-BgR4PKo9hBujWBSskP+brDtLVfPhR5cA1xC8S9Xy+YI=";
+      rev = "0befc0c424ef82a383a7a70ae866e78b48040d6d";
+      hash = "sha256-r81pQ+Q83eILCZ8a/yAdbc++Ao/iFe2U9ByneKnFznU=";
     };
-    date = "2025-08-29";
+    date = "2025-09-01";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -371,26 +371,26 @@
   };
   dbip-asn-lite = {
     pname = "dbip-asn-lite";
-    version = "2025-08";
+    version = "2025-09";
     src = fetchurl {
-      url = "https://download.db-ip.com/free/dbip-asn-lite-2025-08.mmdb.gz";
-      hash = "sha256-YgKOUsMv1ua/z20FlsXDQoS9qoKSq3UHJG5gTJmuCoI=";
+      url = "https://download.db-ip.com/free/dbip-asn-lite-2025-09.mmdb.gz";
+      hash = "sha256-QQO2dIKBphkOYoFlYUBqgk9FKSkUF2PTlgwFgFqGCCI=";
     };
   };
   dbip-city-lite = {
     pname = "dbip-city-lite";
-    version = "2025-08";
+    version = "2025-09";
     src = fetchurl {
-      url = "https://download.db-ip.com/free/dbip-city-lite-2025-08.mmdb.gz";
-      hash = "sha256-iwAosu4Z6PfLnB2f+/zZYm/fwappfGRq1yBF3jCBj6Q=";
+      url = "https://download.db-ip.com/free/dbip-city-lite-2025-09.mmdb.gz";
+      hash = "sha256-/PSE1mKx3QEovL09cvkh932uH3RJWdUr+HUaBOeQvSE=";
     };
   };
   dbip-country-lite = {
     pname = "dbip-country-lite";
-    version = "2025-08";
+    version = "2025-09";
     src = fetchurl {
-      url = "https://download.db-ip.com/free/dbip-country-lite-2025-08.mmdb.gz";
-      hash = "sha256-X9AD1UAQhP57XI6XvpwK0ltSH9vkowKvyo0JRqF0aJc=";
+      url = "https://download.db-ip.com/free/dbip-country-lite-2025-09.mmdb.gz";
+      hash = "sha256-l15K01Sx24Fs4BJWs2nK7UnJIDWAtxsvq7ayfVX7xZo=";
     };
   };
   decluttarr = {
@@ -674,25 +674,25 @@
   };
   geolite2-asn = {
     pname = "geolite2-asn";
-    version = "2025.08.31";
+    version = "2025.09.01";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.31/GeoLite2-ASN.mmdb";
-      hash = "sha256-mil5zArszRe2KbBEzoaihcAbI4q/8peVKsXXINN9ERY=";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.09.01/GeoLite2-ASN.mmdb";
+      hash = "sha256-a6h2E5kTEz8mIJbz+WFDP+oLGWsxVOBWBbw7thrB7uY=";
     };
   };
   geolite2-city = {
     pname = "geolite2-city";
-    version = "2025.08.31";
+    version = "2025.09.01";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.31/GeoLite2-City.mmdb";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.09.01/GeoLite2-City.mmdb";
       hash = "sha256-3QqZsTpJGkJ+akdcMJ+sAnEDRSUzWzfqNSX2WPgiD/Y=";
     };
   };
   geolite2-country = {
     pname = "geolite2-country";
-    version = "2025.08.31";
+    version = "2025.09.01";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.08.31/GeoLite2-Country.mmdb";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.09.01/GeoLite2-Country.mmdb";
       hash = "sha256-1c4GCKB3KGxhJVTYlfREQy9IuSj3TD3t+qbObVkEAj0=";
     };
   };
@@ -1087,12 +1087,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b6332";
+    version = "b6340";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b6332";
-      hash = "sha256-El0JLWEfiXm3/5uhzPjvN9X0I/5lgOyT7YDbNC6lXDk=";
+      tag = "b6340";
+      hash = "sha256-ErVdpBQq7LaV2UDF1Uv4CFx0Ww9XS3Lnk37EpZGxNiE=";
     };
   };
   loralib = {
@@ -1146,12 +1146,12 @@
   };
   modelscope = {
     pname = "modelscope";
-    version = "v1.29.0";
+    version = "v1.29.1";
     src = fetchFromGitHub {
       owner = "modelscope";
       repo = "modelscope";
-      tag = "v1.29.0";
-      hash = "sha256-02vL+OIeVuaMCksAvM15YllPkwKcob1ISO6JUMsHZdI=";
+      tag = "v1.29.1";
+      hash = "sha256-xNM1yvU7PIX1uTxzaiFIF4v8RoZffusrwj/Mq4nBQBI=";
     };
   };
   mtkclient = {

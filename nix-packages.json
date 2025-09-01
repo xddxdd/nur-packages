@@ -507,7 +507,7 @@
   "legacyPackages.x86_64-linux.dbip-lite": {
     "description": "DBIP's Lite GeoIP Country, City, and ASN databases",
     "pname": "dbip-lite",
-    "version": "2025-08"
+    "version": "2025-09"
   },
   "legacyPackages.x86_64-linux.decluttarr": {
     "description": "Watches radarr, sonarr, lidarr and readarr download queues and removes downloads if they become stalled or no longer needed",
@@ -677,7 +677,7 @@
   "legacyPackages.x86_64-linux.geolite2": {
     "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
     "pname": "geolite2",
-    "version": "2025.08.31"
+    "version": "2025.09.01"
   },
   "legacyPackages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
@@ -882,7 +882,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.llama-cpp": {
     "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
     "pname": "llama-cpp",
-    "version": "6332"
+    "version": "6340"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.ls-iommu": {
     "description": "List IOMMUs on system",
@@ -1377,7 +1377,7 @@
   "legacyPackages.x86_64-linux.modelscope": {
     "description": "Bring the notion of Model-as-a-Service to life",
     "pname": "python3.13-modelscope",
-    "version": "1.29.0"
+    "version": "1.29.1"
   },
   "legacyPackages.x86_64-linux.mtkclient": {
     "description": "MTK reverse engineering and flash tool",
@@ -4112,7 +4112,7 @@
   "legacyPackages.x86_64-linux.python3Packages.modelscope": {
     "description": "Bring the notion of Model-as-a-Service to life",
     "pname": "python3.13-modelscope",
-    "version": "1.29.0"
+    "version": "1.29.1"
   },
   "legacyPackages.x86_64-linux.python3Packages.mtkclient": {
     "description": "MTK reverse engineering and flash tool",
@@ -4527,7 +4527,7 @@
   "legacyPackages.x86_64-linux.uncategorized.dbip-lite": {
     "description": "DBIP's Lite GeoIP Country, City, and ASN databases",
     "pname": "dbip-lite",
-    "version": "2025-08"
+    "version": "2025-09"
   },
   "legacyPackages.x86_64-linux.uncategorized.decluttarr": {
     "description": "Watches radarr, sonarr, lidarr and readarr download queues and removes downloads if they become stalled or no longer needed",
@@ -4622,7 +4622,7 @@
   "legacyPackages.x86_64-linux.uncategorized.geolite2": {
     "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
     "pname": "geolite2",
-    "version": "2025.08.31"
+    "version": "2025.09.01"
   },
   "legacyPackages.x86_64-linux.uncategorized.google-earth-pro": {
     "description": "World sphere viewer",
@@ -5402,7 +5402,7 @@
   "packages.x86_64-linux.dbip-lite": {
     "description": "DBIP's Lite GeoIP Country, City, and ASN databases",
     "pname": "dbip-lite",
-    "version": "2025-08"
+    "version": "2025-09"
   },
   "packages.x86_64-linux.decluttarr": {
     "description": "Watches radarr, sonarr, lidarr and readarr download queues and removes downloads if they become stalled or no longer needed",
@@ -5532,7 +5532,7 @@
   "packages.x86_64-linux.geolite2": {
     "description": "MaxMind's GeoIP2 GeoLite2 Country, City, and ASN databases",
     "pname": "geolite2",
-    "version": "2025.08.31"
+    "version": "2025.09.01"
   },
   "packages.x86_64-linux.glauth": {
     "description": "(DEPRECATED: glauth is available in nixpkgs by a different maintainer) Lightweight LDAP server for development, home use, or CI",
@@ -5757,7 +5757,7 @@
   "packages.x86_64-linux.modelscope": {
     "description": "Bring the notion of Model-as-a-Service to life",
     "pname": "python3.13-modelscope",
-    "version": "1.29.0"
+    "version": "1.29.1"
   },
   "packages.x86_64-linux.mtkclient": {
     "description": "MTK reverse engineering and flash tool",
