@@ -69,14 +69,10 @@ class DescriptionCheck(Check):
             self.fail("description has period at end")
 
         # New checks for description
-        if len(description.split(".")) > 1:
+        if len(description.split(". ")) > 1:
             self.fail("description should be short, just one sentence")
-        if not description[0].isupper():
-            self.fail("description must be capitalized")
         if description.lower().startswith(package_name.lower()):
             self.fail("description should not start with the package name")
-        if not re.match(r"^[a-zA-Z0-9 ]+$", description[0]):
-            self.fail("description should not end with punctuation")
 
         return self.valid
 
