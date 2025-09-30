@@ -222,25 +222,25 @@
   };
   cachyos-kernel = {
     pname = "cachyos-kernel";
-    version = "94b768761eb21f7874ff5959b5bf002854f03643";
+    version = "380e2ca2d12a6ff406acc1f32963b4de091de3b5";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "linux-cachyos";
-      rev = "94b768761eb21f7874ff5959b5bf002854f03643";
-      hash = "sha256-2R0bMYkVc3fbNwKUBVanBQ+851857D85beji9qt8EDk=";
+      rev = "380e2ca2d12a6ff406acc1f32963b4de091de3b5";
+      hash = "sha256-40x5bioDtSm0WlBDtBYLzEh9i2Pe1qz6tTKTVSuzGBk=";
     };
-    date = "2025-09-25";
+    date = "2025-09-29";
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "214dcce9a6fa99f4551ce1f255e10c0c1b156789";
+    version = "abc0458b2f054916506cddee1cc3353e63cd7086";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "214dcce9a6fa99f4551ce1f255e10c0c1b156789";
-      hash = "sha256-/xxaspu+nLyJEaywos0yfx50x33eRcLKNbdJqtXubLo=";
+      rev = "abc0458b2f054916506cddee1cc3353e63cd7086";
+      hash = "sha256-rP5Mp3B+3vrNfn2+MkzkzzAIN+VsE7zVv6pkZ7SuUZk=";
     };
-    date = "2025-09-25";
+    date = "2025-09-29";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -1103,12 +1103,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b6627";
+    version = "b6643";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b6627";
-      hash = "sha256-Cr0045+hNrWeFbKjq2kdrVIsjv51AlWUkcOVlh5gDr4=";
+      tag = "b6643";
+      hash = "sha256-d3tBOLn9KR3lFfa1B30+3HlHte3Wng6M5Nrboe2QTpE=";
     };
   };
   loralib = {
@@ -1497,10 +1497,10 @@
   };
   peerbanhelper = {
     pname = "peerbanhelper";
-    version = "9.0.4";
+    version = "9.0.5";
     src = fetchurl {
-      url = "https://github.com/Ghost-chu/PeerBanHelper/releases/download/v9.0.4/PeerBanHelper_9.0.4.zip";
-      hash = "sha256-el8LjVvuNuxCZRdGw+9VCuKZkxrXPqqJzpUFrksUe8o=";
+      url = "https://github.com/Ghost-chu/PeerBanHelper/releases/download/v9.0.5/PeerBanHelper_9.0.5.zip";
+      hash = "sha256-SFdCVIcDblEropRA8oDTUM5Y7jBQgNt6niPu+WzryEA=";
     };
   };
   phpmyadmin = {
