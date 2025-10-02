@@ -38,7 +38,10 @@ stdenv.mkDerivation (finalAttrs: {
     qtwebapp
   ];
 
-  patches = [ ./change-install-path.patch ];
+  patches = [
+    ./change-install-path.patch
+    ./fix-mpv-dup-initialization.patch
+  ];
 
   postPatch = ''
     substituteInPlace KikoPlay.pro \
@@ -83,7 +86,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://kikoplay.fun";
     license = lib.licenses.gpl3Only;
     # See https://github.com/NixOS/nixpkgs/pull/354929
-    # broken = stdenv.isDarwin;
-    broken = true;
+    broken = stdenv.isDarwin;
   };
 })
