@@ -1001,6 +1001,27 @@
         },
         "version": "7.2.3"
     },
+    "ela-widget-tools": {
+        "cargoLock": null,
+        "date": "2025-09-29",
+        "extract": null,
+        "name": "ela-widget-tools",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Liniyous",
+            "repo": "ElaWidgetTools",
+            "rev": "99b4b315f37a11801512e1791347e4daedeaf594",
+            "sha256": "sha256-bNU+bjzGSQRvPiTZ0eohr/4b/XMzDi7dVuz5CREMhP4=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "99b4b315f37a11801512e1791347e4daedeaf594"
+    },
     "etherguard": {
         "cargoLock": null,
         "date": null,
@@ -3327,27 +3348,6 @@
             "url": "http://ftp.debian.org/debian/pool/main/q/qemu/qemu-user_10.1.0+ds-5_i386.deb"
         },
         "version": "10.1.0+ds-5"
-    },
-    "qhttpengine": {
-        "cargoLock": null,
-        "date": "2018-03-22",
-        "extract": null,
-        "name": "qhttpengine",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "nitroshare",
-            "repo": "qhttpengine",
-            "rev": "43f55df51623621ed3efb4e42c7894586d988667",
-            "sha256": "sha256-XO56DUKyUIOhp+xpArMeoNHmlgAld9tUFMCY+tjyI4M=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "43f55df51623621ed3efb4e42c7894586d988667"
     },
     "qq-amd64": {
         "cargoLock": null,

@@ -524,6 +524,17 @@
       hash = "sha256-JnwfvSa60oEbSEyD6q88Ey6IyGOwVWO0T75VrUKZmos=";
     };
   };
+  ela-widget-tools = {
+    pname = "ela-widget-tools";
+    version = "99b4b315f37a11801512e1791347e4daedeaf594";
+    src = fetchFromGitHub {
+      owner = "Liniyous";
+      repo = "ElaWidgetTools";
+      rev = "99b4b315f37a11801512e1791347e4daedeaf594";
+      hash = "sha256-bNU+bjzGSQRvPiTZ0eohr/4b/XMzDi7dVuz5CREMhP4=";
+    };
+    date = "2025-09-29";
+  };
   etherguard = {
     pname = "etherguard";
     version = "v0.3.5-f5";
@@ -1709,17 +1720,6 @@
       name = "qemu.deb";
       hash = "sha256-2IxoTs2aK41JiisEj7i/VzR+BUtDbaY25923MJLfA94=";
     };
-  };
-  qhttpengine = {
-    pname = "qhttpengine";
-    version = "43f55df51623621ed3efb4e42c7894586d988667";
-    src = fetchFromGitHub {
-      owner = "nitroshare";
-      repo = "qhttpengine";
-      rev = "43f55df51623621ed3efb4e42c7894586d988667";
-      hash = "sha256-XO56DUKyUIOhp+xpArMeoNHmlgAld9tUFMCY+tjyI4M=";
-    };
-    date = "2018-03-22";
   };
   qq-amd64 = {
     pname = "qq-amd64";
