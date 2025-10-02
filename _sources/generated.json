@@ -1923,7 +1923,7 @@
     },
     "liboqs-unstable": {
         "cargoLock": null,
-        "date": "2025-09-24",
+        "date": "2025-10-01",
         "extract": null,
         "name": "liboqs-unstable",
         "passthru": null,
@@ -1935,12 +1935,12 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "dd942d434463872193ba282250532ac0be15f1e3",
-            "sha256": "sha256-wSGX8OHq4Otck9P7zWv6kA/wHrYB5amUkPvxSq1MPbM=",
+            "rev": "e64026e27ae20aafee43a619c7c46cacff1936e7",
+            "sha256": "sha256-WVa3FspFNMa0OVu3TC1ZU7rLx4Q/s9eEZr7vS54WLrY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "dd942d434463872193ba282250532ac0be15f1e3"
+        "version": "e64026e27ae20aafee43a619c7c46cacff1936e7"
     },
     "libqcef": {
         "cargoLock": null,
@@ -2161,12 +2161,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b6653",
-            "sha256": "sha256-wZzlScw76fZaw7rZ3xCdgw1pGsZynshGHkojOfI+8eo=",
+            "rev": "b6666",
+            "sha256": "sha256-qofL+0UPNXgbJ1oMaZ5Ea3kFX7KMV+qWEVjBwl/fGoU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b6653"
+        "version": "b6666"
     },
     "loralib": {
         "cargoLock": null,
@@ -2995,12 +2995,12 @@
             "name": null,
             "owner": "bggRGjQaUbCoE",
             "repo": "PiliPlus",
-            "rev": "1.1.4.6",
-            "sha256": "sha256-oHNXDK4IM9okJVuM7qbLMVgsHobKJsOPk0ybokpc+IQ=",
+            "rev": "1.1.4.7",
+            "sha256": "sha256-wkX/+60En4sDDW74cWY/9kdHRcDkrjDP/+m0Jengno4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1.1.4.6"
+        "version": "1.1.4.7"
     },
     "plangothic-fonts": {
         "cargoLock": null,
@@ -3124,7 +3124,7 @@
     },
     "pterodactyl-wings": {
         "cargoLock": null,
-        "date": "2025-08-28",
+        "date": "2025-10-01",
         "extract": null,
         "name": "pterodactyl-wings",
         "passthru": null,
@@ -3136,12 +3136,12 @@
             "name": null,
             "owner": "pterodactyl",
             "repo": "wings",
-            "rev": "ee922588e0e27ac1a66270b01aaf46e256a5b91e",
-            "sha256": "sha256-x101ejKfpE6f9lszNXeb+/WpM1coPrHgy/9IQXAEZOs=",
+            "rev": "149b7968491f8d003c781821d688126a88b52e15",
+            "sha256": "sha256-jDAG0JFPt2+f7iDGZoAAAfGybWMpKp6H7YXSL2Mdlgo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ee922588e0e27ac1a66270b01aaf46e256a5b91e"
+        "version": "149b7968491f8d003c781821d688126a88b52e15"
     },
     "pterodactyl-wings-stable": {
         "cargoLock": null,

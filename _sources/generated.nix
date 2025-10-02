@@ -996,14 +996,14 @@
   };
   liboqs-unstable = {
     pname = "liboqs-unstable";
-    version = "dd942d434463872193ba282250532ac0be15f1e3";
+    version = "e64026e27ae20aafee43a619c7c46cacff1936e7";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "dd942d434463872193ba282250532ac0be15f1e3";
-      hash = "sha256-wSGX8OHq4Otck9P7zWv6kA/wHrYB5amUkPvxSq1MPbM=";
+      rev = "e64026e27ae20aafee43a619c7c46cacff1936e7";
+      hash = "sha256-WVa3FspFNMa0OVu3TC1ZU7rLx4Q/s9eEZr7vS54WLrY=";
     };
-    date = "2025-09-24";
+    date = "2025-10-01";
   };
   libqcef = {
     pname = "libqcef";
@@ -1114,12 +1114,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b6653";
+    version = "b6666";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b6653";
-      hash = "sha256-wZzlScw76fZaw7rZ3xCdgw1pGsZynshGHkojOfI+8eo=";
+      tag = "b6666";
+      hash = "sha256-qofL+0UPNXgbJ1oMaZ5Ea3kFX7KMV+qWEVjBwl/fGoU=";
     };
   };
   loralib = {
@@ -1534,12 +1534,12 @@
   };
   piliplus = {
     pname = "piliplus";
-    version = "1.1.4.6";
+    version = "1.1.4.7";
     src = fetchFromGitHub {
       owner = "bggRGjQaUbCoE";
       repo = "PiliPlus";
-      tag = "1.1.4.6";
-      hash = "sha256-oHNXDK4IM9okJVuM7qbLMVgsHobKJsOPk0ybokpc+IQ=";
+      tag = "1.1.4.7";
+      hash = "sha256-wkX/+60En4sDDW74cWY/9kdHRcDkrjDP/+m0Jengno4=";
     };
   };
   plangothic-fonts = {
@@ -1604,14 +1604,14 @@
   };
   pterodactyl-wings = {
     pname = "pterodactyl-wings";
-    version = "ee922588e0e27ac1a66270b01aaf46e256a5b91e";
+    version = "149b7968491f8d003c781821d688126a88b52e15";
     src = fetchFromGitHub {
       owner = "pterodactyl";
       repo = "wings";
-      rev = "ee922588e0e27ac1a66270b01aaf46e256a5b91e";
-      hash = "sha256-x101ejKfpE6f9lszNXeb+/WpM1coPrHgy/9IQXAEZOs=";
+      rev = "149b7968491f8d003c781821d688126a88b52e15";
+      hash = "sha256-jDAG0JFPt2+f7iDGZoAAAfGybWMpKp6H7YXSL2Mdlgo=";
     };
-    date = "2025-08-28";
+    date = "2025-10-01";
   };
   pterodactyl-wings-stable = {
     pname = "pterodactyl-wings-stable";
