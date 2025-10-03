@@ -159,7 +159,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `libcrystalhd` | [libcrystalhd](https://launchpad.net/ubuntu/+source/crystalhd) | 0-unstable-2021-01-26 | Broadcom Crystal HD Hardware Decoder (BCM70012/70015) userspace library |
 |  | `libnftnl-fullcone` | [libnftnl](https://netfilter.org/projects/libnftnl/) | 1.3.0 | Userspace library providing a low-level netlink API to the in-kernel nf_tables subsystem |
 |  | `liboqs` | [liboqs](https://openquantumsafe.org) | 0.14.0 | C library for prototyping and experimenting with quantum-resistant cryptography |
-|  | `liboqs-unstable` | [liboqs](https://openquantumsafe.org) | 0-unstable-2025-10-01 | C library for prototyping and experimenting with quantum-resistant cryptography |
+|  | `liboqs-unstable` | [liboqs](https://openquantumsafe.org) | 0-unstable-2025-10-02 | C library for prototyping and experimenting with quantum-resistant cryptography |
 | `x86_64-linux` | `libqcef` | [libqcef](https://github.com/martyr-deepin/libqcef) | 0-unstable-2019-11-23 | Qt5 binding of CEF |
 | `x86_64-linux` | `linguaspark-server` | [linguaspark-server](https://github.com/LinguaSpark/server) | 0-unstable-2025-08-14 | Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs |
 | `x86_64-linux` | `linguaspark-server-x86-64-v3` | [linguaspark-server](https://github.com/LinguaSpark/server) | 0-unstable-2025-08-14 | Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs |
@@ -196,7 +196,7 @@ Or, use variables from this repository in case I change them:
 |  | `osdlyrics` | [osdlyrics](https://github.com/osdlyrics/osdlyrics) | 0.5.15 | Standalone lyrics fetcher/displayer (windowed and OSD mode) |
 |  | `palworld-exporter` | [palworld-exporter](https://github.com/palworldlol/palworld-exporter) | 1.3.1 | Prometheus exporter for Palword Server |
 |  | `palworld-worldoptions` | [palworld-worldoptions](https://github.com/legoduded/palworld-worldoptions) | 1.11.0 | Tool for managing Palworld dedicated server settings |
-|  | `peerbanhelper` | [peerbanhelper](https://github.com/Ghost-chu/PeerBanHelper) | 9.0.5 | Automatically bans unwanted, leeching, and anomalous BT clients, with support for custom rules for qBittorrent and Transmission |
+|  | `peerbanhelper` | [peerbanhelper](https://github.com/Ghost-chu/PeerBanHelper) | 9.0.7 | Automatically bans unwanted, leeching, and anomalous BT clients, with support for custom rules for qBittorrent and Transmission |
 |  | `phpmyadmin` | [phpmyadmin](https://www.phpmyadmin.net/) | 5.2.2 | Web interface for MySQL and MariaDB |
 |  | `phppgadmin` | [phppgadmin](https://github.com/phppgadmin/phppgadmin) | 7.14.7-mod | Premier web-based administration tool for PostgreSQL |
 |  | `plangothic-fonts` | [plangothic-fonts](https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Plangothic_Project) | 2.9.5787 | Plangothic Project |
@@ -214,7 +214,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `qqmusic` | [qqmusic](https://y.qq.com/) | 1.1.8 | Tencent QQ Music |
 |  | `qqsp` | [qqsp](https://github.com/Sonnix1/Qqsp) | 1.9 | QT Quest Soft Player is a interactive fiction stories and games player (compatible fork of qsp.su) |
 |  | `qsp` | [qsp](https://github.com/QSPFoundation/qspgui) | 5.9.4-b1-unstable-2025-09-22 | Interactive Fiction development platform (GUI application) |
-|  | `qsp-lib` | [qsp-lib](https://github.com/QSPFoundation/qsp) | 0-unstable-2025-09-30 | Interactive fiction development platform (Game Library) |
+|  | `qsp-lib` | [qsp-lib](https://github.com/QSPFoundation/qsp) | 0-unstable-2025-10-03 | Interactive fiction development platform (Game Library) |
 |  | `qtwebapp` | [qtwebapp](https://stefanfrings.de/qtwebapp/index-en.html) | 1.9.1 | HTTP server library in C++, inspired by Java Servlets |
 |  | `r8125` | [r8125](https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software) | 9.016.01-1 | Linux device driver for Realtek 2.5/5 Gigabit Ethernet controllers with PCI-Express interface |
 |  | `r8168` | [r8168](https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software) | 8.055.00 | Linux device driver for Realtek Ethernet controllers |
@@ -414,7 +414,7 @@ Or, use variables from this repository in case I change them:
 |  | `lantianCustomized.ffmpeg` | [ffmpeg](https://www.ffmpeg.org/) | 7.1.1 | FFmpeg with Lan Tian modifications |
 |  | `lantianCustomized.firefox-icon-mikozilla-fireyae` | [firefox-icon-mikozilla-fireyae](https://www.reddit.com/r/Genshin_Impact/comments/x73g4p/mikozilla_fireyae/) |  | Custom icon "Mikozilla Fireyae" for Firefox |
 |  | `lantianCustomized.librime-with-plugins` | [librime](https://rime.im/) | 1.14.0 | Librime with plugins (librime-charcode, librime-lua, librime-octagram, librime-proto) |
-|  | `lantianCustomized.llama-cpp` | [llama-cpp](https://github.com/ggml-org/llama.cpp) | 6666 | Inference of Meta's LLaMA model (and others) in pure C/C++ |
+|  | `lantianCustomized.llama-cpp` | [llama-cpp](https://github.com/ggml-org/llama.cpp) | 6676 | Inference of Meta's LLaMA model (and others) in pure C/C++ |
 |  | `lantianCustomized.ls-iommu` | [ls-iommu](https://gist.github.com/r15ch13/ba2d738985fce8990a4e9f32d07c6ada) | 1.0 | List IOMMUs on system |
 |  | `lantianCustomized.materialgram` | [materialgram](https://kukuruzka165.github.io/materialgram/) | 6.1.0.1 | Telegram Desktop fork with material icons and some improvements (Without anti-features) |
 |  | `lantianCustomized.nbfc-linux` | [nbfc-linux-lantian](https://github.com/xddxdd/nbfc-linux) | 0-unstable-2022-06-13 | NoteBook FanControl ported to Linux (with Lan Tian's modifications) |
@@ -532,7 +532,7 @@ Or, use variables from this repository in case I change them:
 </details>
 
 <details>
-<summary>Package set: nvidia-grid (184 packages)</summary>
+<summary>Package set: nvidia-grid (196 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
@@ -559,6 +559,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `nvidia-grid.grid.16_1` | [nvidia-x11-535.104.05-6.12.49](https://www.nvidia.com/object/unix.html) | 535.104.05 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.16_10` | [nvidia-x11-535.247.01-6.12.49](https://www.nvidia.com/object/unix.html) | 535.247.01 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.16_11` | [nvidia-x11-535.261.03-6.12.49](https://www.nvidia.com/object/unix.html) | 535.261.03 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.grid.16_12` | [nvidia-x11-535.274.02-6.12.49](https://www.nvidia.com/object/unix.html) | 535.274.02 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.16_2` | [nvidia-x11-535.129.03-6.12.49](https://www.nvidia.com/object/unix.html) | 535.129.03 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.16_3` | [nvidia-x11-535.154.05-6.12.49](https://www.nvidia.com/object/unix.html) | 535.154.05 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.16_4` | [nvidia-x11-535.161.07-6.12.49](https://www.nvidia.com/object/unix.html) | 535.161.07 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
@@ -579,8 +580,10 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `nvidia-grid.grid.18_2` | [nvidia-x11-570.148.08-6.12.49](https://www.nvidia.com/object/unix.html) | 570.148.08 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.18_3` | [nvidia-x11-570.158.01-6.12.49](https://www.nvidia.com/object/unix.html) | 570.158.01 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.18_4` | [nvidia-x11-570.172.08-6.12.49](https://www.nvidia.com/object/unix.html) | 570.172.08 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.grid.18_5` | [nvidia-x11-570.195.03-6.12.49](https://www.nvidia.com/object/unix.html) | 570.195.03 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.19_0` | [nvidia-x11-580.65.06-6.12.49](https://www.nvidia.com/object/unix.html) | 580.65.06 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.19_1` | [nvidia-x11-580.82.07-6.12.49](https://www.nvidia.com/object/unix.html) | 580.82.07 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.grid.19_2` | [nvidia-x11-580.95.05-6.12.49](https://www.nvidia.com/object/unix.html) | 580.95.05 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.grid.9_2` | [nvidia-x11-430.63-6.12.49](https://www.nvidia.com/object/unix.html) | 430.63 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.11_8` | [nvidia-x11-450.191.01-6.12.49](https://www.nvidia.com/object/unix.html) | 450.191.01 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.12_4` | [nvidia-x11-460.106.00-6.12.49](https://www.nvidia.com/object/unix.html) | 460.106.00 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
@@ -605,6 +608,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `nvidia-grid.guest.16_1` | [nvidia-x11-535.104.05-6.12.49](https://www.nvidia.com/object/unix.html) | 535.104.05 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.16_10` | [nvidia-x11-535.247.01-6.12.49](https://www.nvidia.com/object/unix.html) | 535.247.01 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.16_11` | [nvidia-x11-535.261.03-6.12.49](https://www.nvidia.com/object/unix.html) | 535.261.03 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.guest.16_12` | [nvidia-x11-535.274.02-6.12.49](https://www.nvidia.com/object/unix.html) | 535.274.02 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.16_2` | [nvidia-x11-535.129.03-6.12.49](https://www.nvidia.com/object/unix.html) | 535.129.03 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.16_3` | [nvidia-x11-535.154.05-6.12.49](https://www.nvidia.com/object/unix.html) | 535.154.05 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.16_4` | [nvidia-x11-535.161.07-6.12.49](https://www.nvidia.com/object/unix.html) | 535.161.07 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
@@ -625,8 +629,10 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `nvidia-grid.guest.18_2` | [nvidia-x11-570.148.08-6.12.49](https://www.nvidia.com/object/unix.html) | 570.148.08 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.18_3` | [nvidia-x11-570.158.01-6.12.49](https://www.nvidia.com/object/unix.html) | 570.158.01 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.18_4` | [nvidia-x11-570.172.08-6.12.49](https://www.nvidia.com/object/unix.html) | 570.172.08 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.guest.18_5` | [nvidia-x11-570.195.03-6.12.49](https://www.nvidia.com/object/unix.html) | 570.195.03 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.19_0` | [nvidia-x11-580.65.06-6.12.49](https://www.nvidia.com/object/unix.html) | 580.65.06 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.19_1` | [nvidia-x11-580.82.07-6.12.49](https://www.nvidia.com/object/unix.html) | 580.82.07 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.guest.19_2` | [nvidia-x11-580.95.05-6.12.49](https://www.nvidia.com/object/unix.html) | 580.95.05 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.guest.9_2` | [nvidia-x11-430.63-6.12.49](https://www.nvidia.com/object/unix.html) | 430.63 | NVIDIA vGPU guest driver (GRID driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.11_8` | [nvidia-x11-450.191-6.12.49](https://www.nvidia.com/object/unix.html) | 450.191 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.12_4` | [nvidia-x11-460.107-6.12.49](https://www.nvidia.com/object/unix.html) | 460.107 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
@@ -651,6 +657,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `nvidia-grid.host.16_1` | [nvidia-x11-535.104.06-6.12.49](https://www.nvidia.com/object/unix.html) | 535.104.06 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.16_10` | [nvidia-x11-535.247.02-6.12.49](https://www.nvidia.com/object/unix.html) | 535.247.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.16_11` | [nvidia-x11-535.261.04-6.12.49](https://www.nvidia.com/object/unix.html) | 535.261.04 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.host.16_12` | [nvidia-x11-535.274.03-6.12.49](https://www.nvidia.com/object/unix.html) | 535.274.03 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.16_2` | [nvidia-x11-535.129.03-6.12.49](https://www.nvidia.com/object/unix.html) | 535.129.03 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.16_3` | [nvidia-x11-535.154.02-6.12.49](https://www.nvidia.com/object/unix.html) | 535.154.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.16_4` | [nvidia-x11-535.161.05-6.12.49](https://www.nvidia.com/object/unix.html) | 535.161.05 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
@@ -671,8 +678,10 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `nvidia-grid.host.18_2` | [nvidia-x11-570.148.06-6.12.49](https://www.nvidia.com/object/unix.html) | 570.148.06 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.18_3` | [nvidia-x11-570.158.02-6.12.49](https://www.nvidia.com/object/unix.html) | 570.158.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.18_4` | [nvidia-x11-570.172.07-6.12.49](https://www.nvidia.com/object/unix.html) | 570.172.07 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.host.18_5` | [nvidia-x11-570.195.02-6.12.49](https://www.nvidia.com/object/unix.html) | 570.195.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.19_0` | [nvidia-x11-580.65.05-6.12.49](https://www.nvidia.com/object/unix.html) | 580.65.05 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.19_1` | [nvidia-x11-580.82.02-6.12.49](https://www.nvidia.com/object/unix.html) | 580.82.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.host.19_2` | [nvidia-x11-580.95.02-6.12.49](https://www.nvidia.com/object/unix.html) | 580.95.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.host.9_2` | [nvidia-x11-430.67-6.12.49](https://www.nvidia.com/object/unix.html) | 430.67 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.11_8` | [nvidia-x11-450.191-6.12.49](https://www.nvidia.com/object/unix.html) | 450.191 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.12_4` | [nvidia-x11-460.107-6.12.49](https://www.nvidia.com/object/unix.html) | 460.107 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
@@ -697,6 +706,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `nvidia-grid.vgpu.16_1` | [nvidia-x11-535.104.06-6.12.49](https://www.nvidia.com/object/unix.html) | 535.104.06 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.16_10` | [nvidia-x11-535.247.02-6.12.49](https://www.nvidia.com/object/unix.html) | 535.247.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.16_11` | [nvidia-x11-535.261.04-6.12.49](https://www.nvidia.com/object/unix.html) | 535.261.04 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.vgpu.16_12` | [nvidia-x11-535.274.03-6.12.49](https://www.nvidia.com/object/unix.html) | 535.274.03 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.16_2` | [nvidia-x11-535.129.03-6.12.49](https://www.nvidia.com/object/unix.html) | 535.129.03 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.16_3` | [nvidia-x11-535.154.02-6.12.49](https://www.nvidia.com/object/unix.html) | 535.154.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.16_4` | [nvidia-x11-535.161.05-6.12.49](https://www.nvidia.com/object/unix.html) | 535.161.05 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
@@ -717,8 +727,10 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `nvidia-grid.vgpu.18_2` | [nvidia-x11-570.148.06-6.12.49](https://www.nvidia.com/object/unix.html) | 570.148.06 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.18_3` | [nvidia-x11-570.158.02-6.12.49](https://www.nvidia.com/object/unix.html) | 570.158.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.18_4` | [nvidia-x11-570.172.07-6.12.49](https://www.nvidia.com/object/unix.html) | 570.172.07 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.vgpu.18_5` | [nvidia-x11-570.195.02-6.12.49](https://www.nvidia.com/object/unix.html) | 570.195.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.19_0` | [nvidia-x11-580.65.05-6.12.49](https://www.nvidia.com/object/unix.html) | 580.65.05 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.19_1` | [nvidia-x11-580.82.02-6.12.49](https://www.nvidia.com/object/unix.html) | 580.82.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
+| `x86_64-linux` | `nvidia-grid.vgpu.19_2` | [nvidia-x11-580.95.02-6.12.49](https://www.nvidia.com/object/unix.html) | 580.95.02 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 | `x86_64-linux` | `nvidia-grid.vgpu.9_2` | [nvidia-x11-430.67-6.12.49](https://www.nvidia.com/object/unix.html) | 430.67 | NVIDIA vGPU host driver (vGPU-KVM driver, experimental package) |
 </details>
 
@@ -1169,7 +1181,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `uncategorized.libcrystalhd` | [libcrystalhd](https://launchpad.net/ubuntu/+source/crystalhd) | 0-unstable-2021-01-26 | Broadcom Crystal HD Hardware Decoder (BCM70012/70015) userspace library |
 |  | `uncategorized.libnftnl-fullcone` | [libnftnl](https://netfilter.org/projects/libnftnl/) | 1.3.0 | Userspace library providing a low-level netlink API to the in-kernel nf_tables subsystem |
 |  | `uncategorized.liboqs` | [liboqs](https://openquantumsafe.org) | 0.14.0 | C library for prototyping and experimenting with quantum-resistant cryptography |
-|  | `uncategorized.liboqs-unstable` | [liboqs](https://openquantumsafe.org) | 0-unstable-2025-10-01 | C library for prototyping and experimenting with quantum-resistant cryptography |
+|  | `uncategorized.liboqs-unstable` | [liboqs](https://openquantumsafe.org) | 0-unstable-2025-10-02 | C library for prototyping and experimenting with quantum-resistant cryptography |
 | `x86_64-linux` | `uncategorized.libqcef` | [libqcef](https://github.com/martyr-deepin/libqcef) | 0-unstable-2019-11-23 | Qt5 binding of CEF |
 | `x86_64-linux` | `uncategorized.linguaspark-server` | [linguaspark-server](https://github.com/LinguaSpark/server) | 0-unstable-2025-08-14 | Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs |
 | `x86_64-linux` | `uncategorized.linguaspark-server-x86-64-v3` | [linguaspark-server](https://github.com/LinguaSpark/server) | 0-unstable-2025-08-14 | Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs |
@@ -1198,7 +1210,7 @@ Or, use variables from this repository in case I change them:
 |  | `uncategorized.osdlyrics` | [osdlyrics](https://github.com/osdlyrics/osdlyrics) | 0.5.15 | Standalone lyrics fetcher/displayer (windowed and OSD mode) |
 |  | `uncategorized.palworld-exporter` | [palworld-exporter](https://github.com/palworldlol/palworld-exporter) | 1.3.1 | Prometheus exporter for Palword Server |
 |  | `uncategorized.palworld-worldoptions` | [palworld-worldoptions](https://github.com/legoduded/palworld-worldoptions) | 1.11.0 | Tool for managing Palworld dedicated server settings |
-|  | `uncategorized.peerbanhelper` | [peerbanhelper](https://github.com/Ghost-chu/PeerBanHelper) | 9.0.5 | Automatically bans unwanted, leeching, and anomalous BT clients, with support for custom rules for qBittorrent and Transmission |
+|  | `uncategorized.peerbanhelper` | [peerbanhelper](https://github.com/Ghost-chu/PeerBanHelper) | 9.0.7 | Automatically bans unwanted, leeching, and anomalous BT clients, with support for custom rules for qBittorrent and Transmission |
 |  | `uncategorized.phpmyadmin` | [phpmyadmin](https://www.phpmyadmin.net/) | 5.2.2 | Web interface for MySQL and MariaDB |
 |  | `uncategorized.phppgadmin` | [phppgadmin](https://github.com/phppgadmin/phppgadmin) | 7.14.7-mod | Premier web-based administration tool for PostgreSQL |
 |  | `uncategorized.plangothic-fonts` | [plangothic-fonts](https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Plangothic_Project) | 2.9.5787 | Plangothic Project |
@@ -1212,7 +1224,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `uncategorized.qqmusic` | [qqmusic](https://y.qq.com/) | 1.1.8 | Tencent QQ Music |
 |  | `uncategorized.qqsp` | [qqsp](https://github.com/Sonnix1/Qqsp) | 1.9 | QT Quest Soft Player is a interactive fiction stories and games player (compatible fork of qsp.su) |
 |  | `uncategorized.qsp` | [qsp](https://github.com/QSPFoundation/qspgui) | 5.9.4-b1-unstable-2025-09-22 | Interactive Fiction development platform (GUI application) |
-|  | `uncategorized.qsp-lib` | [qsp-lib](https://github.com/QSPFoundation/qsp) | 0-unstable-2025-09-30 | Interactive fiction development platform (Game Library) |
+|  | `uncategorized.qsp-lib` | [qsp-lib](https://github.com/QSPFoundation/qsp) | 0-unstable-2025-10-03 | Interactive fiction development platform (Game Library) |
 |  | `uncategorized.qtwebapp` | [qtwebapp](https://stefanfrings.de/qtwebapp/index-en.html) | 1.9.1 | HTTP server library in C++, inspired by Java Servlets |
 | `x86_64-linux` | `uncategorized.red-star-os-rgjanggi` | [red-star-os-rgjanggi](https://archive.org/details/RedStarOS) | 3.0 | Rgjanggi game from DPRK Red Star OS 3.0, heavily sandboxed, use at your own risk |
 |  | `uncategorized.red-star-os-wallpapers` | [red-star-os-wallpapers](https://archive.org/details/RedStarOS) | 3.0 | Wallpapers from DPRK Red Star OS 3.0 |

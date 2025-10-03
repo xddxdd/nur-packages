@@ -892,7 +892,7 @@
   "legacyPackages.x86_64-linux.lantianCustomized.llama-cpp": {
     "description": "Inference of Meta's LLaMA model (and others) in pure C/C++",
     "pname": "llama-cpp",
-    "version": "6666"
+    "version": "6676"
   },
   "legacyPackages.x86_64-linux.lantianCustomized.ls-iommu": {
     "description": "List IOMMUs on system",
@@ -1337,7 +1337,7 @@
   "legacyPackages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-10-01"
+    "version": "0-unstable-2025-10-02"
   },
   "legacyPackages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -1559,6 +1559,11 @@
     "pname": "nvidia-x11",
     "version": "535.261.03-6.12.49"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.grid.16_12": {
+    "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "535.274.02-6.12.49"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.grid.16_2": {
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
     "pname": "nvidia-x11",
@@ -1659,6 +1664,11 @@
     "pname": "nvidia-x11",
     "version": "570.172.08-6.12.49"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.grid.18_5": {
+    "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "570.195.03-6.12.49"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.grid.19_0": {
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
     "pname": "nvidia-x11",
@@ -1668,6 +1678,11 @@
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
     "pname": "nvidia-x11",
     "version": "580.82.07-6.12.49"
+  },
+  "legacyPackages.x86_64-linux.nvidia-grid.grid.19_2": {
+    "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "580.95.05-6.12.49"
   },
   "legacyPackages.x86_64-linux.nvidia-grid.grid.9_2": {
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
@@ -1789,6 +1804,11 @@
     "pname": "nvidia-x11",
     "version": "535.261.03-6.12.49"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.guest.16_12": {
+    "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "535.274.02-6.12.49"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.guest.16_2": {
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
     "pname": "nvidia-x11",
@@ -1889,6 +1909,11 @@
     "pname": "nvidia-x11",
     "version": "570.172.08-6.12.49"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.guest.18_5": {
+    "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "570.195.03-6.12.49"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.guest.19_0": {
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
     "pname": "nvidia-x11",
@@ -1898,6 +1923,11 @@
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
     "pname": "nvidia-x11",
     "version": "580.82.07-6.12.49"
+  },
+  "legacyPackages.x86_64-linux.nvidia-grid.guest.19_2": {
+    "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "580.95.05-6.12.49"
   },
   "legacyPackages.x86_64-linux.nvidia-grid.guest.9_2": {
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
@@ -2019,6 +2049,11 @@
     "pname": "nvidia-x11",
     "version": "535.261.04-6.12.49"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.host.16_12": {
+    "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "535.274.03-6.12.49"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.host.16_2": {
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
     "pname": "nvidia-x11",
@@ -2119,6 +2154,11 @@
     "pname": "nvidia-x11",
     "version": "570.172.07-6.12.49"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.host.18_5": {
+    "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "570.195.02-6.12.49"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.host.19_0": {
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
     "pname": "nvidia-x11",
@@ -2128,6 +2168,11 @@
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
     "pname": "nvidia-x11",
     "version": "580.82.02-6.12.49"
+  },
+  "legacyPackages.x86_64-linux.nvidia-grid.host.19_2": {
+    "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "580.95.02-6.12.49"
   },
   "legacyPackages.x86_64-linux.nvidia-grid.host.9_2": {
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
@@ -2249,6 +2294,11 @@
     "pname": "nvidia-x11",
     "version": "535.261.04-6.12.49"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.vgpu.16_12": {
+    "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "535.274.03-6.12.49"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.vgpu.16_2": {
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
     "pname": "nvidia-x11",
@@ -2349,6 +2399,11 @@
     "pname": "nvidia-x11",
     "version": "570.172.07-6.12.49"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.vgpu.18_5": {
+    "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "570.195.02-6.12.49"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.vgpu.19_0": {
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
     "pname": "nvidia-x11",
@@ -2358,6 +2413,11 @@
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
     "pname": "nvidia-x11",
     "version": "580.82.02-6.12.49"
+  },
+  "legacyPackages.x86_64-linux.nvidia-grid.vgpu.19_2": {
+    "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "580.95.02-6.12.49"
   },
   "legacyPackages.x86_64-linux.nvidia-grid.vgpu.9_2": {
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
@@ -4027,7 +4087,7 @@
   "legacyPackages.x86_64-linux.peerbanhelper": {
     "description": "Automatically bans unwanted, leeching, and anomalous BT clients, with support for custom rules for qBittorrent and Transmission",
     "pname": "peerbanhelper",
-    "version": "9.0.5"
+    "version": "9.0.7"
   },
   "legacyPackages.x86_64-linux.phpmyadmin": {
     "description": "Web interface for MySQL and MariaDB",
@@ -4292,7 +4352,7 @@
   "legacyPackages.x86_64-linux.qsp-lib": {
     "description": "Interactive fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-09-30"
+    "version": "0-unstable-2025-10-03"
   },
   "legacyPackages.x86_64-linux.qtwebapp": {
     "description": "HTTP server library in C++, inspired by Java Servlets",
@@ -4792,7 +4852,7 @@
   "legacyPackages.x86_64-linux.uncategorized.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-10-01"
+    "version": "0-unstable-2025-10-02"
   },
   "legacyPackages.x86_64-linux.uncategorized.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -4937,7 +4997,7 @@
   "legacyPackages.x86_64-linux.uncategorized.peerbanhelper": {
     "description": "Automatically bans unwanted, leeching, and anomalous BT clients, with support for custom rules for qBittorrent and Transmission",
     "pname": "peerbanhelper",
-    "version": "9.0.5"
+    "version": "9.0.7"
   },
   "legacyPackages.x86_64-linux.uncategorized.phpmyadmin": {
     "description": "Web interface for MySQL and MariaDB",
@@ -5012,7 +5072,7 @@
   "legacyPackages.x86_64-linux.uncategorized.qsp-lib": {
     "description": "Interactive fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-09-30"
+    "version": "0-unstable-2025-10-03"
   },
   "legacyPackages.x86_64-linux.uncategorized.qtwebapp": {
     "description": "HTTP server library in C++, inspired by Java Servlets",
@@ -5777,7 +5837,7 @@
   "packages.x86_64-linux.liboqs-unstable": {
     "description": "C library for prototyping and experimenting with quantum-resistant cryptography",
     "pname": "liboqs",
-    "version": "0-unstable-2025-10-01"
+    "version": "0-unstable-2025-10-02"
   },
   "packages.x86_64-linux.libqcef": {
     "description": "Qt5 binding of CEF",
@@ -5982,7 +6042,7 @@
   "packages.x86_64-linux.peerbanhelper": {
     "description": "Automatically bans unwanted, leeching, and anomalous BT clients, with support for custom rules for qBittorrent and Transmission",
     "pname": "peerbanhelper",
-    "version": "9.0.5"
+    "version": "9.0.7"
   },
   "packages.x86_64-linux.phpmyadmin": {
     "description": "Web interface for MySQL and MariaDB",
@@ -6087,7 +6147,7 @@
   "packages.x86_64-linux.qsp-lib": {
     "description": "Interactive fiction development platform (Game Library)",
     "pname": "qsp-lib",
-    "version": "0-unstable-2025-09-30"
+    "version": "0-unstable-2025-10-03"
   },
   "packages.x86_64-linux.qtwebapp": {
     "description": "HTTP server library in C++, inspired by Java Servlets",

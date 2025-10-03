@@ -996,14 +996,14 @@
   };
   liboqs-unstable = {
     pname = "liboqs-unstable";
-    version = "e64026e27ae20aafee43a619c7c46cacff1936e7";
+    version = "21add4acef046f493c99936b9b59f624f73b09ff";
     src = fetchFromGitHub {
       owner = "open-quantum-safe";
       repo = "liboqs";
-      rev = "e64026e27ae20aafee43a619c7c46cacff1936e7";
-      hash = "sha256-WVa3FspFNMa0OVu3TC1ZU7rLx4Q/s9eEZr7vS54WLrY=";
+      rev = "21add4acef046f493c99936b9b59f624f73b09ff";
+      hash = "sha256-v7jovJFaPtUagt3o5tBvCDxIAwOFGUfjLcvPEnvV8cE=";
     };
-    date = "2025-10-01";
+    date = "2025-10-02";
   };
   libqcef = {
     pname = "libqcef";
@@ -1114,12 +1114,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b6666";
+    version = "b6676";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b6666";
-      hash = "sha256-qofL+0UPNXgbJ1oMaZ5Ea3kFX7KMV+qWEVjBwl/fGoU=";
+      tag = "b6676";
+      hash = "sha256-KASbEkqqy2ybfWYZ3yP014+6Hw3fGi7AnZ9VtFWDM98=";
     };
   };
   loralib = {
@@ -1508,10 +1508,10 @@
   };
   peerbanhelper = {
     pname = "peerbanhelper";
-    version = "9.0.5";
+    version = "9.0.7";
     src = fetchurl {
-      url = "https://github.com/Ghost-chu/PeerBanHelper/releases/download/v9.0.5/PeerBanHelper_9.0.5.zip";
-      hash = "sha256-SFdCVIcDblEropRA8oDTUM5Y7jBQgNt6niPu+WzryEA=";
+      url = "https://github.com/Ghost-chu/PeerBanHelper/releases/download/v9.0.7/PeerBanHelper_9.0.7.zip";
+      hash = "sha256-Gw1nRSYkKUOeUxCmIO+o9E1OwwAynurbYbb5m5ULNnM=";
     };
   };
   phpmyadmin = {
@@ -1780,14 +1780,14 @@
   };
   qsp-lib = {
     pname = "qsp-lib";
-    version = "2a10f5fdc37e89ce78ff1deea08b76c6b15c6ee9";
+    version = "ab2df27699357b344a9f9e66cffd05650de0e2fa";
     src = fetchFromGitHub {
       owner = "QSPFoundation";
       repo = "qsp";
-      rev = "2a10f5fdc37e89ce78ff1deea08b76c6b15c6ee9";
-      hash = "sha256-rFuceFtL46iQQknDonZgOjndi2KAlQ9hT1nCXhtls4o=";
+      rev = "ab2df27699357b344a9f9e66cffd05650de0e2fa";
+      hash = "sha256-SiKm01JvPZxWKaUApdMcJGe8yUswe7+ARG9ZCFrq6rM=";
     };
-    date = "2025-09-30";
+    date = "2025-10-03";
   };
   qsp-stable = {
     pname = "qsp-stable";
