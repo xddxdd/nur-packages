@@ -71,7 +71,9 @@ class NvfetcherDefinition:
 
 
 def find_nvfetcher_references(nix_file: str) -> Iterable[str]:
-    return set(re.findall(r"[^a-z]+sources\.([a-zA-Z0-9_-]+)[^a-z]+", nix_file))
+    return list(
+        dict.fromkeys(re.findall(r"[^a-z]+sources\.([a-zA-Z0-9_-]+)[^a-z]+", nix_file))
+    )
 
 
 def substitute_nvfetcher_references(
