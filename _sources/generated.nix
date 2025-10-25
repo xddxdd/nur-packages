@@ -442,7 +442,7 @@
     version = "1.2.1";
     src = fetchurl {
       url = "https://example.com";
-      hash = "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=";
+      hash = "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=";
     };
   };
   douban-openapi-server = {
@@ -690,26 +690,26 @@
   };
   geolite2-asn = {
     pname = "geolite2-asn";
-    version = "2025.10.22";
+    version = "2025.10.25";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.10.22/GeoLite2-ASN.mmdb";
-      hash = "sha256-eH9E7ikrfEEGePGPtIz6xoOkfTq764WO6bfKLQeB6yw=";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.10.25/GeoLite2-ASN.mmdb";
+      hash = "sha256-rYU0zM8leRh9+ZduaLKnwKuwtfNMxzrqCGw30lvEUUg=";
     };
   };
   geolite2-city = {
     pname = "geolite2-city";
-    version = "2025.10.22";
+    version = "2025.10.25";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.10.22/GeoLite2-City.mmdb";
-      hash = "sha256-InYlTMJrogzslv4HfzNYur6cEw0xbviS/a+5UISX9Sc=";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.10.25/GeoLite2-City.mmdb";
+      hash = "sha256-IL9q6lymDMMdAZnlMtk8Dw80fA0/DI6zdykr4ZEWSTs=";
     };
   };
   geolite2-country = {
     pname = "geolite2-country";
-    version = "2025.10.22";
+    version = "2025.10.25";
     src = fetchurl {
-      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.10.22/GeoLite2-Country.mmdb";
-      hash = "sha256-2zkAtwEmdiUfMBdccTIInhZuIKApVJR7+AEMNiDNbtA=";
+      url = "https://github.com/P3TERX/GeoLite.mmdb/releases/download/2025.10.25/GeoLite2-Country.mmdb";
+      hash = "sha256-Mj0G9lu/8GJULOPXSyadurJEcwc7eCAtHawUBm/f+lI=";
     };
   };
   glauth = {
@@ -930,7 +930,7 @@
       owner = "KikoPlayProject";
       repo = "KikoPlay";
       tag = "2.0.0";
-      hash = "sha256-o6bHZ3Hg3JZm1nYXZTFKyTr+Jx4slYAt9iW4dgyEqTU=";
+      hash = "sha256-Rj+U7hs6PGq3BwLUoCRxbTl3lOVd8S5F5Lwb0tG67oM=";
     };
   };
   kikoplay-app = {
@@ -1085,12 +1085,12 @@
   };
   linux-xanmod = {
     pname = "linux-xanmod";
-    version = "6.17.4-xanmod1";
+    version = "6.17.5-xanmod1";
     src = fetchgit {
       url = "https://gitlab.com/xanmod/linux.git";
-      tag = "6.17.4-xanmod1";
+      tag = "6.17.5-xanmod1";
       fetchSubmodules = false;
-      hash = "sha256-UHfZwK0qIVhiKw8OpE8i+V2BRav6Fsju8E5rO5WRwVA=";
+      hash = "sha256-w07UZmKXZ59h5DVzqH2ECzIMmeXyLfrq83FcTN5TVXo=";
     };
   };
   linux-xanmod-6_0 = {
@@ -1115,12 +1115,12 @@
   };
   linux-xanmod-6_12 = {
     pname = "linux-xanmod-6_12";
-    version = "6.12.54-xanmod1";
+    version = "6.12.55-xanmod1";
     src = fetchgit {
       url = "https://gitlab.com/xanmod/linux.git";
-      tag = "6.12.54-xanmod1";
+      tag = "6.12.55-xanmod1";
       fetchSubmodules = false;
-      hash = "sha256-8ZeVHP8voR4GJfBB1iM8ZDx4QgCd83tJ7IkpJNW63ME=";
+      hash = "sha256-JxCRiUw8dwxsEhPrvNRRRRvVSTE6JFluLRZZ4C2yoqo=";
     };
   };
   linux-xanmod-6_6 = {
@@ -1135,12 +1135,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b6829";
+    version = "b6836";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b6829";
-      hash = "sha256-+cK37gDW7FSU4DfKZ/NWEWcNgV/pDpi/DjG8fzSs/uo=";
+      tag = "b6836";
+      hash = "sha256-GlIWpwxxMfOnnSZpNUsjrYwyaTFL/qWmylZWSRjC9WU=";
     };
   };
   loralib = {
@@ -2062,8 +2062,8 @@
     pname = "svp";
     version = "4.6.263";
     src = fetchurl {
-      url = "https://www.svp-team.com/files/svp4-linux.4.6.263.tar.bz2";
-      hash = "sha256-HyRDVFHVmTan/Si3QjGQpC3za30way10d0Hk79oXG98=";
+      url = "https://web.archive.org/web/20250904130553/https://www.svp-team.com/files/svp4-linux.4.6.263.tar.bz2";
+      hash = "sha256-NyhRstYHlpvqanTSOsqRzLF2SRMSdOaZ3/sqYh7FwzI=";
     };
   };
   sx1302-hal = {
@@ -2356,7 +2356,7 @@
     version = "1113";
     src = fetchurl {
       url = "https://example.com";
-      hash = "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=";
+      hash = "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=";
     };
   };
   vpp = {
