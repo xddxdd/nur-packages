@@ -222,25 +222,25 @@
   };
   cachyos-kernel = {
     pname = "cachyos-kernel";
-    version = "c68f31af0bd7526d3c1f2b70d4f059ae4ad64c52";
+    version = "3df891a2a165109bddcc57d4e4d04ee70ada8d42";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "linux-cachyos";
-      rev = "c68f31af0bd7526d3c1f2b70d4f059ae4ad64c52";
-      hash = "sha256-9kY0aZTTDh8NKDEIajhrE2P4auf5NZCWFRpPYWG6w2I=";
+      rev = "3df891a2a165109bddcc57d4e4d04ee70ada8d42";
+      hash = "sha256-wwecdta2xjRzWIDZbgigZdSIQRC9jdNNa5Va1uX+3zc=";
     };
-    date = "2025-10-21";
+    date = "2025-10-25";
   };
   cachyos-kernel-patches = {
     pname = "cachyos-kernel-patches";
-    version = "719c67f34bbfcaca5df640aea7078419f6010510";
+    version = "b6045ec5a50b75b2553f65314a651a2aa953dc13";
     src = fetchFromGitHub {
       owner = "CachyOS";
       repo = "kernel-patches";
-      rev = "719c67f34bbfcaca5df640aea7078419f6010510";
-      hash = "sha256-JtFidipg6Yqxqeb765ZWd5uT55m6PjJ41y+pY/SxtCE=";
+      rev = "b6045ec5a50b75b2553f65314a651a2aa953dc13";
+      hash = "sha256-ANmrchsVt435Z01AymbIeiSxdCFrQaTMOWVmcFUNd/A=";
     };
-    date = "2025-10-24";
+    date = "2025-10-25";
   };
   calibre-cops = {
     pname = "calibre-cops";
@@ -441,8 +441,8 @@
     pname = "dn42-pingfinder-stable";
     version = "1.2.1";
     src = fetchurl {
-      url = "https://example.com";
-      hash = "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=";
+      url = "https://www.google.com/generate_204";
+      hash = "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=";
     };
   };
   douban-openapi-server = {
@@ -2355,8 +2355,8 @@
     pname = "vlmcsd-stable";
     version = "1113";
     src = fetchurl {
-      url = "https://example.com";
-      hash = "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=";
+      url = "https://www.google.com/generate_204";
+      hash = "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=";
     };
   };
   vpp = {

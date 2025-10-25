@@ -189,7 +189,7 @@ fetch.git = "https://git.lantian.pub/backup/dn42-pingfinder.git"
 src.git = "https://git.lantian.pub/backup/dn42-pingfinder.git"
 
 [dn42-pingfinder-stable]
-fetch.url = "https://example.com"
+fetch.url = "https://www.google.com/generate_204"
 src.webpage = "https://git.lantian.pub/backup/dn42-pingfinder/raw/branch/master/index.php"
 src.regex = "\\$script_version = '([0-9\\.]+)';"
 
@@ -1046,7 +1046,7 @@ fetch.github = "Wind4/vlmcsd"
 src.git = "https://github.com/Wind4/vlmcsd.git"
 
 [vlmcsd-stable]
-fetch.url = "https://example.com"
+fetch.url = "https://www.google.com/generate_204"
 src.github = "Wind4/vlmcsd"
 src.prefix = "svn"
 

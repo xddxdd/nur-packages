@@ -415,7 +415,7 @@
     },
     "cachyos-kernel": {
         "cargoLock": null,
-        "date": "2025-10-21",
+        "date": "2025-10-25",
         "extract": null,
         "name": "cachyos-kernel",
         "passthru": null,
@@ -427,16 +427,16 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "linux-cachyos",
-            "rev": "c68f31af0bd7526d3c1f2b70d4f059ae4ad64c52",
-            "sha256": "sha256-9kY0aZTTDh8NKDEIajhrE2P4auf5NZCWFRpPYWG6w2I=",
+            "rev": "3df891a2a165109bddcc57d4e4d04ee70ada8d42",
+            "sha256": "sha256-wwecdta2xjRzWIDZbgigZdSIQRC9jdNNa5Va1uX+3zc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c68f31af0bd7526d3c1f2b70d4f059ae4ad64c52"
+        "version": "3df891a2a165109bddcc57d4e4d04ee70ada8d42"
     },
     "cachyos-kernel-patches": {
         "cargoLock": null,
-        "date": "2025-10-24",
+        "date": "2025-10-25",
         "extract": null,
         "name": "cachyos-kernel-patches",
         "passthru": null,
@@ -448,12 +448,12 @@
             "name": null,
             "owner": "CachyOS",
             "repo": "kernel-patches",
-            "rev": "719c67f34bbfcaca5df640aea7078419f6010510",
-            "sha256": "sha256-JtFidipg6Yqxqeb765ZWd5uT55m6PjJ41y+pY/SxtCE=",
+            "rev": "b6045ec5a50b75b2553f65314a651a2aa953dc13",
+            "sha256": "sha256-ANmrchsVt435Z01AymbIeiSxdCFrQaTMOWVmcFUNd/A=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "719c67f34bbfcaca5df640aea7078419f6010510"
+        "version": "b6045ec5a50b75b2553f65314a651a2aa953dc13"
     },
     "calibre-cops": {
         "cargoLock": null,
@@ -840,9 +840,9 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=",
+            "sha256": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
             "type": "url",
-            "url": "https://example.com"
+            "url": "https://www.google.com/generate_204"
         },
         "version": "1.2.1"
     },
@@ -4588,9 +4588,9 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=",
+            "sha256": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
             "type": "url",
-            "url": "https://example.com"
+            "url": "https://www.google.com/generate_204"
         },
         "version": "1113"
     },
