@@ -38,5 +38,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://github.com/CachyOS/uksmd";
     license = lib.licenses.gpl3Only;
     mainProgram = "uksmd";
+    broken = true;
   };
 })
