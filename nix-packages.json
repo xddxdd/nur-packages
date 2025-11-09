@@ -544,6 +544,11 @@
     "pname": "pocl",
     "version": "7.1"
   },
+  "legacyPackages.x86_64-linux.deprecated.vpp": {
+    "description": "(DEPRECATED: vpp is available in nixpkgs) Vector Packet Processing",
+    "pname": "vpp",
+    "version": "25.10"
+  },
   "legacyPackages.x86_64-linux.deprecated.wechat-uos": {
     "description": "(DEPRECATED: wechat-uos is available in nixpkgs, if you still want sandbox functionality, use wechat-uos-sandboxed package.) WeChat desktop with sandbox enabled ($HOME/Documents/WeChat_Data) (Adapted from https://aur.archlinux.org/packages/wechat-uos-bwrap)",
     "pname": "wechat-uos",
@@ -5284,11 +5289,6 @@
     "pname": "vlmcsd",
     "version": "1113-unstable-2023-07-28"
   },
-  "legacyPackages.x86_64-linux.uncategorized.vpp": {
-    "description": "Vector Packet Processing",
-    "pname": "vpp",
-    "version": "25.10"
-  },
   "legacyPackages.x86_64-linux.uncategorized.vuetorrent-backend": {
     "description": "FSimple backend service to store configuration server-side",
     "pname": "vuetorrent-backend",
@@ -5375,7 +5375,7 @@
     "version": "1113-unstable-2023-07-28"
   },
   "legacyPackages.x86_64-linux.vpp": {
-    "description": "Vector Packet Processing",
+    "description": "(DEPRECATED: vpp is available in nixpkgs) Vector Packet Processing",
     "pname": "vpp",
     "version": "25.10"
   },
@@ -6415,7 +6415,7 @@
     "version": "1113-unstable-2023-07-28"
   },
   "packages.x86_64-linux.vpp": {
-    "description": "Vector Packet Processing",
+    "description": "(DEPRECATED: vpp is available in nixpkgs) Vector Packet Processing",
     "pname": "vpp",
     "version": "25.10"
   },
