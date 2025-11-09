@@ -4119,11 +4119,6 @@
     "pname": "openvswitch-dpdk",
     "version": "3.6.0"
   },
-  "legacyPackages.x86_64-linux.ormsgpack": {
-    "description": "Msgpack serialization/deserialization library for Python, written in Rust using PyO3 and rust-msgpack",
-    "pname": "python3.13-ormsgpack",
-    "version": "1.12.0"
-  },
   "legacyPackages.x86_64-linux.osdlyrics": {
     "description": "Standalone lyrics fetcher/displayer (windowed and OSD mode)",
     "pname": "osdlyrics",
@@ -4293,11 +4288,6 @@
     "description": "OpenCC made with Python",
     "pname": "python3.13-opencc-python-reimplemented",
     "version": "0-unstable-2023-02-11"
-  },
-  "legacyPackages.x86_64-linux.python3Packages.ormsgpack": {
-    "description": "Msgpack serialization/deserialization library for Python, written in Rust using PyO3 and rust-msgpack",
-    "pname": "python3.13-ormsgpack",
-    "version": "1.12.0"
   },
   "legacyPackages.x86_64-linux.python3Packages.py-rcon": {
     "description": "Python implementation of RCON",
@@ -6068,11 +6058,6 @@
     "description": "Multilayer virtual switch",
     "pname": "openvswitch-dpdk",
     "version": "3.6.0"
-  },
-  "packages.x86_64-linux.ormsgpack": {
-    "description": "Msgpack serialization/deserialization library for Python, written in Rust using PyO3 and rust-msgpack",
-    "pname": "python3.13-ormsgpack",
-    "version": "1.12.0"
   },
   "packages.x86_64-linux.osdlyrics": {
     "description": "Standalone lyrics fetcher/displayer (windowed and OSD mode)",
