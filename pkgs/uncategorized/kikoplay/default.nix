@@ -2,7 +2,6 @@
   stdenv,
   sources,
   lib,
-  callPackage,
   makeWrapper,
   cmake,
   qt6,
@@ -10,11 +9,9 @@
   mpv,
   lua5_3_compat,
   onnxruntime,
+  ela-widget-tools,
+  qtwebapp,
 }:
-let
-  ela-widget-tools = callPackage ./ela-widget-tools.nix { inherit sources; };
-  qtwebapp = callPackage ./qtwebapp.nix { inherit sources; };
-in
 stdenv.mkDerivation (finalAttrs: {
   inherit (sources.kikoplay) pname version src;
 
