@@ -86,6 +86,6 @@ stdenv.mkDerivation (finalAttrs: {
     homepage = "https://kikoplay.fun";
     license = lib.licenses.gpl3Only;
     # See https://github.com/NixOS/nixpkgs/pull/354929
-    broken = stdenv.isDarwin;
+    broken = stdenv.hostPlatform.isDarwin;
   };
 })
