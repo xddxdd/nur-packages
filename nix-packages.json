@@ -929,11 +929,6 @@
     "pname": "nixos-cleanup",
     "version": ""
   },
-  "legacyPackages.x86_64-linux.lantianCustomized.telegram-desktop": {
-    "description": "Telegram Desktop messaging app (Without anti-features)",
-    "pname": "telegram-desktop",
-    "version": "6.3.1"
-  },
   "legacyPackages.x86_64-linux.lantianCustomized.transmission-with-webui": {
     "description": "Fast, easy and free BitTorrent client",
     "pname": "transmission",
@@ -1694,6 +1689,11 @@
     "pname": "nvidia-x11",
     "version": "580.95.05-6.12.59"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.grid.19_3": {
+    "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "580.105.08-6.12.59"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.grid.9_2": {
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
     "pname": "nvidia-x11",
@@ -1938,6 +1938,11 @@
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
     "pname": "nvidia-x11",
     "version": "580.95.05-6.12.59"
+  },
+  "legacyPackages.x86_64-linux.nvidia-grid.guest.19_3": {
+    "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "580.105.08-6.12.59"
   },
   "legacyPackages.x86_64-linux.nvidia-grid.guest.9_2": {
     "description": "NVIDIA vGPU guest driver (GRID driver, experimental package)",
@@ -2184,6 +2189,11 @@
     "pname": "nvidia-x11",
     "version": "580.95.02-6.12.59"
   },
+  "legacyPackages.x86_64-linux.nvidia-grid.host.19_3": {
+    "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "580.105.06-6.12.59"
+  },
   "legacyPackages.x86_64-linux.nvidia-grid.host.9_2": {
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
     "pname": "nvidia-x11",
@@ -2428,6 +2438,11 @@
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
     "pname": "nvidia-x11",
     "version": "580.95.02-6.12.59"
+  },
+  "legacyPackages.x86_64-linux.nvidia-grid.vgpu.19_3": {
+    "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
+    "pname": "nvidia-x11",
+    "version": "580.105.06-6.12.59"
   },
   "legacyPackages.x86_64-linux.nvidia-grid.vgpu.9_2": {
     "description": "NVIDIA vGPU host driver (vGPU-KVM driver, experimental package)",
