@@ -5,7 +5,6 @@
   buildLinux,
   stdenv,
   kernelPatches,
-  linuxKernel,
   ...
 }@importArgs:
 {
@@ -84,5 +83,4 @@ let
 in
 [
   (lib.nameValuePair "linux-cachyos-${pnameSuffix}" kernelPackage)
-  (lib.nameValuePair "linuxPackages-cachyos-${pnameSuffix}" (linuxKernel.packagesFor kernelPackage))
 ]
