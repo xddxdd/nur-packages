@@ -1080,12 +1080,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b7490";
+    version = "b7501";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b7490";
-      hash = "sha256-qSQltYsTCOo0akMAi6lMznzr+oX/p9TMtDOAxnZp/1Y=";
+      tag = "b7501";
+      hash = "sha256-s70fgaQCNvMhflSAbemnStylncN+3cllDzSvGaIyNVQ=";
     };
   };
   loralib = {
@@ -1549,14 +1549,14 @@
   };
   pterodactyl-wings = {
     pname = "pterodactyl-wings";
-    version = "ae6c62905bd1dcffd3d73c571efba2d53667317a";
+    version = "856097b0c71bb075845e76bc200eac94b74e27e5";
     src = fetchFromGitHub {
       owner = "pterodactyl";
       repo = "wings";
-      rev = "ae6c62905bd1dcffd3d73c571efba2d53667317a";
-      hash = "sha256-6Wh9lCJ6Oz+GMUck5V1l0CGdj2N59oPDzQVFVKiySak=";
+      rev = "856097b0c71bb075845e76bc200eac94b74e27e5";
+      hash = "sha256-3D2WDoErRrpHFLUGXnqP/M+PHX3YFRn0EK6EoBZ0Wxc=";
     };
-    date = "2025-11-01";
+    date = "2025-12-20";
   };
   pterodactyl-wings-stable = {
     pname = "pterodactyl-wings-stable";
