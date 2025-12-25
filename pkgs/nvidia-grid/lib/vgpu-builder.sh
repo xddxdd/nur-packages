@@ -118,6 +118,10 @@ installPhase() {
     # Install vGPU config
     install -Dm644 vgpuConfig.xml $bin/share/nvidia/vgpu/vgpuConfig.xml
   fi
+
+  if [ -n "$vgpuConfig" ]; then
+    install -Dm644 vgpuConfig.xml $vgpuConfig/vgpuConfig.xml
+  fi
 }
 
 fixupPhase() {
