@@ -84,7 +84,7 @@ _:
             pkgs/kernel-modules/**/*.nix \
             pkgs/python-packages/**/*.nix \
             pkgs/uncategorized/**/*.nix \
-            | xargs dirname | uniq | xargs -n1 basename)
+            | xargs dirname | sort | uniq | xargs -n1 basename)
 
           TMP_LIST=$(mktemp)
           for ATTR in $ATTRS; do
