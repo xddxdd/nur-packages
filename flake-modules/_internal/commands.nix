@@ -79,7 +79,8 @@ _:
         '';
 
         update-hashes = ''
-          ATTRS=$(grep --files-with-matches "sha256-" \
+          # Only check hashes that are not src hashes
+          ATTRS=$(grep --files-with-matches "Hash = \"sha256-" \
             pkgs/kernel-modules/**/*.nix \
             pkgs/python-packages/**/*.nix \
             pkgs/uncategorized/**/*.nix \
