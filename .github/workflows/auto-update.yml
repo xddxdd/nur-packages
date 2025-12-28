@@ -60,14 +60,13 @@ jobs:
           key: nvfetcher
 
       - name: Build nix packages
+        env:
+          NIX_REMOTE: daemon
         run: |
           cat > secrets.toml <<EOF
           [keys]
           github = "${{ secrets.GITHUB_TOKEN }}"
           EOF
-
-          # Fix permission error
-          sudo chmod 777 /nix
 
           nix run .#update
           nix run .#update-hashes
