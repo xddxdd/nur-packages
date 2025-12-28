@@ -66,8 +66,11 @@ jobs:
           github = "${{ secrets.GITHUB_TOKEN }}"
           EOF
 
+          # Fix permission error
+          sudo chmod 777 /nix
+
           nix run .#update
-          sudo nix run .#update-hashes
+          nix run .#update-hashes
 
           rm -f secrets.toml
 
