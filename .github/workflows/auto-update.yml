@@ -38,6 +38,7 @@ jobs:
       - name: Create nix daemon tmpdir path
         run: |
           sudo mkdir -p /nix/tmpdir
+          sudo chown "$(whoami)" /nix
           sudo chown "$(whoami)" /nix/tmpdir
 
       - name: Install nix
@@ -60,15 +61,13 @@ jobs:
           key: nvfetcher
 
       - name: Build nix packages
-        env:
-          NIX_REMOTE: daemon
         run: |
           cat > secrets.toml <<EOF
           [keys]
           github = "${{ secrets.GITHUB_TOKEN }}"
           EOF
 
-          nix run .#update
+          # nix run .#update
           nix run .#update-hashes
 
           rm -f secrets.toml
