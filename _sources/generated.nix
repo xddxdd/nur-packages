@@ -1140,6 +1140,22 @@
     };
     date = "2023-10-17";
   };
+  lightpanda-amd64 = {
+    pname = "lightpanda-amd64";
+    version = "0.2.7";
+    src = fetchurl {
+      url = "https://github.com/lightpanda-io/browser/releases/download/0.2.7/lightpanda-x86_64-linux";
+      hash = "sha256-cGrMzVDnChi4IG/Js8Fvy4V0uYS21prgWppCYv7KvxI=";
+    };
+  };
+  lightpanda-arm64 = {
+    pname = "lightpanda-arm64";
+    version = "0.2.7";
+    src = fetchurl {
+      url = "https://github.com/lightpanda-io/browser/releases/download/0.2.7/lightpanda-aarch64-linux";
+      hash = "sha256-C0LCBkVxnjzfYCKUrIH7zcEMi7NhBL4IbPMoTax4gAs=";
+    };
+  };
   linguaspark-core = {
     pname = "linguaspark-core";
     version = "6a2bc711cce73bc053675c0293dd37c8029e62dd";

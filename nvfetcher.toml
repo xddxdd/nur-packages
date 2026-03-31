@@ -492,6 +492,16 @@ src.git = "https://github.com/rime/librime-charcode.git"
 fetch.github = "lotem/librime-proto"
 src.git = "https://github.com/lotem/librime-proto.git"
 
+[lightpanda-amd64]
+fetch.url = "https://github.com/lightpanda-io/browser/releases/download/$ver/lightpanda-x86_64-linux"
+src.github_tag = "lightpanda-io/browser"
+src.exclude_regex = "nightly"
+
+[lightpanda-arm64]
+fetch.url = "https://github.com/lightpanda-io/browser/releases/download/$ver/lightpanda-aarch64-linux"
+src.github_tag = "lightpanda-io/browser"
+src.exclude_regex = "nightly"
+
 [linguaspark-core]
 fetch.github = "LinguaSpark/core"
 git.fetchSubmodules = true

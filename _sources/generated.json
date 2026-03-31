@@ -2209,6 +2209,36 @@
         },
         "version": "657a923cd4c333e681dc943e6894e6f6d42d25b4"
     },
+    "lightpanda-amd64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "lightpanda-amd64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-cGrMzVDnChi4IG/Js8Fvy4V0uYS21prgWppCYv7KvxI=",
+            "type": "url",
+            "url": "https://github.com/lightpanda-io/browser/releases/download/0.2.7/lightpanda-x86_64-linux"
+        },
+        "version": "0.2.7"
+    },
+    "lightpanda-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "lightpanda-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-C0LCBkVxnjzfYCKUrIH7zcEMi7NhBL4IbPMoTax4gAs=",
+            "type": "url",
+            "url": "https://github.com/lightpanda-io/browser/releases/download/0.2.7/lightpanda-aarch64-linux"
+        },
+        "version": "0.2.7"
+    },
     "linguaspark-core": {
         "cargoLock": null,
         "date": "2025-04-22",
