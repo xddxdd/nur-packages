@@ -4173,6 +4173,27 @@
         },
         "version": "2.1.0"
     },
+    "tcpser": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "tcpser",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "go4retro",
+            "repo": "tcpser",
+            "rev": "v1.1.4",
+            "sha256": "sha256-Ir/tQde7hfqlgOVXE2HqJSzEXdceCTywptN8PRqylMI=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.1.4"
+    },
     "telegram-desktop-patches": {
         "cargoLock": null,
         "date": "2025-04-05",
