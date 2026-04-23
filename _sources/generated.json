@@ -449,6 +449,27 @@
         },
         "version": "13.4.1130.70"
     },
+    "buname": {
+        "cargoLock": null,
+        "date": "2025-09-18",
+        "extract": null,
+        "name": "buname",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "dramforever",
+            "repo": "buname",
+            "rev": "a62d3d214dafb92932f4e5478eebc212ae4cb57d",
+            "sha256": "sha256-5pzAhggb8BD/5uxMXdg53A/4DLXTdwP2iqx9iw6diA8=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "a62d3d214dafb92932f4e5478eebc212ae4cb57d"
+    },
     "calibre-cops": {
         "cargoLock": null,
         "date": null,

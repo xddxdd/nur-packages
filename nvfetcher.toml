@@ -100,6 +100,10 @@ src.aur = "browser360-bin"
 fetch.url = "https://gedown.360safe.com/gc/signed_com.360.browser-stable_$ver-1_arm64.deb"
 src.aur = "browser360-bin"
 
+[buname]
+fetch.github = "dramforever/buname"
+src.git = "https://github.com/dramforever/buname.git"
+
 [calibre-cops]
 fetch.url = "https://github.com/mikespub-org/seblucas-cops/releases/download/$ver/cops-$ver-php84.zip"
 src.github = "mikespub-org/seblucas-cops"
