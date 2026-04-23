@@ -2527,6 +2527,27 @@
         },
         "version": "34f72a35fa2e7620342ff153bd2039546048bd3c"
     },
+    "n8n-openai-bridge": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "n8n-openai-bridge",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "sveneisenschmidt",
+            "repo": "n8n-openai-bridge",
+            "rev": "v0.0.17",
+            "sha256": "sha256-tti1VBvY4UA1cGax99bRIkYWLbuuolI1MPbl9Ky1TxM=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.0.17"
+    },
     "nbfc-linux-lantian": {
         "cargoLock": null,
         "date": "2022-06-13",

@@ -1301,6 +1301,16 @@
     };
     date = "2026-04-22";
   };
+  n8n-openai-bridge = {
+    pname = "n8n-openai-bridge";
+    version = "v0.0.17";
+    src = fetchFromGitHub {
+      owner = "sveneisenschmidt";
+      repo = "n8n-openai-bridge";
+      tag = "v0.0.17";
+      hash = "sha256-tti1VBvY4UA1cGax99bRIkYWLbuuolI1MPbl9Ky1TxM=";
+    };
+  };
   nbfc-linux-lantian = {
     pname = "nbfc-linux-lantian";
     version = "32a49117ca3ff17d7681713a8dc8812323142dcb";

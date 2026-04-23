@@ -560,6 +560,10 @@ src.github = "modelscope/modelscope"
 fetch.github = "bkerler/mtkclient"
 src.git = "https://github.com/bkerler/mtkclient.git"
 
+[n8n-openai-bridge]
+fetch.github = "sveneisenschmidt/n8n-openai-bridge"
+src.github = "sveneisenschmidt/n8n-openai-bridge"
+
 [nbfc-linux-lantian]
 fetch.github = "xddxdd/nbfc-linux"
 src.git = "https://github.com/xddxdd/nbfc-linux.git"
