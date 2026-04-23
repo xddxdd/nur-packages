@@ -419,6 +419,27 @@
         },
         "version": "OQS-BoringSSL-snapshot-2025-01"
     },
+    "browser-control-mcp": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "browser-control-mcp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "eyalzh",
+            "repo": "browser-control-mcp",
+            "rev": "v1.5.1",
+            "sha256": "sha256-P0ZYjaHArngobtOf4C3j3LpuwfT4vZdJnoZnzeNoIWo=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.5.1"
+    },
     "browser360-amd64": {
         "cargoLock": null,
         "date": null,

@@ -221,6 +221,16 @@
       hash = "sha256-zVZgAvq6V85hxO79Ct8s+VVyf9yPa/YbRL4D5z31qEs=";
     };
   };
+  browser-control-mcp = {
+    pname = "browser-control-mcp";
+    version = "v1.5.1";
+    src = fetchFromGitHub {
+      owner = "eyalzh";
+      repo = "browser-control-mcp";
+      tag = "v1.5.1";
+      hash = "sha256-P0ZYjaHArngobtOf4C3j3LpuwfT4vZdJnoZnzeNoIWo=";
+    };
+  };
   browser360-amd64 = {
     pname = "browser360-amd64";
     version = "13.4.1130.70";
