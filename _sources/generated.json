@@ -176,6 +176,27 @@
         },
         "version": "e91ef643a7ff341e1fdaa1c6ff63b3cdc52ac8b4"
     },
+    "awawausb-native-stub": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "awawausb-native-stub",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "ArcaneNibble",
+            "repo": "awawausb",
+            "rev": "v0.1",
+            "sha256": "sha256-9VxrTCVhax+R9T6fiGUZ6IbdFOzzP6qumlYcI4rkR8A=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.1"
+    },
     "axiom-syslog-proxy": {
         "cargoLock": null,
         "date": null,

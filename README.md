@@ -85,7 +85,7 @@ Or, use variables from this repository in case I change them:
 ## Packages
 
 <details>
-<summary>Package set: (Uncategorized) (201 packages)</summary>
+<summary>Package set: (Uncategorized) (202 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
@@ -93,6 +93,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `adspower` | [adspower](https://www.adspower.com/) | 7.3.26 | Antidetect Browser for Multi-Accounts |
 |  | `amule-dlp` | [amule-dlp](https://github.com/persmule/amule-dlp) | 2.3.2-unstable-2023-03-02 | Peer-to-peer client for the eD2K and Kademlia networks (with Dynamic Leech Protection) |
 |  | `asterisk-g72x` | [asterisk-g72x](https://github.com/arkadijs/asterisk-g72x) | 0-unstable-2025-12-13 | G.729 and G.723.1 codecs for Asterisk (Only G.729 is enabled) |
+|  | `awawausb-native-stub` | [awawausb-native-stub](https://github.com/ArcaneNibble/awawausb) | 0.1 | Native messaging stub for the awawausb WebUSB Firefox extension |
 |  | `axiom-syslog-proxy` | [axiom-syslog-proxy](https://github.com/axiomhq/axiom-syslog-proxy) | 0.8.0 | Syslog push interface to Axiom |
 | `x86_64-linux` | `baidunetdisk` | [baidunetdisk](https://pan.baidu.com/) | 4.17.7 | Baidu Netdisk |
 |  | `baidupcs-go` | [baidupcs-go](https://github.com/qjfoidnh/BaiduPCS-Go) | 4.0.1-unstable-2026-03-26 | Baidu Netdisk commandline client, mimicking Linux shell file handling commands |
@@ -1071,13 +1072,14 @@ Or, use variables from this repository in case I change them:
 </details>
 
 <details>
-<summary>Package set: uncategorized (151 packages)</summary>
+<summary>Package set: uncategorized (152 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
 | `x86_64-linux` | `uncategorized.adspower` | [adspower](https://www.adspower.com/) | 7.3.26 | Antidetect Browser for Multi-Accounts |
 |  | `uncategorized.amule-dlp` | [amule-dlp](https://github.com/persmule/amule-dlp) | 2.3.2-unstable-2023-03-02 | Peer-to-peer client for the eD2K and Kademlia networks (with Dynamic Leech Protection) |
 |  | `uncategorized.asterisk-g72x` | [asterisk-g72x](https://github.com/arkadijs/asterisk-g72x) | 0-unstable-2025-12-13 | G.729 and G.723.1 codecs for Asterisk (Only G.729 is enabled) |
+|  | `uncategorized.awawausb-native-stub` | [awawausb-native-stub](https://github.com/ArcaneNibble/awawausb) | 0.1 | Native messaging stub for the awawausb WebUSB Firefox extension |
 |  | `uncategorized.axiom-syslog-proxy` | [axiom-syslog-proxy](https://github.com/axiomhq/axiom-syslog-proxy) | 0.8.0 | Syslog push interface to Axiom |
 | `x86_64-linux` | `uncategorized.baidunetdisk` | [baidunetdisk](https://pan.baidu.com/) | 4.17.7 | Baidu Netdisk |
 |  | `uncategorized.baidupcs-go` | [baidupcs-go](https://github.com/qjfoidnh/BaiduPCS-Go) | 4.0.1-unstable-2026-03-26 | Baidu Netdisk commandline client, mimicking Linux shell file handling commands |

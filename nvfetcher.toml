@@ -37,6 +37,10 @@ src.git = "https://github.com/arkadijs/asterisk-g72x.git"
 fetch.github = "traud/asterisk-gsm-efr"
 src.git = "https://github.com/traud/asterisk-gsm-efr.git"
 
+[awawausb-native-stub]
+fetch.github = "ArcaneNibble/awawausb"
+src.github = "ArcaneNibble/awawausb"
+
 [axiom-syslog-proxy]
 fetch.github = "axiomhq/axiom-syslog-proxy"
 src.github = "axiomhq/axiom-syslog-proxy"

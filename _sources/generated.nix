@@ -98,6 +98,16 @@
     };
     date = "2018-08-28";
   };
+  awawausb-native-stub = {
+    pname = "awawausb-native-stub";
+    version = "v0.1";
+    src = fetchFromGitHub {
+      owner = "ArcaneNibble";
+      repo = "awawausb";
+      tag = "v0.1";
+      hash = "sha256-9VxrTCVhax+R9T6fiGUZ6IbdFOzzP6qumlYcI4rkR8A=";
+    };
+  };
   axiom-syslog-proxy = {
     pname = "axiom-syslog-proxy";
     version = "v0.8.0";
