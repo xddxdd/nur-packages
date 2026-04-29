@@ -289,12 +289,12 @@
   };
   cliproxyapi = {
     pname = "cliproxyapi";
-    version = "v6.9.41";
+    version = "v6.9.43";
     src = fetchFromGitHub {
       owner = "router-for-me";
       repo = "CLIProxyAPI";
-      tag = "v6.9.41";
-      hash = "sha256-Q5AcqgSOWRTIDOqPjT4rwIZCrgel0gtDW6+86OqxZds=";
+      tag = "v6.9.43";
+      hash = "sha256-I3qHpbVjZyHMyxNgWYntVxbO+Fkcejn6SHyIcwyyK5Y=";
     };
   };
   cockpy = {
@@ -767,10 +767,10 @@
   };
   fr24feed-armhf = {
     pname = "fr24feed-armhf";
-    version = "1.0.56-1";
+    version = "1.0.56-2";
     src = fetchurl {
-      url = "https://repo-feed.flightradar24.com/pool/raspberrypi-stable/f/fr24feed/fr24feed_1.0.56-1_armhf.deb";
-      hash = "sha256-14Rx93C+23cyvnY4FRrZwodOEGVwxILsvMACQdPl3B8=";
+      url = "https://repo-feed.flightradar24.com/pool/raspberrypi-stable/f/fr24feed/fr24feed_1.0.56-2_armhf.deb";
+      hash = "sha256-cv2ng18SdONfovBvxXy0piZR4qH6BvUxIC6+9oiCdC4=";
     };
   };
   fr24feed-i386 = {
@@ -1223,12 +1223,12 @@
   };
   llama-cpp = {
     pname = "llama-cpp";
-    version = "b8966";
+    version = "b8979";
     src = fetchFromGitHub {
       owner = "ggerganov";
       repo = "llama.cpp";
-      tag = "b8966";
-      hash = "sha256-gXUreETIUGw55g3HLlYgPmyKzZYLM4jUC3Enz6ER8bo=";
+      tag = "b8979";
+      hash = "sha256-h0x/nHXfoP/J5WkxQLFdzqrHIbwEft5Z9SxhGxTQM+k=";
     };
   };
   loralib = {
@@ -2027,14 +2027,14 @@
   };
   rtpengine = {
     pname = "rtpengine";
-    version = "a5edfedc05debbe12c524326cdca1ce2b8b20379";
+    version = "cad798ce75fa60bc1bb80a71d479f33ef0a99d1e";
     src = fetchFromGitHub {
       owner = "sipwise";
       repo = "rtpengine";
-      rev = "a5edfedc05debbe12c524326cdca1ce2b8b20379";
-      hash = "sha256-R07fBsjuzKaY7z4SfRz7op6PSmM+VLnBRoq4uZvZqNg=";
+      rev = "cad798ce75fa60bc1bb80a71d479f33ef0a99d1e";
+      hash = "sha256-xL5nvDnG8cZ+N+QfcMpmoOBA8AVzHBdGSAC7wSK740g=";
     };
-    date = "2026-04-27";
+    date = "2026-04-29";
   };
   rtpengine-stable = {
     pname = "rtpengine-stable";
