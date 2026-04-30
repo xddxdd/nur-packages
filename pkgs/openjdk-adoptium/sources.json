@@ -2285,6 +2285,12 @@
             "type": "jdk",
             "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_riscv64_linux_hotspot_17.0.19_10.tar.gz",
             "sha256": "191cdd904aef8b8a7a91c98d649c7e3dc75b7341f112061231c2094c418fd630"
+        },
+        "aarch64": {
+            "version": "17.0.19_10_adopt",
+            "type": "jdk",
+            "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.19_10.tar.gz",
+            "sha256": "83a52172678ec8975164648654869cb2e71d7c748b47aca94b29bbfa10c18e81"
         }
     },
     "jre-bin-17_0_19_10": {
@@ -2305,6 +2311,12 @@
             "type": "jre",
             "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jre_riscv64_linux_hotspot_17.0.19_10.tar.gz",
             "sha256": "08c8c193fc2e8e6eb4450d3ddcefa78889eef338b2bbc0b30e5a6d586fc6d646"
+        },
+        "aarch64": {
+            "version": "17.0.19_10_adopt",
+            "type": "jre",
+            "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.19_10.tar.gz",
+            "sha256": "aae834297a87736869745be7c1fca3207ea9167c5824f41c88b0ebb2e3ccb9b1"
         }
     },
     "jre-bin-17_0_18_8": {
@@ -3573,6 +3585,12 @@
             "type": "jdk",
             "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_riscv64_linux_hotspot_17.0.19_10.tar.gz",
             "sha256": "191cdd904aef8b8a7a91c98d649c7e3dc75b7341f112061231c2094c418fd630"
+        },
+        "aarch64": {
+            "version": "17.0.19_10_adopt",
+            "type": "jdk",
+            "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.19_10.tar.gz",
+            "sha256": "83a52172678ec8975164648654869cb2e71d7c748b47aca94b29bbfa10c18e81"
         }
     },
     "jre-bin-17": {
@@ -3593,6 +3611,12 @@
             "type": "jre",
             "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jre_riscv64_linux_hotspot_17.0.19_10.tar.gz",
             "sha256": "08c8c193fc2e8e6eb4450d3ddcefa78889eef338b2bbc0b30e5a6d586fc6d646"
+        },
+        "aarch64": {
+            "version": "17.0.19_10_adopt",
+            "type": "jre",
+            "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.19_10.tar.gz",
+            "sha256": "aae834297a87736869745be7c1fca3207ea9167c5824f41c88b0ebb2e3ccb9b1"
         }
     },
     "jdk-bin-18_0_2_1_1": {

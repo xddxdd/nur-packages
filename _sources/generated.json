@@ -562,12 +562,12 @@
             "name": null,
             "owner": "router-for-me",
             "repo": "CLIProxyAPI",
-            "rev": "v6.9.43",
-            "sha256": "sha256-I3qHpbVjZyHMyxNgWYntVxbO+Fkcejn6SHyIcwyyK5Y=",
+            "rev": "v6.9.45",
+            "sha256": "sha256-xqlnJu9MdcpnR2IpOi1cVt9tmt5O4IlQtq3j0ia2dWY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v6.9.43"
+        "version": "v6.9.45"
     },
     "cockpy": {
         "cargoLock": null,
@@ -1207,7 +1207,7 @@
     },
     "ela-widget-tools": {
         "cargoLock": null,
-        "date": "2026-04-09",
+        "date": "2026-04-30",
         "extract": null,
         "name": "ela-widget-tools",
         "passthru": null,
@@ -1219,12 +1219,12 @@
             "name": null,
             "owner": "Liniyous",
             "repo": "ElaWidgetTools",
-            "rev": "2488f5d4a6bc65154d17aaaa3dc4714ba0ec3aa3",
-            "sha256": "sha256-jQqRTrcxw1eTuo82Q4LF59zpuSXmQxXWYqIf0wIu14M=",
+            "rev": "34882e153d4a26daa1d01dd92afe6878b6ae1da2",
+            "sha256": "sha256-Zga3mbuzvMuwrSH9s7jMScasaFm9uInCmcOMrkoWnI4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2488f5d4a6bc65154d17aaaa3dc4714ba0ec3aa3"
+        "version": "34882e153d4a26daa1d01dd92afe6878b6ae1da2"
     },
     "email-oauth2-proxy": {
         "cargoLock": null,
@@ -2211,7 +2211,7 @@
     },
     "liboqs-unstable": {
         "cargoLock": null,
-        "date": "2026-04-23",
+        "date": "2026-04-30",
         "extract": null,
         "name": "liboqs-unstable",
         "passthru": null,
@@ -2223,12 +2223,12 @@
             "name": null,
             "owner": "open-quantum-safe",
             "repo": "liboqs",
-            "rev": "ef70dea7c85e5637f37828d75e5b9bb29dbfe513",
-            "sha256": "sha256-HDwszZza+WkWhxXL54ueHzZpupOQ4C5BpusjzMlCfzg=",
+            "rev": "c343814f9de99642fb2872a8069a46a4226d7c5f",
+            "sha256": "sha256-DX3FnitQpRp6qQOzJN+Q2aLoWFUkEUXAmF1ZGWXHcuk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ef70dea7c85e5637f37828d75e5b9bb29dbfe513"
+        "version": "c343814f9de99642fb2872a8069a46a4226d7c5f"
     },
     "libqcef": {
         "cargoLock": null,
@@ -2379,12 +2379,12 @@
             "name": null,
             "owner": "ggerganov",
             "repo": "llama.cpp",
-            "rev": "b8979",
-            "sha256": "sha256-h0x/nHXfoP/J5WkxQLFdzqrHIbwEft5Z9SxhGxTQM+k=",
+            "rev": "b8989",
+            "sha256": "sha256-tq6khriVEOS5PrLZYHQl/RREjY0hJLnlVKKYL0mcG0M=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b8979"
+        "version": "b8989"
     },
     "loralib": {
         "cargoLock": null,
@@ -3947,7 +3947,7 @@
     },
     "rtpengine": {
         "cargoLock": null,
-        "date": "2026-04-29",
+        "date": "2026-04-30",
         "extract": null,
         "name": "rtpengine",
         "passthru": null,
@@ -3959,12 +3959,12 @@
             "name": null,
             "owner": "sipwise",
             "repo": "rtpengine",
-            "rev": "cad798ce75fa60bc1bb80a71d479f33ef0a99d1e",
-            "sha256": "sha256-xL5nvDnG8cZ+N+QfcMpmoOBA8AVzHBdGSAC7wSK740g=",
+            "rev": "e3464b913aaeab54291b3f090443fe2d8f8fa1ec",
+            "sha256": "sha256-6oxMMGR5WA1lHyNK2JkOcCVGb1+uEM5XSgzNylKoKUU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "cad798ce75fa60bc1bb80a71d479f33ef0a99d1e"
+        "version": "e3464b913aaeab54291b3f090443fe2d8f8fa1ec"
     },
     "rtpengine-stable": {
         "cargoLock": null,
@@ -4022,12 +4022,12 @@
             "name": null,
             "owner": "runpod",
             "repo": "runpodctl",
-            "rev": "v2.1.9",
-            "sha256": "sha256-cZ8B3o0oX69qrsQpUI9qwDnRFA90cmWHpSZsvElbkMU=",
+            "rev": "v2.2.0",
+            "sha256": "sha256-kv77st3dihVbIXBTjhmBl04h5HneMPo9+zMwAgnldak=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.1.9"
+        "version": "v2.2.0"
     },
     "sam-toki-mouse-cursors": {
         "cargoLock": null,
@@ -4163,12 +4163,12 @@
             "name": null,
             "owner": "petersulyok",
             "repo": "smfc",
-            "rev": "v5.3.0",
-            "sha256": "sha256-PgWihVpxzy5gPWkaCKikJ9rNy3xXeFJpWPfdyg2ypAM=",
+            "rev": "v5.4.0",
+            "sha256": "sha256-manaxC97v2HVolGxVQubY2wd+TQJ0/Hu0iyPZW80iqc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v5.3.0"
+        "version": "v5.4.0"
     },
     "soggy": {
         "cargoLock": null,
