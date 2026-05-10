@@ -22,6 +22,9 @@
   libarchive,
   jq,
   zstd,
+  # Options
+  useGLVND ? true,
+  useProfiles ? true,
 }:
 let
   i686bundled = true;
@@ -52,8 +55,12 @@ kernel.stdenv.mkDerivation (finalAttrs: {
 
   builder = ./vgpu-builder.sh;
 
-  inherit version src;
-
+  inherit
+    version
+    src
+    useGLVND
+    useProfiles
+    ;
   inherit
     patches
     prePatch
@@ -90,12 +97,12 @@ kernel.stdenv.mkDerivation (finalAttrs: {
       inherit kernel;
       nvidia_x11 = finalAttrs.finalPackage;
     };
-    settings = callPackage (import ./settings.nix settingsSha256) {
-      nvidia_x11 = finalAttrs.finalPackage;
-    };
-    persistenced = callPackage (import ./persistenced.nix persistencedSha256) {
-      nvidia_x11 = finalAttrs.finalPackage;
-    };
+    settings = callPackage (import (
+      pkgs.path + "/pkgs/os-specific/linux/nvidia-x11/settings.nix"
+    ) finalAttrs.finalPackage settingsSha256) { };
+    persistenced = callPackage (import (
+      pkgs.path + "/pkgs/os-specific/linux/nvidia-x11/persistenced.nix"
+    ) finalAttrs.finalPackage persistencedSha256) { };
     inherit persistencedVersion settingsVersion;
     compressFirmware = false;
   };
