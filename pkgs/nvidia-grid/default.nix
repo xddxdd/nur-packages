@@ -33,13 +33,17 @@ let
         settingsVersion = source.host.settings_version;
         persistencedSha256 = source.host.persistenced_hash;
         persistencedVersion = source.host.persistenced_version;
-        patches = lib.mapAttrsToList (
-          k: v:
-          fetchpatch {
-            url = k;
-            sha256 = v;
-          }
-        ) source.patches;
+        patches =
+          (lib.mapAttrsToList (
+            k: v:
+            fetchpatch {
+              url = k;
+              sha256 = v;
+            }
+          ) source.patches)
+          ++ lib.optionals (lib.hasPrefix "16." version) [
+            ./patches/vfio-16.patch
+          ];
       };
     in
     callPackage pkg { kernel = linux; };
@@ -50,14 +54,18 @@ lib.recurseIntoAttrs rec {
       k: v: lib.nameValuePair (builtins.replaceStrings [ "." ] [ "_" ] k) (gridDriver k v)
     ) sources
   );
+  gridKmod = lib.mapAttrs (k: v: v.mod) grid;
 
   guest = grid;
+  guestKmod = lib.mapAttrs (k: v: v.mod) guest;
 
   vgpu = lib.recurseIntoAttrs (
     lib.mapAttrs' (
       k: v: lib.nameValuePair (builtins.replaceStrings [ "." ] [ "_" ] k) (vgpuDriver k v)
     ) sources
   );
+  vgpuKmod = lib.mapAttrs (k: v: v.mod) vgpu;
 
   host = vgpu;
+  hostKmod = lib.mapAttrs (k: v: v.mod) host;
 }
