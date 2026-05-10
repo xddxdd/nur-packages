@@ -48,24 +48,22 @@ let
     in
     callPackage pkg { kernel = linux; };
 in
-lib.recurseIntoAttrs rec {
-  grid = lib.recurseIntoAttrs (
-    lib.mapAttrs' (
+lib.recurseIntoAttrs (
+  lib.mapAttrs (_: lib.recurseIntoAttrs) rec {
+    grid = lib.mapAttrs' (
       k: v: lib.nameValuePair (builtins.replaceStrings [ "." ] [ "_" ] k) (gridDriver k v)
-    ) sources
-  );
-  gridKmod = lib.mapAttrs (k: v: v.mod) grid;
+    ) sources;
+    gridKmod = lib.mapAttrs (k: v: v.mod) grid;
 
-  guest = grid;
-  guestKmod = lib.mapAttrs (k: v: v.mod) guest;
+    guest = grid;
+    guestKmod = lib.mapAttrs (k: v: v.mod) guest;
 
-  vgpu = lib.recurseIntoAttrs (
-    lib.mapAttrs' (
+    vgpu = lib.mapAttrs' (
       k: v: lib.nameValuePair (builtins.replaceStrings [ "." ] [ "_" ] k) (vgpuDriver k v)
-    ) sources
-  );
-  vgpuKmod = lib.mapAttrs (k: v: v.mod) vgpu;
+    ) sources;
+    vgpuKmod = lib.mapAttrs (k: v: v.mod) vgpu;
 
-  host = vgpu;
-  hostKmod = lib.mapAttrs (k: v: v.mod) host;
-}
+    host = vgpu;
+    hostKmod = lib.mapAttrs (k: v: v.mod) host;
+  }
+)
