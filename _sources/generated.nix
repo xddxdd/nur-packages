@@ -723,17 +723,6 @@
       hash = "sha256-rRVRUY69M5Nz8MwarePlqy2JIOX8MP0nz6Ia2pwmkTA=";
     };
   };
-  firefox-stealth = {
-    pname = "firefox-stealth";
-    version = "1f70b4ae9d210c51eecdcf0f6d1f507416f0ecdf";
-    src = fetchFromGitHub {
-      owner = "feder-cr";
-      repo = "firefox-stealth";
-      rev = "1f70b4ae9d210c51eecdcf0f6d1f507416f0ecdf";
-      hash = "sha256-HUL5BMdiKGJ0Jn43eWTmLY2dSNzwq7q0SBVjujZZ8Do=";
-    };
-    date = "2026-05-18";
-  };
   flapalerted = {
     pname = "flapalerted";
     version = "v4.4.1";
@@ -1013,6 +1002,16 @@
     src = fetchurl {
       url = "https://github.com/share121/inter-knot/releases/download/v2.16.9+36/inter_knot_linux.zip";
       hash = "sha256-0+rYXM7kS1iHcc/NpHEFKtYDoLKET5XWhmA7Keh71lk=";
+    };
+  };
+  invisible-firefox = {
+    pname = "invisible-firefox";
+    version = "stealth-head/v150.0.1";
+    src = fetchFromGitHub {
+      owner = "feder-cr";
+      repo = "invisible-firefox";
+      tag = "stealth-head/v150.0.1";
+      hash = "sha256-BGbDsM+2awDptg1jqPz9cLxCHKsB4fcgSv8FAlbzedc=";
     };
   };
   ja4-nginx-module = {
