@@ -3088,11 +3088,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-MV5J+kVodH/sS9ralhTSuih+eu1LNDDX6iVoXiTMQ/8=",
+            "sha256": "sha256-Ob2sIYJJt5F0ZOYVms/+8loyCuia2usjUU8Hj0c0l70=",
             "type": "url",
-            "url": "https://openresty.org/download/openresty-1.29.2.3.tar.gz"
+            "url": "https://openresty.org/download/openresty-1.29.2.4.tar.gz"
         },
-        "version": "1.29.2.3"
+        "version": "1.29.2.4"
     },
     "openssl-ech": {
         "cargoLock": null,

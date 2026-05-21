@@ -1586,10 +1586,10 @@
   };
   openresty = {
     pname = "openresty";
-    version = "1.29.2.3";
+    version = "1.29.2.4";
     src = fetchurl {
-      url = "https://openresty.org/download/openresty-1.29.2.3.tar.gz";
-      hash = "sha256-MV5J+kVodH/sS9ralhTSuih+eu1LNDDX6iVoXiTMQ/8=";
+      url = "https://openresty.org/download/openresty-1.29.2.4.tar.gz";
+      hash = "sha256-Ob2sIYJJt5F0ZOYVms/+8loyCuia2usjUU8Hj0c0l70=";
     };
   };
   openssl-ech = {
