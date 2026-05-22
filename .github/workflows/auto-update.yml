@@ -68,6 +68,8 @@ jobs:
           github = "${{ secrets.GITHUB_TOKEN }}"
           EOF
 
+          export TMPDIR=/nix/tmpdir
+
           nix run .#update
           nix run .#update-hashes
 
