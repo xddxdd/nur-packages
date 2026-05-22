@@ -1526,22 +1526,6 @@
     };
     date = "2024-08-13";
   };
-  one-api-amd64 = {
-    pname = "one-api-amd64";
-    version = "v0.6.10";
-    src = fetchurl {
-      url = "https://github.com/songquanpeng/one-api/releases/download/v0.6.10/one-api";
-      hash = "sha256-6JH/fJUC7PHf6cAgYqLJRShqBbARNOhXwjQ9fw2yyhg=";
-    };
-  };
-  one-api-arm64 = {
-    pname = "one-api-arm64";
-    version = "v0.6.10";
-    src = fetchurl {
-      url = "https://github.com/songquanpeng/one-api/releases/download/v0.6.10/one-api-arm64";
-      hash = "sha256-5E9njP0VdY2dYfN7OuXeZiF/TLilUYI8PIZ8c7CodjM=";
-    };
-  };
   open-webui-kb-manager = {
     pname = "open-webui-kb-manager";
     version = "v0.2.0";

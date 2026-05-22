@@ -2965,36 +2965,6 @@
         },
         "version": "ea70acaf92bedcf0900a9209bdd8c31106b0df83"
     },
-    "one-api-amd64": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "one-api-amd64",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-6JH/fJUC7PHf6cAgYqLJRShqBbARNOhXwjQ9fw2yyhg=",
-            "type": "url",
-            "url": "https://github.com/songquanpeng/one-api/releases/download/v0.6.10/one-api"
-        },
-        "version": "v0.6.10"
-    },
-    "one-api-arm64": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "one-api-arm64",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-5E9njP0VdY2dYfN7OuXeZiF/TLilUYI8PIZ8c7CodjM=",
-            "type": "url",
-            "url": "https://github.com/songquanpeng/one-api/releases/download/v0.6.10/one-api-arm64"
-        },
-        "version": "v0.6.10"
-    },
     "open-webui-kb-manager": {
         "cargoLock": null,
         "date": null,
