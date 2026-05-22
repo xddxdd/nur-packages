@@ -296,6 +296,10 @@ src.git = "https://github.com/alexjp/env-dedup.git"
 fetch.github = "KusakabeShi/EtherGuard-VPN"
 src.github = "KusakabeShi/EtherGuard-VPN"
 
+[extenddb]
+fetch.github = "ExtendDB/extenddb"
+src.github = "ExtendDB/extenddb"
+
 [fake-ollama]
 fetch.github = "spoonnotfound/fake-ollama"
 src.git = "https://github.com/spoonnotfound/fake-ollama.git"

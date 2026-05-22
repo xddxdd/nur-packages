@@ -683,6 +683,16 @@
       hash = "sha256-67ocXHf+AN3nyPt4636ZJHGRqWSjkpTiDvU5243urBw=";
     };
   };
+  extenddb = {
+    pname = "extenddb";
+    version = "v0.1.0";
+    src = fetchFromGitHub {
+      owner = "ExtendDB";
+      repo = "extenddb";
+      tag = "v0.1.0";
+      hash = "sha256-edM1kZBlHgh/zTT4NN+8TLBXpoC6box+wplmbX1Eg24=";
+    };
+  };
   fake-ollama = {
     pname = "fake-ollama";
     version = "4a788616cee7d0f3b39f7623d9f627b79acae405";
