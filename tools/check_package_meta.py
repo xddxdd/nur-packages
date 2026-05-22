@@ -233,7 +233,7 @@ def verify_package(
         DescriptionCheck(package_path, package_meta),
         LicenseCheck(package_path, package_meta),
         MaintainersCheck(package_path, package_meta),
-        PackageInfoCheck(package_path, package_meta, package_info["env"]),
+        PackageInfoCheck(package_path, package_meta, package_info.get("env")),
         HomepageCheck(package_path, package_meta),
     ]
 
