@@ -336,6 +336,14 @@
     };
     date = "2022-11-20";
   };
+  command-code = {
+    pname = "command-code";
+    version = "0.26.23";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/command-code/-/command-code-0.26.23.tgz";
+      hash = "sha256-f7K8PhZwbjIlorRmiVmElC2iUYqWzXB9OMM7f4Y5rJg=";
+    };
+  };
   comp128 = {
     pname = "comp128";
     version = "1.0.0";

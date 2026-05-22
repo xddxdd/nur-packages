@@ -641,6 +641,21 @@
         },
         "version": "1726b1d8e22ee1fa53c7560169d8814c7847a447"
     },
+    "command-code": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "command-code",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-f7K8PhZwbjIlorRmiVmElC2iUYqWzXB9OMM7f4Y5rJg=",
+            "type": "url",
+            "url": "https://registry.npmjs.org/command-code/-/command-code-0.26.23.tgz"
+        },
+        "version": "0.26.23"
+    },
     "comp128": {
         "cargoLock": null,
         "date": null,
