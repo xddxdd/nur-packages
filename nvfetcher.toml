@@ -591,6 +591,10 @@ src.github = "topjohnwu/Magisk"
 fetch.github = "mautrix/gmessages"
 src.github = "mautrix/gmessages"
 
+[metapi]
+fetch.github = "cita-777/metapi"
+src.github = "cita-777/metapi"
+
 [metee]
 fetch.github = "intel/metee"
 src.github = "intel/metee"
