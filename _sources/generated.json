@@ -218,6 +218,27 @@
         },
         "version": "v0.8.0"
     },
+    "axonhub": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "axonhub",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "looplj",
+            "repo": "axonhub",
+            "rev": "v1.0.0-beta3",
+            "sha256": "sha256-YfSsukQo9j5AcR87k9bjHoX85ySl9G0lUdZ18ib4xhA=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.0.0-beta3"
+    },
     "baidunetdisk": {
         "cargoLock": null,
         "date": null,

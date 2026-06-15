@@ -118,6 +118,16 @@
       hash = "sha256-Dh0G3mFdUmbmPZc2qKPE8MnHOPN+k24CpSDeFb6cx7k=";
     };
   };
+  axonhub = {
+    pname = "axonhub";
+    version = "v1.0.0-beta3";
+    src = fetchFromGitHub {
+      owner = "looplj";
+      repo = "axonhub";
+      tag = "v1.0.0-beta3";
+      hash = "sha256-YfSsukQo9j5AcR87k9bjHoX85ySl9G0lUdZ18ib4xhA=";
+    };
+  };
   baidunetdisk = {
     pname = "baidunetdisk";
     version = "4.17.8";
