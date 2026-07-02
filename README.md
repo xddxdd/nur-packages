@@ -62,7 +62,7 @@ Or, use variables from this repository in case I change them:
 ## Packages
 
 <details>
-<summary>Package set: (Uncategorized) (215 packages)</summary>
+<summary>Package set: (Uncategorized) (216 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
@@ -173,6 +173,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `mtranservercore-rs` | [linguaspark-server](https://github.com/LinguaSpark/server) | 0-unstable-2026-05-20 | Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs |
 |  | `n8n-openai-bridge` | [n8n-openai-bridge](https://github.com/sveneisenschmidt/n8n-openai-bridge) | 0.0.17 | OpenAI-compatible API middleware for n8n workflows |
 |  | `ncmdump-rs` | [ncmdump-rs](https://github.com/iqiziqi/ncmdump.rs) | 0.8.0 | NetEase Cloud Music copyright protection file dump by rust |
+|  | `ncmm` | [ncmm](https://github.com/3899/ncmm) | 1.1.7 | Command-line assistant for NetEase Cloud Music musicians |
 |  | `netboot-xyz` | [netboot-xyz](https://netboot.xyz/) | 3.0.2 | Network-based bootable operating system installer based on iPXE |
 |  | `netns-exec` | [netns-exec](https://github.com/pekman/netns-exec) | 0-unstable-2016-07-30 | Run command in Linux network namespace as normal user |
 |  | `new-api` | [new-api](https://github.com/QuantumNous/new-api) | 1.0.0-rc.15 | AI model gateway for aggregation and distribution, supports converting LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats |
@@ -1314,7 +1315,7 @@ Or, use variables from this repository in case I change them:
 </details>
 
 <details>
-<summary>Package set: uncategorized (162 packages)</summary>
+<summary>Package set: uncategorized (163 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
@@ -1406,6 +1407,7 @@ Or, use variables from this repository in case I change them:
 | `x86_64-linux` | `uncategorized.mtranservercore-rs` | [linguaspark-server](https://github.com/LinguaSpark/server) | 0-unstable-2026-05-20 | Lightweight multilingual translation service based on Rust and Bergamot translation engine, compatible with multiple translation frontend APIs |
 |  | `uncategorized.n8n-openai-bridge` | [n8n-openai-bridge](https://github.com/sveneisenschmidt/n8n-openai-bridge) | 0.0.17 | OpenAI-compatible API middleware for n8n workflows |
 |  | `uncategorized.ncmdump-rs` | [ncmdump-rs](https://github.com/iqiziqi/ncmdump.rs) | 0.8.0 | NetEase Cloud Music copyright protection file dump by rust |
+|  | `uncategorized.ncmm` | [ncmm](https://github.com/3899/ncmm) | 1.1.7 | Command-line assistant for NetEase Cloud Music musicians |
 |  | `uncategorized.netboot-xyz` | [netboot-xyz](https://netboot.xyz/) | 3.0.2 | Network-based bootable operating system installer based on iPXE |
 |  | `uncategorized.netns-exec` | [netns-exec](https://github.com/pekman/netns-exec) | 0-unstable-2016-07-30 | Run command in Linux network namespace as normal user |
 |  | `uncategorized.new-api` | [new-api](https://github.com/QuantumNous/new-api) | 1.0.0-rc.15 | AI model gateway for aggregation and distribution, supports converting LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats |
