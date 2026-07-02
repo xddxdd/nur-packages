@@ -1025,6 +1025,10 @@ src.to_pattern = "\\1"
 fetch.github = "go4retro/tcpser"
 src.github = "go4retro/tcpser"
 
+[tel42verifier]
+fetch.github = "strexp/tel42verifier"
+src.github_tag = "strexp/tel42verifier"
+
 [telegram-desktop-patches]
 fetch.github = "huakim/telegram-desktop-patches"
 src.git = "https://github.com/huakim/telegram-desktop-patches.git"

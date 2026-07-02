@@ -2350,6 +2350,16 @@
       hash = "sha256-Ir/tQde7hfqlgOVXE2HqJSzEXdceCTywptN8PRqylMI=";
     };
   };
+  tel42verifier = {
+    pname = "tel42verifier";
+    version = "v0.0.3";
+    src = fetchFromGitHub {
+      owner = "strexp";
+      repo = "tel42verifier";
+      tag = "v0.0.3";
+      hash = "sha256-WfJxlE6Xg1MoLIQdhznuh96T0Yi3N/AuFWjrYAe3fQA=";
+    };
+  };
   telegram-desktop-patches = {
     pname = "telegram-desktop-patches";
     version = "c1ccf3e3dc4d28f3649a0e5e00827c7a1b24b690";
