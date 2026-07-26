@@ -4,29 +4,29 @@
   buildPythonPackage,
   # Dependencies
   requests,
-  drission-record,
+  datarecorder,
   setuptools,
 }:
 buildPythonPackage rec {
-  inherit (sources.drission-get) pname version;
+  inherit (sources.downloadkit) pname version;
   pyproject = true;
 
-  inherit (sources.drission-get) src;
-
-  dontCheckPythonMetadata = true;
+  inherit (sources.downloadkit) src;
 
   build-system = [ setuptools ];
   dependencies = [
     requests
-    drission-record
+    datarecorder
   ];
 
-  pythonImportsCheck = [ "DrissionGet" ];
+  pythonImportsCheck = [
+    "DownloadKit"
+  ];
 
   meta = {
     maintainers = with lib.maintainers; [ xddxdd ];
-    description = "Multi-threaded file download toolkit";
-    homepage = "https://DrissionPage.cn/DrissionGet";
+    description = "Simple to use multi-threaded download toolkit";
+    homepage = "https://github.com/g1879/DownloadKit";
     license = with lib.licenses; [ bsd3 ];
   };
 }

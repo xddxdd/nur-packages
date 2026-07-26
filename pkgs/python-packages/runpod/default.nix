@@ -29,12 +29,10 @@
 }:
 
 buildPythonPackage rec {
-  inherit (sources.runpod-python) pname version;
+  inherit (sources.runpod) pname version;
   pyproject = true;
 
-  inherit (sources.runpod-python) src;
-
-  dontCheckPythonMetadata = true;
+  inherit (sources.runpod) src;
 
   prePatch = ''
     cat requirements.txt | cut -d' ' -f1 > requirements2.txt
