@@ -34,6 +34,8 @@ buildPythonPackage rec {
 
   inherit (sources.runpod-python) src;
 
+  dontCheckPythonMetadata = true;
+
   prePatch = ''
     cat requirements.txt | cut -d' ' -f1 > requirements2.txt
     mv requirements2.txt requirements.txt

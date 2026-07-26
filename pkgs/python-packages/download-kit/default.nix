@@ -13,6 +13,8 @@ buildPythonPackage rec {
 
   inherit (sources.download-kit) src;
 
+  dontCheckPythonMetadata = true;
+
   build-system = [ setuptools ];
   dependencies = [
     requests

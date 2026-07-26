@@ -20,6 +20,8 @@ buildPythonPackage rec {
 
   inherit (sources.drission-page) src;
 
+  dontCheckPythonMetadata = true;
+
   build-system = [ setuptools ];
   dependencies = [
     requests

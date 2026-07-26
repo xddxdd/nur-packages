@@ -12,6 +12,8 @@ buildPythonPackage rec {
 
   inherit (sources.py-rcon) src;
 
+  dontCheckPythonMetadata = true;
+
   build-system = [ setuptools ];
 
   propagatedBuildInputs = [ tkinter ];

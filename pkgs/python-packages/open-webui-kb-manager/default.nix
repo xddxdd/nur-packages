@@ -18,6 +18,8 @@ buildPythonPackage rec {
 
   inherit (sources.open-webui-kb-manager) src;
 
+  dontCheckPythonMetadata = true;
+
   propagatedBuildInputs = [
     click
     httpx

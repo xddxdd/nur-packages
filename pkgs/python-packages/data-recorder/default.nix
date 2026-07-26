@@ -12,6 +12,8 @@ buildPythonPackage rec {
 
   inherit (sources.data-recorder) src;
 
+  dontCheckPythonMetadata = true;
+
   build-system = [ setuptools ];
   dependencies = [
     openpyxl

@@ -1036,7 +1036,7 @@
       owner = "feder-cr";
       repo = "firefox_antidetect_patch";
       tag = "firefox-18";
-      hash = "sha256-YJ+B540o17ItUoxM6CytoCdgBiy7ie9sdToEqLt97fE=";
+      hash = "sha256-f31Djr7aj8/XthYJZ0vSeUBtXYKEw02chKY+qMCTbpE=";
     };
   };
   ja4-nginx-module = {

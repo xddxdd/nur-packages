@@ -12,6 +12,8 @@ buildPythonPackage rec {
 
   inherit (sources.drission-record) src;
 
+  dontCheckPythonMetadata = true;
+
   build-system = [ setuptools ];
   dependencies = [ openpyxl ];
 
