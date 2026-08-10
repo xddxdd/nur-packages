@@ -655,7 +655,7 @@
       owner = "router-for-me";
       repo = "EasyCLI";
       tag = "v0.2.16";
-      hash = "sha256-QYbYwIZyWCN5lGBwXXQI9dfCAdS2XVjTuG1CbPxsrVs=";
+      hash = "sha256-qh7BAJ9vF0fmr0MQ2esTsI7PRlas8CXhOaMYS118rGY=";
     };
   };
   edge-tts = {
@@ -1068,7 +1068,7 @@
       owner = "feder-cr";
       repo = "firefox_antidetect_patch";
       tag = "firefox-18";
-      hash = "sha256-f31Djr7aj8/XthYJZ0vSeUBtXYKEw02chKY+qMCTbpE=";
+      hash = "sha256-YJ+B540o17ItUoxM6CytoCdgBiy7ie9sdToEqLt97fE=";
     };
   };
   it-tools = {

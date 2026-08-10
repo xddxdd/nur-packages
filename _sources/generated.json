@@ -1265,7 +1265,7 @@
             "owner": "router-for-me",
             "repo": "EasyCLI",
             "rev": "v0.2.16",
-            "sha256": "sha256-QYbYwIZyWCN5lGBwXXQI9dfCAdS2XVjTuG1CbPxsrVs=",
+            "sha256": "sha256-qh7BAJ9vF0fmr0MQ2esTsI7PRlas8CXhOaMYS118rGY=",
             "sparseCheckout": [],
             "type": "github"
         },
@@ -2077,7 +2077,7 @@
             "owner": "feder-cr",
             "repo": "firefox_antidetect_patch",
             "rev": "firefox-18",
-            "sha256": "sha256-f31Djr7aj8/XthYJZ0vSeUBtXYKEw02chKY+qMCTbpE=",
+            "sha256": "sha256-YJ+B540o17ItUoxM6CytoCdgBiy7ie9sdToEqLt97fE=",
             "sparseCheckout": [],
             "type": "github"
         },
