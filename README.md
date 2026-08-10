@@ -62,7 +62,7 @@ Or, use variables from this repository in case I change them:
 ## Packages
 
 <details>
-<summary>Package set: (Uncategorized) (216 packages)</summary>
+<summary>Package set: (Uncategorized) (214 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
@@ -83,7 +83,6 @@ Or, use variables from this repository in case I change them:
 |  | `bird-lgproxy-go` | [bird-lgproxy-go](https://github.com/xddxdd/bird-lg-go) | 1.4.8 | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
 |  | `bnxtnvm` | [bnxtnvm](https://resource.fs.com/mall/resource/broadcom-ethernet-network-adapter-user-manual.pdf) | 222.0.144.0 | Broadcom BNXTNVM utility |
 |  | `browser-control-mcp` | [browser-control-mcp](https://github.com/eyalzh/browser-control-mcp) | 1.5.1 | MCP server paired with a browser extension that enables AI agents to control the user's browser |
-|  | `browser360` | [browser360](https://browser.360.net/gc/index.html) | 13.4.1131.0 | Browser from 360 |
 | `x86_64-linux` | `browseros` | [browseros](https://www.browseros.com) | 0.47.18 | Open source agentic browser |
 |  | `buname` | [buname](https://github.com/dramforever/buname) | 0-unstable-2025-09-18 | Uname wrapper that renumbers Linux versions as if 2.6 never ended |
 |  | `calibre-cops` | [calibre-cops](http://blog.slucas.fr/en/oss/calibre-opds-php-server) | 4.5.2 | Web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks |
@@ -100,7 +99,6 @@ Or, use variables from this repository in case I change them:
 |  | `dbip-lite` | [dbip-lite](https://db-ip.com/db/lite.php) | 2026-08 | DBIP's Lite GeoIP Country, City, and ASN databases |
 |  | `decluttarr` | [decluttarr](https://github.com/ManiMatter/decluttarr) | 1.50.2 | Watches radarr, sonarr, lidarr and readarr download queues and removes downloads if they become stalled or no longer needed |
 |  | `deeplx` | [deeplx](https://deeplx.owo.network) | 1.2.4 | Powerful Free DeepL API, No Token Required |
-| `x86_64-linux` | `dingtalk` | [dingtalk](https://www.dingtalk.com/) | 8.1.0.6021101 | Enterprise communication and collaboration platform developed by Alibaba Group |
 |  | `dn42-pingfinder` | [dn42-pingfinder](https://git.dn42.dev/dn42/pingfinder/src/branch/master/clients) | 1.2.1-unstable-2022-11-06 | DN42 Pingfinder |
 |  | `download-kit` | [downloadkit](https://github.com/g1879/DownloadKit) | 2.0.7 | Simple to use multi-threaded download toolkit |
 |  | `downloadkit` | [downloadkit](https://github.com/g1879/DownloadKit) | 2.0.7 | Simple to use multi-threaded download toolkit |
@@ -1304,7 +1302,7 @@ Or, use variables from this repository in case I change them:
 </details>
 
 <details>
-<summary>Package set: uncategorized (166 packages)</summary>
+<summary>Package set: uncategorized (164 packages)</summary>
 
 | State | Path | Name | Version | Description |
 | ----- | ---- | ---- | ------- | ----------- |
@@ -1324,7 +1322,6 @@ Or, use variables from this repository in case I change them:
 |  | `uncategorized.bird-lgproxy-go` | [bird-lgproxy-go](https://github.com/xddxdd/bird-lg-go) | 1.4.8 | BIRD looking glass in Go, for better maintainability, easier deployment & smaller memory footprint |
 |  | `uncategorized.bnxtnvm` | [bnxtnvm](https://resource.fs.com/mall/resource/broadcom-ethernet-network-adapter-user-manual.pdf) | 222.0.144.0 | Broadcom BNXTNVM utility |
 |  | `uncategorized.browser-control-mcp` | [browser-control-mcp](https://github.com/eyalzh/browser-control-mcp) | 1.5.1 | MCP server paired with a browser extension that enables AI agents to control the user's browser |
-|  | `uncategorized.browser360` | [browser360](https://browser.360.net/gc/index.html) | 13.4.1131.0 | Browser from 360 |
 | `x86_64-linux` | `uncategorized.browseros` | [browseros](https://www.browseros.com) | 0.47.18 | Open source agentic browser |
 |  | `uncategorized.buname` | [buname](https://github.com/dramforever/buname) | 0-unstable-2025-09-18 | Uname wrapper that renumbers Linux versions as if 2.6 never ended |
 |  | `uncategorized.calibre-cops` | [calibre-cops](http://blog.slucas.fr/en/oss/calibre-opds-php-server) | 4.5.2 | Web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks |
@@ -1335,7 +1332,6 @@ Or, use variables from this repository in case I change them:
 |  | `uncategorized.dbip-lite` | [dbip-lite](https://db-ip.com/db/lite.php) | 2026-08 | DBIP's Lite GeoIP Country, City, and ASN databases |
 |  | `uncategorized.decluttarr` | [decluttarr](https://github.com/ManiMatter/decluttarr) | 1.50.2 | Watches radarr, sonarr, lidarr and readarr download queues and removes downloads if they become stalled or no longer needed |
 |  | `uncategorized.deeplx` | [deeplx](https://deeplx.owo.network) | 1.2.4 | Powerful Free DeepL API, No Token Required |
-| `x86_64-linux` | `uncategorized.dingtalk` | [dingtalk](https://www.dingtalk.com/) | 8.1.0.6021101 | Enterprise communication and collaboration platform developed by Alibaba Group |
 |  | `uncategorized.dn42-pingfinder` | [dn42-pingfinder](https://git.dn42.dev/dn42/pingfinder/src/branch/master/clients) | 1.2.1-unstable-2022-11-06 | DN42 Pingfinder |
 |  | `uncategorized.drone-file-secret` | [drone-file-secret](https://github.com/xddxdd/drone-file-secret) | 0-unstable-2023-06-25 | Secret provider for Drone CI that reads secrets from a given folder |
 |  | `uncategorized.drone-vault` | [drone-vault](https://docs.drone.io/configure/secrets/external/vault/) | 1.3.0 | Drone plugin for integrating with the Vault secrets manager |
