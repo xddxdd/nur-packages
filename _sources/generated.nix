@@ -2098,14 +2098,13 @@
   };
   resin = {
     pname = "resin";
-    version = "9b8ef8e5cf83071fbac4de29bd7187268b9cff7b";
+    version = "v1.2.0";
     src = fetchFromGitHub {
       owner = "Resinat";
       repo = "Resin";
-      rev = "9b8ef8e5cf83071fbac4de29bd7187268b9cff7b";
-      hash = "sha256-xQfpcyq7BYr6ltZCWTR/KJRyFCN3Kf++IiJImSaiOsg=";
+      tag = "v1.2.0";
+      hash = "sha256-tqSuYZce0uq9gVSstNLPlSyJPGWwYrfvCEgAyXiek4c=";
     };
-    date = "2026-08-01";
   };
   rime-aurora-pinyin = {
     pname = "rime-aurora-pinyin";

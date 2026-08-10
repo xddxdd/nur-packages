@@ -4106,7 +4106,7 @@
     },
     "resin": {
         "cargoLock": null,
-        "date": "2026-08-01",
+        "date": null,
         "extract": null,
         "name": "resin",
         "passthru": null,
@@ -4118,12 +4118,12 @@
             "name": null,
             "owner": "Resinat",
             "repo": "Resin",
-            "rev": "9b8ef8e5cf83071fbac4de29bd7187268b9cff7b",
-            "sha256": "sha256-xQfpcyq7BYr6ltZCWTR/KJRyFCN3Kf++IiJImSaiOsg=",
+            "rev": "v1.2.0",
+            "sha256": "sha256-tqSuYZce0uq9gVSstNLPlSyJPGWwYrfvCEgAyXiek4c=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9b8ef8e5cf83071fbac4de29bd7187268b9cff7b"
+        "version": "v1.2.0"
     },
     "rime-aurora-pinyin": {
         "cargoLock": null,

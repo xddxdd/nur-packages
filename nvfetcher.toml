@@ -912,7 +912,7 @@ src.github_tag = "ttk1/py-rcon"
 
 [resin]
 fetch.github = "Resinat/Resin"
-src.git = "https://github.com/Resinat/Resin.git"
+src.github = "Resinat/Resin"
 
 [rime-aurora-pinyin]
 fetch.github = "hosxy/rime-aurora-pinyin"
