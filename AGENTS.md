@@ -171,8 +171,10 @@ appimageTools.wrapType2 {
 ### 构建命令
 
 - 使用 `nix build .#package-name` 构建包
-- 只需指定包名本身，无需中间路径
-- 示例：`pkgs/uncategorized/package-name` 应构建为 `nix build .#package-name`
+- 包名是否带组前缀取决于包所在目录：`pkgs/uncategorized/` 下的包直接使用 `.#package-name`；`pkgs/asterisk-digium-codecs/`、`pkgs/kernel-modules/`、`pkgs/lantian-customized/`、`pkgs/python-packages/` 等分组目录下的包需带上组前缀
+- 组前缀与目录名一一对应：`asteriskDigiumCodecs`、`kernel-modules`、`lantianCustomized`、`python3Packages`，可在 `pkgs/default.nix` 中查看全部分组
+- 示例：`pkgs/uncategorized/package-name` 应构建为 `nix build .#package-name`；`pkgs/lantian-customized/ffmpeg` 应构建为 `nix build .#lantianCustomized.ffmpeg`；`pkgs/python-packages/mtkclient` 应构建为 `nix build .#python3Packages.mtkclient`
+- 嵌套更深的包（如 asterisk 编解码器 `pkgs/asterisk-digium-codecs/` 下按版本分目录）需逐级引用：`nix build '.#asteriskDigiumCodecs."24".g729a'`
 
 ## pnpm 前端构建
 
