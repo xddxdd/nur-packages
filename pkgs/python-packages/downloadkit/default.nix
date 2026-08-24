@@ -14,7 +14,7 @@ buildPythonPackage (finalAttrs: {
   pyproject = true;
 
   src = fetchurl {
-    url = "mirror://pypi/D/DownloadKit/DownloadKit-${finalAttrs.version}";
+    url = "mirror://pypi/D/DownloadKit/DownloadKit-${finalAttrs.version}.tar.gz";
     hash = "sha256-YB5CPR1NC9PpM1JNBskT50RXfUVZkOwgr8P7H3muqac=";
   };
   build-system = [ setuptools ];
