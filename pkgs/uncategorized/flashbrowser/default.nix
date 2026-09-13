@@ -47,7 +47,10 @@ buildNpmPackage (finalAttrs: {
     sed -i 's/\r$//' index.js
   '';
 
-  patches = [ ./cli-arg.patch ];
+  patches = [
+    ./cli-arg.patch
+    ./default-homepage.patch
+  ];
 
   postPatch = ''
     rm -rf flashver
