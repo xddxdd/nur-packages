@@ -61,11 +61,11 @@ in
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "fingerprint-chromium-bin";
-  version = "150.0.7871.175";
+  version = "150.0.7871.186";
 
   src = fetchurl {
     url = "https://github.com/adryfish/fingerprint-chromium/releases/download/${finalAttrs.version}/ungoogled-chromium-${finalAttrs.version}-1-x86_64_linux.tar.xz";
-    hash = "sha256-YIXWWDE9jBQG7dH50X9K7qD1ft5al7Dtm2lO3rH6+jA=";
+    hash = "sha256-SO/4YAU+/ZrUmNUTcPCh9Z+YPfOcAqcq0qhoLN6tQFU=";
   };
 
   nativeBuildInputs = [
