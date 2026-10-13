@@ -18,7 +18,10 @@ buildNpmPackage (finalAttrs: {
 
   npmDepsHash = "sha256-qVW84JNs6KoiXCn4uVTKEO1eia+JCFfeTKymcGjlTYA=";
 
-  patches = [ ./no-google-font.patch ];
+  patches = [
+    ./no-google-font.patch
+    ./no-pretty-model-name.patch
+  ];
 
   # Generated lockfile; the lockfile shipped by upstream is a bun secondary
   # artifact that prefetch-npm-deps rejects (shrinkwrap subtrees without
