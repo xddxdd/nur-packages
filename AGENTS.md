@@ -21,6 +21,7 @@
 ### 最佳实践
 
 - **CUDA 构建元数据必须跟随所选工具链**：CUDA 主版本应从所选 `cudaPackages.cuda_nvcc.version` 用 `lib.versions.major` 派生，不要硬编码。
+- **大型 CUDA fatbinary 可导致 x86_64 主机链接重定位溢出**：把多架构 CUDA 与主机代码链接进同一共享库时，超过 2 GiB 的 `.nv_fatbin` 可能被默认链接脚本放在主机代码与数据之间，触发 `R_X86_64_REX_GOTPCRELX` 或 PLT 的 PC-relative offset overflow。可用附加链接脚本将该节 `INSERT AFTER .bss`，仅在 CUDA 变体传入共享库链接参数；不要以减少支持的 GPU 架构掩盖问题。用完整构建和已安装 ELF 的节地址验证布局，再运行实际 CLI。参考 `pkgs/uncategorized/ik-llama-cpp/cuda-fatbin.ld`。
 - **上游源码为 CRLF 行尾时先转 LF 再打补丁**：上游仓库的文本文件可能带 CRLF 行尾（如 FlashBrowser 的 index.js），直接对原文件生成的补丁会整文件重写（diff 把每行都视为修改）。正确做法：补丁一律以 LF 内容生成，并在派生的 `prePatch` 中用 `sed -i 's/\r$//' <文件>` 把上游源码转为 LF——转换必须放在 `prePatch`，因为 patchPhase 在 prePatch 之后、postPatch 之前执行。本仓库内所有文件（补丁、脚本等）一律保持 LF 行尾
 - **预臭氧（pre-ozone）Electron（< 12）在 Wayland 会话下必须强制 GDK_BACKEND=x11**：nixpkgs 的 gtk3 含 Wayland 后端，`WAYLAND_DISPLAY` 存在时 GTK 优先走 Wayland，旧版 Electron（Chromium 无 ozone）初始化显示失败报 `Gtk-WARNING **: cannot open display`。在包装器的 makeWrapper 里加 `--set GDK_BACKEND x11`（用 `--set` 而非 `--set-default`：用户会话可能全局设了 `GDK_BACKEND=wayland`，而旧 Electron 根本无 Wayland 支持，保留用户值只会失败）。配套注意旧 Electron 的 rpath：新版 Electron 把大部分 X 库静态打包进二进制，旧版（如 Electron 9）动态链接 `libXcursor`/`libXi`/`libXrender`/`libXtst`，且新版 nixpkgs 已把 `libgbm` 从 `mesa` 拆出为独立包，`electronLibPath` 需按版本条件补齐，否则报 `error while loading shared libraries`
 - **打包 llama.cpp 旧布局 fork（如 ik-llama-cpp）时的指令集与版本检查限制**：llama.cpp 的运行时调度机制（`GGML_CPU_ALL_VARIANTS` + `GGML_BACKEND_DL`，靠 `ggml/src/ggml-cpu/` 下的分拆实现）在 fork 点之前或被上游删去时不可用，分支的 `ggml.c` 中 SIMD 路径全是编译期 `#if defined(__AVX2__)` 门控，单个 `add_library(ggml)` 只能选一套 `-m` 标志——只能暴露 `avxSupport/avx2Support/avx512Support` 等布尔参数按 ISA 出多个变体。注意 GCC 的 `-mavx2` **不**隐含 `-mfma`/`-mf16c`（实测 `gcc -mavx2 -dM` 无 `__FMA__`/`__F16C__`），而 IQK 热路径在 `defined(__AVX2__) && defined(__FMA__)` 上分支，所以 avx2/avx512 变体必须同时打开 GGML_FMA/GGML_F16C。另外 GCC 16 新增的 `-Wtemplate-body` 诊断会把分支内上游 IQK FA 模板（`iqk/fa/iqk_fa_templates.h`）里的 `__m512`→`__m256` 隐式转换变成硬错误，avx512 变体在 GCC 16 下无法构建，只能等上游修复后重加。此类 fork 的构建信息从 `.git` 读取，fetchFromGitHub tarball 打出的二进制只会打印 `version: 0 (unknown)`，versionCheckHook 无法比对版本，只能去掉
@@ -126,6 +127,7 @@
 - **writeShellApplication / writeTextFile 的属性放 `derivationArgs`**：这两个 builder 的参数签名是strict的，直接传 `__structuredAttrs` 会报 unexpected argument，须写 `derivationArgs.__structuredAttrs = true;`。
 - **override 链上挂 flag 用 `.overrideAttrs`，不要塞进 `.override { }`**：参数签名严格的 builder（kernel builder、writeShellApplication 等）会把多余参数直接拒掉。
 - **不要写顶层推导属性当环境变量后再在 phase 里以 `$VAR` 读**：该写法只在非 structuredAttrs 下成立；structuredAttrs 下 `$VAR` 为空。
+- **构建时执行的工具必须放 `nativeBuildInputs`**：开启 `strictDeps` 后，仅在 `buildInputs` 中声明 Python、PHP/Composer 或 wxWidgets 不会把其解释器、`composer`、`wx-config` 加进构建 PATH。需要目标库时保留 `buildInputs`，同时把提供构建工具的包加入 `nativeBuildInputs`。Qt 的 qmake 模块路径钩子注册在 `envBuildHostHooks`，因此 `.pro` 中要求的 Qt 模块也必须加入 `nativeBuildInputs` 才能被 qmake 发现，不能只声明目标链接依赖；直接链接的模块仍需放 `buildInputs`。
 - **基于 symlinkJoin 的包装包必须关掉 `__structuredAttrs`**：nixpkgs 的 symlinkJoin（mpv wrapper 等）用 `passAsFile` 传递 `paths`，structuredAttrs 下该文件内容非预期，`lndir` 不产生任何链接，`postBuild` 对 `$out` 的操作随之失败。对这类包装设 `__structuredAttrs = false;`（`strictDeps = true;` 可保留）后再 override 其他属性。
 
 ### 构建阶段钩子
