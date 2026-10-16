@@ -44,8 +44,7 @@ in
     ngx_http_js_challenge_module
     stream-echo-nginx-module
     zstd-nginx-module
-  ]
-  ++ modules;
+  ];
 }).overrideAttrs
   (old: {
     pname = "nginx-lantian";
@@ -77,7 +76,7 @@ in
     ];
 
     passthru = old.passthru // {
-      inherit oqs-lookup;
+      inherit modules oqs-lookup;
     };
 
     meta = old.meta // {
