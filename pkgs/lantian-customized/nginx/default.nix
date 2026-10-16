@@ -11,6 +11,8 @@
   liburing,
   openssl-oqs-provider,
   python3,
+  # extra args to make nixpkgs happy
+  modules ? [ ],
 }:
 
 let
@@ -42,7 +44,8 @@ in
     ngx_http_js_challenge_module
     stream-echo-nginx-module
     zstd-nginx-module
-  ];
+  ]
+  ++ modules;
 }).overrideAttrs
   (old: {
     pname = "nginx-lantian";
