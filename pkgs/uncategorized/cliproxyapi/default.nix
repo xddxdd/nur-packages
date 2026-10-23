@@ -1,10 +1,10 @@
 {
   fetchFromGitHub,
   lib,
-  buildGoModule,
+  buildGo127Module,
   nix-update-script,
 }:
-buildGoModule (finalAttrs: {
+buildGo127Module (finalAttrs: {
   pname = "cliproxyapi";
   version = "8.0.41";
   src = fetchFromGitHub {
