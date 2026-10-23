@@ -1,6 +1,7 @@
 {
   fetchFromGitHub,
   lib,
+  go_1_27,
   buildGoModule,
   buildNpmPackage,
   nix-update-script,
@@ -33,6 +34,8 @@ in
 buildGoModule (finalAttrs: {
   pname = "resin";
   inherit version;
+  # upstream go.mod requires go >= 1.26.10; nixpkgs' default is 1.26.9
+  go = go_1_27;
   src = fetchFromGitHub {
     owner = "Resinat";
     repo = "Resin";
