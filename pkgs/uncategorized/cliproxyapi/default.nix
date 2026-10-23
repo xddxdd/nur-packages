@@ -15,7 +15,7 @@ buildGo127Module (finalAttrs: {
   };
   __structuredAttrs = true;
   strictDeps = true;
-  vendorHash = "sha256-ju7dRQIDvz/oHP5Y6y0hklEBNPzwrtWqSQ7cr51jwTY=";
+  vendorHash = "sha256-iIzT2vOFKgl1qhwYMjq6HPaw3FUiw+mlPMuohf3OgL4=";
 
   proxyVendor = true;
 
