@@ -90,6 +90,9 @@
   - **安装前必须修 shebang 与 ELF**：安装器源码树的 `*.sh` 全部用 `/bin/#!/bin/bash` 绝对路径，沙箱里 `/bin/bash` 不存在，导致 `ldlibpath.sh` 死亡从而 `java.library.path` 为空（报 `no xv_install in java.library.path`）；用 `sed '1s|^#! */bin/.*sh.*$|#!$BASH_BIN|'` 重写（BASH_BIN 为构建环境内的 bash 路径，安装器脚本不接受带参数的 shebang）。安装器源码树的 ELF（TPS JRE 等）用 `patchelf --set-interpreter` 指到 Nix 中的 dynamic-linker。
   - **FHS 下的 dlopen 名称搜索**：buildFHSEnv 的 rootfs `/etc/ld.so.cache` 内只含 SONAME 条目，`ncurses5`（ABI5 兼容包）的 `libncurses.so.5` 文件是通往 wide 构建的同目录符号连接，无法匹配 SONAME；Vivado 运行时对 `libtinfo.so.6`/`libncurses.so.5` 等的 `dlopen` 只能靠文件名扫描（LD_LIBRARY_PATH），因此 buildFHSEnv 的 `profile` 里必须预置 `export LD_LIBRARY_PATH=/usr/lib64:/lib64`（Vivado 的 `ldlibpath.sh` 会保留已设值并前加自身目录）。目标系统库还需补 `pixman`、`libpng`、`libjpeg`（Vivado 自带 libcairo 但缺 pixman）。
   - **包装器文件名冲突**：buildFHSEnv 的默认入口名是 `pname`，若其下被包装的可执行文件也叫 `vivado` 会把 FHS runner 覆盖掉，必须给 buildFHSEnv 指定不同的 `executableName`（如 `vivado-fhs`），然后由 `extraInstallCommands` 把各入口符号连接到 `$out/bin`。
+  - **安装式派生的文件检查用 installCheckPhase 而非 checkPhase**：stdenv 的 phase 顺序是 checkPhase 在 installPhase **之前**，而 Vivado 这类包的全部产物由安装器生成，checkPhase 时 `$out` 还不存在（`test -f` 静默失败且杀死后续 installPhase）；改用 `doInstallCheck = true` + `installCheckPhase`（stdenv 的 postCheck 等价物，运行在 fixupPhase 之后）。
+  - **builder 内管道会受 `set -o pipefail` 影响而静默杀死构建**：stdenv setup.sh 顶部 `set -o pipefail`，`x=$(... | grep -v pattern | ...)` 在 grep 无匹配（exit 1）时会让赋值失败并触发 `set -e` 死亡，且无任何报错输出。管道中间步骤必须换成单进程工具（如 awk）或保证恒返回 0。
+  - **stdenv fixup 钩子对上游 vendor 树的两个拦截**：audit-tmpdir 钩子会拒绝 rpath 含 `/build/`（build 机器路径，Vivado 自带的 legacy ISE 库 libtcl8.4/libwrapper 的 rpath 只有这一个组件），需在 preFixup 中剔除 `/build/` rpath 组件（必须在 fixupOutputHooks 之前，即 preFixup）；noBrokenSymlinks 钩子会拒绝上游 SDK bundle 自带的悬空符号链接（如 certs → make-ca 才会生成的 CA 目录），用 `find $out -xtype l -delete` 清理。另注意 buildFHSEnv rootfs 的 ld.so.cache 只收录 SONAME 条目。
 
 ## nginx 模块包（pkgs/nginx-modules/）
 
