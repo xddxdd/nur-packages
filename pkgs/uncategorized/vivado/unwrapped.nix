@@ -1,8 +1,9 @@
 {
   lib,
   stdenv,
-  requireFile,
+  autoPatchelfHook,
   patchelf,
+  requireFile,
   writableTmpDirAsHomeHook,
 }:
 
@@ -25,9 +26,21 @@ stdenv.mkDerivation (finalAttrs: {
   strictDeps = true;
 
   nativeBuildInputs = [
+    autoPatchelfHook
     patchelf
     writableTmpDirAsHomeHook
   ];
+
+  # vendor-tree deps resolve at runtime through the FHS wrapper, so nothing
+  # here needs to be satisfied at build time
+  autoPatchelfIgnoreMissingDeps = [ "*" ];
+  # --ignore-existing keeps autoPatchelf from resolving bundled libraries of
+  # the tree into rpaths (which would bake build-time-only paths)
+  autoPatchelfFlags = [ "--ignore-existing" ];
+  # the hook's automatic run is in postFixup, too late for the vendor
+  # installer that must execute during installPhase; autoPatchelf is called
+  # manually in postPatch instead
+  dontAutoPatchelf = true;
 
   dontBuild = true;
   doInstallCheck = true;
@@ -51,14 +64,9 @@ stdenv.mkDerivation (finalAttrs: {
     patchShebangs xsetup bin scripts installLibs.sh
     sed -i -e 's#^"/bin/rm -rf#rm -rf#' -e 's#^/bin/rm -rf#rm -rf#' xsetup
 
-    while IFS= read -r -d "" f; do
-      interp=$(patchelf --print-interpreter "$f" 2>/dev/null || true)
-      if [ -n "$interp" ]; then
-        patchelf --set-interpreter "$(cat $NIX_CC/nix-support/dynamic-linker)" "$f"
-      fi
-    done < <(find . -type f -print0 | while IFS= read -r -d "" f; do
-      if head -c 4 "$f" | LC_ALL=C grep -q $'\x7fELF'; then printf '%s\0' "$f"; fi
-    done)
+    # the image already contains everything the installer copies out, so one
+    # pass patches the JRE xsetup execs together with the installed tree
+    autoPatchelf -- .
   '';
 
   installPhase = ''
