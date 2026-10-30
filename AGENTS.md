@@ -105,6 +105,8 @@
 
 ## 内核模块包
 
+- **固件属性复用已有派生，不新建包目录**：随内核模块提供的固件可在 `pkgs/kernel-modules/default.nix` 中导出为 `<模块名>-firmware`，引用模块已有的 `.firmware` 属性；现有扁平分组机制会同时暴露顶层属性。固件的构建和安装优先通过 `makeFlags`、`buildFlags`、`installTargets` 调用上游 Makefile，不手写重复的 make 阶段，也不添加仅比较复制前后文件相等的安装检查（gpu-unlock 实例）。
+
 - **模仿现有内核模块包结构，不覆盖 buildPhase**：`pkgs/kernel-modules/` 下的包参照 acpi-ec 的写法——`nativeBuildInputs = kernel.moduleBuildDependencies`、`env.KSRC` 指向 `kernel.dev`、`makeFlags = kernel.commonMakeFlags or kernel.makeFlags`、在 `preBuild` 里用 `makeFlagsArray+=("-C" "${...}" "M=$(pwd)")` 追加参数、`installTargets = [ "modules_install" ]`。不要自写 buildPhase；多个目标用 `buildFlags = [ "targetA" "targetB" ]` 传入（当前 stdenv 已移除 `buildTargets` 属性，不再被默认 buildPhase 消费）。
 - **含空格的 `XXX=value` 参数不能放 makeFlags，要派生环境属性**：非 structuredAttrs 路径下 makeFlags 会被按空白分词，`makeFlags = [ "CPPFLAGS=-a -b -c" ]` 中 `-b -c` 会变成杂散 make 参数，只有第一个 flag 生效。structuredAttrs 下此类变量（如 CPPFLAGS）必须写成 `env.CPPFLAGS = "-a -b -c";`，顶层属性不会进环境。
 - **现代内核 external module 的 `modules_install` 装到 `updates/` 且可能压缩**：Linux 6.18 默认把 `.ko` 压成 `.ko.xz` 放进 `updates/`；需要未压缩 `.ko`（如装到 `extra/` 以匹配参考实现或自定义加载逻辑）时改用自定义 installPhase 手动 `install`（注意这不是覆盖 buildPhase，安装逻辑放在 installPhase 内属常规做法）。
