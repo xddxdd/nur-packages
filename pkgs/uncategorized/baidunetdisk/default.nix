@@ -1,108 +1,42 @@
 {
-  stdenv,
-  makeWrapper,
   lib,
+  stdenv,
+  stdenvNoCC,
   fetchurl,
-  electron_11,
+  buildFHSEnv,
+  writeShellScript,
   makeDesktopItem,
-  copyDesktopItems,
   dpkg,
-  # BaiduNetdisk dependencies
-  libappindicator,
-  libdbusmenu,
-  libgbm,
-  libglvnd,
 }:
-################################################################################
-# Mostly based on baidnetdisk-electron package from AUR:
-# https://aur.archlinux.org/packages/baidunetdisk-electron
-################################################################################
-let
-  version = "8.9.7";
-
-  src = fetchurl {
-    url = "http://wppkg.baidupcs.com/issue/netdisk/Linuxguanjia/${version}/baidunetdisk_${version}_amd64.deb";
-    hash = "sha256-bApd9P6Q9/GqXgfppwROPk0bbMqnvqvcH3+cwl+jsxw=";
-  };
-
-  libraries = [
-    stdenv.cc.cc.lib
-    libappindicator
-    libdbusmenu
-    libgbm
-    libglvnd
-  ];
-
-  dist = stdenv.mkDerivation (finalAttrs: {
-    pname = "baidunetdisk";
-    inherit version src;
-
-    dontFixup = true;
-
-    nativeBuildInputs = [ dpkg ];
-
-    unpackPhase = ''
-      dpkg -x $src .
-    '';
-
-    installPhase = ''
-      mkdir -p $out/bin
-      cp -r opt/baidunetdisk/* $out
-
-      pushd $out
-      rm -rf \
-        baidunetdisk \
-        baidunetdisk.desktop \
-        baiduNetdiskContext.conf \
-        baidunetdiskv.desktop \
-        bin \
-        binswiftshader \
-        chrome_100_percent.pak \
-        chrome_200_percent.pak \
-        chrome-sandbox \
-        icudtl.dat \
-        libEGL.so \
-        libffmpeg.so \
-        libGLESv2.so \
-        libvk_swiftshader.so \
-        libvulkan.so \
-        LICENSE.* \
-        locales \
-        resources.pak \
-        resources/8bb88996964c4e3202fecaaa5605af03 \
-        resources/default.db \
-        resources/dir.icns \
-        resources/resource.db \
-        snapshot_blob.bin \
-        v8_context_snapshot.bin \
-        vk_swiftshader_icd.json
-      popd
-    '';
-  });
-in
-stdenv.mkDerivation (finalAttrs: {
-  pname = "baidunetdisk";
-  inherit version src;
-  __structuredAttrs = true;
-  strictDeps = true;
-  dontUnpack = true;
-
-  nativeBuildInputs = [
-    makeWrapper
-    copyDesktopItems
-  ];
-  postInstall = ''
-    mkdir -p $out/bin
-    makeWrapper ${electron_11}/bin/electron $out/bin/baidunetdisk \
-      --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath libraries}:${dist}" \
-      --add-flags "--no-sandbox" \
-      --add-flags "${dist}/resources/app.asar"
-
-    install -Dm644 ${dist}/baidunetdisk.svg $out/share/icons/hicolor/scalable/apps/baidunetdisk.svg
-  '';
-
-  desktopItems = [
-    (makeDesktopItem {
+buildFHSEnv (
+  finalAttrs:
+  let
+    unwrapped = stdenvNoCC.mkDerivation {
+      pname = "baidunetdisk-unwrapped";
+      inherit (finalAttrs) version src;
+      nativeBuildInputs = [ dpkg ];
+      dontUnpack = true;
+      dontFixup = true;
+      installPhase = ''
+        runHook preInstall
+        dpkg-deb -x "$src" deb-root
+        mkdir -p "$out/opt/baidunetdisk"
+        cp -a deb-root/opt/baidunetdisk/. "$out/opt/baidunetdisk/"
+        runHook postInstall
+      '';
+    };
+    legacyGtkmm =
+      (import (builtins.fetchTree {
+        type = "github";
+        owner = "NixOS";
+        repo = "nixpkgs";
+        rev = "fa1373130d5a21c040a47c5dbe1913d59ed91808";
+        narHash = "sha256-HzgjxrLY4AEc0044ZuM5CHbLSWLZgDlay1idmzvvpJs=";
+      }) { system = stdenv.hostPlatform.system; }).gtkmm2;
+    sigc = builtins.filter (pkg: lib.getName pkg == "libsigc++") (
+      lib.concatMap (pkg: pkg.propagatedBuildInputs or [ ]) legacyGtkmm.propagatedBuildInputs
+    );
+    desktopItem = makeDesktopItem {
       name = "baidunetdisk";
       desktopName = "Baidu Netdisk";
       exec = "baidunetdisk %U";
@@ -118,17 +52,80 @@ stdenv.mkDerivation (finalAttrs: {
         "Comment[zh_CN]" = "百度网盘";
         "Comment[zh_TW]" = "百度網盤";
       };
-    })
-  ];
+    };
 
-  passthru.updateScript = [ (toString ./update.sh) ];
-
-  meta = {
-    maintainers = with lib.maintainers; [ xddxdd ];
-    description = "Baidu Netdisk";
-    homepage = "https://pan.baidu.com/";
-    platforms = [ "x86_64-linux" ];
-    license = lib.licenses.unfreeRedistributable;
-    mainProgram = "baidunetdisk";
-  };
-})
+  in
+  {
+    pname = "baidunetdisk";
+    version = "8.9.7";
+    src = fetchurl {
+      url = "http://wppkg.baidupcs.com/issue/netdisk/Linuxguanjia/${finalAttrs.version}/baidunetdisk_${finalAttrs.version}_amd64.deb";
+      hash = "sha256-bApd9P6Q9/GqXgfppwROPk0bbMqnvqvcH3+cwl+jsxw=";
+    };
+    executableName = "baidunetdisk";
+    targetPkgs =
+      pkgs:
+      (map (pkg: pkg.out) (
+        builtins.filter (pkg: lib.getName pkg != "gtk+") (legacyGtkmm.propagatedBuildInputs ++ sigc)
+      ))
+      ++ (with pkgs; [
+        legacyGtkmm
+        alsa-lib
+        at-spi2-core
+        cairo
+        cups
+        dbus
+        expat
+        glib
+        gtk2
+        gtk3
+        libappindicator
+        libdbusmenu
+        libdrm
+        libgbm
+        libglvnd
+        libpulseaudio
+        libx11
+        libxcb
+        libxcomposite
+        libxdamage
+        libxext
+        libxfixes
+        libxkbcommon
+        libxrandr
+        libxtst
+        libxi
+        libxcursor
+        libxt
+        libxinerama
+        libxrender
+        nspr
+        nss
+        pango
+        stdenv.cc.cc.lib
+        udev
+        vulkan-loader
+        wayland
+        xdg-utils
+      ]);
+    multiPkgs = _: [ ];
+    runScript = writeShellScript "baidunetdisk-launcher" ''
+      export LD_LIBRARY_PATH="${unwrapped}/opt/baidunetdisk''${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+      exec ${unwrapped}/opt/baidunetdisk/baidunetdisk --no-sandbox "$@"
+    '';
+    extraInstallCommands = ''
+      mkdir -p "$out/share/applications"
+      cp ${desktopItem}/share/applications/*.desktop "$out/share/applications/"
+      install -Dm644 ${unwrapped}/opt/baidunetdisk/baidunetdisk.svg "$out/share/icons/hicolor/scalable/apps/baidunetdisk.svg"
+    '';
+    passthru.updateScript = [ (toString ./update.sh) ];
+    meta = {
+      maintainers = with lib.maintainers; [ xddxdd ];
+      description = "Baidu Netdisk";
+      homepage = "https://pan.baidu.com/";
+      platforms = [ "x86_64-linux" ];
+      license = lib.licenses.unfreeRedistributable;
+      mainProgram = "baidunetdisk";
+    };
+  }
+)
